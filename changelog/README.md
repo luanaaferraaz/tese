@@ -31,6 +31,14 @@ algorithms/
   v1_*  — template padronizado de 13 secções, antes das correcções da fase 5
   v2_*  — versões corrigidas (fase 5): guards explícitos, distinct sender, argumentos expandidos
 
+algorithms_current/
+  *.txt — estado final de TODOS os 10 algoritmos corretos (versão em uso nos testes)
+
+algorithms_broken/
+  new-byzantine-rb-a.txt — forwarding removido (quebra Agreement)
+  new-byzantine-rb-i.txt — delivery threshold descido para 1 (quebra Integrity)
+  new-byzantine-rb-v.txt — trigger threshold subido para f+1 (quebra Validity)
+
 prompts/
   v0_*  — prompt inicial (verbosa, sem restrição de formato)
   v1_*  — few-shot com exemplos (eliminada após fase 1)

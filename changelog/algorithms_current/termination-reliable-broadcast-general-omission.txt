@@ -1,0 +1,167 @@
+Hadzilacos, V. and Toueg, S. (1994). "A Modular Approach to Fault-Tolerant Broadcasts and Related Problems". Technical Report TR94-1425, Cornell University, Department of Computer Science.
+See also: Hadzilacos, V. and Toueg, S. (1993). "Fault-Tolerant Broadcasts and Related Problems", pp. 97-145, in Mullender, S. (Ed.), Distributed Systems, ACM Press.
+Additional reference: Cachin, C., Guerraoui, R. and Rodrigues, L. (2011). Introduction to Reliable and Secure Distributed Programming, Springer.
+ALGORITHM TEMPLATE: Terminating Reliable Broadcast (General Omission)
+1) IDENTIFICATION
+
+    Algorithm name: Terminating Reliable Broadcast — General Omission Variant (TRB-GO)
+
+    Problem type: Terminating Reliable Broadcast
+
+    Variant tags:
+
+        Fault model: [O] General Omission
+
+        Timing model: [S] Synchronous
+
+2) SYSTEM MODEL
+
+    Processes: A static set Π of n processes, {p1, p2, ..., pn}.
+
+    Max faulty: f, where n > 2f (a majority of correct processes is required).
+
+    Resilience condition: n > 2f. Under general omission failures, a faulty process may omit to send messages it should send (send omission) AND may omit to receive messages sent to it (receive omission). The stronger resilience bound n > 2f (compared to n > f for crash) is necessary because a process suffering receive omissions cannot be distinguished from a correct process that simply has not yet received a message, and the protocol must ensure that correct processes form a majority to outvote omission-faulty ones.
+
+    Channels: Reliable point-to-point links between correct processes (no loss, no duplication, no creation between correct endpoints). A faulty process may fail to send or receive on any subset of its links.
+
+    Timing assumptions: Synchronous. Computation proceeds in lock-step rounds. All messages sent by a correct process in round r are received by all correct processes before round r+1 begins.
+
+    Additional assumptions: A single designated sender s ∈ Π. The sender broadcasts a value m ∈ V. A special token SF ∉ V ("Sender Faulty") is available. Processes cannot detect whether they themselves are suffering omission failures.
+
+3) CORRECTNESS PROPERTIES (as defined by Hadzilacos and Toueg, 1994, adapted for omission)
+
+    Termination: Every correct process eventually delivers exactly one value (either m or SF).
+
+    Validity: If the sender s is correct (no omission failures) and broadcasts m, then all correct processes eventually deliver m.
+
+    Agreement: If a correct process delivers a value v, then every correct process eventually delivers v.
+
+    Integrity: Every correct process delivers at most one message. If it delivers m ≠ SF, then m was previously broadcast by s.
+
+4) INTERFACE (API)
+
+    External operations: TRB-broadcast(m), invoked only by the designated sender s.
+
+    Output events: TRB-deliver(v) where v ∈ V ∪ {SF}. Each correct process outputs exactly one TRB-deliver event.
+
+5) ROLES
+
+    Sender (s): The unique designated process that initiates the broadcast by sending m in round 1.
+
+    Receivers: All processes in Π (including s) that participate in the relay-and-decide protocol.
+
+6) LOCAL STATE (per process pi)
+
+Constants:
+
+    n: Total number of processes.
+
+    f: Maximum number of general-omission failures tolerated (n > 2f).
+
+    s: The identity of the designated sender.
+
+Variables:
+
+    received_msg: The value received so far, initially ⊥. Set to m upon first reception.
+
+    supporters: Set of process IDs from which pi has received a RELAY message carrying m. Initially ∅.
+
+    delivered: Boolean flag, initially false.
+
+7) MESSAGE TYPES
+
+    ⟨RELAY, m, r⟩: A message carrying the broadcast value m, tagged with round number r.
+
+8) INITIALIZATION
+
+    received_msg ← ⊥
+
+    supporters ← ∅
+
+    delivered ← false
+
+9) PROTOCOL PSEUDOCODE
+
+A) Round 1 — Sender s only:
+
+    if pi = s:
+
+        received_msg ← m
+
+        supporters ← {s}
+
+        send ⟨RELAY, m, 1⟩ to all processes in Π
+
+B) Rounds r = 1, 2, ..., f+1 — All processes:
+
+    upon receiving ⟨RELAY, m, r⟩ from process pj:
+
+        if received_msg = ⊥:
+
+            received_msg ← m
+
+        supporters ← supporters ∪ {pj}
+
+        if r ≤ f:
+
+            send ⟨RELAY, m, r+1⟩ to all processes in Π
+
+    (Note: Unlike the crash variant, a process relays in EVERY round it receives a new RELAY, not just the first time. This is because under general omission, a process that sent a relay in round r may suffer send omissions, so redundant relaying by other processes is needed.)
+
+C) Decision Phase — End of round f+1:
+
+    if |supporters| ≥ f+1:
+
+        TRB-deliver(received_msg)
+
+    else:
+
+        TRB-deliver(SF)
+
+    delivered ← true
+
+10) DECISION / DELIVERY RULE
+
+    Delivery occurs exactly once, at the end of round f+1. The decision uses a majority-based threshold:
+
+        - If the process has received RELAY messages from at least f+1 distinct processes (ensuring at least one correct supporter), it delivers m.
+
+        - Otherwise, it delivers SF.
+
+    The threshold f+1 guarantees that at least one of the supporters is a correct process (since at most f are faulty), which in turn guarantees that the value m is authentic.
+
+11) QUORUM / KEY STRUCTURAL ARGUMENT
+
+    The protocol combines the pigeonhole principle (f+1 rounds, at most f failures → one clean round) with a majority argument:
+
+    Since n > 2f, correct processes form a majority. In the clean round r*, every correct process that holds m relays it to all. A correct receiver gets the relay and adds the sender to its supporters set. By the end of round f+1, if any correct process received m, then all correct processes received it (pigeonhole), and each has at least f+1 supporters (the correct majority that relayed).
+
+    The f+1 supporter threshold ensures that a process only delivers m if at least one correct process vouches for it, preventing a scenario where only omission-faulty processes propagated a value.
+
+12) INVARIANTS
+
+    I1 (Relay propagation): If a correct process pi has received_msg = m at the start of round r (where r ≤ f), then pi sends ⟨RELAY, m, r+1⟩ to all processes, and every correct process receives it.
+
+    I2 (Supporter accumulation): If a correct process receives m from a correct sender in round r, it adds that sender to supporters. Since n > 2f, at least n - f > f correct processes exist.
+
+    I3 (Agreement preservation): If any correct process has |supporters| ≥ f+1 at the end of round f+1, then all correct processes have |supporters| ≥ f+1.
+
+    I4 (Sender correctness): If the sender s is correct (no omissions), then every correct process receives m by the end of round 1 and accumulates ≥ f+1 supporters by round f+1.
+
+    I5 (Integrity): received_msg is set only upon receiving a RELAY message. The no-creation property of links between correct processes ensures m originates from the sender.
+
+13) CORRECTNESS ARGUMENT SKELETON
+
+    Termination:
+        Identical to the crash variant. The protocol runs for exactly f+1 synchronous rounds. Every correct process reaches the decision phase and executes exactly one TRB-deliver.
+
+    Validity:
+        If s is correct, it sends ⟨RELAY, m, 1⟩ to all in round 1 without omissions. Every correct process receives m and relays it. Over f+1 rounds, every correct process accumulates supporters from all correct processes (at least n - f > f, so ≥ f+1). All correct processes deliver m. (Follows from I4.)
+
+    Agreement:
+        Suppose a correct process pi delivers m (|supporters| ≥ f+1). At least one supporter is correct (since at most f are faulty). That correct supporter sent RELAY in some round r. By the pigeonhole principle over f+1 rounds, there is a clean round where all correct processes that hold m relay it successfully. Since correct processes form a majority (n > 2f), all correct processes eventually accumulate ≥ f+1 supporters and deliver m.
+        If no correct process accumulates f+1 supporters, all deliver SF. (Follows from I1, I2, I3.)
+
+    Integrity:
+        Same as crash variant. Each process delivers exactly once (guarded by delivered flag and single decision phase). The value m, if delivered, was received via RELAY messages originating from the sender. (Follows from I5.)
+

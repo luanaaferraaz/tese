@@ -1,0 +1,157 @@
+Bracha, G. (1987). "Asynchronous Byzantine Agreement Protocols". Information and Computation, 75(2), pp. 130-143.
+ALGORITHM: ECHO BROADCAST
+1) IDENTIFICATION
+
+    Algorithm name: Bracha's Reliable Broadcast
+
+    Problem type: Reliable Broadcast (Byzantine)
+
+    Variant tags:
+
+        Fault model: [B] Byzantine
+
+        Timing model: [AS] Async
+
+2) SYSTEM MODEL
+
+    Processes: n
+
+    Max faulty: f
+
+    Resilience condition: n > 3f
+
+    Channels / communication assumptions: Asynchronous, reliable channels (messages sent between correct processes are eventually delivered).
+
+    Timing assumptions: None.
+
+    Additional assumptions: Fully connected network; processes have unique IDs. Message counters count only messages from distinct senders.
+
+3) CORRECTNESS PROPERTIES
+
+    Validity: If a correct process p broadcasts v, then all correct processes accept v.
+
+    Agreement: If two correct processes q and r accept the values v and u respectively, then v = u.
+
+    No duplication: No message is delivered more than once.
+
+    No creation: If a process delivers a message m with sender s, then m was previously broadcast by process s.
+
+4) INTERFACE (API)
+
+    External operations: broadcast(m) (invoked by the designated sender).
+
+    Output events: deliver(m) (upcall to the application).
+
+5) ROLES
+
+    Sender: A single designated process that initiates the broadcast.
+
+    Witnesses: All processes (including the sender) that relay and validate the message.
+
+6) LOCAL STATE (per process pi)
+
+Constants:
+
+    n, f
+
+    Quorum thresholds: (n+f)/2 for ECHO, f+1 for READY amplification, 2f+1 for delivery.
+
+Variables:
+
+    sent_echo: Boolean (initially false).
+
+    sent_ready: Boolean (initially false).
+
+    delivered: Boolean (initially false).
+
+    echo_count[m]: Counter for ECHO messages received for m from distinct senders, initially 0.
+
+    ready_count[m]: Counter for READY messages received for m from distinct senders, initially 0.
+
+7) MESSAGE TYPES
+
+    SEND(m): Initial message from the sender.
+
+    ECHO(m): Acknowledgment that a process has seen the message.
+
+    READY(m): Signal that a process is ready to deliver the message.
+
+Validation rules:
+
+    Count only messages from distinct processes (duplicate messages from the same sender are ignored).
+
+    A process sends ECHO at most once and READY at most once per broadcast instance.
+
+8) INITIALIZATION
+
+    sent_echo ← false
+    sent_ready ← false
+    delivered ← false
+    echo_count[m] ← 0 for all m
+    ready_count[m] ← 0 for all m
+
+9) PROTOCOL PSEUDOCODE
+
+A) On external invocation (Sender only):
+
+    on broadcast(m):
+        send SEND(m) to all processes.
+
+B) On message receive (All processes):
+
+    on receive SEND(m) from Sender:
+        if sent_echo is false:
+            sent_echo ← true
+            send ECHO(m) to all processes.
+
+    on receive ECHO(m) from pj:
+        if pj not already counted for ECHO(m):
+            echo_count[m] ← echo_count[m] + 1
+
+        if echo_count[m] >= (n+f)/2 and sent_ready is false:
+            sent_ready ← true
+            send READY(m) to all processes.
+
+    on receive READY(m) from pj:
+        if pj not already counted for READY(m):
+            ready_count[m] ← ready_count[m] + 1
+
+        if ready_count[m] >= f+1 and sent_ready is false:
+            sent_ready ← true
+            send READY(m) to all processes.
+
+        if ready_count[m] >= 2f+1 and delivered is false:
+            delivered ← true
+            deliver(m).
+
+10) DECISION / DELIVERY RULE
+
+    Deliver m when: 2f+1 READY(m) messages have been received from distinct processes AND delivered is false.
+
+    After delivery: Set delivered ← true to prevent duplicate delivery.
+
+11) QUORUM / KEY STRUCTURAL ARGUMENT
+
+    Because n > 3f, any two quorums of 2f+1 processes (used for delivery) intersect in at least f+1 processes. Since there are at most f Byzantine processes, there is at least one correct process in the intersection who can testify to the uniqueness of the message.
+
+    The distinct sender counting ensures that a single Byzantine process cannot inflate the counters by sending duplicate messages.
+
+12) INVARIANTS
+
+    I1 (Uniqueness): No two correct processes ever send ECHO or READY for different messages in the same broadcast instance.
+
+    I2 (Persistence): If a correct process delivers m, there are at least f+1 correct processes that have sent READY(m).
+
+    I3 (No duplication): The delivered flag prevents any process from delivering more than once.
+
+    I4 (Distinct counting): Counters are incremented only once per sender, preventing Byzantine inflation.
+
+13) CORRECTNESS ARGUMENT SKELETON
+
+    Validity: If the correct sender broadcasts m, all correct processes receive SEND(m) and send ECHO(m). Since there are at least n-f >= 2f+1 correct processes, every correct process receives at least 2f+1 ECHOs (which exceeds (n+f)/2), sends READY(m), and eventually receives at least 2f+1 READY messages to deliver.
+
+    Agreement: If one correct process delivers m, it received 2f+1 READY messages from distinct senders, at least f+1 of which are from correct processes. Any other correct process will eventually receive these f+1 READY messages, trigger their own READY broadcast (Rule 2), and eventually reach the 2f+1 threshold.
+
+    No duplication: The delivered flag is checked before delivery and set to true immediately after, ensuring deliver(m) is called at most once per process.
+
+    No creation: A correct process only sends ECHO(m) after receiving SEND(m) from the designated sender. A correct process only sends READY(m) after receiving (n+f)/2 ECHOs (at least f+1 from correct processes who received SEND) or f+1 READYs (at least one from a correct process). The chain traces back to the sender's broadcast.
