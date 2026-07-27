@@ -1,0 +1,135 @@
+Cachin, C., Guerraoui, R. and Rodrigues, L. (2011). Introduction to Reliable and Secure Distributed Programming, Springer.
+ALGORITHM: Reliable Broadcast (RB)
+1) IDENTIFICATION
+
+    Algorithm name: Reliable Broadcast 
+
+    Problem type: Reliable Broadcast
+
+    Variant tags:
+
+        Fault model: [C] Crash
+
+        Timing model: [AS] Async
+
+2) SYSTEM MODEL
+
+    Processes: n
+
+    Max faulty: f<n (No majority required for simple RB)
+
+    Resilience condition: f<n
+
+    Channels / communication assumptions: Point-to-point, reliable (eventual delivery), FIFO not required.
+
+    Timing assumptions: Asynchronous.
+
+    Additional assumptions: Processes fail only by crashing (stopping).
+
+3) CORRECTNESS PROPERTIES
+
+    Validity: If a correct process broadcasts m, then it eventually delivers m.
+
+    No duplication: Every correct process delivers m at most once.
+
+    No creation: If a correct process delivers m, then m was broadcast by some process.
+
+    Agreement: If a correct process delivers m, then every correct process eventually delivers m.
+
+4) INTERFACE (API)
+
+    External operations: rb_broadcast(m)
+
+    Output events / upcalls: rb_deliver(m)
+
+5) ROLES
+
+    Sender: The process that initiates the broadcast.
+
+    Relayers: All processes (including the sender) that ensure the message reaches everyone else if the sender crashes.
+
+6) LOCAL STATE (per process i)
+
+Constants:
+
+    n
+
+Variables:
+
+    delivered: A set of messages already delivered to the application (to prevent duplicates).
+
+7) MESSAGE TYPES
+
+    DATA(s, m): A message containing the original sender s and the content m.
+
+Validation rules:
+
+    Check if m is already in the delivered set.
+
+8) INITIALIZATION
+
+    delivered = {}
+
+9) PROTOCOL PSEUDOCODE (Eager Diffusion)
+
+A) On external invocation:
+
+    on rb_broadcast(m):
+
+        delivered = delivered \cup \{m\}
+
+        rb_deliver(m)
+
+        For every process q∈{1,…,n}:
+
+            Send DATA(self, m) to q.
+
+B) On message receive:
+
+    on receive DATA(s, m) from process k:
+
+        if m∈/delivered:
+
+            delivered = delivered \cup \{m\}
+
+            rb_deliver(m)
+
+            For every process q∈{1,…,n}:
+
+                Send DATA(s, m) to q. (Relay step)
+
+10) DECISION / DELIVERY RULE
+
+    Deliver m when:
+
+        The message is received for the first time.
+
+    After delivery:
+
+        The message is added to the delivered set to ensure No duplication.
+
+        The message is immediately forwarded to all others to ensure Agreement.
+
+11) QUORUM
+
+    N/A: Simple Reliable Broadcast in a crash model does not require a quorum (like 2f+1); it only requires that at least one correct process receives and forwards the message.
+
+12) INVARIANTS
+
+    I1: If any correct process has m in its delivered set, eventually all correct processes will have m in their delivered set.
+
+13) CORRECTNESS ARGUMENT SKELETON
+
+Safety (No Duplication/Creation):
+
+    The delivered set explicitly prevents duplicate upcalls. The "No Creation" property is guaranteed by the reliable channels and honest (non-Byzantine) processes.
+
+Liveness (Agreement):
+
+    If a correct process i delivers m, it immediately sends m to all other processes. Since i is correct and channels are reliable, every other correct process will eventually receive m and deliver it.
+
+14) COMPLEXITY
+
+    Message complexity: O(n2) (Each process sends the message to n others exactly once).
+
+    Time / round complexity: 2 "hops" (Sender → Process i → Everyone else).

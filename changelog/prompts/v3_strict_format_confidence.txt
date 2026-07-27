@@ -1,0 +1,20 @@
+Analyze the following algorithm.
+
+Algorithm:
+{algorithm}
+
+Evaluate each property strictly.
+
+Properties:
+{properties}
+
+Rules:
+- Output EXACTLY one line per property
+- Allowed formats ONLY:
+  <property> - [satisfied] (confidence: X/10)
+  <property> - [non satisfied]: <reason> (confidence: X/10)
+- Do not add any extra text
+- Do not reorder properties
+- If uncertain, output [non satisfied]
+- Reason must be ≤ 20 words
+- Confidence: 10 = certain, 1 = guessing
