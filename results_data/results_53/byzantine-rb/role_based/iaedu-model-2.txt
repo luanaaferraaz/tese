@@ -1,0 +1,6 @@
+{"run_id": "820ee507-5f17-4690-a87a-c2364b143edb", "type": "start", "content": "Processing"}
+
+{"run_id": "820ee507-5f17-4690-a87a-c2364b143edb", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "820ee507-5f17-4690-a87a-c2364b143edb", "type": "done", "content": "820ee507-5f17-4690-a87a-c2364b143edb", "messageId": "None", "token_pct_used": 106.4}
+

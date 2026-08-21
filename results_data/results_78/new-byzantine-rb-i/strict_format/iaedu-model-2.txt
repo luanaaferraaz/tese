@@ -1,0 +1,14 @@
+{"run_id": "de9a35b1-cee0-4cb5-8fa7-e69759317e89", "type": "start", "content": "Processing"}
+
+{"run_id": "de9a35b1-cee0-4cb5-8fa7-e69759317e89", "type": "token", "content": "R"}
+
+{"run_id": "de9a35b1-cee0-4cb5-8fa7-e69759317e89", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Delivery on 1 type1 message; a Byzantine process al"}
+
+{"run_id": "de9a35b1-cee0-4cb5-8fa7-e69759317e89", "type": "token", "content": "one can trigger delivery in one correct without others delivering.\nRB-"}
+
+{"run_id": "de9a35b1-cee0-4cb5-8fa7-e69759317e89", "type": "token", "content": "Integrity - [satisfied]"}
+
+{"run_id": "de9a35b1-cee0-4cb5-8fa7-e69759317e89", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Delivery on 1 type1 message; a Byzantine process alone can trigger delivery in one correct without others delivering.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "de9a35b1-cee0-4cb5-8fa7-e69759317e89", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "de9a35b1-cee0-4cb5-8fa7-e69759317e89", "type": "done", "content": "de9a35b1-cee0-4cb5-8fa7-e69759317e89", "messageId": "cms24ha251tllke012b2vwyz5"}
+

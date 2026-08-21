@@ -1,0 +1,18 @@
+{"run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "type": "start", "content": "Processing"}
+
+{"run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "type": "token", "content": "Validity - ["}
+
+{"run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "type": "token", "content": "satisfied]\nNo duplication - [satisfied]\nNo creation - [non satisfied]: With f+1 threshold and n"}
+
+{"run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "type": "token", "content": ">2f, faulty processes alone (up to f) cannot trigger delivery, but rel"}
+
+{"run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "type": "token", "content": "ay rule forwards before verifying origin.\nAgreement - [non satisfied]: With"}
+
+{"run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "type": "token", "content": " only n>2f, a correct process delivering via f+1 sources cannot guarantee other correct processes reach the"}
+
+{"run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "type": "token", "content": " threshold under receive omissions."}
+
+{"run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nNo duplication - [satisfied]\nNo creation - [non satisfied]: With f+1 threshold and n>2f, faulty processes alone (up to f) cannot trigger delivery, but relay rule forwards before verifying origin.\nAgreement - [non satisfied]: With only n>2f, a correct process delivering via f+1 sources cannot guarantee other correct processes reach the threshold under receive omissions.", "tool_calls": [], "tool_call_id": null, "run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "type": "done", "content": "9420b67b-39fb-4dfe-b110-76790f3fdc8e", "messageId": "cmradr48y6167ke01x13uvzab"}
+

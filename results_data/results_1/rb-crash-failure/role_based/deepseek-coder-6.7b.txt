@@ -1,0 +1,15 @@
+The provided pseudocode seems to be correctly implemented for a crash-failure reliable broadcast algorithm. However, there are some details that need to be checked or clarified for proper verification of the properties. Here's what you need to verify:
+
+1. **RB-Validity**: Ensure that the broadcaster sends `<type0, m>` before receiving it back and forwarding it to its neighbours. 
+
+2. **RB-Agreement**: Check if for every message delivered by a correct process, all other correct processes eventually deliver the same message as well.
+
+3. **RB-Integrity**: Make sure that a message is only delivered once and it corresponds to an original broadcast.
+
+4. For each invariant `I1` (Forward before stop), ensure that a process stops its handler when it receives m, thereby ensuring the rule of forwarding before stopping.
+
+5. Check for the invariant `I2` (No duplicate delivery). Ensure that every message is delivered at most once. If not, provide the reason why this invariant has been violated.
+
+6. For each invariant `I3` (Propagation), ensure that if a correct process receives m and forwards it to its neighbours, all non-crashed neighbours eventually receive a forwarded copy of m. 
+
+The output requirement seems clear enough; the verification results should be formatted as per the provided example in the question. For properties that are not satisfied, provide a reason why they aren't satisfied and ensure it doesn't exceed 20 words. Also, remember to test for different message values 'm' and the number of correct processes n can range from 1 to n-f (in this case f=1) in order to cover all possible scenarios.

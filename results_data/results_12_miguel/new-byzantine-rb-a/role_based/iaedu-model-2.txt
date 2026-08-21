@@ -1,0 +1,14 @@
+{"run_id": "cbd8af98-ca4f-4b65-b705-a354e1a21d55", "type": "start", "content": "Processing"}
+
+{"run_id": "cbd8af98-ca4f-4b65-b705-a354e1a21d55", "type": "token", "content": "R"}
+
+{"run_id": "cbd8af98-ca4f-4b65-b705-a354e1a21d55", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Correct process delivering via"}
+
+{"run_id": "cbd8af98-ca4f-4b65-b705-a354e1a21d55", "type": "token", "content": " 2 type1 msgs (one Byzantine) may not trigger others; only 1 correct sent type1. (confidence:"}
+
+{"run_id": "cbd8af98-ca4f-4b65-b705-a354e1a21d55", "type": "token", "content": " 9/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "cbd8af98-ca4f-4b65-b705-a354e1a21d55", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Correct process delivering via 2 type1 msgs (one Byzantine) may not trigger others; only 1 correct sent type1. (confidence: 9/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "cbd8af98-ca4f-4b65-b705-a354e1a21d55", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "cbd8af98-ca4f-4b65-b705-a354e1a21d55", "type": "done", "content": "cbd8af98-ca4f-4b65-b705-a354e1a21d55", "messageId": "cmruff1s835rske01zt6ozxzr"}
+

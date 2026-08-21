@@ -1,0 +1,13 @@
+Based on the provided algorithm, here's how each of the correctness properties RB-Validity, RB-Agreement and RB-Integrity are analyzed.
+
+RB-Validity: 
+All correct processes eventually receive <type0, m>, send <type1, m>, and eventually collect enough <type1, m> messages to deliver.
+- Satisfied: The algorithm makes sure that all correct processes will eventually receive the initial message (<type0, m>) from the broadcaster. This is ensured by the fact that it sends a new message of type 1 (<type1, m>) every time it receives at least one <type0, m> from a distinct sender.
+
+RB-Agreement: 
+If one correct process delivers m, then all correct processes eventually deliver m.
+- Satisfied: The algorithm ensures that the same message is delivered by all the correct processes. This is because each correct process will eventually receive enough support messages (<type1, m>) to decide on a single sender of the message and thus agree on its delivery. 
+
+RB-Integrity: 
+A correct process delivers m at most once, and only if m was broadcast.
+- Satisfied: The algorithm ensures that each message is delivered exactly once by ensuring that no duplicate messages are sent or received. This is ensured by the fact that it uses distinct sender counting which prevents any duplication of messages in terms of sender. Moreover, the delivery rule takes care of ensuring a single correct process delivers at most one message and only if it was broadcasted initially (<type0, m>).

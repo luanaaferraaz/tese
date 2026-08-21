@@ -1,0 +1,6 @@
+{"run_id": "c3177668-68bc-465b-8931-36d917dfb954", "type": "start", "content": "Processing"}
+
+{"run_id": "c3177668-68bc-465b-8931-36d917dfb954", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "c3177668-68bc-465b-8931-36d917dfb954", "type": "done", "content": "c3177668-68bc-465b-8931-36d917dfb954", "messageId": "None", "token_pct_used": 106.4}
+

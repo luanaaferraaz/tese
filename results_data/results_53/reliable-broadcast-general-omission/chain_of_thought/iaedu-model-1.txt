@@ -1,0 +1,6 @@
+{"run_id": "c4104acf-c976-44b6-9151-f8651de3c4de", "type": "start", "content": "Processing"}
+
+{"run_id": "c4104acf-c976-44b6-9151-f8651de3c4de", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "c4104acf-c976-44b6-9151-f8651de3c4de", "type": "done", "content": "c4104acf-c976-44b6-9151-f8651de3c4de", "messageId": "None", "token_pct_used": 102.2}
+

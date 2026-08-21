@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This algorithm ensures that all correct processes eventually receive a message broadcasted by a correct process.
+
+RB-Agreement - [satisfied]
+In this algorithm, if one process delivers a message, then all other processes will eventually deliver the same message because they received f + 1 support messages from distinct processes.
+
+RB-Integrity - [satisfied]
+This algorithm ensures that each process delivers any given message only once and only when it received f + 1 <type1, m> messages from distinct processes, which can't be duplicated by a single Byzantine process.

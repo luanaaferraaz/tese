@@ -1,0 +1,10 @@
+Algorithm:
+ALGORITHM: Distributed Consensus (DC)
+
+Properties:
+Termination - [satisfied]
+Determinism - [satisfied]
+
+Output:
+Termination - [satisfied]
+Determinism - [satisfied]

@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+An initial broadcast message is sent by the correct broadcaster. The correct processes then send support messages to their neighbours, resulting in eventual delivery of the message.
+
+RB-Agreement - [non satisfied]
+The agreement property depends on whether multiple correct processes deliver m. If one process delivers m but no other does, it can't be agreed upon. A reason might be that not enough support was propagated or a self-deliver rule wasn't followed.
+
+RB-Termination - [satisfied]
+All correct processes always deliver because they require f + 1 matching messages before delivery. If enough are received, termination is guaranteed.

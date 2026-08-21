@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is satisfied because the message m will be delivered to all correct processes, since the communication model assumes reliable channels. The broadcaster sends a <type0,m> message which is guaranteed to reach and deliver it to all processes. 
+
+RB-Agreement - [satisfied]
+If one process delivers m, then the message was sent by the broadcaster and hence will be received and delivered by all correct processes eventually. This agreement is enforced by the algorithm.
+
+RB-Integrity - [satisfied]
+This property is satisfied because the algorithm ensures a process delivers m at most once. It maintains a set of delivered messages which prevents duplicate deliveries, and only adds to this set when it receives a message containing m. Since no message can be created or duplicated in the communication channels under the assumption of a no-failure model, the integrity of the message is guaranteed.

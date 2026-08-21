@@ -1,0 +1,7 @@
+1) Validity: The property is satisfied as per definition. A correct process broadcasts m, then it eventually delivers m.
+
+2) No duplication: The protocol ensures that a correct process delivers m at most once by keeping track of the delivered messages in each process's state (delivered set).
+
+3) No creation: The property is satisfied as per definition and assumptions. If a correct process delivers m, then m was broadcasted by some process.
+
+4) Agreement: The protocol ensures agreement due to its reliable and async nature. If a correct process delivers m, every other correct process will eventually receive the message and deliver it.

@@ -1,0 +1,4 @@
+Termination - [satisfied]
+Validity - [non satisfied]: Sender can suffer send omissions
+Agreement - [satisfied]
+Integrity - [satisfied]

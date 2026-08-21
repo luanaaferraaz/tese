@@ -1,0 +1,79 @@
+1) IDENTIFICATION
+
+    Problem type: Reliable Broadcast
+
+2) SYSTEM MODEL
+
+    Total Processes: N
+
+    Max faulty: F
+
+    Fault model: Crash failures - when a process crashes, it stops executing further steps and does not recover
+
+    Resilience condition: F < N
+
+    Channels / communication assumptions: Perfect Point-to-Point Links (No creation, no alteration, no duplication, no loss)
+
+    Timing assumptions: Asynchronous - there are no timing assumptions on the maximum message delay, clock drift, or the time needed to execute a step
+
+3) CORRECTNESS PROPERTIES
+
+    Validity: If a correct process broadcasts m, then it eventually delivers m.
+
+    No duplication: Every correct process delivers m at most once.
+
+    No creation: If a correct process delivers m, then m was broadcast by some process.
+
+    Agreement: If a correct process delivers m, then every correct process eventually delivers m.
+
+4) ROLES
+
+    Broadcaster: process that invokes Broadcast.
+
+    Receivers: process that receives a message.
+
+5) LOCAL STATE (per process)
+
+Constants:
+
+    n: total number of processes.
+    f: maximum number of crash failures.
+    ID: unique identifier of the process.
+
+Variables:
+
+    delivered_value: message delivered;
+    msg_sent: set of messages sent;
+    msg_received: set of messages received.
+
+6) INITIALIZATION
+
+    delivered_value ← ∅
+    msg_sent ← ∅
+    msg_received ← ∅
+
+7) PROTOCOL PSEUDOCODE
+
+A) Assumptions:
+
+    - Assume a single broadcast execution at a time. A new broadcast can only be initiated after the previous one has been completed (i.e., delivered by all correct processes).
+
+B) On external invocation:
+
+    upon Broadcast(m):
+        delivered_value ← {m}
+        deliver(m)
+        send <type0, m> to all processes
+        msg_sent ← msg_sent ∪ {<type0, m>}
+    stop
+
+C) On message receive:
+
+    upon receive(<type0, m>) from pj:
+        msg_received ← msg_received ∪ {<type0, m>}
+
+        if delivered_value == ∅:
+            delivered_value ← {m}
+            deliver(m)
+            /* Error inserted here: relay step removed. Without relaying, if the broadcaster crashes mid-send, processes that did not receive the message directly will never deliver it, breaking Agreement */
+    stop

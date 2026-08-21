@@ -1,0 +1,11 @@
+1) Validity - satisfied
+If a correct process p broadcasts v, then all other correct processes accept v. This property is satisfied by the protocol because the sender sends SEND(m) to all processes and every correct process that sees this message will respond with ECHO(m) if it has not already done so. As a result, all correct processes receive an ECHO message from the sender, confirming their acceptance of v.
+
+2) Agreement - satisfied
+If two correct processes q and r accept values v and u respectively, then v=u. This property is also satisfied by our protocol due to the delivery rule: when 2f+1 READY(m) messages are received (i.e., agreed upon m by at least f+1 other processes), the process delivers m. Since there can be only one sender and a unique value for each broadcast instance, all processes will agree on the delivered message.
+
+3) No duplication - satisfied
+A process does not deliver a message more than once. The protocol ensures that a process only sends ECHO or READY for a specific message m in its broadcast instance. Therefore, if it delivers m, it will not send another ECHO/READY for the same m in this instance.
+
+4) No creation - satisfied
+If a process delivers a message m with sender s, then m was previously broadcast by s. This property is also met because the protocol only allows processes to deliver messages that they have both received from the sender and seen enough ECHO/READY messages for (i.e., 2f+1 READY(m) messages).

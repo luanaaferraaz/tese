@@ -1,0 +1,9 @@
+Algorithm:
+https://people.cs.umass.edu/~arun/cs677/reading/HT.pdf  
+ALGORITHM TEMPLATE: Terminating Reliable Broadcast (TRB)  
+
+Properties:  
+Termination - [satisfied]  
+Validity - [satisfied]  
+Agreement - [satisfied]  
+Integrity - [satisfied]

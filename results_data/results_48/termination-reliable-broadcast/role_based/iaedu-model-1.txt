@@ -1,0 +1,6 @@
+{"run_id": "74219233-d5da-4162-b839-660fc4992b91", "type": "start", "content": "Processing"}
+
+{"run_id": "74219233-d5da-4162-b839-660fc4992b91", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "74219233-d5da-4162-b839-660fc4992b91", "type": "done", "content": "74219233-d5da-4162-b839-660fc4992b91", "messageId": "None", "token_pct_used": 102.2}
+

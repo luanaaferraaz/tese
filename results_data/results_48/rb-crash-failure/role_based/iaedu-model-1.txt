@@ -1,0 +1,6 @@
+{"run_id": "b85f203d-b423-4730-9873-74f3e71e75d1", "type": "start", "content": "Processing"}
+
+{"run_id": "b85f203d-b423-4730-9873-74f3e71e75d1", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "b85f203d-b423-4730-9873-74f3e71e75d1", "type": "done", "content": "b85f203d-b423-4730-9873-74f3e71e75d1", "messageId": "None", "token_pct_used": 102.2}
+

@@ -1,0 +1,6 @@
+{"run_id": "3dee0bcd-7ffd-406a-ba46-d3e7fafeb492", "type": "start", "content": "Processing"}
+
+{"run_id": "3dee0bcd-7ffd-406a-ba46-d3e7fafeb492", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "3dee0bcd-7ffd-406a-ba46-d3e7fafeb492", "type": "done", "content": "3dee0bcd-7ffd-406a-ba46-d3e7fafeb492", "messageId": "None", "token_pct_used": 106.4}
+

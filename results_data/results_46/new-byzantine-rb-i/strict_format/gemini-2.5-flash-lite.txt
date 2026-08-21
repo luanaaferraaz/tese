@@ -1,0 +1,3 @@
+RB-Validity - [non satisfied]: Type0 message reception by f+1 processes is not guaranteed for a correct broadcaster.
+RB-Agreement - [non satisfied]: A correct process might deliver m based on f+1 type1 messages, but others might not receive them.
+RB-Integrity - [satisfied]

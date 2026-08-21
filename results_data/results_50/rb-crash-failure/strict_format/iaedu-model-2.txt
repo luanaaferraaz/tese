@@ -1,0 +1,6 @@
+{"run_id": "9c8226ca-35c0-499b-b76d-de0d6e7ae8bb", "type": "start", "content": "Processing"}
+
+{"run_id": "9c8226ca-35c0-499b-b76d-de0d6e7ae8bb", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "9c8226ca-35c0-499b-b76d-de0d6e7ae8bb", "type": "done", "content": "9c8226ca-35c0-499b-b76d-de0d6e7ae8bb", "messageId": "None", "token_pct_used": 106.4}
+

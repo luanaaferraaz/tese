@@ -1,0 +1,4 @@
+1. Validity - [satisfied]
+2. No duplication - [satisfied]
+3. No creation - [non satisfied]: The algorithm allows faulty processes to omit messages, potentially fabricating relay chains that do not trace back to a correct process's broadcast.
+4. Agreement - [satisfied]

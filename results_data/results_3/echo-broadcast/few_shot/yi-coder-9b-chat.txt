@@ -1,0 +1,20 @@
+1) Validity - [satisfied]
+2) Agreement - [satisfied]
+3) No duplication - [satisfied]
+4) No creation - [satisfied] 
+---
+Algorithm: Bracha’s Reliable Broadcast
+Problem type: Reliable Broadcast (Byzantine)
+Fault model: Byzantine
+Timingyes model: Async
+Processes: n
+Max faulty: f
+Resilience condition: n>3f
+Channels / communication assumptions: Asynchronous, reliable channels 
+Timing assumptions: None
+Additional assumptions: Fully connected network; processes have unique IDs.
+---
+Validity - [satisfied] If a correct process p broadcasts v, then all correct processes accept v.
+Agreement - [satisfied] If two correct processes q and r accept the values v and u respectively, then v=u.
+No duplication - [satisfied] A correct process does not broadcast more than one value for the same message m.
+No creation - [satisfied] A correct process does not create a new value if it only has a subset of the messages.

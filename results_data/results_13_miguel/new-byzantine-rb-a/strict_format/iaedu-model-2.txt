@@ -1,0 +1,14 @@
+{"run_id": "7f7f3dbd-d43f-4389-bda3-de088a05f1c4", "type": "start", "content": "Processing"}
+
+{"run_id": "7f7f3dbd-d43f-4389-bda3-de088a05f1c4", "type": "token", "content": "R"}
+
+{"run_id": "7f7f3dbd-d43f-4389-bda3-de088a05f1c4", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: With n=4, f=1, only 2 correct type"}
+
+{"run_id": "7f7f3dbd-d43f-4389-bda3-de088a05f1c4", "type": "token", "content": "1 senders possible; Byzantine withholding can leave correct processes below threshold.\nRB-"}
+
+{"run_id": "7f7f3dbd-d43f-4389-bda3-de088a05f1c4", "type": "token", "content": "Integrity - [satisfied]"}
+
+{"run_id": "7f7f3dbd-d43f-4389-bda3-de088a05f1c4", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: With n=4, f=1, only 2 correct type1 senders possible; Byzantine withholding can leave correct processes below threshold.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "7f7f3dbd-d43f-4389-bda3-de088a05f1c4", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "7f7f3dbd-d43f-4389-bda3-de088a05f1c4", "type": "done", "content": "7f7f3dbd-d43f-4389-bda3-de088a05f1c4", "messageId": "cms24cvuh1tg9ke016j75gqx2"}
+

@@ -1,0 +1,8 @@
+1. Validity: Broadcasted message m is delivered by all correct processes, ensuring the validity of each message.
+   Status: [satisfied]
+
+2. No duplication: A process delivers a message once only to prevent duplication.
+   Status: [satisfied]
+
+3. No creation: If a process p delivers a message m with sender s, then m was broadcasted by the process s.
+   Status: [non satisfied]: The algorithm does not ensure this property because it is not specified in the local state of the algorithm.

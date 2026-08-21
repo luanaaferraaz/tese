@@ -1,0 +1,8 @@
+1. Validity - [Satisfied]
+A correct process broadcasts a message m, then every other correct process eventually delivers it due to the perfect point-to-point link's reliability guarantee.
+
+2. No duplication - [Satisfied]
+The perfect point-to-point link's "no duplication" property ensures that each message is delivered at most once across all processes, and since messages are unique from process to process by the algorithm's assumptions, no two correct processes will ever receive a duplicate of any broadcasted message.
+
+3. No creation - [Satisfied]
+The perfect point-to-point link's "no duplication" property combined with the assumption that delivered messages must have been previously broadcast by the corresponding sender ensures that no incorrect or non-existing messages are created when delivering a message m.

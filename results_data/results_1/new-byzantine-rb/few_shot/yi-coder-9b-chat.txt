@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+As the algorithm guarantees that if a correct process broadcasts m, all other correct processes will receive it.
+
+RB-Agreement - [satisfied]
+A correct process delivers m only if at least one other correct process also delivered m.
+
+RB-Integrity - [satisfied]
+A process delivers m only once and only if m was broadcast by a correct process.

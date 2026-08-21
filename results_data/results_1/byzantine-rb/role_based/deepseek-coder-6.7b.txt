@@ -1,0 +1,10 @@
+Algorithm Correctness Evaluation for Byzantine-Failure RBcast Algorithm
+
+RB-Validity - Satisfied
+The broadcaster sends a <type0, m> message to all processes and only if it is correct. Each correct process eventually receives this initial message from at least one other correct process, therefore they will eventually broadcast the message as required by RB-Validity. 
+
+RB-Agreement - Satisfied
+If any correct process delivers a message m, then it has seen enough <type1, m> support messages from at least f + 1 different processes. Therefore, all other correct processes will also eventually receive and deliver this message as required by RB-Agreement. 
+
+RB-Integrity - Satisfied
+The delivered set prevents duplicate delivery of a message. A single Byzantine process cannot create enough support to make another correct process believe it has been broadcasted, thus satisfying RB-Integrity.

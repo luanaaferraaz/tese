@@ -1,0 +1,4 @@
+Validity - [satisfied]  
+Agreement - [satisfied]  
+No duplication - [satisfied]  
+No creation - [non satisfied]: Lack of mechanism to ensure only one unique message is processed.

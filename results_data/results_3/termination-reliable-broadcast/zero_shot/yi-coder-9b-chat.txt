@@ -1,0 +1,10 @@
+1. Termination - [satisfied]
+The protocol is guaranteed to terminate because the number of rounds is bounded by f+1, and each round has a fixed finite duration.
+
+2. Validity - [satisfied]
+If process s is correct and broadcasts m, every other correct process eventually receives this message, making it valid according to the property definition.
+
+3. Agreement - [satisfied]
+According to the protocol, once delivered by any correct process, m will be delivered by all other correct processes since it is either in their 'received_msgs' set or the sender s is guaranteed to deliver a unique value message throughout the rounds.
+
+4. Integrity - [non satisfied]: The integrity property is not strictly maintained due to the possibility of delivering SF token multiple times if there are no messages in received_msgs set at end of round f+1.

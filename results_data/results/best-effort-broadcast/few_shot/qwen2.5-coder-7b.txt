@@ -1,0 +1,7 @@
+Algorithm:
+Best-Effort Broadcast
+
+Properties:
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]

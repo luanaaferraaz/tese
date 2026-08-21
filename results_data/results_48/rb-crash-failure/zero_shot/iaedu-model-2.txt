@@ -1,0 +1,6 @@
+{"run_id": "c7c23304-e44a-490f-983f-39e703ef63f2", "type": "start", "content": "Processing"}
+
+{"run_id": "c7c23304-e44a-490f-983f-39e703ef63f2", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "c7c23304-e44a-490f-983f-39e703ef63f2", "type": "done", "content": "c7c23304-e44a-490f-983f-39e703ef63f2", "messageId": "None", "token_pct_used": 106.4}
+

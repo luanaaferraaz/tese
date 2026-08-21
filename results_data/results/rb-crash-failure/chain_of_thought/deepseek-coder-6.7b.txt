@@ -1,0 +1,5 @@
+RB-Validity - Satisfied: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m. This is ensured by the protocol where a message m sent to itself via <type0, m> will eventually reach every other correct process through forwarding of <type1, m>.
+
+RB-Agreement - Satisfied: If one correct process delivers m, then all correct processes eventually deliver m. This is also ensured by the protocol where each process receives a message containing m and forwards it to its neighbours if not already delivered. The forwarded copy of m will reach other correct processes eventually through reliable channels.
+
+RB-Integrity - Satisfied: A correct process delivers m at most once, and only if m was broadcast. This is ensured by the protocol where a message m is delivered only when it has not been previously delivered. The delivered set prevents duplicate delivery and ensures that all non-duplicate messages are delivered exactly once.

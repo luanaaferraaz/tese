@@ -1,0 +1,3 @@
+RB-Validity - [non satisfied]: Algorithm requires support from f+1 distinct processes, not just a correct broadcaster.
+RB-Agreement - [satisfied]
+RB-Integrity - [satisfied]

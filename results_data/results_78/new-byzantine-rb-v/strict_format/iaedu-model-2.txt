@@ -1,0 +1,12 @@
+{"run_id": "28730f50-a142-4e4f-b720-a9842288e22e", "type": "start", "content": "Processing"}
+
+{"run_id": "28730f50-a142-4e4f-b720-a9842288e22e", "type": "token", "content": "R"}
+
+{"run_id": "28730f50-a142-4e4f-b720-a9842288e22e", "type": "token", "content": "B-Validity - [non satisfied]: Correct broadcaster alone cannot trigger f+1 type0 threshold; correct processes never"}
+
+{"run_id": "28730f50-a142-4e4f-b720-a9842288e22e", "type": "token", "content": " send type1, no delivery.\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]"}
+
+{"run_id": "28730f50-a142-4e4f-b720-a9842288e22e", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Correct broadcaster alone cannot trigger f+1 type0 threshold; correct processes never send type1, no delivery.\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "28730f50-a142-4e4f-b720-a9842288e22e", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "28730f50-a142-4e4f-b720-a9842288e22e", "type": "done", "content": "28730f50-a142-4e4f-b720-a9842288e22e", "messageId": "cms24lpfc1tq7ke01ajde9ird"}
+

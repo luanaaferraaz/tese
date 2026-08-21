@@ -1,0 +1,90 @@
+1) IDENTIFICATION
+
+    Problem type: Reliable Broadcast
+
+2) SYSTEM MODEL
+
+    Total Processes: N
+
+    Max faulty: F
+
+    Fault model: General Omission failures - a faulty process may fail to send messages (send omission) or fail to receive messages (receive omission)
+
+    Resilience condition: N > 2F
+
+    Channels / communication assumptions: Perfect Point-to-Point Links between correct processes (No creation, no alteration, no duplication, no loss). A faulty process may fail to send or receive on any subset of its links.
+
+    Timing assumptions: Asynchronous - there are no timing assumptions on the maximum message delay, clock drift, or the time needed to execute a step
+
+3) CORRECTNESS PROPERTIES
+
+    Validity: If a correct process broadcasts m, then it eventually delivers m.
+
+    No duplication: Every correct process delivers m at most once.
+
+    No creation: If a correct process delivers m, then m was broadcast by some process.
+
+    Agreement: If a correct process delivers m, then every correct process eventually delivers m.
+
+4) ROLES
+
+    Broadcaster: process that invokes Broadcast.
+
+    Receivers: process that receives a message.
+
+5) LOCAL STATE (per process)
+
+Constants:
+
+    n: total number of processes.
+    f: maximum number of omission failures.
+    ID: unique identifier of the process.
+
+Variables:
+
+    delivered_value: message delivered;
+    msg_sent: set of messages sent;
+    msg_received: set of messages received;
+    echo_count[m]: number of distinct processes from which a DATA or RELAY for m was received.
+
+6) INITIALIZATION
+
+    delivered_value ← ∅
+    msg_sent ← ∅
+    msg_received ← ∅
+    echo_count[m] ← 0 for all m
+
+7) PROTOCOL PSEUDOCODE
+
+A) Assumptions:
+
+    - Assume a single broadcast execution at a time. A new broadcast can only be initiated after the previous one has been completed (i.e., delivered by all correct processes).
+
+B) On external invocation:
+
+    upon Broadcast(m):
+        if delivered_value == ∅:
+            delivered_value ← {m}
+            deliver(m)
+        send <type0, m> to all processes
+        msg_sent ← msg_sent ∪ {<type0, m>}
+    stop
+
+C) On message receive:
+
+    upon receive(<type0, m>) from pj:
+        msg_received ← msg_received ∪ {<type0, m>}
+        if pj not already counted for m:
+            echo_count[m] ← echo_count[m] + 1
+
+        if echo_count[m] >= f + 1
+        and delivered_value == ∅:
+            delivered_value ← {m}
+            deliver(m)
+            send <type0, m> to all processes
+            msg_sent ← msg_sent ∪ {<type0, m>}
+
+        else if delivered_value == ∅:
+            send <type0, m> to all processes
+            msg_sent ← msg_sent ∪ {<type0, m>}
+    stop

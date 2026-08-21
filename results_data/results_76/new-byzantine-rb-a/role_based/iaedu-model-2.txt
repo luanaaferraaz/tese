@@ -1,0 +1,18 @@
+{"run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "type": "start", "content": "Processing"}
+
+{"run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "type": "token", "content": "R"}
+
+{"run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold f+1=2 all"}
+
+{"run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "type": "token", "content": "ows one Byzantine plus one correct to trigger delivery; other correct processes may never reach threshold. (confidence: 9"}
+
+{"run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "type": "token", "content": "/10)\nRB-Integrity - [non satisfied]: No type0 check before s"}
+
+{"run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "type": "token", "content": "ending type1; Byzantine can forge type1 for un-broadcast m, and two Byzantine-influenced type1 suffice. (confidence:"}
+
+{"run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "type": "token", "content": " 6/10)"}
+
+{"run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold f+1=2 allows one Byzantine plus one correct to trigger delivery; other correct processes may never reach threshold. (confidence: 9/10)\nRB-Integrity - [non satisfied]: No type0 check before sending type1; Byzantine can forge type1 for un-broadcast m, and two Byzantine-influenced type1 suffice. (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "type": "done", "content": "3f65d42e-dc2b-4752-8b8d-bb890f5294ab", "messageId": "cmrufeh4835r8ke01s581lkcq"}
+

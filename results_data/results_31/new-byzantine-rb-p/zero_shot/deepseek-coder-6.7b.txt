@@ -1,0 +1,10 @@
+RB-Validity - Satisfied
+The broadcaster sends the initial message <type0, m> to its neighbours. The receivers of this message send support messages <type1, m> to their neighbours. After receiving at least f + 1 distinct valid <type1, m> messages from correct processes, a process delivers m and triggers the output event DELIVER(m). 
+
+RB-Agreement - Satisfied
+If one correct process delivers m, it received f + 1 distinct valid <type1, m> messages. This means at least one of those came from a correct process. Therefore, this support can be spread to the other correct processes, allowing them to reach the same delivery threshold and deliver m. 
+
+RB-Termination - Satisfied
+All correct processes eventually receive at least f + 1 <type1, m> messages. This ensures that all correct processes always deliver a message once they have received sufficient support (f + 1 valid <type1, m> messages). So, the termination property is satisfied for this algorithm. 
+
+Note: The reason for RB-Integrity not being satisfied in the context of this pseudocode is not explicitly stated as it does not seem to be relevant based on what's provided here. The Delivered set ensures each message gets delivered only once which seems to fulfill the requirement of no duplicate delivery (I4).

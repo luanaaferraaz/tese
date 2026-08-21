@@ -1,0 +1,3 @@
+1) RB-Validity - [satisfied]. If a correct broadcaster broadcasts m, then all correct processes eventually deliver m because they receive f + 1 <type1, m> messages from other correct processes.
+2) RB-Agreement - [satisfied]. If one correct process delivers m, it receives at least f + 1 <type1, m> messages. At least one of these came from a correct process. The support propagation rule spreads this to the other correct processes who then deliver m when they receive enough supporting messages.
+3) RB-Integrity - [satisfied]. A process delivers m only once because it keeps track of delivered messages and only delivers if not already in that set. This prevents self-delivery loops since a Byzantine process alone cannot force the delivery of a message.

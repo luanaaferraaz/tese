@@ -1,0 +1,6 @@
+{"run_id": "c80ca960-7490-49dc-ae6e-3c211f236c0e", "type": "start", "content": "Processing"}
+
+{"run_id": "c80ca960-7490-49dc-ae6e-3c211f236c0e", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "c80ca960-7490-49dc-ae6e-3c211f236c0e", "type": "done", "content": "c80ca960-7490-49dc-ae6e-3c211f236c0e", "messageId": "None", "token_pct_used": 106.4}
+

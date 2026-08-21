@@ -1,0 +1,29 @@
+1. Safety:
+   - Checking if the algorithm ensures that either all correct processes deliver the same message or none do. 
+   - If the READY quorums from 2f + 1 distinct processes intersect in a correct process, then safety is guaranteed as two different messages cannot both reach a delivery threshold of f + 1.
+    
+2. Liveness:
+   - Ensuring that if the sender is correct, all correct processes eventually deliver m.
+   - If the sender is correct and all correct processes receive the SEND message, they send an ECHO message back to the sender as well as propagate a READY message. Once 2f + 1 READY messages are received, liveness is guaranteed by delivering the message. 
+
+3. Message complexity:
+   - Checking if the algorithm has a bounded message complexity of O(N^2) in worst case scenario.
+    The algorithm's message complexity is indeed O(N^2) because each process sends N messages initially, and then potentially up to f additional N messages when READY quorums are formed.
+   - If the message complexity isn’t within the expected bounds, explain why.
+  
+4. Round / time complexity: 
+   - Checking if algorithm has constant expected rounds in worst case scenario.
+    The algorithm's round complexity is indeed constant because each process waits for messages from other processes without waiting for timeouts or a specific amount of time.
+   - If the round complexity isn’t as expected, explain why. 
+  
+5. Message size:
+   - Checking if message size doesn’t exceed O(|m|) where |m| is the size of the delivered message.
+    The algorithm's message size complexity indeed doesn’t exceed O(|m|) because each process sends a message with size at most |m|. 
+  
+6. Requires N >= 3f + 1:
+   - Checking if this condition is met by the algorithm.
+    This condition isn't explicitly stated in the algorithm, but it’s implied as part of the system model. The algorithm functions under this assumption because it uses a quorum of size (N + f) / 2 and f + 1 for echoSet and readySet respectively.
+  
+7. Does not provide total order:
+   - Checking if this condition is met by the algorithm.
+    This condition is given in the instructions, but it’s relevant to the properties of the algorithm rather than any property check itself. The algorithm provides reliable dissemination only and does not provide a total order over messages.

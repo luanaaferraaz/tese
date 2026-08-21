@@ -1,0 +1,7 @@
+1) Validity - [satisfied]. The algorithm ensures that all correct processes will eventually accept a value broadcasted by the sender.
+
+2) Agreement - [satisfied]. All correct processes agree on the same value, as long as there is at least one other correct process that has received READY messages for this value.
+
+3) No duplication - [non satisfied]: The algorithm does not handle duplicated values properly in its current form.
+
+4) No creation - [satisfied]. The algorithm ensures no new values are created after the sender broadcasts a message.

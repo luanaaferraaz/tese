@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This is because all correct processes will eventually receive the message and deliver it. The algorithm ensures that this will happen due to the reliable channels assumption, which means no process can miss out on receiving a broadcasted message.
+
+RB-Agreement - [satisfied]
+If one correct process delivers a message, then all other correct processes must also eventually receive and deliver the message because there are no faults in the system. Therefore, all correct processes will end up delivering it at some point due to the reliable channel assumption.
+
+RB-Integrity - [satisfied]
+This property is satisfied by the algorithm as it ensures each process delivers a message only once. The set 'delivered' keeps track of messages that have already been delivered. If a process tries to deliver a message which is in the 'delivered' set, then it will not deliver the duplicate message again ensuring RB-Integrity property holds true.

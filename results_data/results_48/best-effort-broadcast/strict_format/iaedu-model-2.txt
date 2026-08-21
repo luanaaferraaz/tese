@@ -1,0 +1,6 @@
+{"run_id": "824c2733-013e-45e9-9b26-8dcb490acc7e", "type": "start", "content": "Processing"}
+
+{"run_id": "824c2733-013e-45e9-9b26-8dcb490acc7e", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "824c2733-013e-45e9-9b26-8dcb490acc7e", "type": "done", "content": "824c2733-013e-45e9-9b26-8dcb490acc7e", "messageId": "None", "token_pct_used": 106.4}
+

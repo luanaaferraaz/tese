@@ -1,0 +1,13 @@
+Here is the output according to your requirements for each property. The properties are as follows:
+
+1. Validity - [satisfied]
+   - All correct processes eventually deliver the message.
+   
+2. No duplication - [non satisfied]: 
+   - Reason: There's no mechanism in place that prevents a single process from delivering the same message multiple times. The delivered set is reset for each new message, but not every delivery attempt may have added the message to this set.
+   
+3. No creation - [satisfied]
+   - All correct processes only deliver messages that were originally broadcast by some other process.
+   
+4. Agreement - [satisfied]
+  <｜begin▁of▁sentence｜>

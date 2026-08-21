@@ -1,0 +1,6 @@
+{"run_id": "44bac303-3c25-432d-a179-514ca96c39cc", "type": "start", "content": "Processing"}
+
+{"run_id": "44bac303-3c25-432d-a179-514ca96c39cc", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "44bac303-3c25-432d-a179-514ca96c39cc", "type": "done", "content": "44bac303-3c25-432d-a179-514ca96c39cc", "messageId": "None", "token_pct_used": 102.2}
+

@@ -1,0 +1,16 @@
+{"run_id": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "type": "start", "content": "Processing"}
+
+{"run_id": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "type": "token", "content": "Validity - ["}
+
+{"run_id": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 distinct echoes, but"}
+
+{"run_id": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "type": "token", "content": " correct sender's own DATA counts as only one source."}
+
+{"run_id": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "type": "token", "content": "\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: If sender delivers then fails by"}
+
+{"run_id": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "type": "token", "content": " omission, correct processes may not reach f+1 distinct sources."}
+
+{"run_id": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 distinct echoes, but correct sender's own DATA counts as only one source.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: If sender delivers then fails by omission, correct processes may not reach f+1 distinct sources.", "tool_calls": [], "tool_call_id": null, "run_id": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "type": "done", "content": "5ee7fb9b-f5a9-486d-a0f7-c4a554fd2823", "messageId": "cmrc2412o7l7gke014oxy9joq"}
+

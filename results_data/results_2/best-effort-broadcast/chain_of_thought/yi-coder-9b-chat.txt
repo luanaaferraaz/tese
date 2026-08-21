@@ -1,0 +1,3 @@
+1. Validity - [satisfied]
+2. No duplication - [non satisfied]: Duplication can occur if a process receives a message more than once, which is not guaranteed by the algorithm.
+3. No creation - [satisfied]

@@ -1,0 +1,15 @@
+Here are the properties of your algorithm as per the given conditions:
+
+RB-Validity - Satisfied: This property is met because a correct broadcaster will send the initial message <type0, m> to its neighbours. All correct processes then receive this message and eventually deliver it according to the protocol rules. 
+
+RB-Agreement - Satisfied: If one correct process delivers message m, it means that at least f + 1 distinct support messages have been received from correct processes. Hence, all other correct processes will also eventually receive a number of support messages equal to or greater than f + 1 and deliver the same message. 
+
+RB-Integrity - Satisfied: This property is met because a process delivers m at most once, i.e., no duplicate delivery. The delivered set ensures this by storing all unique messages that have been successfully broadcasted and confirmed by enough processes. A Byzantine fault can't force multiple deliveries of the same message as per the f=1 condition.
+
+As for output requirements:
+
+- RB-Validity - Satisfied
+- RB-Agreement - Satisfied
+- RB-Integrity - Satisfied 
+
+These properties are satisfied under your stated conditions of a fault model with maximum one Byzantine process and an asynchronous timing model.

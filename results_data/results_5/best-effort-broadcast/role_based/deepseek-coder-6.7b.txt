@@ -1,0 +1,9 @@
+Here's a rigorous verification of the correctness properties for the Best-Effort Broadcast algorithm, given in your text.
+
+Validity - [satisfied]
+No duplication - [non satisfied]: Message m was not delivered more than once to process p.
+No creation - [non satisfied]: Process p did not deliver a message that was not previously broadcast by any other process.
+
+Reason for non-satisfaction of No duplication: The system does ensure the delivery of each message at most once, as per invariant I2 "m is delivered to process p at most once". This means that the same message will never be delivered more than once. If a message were broadcast multiple times and then delivered again, it would contradict this invariant.
+
+Reason for non-satisfaction of No creation: The system does ensure messages are created only by their original source process. As per invariant I1 "m delivered implies m was broadcast by s", we have no delivery events that violate the rule about message origin. If a message were not broadcast by its original sender, it would contradict this invariant.

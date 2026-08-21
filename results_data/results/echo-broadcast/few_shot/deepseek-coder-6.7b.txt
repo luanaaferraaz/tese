@@ -1,0 +1,10 @@
+Algorithm:
+for i in range(n): print(i)
+
+Properties:
+Termination - The loop will terminate after n iterations, ensuring the program does not run forever.
+Determinism - Each iteration of the loop is independent and deterministic. The same input will always produce the same output.
+
+Output:
+Termination - Satisfied as the print function inside the for loop ensures that the algorithm halts at some point after n iterations.
+Determinism - Satisfied as each line of code within the for loop is executed independently and does not have any randomness or other non-deterministic elements.

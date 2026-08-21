@@ -1,0 +1,6 @@
+{"run_id": "ec3c671e-5458-4c6d-be4d-15c327929c99", "type": "start", "content": "Processing"}
+
+{"run_id": "ec3c671e-5458-4c6d-be4d-15c327929c99", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ec3c671e-5458-4c6d-be4d-15c327929c99", "type": "done", "content": "ec3c671e-5458-4c6d-be4d-15c327929c99", "messageId": "None", "token_pct_used": 106.4}
+

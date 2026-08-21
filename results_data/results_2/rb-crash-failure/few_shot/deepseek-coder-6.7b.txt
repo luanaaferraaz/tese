@@ -1,0 +1,11 @@
+To verify the correctness of the distributed algorithm, we need to ensure that it satisfies its specified properties. Let's validate the algorithm according to the given properties:
+
+--- Output ---
+
+RB-Validity - [satisfied]
+RB-Agreement - [non satisfied]: Reason: In a crash failure environment, the sender may crash midway during broadcast which can cause some correct processes not to receive the message.
+RB-Integrity - [satisfied] 
+
+--- Explanation ---
+
+The algorithm RB-Validity is verified as all correct processes eventually deliver the messages after receiving them. The agreement property could be violated if one correct process crashes before it delivers a message, but considering that in this fault model (crash), crashed processes do not send or receive any messages and hence, they are unable to participate in the broadcast, we don't have any guarantee about when all other correct processes will deliver the same message. The RB-Integrity is satisfied as a correct process delivers each message at most once ensuring no duplication.

@@ -1,0 +1,5 @@
+RB-Validity - [satisfied] (confidence: 10/10)
+
+RB-Agreement - [non satisfied]: A Byzantine process could produce f + 1 distinct valid senders. (confidence: 9/10)
+
+RB-Integrity - [satisfied] (confidence: 10/10)

@@ -1,0 +1,6 @@
+{"run_id": "e72e3f70-bf4b-4358-8131-e893cfdfc179", "type": "start", "content": "Processing"}
+
+{"run_id": "e72e3f70-bf4b-4358-8131-e893cfdfc179", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "e72e3f70-bf4b-4358-8131-e893cfdfc179", "type": "done", "content": "e72e3f70-bf4b-4358-8131-e893cfdfc179", "messageId": "None", "token_pct_used": 106.4}
+

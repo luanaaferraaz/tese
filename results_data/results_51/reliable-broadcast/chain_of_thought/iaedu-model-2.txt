@@ -1,0 +1,6 @@
+{"run_id": "27487b43-7ef6-4193-b80a-452d6bb24858", "type": "start", "content": "Processing"}
+
+{"run_id": "27487b43-7ef6-4193-b80a-452d6bb24858", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "27487b43-7ef6-4193-b80a-452d6bb24858", "type": "done", "content": "27487b43-7ef6-4193-b80a-452d6bb24858", "messageId": "None", "token_pct_used": 106.4}
+

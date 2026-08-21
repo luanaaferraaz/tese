@@ -1,0 +1,90 @@
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "start", "content": "Processing"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": ""}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "RB"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "-"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "Validity"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " -"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " ["}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "s"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "atisfied"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "]\n"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "RB"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "-"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "Agreement"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " -"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " ["}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "s"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "atisfied"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "]\n"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "RB"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "-"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "Integrity"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " -"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " ["}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "non"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " satisfied"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "]:"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " Byzantine"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " can"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " trigger"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " type"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "1"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " propagation"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " for"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " an"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " un"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "broadcast"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " message"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " via"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " fake"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": " type"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "0"}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": "."}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "token", "content": ""}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [non satisfied]: Byzantine can trigger type1 propagation for an unbroadcast message via fake type0.", "tool_calls": [], "tool_call_id": null, "run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "response_metadata": {"model_provider": "openai", "id": "resp_022d9e2afb12a711006a67645fe8bc81908523b119278bd797", "created_at": 1785160799.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "type": "done", "content": "01cddcd7-3da4-47b5-9a2e-a8ea33bca5eb", "messageId": "cms3anplv2881ke01khpbh6n6"}
+

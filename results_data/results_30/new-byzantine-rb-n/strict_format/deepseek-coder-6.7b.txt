@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster is correctly sending the initial message <type0, m> to its neighbours. The algorithm ensures that all correct processes eventually deliver m by checking if it has received at least one distinct process's confirmation before broadcasting the next message.
+
+RB-Agreement - Satisfied
+A correct process delivers a message only when it receives f + 1 confirmations (support messages) from different processes, and these confirmations come from other correct processes. This ensures that all correct processes eventually agree on which message to deliver. The algorithm also correctly forwards the support messages to its neighbours after receiving them.
+
+RB-Integrity - Satisfied
+A process delivers a message at most once because of the 'delivered' set, and only if it received f + 1 valid confirmations from other correct processes. This ensures that no duplicate delivery occurs. The Byzantine fault tolerance is maintained by ensuring that a Byzantine process cannot force any process to deliver by tricking the system into receiving more than f (=1) valid confirmations.

@@ -1,0 +1,18 @@
+Sure, let's verify the correctness of the Best-Effort Broadcast algorithm.
+
+Algorithm:
+1. The sender sends message m to all processes using reliable point-to-point links. Upon receiving m, a process delivers it immediately without relaying.
+2. If a process crashes or fails to receive messages from other processes, it can still deliver the messages it received before crashing/failure.
+3. No two processes broadcast the same message at the same time and every message is unique. 
+
+Properties:
+1. Validity - if a correct process broadcasts a message m, then every correct process eventually delivers m.
+2. Agreement - if all correct processes deliver m at the same time, no process will not receive m.
+3. No duplication - no message is delivered more than once. 
+4. No creation - if a process delivers a message m with sender s, then m was previously broadcast by process s.
+
+Output:
+1. Validity - [satisfied]
+2. Agreement - [non satisfied]: The algorithm assumes that all processes are correct and synchronized at the start. However, in reality, some processes may crash or fail to receive messages from other processes.
+3. No duplication - [satisfied]
+4. No creation - [satisfied]

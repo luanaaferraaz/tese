@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [non satisfied]: Reliability of channels does not guarantee message delivery to all correct processes.

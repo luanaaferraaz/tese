@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The algorithm ensures that all correct processes receive the message they send and subsequently deliver it.
+
+RB-Agreement - [satisfied]
+If a single process delivers a message, every other correct process receives the original broadcasted message and delivers it as well.
+
+RB-Integrity - [satisfied]
+The algorithm ensures that each delivered message is added to a 'delivered' set only once. Therefore, a process delivers a message at most once, and only if the message was broadcast.

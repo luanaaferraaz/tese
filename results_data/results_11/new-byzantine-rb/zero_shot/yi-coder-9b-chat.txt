@@ -1,0 +1,7 @@
+1. RB-Validity: This property is satisfied because the protocol guarantees that if a correct process broadcasts a message, all other correct processes will eventually deliver it. In the provided pseudocode, a correct broadcaster sends <type0, m> to its neighbours and then delivers when they send <type1, m> back. All these actions are performed by correct processes only.
+
+2. RB-Agreement: This property is also satisfied. If one correct process broadcasts a message m and delivers it, all other correct processes will eventually deliver this message as well because the support for delivery is propagated based on <type1, m> messages that are sent when f + 1 distinct processes have seen such a message.
+
+3. RB-Integrity: This property holds true in our pseudocode too. A process delivers a message only once and can deliver at most one message which it has been instructed to broadcast because the delivered set is used for tracking messages that have already been delivered. Only f processes can be Byzantine, so a process cannot force another process to deliver a message if it is a Byzantine process alone.
+
+So overall, this pseudocode satisfies RB-Validity, RB-Agreement and RB-Integrity properties of the Reliable Broadcast problem under the Byzantine fault model.

@@ -1,0 +1,4 @@
+Validity - [satisfied]
+Agreement - [satisfied]
+No duplication - [non satisfied]: The algorithm does not prevent a process from sending ECHO or READY messages for different values in the same instance.
+No creation - [non satisfied]: The algorithm does not ensure that a correct process never delivers a value without having received 2f+1 READYs.

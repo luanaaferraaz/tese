@@ -1,0 +1,5 @@
+Termination - [satisfied]
+Determinism - [satisfied]
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]

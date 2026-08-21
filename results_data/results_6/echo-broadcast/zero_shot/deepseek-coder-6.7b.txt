@@ -1,0 +1,7 @@
+Validity - Satisfied
+
+Agreement - Satisfied
+
+No duplication - Satisfied
+
+No creation - Non satisfied: In the case of Byzantine failures, a process can receive multiple instances of the same message. This could lead to incorrect or inconsistent behavior if not properly managed.

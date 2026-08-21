@@ -1,0 +1,12 @@
+Algorithm: Reliable Broadcast (RB)
+
+Properties:
+1. Validity - [satisfied]
+   The algorithm correctly ensures that if a correct process broadcasts m, then it eventually delivers m. 
+2. Agreement - [non satisfied]: if sender crashes mid-broadcast, some correct processes may never receive m
+3. No duplication - [satisfied]
+   Every correct process delivers m at most once ensuring no message is relayed more than once.
+4. No creation - [satisfied]
+   If a correct process delivers m, then m was broadcast by some process. This property ensures that no new messages are created. 
+
+Please note that the Validity and Agreement properties may not hold true if there are f<n faulty processes in the system where f is less than n (maximum faulty processes). These processes can crash midway through the broadcast, causing correct processes to miss some or all deliveries of messages. The algorithm's efficiency relies on a reliable network and that no more than max f processes can fail during a single broadcast operation.

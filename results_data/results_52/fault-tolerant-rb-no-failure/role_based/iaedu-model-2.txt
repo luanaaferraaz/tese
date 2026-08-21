@@ -1,0 +1,6 @@
+{"run_id": "ef48269f-f0d4-449d-a2ed-9c1d99d2ac37", "type": "start", "content": "Processing"}
+
+{"run_id": "ef48269f-f0d4-449d-a2ed-9c1d99d2ac37", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ef48269f-f0d4-449d-a2ed-9c1d99d2ac37", "type": "done", "content": "ef48269f-f0d4-449d-a2ed-9c1d99d2ac37", "messageId": "None", "token_pct_used": 106.4}
+

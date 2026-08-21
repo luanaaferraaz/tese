@@ -1,0 +1,6 @@
+Here are the results of analyzing the given algorithm for Reliable Broadcast under the assumptions provided.
+
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [non satisfied]: There is a possibility that a message can be created if it's not in the delivered set. This depends on the order of delivery and processing by the processes.
+Agreement - [satisfied]

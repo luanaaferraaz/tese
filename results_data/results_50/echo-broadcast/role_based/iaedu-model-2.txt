@@ -1,0 +1,6 @@
+{"run_id": "abcad55e-d271-4cc7-9563-5dc0af7590f9", "type": "start", "content": "Processing"}
+
+{"run_id": "abcad55e-d271-4cc7-9563-5dc0af7590f9", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "abcad55e-d271-4cc7-9563-5dc0af7590f9", "type": "done", "content": "abcad55e-d271-4cc7-9563-5dc0af7590f9", "messageId": "None", "token_pct_used": 106.4}
+

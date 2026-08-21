@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+This is because the correct broadcaster will always eventually broadcast m. All correct receivers will then forward <type1> messages, satisfying the thresholds needed for a valid delivery.
+
+RB-Agreement - [non satisfied]: Correct process delivery depends on other correct processes.
+
+RB-Integrity - [satisfied]
+This is because the protocol prevents duplication using the delivered set and distinct-sender counting rules. A single Byzantine process cannot create enough support alone, ensuring integrity.

@@ -1,0 +1,6 @@
+{"run_id": "2423a621-74c8-420f-a336-177c42859366", "type": "start", "content": "Processing"}
+
+{"run_id": "2423a621-74c8-420f-a336-177c42859366", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "2423a621-74c8-420f-a336-177c42859366", "type": "done", "content": "2423a621-74c8-420f-a336-177c42859366", "messageId": "None", "token_pct_used": 102.2}
+

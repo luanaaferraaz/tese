@@ -1,0 +1,11 @@
+1. Validity - Satisfied
+   The algorithm correctly ensures that a correct process will eventually deliver any message it broadcasts.
+   
+2. No Duplication - Non satisfied
+   There is no explicit mechanism to prevent the same message from being delivered more than once, which violates this property.
+   
+3. No Creation - Satisfied
+   The algorithm correctly ensures that if a correct process delivers a message, it was indeed broadcast by another process. This is guaranteed by the reliable channels and honest (non-Byzantine) processes.
+   
+4. Agreement - Satisfied
+   The algorithm effectively guarantees that each correct process eventually agrees on every delivered message. That is, if a correct process i delivers m, it immediately sends m to all other processes. Since i is correct and channels are reliable, every other correct process will eventually receive m and deliver it, fulfilling the agreement property.

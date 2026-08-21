@@ -1,0 +1,6 @@
+{"run_id": "db19e419-b714-42b6-a13e-5e0bdac80681", "type": "start", "content": "Processing"}
+
+{"run_id": "db19e419-b714-42b6-a13e-5e0bdac80681", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "db19e419-b714-42b6-a13e-5e0bdac80681", "type": "done", "content": "db19e419-b714-42b6-a13e-5e0bdac80681", "messageId": "None", "token_pct_used": 106.4}
+

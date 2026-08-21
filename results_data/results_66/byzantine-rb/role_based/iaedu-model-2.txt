@@ -1,0 +1,14 @@
+{"run_id": "2067a717-3908-4e30-8b1f-ebbd2da825b7", "type": "start", "content": "Processing"}
+
+{"run_id": "2067a717-3908-4e30-8b1f-ebbd2da825b7", "type": "token", "content": "R"}
+
+{"run_id": "2067a717-3908-4e30-8b1f-ebbd2da825b7", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [non satisfied]: A Byzantine broadcaster can"}
+
+{"run_id": "2067a717-3908-4e30-8b1f-ebbd2da825b7", "type": "token", "content": " trigger delivery of a message never legitimately broadcast; integrity binding to broadcast source not"}
+
+{"run_id": "2067a717-3908-4e30-8b1f-ebbd2da825b7", "type": "token", "content": " enforced."}
+
+{"run_id": "2067a717-3908-4e30-8b1f-ebbd2da825b7", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [non satisfied]: A Byzantine broadcaster can trigger delivery of a message never legitimately broadcast; integrity binding to broadcast source not enforced.", "tool_calls": [], "tool_call_id": null, "run_id": "2067a717-3908-4e30-8b1f-ebbd2da825b7", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "2067a717-3908-4e30-8b1f-ebbd2da825b7", "type": "done", "content": "2067a717-3908-4e30-8b1f-ebbd2da825b7", "messageId": "cmrad84g260ufke010poerzkm"}
+

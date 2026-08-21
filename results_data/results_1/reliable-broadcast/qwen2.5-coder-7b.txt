@@ -1,0 +1,56 @@
+### 1. Safety Property
+
+**Property:** If a correct process delivers a message \( m \), then \( m \) was broadcast by the sender.
+  
+**Result:** **SATISFIED**
+
+**Reasoning:** The algorithm ensures that only messages from the sender are delivered. When a correct process receives a message, it first checks if it has already received a message. If not, it sets `receivedMessage` to \( m \) and broadcasts an `ECHO` message. All other processes will then echo back the same message.
+
+### 2. Safety Property
+
+**Property:** No two correct processes deliver different messages.
+  
+**Result:** **SATISFIED**
+
+**Reasoning:** The algorithm ensures that a process only delivers a message if it is the sender and all preceding echoes have been received from at least \( \lceil (N + f) / 2 \rceil \). If multiple messages are received, they will not both satisfy this condition.
+
+### 3. Safety Property
+
+**Property:** Each correct process delivers at most one message.
+  
+**Result:** **SATISFIED**
+
+**Reasoning:** The algorithm maintains a `delivered` flag that ensures each process only delivers a message once. Once a message is delivered, the process will not enter the delivery phase again.
+
+### 4. Liveness Property
+
+**Property:** If the sender is correct, all correct processes eventually deliver \( m \).
+  
+**Result:** **SATISFIED**
+
+**Reasoning:** The algorithm ensures that if the sender is correct and receives enough `ECHO` messages, it will eventually broadcast a `READY` message to all other processes. Correct processes will then receive these `READY` messages from at least \( f + 1 \) other processes and deliver the message.
+
+### 5. Total Order
+
+**Property:** The system provides total order.
+  
+**Result:** **NOT SATISFIED**
+
+**Details:** The Bracha algorithm only ensures reliable dissemination, not total order. While all correct processes will eventually deliver the same message, there is no guarantee that they will do so in a specific sequence.
+
+### Summary of Results
+
+Property: Safety (First instance)  
+Result: SATISFIED  
+
+Property: Safety (Second instance)  
+Result: SATISFIED  
+
+Property: Safety (Third instance)  
+Result: SATISFIED  
+
+Property: Liveness  
+Result: SATISFIED  
+
+Property: Total Order  
+Result: NOT SATISFIED

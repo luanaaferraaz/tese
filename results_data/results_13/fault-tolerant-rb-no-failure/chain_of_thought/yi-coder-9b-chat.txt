@@ -1,0 +1,5 @@
+1) RB-Validity: The algorithm satisfies this property because it guarantees that all correct processes eventually deliver a broadcasted message. This is achieved through the use of reliable channels which ensure that no process misses any message sent by the broadcaster. 
+
+2) RB-Agreement: This property holds true as well due to the fact that if one process delivers a certain message, since all processes receive the same message from the broadcaster and no duplication occurs, all other processes will eventually receive this message and deliver it. 
+
+3) RB-Integrity: This property is also satisfied because the algorithm ensures that each process delivers any given message at most once. Additionally, since the communication channels are reliable, any delivered messages must have originated from a broadcast by the broadcaster as no messages are created or duplicated in the system.

@@ -1,0 +1,8 @@
+1) Validity - [satisfied]
+   The algorithm ensures a correct process broadcasts m, it eventually delivers m. It starts by delivering the broadcast to itself and then sends the message to all processes. Since pi is correct, all other correct processes will receive this message. Every correct process that receives f+1 DATA or RELAY messages carrying m (at least one from a correct process) also delivers it.
+2) No duplication - [satisfied]
+   The algorithm checks if the message is in the delivered set before delivering to prevent duplicates. A process only sends relay messages for already-delivered messages, ensuring no duplicates are propagated.
+3) No creation - [satisfied]
+   A process delivers m only after receiving it from f+1 distinct processes at least one of which is correct. Hence, a correct process only broadcasts or relays messages that were actually broadcast (not fabricated). The no-creation property of links ensures the message chain originates from the original broadcaster.
+4) Agreement - [satisfied]
+   If a correct process delivers m, it received m from f+1 distinct processes and relays it to all. Every correct process eventually receives this relay. Combined with relays from other correct processes that also received m, every correct process accumulates f+1 distinct sources and eventually delivers m.

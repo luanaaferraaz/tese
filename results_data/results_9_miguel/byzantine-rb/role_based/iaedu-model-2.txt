@@ -1,0 +1,14 @@
+{"run_id": "f7ffc05e-6e2a-40ba-ba39-6ba0bec223d7", "type": "start", "content": "Processing"}
+
+{"run_id": "f7ffc05e-6e2a-40ba-ba39-6ba0bec223d7", "type": "token", "content": "R"}
+
+{"run_id": "f7ffc05e-6e2a-40ba-ba39-6ba0bec223d7", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: With n=4, f=1,"}
+
+{"run_id": "f7ffc05e-6e2a-40ba-ba39-6ba0bec223d7", "type": "token", "content": " threshold (n+f)/2=2 < 2f+1=3; two Byzantine echoes can split delivery. (confidence: 8/"}
+
+{"run_id": "f7ffc05e-6e2a-40ba-ba39-6ba0bec223d7", "type": "token", "content": "10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "f7ffc05e-6e2a-40ba-ba39-6ba0bec223d7", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2 < 2f+1=3; two Byzantine echoes can split delivery. (confidence: 8/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "f7ffc05e-6e2a-40ba-ba39-6ba0bec223d7", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "f7ffc05e-6e2a-40ba-ba39-6ba0bec223d7", "type": "done", "content": "f7ffc05e-6e2a-40ba-ba39-6ba0bec223d7", "messageId": "cmrkborfd49lbke01xoispfxv"}
+

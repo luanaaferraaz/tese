@@ -1,0 +1,12 @@
+Algorithm Name: Reliable Broadcast - General Omission Variant (RB-GO)
+
+1. Validity Property: [satisfied]
+   - The algorithm correctly ensures that if a correct process broadcasts m, then it eventually delivers m to the application. 
+
+2. No Duplication Property: [satisfied]
+   - The algorithm prevents duplicate deliveries by maintaining a delivered set and ensuring that each message is only delivered once.
+
+3. No Creation Property: [non satisfied]: Algorithm does not ensure that if a correct process delivers m, then m was broadcast by some process. There might be scenarios where a process relays the same message from multiple sources without it being originally broadcasted.
+
+4. Agreement Property: [satisfied]
+   - The algorithm ensures that if a correct process delivers m, then every correct process eventually delivers m. This is ensured by the fact that each correct process maintains an echo count of messages and only relays a message when this count reaches f+1 (where f is the maximum number of omission failures).

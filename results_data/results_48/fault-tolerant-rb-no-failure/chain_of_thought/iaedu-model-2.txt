@@ -1,0 +1,6 @@
+{"run_id": "a612339e-642e-492e-b930-a4ff9d0152c3", "type": "start", "content": "Processing"}
+
+{"run_id": "a612339e-642e-492e-b930-a4ff9d0152c3", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "a612339e-642e-492e-b930-a4ff9d0152c3", "type": "done", "content": "a612339e-642e-492e-b930-a4ff9d0152c3", "messageId": "None", "token_pct_used": 106.4}
+

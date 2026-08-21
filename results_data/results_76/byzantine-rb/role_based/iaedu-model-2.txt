@@ -1,0 +1,16 @@
+{"run_id": "91abc49a-c804-413e-abd3-73399ff62d29", "type": "start", "content": "Processing"}
+
+{"run_id": "91abc49a-c804-413e-abd3-73399ff62d29", "type": "token", "content": "R"}
+
+{"run_id": "91abc49a-c804-413e-abd3-73399ff62d29", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold (n+f)/"}
+
+{"run_id": "91abc49a-c804-413e-abd3-73399ff62d29", "type": "token", "content": "2 = 2.5 with n=4, f=1 allows split delivery; Brac"}
+
+{"run_id": "91abc49a-c804-413e-abd3-73399ff62d29", "type": "token", "content": "ha requires (n+f)/2 + 1. (confidence: 8/10)\nRB-Integrity - [satisfied"}
+
+{"run_id": "91abc49a-c804-413e-abd3-73399ff62d29", "type": "token", "content": "] (confidence: 9/10)"}
+
+{"run_id": "91abc49a-c804-413e-abd3-73399ff62d29", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 with n=4, f=1 allows split delivery; Bracha requires (n+f)/2 + 1. (confidence: 8/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "91abc49a-c804-413e-abd3-73399ff62d29", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "91abc49a-c804-413e-abd3-73399ff62d29", "type": "done", "content": "91abc49a-c804-413e-abd3-73399ff62d29", "messageId": "cmruf2chl35dgke01t5c8atbp"}
+

@@ -1,0 +1,11 @@
+1. Validity – satisfied
+The validity property means that a correct process will broadcast m, it will eventually deliver m as well. This is true in the RB protocol because on external invocation of rb_broadcast(m), the message m gets delivered immediately (rb_deliver(m)) and forwarded to all other processes. Thus, if a correct process broadcasts m, it also guarantees that it eventually delivers m.
+
+2. No duplication – satisfied
+The property means that every correct process delivers m at most once. In the RB protocol, this is ensured by storing delivered messages in a set called "delivered". If a message arrives again, the check within on-receive ensures that it will not be added to the delivered set and consequently not delivered again (thus no duplication).
+
+3. No creation – satisfied
+The property means if m was broadcasted by some process, then every correct process eventually delivers m. In the RB protocol, this is achieved by the reliable communication channels and the correct processes that ensure delivery to all others. 
+
+4. Agreement – satisfied
+The agreement property means that if a correct process delivers m, then every other correct process eventually also delivers m. In the RB protocol, after any correct process i receives a message m for the first time, it immediately broadcasts this to all other processes (ensured by "For every process q∈{1,…,n}: Send DATA(s, m) to q"). Hence, every other correct process eventually delivers and forwards m ensuring agreement in delivery.

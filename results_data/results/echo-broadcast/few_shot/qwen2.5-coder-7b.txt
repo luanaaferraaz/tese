@@ -1,0 +1,6 @@
+Algorithm:
+Bracha's Reliable Broadcast Protocol
+
+Properties:
+Termination - [satisfied]
+Determinism - [satisfied]

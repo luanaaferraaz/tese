@@ -1,0 +1,3 @@
+1) RB-Validity: Broadcast message m is sent to all processes. As the channel is reliable, all correct processes receive and deliver m eventually under no failure assumption.
+2) RB-Agreement: If one process delivers m then it was broadcasted to every process so all processes eventually receive and deliver m.
+3) RB-Integrity: The delivered set prevents duplicate delivery. Since messages are not created or duplicated, any delivered message is part of the original broadcast.

@@ -1,0 +1,3 @@
+RB-Validity - satisfied
+RB-Agreement - satisfied
+RB-Integrity - Non satisfied. A Byzantine process could send multiple <type1, m> messages and cause multiple deliveries.

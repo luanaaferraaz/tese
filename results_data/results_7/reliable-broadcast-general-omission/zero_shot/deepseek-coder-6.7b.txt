@@ -1,0 +1,7 @@
+Validity - Satisfied
+
+No Duplication - Satisfied. The delivered set is used to prevent duplicate deliveries. A process checks m not in delivered before delivering, ensuring that a message can only be delivered once.
+
+No Creation - Satisfied. If a correct process delivers m, it received m from f+1 distinct processes and relays m to all other correct processes. This ensures that the message chain traces back to the original broadcaster, thus satisfying the no creation property of links between correct processes.
+
+Agreement - Satisfied. If any correct process delivers m, eventually all correct processes accumulate f+1 distinct sources for m and deliver it. This is guaranteed by properties I1 (Relay propagation), I2 (Threshold guarantee) and I3 (Agreement).

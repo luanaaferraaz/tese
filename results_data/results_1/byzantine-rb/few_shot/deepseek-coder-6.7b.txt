@@ -1,0 +1,38 @@
+Based on the Byzantine-Failure RBcast Algorithm provided, we can check its correctness by applying it to a simple simulation. Since this is an asynchronous model with faults and messages being delivered possibly in any order, we need to control timing of events rather than just checking if all processes deliver at least once. Here's how the verification could look like:
+
+--- Example 1 ---
+
+Algorithm:
+A simple broadcast where the sender sends message m to all processes using reliable point-to-point links. Upon receiving m, a process delivers it immediately without relaying.
+
+Properties:
+Validity, No duplication, No creation
+
+Output:
+Validity  - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+
+--- Example 2 ---
+
+Algorithm:
+A broadcast where the sender sends m to all processes. Upon receiving m for the first time, a process delivers m but does NOT relay it to others. Processes may crash.
+
+Properties:
+Validity, Agreement, No duplication, No creation
+
+Output:
+Validity  - [satisfied]
+Agreement  - [non satisfied]: if sender crashes mid-broadcast, some correct processes may never receive m
+No duplication - [satisfied]
+No creation - [satisfied]
+
+--- Now verify the following (Byzantine-Failure RBcast Algorithm) ---
+
+Algorithm: Most Efficient RBcast Algorithm for Byzantine-Failure Experiment
+Properties: Validity, Agreement, Integrity
+
+Output: 
+Validity - [satisfied]
+Agreement - [non satisfied]: some correct processes may not have received message m due to Byzantine failure.
+Integrity - [non satisfied]: a single process may send inconsistent messages that do not follow the validation rules.

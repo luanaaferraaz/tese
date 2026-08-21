@@ -1,0 +1,7 @@
+Termination - [satisfied]
+
+Validity - [satisfied] (sender ensures correct processes receive m)
+
+Agreement - [satisfied] (correct process delivers m if ≥ f+1 supporters)
+
+Integrity - [satisfied] (only valid message delivered)

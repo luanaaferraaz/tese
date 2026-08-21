@@ -1,0 +1,15 @@
+Algorithmic Properties: Bracha’s Reliable Broadcast
+
+1. Validity - [Satisfied]
+   The algorithm ensures that a correct process broadcasting a message will eventually be delivered by all other correct processes.
+
+2. Agreement - [Non Satisfied]
+   The agreement property is not satisfied because the algorithm does not guarantee that messages from different correct processes are identical, leading to inconsistencies. It's important for applications like distributed databases and consensus algorithms where message values must be consistent across all nodes.
+
+3. No duplication - [Satisfied]
+   The algorithm ensures that a message will not be delivered more than once by preventing duplicate messages from being forwarded among correct processes.
+
+4. No creation - [Non Satisfied]
+   The no creation property is not satisfied because the algorithm does not ensure that every process delivering a message was the sender of that message, leading to potential issues with replay attacks or data integrity in distributed systems. 
+
+Reason: Incorrect agreement may lead to undesired state transitions and incorrect operation of applications relying on the reliable broadcast protocol. Also, no creation property could be violated through replay attacks.

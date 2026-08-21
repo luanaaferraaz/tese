@@ -1,0 +1,12 @@
+{"run_id": "202d6cda-3faa-4cdc-873d-89122f345c5f", "type": "start", "content": "Processing"}
+
+{"run_id": "202d6cda-3faa-4cdc-873d-89122f345c5f", "type": "token", "content": "R"}
+
+{"run_id": "202d6cda-3faa-4cdc-873d-89122f345c5f", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Delivery threshold of 1 type1 message allows single Byzantine sender to"}
+
+{"run_id": "202d6cda-3faa-4cdc-873d-89122f345c5f", "type": "token", "content": " cause delivery at one correct process only.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "202d6cda-3faa-4cdc-873d-89122f345c5f", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Delivery threshold of 1 type1 message allows single Byzantine sender to cause delivery at one correct process only.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "202d6cda-3faa-4cdc-873d-89122f345c5f", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "202d6cda-3faa-4cdc-873d-89122f345c5f", "type": "done", "content": "202d6cda-3faa-4cdc-873d-89122f345c5f", "messageId": "cms24fvz51tjhke01wf77glv6"}
+

@@ -1,0 +1,14 @@
+{"run_id": "55143e05-eeaf-47b8-b14a-821f7c4c3861", "type": "start", "content": "Processing"}
+
+{"run_id": "55143e05-eeaf-47b8-b14a-821f7c4c3861", "type": "token", "content": "R"}
+
+{"run_id": "55143e05-eeaf-47b8-b14a-821f7c4c3861", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: With n=4, f=1, correct delivering"}
+
+{"run_id": "55143e05-eeaf-47b8-b14a-821f7c4c3861", "type": "token", "content": " via 2 type1 (1 Byzantine + 1 correct) may leave other correct undelivered.\nRB-"}
+
+{"run_id": "55143e05-eeaf-47b8-b14a-821f7c4c3861", "type": "token", "content": "Integrity - [satisfied]"}
+
+{"run_id": "55143e05-eeaf-47b8-b14a-821f7c4c3861", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: With n=4, f=1, correct delivering via 2 type1 (1 Byzantine + 1 correct) may leave other correct undelivered.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "55143e05-eeaf-47b8-b14a-821f7c4c3861", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "55143e05-eeaf-47b8-b14a-821f7c4c3861", "type": "done", "content": "55143e05-eeaf-47b8-b14a-821f7c4c3861", "messageId": "cms3anip1287xke01ww23s5y2"}
+

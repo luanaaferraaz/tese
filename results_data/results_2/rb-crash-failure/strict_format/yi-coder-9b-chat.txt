@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The RB-Validity is satisfied because if a correct broadcaster broadcasts m, then all correct processes eventually deliver m. The algorithm ensures that when a correct process sends the message to itself and delivers it, other correct processes receive the forwarded messages and subsequently deliver them as well.
+
+RB-Agreement - [satisfied]
+The RB-Agreement is satisfied because if one correct process delivers m, then all correct processes eventually deliver m. The algorithm guarantees that once a correct process broadcasts m, it will be delivered, and any other correct processes that receive the forwarded message will also deliver it.
+
+RB-Integrity - [satisfied]
+The RB-Integrity is satisfied because a correct process delivers m at most once and only if m was broadcast. The algorithm includes a set to track the delivered messages, ensuring each message is only delivered once regardless of how many times it may be received or forwarded. The integrity of the message comes from its origin as it only gets forwarded after it has been received by the broadcaster itself.

@@ -1,0 +1,114 @@
+Vaz, F., Matos, D., Pardal, M. and Correia, M. "Synthesis of Fault-Tolerant Reliable Broadcast Algorithms With Reinforcement Learning". IEEE Access.
+ALGORITHM TEMPLATE: No-Failure RBcast Algorithm
+1) IDENTIFICATION
+
+Algorithm name: Most Efficient RBcast Algorithm for No-Failure Experiment
+
+Problem type: Reliable Broadcast
+
+Variant tags:
+
+Fault model: No failures
+Timing model: Asynchronous
+
+2) SYSTEM MODEL
+
+Processes: A static set Π of n processes.
+
+Max faulty: f = 0.
+
+Resilience condition: No faulty processes are assumed.
+
+Channels / communication assumptions: Reliable message-passing channels. Messages are not lost, duplicated, or created.
+
+Timing assumptions: Asynchronous; no timing bounds are needed.
+
+Additional assumptions: The broadcaster invokes RB-Broadcast(m) once. Message uniqueness is assumed.
+
+3) CORRECTNESS PROPERTIES
+
+RB-Validity: If a correct process broadcasts m, then correct processes eventually deliver m.
+
+RB-Agreement: If one correct process delivers m, then all correct processes eventually deliver m.
+
+RB-Integrity: A correct process delivers m at most once, and only if m was broadcast.
+
+4) INTERFACE
+
+External operations: RB-Broadcast(m), invoked by the broadcaster.
+
+Output events: DELIVER(m), fired at most once per message.
+
+5) ROLES
+
+Broadcaster: Starts the algorithm by sending the message.
+
+Receivers: Receive the message and deliver it.
+
+6) LOCAL STATE
+
+Constants:
+
+n: total number of processes.
+f = 0: no faulty processes.
+
+Variables:
+
+delivered: set of messages already delivered, initially empty.
+sent_type0: whether this process already sent <type0, m>, initially false.
+
+7) MESSAGE TYPES
+
+<type0, m>: the original broadcast message.
+
+Validation rules:
+
+Count each message once.
+Do not deliver the same message twice.
+
+8) INITIALIZATION
+
+delivered ← ∅
+sent_type0 ← false
+
+9) PROTOCOL PSEUDOCODE
+
+A) On external invocation:
+
+upon RB-Broadcast(m):
+    if not already sent <type0, m>:
+        send <type0, m> to all processes
+    stop
+
+B) On message receive:
+
+upon receive(<t, m>):
+    if m not in delivered:
+        delivered ← delivered ∪ {m}
+        deliver(m)
+    stop
+10) DECISION / DELIVERY RULE
+
+Deliver m when any message containing m is received.
+
+After delivery, add m to delivered.
+
+11) QUORUM / KEY STRUCTURAL ARGUMENT
+
+No quorum is needed. Since there are no failures and channels are reliable, the message sent by the broadcaster reaches everyone.
+
+12) INVARIANTS
+
+I1 — No duplicate delivery: A process delivers m at most once.
+
+I2 — Direct origin: A delivered message must have been received through the broadcast communication.
+
+I3 — All receive: Since no process fails, all correct processes receive the broadcaster’s message.
+
+13) CORRECTNESS ARGUMENT SKELETON
+
+RB-Validity: The broadcaster sends <type0, m> to all. Reliable channels ensure all processes receive it and deliver it.
+
+RB-Agreement: If one process delivers m, then the message was sent to all, so all processes eventually receive and deliver it.
+
+RB-Integrity: The delivered set prevents duplicate delivery. Since messages are not created by the channel, delivered messages come from a broadcast.

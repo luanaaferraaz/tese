@@ -1,0 +1,4 @@
+Termination - Satisfied
+Validity - Non satisfied: The algorithm does not handle scenarios where s is faulty and broadcasts a message.
+Agreement - Satisfied: If a process delivers m, it means that all correct processes have delivered m at least once in the past rounds. This implies that agreement about the value of m is maintained even if some other process has received m later.
+Integrity - Satisfied: The algorithm ensures that every correct process delivers at most one message and the sender s never broadcasts SF token. If a process p delivers m, it means that in each round r (1 to f+1), all processes have delivered m in some previous round. This implies that no other value is being propagated by process p before reaching round f+1.

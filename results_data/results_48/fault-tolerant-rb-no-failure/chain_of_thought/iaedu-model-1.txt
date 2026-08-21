@@ -1,0 +1,6 @@
+{"run_id": "92c88333-0dfc-4765-8813-a2497a81e7c5", "type": "start", "content": "Processing"}
+
+{"run_id": "92c88333-0dfc-4765-8813-a2497a81e7c5", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "92c88333-0dfc-4765-8813-a2497a81e7c5", "type": "done", "content": "92c88333-0dfc-4765-8813-a2497a81e7c5", "messageId": "None", "token_pct_used": 102.2}
+

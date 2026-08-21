@@ -1,0 +1,14 @@
+{"run_id": "47f23e4d-2956-4c92-b810-16b68a9efbb6", "type": "start", "content": "Processing"}
+
+{"run_id": "47f23e4d-2956-4c92-b810-16b68a9efbb6", "type": "token", "content": "R"}
+
+{"run_id": "47f23e4d-2956-4c92-b810-16b68a9efbb6", "type": "token", "content": "B-Validity - [satisfied] (confidence: 10/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes after delivering to"}
+
+{"run_id": "47f23e4d-2956-4c92-b810-16b68a9efbb6", "type": "token", "content": " itself but before type1 relay reaches others, only it delivers. (confidence"}
+
+{"run_id": "47f23e4d-2956-4c92-b810-16b68a9efbb6", "type": "token", "content": ": 9/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "47f23e4d-2956-4c92-b810-16b68a9efbb6", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 10/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes after delivering to itself but before type1 relay reaches others, only it delivers. (confidence: 9/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "47f23e4d-2956-4c92-b810-16b68a9efbb6", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "47f23e4d-2956-4c92-b810-16b68a9efbb6", "type": "done", "content": "47f23e4d-2956-4c92-b810-16b68a9efbb6", "messageId": "cmrnkt5s40gcvke01onbff3dw"}
+

@@ -1,0 +1,9 @@
+1. Validity - [satisfied]
+A correct process p broadcasting a value v ensures that all other correct processes accept the same value v.
+
+2. Agreement - [satisfied]
+Multiple correct processes q and r accepting values v and u respectively ensure v = u as defined by the algorithm.
+
+3. No duplication - [non satisfied]: The broadcast algorithm doesn't provide a guarantee against duplicate messages.
+
+4. No creation - [non satisfied]: The protocol doesn't enforce that only previously sent messages are delivered, so it can "create" new values for delivery after initial broadcast.

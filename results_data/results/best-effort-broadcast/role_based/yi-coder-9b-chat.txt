@@ -1,0 +1,8 @@
+Correctness Properties
+
+1. Validity (Property V): If a correct process broadcasts a message m, then every other correct process eventually delivers the message m.
+    - Satisfied: This property follows from the definition of the best-effort broadcast as it guarantees that if any node broadcasts a message, all other nodes will receive this message at some point in time even under best effort conditions. It relies on perfect point-to-point links which ensures reliable delivery.
+2. No duplication (Property ND): A message m is not delivered more than once by a process p.
+    - Satisfied: This property holds because the algorithm does not allow for the duplication of messages at any level in the system, as it relies only on unique and non-duplicated messages coming from perfect point-to-point links. The pseudocode ensures that each message is delivered once and only once per process by virtue of its structure where each process delivers a message after it has been received.
+3. No creation (Property NC): If a process p delivers a message m with sender s, then the message was previously broadcasted by process s.
+    - Satisfied: This property is also satisfied by the pseudocode given as any valid message delivered must have been previously broadcast and the algorithm ensures this. It relies on the perfect links assumptions which prevents creation of messages not originally sent or duplicated from other processes.

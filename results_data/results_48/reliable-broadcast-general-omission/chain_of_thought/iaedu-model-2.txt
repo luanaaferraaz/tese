@@ -1,0 +1,6 @@
+{"run_id": "19c6c9ba-3273-4f1e-9816-c04bc88ceea9", "type": "start", "content": "Processing"}
+
+{"run_id": "19c6c9ba-3273-4f1e-9816-c04bc88ceea9", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "19c6c9ba-3273-4f1e-9816-c04bc88ceea9", "type": "done", "content": "19c6c9ba-3273-4f1e-9816-c04bc88ceea9", "messageId": "None", "token_pct_used": 106.4}
+

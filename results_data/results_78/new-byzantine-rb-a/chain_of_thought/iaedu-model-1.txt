@@ -1,0 +1,162 @@
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "start", "content": "Processing"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": ""}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "RB"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "-"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "Validity"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " -"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " ["}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "non"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " satisfied"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "]:"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " For"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " n"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "="}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "4"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": ","}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " some"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " correct"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " receivers"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " get"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " only"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " one"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " type"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "1"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " and"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " never"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " deliver"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": ".\n"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "RB"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "-"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "Agreement"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " -"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " ["}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "non"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " satisfied"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "]:"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " A"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " process"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " may"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " deliver"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " from"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " two"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " rel"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "ayers"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " while"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " those"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " rel"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "ayers"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " receive"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " only"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " one"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " type"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "1"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": ".\n"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "RB"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "-"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "Integrity"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " -"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " ["}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "non"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " satisfied"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "]:"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " Fake"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " type"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "0"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " messages"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " can"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " trigger"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " two"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " correct"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " type"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "1"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " messages"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": ","}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " causing"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " delivery"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " without"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": " broadcast"}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": "."}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "token", "content": ""}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: For n=4, some correct receivers get only one type1 and never deliver.\nRB-Agreement - [non satisfied]: A process may deliver from two relayers while those relayers receive only one type1.\nRB-Integrity - [non satisfied]: Fake type0 messages can trigger two correct type1 messages, causing delivery without broadcast.", "tool_calls": [], "tool_call_id": null, "run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "response_metadata": {"model_provider": "openai", "id": "resp_07a174196d9b65bf006a664e8d6bdc81978a24e17a9619fcba", "created_at": 1785089677.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "type": "done", "content": "dbf9d86b-d904-4af1-8ede-fbdda4e7ccc7", "messageId": "cms24bbfw1tdxke01r704w3hn"}
+

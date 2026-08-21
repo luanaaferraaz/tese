@@ -1,0 +1,14 @@
+{"run_id": "fb8f1e94-1cc2-4ac3-a6b7-c84466befd2d", "type": "start", "content": "Processing"}
+
+{"run_id": "fb8f1e94-1cc2-4ac3-a6b7-c84466befd2d", "type": "token", "content": "R"}
+
+{"run_id": "fb8f1e94-1cc2-4ac3-a6b7-c84466befd2d", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Broadcaster sends to all, but if it fails m"}
+
+{"run_id": "fb8f1e94-1cc2-4ac3-a6b7-c84466befd2d", "type": "token", "content": "id-send agreement breaks; here no failures assumed, still single-send"}
+
+{"run_id": "fb8f1e94-1cc2-4ac3-a6b7-c84466befd2d", "type": "token", "content": " suffices.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "fb8f1e94-1cc2-4ac3-a6b7-c84466befd2d", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Broadcaster sends to all, but if it fails mid-send agreement breaks; here no failures assumed, still single-send suffices.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "fb8f1e94-1cc2-4ac3-a6b7-c84466befd2d", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "fb8f1e94-1cc2-4ac3-a6b7-c84466befd2d", "type": "done", "content": "fb8f1e94-1cc2-4ac3-a6b7-c84466befd2d", "messageId": "cmr90u9qx5dx8ke014rnxia6m"}
+

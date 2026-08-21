@@ -1,0 +1,16 @@
+{"run_id": "3bb85086-938d-4588-89a6-f621610f0654", "type": "start", "content": "Processing"}
+
+{"run_id": "3bb85086-938d-4588-89a6-f621610f0654", "type": "token", "content": "R"}
+
+{"run_id": "3bb85086-938d-4588-89a6-f621610f0654", "type": "token", "content": "B-Validity - [non satisfied]: With n=4, f=1, a correct broadcaster needs 2 type1 messages;"}
+
+{"run_id": "3bb85086-938d-4588-89a6-f621610f0654", "type": "token", "content": " only 2 correct receivers may send, insufficient if one withholds.\nRB-"}
+
+{"run_id": "3bb85086-938d-4588-89a6-f621610f0654", "type": "token", "content": "Agreement - [non satisfied]: A correct process delivering via 2 type1 (one Byzantine) may not"}
+
+{"run_id": "3bb85086-938d-4588-89a6-f621610f0654", "type": "token", "content": " trigger others; Byzantine sends type1 to only one.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "3bb85086-938d-4588-89a6-f621610f0654", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: With n=4, f=1, a correct broadcaster needs 2 type1 messages; only 2 correct receivers may send, insufficient if one withholds.\nRB-Agreement - [non satisfied]: A correct process delivering via 2 type1 (one Byzantine) may not trigger others; Byzantine sends type1 to only one.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "3bb85086-938d-4588-89a6-f621610f0654", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "3bb85086-938d-4588-89a6-f621610f0654", "type": "done", "content": "3bb85086-938d-4588-89a6-f621610f0654", "messageId": "cms3an2sf287hke014yd28pb9"}
+

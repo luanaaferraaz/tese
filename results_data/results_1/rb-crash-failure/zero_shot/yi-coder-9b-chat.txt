@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is satisfied because the protocol ensures that if a correct process broadcasts m, then all correct processes eventually deliver it. This is guaranteed by the I3 invariant which states "If a correct process receives m, then all non-crashed neighbours eventually receive a forwarded copy". And as a result of this, all correct processes will receive and hence eventually deliver the message m.
+
+RB-Agreement - [satisfied]
+This property is satisfied because if one correct process delivers m, it must have received it from another correct process and forwarded it to its neighbours, causing other correct processes to eventually deliver it as well. This ensures agreement among all correct processes when they eventually receive the message m.
+
+RB-Integrity - [satisfied]
+This property is satisfied because a process does not deliver m more than once and only if m was broadcasted. The protocol prevents duplicate deliveries by maintaining a 'delivered' set of messages, and the condition that a message be forwarded after it is received ensures that only valid messages are delivered.

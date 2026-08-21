@@ -1,0 +1,6 @@
+{"run_id": "c90b9e9c-be75-4f57-9222-d6c0066056e0", "type": "start", "content": "Processing"}
+
+{"run_id": "c90b9e9c-be75-4f57-9222-d6c0066056e0", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "c90b9e9c-be75-4f57-9222-d6c0066056e0", "type": "done", "content": "c90b9e9c-be75-4f57-9222-d6c0066056e0", "messageId": "None", "token_pct_used": 99.2}
+

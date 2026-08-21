@@ -1,0 +1,6 @@
+{"run_id": "26606bc3-e02a-4656-abba-aeb42a5404ce", "type": "start", "content": "Processing"}
+
+{"run_id": "26606bc3-e02a-4656-abba-aeb42a5404ce", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "26606bc3-e02a-4656-abba-aeb42a5404ce", "type": "done", "content": "26606bc3-e02a-4656-abba-aeb42a5404ce", "messageId": "None", "token_pct_used": 102.2}
+

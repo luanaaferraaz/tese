@@ -1,0 +1,6 @@
+{"run_id": "aea4c538-4622-46c9-99b6-457afb2b12aa", "type": "start", "content": "Processing"}
+
+{"run_id": "aea4c538-4622-46c9-99b6-457afb2b12aa", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "aea4c538-4622-46c9-99b6-457afb2b12aa", "type": "done", "content": "aea4c538-4622-46c9-99b6-457afb2b12aa", "messageId": "None", "token_pct_used": 106.4}
+

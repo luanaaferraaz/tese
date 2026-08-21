@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+A correct broadcaster broadcasts m, all correct processes eventually deliver m.
+
+RB-Agreement - [satisfied]
+If one correct process delivers m, all correct processes eventually deliver m.
+
+RB-Integrity - [non satisfied]: A single Byzantine process cannot create enough support alone.

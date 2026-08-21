@@ -1,0 +1,3 @@
+RB-Validity - [non satisfied]: If broadcaster is Byzantine, it may not send <type0, m>, preventing correct processes from delivering m.
+RB-Agreement - [satisfied]
+RB-Integrity - [satisfied]

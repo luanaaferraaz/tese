@@ -1,0 +1,6 @@
+{"run_id": "cef45221-3fff-4c3e-aeb3-530b294d0ac3", "type": "start", "content": "Processing"}
+
+{"run_id": "cef45221-3fff-4c3e-aeb3-530b294d0ac3", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "cef45221-3fff-4c3e-aeb3-530b294d0ac3", "type": "done", "content": "cef45221-3fff-4c3e-aeb3-530b294d0ac3", "messageId": "None", "token_pct_used": 106.4}
+

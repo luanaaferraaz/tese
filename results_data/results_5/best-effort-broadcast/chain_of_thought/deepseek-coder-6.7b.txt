@@ -1,0 +1,8 @@
+Satisfied:
+1. Validity - The algorithm ensures that every correct process eventually delivers a message, which means all processes will receive the same messages in the order they are broadcasted by any of them.
+2. No duplication - Each message is delivered to each process at most once. This is ensured through the use of perfect point-to-point links and the algorithm's ability to filter out duplicate deliveries.
+3. No creation - The algorithm ensures that if a process delivers a message, it was previously broadcast by the sender. It does not create new messages or alter existing ones. 
+
+Non satisfied:
+4. Integrity - The property "Integrity" stated in the invariants is unclear. It mentions 'm delivered', but doesn't mention which process (s) sent the message, making it difficult to understand what exactly this property checks for.
+5. No creation - Given that perfect point-to-point links are used, any new messages created by a process would also follow these assumptions of no duplication or alteration, so it does not contradict the algorithm's properties. However, if we consider processes creating their own messages and sending them to be outside the scope of this algorithm, then "No creation" can be considered satisfied under those circumstances.

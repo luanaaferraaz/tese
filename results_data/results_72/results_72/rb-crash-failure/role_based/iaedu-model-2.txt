@@ -1,0 +1,14 @@
+{"run_id": "10c22dcb-300e-4e6a-94be-9eb2eeedd773", "type": "start", "content": "Processing"}
+
+{"run_id": "10c22dcb-300e-4e6a-94be-9eb2eeedd773", "type": "token", "content": "R"}
+
+{"run_id": "10c22dcb-300e-4e6a-94be-9eb2eeedd773", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes"}
+
+{"run_id": "10c22dcb-300e-4e6a-94be-9eb2eeedd773", "type": "token", "content": " after sending type0 to itself, no correct process delivers m. (confidence: 8/10)\nRB-Integrity - [satisf"}
+
+{"run_id": "10c22dcb-300e-4e6a-94be-9eb2eeedd773", "type": "token", "content": "ied] (confidence: 9/10)"}
+
+{"run_id": "10c22dcb-300e-4e6a-94be-9eb2eeedd773", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself, no correct process delivers m. (confidence: 8/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "10c22dcb-300e-4e6a-94be-9eb2eeedd773", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "10c22dcb-300e-4e6a-94be-9eb2eeedd773", "type": "done", "content": "10c22dcb-300e-4e6a-94be-9eb2eeedd773", "messageId": "cmrivgdn933l8ke019azv2mha"}
+

@@ -1,0 +1,6 @@
+{"run_id": "6024fe61-50b6-46cf-ad85-6e37d44b2254", "type": "start", "content": "Processing"}
+
+{"run_id": "6024fe61-50b6-46cf-ad85-6e37d44b2254", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "6024fe61-50b6-46cf-ad85-6e37d44b2254", "type": "done", "content": "6024fe61-50b6-46cf-ad85-6e37d44b2254", "messageId": "None", "token_pct_used": 102.2}
+

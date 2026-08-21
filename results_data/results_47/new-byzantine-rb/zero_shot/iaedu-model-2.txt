@@ -1,0 +1,6 @@
+{"run_id": "40008e4e-25e7-470c-9914-daf38c34f8e8", "type": "start", "content": "Processing"}
+
+{"run_id": "40008e4e-25e7-470c-9914-daf38c34f8e8", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "40008e4e-25e7-470c-9914-daf38c34f8e8", "type": "done", "content": "40008e4e-25e7-470c-9914-daf38c34f8e8", "messageId": "None", "token_pct_used": 106.4}
+

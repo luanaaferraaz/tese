@@ -1,0 +1,7 @@
+Assessment of the generated algorithm for the Byzantine-tolerant reliable broadcast problem:
+
+RB-Validity - [satisfied]. The correct broadcaster broadcasts m and eventually, each correct process receives a <type1, m> message which is delivered.
+
+RB-Agreement - [non satisfied]: There's no guarantee of agreement if a malicious process corrupts the system.
+
+RB-Integrity - [satisfied]. A process delivers only once because of the delivered set and since f + 1 support is required, a Byzantine process alone cannot force delivery.

@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+In this algorithm, any correct broadcaster will eventually deliver the message because they have sent it to their neighbours. This means all correct processes will eventually receive f + 1 (2 in this case) <type1, m> messages and thus deliver the message.
+
+RB-Agreement - [satisfied]
+If one process delivers a message, that message must be delivered by every other process because it was supported by at least f + 1 correct processes. The support rule ensures that all correct processes propagate this support.
+
+RB-Integrity - [satisfied]
+Each process only delivers a message once. This is enforced by the algorithm not allowing a process to send <type1, m> more than once and by adding a message to the delivered set after it has been delivered. No process can override these conditions because they are based on the local state of each process.

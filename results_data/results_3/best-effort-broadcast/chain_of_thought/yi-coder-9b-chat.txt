@@ -1,0 +1,3 @@
+1) Validity - [satisfied]
+2) No duplication - [satisfied]
+3) No creation - [non satisfied]: The algorithm does not ensure that a message is only created once. It relies on the assumption that each process will broadcast unique messages, but there's no mechanism in place to prevent or detect duplicate broadcasts from a single process.

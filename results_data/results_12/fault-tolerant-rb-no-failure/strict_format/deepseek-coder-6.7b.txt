@@ -1,0 +1,10 @@
+Here are the evaluations for each of the RB-Validity, RB-Agreement and RB-Integrity properties:
+
+RB-Validity: The broadcaster sends <type0, m> to all. Reliable channels ensure all processes receive it and deliver it. 
+- Satisfied: This is ensured by the pseudo code in section 9 of the algorithm. When the broadcaster invokes RB-Broadcast(m), it sends a message containing <type0, m> to all processes if it has not already done so. Each process receives this message and delivers it upon receipt.
+
+RB-Agreement: If one correct process delivers m, then all correct processes eventually receive and deliver it. 
+- Satisfied: This is ensured by the pseudo code in section 9 of the algorithm. When a correct process delivers m, it does so through the reliable message-passing channels to ensure that all other correct processes eventually receive and deliver it.
+
+RB-Integrity: A correct process delivers m at most once, and only if m was broadcast. 
+- Satisfied: This is ensured by the pseudo code in section 10 of the algorithm. The delivered set prevents duplicate delivery because a message can only be added to the delivered set if it has not been there before. Therefore, each message that is delivered at most once and only if it was broadcast.

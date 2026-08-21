@@ -1,0 +1,6 @@
+{"run_id": "4307449e-0bbf-4717-bb35-1654198bbc19", "type": "start", "content": "Processing"}
+
+{"run_id": "4307449e-0bbf-4717-bb35-1654198bbc19", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "4307449e-0bbf-4717-bb35-1654198bbc19", "type": "done", "content": "4307449e-0bbf-4717-bb35-1654198bbc19", "messageId": "None", "token_pct_used": 102.2}
+

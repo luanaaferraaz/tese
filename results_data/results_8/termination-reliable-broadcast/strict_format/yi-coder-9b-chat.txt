@@ -1,0 +1,10 @@
+Termination - [satisfied]
+This is guaranteed by the synchronous model where rounds end after a fixed amount of time. Each process delivers exactly one message at the end of round f+1.
+
+Validity - [non satisfied]: The protocol does not ensure validity if s is faulty.
+
+Agreement - [satisfied]
+All processes agree on the value m (or SF) delivered due to the pigeonhole principle and the fact that a correct process delivers only once.
+
+Integrity - [satisfied]
+Each process delivers exactly one message, and the value must have been broadcast by s according to the protocol.

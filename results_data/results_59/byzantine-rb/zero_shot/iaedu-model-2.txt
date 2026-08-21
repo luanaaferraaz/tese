@@ -1,0 +1,10 @@
+{"run_id": "6e17a2ad-8676-4300-86ec-31db5adaa92e", "type": "start", "content": "Processing"}
+
+{"run_id": "6e17a2ad-8676-4300-86ec-31db5adaa92e", "type": "token", "content": "R"}
+
+{"run_id": "6e17a2ad-8676-4300-86ec-31db5adaa92e", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]"}
+
+{"run_id": "6e17a2ad-8676-4300-86ec-31db5adaa92e", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "6e17a2ad-8676-4300-86ec-31db5adaa92e", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "6e17a2ad-8676-4300-86ec-31db5adaa92e", "type": "done", "content": "6e17a2ad-8676-4300-86ec-31db5adaa92e", "messageId": "cmr41p30w3d33ke01pmc5ir2j", "token_pct_used": 73.1}
+

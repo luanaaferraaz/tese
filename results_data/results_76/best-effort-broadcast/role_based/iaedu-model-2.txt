@@ -1,0 +1,14 @@
+{"run_id": "b6befb2b-ee16-4686-a4db-657b8e9de747", "type": "start", "content": "Processing"}
+
+{"run_id": "b6befb2b-ee16-4686-a4db-657b8e9de747", "type": "token", "content": "Validity - [satisfied"}
+
+{"run_id": "b6befb2b-ee16-4686-a4db-657b8e9de747", "type": "token", "content": "] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm lacks delivery t"}
+
+{"run_id": "b6befb2b-ee16-4686-a4db-657b8e9de747", "type": "token", "content": "racking; relies solely on PL no-duplication, which holds per sender-"}
+
+{"run_id": "b6befb2b-ee16-4686-a4db-657b8e9de747", "type": "token", "content": "message pair. (confidence: 6/10)\nNo creation - [satisfied] (confidence: 10/10)"}
+
+{"run_id": "b6befb2b-ee16-4686-a4db-657b8e9de747", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm lacks delivery tracking; relies solely on PL no-duplication, which holds per sender-message pair. (confidence: 6/10)\nNo creation - [satisfied] (confidence: 10/10)", "tool_calls": [], "tool_call_id": null, "run_id": "b6befb2b-ee16-4686-a4db-657b8e9de747", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "b6befb2b-ee16-4686-a4db-657b8e9de747", "type": "done", "content": "b6befb2b-ee16-4686-a4db-657b8e9de747", "messageId": "cmruez0mm358uke019g15tcz8"}
+

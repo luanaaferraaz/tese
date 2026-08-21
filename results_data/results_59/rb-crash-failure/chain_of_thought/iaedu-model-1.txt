@@ -1,0 +1,6 @@
+{"run_id": "bb65ae0b-5c51-485f-bc08-d21d820e9239", "type": "start", "content": "Processing"}
+
+{"run_id": "bb65ae0b-5c51-485f-bc08-d21d820e9239", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "bb65ae0b-5c51-485f-bc08-d21d820e9239", "type": "done", "content": "bb65ae0b-5c51-485f-bc08-d21d820e9239", "messageId": "None", "token_pct_used": 99.2}
+

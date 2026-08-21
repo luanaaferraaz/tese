@@ -1,0 +1,3 @@
+1. Validity - [satisfied]
+2. No duplication - [non satisfied]: The algorithm does not have a mechanism for ensuring no duplication of delivered messages. 
+3. No creation - [satisfied]

@@ -1,0 +1,5 @@
+Termination - [satisfied]
+The protocol will terminate after round f+1. Each process either contains m or SF in its received_msgs set by the end of this round, and delivers it as final output. 
+
+Determinism - [satisfied]
+The protocol has a deterministic execution structure that does not deviate based on arbitrary choices or probabilistic events. The same input will always result in the same output for each process under the same conditions.

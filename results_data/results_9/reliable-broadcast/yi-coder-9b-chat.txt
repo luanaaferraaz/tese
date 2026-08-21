@@ -1,0 +1,26 @@
+1. Safety:
+   - The property requires that either all correct processes deliver the same message or none do.
+   - This algorithm satisfies this property because it ensures that each correct process delivers at most one message and that if a correct process delivers m, no other correct process can deliver a different message m' != m.
+   - Assumptions needed: The network must be reliable, authenticated, and the fault model should be Byzantine.
+   - Edge case: If there are more than f faulty processes (including the sender), any message sent will not be delivered to all correct nodes or even any correct node resulting in safety violation.
+
+2. Liveness:
+   - The property requires that if the sender is correct, all correct processes eventually deliver the message.
+   - This algorithm satisfies this property because it ensures that every correct process can collect 2f + 1 READY messages and deliver the message eventually, once the sender is correct.
+   - Assumptions needed: There should be at least N >= 3f + 1 processes for liveness to be guaranteed.
+   - Edge case: If there are more than f faulty processes (including the sender), the sender may not broadcast any messages and none of them will be delivered resulting in liveness violation.
+
+3. Message complexity:
+   - The property requires that each process broadcasts at most O(N^2) messages.
+   - This algorithm has a message complexity of O(N^2) as it needs to send a SEND, ECHO and possibly READY for every node in the network.
+   - Assumptions needed: None.
+
+4. Round / time complexity:
+   - The property requires that each process needs at most constant expected rounds to deliver a message.
+   - This algorithm has a constant expected round complexity because it only needs one round (constant number of rounds) for the sender to broadcast and all processes to collect their READY messages before delivering.
+   - Assumptions needed: Asynchronous model with possible timeouts.
+
+5. Message size:
+   - The property requires that the message size is O(|m|) where m is the input message.
+   - This algorithm satisfies this property because it broadcasts ECHO and READY messages of size |m| plus sender identifier, which is a constant size overhead over the message itself.
+   - Assumptions needed: None.

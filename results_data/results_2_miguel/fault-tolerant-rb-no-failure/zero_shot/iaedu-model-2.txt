@@ -1,0 +1,14 @@
+{"run_id": "d63cf36f-b99c-436f-ab2e-37951f1067fc", "type": "start", "content": "Processing"}
+
+{"run_id": "d63cf36f-b99c-436f-ab2e-37951f1067fc", "type": "token", "content": "R"}
+
+{"run_id": "d63cf36f-b99c-436f-ab2e-37951f1067fc", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Broadcaster sends to all then stops; if it"}
+
+{"run_id": "d63cf36f-b99c-436f-ab2e-37951f1067fc", "type": "token", "content": " delivers before sending completes, others may never receive m.\nRB-Integr"}
+
+{"run_id": "d63cf36f-b99c-436f-ab2e-37951f1067fc", "type": "token", "content": "ity - [satisfied]"}
+
+{"run_id": "d63cf36f-b99c-436f-ab2e-37951f1067fc", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Broadcaster sends to all then stops; if it delivers before sending completes, others may never receive m.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "d63cf36f-b99c-436f-ab2e-37951f1067fc", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "d63cf36f-b99c-436f-ab2e-37951f1067fc", "type": "done", "content": "d63cf36f-b99c-436f-ab2e-37951f1067fc", "messageId": "cmraeidcr61rrke016kr0haf0"}
+

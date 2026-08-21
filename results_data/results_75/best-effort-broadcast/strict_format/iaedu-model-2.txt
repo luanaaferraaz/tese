@@ -1,0 +1,14 @@
+{"run_id": "2f7286e0-f295-4185-9024-27d1d223891d", "type": "start", "content": "Processing"}
+
+{"run_id": "2f7286e0-f295-4185-9024-27d1d223891d", "type": "token", "content": "Validity - [satisfied"}
+
+{"run_id": "2f7286e0-f295-4185-9024-27d1d223891d", "type": "token", "content": "] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm does not track del"}
+
+{"run_id": "2f7286e0-f295-4185-9024-27d1d223891d", "type": "token", "content": "ivered messages; relies on external uniqueness assumption, not enforced. (confidence: 6/10)\nNo creation - [satisfied]"}
+
+{"run_id": "2f7286e0-f295-4185-9024-27d1d223891d", "type": "token", "content": " (confidence: 9/10)"}
+
+{"run_id": "2f7286e0-f295-4185-9024-27d1d223891d", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm does not track delivered messages; relies on external uniqueness assumption, not enforced. (confidence: 6/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "2f7286e0-f295-4185-9024-27d1d223891d", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "2f7286e0-f295-4185-9024-27d1d223891d", "type": "done", "content": "2f7286e0-f295-4185-9024-27d1d223891d", "messageId": "cmrnkebtd0fohke013xm0ph03"}
+

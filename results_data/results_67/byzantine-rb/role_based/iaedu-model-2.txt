@@ -1,0 +1,12 @@
+{"run_id": "bb8d14f4-c687-4115-919c-c5e41c03f19e", "type": "start", "content": "Processing"}
+
+{"run_id": "bb8d14f4-c687-4115-919c-c5e41c03f19e", "type": "token", "content": "R"}
+
+{"run_id": "bb8d14f4-c687-4115-919c-c5e41c03f19e", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 too low; two dis"}
+
+{"run_id": "bb8d14f4-c687-4115-919c-c5e41c03f19e", "type": "token", "content": "joint quorums can deliver different messages under Byzantine equivocation.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "bb8d14f4-c687-4115-919c-c5e41c03f19e", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 too low; two disjoint quorums can deliver different messages under Byzantine equivocation.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "bb8d14f4-c687-4115-919c-c5e41c03f19e", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "bb8d14f4-c687-4115-919c-c5e41c03f19e", "type": "done", "content": "bb8d14f4-c687-4115-919c-c5e41c03f19e", "messageId": "cmrc1n2p17k46ke011g9oo117"}
+

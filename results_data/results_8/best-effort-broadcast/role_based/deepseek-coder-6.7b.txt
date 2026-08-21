@@ -1,0 +1,9 @@
+Here are the output requirements for each property according to your algorithm verification description.
+
+1) Validity - [satisfied]
+   This is derived from the fact that all correct processes send a message m and thus they deliver it eventually.
+
+2) No duplication - [satisfied]
+   The delivery of a message m by process p at most once can be guaranteed by checking if an identical delivery event has been previously triggered. If not, then the current delivery is valid and triggers this event.
+
+3) No creation - [non satisfied]: This property requires that every message m broadcast by some process must have been delivered by the same sender before. However, in your pseudocode, there seems to be no mechanism for maintaining a record of which processes have sent each unique message. Therefore, if messages are not being tracked correctly, this requirement could be violated.

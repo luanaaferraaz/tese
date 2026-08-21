@@ -1,0 +1,5 @@
+Correctness properties:
+
+RB-Validity - satisfied
+RB-Agreement - satisfied
+RB-Integrity - satisfied

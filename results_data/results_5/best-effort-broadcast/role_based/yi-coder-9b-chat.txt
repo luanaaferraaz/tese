@@ -1,0 +1,8 @@
+1. Validity - [satisfied]
+   The validity requirement is met because a correct process broadcasts a message m, then every other correct process will eventually receive it thanks to the perfect point-to-point link assumption.
+
+2. No duplication - [satisfied]
+   The no duplication property holds true since if a process delivers a message m with sender s, it was previously broadcast by that same sender.
+
+3. No creation - [satisfied]
+   The no creation property is also satisfied as the system relies on perfect point-to-point links where messages are unique and processes can't create or duplicate them.

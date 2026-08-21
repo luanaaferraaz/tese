@@ -1,0 +1,156 @@
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "start", "content": "Processing"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": ""}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "Validity"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " -"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " ["}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "s"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "atisfied"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "]\n"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "Agreement"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " -"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " ["}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "non"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " satisfied"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "]:"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " Weak"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " E"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "CHO"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " threshold"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " can"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " let"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " conflicting"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " READY"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " qu"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "or"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "ums"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " form"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": ".\n"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "No"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " duplication"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " -"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " ["}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "non"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " satisfied"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "]:"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " Delivery"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " lacks"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " a"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " delivered"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " guard"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": ","}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " so"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " later"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " READY"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " messages"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " can"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " retr"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "igger"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " delivery"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": ".\n"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "No"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " creation"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " -"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " ["}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "non"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " satisfied"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "]:"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " Coun"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "ters"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " are"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " not"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " per"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "-s"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "ender"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": ";"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " Byzantine"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " processes"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " can"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " inflate"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " READY"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " counts"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " for"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " un"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "broadcast"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": " messages"}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": "."}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "token", "content": ""}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nAgreement - [non satisfied]: Weak ECHO threshold can let conflicting READY quorums form.\nNo duplication - [non satisfied]: Delivery lacks a delivered guard, so later READY messages can retrigger delivery.\nNo creation - [non satisfied]: Counters are not per-sender; Byzantine processes can inflate READY counts for unbroadcast messages.", "tool_calls": [], "tool_call_id": null, "run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "response_metadata": {"model_provider": "openai", "id": "resp_0ec4c4c43cf89188006a664d7ffa788194870d379db4135fde", "created_at": 1785089408.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "c32a65bc-1812-401a-95f3-dddae7a4231c", "type": "done", "content": "c32a65bc-1812-401a-95f3-dddae7a4231c", "messageId": "cms246cm71t95ke014c1cbbt2"}
+

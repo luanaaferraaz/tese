@@ -1,0 +1,14 @@
+{"run_id": "2961ad36-1fea-4ae5-aaf8-6c3844b2aca4", "type": "start", "content": "Processing"}
+
+{"run_id": "2961ad36-1fea-4ae5-aaf8-6c3844b2aca4", "type": "token", "content": "R"}
+
+{"run_id": "2961ad36-1fea-4ae5-aaf8-6c3844b2aca4", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Byzantine can"}
+
+{"run_id": "2961ad36-1fea-4ae5-aaf8-6c3844b2aca4", "type": "token", "content": " send <type1,m> to one correct process only, triggering delivery without others delivering. (confidence:"}
+
+{"run_id": "2961ad36-1fea-4ae5-aaf8-6c3844b2aca4", "type": "token", "content": " 9/10)\nRB-Integrity - [satisfied] (confidence: 8/10)"}
+
+{"run_id": "2961ad36-1fea-4ae5-aaf8-6c3844b2aca4", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Byzantine can send <type1,m> to one correct process only, triggering delivery without others delivering. (confidence: 9/10)\nRB-Integrity - [satisfied] (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "2961ad36-1fea-4ae5-aaf8-6c3844b2aca4", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "2961ad36-1fea-4ae5-aaf8-6c3844b2aca4", "type": "done", "content": "2961ad36-1fea-4ae5-aaf8-6c3844b2aca4", "messageId": "cmrufj4ks35vike01p9qjnur4"}
+

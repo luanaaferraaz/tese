@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This is satisfied because the message m is broadcasted once and all correct processes receive it.
+
+RB-Agreement - [satisfied]
+If one process delivers m, then the message was sent to all so all correct processes eventually receive and deliver it.
+
+RB-Integrity - [satisfied]
+The delivered set prevents duplicate delivery. Since messages are not created by the channel, delivered messages come from a broadcast.

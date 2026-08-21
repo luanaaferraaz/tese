@@ -1,0 +1,14 @@
+{"run_id": "35aea219-a40c-419b-bc74-8ecd2a659867", "type": "start", "content": "Processing"}
+
+{"run_id": "35aea219-a40c-419b-bc74-8ecd2a659867", "type": "token", "content": "Validity - [satisfied"}
+
+{"run_id": "35aea219-a40c-419b-bc74-8ecd2a659867", "type": "token", "content": "] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Delivery rule tri"}
+
+{"run_id": "35aea219-a40c-419b-bc74-8ecd2a659867", "type": "token", "content": "ggers on every READY beyond 2f+1; no delivered flag check gu"}
+
+{"run_id": "35aea219-a40c-419b-bc74-8ecd2a659867", "type": "token", "content": "ards deliver(m). (confidence: 8/10)\nNo creation - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "35aea219-a40c-419b-bc74-8ecd2a659867", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Delivery rule triggers on every READY beyond 2f+1; no delivered flag check guards deliver(m). (confidence: 8/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "35aea219-a40c-419b-bc74-8ecd2a659867", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "35aea219-a40c-419b-bc74-8ecd2a659867", "type": "done", "content": "35aea219-a40c-419b-bc74-8ecd2a659867", "messageId": "cmrkbvv2p49qbke01zczeat1l"}
+

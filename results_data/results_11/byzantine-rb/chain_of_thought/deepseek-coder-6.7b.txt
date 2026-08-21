@@ -1,0 +1,5 @@
+RB-Validity - Satisfied: If a correct broadcaster broadcasts m, all correct processes eventually deliver m. This is because each process maintains a set of received messages and checks if it has seen enough <type1, m> messages to decide whether to deliver m. 
+
+RB-Agreement - Non satisfied: If one correct process delivers m, not all correct processes eventually deliver m. In the event where byzantine nodes send inconsistent messages or maliciously block message delivery, it may happen that some processes are slow and don't receive enough support from other processes to decide on delivery.
+
+RB-Integrity - Satisfied: A correct process delivers m at most once, and only if m was broadcast. This is because each process maintains a set of delivered messages which prevents duplicate deliveries. It also ensures that a single Byzantine process can't create enough support to force the delivery of m.

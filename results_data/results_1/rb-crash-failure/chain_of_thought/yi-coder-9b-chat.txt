@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+Reason: If a correct broadcaster broadcasts m, then all correct processes eventually receive <type1, m> and deliver it.
+
+RB-Agreement - [satisfied]
+Reason: If one correct process delivers m, then it receives m and forwards to other processes. Other correct processes eventually receive this message and agree on it.
+
+RB-Integrity - [satisfied]
+Reason: A process delivers each message at most once and only if the message was broadcasted.

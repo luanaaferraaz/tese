@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The algorithm ensures that all correct processes eventually deliver the message by maintaining an invariant where each process tracks the messages it has received, and delivers a message once it receives f + 1 instances of a particular message from different processes. 
+
+RB-Agreement - Satisfied
+This property is satisfied because if any correct process sends m to its neighbours, then at least one other correct process will eventually receive this same message broadcasted by another correct process, thereby maintaining agreement across the system. 
+
+RB-Integrity - Non satisfied
+The reason why RB-Integrity might not be satisfied is due to the fact that if a Byzantine process is sending duplicate messages, it could possibly deliver m multiple times which contradicts the property of delivering once only. However, since f=1 (maximum one faulty node), no more than 2 distinct <type1,m> support messages can be sent for any message m, hence each such message is received by at most one process from a correct set.

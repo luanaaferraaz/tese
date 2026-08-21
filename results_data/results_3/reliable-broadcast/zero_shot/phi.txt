@@ -1,0 +1,67 @@
+ The Reliable Broadcast Algorithm (RB) is an efficient and reliable method of broadcasting data to multiple recipients. It consists of the following components:
+
+1. Identification: The algorithm name, problem type, fault model (C - Crash), timing model (AS - Async), variant tags for channels, and assumptions about communication models are provided.
+2. System Model: This section covers process types, maximum faults allowed, resilience conditions, channel properties, synchronization assumptions, and additional timing assumptions.
+3. Correctness Properties: The validity, no duplication, no creation, and agreement properties of the algorithm are outlined, along with API calls and expected roles for each component.
+4. Interface: This section describes external operations and callbacks for the reliability and deliverability events in the algorithm.
+5. Roles: Each process plays a crucial role in the successful implementation of the algorithm, from initialization to final delivery of messages.
+6. Local State: The constants, variables, and initialization steps are described in this section.
+7. Message Types: This outlines the structure of messages sent through the algorithm.
+8. Validation Rules: These rules ensure that only new and non-duplicated messages are propagated through the algorithm.
+9. Initialization: This section details the initial state of the algorithm before any external invocations.
+10. Protocol Pseudocode: This pseudocode outlines the eager diffusion process for message propagation, with each step described in detail.
+11. Decision Rule: The delivery of messages is based on whether they are received by a correct process for the first time.
+12. Quorum: The algorithm does not require a quorum for reliability as only one correct process needs to receive and forward the message for it to be delivered.
+13. Invariants: This section outlines the properties that must hold true for the algorithm to work correctly.
+14. Complexity: The algorithm has an O(n^2) message complexity, with each process sending messages to n recipients exactly once. It also requires a maximum of 2 "hops" or steps in the relay process.
+15. Analysis: The algorithm's properties are analyzed based on their validity, no duplication, no creation, and agreement. If any property is non-satisfied, the reason for its failure is provided.
+
+Exercise 1:
+Based on the information given in this user manual, explain how reliable broadcast can be achieved even if one of the processes crashes. 
+
+Solution: Reliable Broadcast (RB) guarantees message delivery to all recipients by ensuring that messages are propagated through a relay process until they reach their destination. This process is independent of which processes are initially responsible for sending the message and ensures that the same data can be delivered even if one or more processes fail. The algorithm's fault model, which assumes that processes can only crash (faulty), allows for this reliability without requiring any additional measures such as voting or quorum-based decision making.
+
+Exercise 2:
+What happens to a message once it is delivered in the RB algorithm? 
+
+Solution: Once a message is successfully delivered, it is added to the set of received messages (delivered). This prevents duplication and ensures that each process only receives new and unique messages. The algorithm also guarantees agreement by immediately forwarding the message to all other processes after delivery. Therefore, once a message has been delivered and added to the delivered set, it will not be sent again until the next broadcast.
+
+Exercise 3:
+What are the assumptions made about communication channels in the RB algorithm? 
+
+Solution: The assumption is that communication channels are point-to-point, reliable (eventually delivering), and have a First In First Out (FIFO) not required structure. This means that each message will be delivered in the same order as it was sent, without any errors or delays caused by channel congestion or FIFO limitations.
+
+Exercise 4:
+How does RB guarantee agreement between all correct processes? 
+
+Solution: RB ensures agreement between all correct processes through self-delivery and relay steps. The initial delivery of a message guarantees that it will eventually be delivered to all other processes, even if one or more processes fail. After delivery, the algorithm requires each process to send the same received message back to every other process, ensuring agreement among all processes in the network.
+
+Exercise 5:
+What is the maximum number of faults allowed for a fault model in RB? 
+
+Solution: The fault model assumes that only one of the n processes can fail (crash) at a time. Therefore, it allows for f<n faults to be present without affecting the algorithm's reliability and agreeability properties. This means that even if multiple processes fail simultaneously, the algorithm will still successfully deliver messages to all recipients.
+
+Exercise 6:
+What happens if a message is sent more than once in RB? 
+
+Solution: Once a message has been successfully delivered and added to the set of received messages (delivered), it cannot be sent again until the next broadcast. This prevents duplicate messages from being propagated through the network, ensuring that each process only receives new and unique data. Therefore, sending a message more than once in RB is not possible.
+
+Exercise 7:
+Based on the information provided, can the RB algorithm work with any number of processes? 
+
+Solution: The RB algorithm works well with any number of processes as long as they are all correct and receive the message in the same order. This ensures that messages are reliably delivered to all recipients, regardless of the number of processes involved. However, if the process count becomes too large, the relay process may become too time-consuming, causing delays in message delivery.
+
+Exercise 8:
+How does RB handle concurrent communications and network congestion? 
+
+Solution: The algorithm uses a self-delivery method for reliability, which means that messages are only sent when they reach their destination rather than continuously throughout the network. This prevents concurrency issues and network congestion by avoiding unnecessary communication between processes and ensuring that each message is delivered in its correct order. Additionally, the use of relay steps ensures that all received messages are forwarded to every other process, minimizing the risk of congestion caused by concurrent communications. 
+
+Exercise 9:
+How does RB ensure that messages are delivered accurately? 
+
+Solution: The RB algorithm guarantees accurate message delivery by using a combination of self-delivery and relaying steps. This means that each message is sent from the initial sender to every other process in the network, ensuring that it reaches its intended destination. Additionally, the use of relay steps prevents any lost or corrupted data, as all messages are passed through multiple processes before reaching their final destination.
+
+Exercise 10:
+How can the RB algorithm be applied in real-world scenarios? 
+
+Solution: The RB algorithm can be used in various systems that require efficient and reliable message delivery to multiple recipients. For example, it can be implemented in wireless communication networks to ensure that messages are delivered accurately and without any errors. It can also be used in online collaboration tools where multiple users need to share information with each other in real-time. Furthermore, the algorithm can be applied in disaster management systems to disseminate important information quickly and reliably to different locations. 

@@ -1,0 +1,6 @@
+{"run_id": "b7203f89-dcf0-4424-84ae-331c1f9d381c", "type": "start", "content": "Processing"}
+
+{"run_id": "b7203f89-dcf0-4424-84ae-331c1f9d381c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "b7203f89-dcf0-4424-84ae-331c1f9d381c", "type": "done", "content": "b7203f89-dcf0-4424-84ae-331c1f9d381c", "messageId": "None", "token_pct_used": 106.4}
+

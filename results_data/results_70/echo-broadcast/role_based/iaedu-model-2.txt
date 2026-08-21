@@ -1,0 +1,14 @@
+{"run_id": "1e9c13fc-a198-4b89-987c-e43c8514d7f1", "type": "start", "content": "Processing"}
+
+{"run_id": "1e9c13fc-a198-4b89-987c-e43c8514d7f1", "type": "token", "content": "Validity - ["}
+
+{"run_id": "1e9c13fc-a198-4b89-987c-e43c8514d7f1", "type": "token", "content": "satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: delivery rule l"}
+
+{"run_id": "1e9c13fc-a198-4b89-987c-e43c8514d7f1", "type": "token", "content": "acks guard on `delivered` flag; may deliver multiple times as READY messages arrive ("}
+
+{"run_id": "1e9c13fc-a198-4b89-987c-e43c8514d7f1", "type": "token", "content": "confidence: 9/10)\nNo creation - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "1e9c13fc-a198-4b89-987c-e43c8514d7f1", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: delivery rule lacks guard on `delivered` flag; may deliver multiple times as READY messages arrive (confidence: 9/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "1e9c13fc-a198-4b89-987c-e43c8514d7f1", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "1e9c13fc-a198-4b89-987c-e43c8514d7f1", "type": "done", "content": "1e9c13fc-a198-4b89-987c-e43c8514d7f1", "messageId": "cmrercz3301qjke01pqmk3b8i"}
+

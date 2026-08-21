@@ -1,0 +1,4 @@
+1) Validity - Satisfied
+2) No duplication - Satisfied
+3) No creation - Satisfied (Byzantine fault-tolerance, the message m was either broadcast by a correct process or it wasn't.)
+4) Agreement - Satisfied (Each correct process forwards every message to all other processes. Due to reliable channels and halt-only failure model, any correct receiver eventually receives and delivers the message.)

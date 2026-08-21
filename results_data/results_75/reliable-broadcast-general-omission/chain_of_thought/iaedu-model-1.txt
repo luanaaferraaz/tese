@@ -1,0 +1,156 @@
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "start", "content": "Processing"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ""}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "Validity"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " -"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " ["}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "s"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "atisfied"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "]"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " ("}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "confidence"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ":"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " "}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "8"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "/"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "10"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ")\n"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "No"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " duplication"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " -"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " ["}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "non"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " satisfied"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "]:"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " rb"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "_b"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "roadcast"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " delivers"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " un"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "conditionally"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ","}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " allowing"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " duplicate"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " delivery"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " of"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " the"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " same"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " message"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "."}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " ("}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "confidence"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ":"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " "}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "8"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "/"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "10"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ")\n"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "No"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " creation"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " -"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " ["}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "s"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "atisfied"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "]"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " ("}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "confidence"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ":"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " "}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "8"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "/"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "10"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ")\n"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "Agreement"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " -"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " ["}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "s"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "atisfied"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "]"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " ("}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "confidence"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ":"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": " "}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "8"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "/"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": "10"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ")"}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "token", "content": ""}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 8/10)\nNo duplication - [non satisfied]: rb_broadcast delivers unconditionally, allowing duplicate delivery of the same message. (confidence: 8/10)\nNo creation - [satisfied] (confidence: 8/10)\nAgreement - [satisfied] (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "response_metadata": {"model_provider": "openai", "id": "resp_0baf99b764adfebc006a58e43e001c8197868068fc65f6f88c", "created_at": 1784210494.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "type": "done", "content": "bd6af928-e4c5-4eea-8439-109936a7a1ea", "messageId": "cmrnkvf140ggnke01iyvn84l7"}
+

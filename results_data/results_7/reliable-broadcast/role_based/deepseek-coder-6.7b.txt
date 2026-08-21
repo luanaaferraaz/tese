@@ -1,0 +1,6 @@
+Evaluating the properties of Reliable Broadcast (RB) algorithm according to your expertise, here are the outputs:
+
+Validity - [satisfied]
+No duplication - [non satisfied]: A message can be delivered more than once. This could lead to inconsistencies if not handled properly.
+No creation - [satisfied]: If a correct process delivers m, it means that m was broadcast by some process. No new messages are created by the algorithm.
+Agreement - [satisfied]

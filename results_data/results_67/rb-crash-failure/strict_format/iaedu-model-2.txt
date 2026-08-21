@@ -1,0 +1,14 @@
+{"run_id": "c3aeae18-2805-4e26-9c5f-dcb260d9caab", "type": "start", "content": "Processing"}
+
+{"run_id": "c3aeae18-2805-4e26-9c5f-dcb260d9caab", "type": "token", "content": "R"}
+
+{"run_id": "c3aeae18-2805-4e26-9c5f-dcb260d9caab", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself and"}
+
+{"run_id": "c3aeae18-2805-4e26-9c5f-dcb260d9caab", "type": "token", "content": " it's lost, no correct process delivers; but asymmetric delivery possible if"}
+
+{"run_id": "c3aeae18-2805-4e26-9c5f-dcb260d9caab", "type": "token", "content": " relayer crashes mid-forward.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "c3aeae18-2805-4e26-9c5f-dcb260d9caab", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself and it's lost, no correct process delivers; but asymmetric delivery possible if relayer crashes mid-forward.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "c3aeae18-2805-4e26-9c5f-dcb260d9caab", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "c3aeae18-2805-4e26-9c5f-dcb260d9caab", "type": "done", "content": "c3aeae18-2805-4e26-9c5f-dcb260d9caab", "messageId": "cmrc20g9l7kz6ke0186xxo5c3"}
+

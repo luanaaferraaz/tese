@@ -1,0 +1,14 @@
+{"run_id": "c4e58edf-c14c-44b0-84ba-e4b88bf2e252", "type": "start", "content": "Processing"}
+
+{"run_id": "c4e58edf-c14c-44b0-84ba-e4b88bf2e252", "type": "token", "content": "R"}
+
+{"run_id": "c4e58edf-c14c-44b0-84ba-e4b88bf2e252", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes after del"}
+
+{"run_id": "c4e58edf-c14c-44b0-84ba-e4b88bf2e252", "type": "token", "content": "ivering to itself but before forwarding, no other process delivers. (confidence: 9/10)\nRB-Integrity - [sat"}
+
+{"run_id": "c4e58edf-c14c-44b0-84ba-e4b88bf2e252", "type": "token", "content": "isfied] (confidence: 9/10)"}
+
+{"run_id": "c4e58edf-c14c-44b0-84ba-e4b88bf2e252", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes after delivering to itself but before forwarding, no other process delivers. (confidence: 9/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "c4e58edf-c14c-44b0-84ba-e4b88bf2e252", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "c4e58edf-c14c-44b0-84ba-e4b88bf2e252", "type": "done", "content": "c4e58edf-c14c-44b0-84ba-e4b88bf2e252", "messageId": "cmrkc0jfl49vhke01cid1pcjr"}
+

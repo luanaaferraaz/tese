@@ -1,0 +1,9 @@
+Algorithm: Reliable Broadcast (RB)
+
+Properties: Validity, No duplication, No creation, Agreement
+
+Output:
+Validity - [satisfied]
+No duplication - [satisfied]: The delivered set prevents duplicate deliveries.
+No creation - [satisfied]: Since the algorithm uses reliable channels and honest processes, no message can be created that is not broadcasted by some process.
+Agreement - [non satisfied]: In the current implementation of Reliable Broadcast, if a correct process delivers m, it immediately sends m to all other processes. However, in case of a crash, there might exist scenarios where some correct processes may never receive or deliver m due to the asynchronous nature of the system.

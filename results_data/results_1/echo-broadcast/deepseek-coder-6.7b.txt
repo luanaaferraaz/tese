@@ -1,0 +1,56 @@
+1. Safety Property:
+    - Check whether the algorithm satisfies it.
+    ```
+    If there exists a valid FINAL proof with < q signatures from distinct processes, then no process delivers.
+    ```
+    - If the property cannot be verified, explain why. 
+
+        Since each message contains digital signature of the sender and these are all unforgeable, if some malicious node were to construct a valid FINAL proof with < q signatures from distinct processes, it would violate the integrity guarantee of the system (a correct process should not be able to deliver more than one message).
+
+2. Consistency Property:
+    - Check whether the algorithm satisfies it.
+    ```
+    If two correct processes deliver m and m', then m = m'.
+    ```
+    - If the property cannot be verified, explain why. 
+
+        The algorithm does not specify how messages with different contents are handled. Therefore, if two processes delivering different messages (m and m'), it could violate this consistency guarantee.
+
+3. Validity Property:
+    - Check whether the algorithm satisfies it.
+    ```
+    If the sender is correct and broadcasts m, then any correct process that delivers, delivers m.
+    ```
+    - If the property cannot be verified, explain why. 
+
+        The algorithm does not specify how a malicious node could potentially cause delivery of different messages (with different contents) to different processes if it is able to forge valid FINAL proofs with < q signatures from distinct processes.
+
+4. Liveness Property:
+    - Check whether the algorithm satisfies it.
+    ```
+    If the sender is correct, all correct processes eventually deliver m.
+    ```
+    - If the property cannot be verified, explain why. 
+
+        The liveness argument for termination of the system in case where the sender is Byzantine (it is not full RB) can only be shown under a stronger assumption on the faulty nodes being able to generate random messages even if they are malicious. However, this requirement contradicts with the digital signatures requirement which makes it impossible to guarantee termination of the system in case where the sender is Byzantine.
+
+5. Complexity Property:
+    - Check whether the algorithm satisfies it.
+    ```
+    Message complexity: O(N) SEND + O(N) ECHOs to sender + O(N) FINAL = O(N)
+    Round / time complexity: Constant number of communication steps (async delays unbounded)
+    Message size: FINAL carries O(q) signatures   (O(N) worst-case)
+    ```
+    - If the property cannot be verified, explain why. 
+
+        The algorithm is already quite efficient with regards to message complexity and round/time complexity as it does not have any delays apart from network latency which is unbounded by definition in an asynchronous system. However, the size of FINAL proofs could potentially increase if all processes are malicious (i.e., they forge valid signatures on different messages) because it would carry more signatures than necessary.
+
+6. Limitations:
+    - Check whether the algorithm satisfies it.
+    ```
+    Does not guarantee termination if the sender is Byzantine (it is not full RB).
+    Requires digital signatures (or an equivalent unforgeable authentication mechanism).
+    ```
+    - If the property cannot be verified, explain why. 
+
+        The algorithm does require a digital signature for authenticating each message which makes it possible to guarantee safety and liveness of the system. However, the limitation that it may not be able to guarantee termination if the sender is Byzantine can only be justified under a stronger assumption on the nodes being able to generate random messages even if they are malicious.

@@ -1,0 +1,6 @@
+{"run_id": "e98a0992-494d-4a7e-ad3d-d3907955c527", "type": "start", "content": "Processing"}
+
+{"run_id": "e98a0992-494d-4a7e-ad3d-d3907955c527", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "e98a0992-494d-4a7e-ad3d-d3907955c527", "type": "done", "content": "e98a0992-494d-4a7e-ad3d-d3907955c527", "messageId": "None", "token_pct_used": 102.2}
+

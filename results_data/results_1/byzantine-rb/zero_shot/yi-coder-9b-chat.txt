@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The Broadcaster ensures the message is broadcasted initially, and all correct processes collect enough evidence to deliver it.
+
+RB-Agreement - [satisfied]
+If a process delivers a message m once, it has seen enough support for m from other processes. The supporting rule with f + 1 helps distribute this support among other correct processes.
+
+RB-Integrity - [satisfied]
+Due to the count rules and the delivered set, a process does not deliver any message more than once. A single Byzantine process cannot generate enough support alone.

@@ -1,0 +1,4 @@
+Validity - Satisfied
+No duplication - Non satisfied: There can be a situation where a message is delivered more than once. This happens when a process receives DATA or RELAY messages from processes that have already seen this message and added it to the delivered set.
+No creation - Satisfied: Each correct process only sends DATA or RELAY for messages that were actually broadcasted by the sender. If a message was not sent (i.e., it was in the delivered set), then it cannot be created as no such message can have been broadcasted.
+Agreement - Satisfied: The agreement property is satisfied because each correct process eventually accumulates f+1 distinct sources for every message and delivers it. This is ensured by the fact that each correct process relays messages to all other processes, thus ensuring a delivery from at least one correct process. It also ensures that no message is created or duplicated due to the check in step B of the protocol pseudo code.

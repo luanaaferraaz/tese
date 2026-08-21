@@ -1,0 +1,6 @@
+{"run_id": "5d41fa8d-77dd-4a1e-bd1a-6d1155b2d7f2", "type": "start", "content": "Processing"}
+
+{"run_id": "5d41fa8d-77dd-4a1e-bd1a-6d1155b2d7f2", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "5d41fa8d-77dd-4a1e-bd1a-6d1155b2d7f2", "type": "done", "content": "5d41fa8d-77dd-4a1e-bd1a-6d1155b2d7f2", "messageId": "None", "token_pct_used": 99.2}
+

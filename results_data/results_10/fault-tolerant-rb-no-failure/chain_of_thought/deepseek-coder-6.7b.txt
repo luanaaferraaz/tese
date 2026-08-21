@@ -1,0 +1,31 @@
+Here are the final results for each property based on the given pseudocode and constraints.
+
+RB-Validity - [satisfied]
+This is because the broadcaster sends a message to all processes, which means that every process eventually receives this message and thus satisfies RB-Validity.
+
+```python
+upon RB-Broadcast(m):
+    if not already sent <type0, m>:
+        send <type0, m> to all processes
+        stop
+```
+
+RB-Agreement - [satisfied]
+This is because if any process delivers a message, it means that the broadcaster has sent this message to all other processes. Therefore, every correct process eventually receives and delivers the same messages, hence satisfying RB-Agreement.
+
+```python
+upon receive(<t, m>):
+    if m not in delivered:
+        delivered ← delivered ∪ {m}
+        deliver(m)
+    stop
+```
+
+RB-Integrity - [satisfied]
+This is because the delivered set prevents duplicate delivery of messages. Since there are no created or lost messages, every message that a process delivers was sent by the broadcaster and not duplicated, hence satisfying RB-Integrity.
+
+```python
+if m not in delivered:
+    delivered ← delivered ∪ {m}
+    deliver(m)
+```

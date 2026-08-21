@@ -1,0 +1,11 @@
+Termination - [Satisfied]
+
+Validity - [Non Satisfied]: Incorrect logic in the protocol pseudo code. The decision phase will execute regardless of whether received_msg has been set or not, and it is possible for the sender s to be faulty but still receive m. Thus, the validity property cannot be satisfied.
+
+Agreement - [Satisfied]
+
+Integrity - [Non Satisfied]: The protocol does not ensure that only one process delivers a value at any given round. If two correct processes simultaneously relay and decide for different values at the same round, it may lead to inconsistency or invalid decisions. 
+
+Reason for non-satisfaction of Validity property: Incorrect logic in the protocol pseudo code. The decision phase will execute regardless of whether received_msg has been set or not, and it is possible for the sender s to be faulty but still receive m. Thus, the validity property cannot be satisfied. 
+
+Reason for non-satisfaction of Integrity property: The protocol does not ensure that only one process delivers a value at any given round. If two correct processes simultaneously relay and decide for different values at the same round, it may lead to inconsistency or invalid decisions.

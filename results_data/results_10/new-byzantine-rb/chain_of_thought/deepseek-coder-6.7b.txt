@@ -1,0 +1,8 @@
+RB-Validity - satisfied
+The broadcaster sends a <type0, m> message to its neighbours. The receivers are then capable of sending <type1, m> messages to their neighbours based on the received support messages. As such, correct processes eventually receive at least f+1 <type1, m> messages and thus deliver m after satisfying RB-Validity.
+
+RB-Agreement - satisfied
+If one correct process delivers m, it means that this process has received f+1 <type1, m> messages from other correct processes (satisfies the count threshold). These support messages have spread to the rest of the system by following the forwarding rule and thus allow all correct processes to reach the same delivery threshold.
+
+RB-Integrity - satisfied
+A process delivers m only once because it uses a 'delivered' set which is updated each time a message is delivered. This ensures that any given message is indeed delivered exactly once by no more than one process in the system. Since f+1 support is required and at most f processes can be Byzantine, a Byzantine process cannot force delivery to prevent RB-Integrity from being satisfied.

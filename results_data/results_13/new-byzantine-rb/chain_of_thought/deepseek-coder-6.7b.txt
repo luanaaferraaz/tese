@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+Explanation: The broadcaster sends the initial message <type0, m> to its neighbours. After receiving at least one distinct process's confirmation of delivery (<type1, m>), it broadcasts the message again to its neighbours and stops. Hence, all correct processes eventually deliver m.
+
+RB-Agreement - Satisfied
+Explanation: If any correct process delivers m, then it received at least f + 1 <type1, m> messages (from distinct correct processes). This means that a correct process has seen the message from at least 2 other correct processes, hence all correct processes eventually deliver m.
+
+RB-Integrity - Satisfied
+Explanation: A correct process delivers m at most once because of the delivered set. Each time it receives f + 1 <type1, m> messages (from distinct correct processes), it adds m to its delivered set and fires the DELIVER(m) event. Hence, no duplicate delivery occurs.

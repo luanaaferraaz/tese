@@ -1,0 +1,6 @@
+{"run_id": "fd70ec05-fef0-428c-b857-5a05d85d2ad7", "type": "start", "content": "Processing"}
+
+{"run_id": "fd70ec05-fef0-428c-b857-5a05d85d2ad7", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "fd70ec05-fef0-428c-b857-5a05d85d2ad7", "type": "done", "content": "fd70ec05-fef0-428c-b857-5a05d85d2ad7", "messageId": "None", "token_pct_used": 102.2}
+

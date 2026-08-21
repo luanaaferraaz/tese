@@ -1,0 +1,6 @@
+{"run_id": "f219246b-ba97-48ea-9ddf-30c06f69f8a2", "type": "start", "content": "Processing"}
+
+{"run_id": "f219246b-ba97-48ea-9ddf-30c06f69f8a2", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "f219246b-ba97-48ea-9ddf-30c06f69f8a2", "type": "done", "content": "f219246b-ba97-48ea-9ddf-30c06f69f8a2", "messageId": "None", "token_pct_used": 106.4}
+

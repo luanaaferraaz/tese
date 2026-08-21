@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster sends <type0, m> to its neighbours. As each correct receiver processes the received message and potentially forwards it to more neighbours, all correct nodes eventually receive at least one message of type <type1, m>. Hence RB-Validity is satisfied.
+
+RB-Agreement - Satisfied
+If a single correct process delivers message m, then this process should have received at least f + 1 messages of type <type1, m> from different processes. Since the algorithm requires f + 1 distinct senders to agree on delivery, and all the processes are assumed to be correct, RB-Agreement is also satisfied.
+
+RB-Integrity - Satisfied
+A process delivers message m at most once due to the delivered set. If a Byzantine process attempts to force delivery by sending <type1, m> messages without receiving them from f + 1 distinct senders, this would result in delivering the same message multiple times which contradicts RB-Integrity. Hence, RB-Integrity is also satisfied.

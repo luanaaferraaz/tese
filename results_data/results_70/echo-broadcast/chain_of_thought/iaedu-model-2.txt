@@ -1,0 +1,14 @@
+{"run_id": "f32f2616-f27f-429f-bb29-ee6769e5e237", "type": "start", "content": "Processing"}
+
+{"run_id": "f32f2616-f27f-429f-bb29-ee6769e5e237", "type": "token", "content": "Valid"}
+
+{"run_id": "f32f2616-f27f-429f-bb29-ee6769e5e237", "type": "token", "content": "ity - [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication"}
+
+{"run_id": "f32f2616-f27f-429f-bb29-ee6769e5e237", "type": "token", "content": " - [non satisfied]: Delivery rule lacks explicit check on `delivered` flag; may"}
+
+{"run_id": "f32f2616-f27f-429f-bb29-ee6769e5e237", "type": "token", "content": " deliver multiple times. (confidence: 7/10)\nNo creation - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "f32f2616-f27f-429f-bb29-ee6769e5e237", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: Delivery rule lacks explicit check on `delivered` flag; may deliver multiple times. (confidence: 7/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "f32f2616-f27f-429f-bb29-ee6769e5e237", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "f32f2616-f27f-429f-bb29-ee6769e5e237", "type": "done", "content": "f32f2616-f27f-429f-bb29-ee6769e5e237", "messageId": "cmreraxqo01l7ke01g8h9qefh"}
+

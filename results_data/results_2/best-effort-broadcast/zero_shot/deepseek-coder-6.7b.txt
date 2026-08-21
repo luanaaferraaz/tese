@@ -1,0 +1,3 @@
+Validity - [Satisfied]
+No duplication - [Non Satisfied]: The algorithm doesn't mention how to handle duplicate messages. It assumes that each message is unique and broadcasts the same message only once, but it doesn't specify what should happen if a process receives a duplicate message.
+No creation - [Satisfied]

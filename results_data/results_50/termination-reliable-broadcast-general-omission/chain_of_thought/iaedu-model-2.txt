@@ -1,0 +1,6 @@
+{"run_id": "73bf359f-7615-4003-af47-74d67ad643fe", "type": "start", "content": "Processing"}
+
+{"run_id": "73bf359f-7615-4003-af47-74d67ad643fe", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "73bf359f-7615-4003-af47-74d67ad643fe", "type": "done", "content": "73bf359f-7615-4003-af47-74d67ad643fe", "messageId": "None", "token_pct_used": 106.4}
+

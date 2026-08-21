@@ -1,0 +1,6 @@
+{"run_id": "bec7238a-cd10-4fe7-8f26-80893f7dd08c", "type": "start", "content": "Processing"}
+
+{"run_id": "bec7238a-cd10-4fe7-8f26-80893f7dd08c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "bec7238a-cd10-4fe7-8f26-80893f7dd08c", "type": "done", "content": "bec7238a-cd10-4fe7-8f26-80893f7dd08c", "messageId": "None", "token_pct_used": 102.2}
+

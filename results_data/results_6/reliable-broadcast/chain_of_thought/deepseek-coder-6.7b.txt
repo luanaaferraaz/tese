@@ -1,0 +1,4 @@
+Validity - Satisfied
+No duplication - Non satisfied: Message m is delivered more than once. It's not prevented by maintaining a set of already delivered messages (delivered).
+No creation - Satisfied: If a correct process delivers message m, it means that the sender broadcasted m before and has added it to its delivered set.
+Agreement - Non satisfied: The agreement property depends on the timing or synchronization between processes. Without synchronization, some processes might not have received all messages at the same time. It's ensured by every correct process immediately forwarding any message it receives to all others. 

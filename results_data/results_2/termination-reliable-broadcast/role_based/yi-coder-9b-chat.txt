@@ -1,0 +1,13 @@
+1. Termination - [satisfied]
+   Every correct process eventually delivers some message because the protocol is synchronous, and all processes execute for a finite number of steps.
+
+2. Validity - [satisfied]
+   If s is correct and broadcasts m, then all correct processes eventually deliver m due to the agreement property which assures that if a process pi delivers m, then in the end round f+1 every other correct process pj must have delivered m.
+
+3. Agreement - [satisfied]
+   If a correct process delivers m, then all correct processes eventually deliver m because of I1 and I2. If the sender is correct, every other process that holds m at round f+1 will relay it to others until it gets to s who delivers it.
+
+4. Integrity - [satisfied]
+   Every correct process delivers at most one message because as soon as a process pi receives a value mi and delivers it according to I2, pi sets delivered[pi] as true so that no other messages can be delivered.
+
+Note: The correctness of the algorithm is based on the assumption that the network is reliable (channels are reliable) which means any sent message is received with absolute certainty by its recipient. If the network is unreliable or there's a possibility of loss, the algorithm would need to incorporate mechanisms for retransmission and detection of lost messages.

@@ -1,0 +1,21 @@
+Analyze the following algorithm.
+
+Algorithm:
+{algorithm}
+
+Properties:
+{properties}
+
+First, think step by step about each property.
+
+Then output ONLY the final results.
+
+Output format:
+- One line per property
+- Format:
+  <property> - [satisfied]
+  <property> - [non satisfied]: <reason>
+- Only include reason if non satisfied
+- Reason ≤ 20 words
+- Do NOT include reasoning in the output
+- No extra text

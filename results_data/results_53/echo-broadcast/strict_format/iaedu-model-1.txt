@@ -1,0 +1,6 @@
+{"run_id": "0b9777cb-1c83-4b60-9a9c-3fe54a1cb214", "type": "start", "content": "Processing"}
+
+{"run_id": "0b9777cb-1c83-4b60-9a9c-3fe54a1cb214", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "0b9777cb-1c83-4b60-9a9c-3fe54a1cb214", "type": "done", "content": "0b9777cb-1c83-4b60-9a9c-3fe54a1cb214", "messageId": "None", "token_pct_used": 102.2}
+

@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [non satisfied]: if a correct process delivers m, it received m from f+1 distinct processes and relays m to all. Other processes may not receive the relay messages, violating agreement.

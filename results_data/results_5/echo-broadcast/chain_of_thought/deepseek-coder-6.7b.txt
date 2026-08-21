@@ -1,0 +1,15 @@
+The given Bracha's Reliable Broadcast algorithm is a reliable broadcast protocol that ensures byzantine fault tolerance. Here are the results for each property according to this algorithm:
+
+1) Validity - [Satisfied]
+   This property holds because if a correct process p sends a message m, it will eventually deliver the same message m to all other correct processes. This is guaranteed by the protocol rules and the fact that every message received is verified and counted.
+
+2) Agreement - [Non satisfied]
+   This property requires that if two correct processes accept different messages for the same instance of broadcasting, they must agree on the value. However, in this algorithm, a single process cannot send multiple values since it's assumed to be connected to all other nodes. Therefore, agreement is automatically guaranteed by the protocol.
+
+3) No duplication - [Satisfied]
+   This property holds because each message sent will eventually reach every correct node exactly once. This is ensured by the fact that every received message is processed and counted.
+
+4) No creation - [Non satisfied]
+   This property requires a mechanism to ensure that if a process delivers a message m with sender s, then m was previously broadcast by process s. However, in this algorithm, all messages are sent from each process individually without any dependency on previous transmissions, therefore no information about the source of delivered messages is maintained. 
+
+Please note that even though property 4 is not satisfied, it does not contradict properties 1 and 3 since a node cannot create new messages but only send existing ones to other nodes.

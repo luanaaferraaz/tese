@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The broadcaster sends the message <type0, m> to all processes. Since there are no failures and reliable channels ensure that all processes receive it and deliver it. Hence, RB-Validity is satisfied. 
+
+RB-Agreement - [satisfied]
+If one process delivers m, then the message was sent to all by the broadcaster, so all processes eventually receive and deliver it. Hence, RB-Agreement is satisfied.
+
+RB-Integrity - [non satisfied]
+The delivered set prevents duplicate delivery. However, there's no guarantee that messages are not created by the channel, which could lead to duplicate or wrongly interpreted broadcasts. The reason for non-satisfaction of RB-Integrity is due to this possibility.

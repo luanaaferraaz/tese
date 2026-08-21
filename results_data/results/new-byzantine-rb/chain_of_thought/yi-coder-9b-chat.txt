@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is satisfied because the algorithm guarantees that a correct broadcaster broadcasts m, then all other correct processes will eventually receive and deliver m.
+
+RB-Agreement - [satisfied]
+The RB-Agreement property holds true in this algorithm. If one correct process delivers m, all others will eventually deliver it as well due to the correct support propagation rule.
+
+RB-Integrity - [satisfied]
+Finally, the integrity property is met by the algorithm's design. A process only delivers a message once and a correct process can only deliver a message if f + 1 <type1, m> messages were received. Therefore, a process cannot be forced to deliver a message that was not broadcasted.

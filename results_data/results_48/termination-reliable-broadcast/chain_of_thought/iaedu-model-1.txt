@@ -1,0 +1,6 @@
+{"run_id": "8710a95a-31f4-4f27-bc1d-d8e739a91571", "type": "start", "content": "Processing"}
+
+{"run_id": "8710a95a-31f4-4f27-bc1d-d8e739a91571", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "8710a95a-31f4-4f27-bc1d-d8e739a91571", "type": "done", "content": "8710a95a-31f4-4f27-bc1d-d8e739a91571", "messageId": "None", "token_pct_used": 102.2}
+

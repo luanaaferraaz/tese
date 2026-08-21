@@ -1,0 +1,6 @@
+{"run_id": "ca623c22-c85d-45c4-a576-e18a5cc659a1", "type": "start", "content": "Processing"}
+
+{"run_id": "ca623c22-c85d-45c4-a576-e18a5cc659a1", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ca623c22-c85d-45c4-a576-e18a5cc659a1", "type": "done", "content": "ca623c22-c85d-45c4-a576-e18a5cc659a1", "messageId": "None", "token_pct_used": 106.4}
+

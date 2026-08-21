@@ -1,0 +1,136 @@
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "start", "content": "Processing"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": ""}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "RB"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "-"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "Validity"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " -"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " ["}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "s"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "atisfied"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "]"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " ("}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "confidence"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": ":"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " "}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "9"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "/"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "10"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": ")"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "  \n"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "RB"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "-"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "Agreement"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " -"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " ["}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "s"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "atisfied"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "]"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " ("}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "confidence"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": ":"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " "}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "9"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "/"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "10"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": ")"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "  \n"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "RB"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "-"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "Integrity"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " -"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " ["}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "non"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " satisfied"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "]:"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " Byzantine"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " process"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " can"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " forge"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " type"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "0"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " and"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " trigger"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " delivery"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " of"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " un"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "broadcast"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " m"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " ("}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "confidence"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": ":"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": " "}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "10"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "/"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": "10"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": ")"}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "token", "content": ""}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)  \nRB-Agreement - [satisfied] (confidence: 9/10)  \nRB-Integrity - [non satisfied]: Byzantine process can forge type0 and trigger delivery of unbroadcast m (confidence: 10/10)", "tool_calls": [], "tool_call_id": null, "run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "response_metadata": {"model_provider": "openai", "id": "resp_083cd97aa50c33e7006a58e1a6144c8195bacb06d60e221d4a", "created_at": 1784209830.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "8ea48529-2b5c-4163-a132-70a7bc579843", "type": "done", "content": "8ea48529-2b5c-4163-a132-70a7bc579843", "messageId": "cmrnkgyut0ft1ke01x6mhs5i1"}
+

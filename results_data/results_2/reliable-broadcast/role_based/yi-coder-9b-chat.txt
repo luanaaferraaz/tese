@@ -1,0 +1,4 @@
+1. Validity - satisfied
+2. No duplication - satisfied
+3. No creation - Non satisfied: The message creation in this algorithm depends on the faulty nodes and there is no mechanism to guarantee that only correct processes generate the messages.
+4. Agreement - satisfied

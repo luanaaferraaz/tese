@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The broadcaster sends <type0, m> to all processes. Since reliable message passing channels ensure the delivery of messages, RB-Validity holds true for this no failure scenario.
+
+RB-Agreement - [satisfied]
+If one process delivers m, then every correct process eventually receives and delivers m. This is ensured by maintaining a set 'delivered' which keeps track of all delivered messages. Each time a message is received and not already in the 'delivered' set, it is added to this set and also delivered. Therefore, for any message m, if at least one process delivers m, then every correct process eventually receives and delivers m as well.
+
+RB-Integrity - [satisfied]
+The delivered set prevents duplicate delivery of messages. If a message has not been in the 'delivered' set, it is added to this set after being received and delivered by some process. Therefore, any message that was broadcast will only be delivered once unless there is a faulty process causing duplication. The reason for ensuring integrity in no failure scenario is inherently handled by reliable channels.

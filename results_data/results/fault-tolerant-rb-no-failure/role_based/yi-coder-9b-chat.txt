@@ -1,0 +1,10 @@
+The no-failure RBcast Algorithm satisfies the following correctness properties:
+
+RB-Validity - [satisfied]
+This property is satisfied because the algorithm ensures that if a correct process broadcasts m, then all other correct processes eventually receive and deliver this message. In the context of a reliable broadcast, this means that every process sends the message reliably to all other processes, ensuring eventual delivery for correct processes. 
+
+RB-Agreement - [satisfied]
+This property is also satisfied by our algorithm. If one correct process delivers m, it was sent to all other processes, so all processes eventually receive and deliver this message. This guarantees agreement between the processes when multiple copies of a message are delivered. 
+
+RB-Integrity - [satisfied]
+Lastly, the integrity property is satisfied by our algorithm as well. The delivered set maintains which messages have already been delivered by the process. Since there's no creation or duplication of messages within the channel, any message that gets delivered was previously broadcasted and thus has integrity.

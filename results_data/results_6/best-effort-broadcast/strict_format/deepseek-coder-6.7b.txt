@@ -1,0 +1,8 @@
+Validity - [satisfied]
+This property is satisfied because if a correct process broadcasts a message m, then every correct process eventually delivers m. This is ensured by the protocol pseudo code in section A which sends out the broadcast to all processes (q∈n) and relies on perfect links to ensure delivery of messages.
+
+No duplication - [satisfied]
+This property is satisfied because no message is delivered more than once. The uniqueness of messages and the absence of creation, alteration, duplication and loss assumptions in this case make sure that a single broadcasted message will not be re-broadcasted or delivered multiple times by any process. This ensures that each delivery event corresponds to exactly one broadcast of a unique message.
+
+No creation - [satisfied]
+This property is satisfied because if a process delivers a message m with sender s, then m was previously broadcast by process s. The protocol pseudo code in section B ensures this condition is maintained where each delivered message must have been sent from the source (s) of that delivery event.

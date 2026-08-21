@@ -1,0 +1,7 @@
+Termination - [satisfied]
+
+Validity - [satisfied]
+
+Agreement - [satisfied]
+
+Integrity - [non satisfied]: Lack of mechanism to verify the source or authenticity of m beyond majority support.

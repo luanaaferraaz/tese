@@ -1,0 +1,4 @@
+Termination - [Satisfied]
+Validity - [Non Satisfied]: Protocol assumes sender s is always correct, which might not be the case in asynchronous systems.
+Agreement - [Satisfied]
+Integrity - [Satisfied]

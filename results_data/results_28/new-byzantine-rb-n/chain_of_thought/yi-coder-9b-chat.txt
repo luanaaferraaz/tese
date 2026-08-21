@@ -1,0 +1,6 @@
+The Best Effort Broadcast Algorithm satisfies the properties RB-Validity, RB-Agreement and RB-Integrity. 
+
+Here are the detailed reasons for each property:
+1) RB-Validity - [satisfied]: If a correct broadcaster broadcasts m (i.e. sends <type0, m> to its neighbours), then all correct processes eventually deliver m because they receive at least f + 1 <type1, m> messages from distinct senders who are all correct processesself.
+2) RB-Agreement - [satisfied]: If one correct process delivers m, it received a support message for the delivery of this message (<type1, m>) from at least one other correct process. All other processes that receive f + 1 such messages will also deliver m eventually because they propagate their correct supports to them.
+3) RB-Integrity - [satisfied]: A process delivers m only once because it is added to the "delivered" set after its first delivery and no further deliveries are allowed. Only correct processes can send <type1, m> messages, so a Byzantine process alone cannot force delivery.

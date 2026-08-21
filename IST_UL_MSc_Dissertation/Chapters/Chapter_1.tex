@@ -1,0 +1,93 @@
+% #############################################################################
+% This is Chapter 1
+% !TEX root = ../main.tex
+% #############################################################################
+% Change the Name of the Chapter i the following line
+\fancychapter{Introduction}
+%\cleardoublepage
+% The following line allows to ref this chapter
+\label{chap:intro}
+\noindent Distributed algorithms are the foundation of modern computing, supporting critical infrastructures such as cloud platforms, databases, and globally coordinated systems. Ensuring the correctness of distributed algorithms is essential, since concurrency, asynchrony\cite{lamport1978distributed, lamport1982byzantine}, and the inevitability of failures can lead to errors that while subtle may be severe. However, verifying these algorithms is a complex and time-consuming task, which motivates the use of automated tools, despite their limitations. Nowadays, distributed algorithms are verified through what can be called traditional verification approaches. These include theorem proving and model checking, which, while rigorous, present some limitations. First, they require significant expertise in formal logic and proof construction (in case of theorem proving)\cite{paulson1989isabelle, lynch1996distributed} and involve a steep learning curve, making them difficult to adopt in practice. Second, they suffer from the state-space explosion problem, where the number of states grows exponentially with the size of the problem~\cite{baier2008principles}. Moreover, the verification process itself is often time-consuming, both in terms of constructing the formal specifications and executing the verification. Finally, these techniques suffer from scalability limitations, as each new algorithm or variation typically requires a new specification, and may quickly become infeasible for large families of algorithms to analyze, as system size grows. 
+
+These limitations motivate the exploration of alternative verification approaches that are more accessible and partially automated. 
+
+Large Language Models can help overcome some limitations of traditional verification approaches by making the process more accessible, flexible, and partially automated. 
+By reasoning over natural language descriptions, pseudocode, and correctness properties, an LM can help identify relevant invariants, highlight suspicious execution scenarios, and generate candidate counterexamples without requiring a complete formal model from the beginning. This can reduce the initial verification effort and guide human experts toward the most relevant parts of the algorithm to analyze formally, having done some initial testing that can save a lot of time in formal verification.
+
+However, LLMs do not provide the same guarantees as formal methods. They cannot exhaustively explore all possible states or produce fully reliable proofs. For this reason, their value is mainly as a complementary tool: they can help narrow down the verification problem, suggest useful directions, and make the process faster and easier before applying traditional verification techniques.
+
+Given the recent success and widespread accessibility of LLMs, it is natural to explore whether they can be used to address some of these challenges. This raises an important question: \textit{Can Language Models (LMs) support or complement the verification of distributed algorithms by reasoning over their descriptions and correctness properties?}
+
+The verification process of distributed algorithms can be accelerated with the use of LMs, especially in first stages of verification where the goal is to understand the algorithm, reason about its behavior, and identify possible correctness issues. Instead of, completely replace traditional tools such as model checking or theorem proving, the LM can act as a verification assistant.
+
+It can do tasks such as identifying candidate invariants, reasoning about safety and liveness properties, detecting inconsistencies or edge cases, suggesting possible counterexamples, and even helping translate informal algorithm descriptions into more structured specifications. It can also perform a simple analysis on whether the algorithm satisfies the properties it emplies to satisfy. Therefore, the LM can reduce part of the manual and repetitive effort required from experts, particularly before applying more rigorous formal verification tools, avoiding unnecessary iterations.
+
+Correct verification of distributed algorithms supports the reliability of large-scale computing. A single undetected flaw in consensus, broadcast, or coordination mechanisms can cascade into system-wide failures. For example, Gabrielson describes an Amazon outage in which a single faulty server caused a site-wide failure due to error propagation and load-balancing interactions\cite{gabrielson_distributed_challenges}. At the same time, advances in artificial intelligence, particularly LMs, a category in which we include LLMs, have demonstrated strong performance in reasoning\cite{wei2022cot}, problem-solving, and knowledge recall. Exploring whether these models can serve as verification assistants is therefore both timely and potentially transformative.
+
+Verification is fundamentally challenging because distributed systems must preserve safety and liveness properties \cite{alpern1985safety} in environments that may involve asynchrony, unpredictable delays, and multiple types of failures (e.g., crash, omission, and Byzantine). Formal methods mentioned above, theorem proving and model checking provide, strong guarantees but require specialized expertise, extensive manual effort, and face obvious scalability limits\cite{nawaz2019survey}. On the other hand, LMs operate probabilistically, are sensitive to prompting strategies, and cannot guarantee correctness. This gap between formal rigor and probabilistic reasoning makes the problem non-trivial, underscoring the need of a formal, structured and rigorous evaluation framework.
+
+Previous approaches to verification have relied primarily on formal methods and specialized tools, which, while successful\cite{lamport1998paxos}, have not scaled well to increasingly complex distributed algorithms\cite{clarke1999modelchecking}. Meanwhile, the potential of LMs has only recently emerged, and their application to verification remains underexplored. Unlike model checkers, language models cannot exhaustively explore all states or produce proofs, but they may provide useful heuristics, partial verification, or counterexamples. This work lies in experimentally testing these models as alternative or complementary tools to traditional techniques.
+
+This project proposes to systematically evaluate LMs on representative distributed algorithms\cite{bracha, flp}. The focus will be on their ability to identify invariants, reason about failures, and verify correctness. The benchmark will be designed to capture both strengths and limitations of these models, offering insights into whether they can contribute to automatic verification either as standalone tools or as assistants to human experts. While the probabilistic nature of LMs imposes clear limitations, the study aims to assess their practical utility and define scenarios where they can complement formal verification.
+
+
+% #############################################################################
+\section{Work Objectives}
+The main objective of this work is to develop and apply a benchmarking framework capable of evaluating the ability of LMs to verify distributed algorithms through natural language understanding and reasoning. While traditional verification approaches, such as model checking, offer rigorous guarantees, they are computationally demanding and require significant formal expertise. For instance, theorem proving approaches have verified consensus protocols using Coq~\cite{coq1996} with proof artifacts exceeding 50,000 lines~\cite{wilcox2015thesis,wilcox2015verdi}. In contrast, model checking approaches such as Spin~\cite{holzmann1997spin} encounter state-space explosion when verifying Paxos~\cite{Delzanno_2014}, growing from thousands to tens of millions of states, and verification time increases from milliseconds to several minutes, making exhaustive verification infeasible beyond small configurations. In addition, both approaches require significant upfront effort to model systems and construct proofs prior to verification.
+
+Based on these limitations, this work explores whether LMs can serve as a practical alternative or complementary tool for distributed algorithm verification. More specifically, the objectives of this work are:
+
+\begin{itemize}
+    \item To develop a structured benchmark for evaluating the reasoning capabilities of LMs in the verification of distributed algorithms.
+
+    \item To verify whether LMs can correctly reach a conclusion about the correctness properties of a given distributed algorithm, including both safety and liveness properties.
+
+    \item To evaluate the ability of LMs to understand and reason under asynchronous system assumptions.
+
+    \item To analyze how LMs perform under different failure models, including crash, omission, and Byzantine failures.
+
+    \item To test if LMs can detect correctness violations in both correct and faulty variants of representative distributed algorithms.
+
+    \item Even though the main goal is not to evaluate reosing but correct or incorrect conclusion without explanation, in some specific cases, reasioning will be addressed. In this case, evaluate LMs generation capabilities. If they are meaningful, logically grounded explanations or counterexamples when identifying potential violations.
+
+    \item To compare different types of language models, ranging from large proprietary models to smaller open-source models, in order to identify their strengths and limitations.
+
+    \item To investigate whether LMs can complement traditional verification methods by reducing manual effort, guiding formal verification, and supporting AI-assisted correctness reasoning.
+
+    \item To establish a reusable evaluation framework that can support future research on the use of language models for distributed algorithm verification.
+\end{itemize}
+
+The proposed benchmark will combine a set of representative distributed algorithms, with both correct and faulty variants, and a standardized procedure to prompt and evaluate different models. By varying correctness properties, system assumptions, and failure models across tasks, the benchmark aims to reveal the strengths and limitations of LLMs and SLMs in replicating formal verification reasoning and detecting violations of distributed algorithm properties.
+
+
+% #############################################################################
+\section{Expected Contributions}
+
+This work is expected to advance the research on the intersection of distributed systems, artificial intelligence, and program verification. The main contributions are:
+\begin{itemize}
+\item The development of a domain-specific benchmark that enables the systematic evaluation of LM reasoning in the verification of distributed algorithms. This framework will not only facilitate comparison between models but also establish methodological standards for assessing reasoning quality, correctness detection, and fault-tolerance awareness.
+\item The project will contribute new insights into how LMs interpret algorithmic structure and system properties, clarifying their limitations and potential advantages relative to formal verification tools. 
+\item By ensuring that the benchmark is extensible and reproducible, the results of this work are expected to provide a foundation for subsequent studies and practical applications in AI-assisted verification. 
+\item This work also aims to demonstrate that LMs can become a valuable complementary resource in verifying distributed algorithms, paving the way for more accessible and efficient verification methodologies.
+\end{itemize} 
+
+\section{Dissertation Outline}
+The remainder of the document is structured as follows: Chapter 2 presents background about
+the distributed algorithms, language models, program verification, benchmarking and prompt engineering. Chapter 3
+explain the benchmark structure and implementation, from the algorithms templates, to the prompt engineering techniques used and language models querying. It also includes the results collecting and interations. Chapter 4 presents an evaluation methodology to assess
+the benchmark. The results from the experimental evaluation
+are presented and discussed. Next, we compare the different models and prompts, providing
+a discussion on its similarities and differences. Finally, Chapter 5 concludes this dissertation,
+fostering future works.
+
+\subsection{Results of the Pseudocode-Level Error Tests}
+
+The pseudocode-error experiments produced what is arguably the most revealing finding of the entire evaluation. Three variants of the Byzantine reliable broadcast algorithm were created with genuine logical errors introduced directly into the protocol pseudocode: in the first variant (-v), the threshold for triggering support messages was raised from 1 to f+1 received type0 messages, which prevents any correct process from initiating the support chain when a single correct broadcaster sends the initial message, thereby violating RB-Validity; in the second variant (-i), the delivery threshold was reduced from f+1 to 1 type1 message, which allows a single Byzantine process to forge a support message and force delivery of a message that was never broadcast, thereby violating RB-Integrity; and in the third variant (-a), the forwarding rule was removed entirely from the type1 message handler, meaning that a process that delivers does not propagate the support to other correct processes, thereby violating RB-Agreement.
+
+These three variants were tested in versions 41–43 using DeepSeek-Chat (V3), LLaMA-3.3-70B-Groq, and Gemini-2.5-Flash-Lite, with the same four prompt configurations used throughout the evaluation (chain-of-thought, role-based, strict-format, and zero-shot). The original correct algorithm was included in version 43 as a control, and both DeepSeek-Chat and LLaMA-3.3-70B-Groq achieved 100% accuracy on the correct algorithm, confirming that they can reliably verify satisfied properties.
+
+However, when presented with the broken variants, the results were fundamentally different: across a total of 96 valid test cases (excluding timeouts and rate-limit errors), only one single instance of error detection occurred. DeepSeek-Chat marked all three properties as satisfied in every one of its 36 valid tests across the three broken variants, yielding a 0% detection rate. LLaMA-3.3-70B-Groq exhibited identical behaviour, also producing a 0% detection rate across 36 valid tests. Gemini-2.5-Flash-Lite detected the integrity violation in the -i variant exactly once out of 9 attempts, correctly stating that ``delivery requires receiving only one type1 message, insufficient for f=1 Byzantine faults to prevent premature delivery'', but failed to reproduce this detection in subsequent executions with different prompts or repeated runs, resulting in an overall detection rate of 4.2% (1/24 valid tests).
+
+These results demonstrate a fundamental asymmetry in the verification capabilities of current language models: while all tested models achieved near-perfect accuracy when confirming that a correct algorithm satisfies its stated properties (consistently above 95%), they are essentially unable to detect when a protocol contains a logical error that violates one of those same properties. The models appear to rely heavily on the textual structure and narrative coherence of the algorithm description — including the correctness argument skeleton provided in the template — rather than performing independent logical reasoning about the protocol mechanics. When the algorithm description states that a property holds and provides a plausible-sounding justification, the models reproduce that conclusion regardless of whether the pseudocode actually supports it.
+
+This finding has significant implications for the use of language models in formal verification contexts: these models can serve as effective tools for confirming or documenting the correctness of algorithms that are already known to be correct, but they cannot currently be relied upon to independently discover violations or errors in protocol logic. The distinction between verification (checking a proof) and falsification (finding a counterexample) represents a boundary that the current generation of models, regardless of parameter count, does not reliably cross.

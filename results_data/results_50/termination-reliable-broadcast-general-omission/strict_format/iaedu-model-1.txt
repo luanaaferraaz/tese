@@ -1,0 +1,6 @@
+{"run_id": "c571a559-0ce0-4ee2-9221-15238b03cdb5", "type": "start", "content": "Processing"}
+
+{"run_id": "c571a559-0ce0-4ee2-9221-15238b03cdb5", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "c571a559-0ce0-4ee2-9221-15238b03cdb5", "type": "done", "content": "c571a559-0ce0-4ee2-9221-15238b03cdb5", "messageId": "None", "token_pct_used": 102.2}
+

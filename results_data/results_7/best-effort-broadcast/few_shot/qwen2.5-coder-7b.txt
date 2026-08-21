@@ -1,0 +1,3 @@
+Validity - [non satisfied]: The protocol relies on perfect point-to-point links, but it does not ensure that all processes receive the message if they crash.
+No duplication - [satisfied]
+No creation - [satisfied]

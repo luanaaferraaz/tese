@@ -1,0 +1,12 @@
+{"run_id": "178c3152-5543-4820-8f8e-642fd7f51ced", "type": "start", "content": "Processing"}
+
+{"run_id": "178c3152-5543-4820-8f8e-642fd7f51ced", "type": "token", "content": "R"}
+
+{"run_id": "178c3152-5543-4820-8f8e-642fd7f51ced", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: With n=4, f=1, a correct process may deliver from"}
+
+{"run_id": "178c3152-5543-4820-8f8e-642fd7f51ced", "type": "token", "content": " 2 type1 messages while others receive only 1.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "178c3152-5543-4820-8f8e-642fd7f51ced", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: With n=4, f=1, a correct process may deliver from 2 type1 messages while others receive only 1.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "178c3152-5543-4820-8f8e-642fd7f51ced", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "178c3152-5543-4820-8f8e-642fd7f51ced", "type": "done", "content": "178c3152-5543-4820-8f8e-642fd7f51ced", "messageId": "cms24craw1tfxke01wqeqvncc"}
+

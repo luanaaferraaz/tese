@@ -1,0 +1,4 @@
+Validity - [satisfied]  
+Agreement - [satisfied]  
+No duplication - [satisfied]  
+No creation - [non satisfied]: Process can receive the same message multiple times.

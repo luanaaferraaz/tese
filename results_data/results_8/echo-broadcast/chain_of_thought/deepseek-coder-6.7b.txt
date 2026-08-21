@@ -1,0 +1,4 @@
+Validity - Satisfied
+Agreement - Non satisfied: Agreement property requires that all correct processes accept the same value. In some cases, different processes can accept different values which violates this agreement.
+No duplication - Satisfied
+No creation - Satisfied

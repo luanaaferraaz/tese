@@ -1,0 +1,3 @@
+RB-Validity - [non satisfied]: relies on correct broadcaster sending initial message, but no guarantee of this in algorithm description.
+RB-Agreement - [non satisfied]: The delivery rule depends on receiving f+1 type1 messages. A correct process might not receive enough type1 messages if other processes are Byzantine.
+RB-Integrity - [satisfied]

@@ -1,0 +1,1 @@
+ <list of properties with their status, one line per property>

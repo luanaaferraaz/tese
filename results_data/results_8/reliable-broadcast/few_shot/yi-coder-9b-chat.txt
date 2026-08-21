@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [non satisfied]: If a correct process delivers m, it immediately sends m to all other processes. However, if the sender crashes mid-broadcast, some correct processes may never receive m and therefore not deliver it.

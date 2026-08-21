@@ -1,0 +1,11 @@
+Validity - [satisfied]
+This property states that if a correct process broadcasts m, then it eventually delivers m. In the pseudocode algorithm above, each correct process immediately delivers the message upon receiving it. This ensures that the validity condition is met. 
+
+No duplication - [satisfied]
+This property ensures that every correct process delivers m at most once. The delivered set in the pseudocode ensures that a message is not added to the set more than once, hence preventing any duplicates from being forwarded and delivered. 
+
+No creation - [satisfied]
+The No creation property stipulates that if a correct process delivers m, then m was broadcast by some process. In this algorithm, the system model assumes that processes fail only by crashing (stopping). This means that if a process delivers a message, it must have been initiated by one of the running processes during the system's lifetime.
+
+Agreement - [satisfied]
+Finally, if a correct process delivers m, every other correct process will eventually receive and deliver m as well because each immediately sends received messages to all other processes. This ensures that all correct processes agree on what messages they deliver.

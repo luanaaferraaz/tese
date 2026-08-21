@@ -1,0 +1,14 @@
+{"run_id": "3e7a1e6c-ceb3-4103-a523-77699a6794e1", "type": "start", "content": "Processing"}
+
+{"run_id": "3e7a1e6c-ceb3-4103-a523-77699a6794e1", "type": "token", "content": "Valid"}
+
+{"run_id": "3e7a1e6c-ceb3-4103-a523-77699a6794e1", "type": "token", "content": "ity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: No mechanism prevents mult"}
+
+{"run_id": "3e7a1e6c-ceb3-4103-a523-77699a6794e1", "type": "token", "content": "iple deliveries; delivery rule can trigger repeatedly as more READY messages arrive"}
+
+{"run_id": "3e7a1e6c-ceb3-4103-a523-77699a6794e1", "type": "token", "content": ".\nNo creation - [satisfied]"}
+
+{"run_id": "3e7a1e6c-ceb3-4103-a523-77699a6794e1", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: No mechanism prevents multiple deliveries; delivery rule can trigger repeatedly as more READY messages arrive.\nNo creation - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "3e7a1e6c-ceb3-4103-a523-77699a6794e1", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "3e7a1e6c-ceb3-4103-a523-77699a6794e1", "type": "done", "content": "3e7a1e6c-ceb3-4103-a523-77699a6794e1", "messageId": "cms24aowq1td3ke0124nij8pg"}
+

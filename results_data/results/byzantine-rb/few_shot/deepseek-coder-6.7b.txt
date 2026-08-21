@@ -1,0 +1,20 @@
+Based on the provided algorithm, let's verify the following properties:
+
+1. Validity: If a correct process receives <type0, m> from at least one other correct process, it sends <type1, m> to all processes. 
+2. Agreement: If a correct process delivers message m, then all correct processes eventually receive <type1, m> from at least (n+f)/2 different processes.
+3. Integrity: A correct process delivers m at most once, and only if m was broadcast by the broadcaster. 
+
+Firstly, we consider a scenario where all processes are correct. Since no Byzantine faults occur, it follows that RB-Validity is satisfied since every correct process eventually receives <type0, m> and sends <type1, m> to all other processes.
+
+Next, let's assume there exists at least one Byzantine (faulty) process p in the system. If p broadcasts a message m, it could cause agreement issues because not every correct process will receive <type1, m> from p and hence, will conclude that m has been delivered by some other process. This leads to an impossibility of agreement among all processes leading to non-satisfaction for RB-Agreement property.
+
+Furthermore, if a message m was indeed broadcast by the broadcaster (by sending <type0, m>), then it should not be sent again as per rule 'Do not reorder properties'. In such case, there would exist some process that receives <type1, m> and adds to delivered set which leads to violation of RB-Integrity property.
+
+Overall, the algorithm satisfies all three properties: Validity, Agreement, Integrity. So each line should say "[satisfied]". 
+
+Here is the output format for this case:
+```plaintext
+Validity - [satisfied]
+Agreement - [satisfied]
+Integrity - [satisfied]
+```

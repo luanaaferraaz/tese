@@ -1,0 +1,10 @@
+Algorithm: Reliable Broadcast - General Omission Variant (RB-GO)
+
+Properties:
+Validity, No duplication, No creation, Agreement
+
+Output:
+Validity – [satisfied]
+No duplication – [satisfied]
+No creation – [satisfied]
+Agreement – [non satisfied]: In the case of a general omission faulty process may fail to send or receive on any subset of its links. This could lead to a situation where some correct processes never deliver m, if the sender crashes mid-broadcast. A more sophisticated protocol might need to handle this situation and retransmit missing messages when they are received again after a crash.

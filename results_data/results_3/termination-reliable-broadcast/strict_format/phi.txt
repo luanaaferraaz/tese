@@ -1,0 +1,19 @@
+ The TERMITATING RELIABLE BROADCAST (TRB) algorithm is designed to reliably broadcast a message from a designated sender. It relies on the assumption that the process of broadcasting will eventually deliver a value, and if a correct process delivers m, then all other processes will eventually receive it. 
+
+The TRB protocol operates by having a single designated sender, denoted as s. The algorithm first identifies itself in the identification section (step 1). In terms of system model (step 2), there are n total processes and at most f of them can be faulty. If the number of correct processes (n) is greater than the number of faulty processes (f), then the algorithm will work correctly.
+
+The algorithm ensures correctness by stating that every correct process eventually delivers a message, and if one correct process broadcasts m, then all other correct processes will eventually receive it (steps 3-4). The interface (step 5) specifies the external operation to initiate broadcasting (TRB-broadcast) and the output events for when a message is successfully delivered (TRB-deliver).
+
+The TRB protocol also has specific roles assigned to each participant. The sender (s) initiates the broadcast, while other processes (including s) are receivers that must reach a decision. Each process maintains its own local state, including variables such as received messages and a flag for whether or not it has been delivered.
+
+In terms of message types (step 6), each round includes three components: the sender's ID, the value being broadcasted, and the round signature/metadata. This information allows the algorithm to track which process is delivering the message at any given time.
+
+The initialization phase (step 7) sets up the set of received messages to be an empty set (∅), and all processes are marked as not delivered. As the protocol progresses through rounds, if a new message is received for the first time by a process, that process adds it to its set of received messages. If this occurs in subsequent rounds, then the sender sends another message to each receiver, ensuring that everyone has received the same value. 
+
+In the decision phase (step 8), once all messages have been received at some point during the round (f+1), the algorithm checks if there is a non-empty set of received messages. If so, the algorithm will relay those messages to each process using the TRB-deliver operation (step 9). Otherwise, the algorithm will deliver the SF token instead.
+
+The delivery decision rule states that this final round (f+1) marks the end of the broadcast, and all processes must either receive a value or the SF token in order for the broadcast to be successful. The TRB protocol also relies on Round-based Intersection, ensuring that at least one process has not failed by the time the final round is complete.
+
+The algorithm's invariants (steps 10-13) ensure that it will deliver a correct value if one was successfully received by a faulty sender and relay the SF token only if no message was successfully received by all other processes. 
+
+Overall, the TRB protocol has been proven to be reliable in ensuring that messages are delivered correctly, even when some of the processes involved may fail. It also takes into account the possibility of faulty senders and still ensures that a value is eventually delivered. However, this algorithm relies on certain assumptions such as the presence of at least one correct process (n>f) and the synchronization of timing between all processes, which may not always be feasible in real-world scenarios.

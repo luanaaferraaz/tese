@@ -1,0 +1,4 @@
+Validity - [satisfied]
+Agreement - [satisfied]
+No duplication - [satisfied]
+No creation - [unsatisfied]: Only one process can send a message at any given time, which ensures that the same message is not sent more than once. However, no guarantee is made about the origin of a previously broadcast message.

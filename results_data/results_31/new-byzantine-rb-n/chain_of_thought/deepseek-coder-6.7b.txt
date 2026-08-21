@@ -1,0 +1,10 @@
+Here are the final results for each property of the Best Effort Broadcast Algorithm:
+
+RB-Validity - Satisfied
+Reason: If a correct broadcaster broadcasts m, and it sends <type0, m> to its neighbours, then all correct processes eventually receive at least one <type1, m> message from a neighbouring process. This would satisfy the requirement that f+1 valid senders are needed for delivery.
+
+RB-Agreement - Satisfied
+Reason: If a correct process delivers m, it receives f+1 <type1, m> messages from its neighbours. At least one of these is from a correct process. This shows agreement among the correct processes and ensures that all correct processes eventually deliver m.
+
+RB-Integrity - Satisfied
+Reason: A correct process delivers m at most once because it keeps track of delivered messages in the delivered set. If a Byzantine process tried to force delivery by sending multiple <type1, m> messages, the delivered set would contain more than one occurrence of m, violating the rule that a process can deliver m at most once.

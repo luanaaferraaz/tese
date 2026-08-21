@@ -1,0 +1,6 @@
+{"run_id": "a9475f47-bc22-41ad-a322-b2dee553ae2c", "type": "start", "content": "Processing"}
+
+{"run_id": "a9475f47-bc22-41ad-a322-b2dee553ae2c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "a9475f47-bc22-41ad-a322-b2dee553ae2c", "type": "done", "content": "a9475f47-bc22-41ad-a322-b2dee553ae2c", "messageId": "None", "token_pct_used": 102.2}
+

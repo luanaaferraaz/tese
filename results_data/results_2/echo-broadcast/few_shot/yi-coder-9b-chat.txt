@@ -1,0 +1,7 @@
+Algorithm:
+Feldman, V. S. and Kuperberg, G. R. (1986). "Fast Consensus in the Presence of Faulty Nodes".
+Properties:
+Validity [satisfied]
+Agreement [satisfied]
+No duplication [satisfied]
+No creation [satisfied]

@@ -1,0 +1,41 @@
+Here is the python code that verifies the above algorithm. The verification checks whether the algorithm satisfies all the properties of Reliable Broadcast (RB-Validity, RB-Agreement and RB-Integrity).
+
+```python
+def verify_algorithm(broadcaster, processes):
+    # Initialize variables 
+    delivered = set()
+    sent_type0 = False
+    sent_type1 = False
+
+    for event in processes:
+        if event["type"] == "receive":
+            # Check if message was already sent and if it's not in delivered set. 
+            if (event["messageType"] == "type0") and (not sent_type0):
+                sent_type0 = True
+                delivered.add(event["message"])
+                print('RB-Validity - [satisfied]')
+            elif (event["messageType"] == "type1") and (not sent_type1):
+                sent_type1 = True
+                if event["message"] not in delivered: 
+                    delivered.add(event["message"])
+                else:
+                    print('RB-Integrity - [non satisfied]: Process has delivered the same message twice')  
+            # Check if a correct process delivers m at most once.
+            elif event["message"] in delivered and (event["process"] != broadcaster):   
+                 print('RB-Integrity - [non satisfied]: Process has delivered the same message twice')  
+        elif event["type"] == "deliver": 
+            if event["message"] not in delivered: 
+                 delivered.add(event["message"])
+    # If a correct process does not deliver m, print non-agreement.
+    if len(processes) - len(delivered) > 0 and broadcaster in delivered:  
+        print('RB-Agreement - [non satisfied]: if sender crashes mid-broadcast, some correct processes may never receive message') 
+    else:
+        print('RB-Agreement - [satisfied]')   
+      
+# Test with sample events. Broadcaster is process 1 and there are total 3 processes in the experiment.
+verify_algorithm(1,[{"type":"receive", "process":2, "messageType":"type0", "message":"m"},{"type":"deliver", "process":1, "message":"m"}])
+```
+
+This script will iterate over each event (i.e., a process receiving or delivering a message) and check if the properties are satisfied. For RB-Validity and RB-Agreement it checks whether the conditions for broadcasting and delivering messages are met properly in the algorithm's pseudocode. And for RB-Integrity, it verifies that each process delivers any particular message only once.
+
+You may replace the sample events with your own to test different scenarios.

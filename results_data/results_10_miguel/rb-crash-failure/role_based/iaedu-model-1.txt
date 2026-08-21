@@ -1,0 +1,110 @@
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "start", "content": "Processing"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": ""}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "RB"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "-"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "Validity"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " -"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " ["}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "s"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "atisfied"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "]"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " ("}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "confidence"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": ":"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " "}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "9"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "/"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "10"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": ")"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "  \n"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "RB"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "-"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "Agreement"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " -"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " ["}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "s"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "atisfied"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "]"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " ("}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "confidence"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": ":"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " "}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "9"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "/"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "10"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": ")"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "  \n"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "RB"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "-"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "Integrity"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " -"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " ["}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "s"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "atisfied"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "]"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " ("}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "confidence"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": ":"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": " "}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "8"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "/"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": "10"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": ")"}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "token", "content": ""}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)  \nRB-Agreement - [satisfied] (confidence: 9/10)  \nRB-Integrity - [satisfied] (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "response_metadata": {"model_provider": "openai", "id": "resp_04fbd1689d065cc5006a578ab492e08195824bab28ed3b4197", "created_at": 1784122036.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "3675c8a0-6b53-44fd-b543-705200fb206a", "type": "done", "content": "3675c8a0-6b53-44fd-b543-705200fb206a", "messageId": "cmrm479835cy2ke01jqajeznu"}
+

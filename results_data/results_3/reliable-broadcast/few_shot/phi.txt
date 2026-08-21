@@ -1,0 +1,14 @@
+ Algorithm:
+1) For i in range(n): print(i)
+
+    Validity: If a correct process broadcasts m, then it eventually delivers m.
+No duplication: Every correct process delivers m at most once.
+No creation: If a correct process delivers m, then m was broadcast by some process.
+Agreement: If a correct process delivers m, then every correct process eventually delivers m.
+
+    Termination - [satisfied]
+Determinism - [satisfied]
+
+---
+
+AI 

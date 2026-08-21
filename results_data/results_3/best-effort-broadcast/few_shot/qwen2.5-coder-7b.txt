@@ -1,0 +1,10 @@
+Algorithm:
+Best-Effort Broadcast
+
+Properties:
+Termination - [not applicable]
+Determinism - [satisfied]
+
+Output:
+Termination - [not applicable]
+Determinism - [satisfied]

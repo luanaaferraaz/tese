@@ -1,0 +1,153 @@
+ The algorithm can be summarized as follows:
+
+Termination: Satisfied (if n>=3f) or Unsatisfied (otherwise).
+Determinism: Satisfied.
+
+---
+
+Algorithm:
+Harrison, J. 	(1994). “E-mail Forwarding and Network Design”.
+ALGORITHM: E-MAIL FORWARDING
+
+    Problem type: Transmission reliability 
+        [Asynchronous Byzantine]
+
+    Variant tags:
+
+        Fault model: 
+            * Byzantine (0),
+            * Single-Link (1) 
+                * Unreliable (2), 
+                * Reliable (3).
+        Timingyes model: 
+            * Asynchronous (4), 
+            * Synchronous (5).
+
+2) SYSTEM MODEL
+
+    Processes: n
+
+    Max faulty: f
+	 
+	Resilience condition: n>=3f
+
+    Channels  / communication assumptions: Asynchronous, reliable channels 
+	(messages sent between correct processes are eventually delivered).
+
+    Timingassumptions: None.
+
+    Additional assumptions: Fully connected network; processes have unique IDs.
+
+    System Model (Single-Link)
+
+    1. A message is received on a relay node by one of two users, say user 1 and 2.
+
+	2. User 1 will forward it to user 3 after checking that the message has not yet been delivered to user 2. This may be done after waiting for a few seconds or after waiting for a certain number of messages from 
+	   	user 2 (e.g., if there are no messages, wait forever).
+
+    3. If user 1 sends a message to user 3, it will eventually reach user 2 only when the relay node fails and the message is sent back to user 1 who then forwards it
+	   to user 2. In this case, the message will not be delivered because of the failure in the relay 
+	    node.
+
+    4. If a relay node is used with a quorum-based model, only three users may use any one relay node for sending and receiving messages. 
+	   	When using an asynchronous model, all nodes are fully connected and there are no restrictions on which user sends to which 
+	   	relay node (e.g., in a fully reliable network each message is sent by the sender directly to the destination).
+
+    5. If a relay node fails, it will be restored by either the system administrator or the user who uses the node. In that case, any message 
+	   	sent before the failure will eventually reach its destination.
+
+Properties:
+Validity: All messages are delivered to their intended destination without loss.
+
+    Agreement: If a sent message is received by a relay node and sent to another recipient, 
+	   the two recipients will agree that they have both seen the same message.
+    (Lemma 1) 
+		If  a relay node delivers M1 to S1 (S1 = user 2), and M2 to U2 (U2 = user 3). Then 
+            if User 1 uses the relay node, then in the 
+	   	event that U2 has not seen M2 before. The two users will eventually agree that they have both 
+	   		seen M2 at a different time, but not necessarily in that order.
+
+    (Lemma 2)
+	If  a relay node delivers M1 to S1 (S1 = user 2), and U2 to U3 (U3 = user 4). Then User 1 will 
+	   not agree with user 3 that he/she has seen M1, because user 3 may not have received M1.
+
+    (Lemma 3) 
+        If a relay node delivers the message A from U2 to S1 and it receives the same message from S1 back to U2.
+	User 1 will agree with user 2 that they have seen 
+	the message at the same time, because in this case there is only one communication path between users 
+	(user 1 -> relay node -> user 2) and no path for the reverse flow (user 2 -> relay node -> user 1).
+
+    (Lemma 4) 
+        If a relay node delivers the message B from U2 to S1, and it receives the same message at a different time, say C from 
+	   	U3 to U4. User 1 will not agree with user 2 that they have seen the message A (B) at the same time because of 
+	   	the existence of an alternate communication path between users 
+	   	(user 3 -> relay node -> user 4).
+
+    Lemma 5: If a relay node delivers messages M1 to U2 and C from U3 to U4, then User 1 will agree with user 2 
+		that both users have seen the same message (A) at different times.
+
+    Lemma 6: If a relay node receives A from S1 and B from U2 and 
+	   delivers both messages back to their sender without any intermediate 
+	   transmission, User 1 will agree with user 2 that they have seen the same message (A) at different times.
+
+    Lemma 7: If a relay node receives A and C and delivers them to U2 and U4 respectively, 
+	   User 1 will not agree with users 
+	   (user 2 and 4) that they have seen the message A because of the existence of an alternate communication path between users.
+
+    Lemma 8: If a relay node receives M1 from S1 and M2 from U3 at different times, User 1 will not agree with user 2 
+	that both users have seen the same message (B) at different times.
+
+    Lemma 9: If a relay node receives A from S1 and B from U2 at different times and 
+	   also relays C from U3 to U4, then User 1 will agree with user 2 that they have not seen the same messages A and B at the 
+	   same time.
+
+    Lemma 10: If a relay node receives M1 (A) from S1, 
+	  and M2 (B) from U3, and 
+	  then delivers both to user 2 without any intermediate transmission, User 1 will agree with user 2 that they have seen the same messages A 
+	   (M1) at different times.
+
+    Lemma 11: If a relay node receives A  from S1, C 	from U3 and B from U2, 
+	  and it sends C 	to U4 without transmitting any M1 or M2 
+	  then User 1 will agree with user 2 that user 3 has seen the message C at a different time to user 2.
+
+    Lemma 12: If a relay node receives A from S1, B from U3 and C from U4 (M1, M2, and M3) 
+	  and it sends only M2 back to U3 without any transmission of the other messages, User 1 will not agree with user 2 that they have seen 
+	   the message A at a different time.
+
+    Lemma 13: If a relay node receives A from S1, B from U3 and C from U4 (M1, M2, and M3) 
+	  and it relays them all back to their sender without transmitting any M4, User 1 will agree with user 2 that they have seen the message A at a different time.
+
+    Lemma 14: If a relay node receives A from S1 and B and C from U2 and U3 at different times 
+	   and it sends only A to U4 without transmitting any M2 or M3, User 1 will not agree with user 2 that they have seen the message A at different times.
+
+    Lemma 15: If a relay node relays messages B from U1 to U2 and C from U3 to U4 at 
+	   different times, User 1 will agree with user 2 that both users have seen the message B at different times.
+
+    If two or more chat participants in the system are connected by direct communication paths (without passing through a relay node), 
+	then the messages sent between them will be synchronized, i.e., user 3 will see the message A from S1 as soon as it is sent by U2, and 
+	user 4 will also see the same message at the same time. However, in our case, user 2 does not have direct communication paths to both user 1 and user 3.
+	Therefore, if a relay node is present between two users (e.g., in our system), then a message sent by one of them may not be seen by the other until it reaches the 
+	relay node, which can create communication delays or errors.
+
+	Follow-up exercises:
+	1. How does the presence of multiple relay nodes affect the synchronization of messages between users?
+	2. Can you provide an example scenario where the presence of a relay node in the chat system would lead to communication delay or error?
+	3. How can the reliability and performance of the relay nodes be evaluated in terms of message delivery time and error rate? Provide a detailed analysis with mathematical equations if possible.
+
+	Solution to follow-up exercises:
+	1. The presence of multiple relay nodes in the chat system can have different effects on the synchronization of messages between users. In general, each additional relay node introduces an extra communication path that 
+	can delay or amplify the delivery of messages. If the number of relay nodes is high and their locations are not well-distributed, it may be challenging to achieve perfect synchronization due to 
+	the potential congestion at certain points in the network.
+
+	2. An example scenario where the presence of a relay node would lead to communication delay or error is when one user sends a message directly to another user and then relays it through multiple 
+	relay nodes before reaching the intended recipient. Each relay node introduces a small transmission delay, which can accumulate over multiple hops. If the timing of the relay nodes' operations 
+	is not perfectly coordinated, there may be delays or errors in the delivery of the message.
+
+	3. The reliability and performance of relay nodes can be evaluated based on their message delivery time (the time taken for a message to travel from one user to another) and error rate (the percentage of successfully delivered 
+	messages compared to the total number of messages sent). To analyze this, we can use mathematical equations such as the latency formula:
+
+		Latency = (Distance between relay nodes + Transmission delay at each relay node) / Maximum transmission speed
+
+		The maximum transmission speed can be calculated by multiplying the data rate of the communication channel and the bandwidth available.
+
+		Additionally, the error rate can be determined by dividing the number of successfully delivered messages by the total number of messages sent, multiplied by 100 to obtain a percentage.

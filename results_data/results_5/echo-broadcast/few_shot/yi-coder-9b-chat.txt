@@ -1,0 +1,4 @@
+Validity - [satisfied]
+Agreement - [satisfied] by the rules and conditions. If two correct processes q and r accept the values v and u respectively, they will be equal as long as both are correct.
+No duplication - [satisfied] by the delivery rule which ensures that a process delivers a message m only once. It uses a counter for READY messages per unique message m to decide when enough messages have been received to deliver the message.
+No creation - [satisfied] by the fact that the broadcast message (m) is originated from a designated sender and all other processes validate whether they've seen it before delivering.

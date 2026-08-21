@@ -1,0 +1,15 @@
+The algorithm is designed to address the Byzantine fault tolerance problem in an asynchronous system. It ensures that all correct processes eventually receive a message and agree on its content, even in the presence of up to one faulty (or malicious) process. 
+
+Here's how each property is verified:
+
+RB-Validity - Satisfied: All correct processes eventually receive m through <type0, m> broadcast. The RBcast protocol ensures this by sending <type1, m> when enough instances of it have been received and the message hasn't been delivered yet.
+
+RB-Agreement - Non satisfied: In some scenarios, a process may deliver m before receiving enough <type1, m> support messages to satisfy the agreement condition. This could be due to delays in message delivery or uneven load distribution among processes. The protocol ensures that it delivers m when it has received at least (n+f)/2 instances of <type1, m>.
+
+RB-Integrity - Satisfied: Each correct process delivers m at most once, ensuring the integrity of broadcasted messages. This is achieved by maintaining a 'delivered' set and only delivering m when it has been received from (n+f)/2 processes that have seen <type1, m>.
+
+RB-Validity - Satisfied: If the broadcaster is correct, all other correct processes eventually receive 3 distinct messages of type <type0,m> and at least one message of type <type1,m>. This can be verified by following the protocol steps and checking that each step makes sense based on the number of received messages and whether a delivery has occurred yet.
+
+RB-Agreement - Satisfied: If a correct process delivers m, it will receive at least (n+f)/2 distinct <type1,m> support messages from other processes to satisfy this agreement condition. This is ensured by the protocol's forwarding rule using f + 1 in addition to ensuring that enough correct processes have seen <type1,m>.
+
+RB-Integrity - Satisfied: The fact that each process delivers m at most once ensures integrity of broadcasted messages. A single Byzantine process can't cause multiple deliveries by sending different messages or not sending any at all. This is ensured by the protocol's distinct sender counting and 'delivered' set checks.

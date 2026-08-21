@@ -1,0 +1,6 @@
+{"run_id": "c83d6ecc-5c9d-47e6-af9f-55a292ce0143", "type": "start", "content": "Processing"}
+
+{"run_id": "c83d6ecc-5c9d-47e6-af9f-55a292ce0143", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "c83d6ecc-5c9d-47e6-af9f-55a292ce0143", "type": "done", "content": "c83d6ecc-5c9d-47e6-af9f-55a292ce0143", "messageId": "None", "token_pct_used": 102.2}
+

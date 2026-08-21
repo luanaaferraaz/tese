@@ -1,0 +1,6 @@
+{"run_id": "7633ea50-8d72-49be-9937-692451ce7313", "type": "start", "content": "Processing"}
+
+{"run_id": "7633ea50-8d72-49be-9937-692451ce7313", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "7633ea50-8d72-49be-9937-692451ce7313", "type": "done", "content": "7633ea50-8d72-49be-9937-692451ce7313", "messageId": "None", "token_pct_used": 106.4}
+

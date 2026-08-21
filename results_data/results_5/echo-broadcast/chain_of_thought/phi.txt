@@ -1,0 +1,7 @@
+ 
+Echo (Satisfied) - Async and Reliable
+Agreement (Satisfied) - Each correct process that delivers a message, receives 2f+1 READY messages. At least f+1 of these are from correct processes. Any other process will eventually receive at leat f+1 READY messages via Rule 
+2
+Deliver (Not Satisfied): The algorithm fails to ensure persistence. If an incorrect process delivers m, it may only send the message to few correct processes. In this case, there is a possibility that one or more wrong processes are still sending READY messages to others. As a result, a process may not receive enough READY messages in its lifetime (which is required for deliver)
+\end{verbatim}
+

@@ -1,0 +1,13 @@
+The algorithm is for the most efficient reliable broadcast algorithm in a crash-failure scenario. Here's how it satisfies the properties RB-Validity, RB-Agreement and RB-Integrity:
+
+```
+RB-Validity - satisfied
+RB-Agreement - satisfied
+RB-Integrity - satisfied
+```
+
+In this context, `RB-Validity` is satisfied because if the broadcaster (the process that calls RB-Broadcast) is correct and doesn't crash, it sends its initial message <type0, m> to itself via reliable channels. It then receives this message in a correct receiver process and forwards it to other processes through reliable channels. 
+
+`RB-Agreement` is also satisfied because if at least one correct process delivers message `m`, all other correct processes eventually receive the same delivery of `m` as well, indicating agreement about its presence. 
+
+Finally, `RB-Integrity` is also satisfied because each delivered message can only be delivered once and this is ensured by the local state variable `delivered` which keeps track of all messages that have been delivered. If a new message `m` is received but it's already in the `delivered` set, it means that `m` has already been delivered and hence cannot be re-broadcasted again.

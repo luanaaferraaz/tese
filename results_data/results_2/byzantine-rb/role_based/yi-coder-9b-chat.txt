@@ -1,0 +1,8 @@
+RB-Validity - satisfied
+The RB-Validity property states that If a correct broadcaster broadcasts m, then all correct processes eventually deliver m. This property is satisfied in the given algorithm because a correct process keeps track of distinct type1 messages it receives and when it has received enough evidence (n + f) / 2 such messages, it delivers the message.
+
+RB-Agreement - satisfied
+The RB-Agreement property states that if one correct process delivers m, then all correct processes eventually deliver m. This property is also satisfied in this algorithm because a correct process delivers m only after it has received enough type1 evidence from other correct processes (n + f) / 2.
+
+RB-Integrity - satisfied
+The RB-Integrity property states that A correct process delivers m at most once, and only if m was broadcast. This property is satisfied in the algorithm because a correct process keeps track of all delivered messages, and does not deliver a message more than once. Furthermore, the integrity is maintained by having thresholds for type1 evidence ensuring that even with f faulty processes, one correct process cannot create enough support alone.

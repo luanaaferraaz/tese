@@ -1,0 +1,6 @@
+{"run_id": "df0e0294-6f82-48ae-9d5d-0fbdab31238d", "type": "start", "content": "Processing"}
+
+{"run_id": "df0e0294-6f82-48ae-9d5d-0fbdab31238d", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "df0e0294-6f82-48ae-9d5d-0fbdab31238d", "type": "done", "content": "df0e0294-6f82-48ae-9d5d-0fbdab31238d", "messageId": "None", "token_pct_used": 106.4}
+

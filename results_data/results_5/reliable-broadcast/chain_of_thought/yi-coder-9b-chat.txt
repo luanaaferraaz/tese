@@ -1,0 +1,11 @@
+1. Validity - satisfied
+A correct process broadcasts m, and eventually delivers it to the application. This means that a correct process will always broadcast the message m before any other operation takes place. Therefore, if this process delivers m as output to its application, it is guaranteed that m was originally sent by some process in the system. 
+
+2. No duplication - satisfied
+In the RB algorithm, each process keeps track of messages it has already delivered to the application. If a message arrives which was previously delivered, the process ignores this message and does not deliver it again to prevent duplication. Therefore, every correct process delivers m at most once. 
+
+3. No creation - satisfied
+If a correct process delivers m, then m was broadcast by some process. The algorithm assumes that only correct processes can participate in the network and they only broadcast messages which were added to their queue by an external operation (rb_broadcast). Therefore, any message delivered to the application is guaranteed to have been sent by another process in the system.
+
+4. Agreement - satisfied
+The agreement property means that if a correct process i delivers m, it immediately sends this message to all other processes. Since channels are reliable and processes are honest (non-Byzantine), every other correct process will eventually receive m and deliver it as output to its application. This ensures that once any process delivers m, all other processes will eventually also deliver m.

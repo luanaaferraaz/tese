@@ -1,0 +1,10 @@
+Algorithm:
+for i in range(n): print(i)
+
+Properties:
+Termination - Satisfied because the loop will terminate after a maximum of n iterations.
+Determinism - Satisfied because each iteration is deterministic and does not depend on previous iterations or any external factors that could introduce uncertainty.
+
+Output:
+Termination - [Satisfied] The for loop runs from 0 to n-1, so it will always terminate with a maximum of n iterations.
+Determinism - [Satisfied] Each line of code in the loop is deterministic; the value of i is determined solely by its position in the range function, and there are no external factors influencing this determination.

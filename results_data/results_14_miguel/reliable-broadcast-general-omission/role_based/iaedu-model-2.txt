@@ -1,0 +1,18 @@
+{"run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "type": "start", "content": "Processing"}
+
+{"run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "type": "token", "content": "Validity - [non"}
+
+{"run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "type": "token", "content": " satisfied]: Sender delivers immediately without f+1 distinct sources, but"}
+
+{"run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "type": "token", "content": " this alone is fine; however self-count issue okay.\nNo duplication -"}
+
+{"run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "type": "token", "content": " [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Sender delivers then may omit all"}
+
+{"run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "type": "token", "content": " sends; correct processes receive nothing, cannot reach f+1 thre"}
+
+{"run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "type": "token", "content": "shold."}
+
+{"run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 distinct sources, but this alone is fine; however self-count issue okay.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Sender delivers then may omit all sends; correct processes receive nothing, cannot reach f+1 threshold.", "tool_calls": [], "tool_call_id": null, "run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "a04bedcc-0252-40d2-915d-b282f0cfd420", "type": "done", "content": "a04bedcc-0252-40d2-915d-b282f0cfd420", "messageId": "cms3as0mf28dtke01ru4y1hd3"}
+

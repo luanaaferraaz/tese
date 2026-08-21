@@ -1,0 +1,4 @@
+1) Validity - [satisfied]
+2) Agreement - [satisfied]
+3) No duplication - [satisfied]
+4) No creation - [non satisfied] (Because a correct process can create a new message instance without any SEND(m)).

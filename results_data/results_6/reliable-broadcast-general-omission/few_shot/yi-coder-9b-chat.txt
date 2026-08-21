@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [non satisfied]: In the event of a crash or a general omission failure, some correct processes may never receive m from enough other correct processes to reach the f+1 threshold for delivery.

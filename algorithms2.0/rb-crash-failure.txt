@@ -1,0 +1,123 @@
+ALGORITHM TEMPLATE: Crash-Failure RBcast Algorithm
+1) IDENTIFICATION
+
+Algorithm name: Most Efficient RBcast Algorithm for Crash-Failure Experiment
+
+Problem type: Reliable Broadcast
+
+Variant tags:
+
+Fault model: Crash
+Timing model: Asynchronous
+
+2) SYSTEM MODEL
+
+Processes: A static set Π of n processes.
+
+Max faulty: f = 1 in the experiment.
+
+Resilience condition: The paper evaluates this with n = 3, f = 1.
+
+Channels / communication assumptions: Reliable message-passing channels.
+
+Timing assumptions: Asynchronous.
+
+Additional assumptions: Processes may crash by stopping. A crashed process sends no more messages.
+
+3) CORRECTNESS PROPERTIES
+
+RB-Validity: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m.
+
+RB-Agreement: If one correct process delivers m, then all correct processes eventually deliver m.
+
+RB-Integrity: A correct process delivers m at most once, and only if m was broadcast.
+
+4) INTERFACE
+
+External operations: RB-Broadcast(m), invoked by the broadcaster.
+
+Output events: DELIVER(m), fired at most once per message.
+
+5) ROLES
+
+Broadcaster: Starts the broadcast by sending the message to itself.
+
+Relayers / Receivers: When they receive the message, they forward it to the other processes and deliver it.
+
+6) LOCAL STATE
+
+Constants:
+
+n: total number of processes.
+f = 1: maximum number of crashed processes in the experiment.
+
+Variables:
+
+delivered: set of delivered messages, initially empty.
+sent_type0: whether <type0, m> was already sent, initially false.
+sent_type1: whether <type1, m> was already sent, initially false.
+
+7) MESSAGE TYPES
+
+<type0, m>: initial message sent by the broadcaster to itself.
+<type1, m>: forwarded message sent to the other processes.
+
+Validation rules:
+
+Do not send the same message type twice for the same m.
+Do not deliver the same m twice.
+
+8) INITIALIZATION
+
+delivered ← ∅
+sent_type0 ← false
+sent_type1 ← false
+
+9) PROTOCOL PSEUDOCODE
+
+A) On external invocation:
+
+upon RB-Broadcast(m):
+    if not already sent <type0, m>:
+        send <type0, m> to myself
+    stop
+
+B) On message receive:
+
+upon receive(<t, m>):
+    if not already sent <type1, m>:
+        send <type1, m> to neighbours
+
+    if m not in delivered:
+        delivered ← delivered ∪ {m}
+        deliver(m)
+
+    stop
+
+Here, neighbours means all processes except itself.
+
+10) DECISION / DELIVERY RULE
+
+Deliver m when a process receives a message containing m.
+
+After delivery, mark m as delivered and do not deliver it again.
+
+11) QUORUM / KEY STRUCTURAL ARGUMENT
+
+No threshold quorum is used. The key idea is forwarding: once a correct process receives the message, it sends it to the other processes.
+
+12) INVARIANTS
+
+I1 — Forward before stop: A process that receives m forwards <type1, m> before stopping its handler.
+
+I2 — No duplicate delivery: A process delivers m at most once.
+
+I3 — Propagation: If a correct process receives m, then all non-crashed neighbours eventually receive a forwarded copy.
+
+13) CORRECTNESS ARGUMENT SKELETON
+
+RB-Validity: If the broadcaster is correct, it sends <type0, m> to itself, receives it, forwards <type1, m> to neighbours, and delivers. Reliable channels make the forwarded message reach correct processes.
+
+RB-Agreement: If one correct process delivers m, then it received m and forwards it to neighbours. Other correct processes eventually receive it and deliver it.
+
+RB-Integrity: The delivered set prevents duplicate delivery. Since messages are only forwarded after receiving m, delivered messages trace back to the original broadcast.

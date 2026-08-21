@@ -1,0 +1,11 @@
+Termination - Satisfied
+Reason: The protocol guarantees termination as each correct process eventually delivers a message. This is ensured by the fact that after f+1 rounds, if no value has been delivered (i.e., all processes deliver SF), then every correct process will have received some broadcasted message in one of the preceding rounds.
+
+Validity - Satisfied
+Reason: The protocol ensures validity because if the sender s is correct and it broadcasts a message m, then all correct processes eventually deliver m at least once after round f+1. This is ensured by the fact that upon receiving (s, m, r), where r is in [1,f] for the first time, this process adds m to its received_msgs and sends it onwards for rounds r in [r,f+1].
+
+Agreement - Satisfied
+Reason: The protocol ensures agreement because if a correct process delivers a message m, then every other correct process will eventually deliver m after round f+1. This is ensured by the fact that upon receiving (s, m, r), where r is in [1,f] for the first time, this process adds m to its received_msgs and sends it onwards for rounds r in [r,f+1].
+
+Integrity - Satisfied
+Reason: The protocol ensures integrity because every correct process delivers at most one message. If a correct process delivers SF, then no other message was broadcast by the sender s. This is ensured by the fact that upon receiving (s, m, r), where r is in [1,f] for the first time, this process adds m to its received_msgs and sends it onwards for rounds r in [r,f+1].

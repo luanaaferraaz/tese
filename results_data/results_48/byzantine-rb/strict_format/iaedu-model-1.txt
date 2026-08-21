@@ -1,0 +1,6 @@
+{"run_id": "222bb946-95b4-42e1-9551-56608e2ab50c", "type": "start", "content": "Processing"}
+
+{"run_id": "222bb946-95b4-42e1-9551-56608e2ab50c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "222bb946-95b4-42e1-9551-56608e2ab50c", "type": "done", "content": "222bb946-95b4-42e1-9551-56608e2ab50c", "messageId": "None", "token_pct_used": 102.2}
+

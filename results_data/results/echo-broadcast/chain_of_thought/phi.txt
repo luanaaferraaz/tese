@@ -1,0 +1,7 @@
+ "Verifying ECHO BROADCAST algorithm"
+Validity - [satisfied]
+Agreement - [non satisfied]: 
+Reason - The agreement condition is not met because of a message sent by a faulty process.
+Totality - [satisfied]
+No duplication - [satisfied]
+Non creation - [satisfied]

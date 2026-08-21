@@ -1,0 +1,10 @@
+Here are the final results for each property of this algorithm:
+
+1. RB-Validity - Satisfied
+   The broadcaster sends a <type0, m> message to its neighbours if it is not already sent. This message will be received and forwarded by all correct receivers. As such, all correct processes eventually deliver the message.
+
+2. RB-Agreement - Satisfied
+   If one correct process delivers a message, then it receives at least f + 1 <type1, m> messages from other correct processes. The delivery threshold of 2 messages ensures that this agreement is maintained and that all correct processes eventually deliver the same message.
+
+3. RB-Integrity - Satisfied
+   A process delivers a message at most once because it maintains a delivered set. Since f = 1, it means at least one non-Byzantine process must support the message for delivery. If all Byzantine processes cooperate by sending duplicate <type1, m> messages, this would violate the integrity property. Hence, only distinct valid senders can deliver a message.

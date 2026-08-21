@@ -1,0 +1,6 @@
+{"run_id": "37566787-92af-466c-ab73-3f74d15f308f", "type": "start", "content": "Processing"}
+
+{"run_id": "37566787-92af-466c-ab73-3f74d15f308f", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "37566787-92af-466c-ab73-3f74d15f308f", "type": "done", "content": "37566787-92af-466c-ab73-3f74d15f308f", "messageId": "None", "token_pct_used": 106.4}
+

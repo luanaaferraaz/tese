@@ -1,0 +1,14 @@
+{"run_id": "73b48212-9fdf-474a-8ac1-841baa00f72c", "type": "start", "content": "Processing"}
+
+{"run_id": "73b48212-9fdf-474a-8ac1-841baa00f72c", "type": "token", "content": "Validity - ["}
+
+{"run_id": "73b48212-9fdf-474a-8ac1-841baa00f72c", "type": "token", "content": "satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: delivered"}
+
+{"run_id": "73b48212-9fdf-474a-8ac1-841baa00f72c", "type": "token", "content": " flag not checked in delivery rule; may deliver multiple times (confidence: 8/10)\nNo creation - [satisfied] (confidence"}
+
+{"run_id": "73b48212-9fdf-474a-8ac1-841baa00f72c", "type": "token", "content": ": 8/10)"}
+
+{"run_id": "73b48212-9fdf-474a-8ac1-841baa00f72c", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: delivered flag not checked in delivery rule; may deliver multiple times (confidence: 8/10)\nNo creation - [satisfied] (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "73b48212-9fdf-474a-8ac1-841baa00f72c", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "73b48212-9fdf-474a-8ac1-841baa00f72c", "type": "done", "content": "73b48212-9fdf-474a-8ac1-841baa00f72c", "messageId": "cmrivb18v33gake01y80ooauu"}
+

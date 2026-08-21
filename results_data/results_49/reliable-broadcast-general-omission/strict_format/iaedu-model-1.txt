@@ -1,0 +1,6 @@
+{"run_id": "22735697-13d0-42f7-8334-0f9ad29bc52a", "type": "start", "content": "Processing"}
+
+{"run_id": "22735697-13d0-42f7-8334-0f9ad29bc52a", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "22735697-13d0-42f7-8334-0f9ad29bc52a", "type": "done", "content": "22735697-13d0-42f7-8334-0f9ad29bc52a", "messageId": "None", "token_pct_used": 102.2}
+

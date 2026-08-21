@@ -1,0 +1,6 @@
+{"run_id": "0f77642d-bb4b-43b9-ac34-982215e32386", "type": "start", "content": "Processing"}
+
+{"run_id": "0f77642d-bb4b-43b9-ac34-982215e32386", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "0f77642d-bb4b-43b9-ac34-982215e32386", "type": "done", "content": "0f77642d-bb4b-43b9-ac34-982215e32386", "messageId": "None", "token_pct_used": 106.4}
+

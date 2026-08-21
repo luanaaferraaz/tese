@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+Reason: The algorithm ensures that the correct broadcaster broadcasts m. It guarantees to all processes that if a message is broadcasted, then it will eventually reach all the processes due to the nature of the reliable channels.
+
+RB-Agreement - [satisfied]
+Reason: If one process delivers m and starts forwarding <type1,m> to other processes then all other correct processes eventually receive this forwarded copy resulting in agreement on the value m.
+
+RB-Integrity - [non satisfied]: The algorithm does not ensure integrity as it doesn't prevent a process from delivering m multiple times if delivered set is not maintained properly leading to inconsistency.

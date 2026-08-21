@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster correctly sends the initial broadcast message <type0, m> to all its neighbours. It does not send any duplicate messages and it ensures that all correct processes eventually receive this message via reliable authenticated channels.
+
+RB-Agreement - Satisfied
+If one correct process delivers a message m, then at least f + 1 of the other correct processes received the <type1, m> support messages from some distinct sender(s). This ensures that all correct processes eventually receive and agree on the same message content. The algorithm correctly applies the delivery decision rule based on f+1 valid senders to decide upon a message once it receives f+1 confirmations.
+
+RB-Integrity - Satisfied
+A correct process delivers m at most once, and only if m was broadcast. This is ensured by keeping track of delivered messages in the delivered set, and ensuring that each message m is sent no more than once (as per validation rules). If a Byzantine sender attempts to deliver an already-delivered message, this would result in duplicate delivery issues, which is not allowed as per RB-Integrity property.

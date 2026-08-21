@@ -1,0 +1,6 @@
+{"run_id": "75b4ac75-6daf-413e-ba43-135c6274f78a", "type": "start", "content": "Processing"}
+
+{"run_id": "75b4ac75-6daf-413e-ba43-135c6274f78a", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "75b4ac75-6daf-413e-ba43-135c6274f78a", "type": "done", "content": "75b4ac75-6daf-413e-ba43-135c6274f78a", "messageId": "None", "token_pct_used": 99.2}
+

@@ -1,0 +1,2 @@
+ Validity - [satisfied]: The rules ensure that even if the Byzantine sender only sends the message to a few correct processes, they will ”amplify" the signal until everyone receives enough READY messages to deliver.
+

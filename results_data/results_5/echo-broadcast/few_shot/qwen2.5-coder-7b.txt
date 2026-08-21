@@ -1,0 +1,4 @@
+Validity - [satisfied]
+Agreement - [non satisfied]: Byzantine sender can prevent all correct processes from delivering the message
+No duplication - [satisfied]
+No creation - [satisfied]

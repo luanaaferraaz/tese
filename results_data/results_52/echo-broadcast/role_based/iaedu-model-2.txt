@@ -1,0 +1,6 @@
+{"run_id": "5f2fbffe-20f5-44f5-9480-f54c48cb293c", "type": "start", "content": "Processing"}
+
+{"run_id": "5f2fbffe-20f5-44f5-9480-f54c48cb293c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "5f2fbffe-20f5-44f5-9480-f54c48cb293c", "type": "done", "content": "5f2fbffe-20f5-44f5-9480-f54c48cb293c", "messageId": "None", "token_pct_used": 106.4}
+

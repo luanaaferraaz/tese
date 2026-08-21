@@ -1,0 +1,14 @@
+{"run_id": "59306727-6401-4eae-90a6-5d55914c26be", "type": "start", "content": "Processing"}
+
+{"run_id": "59306727-6401-4eae-90a6-5d55914c26be", "type": "token", "content": "R"}
+
+{"run_id": "59306727-6401-4eae-90a6-5d55914c26be", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Correct process delivering via 2 type"}
+
+{"run_id": "59306727-6401-4eae-90a6-5d55914c26be", "type": "token", "content": "1 msgs (1 Byzantine + 1 correct) may not trigger others; corre"}
+
+{"run_id": "59306727-6401-4eae-90a6-5d55914c26be", "type": "token", "content": "ct sender won't relay further.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "59306727-6401-4eae-90a6-5d55914c26be", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Correct process delivering via 2 type1 msgs (1 Byzantine + 1 correct) may not trigger others; correct sender won't relay further.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "59306727-6401-4eae-90a6-5d55914c26be", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "59306727-6401-4eae-90a6-5d55914c26be", "type": "done", "content": "59306727-6401-4eae-90a6-5d55914c26be", "messageId": "cms3amb2o2861ke011ds8n9ma"}
+

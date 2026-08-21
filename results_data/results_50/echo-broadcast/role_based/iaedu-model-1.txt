@@ -1,0 +1,6 @@
+{"run_id": "b93f82de-fb11-4832-a066-a8de566975cf", "type": "start", "content": "Processing"}
+
+{"run_id": "b93f82de-fb11-4832-a066-a8de566975cf", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "b93f82de-fb11-4832-a066-a8de566975cf", "type": "done", "content": "b93f82de-fb11-4832-a066-a8de566975cf", "messageId": "None", "token_pct_used": 102.2}
+

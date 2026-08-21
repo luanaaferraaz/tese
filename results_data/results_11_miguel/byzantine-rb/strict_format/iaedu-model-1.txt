@@ -1,0 +1,140 @@
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "start", "content": "Processing"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": ""}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "RB"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "-"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "Validity"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " -"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " ["}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "s"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "atisfied"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "]"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " ("}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "confidence"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": ":"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " "}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "9"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "/"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "10"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": ")\n"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "RB"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "-"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "Agreement"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " -"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " ["}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "s"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "atisfied"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "]"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " ("}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "confidence"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": ":"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " "}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "9"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "/"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "10"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": ")\n"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "RB"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "-"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "Integrity"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " -"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " ["}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "non"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " satisfied"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "]:"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " Byzantine"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " process"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " can"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " send"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " fake"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " type"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "0"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": ","}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " causing"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " correct"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " processes"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " to"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " deliver"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " an"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " un"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "broadcast"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " message"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " ("}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "confidence"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": ":"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": " "}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "10"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "/"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": "10"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": ")"}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "token", "content": ""}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [satisfied] (confidence: 9/10)\nRB-Integrity - [non satisfied]: Byzantine process can send fake type0, causing correct processes to deliver an unbroadcast message (confidence: 10/10)", "tool_calls": [], "tool_call_id": null, "run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "response_metadata": {"model_provider": "openai", "id": "resp_0a05bf4f4df90295006a58e1b3e8908190830f94fc998d68a0", "created_at": 1784209843.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "type": "done", "content": "ce37dbf3-8832-4252-bc5c-edc7bd5e5519", "messageId": "cmrnkhfpq0ftpke01prirgrlb"}
+

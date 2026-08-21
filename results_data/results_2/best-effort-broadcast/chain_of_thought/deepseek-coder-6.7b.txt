@@ -1,0 +1,4 @@
+Safety - [satisfied]
+No creation - [satisfied] (Derived directly from the "no creation" property of the underlying perfect links).
+No duplication - [non satisfied]: Multiple processes can broadcast the same message, which is not handled by the algorithm.
+Validity - [satisfied] (Derived from the reliable delivery property of perfect links; if the sender is correct, it sends the message to all q∈n, and perfect links ensure they all deliver it).

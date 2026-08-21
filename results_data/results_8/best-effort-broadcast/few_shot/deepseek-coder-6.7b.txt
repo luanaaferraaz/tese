@@ -1,0 +1,10 @@
+Algorithm: Best-Effort Broadcast
+
+Properties:
+Validity, Agreement, No duplication, No creation
+
+Output:
+Validity - [satisfied]
+Agreement - [non satisfied]: if sender crashes mid-broadcast, some correct processes may never receive m
+No duplication - [satisfied]
+No creation - [satisfied]

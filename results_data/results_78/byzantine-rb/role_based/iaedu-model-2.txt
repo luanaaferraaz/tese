@@ -1,0 +1,14 @@
+{"run_id": "6f96ac36-541d-4313-962b-fd00b0807cfc", "type": "start", "content": "Processing"}
+
+{"run_id": "6f96ac36-541d-4313-962b-fd00b0807cfc", "type": "token", "content": "R"}
+
+{"run_id": "6f96ac36-541d-4313-962b-fd00b0807cfc", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 \u2192 3;"}
+
+{"run_id": "6f96ac36-541d-4313-962b-fd00b0807cfc", "type": "token", "content": " two correct echoes insufficient if Byzantine withholds, bl"}
+
+{"run_id": "6f96ac36-541d-4313-962b-fd00b0807cfc", "type": "token", "content": "ocking delivery consistency.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "6f96ac36-541d-4313-962b-fd00b0807cfc", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 \u2192 3; two correct echoes insufficient if Byzantine withholds, blocking delivery consistency.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "6f96ac36-541d-4313-962b-fd00b0807cfc", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "6f96ac36-541d-4313-962b-fd00b0807cfc", "type": "done", "content": "6f96ac36-541d-4313-962b-fd00b0807cfc", "messageId": "cms243g6p1t4hke01pnzno5fb"}
+

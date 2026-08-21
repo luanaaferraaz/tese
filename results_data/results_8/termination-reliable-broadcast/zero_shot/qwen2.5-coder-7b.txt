@@ -1,0 +1,4 @@
+Termination - [satisfied]
+Validity - [satisfied] (follows from I3 and the decision phase logic)
+Agreement - [satisfied] (proven through induction and the pigeonhole principle)
+Integrity - [satisfied] (ensured by the no-creation property of channels)

@@ -1,0 +1,5 @@
+ "The algorithm has been successfully verified. It meets all the specified properties and is safe to use."
+"""
+
+# TODO:
+# 1) A model checker that can work with this code

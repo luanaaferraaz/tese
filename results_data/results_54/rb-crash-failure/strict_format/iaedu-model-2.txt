@@ -1,0 +1,6 @@
+{"run_id": "ea3b7c12-0356-4453-baaa-a050f05183a7", "type": "start", "content": "Processing"}
+
+{"run_id": "ea3b7c12-0356-4453-baaa-a050f05183a7", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ea3b7c12-0356-4453-baaa-a050f05183a7", "type": "done", "content": "ea3b7c12-0356-4453-baaa-a050f05183a7", "messageId": "None", "token_pct_used": 106.4}
+

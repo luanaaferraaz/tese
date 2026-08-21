@@ -1,0 +1,23 @@
+For each property:
+
+Property: Safety - Integrity  
+Result: SATISFIED
+
+Justification: The algorithm ensures that a correct process delivers at most one message by maintaining the invariant that no correct process delivers without a valid FINAL proof.
+
+Property: Safety - Consistency  
+Result: SATISFIED
+
+Justification: The algorithm guarantees consistency because any two sets of size q intersect in at least t+1 processes, ensuring that if two correct processes deliver messages m and m', they must be the same message (since at most t are Byzantine).
+
+Property: Safety - Validity  
+Result: SATISFIED
+
+Justification: If the sender is correct and broadcasts a message m, any correct process that delivers will verify the FINAL proof, ensuring it delivers m.
+
+Property: Liveness - Termination (sender correct)  
+Result: SATISFIED
+
+Justification: The algorithm ensures that if the sender is correct, all correct processes eventually deliver m because Ps collects >= q ECHOs and broadcasts a FINAL message, which leads to all correct processes verifying and delivering the message.
+
+In summary, the algorithm satisfies all specified properties under the given assumptions.

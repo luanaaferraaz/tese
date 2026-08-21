@@ -1,0 +1,8 @@
+1. Validity - [satisfied]
+All the correct processes receive a message if it was broadcasted by any of them according to the definition of a broadcast function. The assumption is that the links are perfect which ensures reliable delivery and non-loss, thus satisfying validity.
+
+2. No duplication - [satisfied]
+Because each process can only deliver messages once and the communication model does not allow for duplication or creation of these messages, the no duplication property holds true. 
+
+3. No creation - [satisfied]
+The system assumes that any message delivered to a process was previously broadcast by some process in the system. Since the channels are perfect links without alteration, duplication, or loss, it follows that this property is satisfied as well.

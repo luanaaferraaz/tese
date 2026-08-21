@@ -1,0 +1,8 @@
+- The New Byzantine-Tolerant RBcast Algorithm is implemented in the pseudocode above. It uses two types of messages, <type0> and <type1>, to guarantee reliable broadcast (RB) with a resilience condition n ≥ 4 and f = 1 (i.e., the algorithm works for at least four processes and one faulty process).
+- The correctness properties RB-Validity, RB-Agreement, and RB-Integrity are all verified by the pseudocode above under a certain set of assumptions including correct processes counting messages from distinct senders, reliable authenticated message passing channels, and an asynchronous timing model.
+- The algorithm is efficient due to its unique strategy of sending support / confirmation messages <type1> to only neighbours instead of all processes (avoiding self-sends), and it delivers after receiving f + 1 confirmations (two distinct processes in this case since f = 1) instead of the previous algorithm's requirement of (n + f) / 2.
+- The correctness argument is based on the key structural argument that f + 1 distinct senders cannot all be Byzantine, since f = 1. Once a correct process sees f + 1 <type1> messages, it will propagate these supports to its neighbours.
+- The algorithm satisfies the following properties:
+  - RB-Validity - A correct broadcaster broadcasts m then all other correct processes eventually deliver m.
+  - RB-Agreement - If one correct process delivers m, then all other correct processes eventually deliver m.
+  - RB-Integrity - A correct process delivers m at most once and only if it was broadcasted.

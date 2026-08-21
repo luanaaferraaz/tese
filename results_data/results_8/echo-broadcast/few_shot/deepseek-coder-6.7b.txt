@@ -1,0 +1,22 @@
+Based on the provided algorithm and its correctness properties, let's verify them.
+
+Algorithm: Bracha’s Reliable Broadcast
+
+Properties:
+1. Validity 
+2. Agreement 
+3. No duplication 
+4. No creation
+
+Output:
+```
+Validity - [satisfied]
+Agreement - [non satisfied]: In the case of a Byzantine process that fails before it has received f+1 READY messages, other correct processes may not agree on the message content.
+No duplication - [satisfied]
+No creation - [satisfied]
+```
+
+Explanation:
+For Validity and No duplication properties, Bracha’s Reliable Broadcast algorithm ensures that a correct process broadcasts a certain value v, and all other correct processes accept this value. The property "Agreement" can be satisfied if the message content is unique for each message (No two correct processes ever send ECHO or READY for different messages in the same broadcast instance). However, we cannot guarantee it due to Byzantine faults that could cause a failure of one process before receiving f+1 READY messages.
+
+For No creation property, Bracha’s Reliable Broadcast algorithm ensures that if a process delivers a message m with sender s, then m was previously broadcast by process s because the delivery rule requires at least 2f+1 processes to deliver the message. The No duplication property is also ensured since each unique message m has its own echo_count and ready_count counters.

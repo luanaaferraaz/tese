@@ -1,0 +1,7 @@
+```
+Algorithm: Terminating Reliable Broadcast (TRB)
+
+Properties:
+Termination - Satisfied. The termination property is fulfilled as the sender broadcasts a message in every round, and all processes eventually reach the decision phase and deliver a value or SF token.
+Determinism - Satisfied. In every step of the algorithm, there are only two possible actions for each process: either it continues to wait for more messages or it decides on the received content and delivers it. Therefore, the algorithm is deterministic.
+```

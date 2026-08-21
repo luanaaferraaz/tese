@@ -1,0 +1,6 @@
+{"run_id": "a45e952a-2d66-48bd-9dbd-c71ecf7016e2", "type": "start", "content": "Processing"}
+
+{"run_id": "a45e952a-2d66-48bd-9dbd-c71ecf7016e2", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "a45e952a-2d66-48bd-9dbd-c71ecf7016e2", "type": "done", "content": "a45e952a-2d66-48bd-9dbd-c71ecf7016e2", "messageId": "None", "token_pct_used": 102.2}
+

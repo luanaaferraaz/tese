@@ -1,0 +1,5 @@
+RB-Validity - [satisfied]: Correct broadcaster sends <type0, m>, and correct receivers eventually deliver it.
+
+RB-Agreement - [satisfied]: One correct process delivers m after receiving f + 1 <type1, m> messages, which are spread by the forwarding rule.
+
+RB-Integrity - [satisfied]: A process delivers m at most once due to the delivered set, and a Byzantine process cannot force delivery with fewer than f + 1 support.

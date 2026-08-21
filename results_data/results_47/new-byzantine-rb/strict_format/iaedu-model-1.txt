@@ -1,0 +1,6 @@
+{"run_id": "faf361b8-f2a9-4791-bb26-2f218a5e91a8", "type": "start", "content": "Processing"}
+
+{"run_id": "faf361b8-f2a9-4791-bb26-2f218a5e91a8", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "faf361b8-f2a9-4791-bb26-2f218a5e91a8", "type": "done", "content": "faf361b8-f2a9-4791-bb26-2f218a5e91a8", "messageId": "None", "token_pct_used": 102.2}
+

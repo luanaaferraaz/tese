@@ -1,0 +1,1 @@
+ [Validity]: The algorithm is valid. It guarantees that if a correct process broadcasts m, then eventually all correct processes will have m in their delivered set. This ensures the reliability and eventual delivery of messages without duplication.

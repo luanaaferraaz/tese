@@ -1,0 +1,12 @@
+RB-Validity - [Satisfied]
+The broadcaster can send the initial message <type0, m> to all processes. Since every process will receive this message eventually, it implies that RB-Validity is satisfied.
+
+RB-Agreement - [Non Satisfied]
+If one correct process delivers a message m, it cannot guarantee that other correct processes will also deliver the same message if they have seen enough evidence to do so. This can be due to the Byzantine fault model where any number of processes may send malicious or inconsistent messages. 
+
+RB-Integrity - [Satisfied]
+The algorithm ensures that a correct process delivers m at most once and only if m was broadcast by using the delivered set to prevent duplicate delivery. The distinct sender counting prevents each process from counting more than one message per sender, which in turn guarantees RB-Integrity. 
+
+However, it's important to note that while this algorithm ensures RB-Validity, it does not guarantee RB-Agreement and RB-Integrity for all possible values of f (number of Byzantine processes). The reason is the absence of a mechanism to limit the number of messages sent by each process or prevent them from sending inconsistent/malicious messages. 
+
+Additionally, it's also not guaranteed under the described assumptions that RB-Validity, RB-Agreement and RB-Integrity will hold for all possible values of n (number of processes) as well. The thresholds used in this algorithm are dependent on f which is fixed to 1 in our case. If a larger number of processes were involved, the need for Byzantine fault tolerance might become more significant and could affect the ability to maintain RB-Validity, RB-Agreement and RB-Integrity.

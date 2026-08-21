@@ -1,0 +1,4 @@
+Validity - [Satisfied]
+Agreement - [Satisfied]
+No duplication - [Non Satisfied]: The protocol does not guarantee that no message is delivered more than once. It only guarantees that a single copy of a message is eventually delivered by all correct processes, but it cannot guarantee the absence of duplicates within one broadcast instance.
+No creation - [Satisfied] 

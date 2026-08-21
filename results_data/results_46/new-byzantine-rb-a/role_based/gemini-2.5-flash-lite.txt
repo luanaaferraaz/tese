@@ -1,0 +1,3 @@
+RB-Validity - [non satisfied]: Broadcast to neighbours and limited f=1 Byzantine faults prevent guarantee if broadcaster is Byzantine and no other correct process sends type1.
+RB-Agreement - [satisfied]
+RB-Integrity - [satisfied]

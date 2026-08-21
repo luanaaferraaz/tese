@@ -1,0 +1,6 @@
+{"run_id": "f8fd546b-f45f-45fd-bae1-d628e685728d", "type": "start", "content": "Processing"}
+
+{"run_id": "f8fd546b-f45f-45fd-bae1-d628e685728d", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "f8fd546b-f45f-45fd-bae1-d628e685728d", "type": "done", "content": "f8fd546b-f45f-45fd-bae1-d628e685728d", "messageId": "None", "token_pct_used": 107.3}
+

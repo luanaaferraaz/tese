@@ -1,0 +1,11 @@
+1. Validity:
+   This property is not directly mentioned in the algorithm description. However, from the pseudo code and the explanation we can conclude that all correct processes accept v if a correct process p broadcasts it. Thus, this property seems to be satisfied based on the pseudo-code.
+
+2. Agreement:
+   The agreement property isn't explicitly stated either but we infer that if two correct processes q and r accept values v and u respectively then these will be equal i.e., v=u. This seems to be supported by the pseudo code where ready_count is used to make sure 2f+1 READY messages for a specific value have been received before delivery.
+
+3. No duplication:
+   The algorithm does not explicitly mention this property but from the pseudocode, we can see that each process only delivers a message once when 2f+1 READY messages are received. Thus it seems that the no duplication property is satisfied.
+
+4. No creation:
+    From the pseudo-code and explanation of the algorithm, there doesn't seem to be a mechanism explicitly stating that all processes cannot create new messages beyond what has already been broadcast by the sender. Therefore, this property also appears to be satisfied in this algorithm.

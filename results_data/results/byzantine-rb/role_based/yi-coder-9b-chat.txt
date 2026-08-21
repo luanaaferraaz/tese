@@ -1,0 +1,8 @@
+RB-Validity - satisfied
+This property holds because if a correct broadcaster broadcasts m, all correct processes eventually deliver it. The algorithm uses thresholds to ensure that only messages from distinct senders are counted and the minimum number of support messages required for delivery is reached.
+
+RB-Agreement - satisfied
+The property holds true because if one correct process delivers m, it has seen enough <type1, m> support. The agreement rule ensures that other processes see this support and eventually deliver m as well.
+
+RB-Integrity - satisfied
+The integrity property is satisfied in the algorithm design. It prevents a process from delivering m more than once by keeping track of delivered messages in a set 'delivered'. Additionally, it uses the distinct sender rule to count at most one message per sender and the sent_type1 flag to send <type1, m> only once.

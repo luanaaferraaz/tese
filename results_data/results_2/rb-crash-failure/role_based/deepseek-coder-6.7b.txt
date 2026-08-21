@@ -1,0 +1,13 @@
+Here are the validation results for your crash-failure reliable broadcast algorithm:
+
+RB-Validity - Satisfied: The broadcaster correctly sends a <type0, m> message to itself and receives it. Furthermore, after receiving the message, all correct processes eventually receive and deliver the message through forwarding.
+
+RB-Agreement - Satisfied: If one correct process delivers m, then it received m and forwards it to its neighbours. Other correct processes eventually receive it and deliver it.
+
+RB-Integrity - Satisfied: The delivered set prevents duplicate delivery. Since messages are only forwarded after receiving a message containing that content, delivered messages trace back to the original broadcast.
+
+I1 — Forward before stop - Non satisfied: There exists at least one process that receives m and forwards <type1, m> but does not stop its handler. This is likely due to some error in the handling of received messages or an issue with the reliable message-passing channels.
+
+I2 — No duplicate delivery - Satisfied: A process delivers a message at most once. Any instance where a message was delivered more than once would indicate a possible error or fault in the algorithm.
+
+I3 — Propagation - Non satisfied: It has been observed that not all non-crashed neighbours eventually receive a forwarded copy of m. This could be due to network congestion, process failure, or an issue with the reliable message-passing channels. The broadcaster and correct processes should ensure that messages are correctly forwarded to their neighbours.

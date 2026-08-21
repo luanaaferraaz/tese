@@ -1,0 +1,8 @@
+1. RB-Validity - satisfied
+The algorithm ensures that if the broadcaster broadcasts m, then all correct processes eventually deliver it because of the reliable channels assumption. The algorithm sends the message to all processes and delivers it when any message containing m is received. 
+
+2. RB-Agreement - satisfied
+If one process delivers m, then the message was sent to all according to the definition of agreement in the algorithm. Therefore, all correct processes eventually receive and deliver it. 
+
+3. RB-Integrity - satisfied
+The delivered set prevents duplicate delivery. Since messages are not created by the channel, delivered messages come from a broadcast as per the algorithm's pseudocode. The message is delivered only once because of the condition checks in the pseudocode.

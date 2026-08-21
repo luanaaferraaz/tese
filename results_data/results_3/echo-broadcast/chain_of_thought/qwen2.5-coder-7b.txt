@@ -1,0 +1,4 @@
+Validity - [satisfied]
+Agreement - [satisfied]
+No duplication - [satisfied]
+No creation - [non satisfied]: Duplicate READY messages can be created.

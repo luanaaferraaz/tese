@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster ensures that every correct process eventually receives and delivers the message. It sends <type0, m> to itself upon invoking RB-Broadcast(m), then forwards <type1, m> to its neighbours after receiving it. This is ensured by the delivery rule (delivering m when a process receives a message containing m) and invariant I3 (Propagation).
+
+RB-Agreement - Satisfied
+The broadcaster ensures that if one correct process delivers m, then all other correct processes eventually receive it. This is ensured by the delivery rule (delivering m when a process receives a message containing m), and invariant I2 (No duplicate delivery). Moreover, since the broadcaster forwards <type1, m> to its neighbours after receiving it, every correct process that does not receive m will eventually also miss this forwarded copy.
+
+RB-Integrity - Satisfied
+The broadcaster ensures that a correct process delivers m at most once and only if m was broadcast. This is ensured by the delivery rule (delivering m when a process receives a message containing m), invariant I2 (No duplicate delivery), and the fact that messages are not delivered again after being marked as delivered.

@@ -1,0 +1,4 @@
+1) Validity - [satisfied]
+2) Agreement - [satisfied]
+3) No duplication - [non satisfied]: The protocol does not adequately prevent the duplication of messages. A process may send ECHO and READY for the same message multiple times, leading to an incorrect count.
+4) No creation - [non satisfied]: The protocol doesn't prevent correct processes from creating new messages outside the scope of the reliable broadcast. In the absence of a trusted authority, there is no mechanism in place to validate the authenticity of a message.

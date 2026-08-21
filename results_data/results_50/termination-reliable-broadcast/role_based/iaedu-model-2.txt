@@ -1,0 +1,6 @@
+{"run_id": "d111e310-a719-430c-859f-557a24a0eb8e", "type": "start", "content": "Processing"}
+
+{"run_id": "d111e310-a719-430c-859f-557a24a0eb8e", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "d111e310-a719-430c-859f-557a24a0eb8e", "type": "done", "content": "d111e310-a719-430c-859f-557a24a0eb8e", "messageId": "None", "token_pct_used": 106.4}
+

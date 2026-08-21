@@ -1,0 +1,7 @@
+1. RB-Validity: The algorithm starts with a correct process broadcasting <type0, m> to its neighbours. If m is subsequently delivered by the process, then all other correct processes eventually receive this broadcast and also deliver it. This property holds true because of the message propagation rules and the fact that the sender's identity is known which allows for distinct sender identification.
+   
+2. RB-Agreement: If one correct process delivers m via <type1, m> messages from at least f + 1 distinct processes then all other correct processes eventually deliver it as well. This is because of the way support is propagated and the fact that f processes can be Byzantine.
+   
+3. RB-Integrity: A process only delivers a message once. This property is upheld since a set 'delivered' stores messages already delivered. No further <type1, m> messages are sent after the message has been delivered ensuring this property.
+   
+Thus, the properties RB-Validity, RB-Agreement and RB-Integrity are satisfied by this algorithm.

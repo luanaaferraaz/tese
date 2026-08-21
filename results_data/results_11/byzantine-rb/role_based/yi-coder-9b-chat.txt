@@ -1,0 +1,8 @@
+1) RB-Validity - Satisfied
+The correctness property of RB-validity is that when a correct process broadcasts <type0, m>, all correct processes eventually deliver the message. In the pseudocode given above, the broadcast message <type0, m> is received by all processes and the received_type0[m] set keeps track of these instances. When the size of this set exceeds 1 (naming a process as distinct from itself) and the <type1, m> message has not yet been sent, then it sends an echo message <type1, m> to all processes.
+
+2) RB-Agreement - Satisfied
+The correctness property of RB-agreement is that if one correct process delivers a message, then all correct processes eventually deliver this message. This property follows from the received_type0[m] and received_type1[m] sets used in the pseudocode. The algorithm uses these sets to determine if enough evidence has been gathered for delivery of a message m.
+
+3) RB-Integrity - Satisfied
+The correctness property of RB-integrity is that each correct process delivers a message at most once, and only if this message was broadcast by some other process. This property also follows from the pseudocode given above. The delivered set keeps track of messages already delivered and ensures no duplicate deliveries occur.

@@ -1,0 +1,16 @@
+{"run_id": "aac15d20-d957-468b-9eed-2f1942fb8536", "type": "start", "content": "Processing"}
+
+{"run_id": "aac15d20-d957-468b-9eed-2f1942fb8536", "type": "token", "content": "R"}
+
+{"run_id": "aac15d20-d957-468b-9eed-2f1942fb8536", "type": "token", "content": "B-Validity - [non satisfied]: Correct broadcaster alone cannot trigger f+1 type0 thre"}
+
+{"run_id": "aac15d20-d957-468b-9eed-2f1942fb8536", "type": "token", "content": "shold at receivers when only 2 correct non-broadcaster processes exist.\nRB-Agreement - [non satisfied]:"}
+
+{"run_id": "aac15d20-d957-468b-9eed-2f1942fb8536", "type": "token", "content": " No amplification from type0 evidence; delivery needs 2 type1 senders which"}
+
+{"run_id": "aac15d20-d957-468b-9eed-2f1942fb8536", "type": "token", "content": " may never be reached.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "aac15d20-d957-468b-9eed-2f1942fb8536", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Correct broadcaster alone cannot trigger f+1 type0 threshold at receivers when only 2 correct non-broadcaster processes exist.\nRB-Agreement - [non satisfied]: No amplification from type0 evidence; delivery needs 2 type1 senders which may never be reached.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "aac15d20-d957-468b-9eed-2f1942fb8536", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "aac15d20-d957-468b-9eed-2f1942fb8536", "type": "done", "content": "aac15d20-d957-468b-9eed-2f1942fb8536", "messageId": "cms24lgn31tpvke01yzz8xfr8"}
+

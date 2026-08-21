@@ -1,0 +1,5 @@
+RB-Validity - satisfied
+
+RB-Agreement - satisfied, the process must receive at least f + 1 valid messages from correct processes to deliver a message. There is no reason for this property not being satisfied.
+
+RB-Integrity - satisfied, a correct process delivers only once because it keeps track of delivered messages in a set. If a Byzantine process tries to force the delivery by sending multiple <type1, m> messages, it will be detected and prevented due to the use of the 'delivered' set.

@@ -1,0 +1,16 @@
+{"run_id": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "type": "start", "content": "Processing"}
+
+{"run_id": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "type": "token", "content": "R"}
+
+{"run_id": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold (n+f)/"}
+
+{"run_id": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "type": "token", "content": "2=2.5\u21923; two correct deliverers need"}
+
+{"run_id": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "type": "token", "content": " 3 type1 msgs but only 2 correct senders guaranteed. (confidence"}
+
+{"run_id": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "type": "token", "content": ": 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold (n+f)/2=2.5\u21923; two correct deliverers need 3 type1 msgs but only 2 correct senders guaranteed. (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "type": "done", "content": "f844aaf5-c8f4-46c1-a7dd-abbea7c984ed", "messageId": "cmriv4v3l33d8ke01rfj1mp4c"}
+

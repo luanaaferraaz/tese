@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+All correct processes eventually receive the message through the RBcast algorithm. Once they see enough evidence, they deliver it. This ensures that a correct process delivers every message which was broadcast by another correct process.
+
+RB-Agreement - Satisfied
+A single correct process delivering a message implies that all correct processes eventually see enough evidence to also deliver this message. This is guaranteed by the RBcast algorithm and its use of thresholds.
+
+RB-Integrity - Satisfied
+The protocol ensures that each correct process delivers every message at most once, and only if it was broadcast. The mechanism with the delivered set prevents duplicate deliveries.

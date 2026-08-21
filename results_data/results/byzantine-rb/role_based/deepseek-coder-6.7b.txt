@@ -1,0 +1,14 @@
+## Evaluation Result for Byzantine-Failure RBcast Algorithm
+
+RB-Validity: Satisfied. The broadcaster broadcasts the message to all correct processes, each of which eventually receives and sends a support message back to all other processes. Hence, every correct process eventually delivers the message through enough received support messages.
+
+RB-Agreement: Satisfied. If one correct process delivers, it has seen enough support messages from different processes (f+1), hence forwarded them to all processes which ensures that all correct processes receive and agree on the message broadcasting.
+
+RB-Integrity: Satisfied. The distinct sender counting prevents duplicate deliveries of the same message. A single Byzantine process cannot create enough support messages for others to deliver the message, as the f+1 rule ensures at least one correct supporter among f+1 senders. 
+
+## Output Requirements:
+
+RB-Validity - Satisfied  
+RB-Agreement - Satisfied  
+RB-Integrity - Satisfied  
+Reason for non satisfaction is not applicable in this context as the algorithm is correct and satisfies all specified properties.

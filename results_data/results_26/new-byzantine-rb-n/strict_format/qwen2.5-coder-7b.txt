@@ -1,0 +1,3 @@
+RB-Validity - [satisfied]: Correct broadcaster sends <type0, m> to neighbours; correct receivers then spread support.
+RB-Agreement - [satisfied]: Correct process delivers after receiving f + 1 distinct <type1, m> messages.
+RB-Integrity - [non satisfied]: A Byzantine process alone cannot force delivery but might cause confusion.

@@ -1,0 +1,5 @@
+RB-Validity - [satisfied]: The broadcaster sends <type0, m> to neighbours. Correct receivers then send <type1, m> to their neighbours. Since correct support spreads, correct processes eventually receive at least f + 1 <type1, m> messages and deliver.
+
+RB-Agreement - [satisfied]: If one correct process delivers m, it received f + 1 <type1, m> messages. At least one of those came from a correct process. The forwarding rule spreads this support to the other correct processes, allowing them to reach the same delivery threshold.
+
+RB-Integrity - [satisfied]: A process delivers only once because of the delivered set. Since f + 1 support is required and only f processes can be Byzantine, a Byzantine process alone cannot force delivery.

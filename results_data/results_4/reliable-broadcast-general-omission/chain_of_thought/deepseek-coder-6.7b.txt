@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [satisfied]: The algorithm ensures that all correct processes eventually receive and deliver a message from at least f+1 different correct processes.

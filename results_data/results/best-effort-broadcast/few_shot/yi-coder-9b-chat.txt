@@ -1,0 +1,5 @@
+Termination - [satisfied]
+The algorithm always terminates after a finite number of steps because the communication is assumed to be perfect, i.e., it does not create any loss or delay in message delivery. The algorithm also assumes that messages are unique and no process broadcasts the same message twice which helps guarantee that each correct process delivers every correct process's broadcasted message only once ensuring no duplication after termination.
+
+Determinism - [satisfied]
+The algorithm is deterministic because it operates under a set of well-defined rules, and for a given input (i.e., a certain message m), the same output (i.e., delivering the message to all processes n) will always be produced. Furthermore, since the algorithm assumes that the communication channels are perfect with no loss or alteration, the order in which messages are delivered is deterministic as well.

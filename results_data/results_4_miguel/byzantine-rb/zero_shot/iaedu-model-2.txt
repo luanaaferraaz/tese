@@ -1,0 +1,14 @@
+{"run_id": "c8d27753-efac-4059-b4c5-3ac20b967012", "type": "start", "content": "Processing"}
+
+{"run_id": "c8d27753-efac-4059-b4c5-3ac20b967012", "type": "token", "content": "R"}
+
+{"run_id": "c8d27753-efac-4059-b4c5-3ac20b967012", "type": "token", "content": "B-Validity - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2.5\u2192"}
+
+{"run_id": "c8d27753-efac-4059-b4c5-3ac20b967012", "type": "token", "content": "3, but only 3 correct processes send type1, delivery possible y"}
+
+{"run_id": "c8d27753-efac-4059-b4c5-3ac20b967012", "type": "token", "content": "et fragile.\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]"}
+
+{"run_id": "c8d27753-efac-4059-b4c5-3ac20b967012", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2.5\u21923, but only 3 correct processes send type1, delivery possible yet fragile.\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "c8d27753-efac-4059-b4c5-3ac20b967012", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "c8d27753-efac-4059-b4c5-3ac20b967012", "type": "done", "content": "c8d27753-efac-4059-b4c5-3ac20b967012", "messageId": "cmrd72frl82aake01l65flfpj"}
+

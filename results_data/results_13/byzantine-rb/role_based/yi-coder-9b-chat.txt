@@ -1,0 +1,8 @@
+RB-Validity - satisfied
+This property holds because if a correct broadcaster broadcasts m, all correct processes will eventually deliver it. Every process starts with an empty delivered set and uses thresholds to avoid trusting just one process. The algorithm ensures that a correct process sees enough evidence to send <type1, m> messages in the first place.
+
+RB-Agreement - satisfied
+This property holds because if one correct process delivers m, all other correct processes will eventually deliver m too. This is ensured by the support-spreading mechanism of the algorithm. A process that delivers m has seen enough <type1, m> messages to ensure that other correct processes see enough evidence as well.
+
+RB-Integrity - satisfied
+This property holds because a process only delivers m at most once and only if it was broadcast. The algorithm uses a delivered set to prevent duplicate deliveries, and the distinct-sender counting mechanism ensures that a single Byzantine process cannot create enough support alone.

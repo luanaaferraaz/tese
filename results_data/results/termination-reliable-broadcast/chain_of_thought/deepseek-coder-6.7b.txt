@@ -1,0 +1,4 @@
+Termination Property - [satisfied]
+Validity Property - [non satisfied]: Terminating broadcast system should deliver every message, but sender 's might crash before delivering a value to all processes. 
+Agreement Property - [satisfied]
+Integrity Property - [satisfied]

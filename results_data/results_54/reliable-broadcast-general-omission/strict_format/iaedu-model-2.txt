@@ -1,0 +1,6 @@
+{"run_id": "f5faa529-3d44-4f6b-a16e-32d9e18a2931", "type": "start", "content": "Processing"}
+
+{"run_id": "f5faa529-3d44-4f6b-a16e-32d9e18a2931", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "f5faa529-3d44-4f6b-a16e-32d9e18a2931", "type": "done", "content": "f5faa529-3d44-4f6b-a16e-32d9e18a2931", "messageId": "None", "token_pct_used": 106.4}
+

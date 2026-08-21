@@ -1,0 +1,13 @@
+## Analysis of Reliable Broadcast Algorithm ##
+
+**Validity - [Satisfied]**  
+The algorithm guarantees that every correct process eventually broadcasts and delivers the message. This is ensured by a self delivery step, which allows a process to deliver a new message immediately after it receives an rb_broadcast call.  
+
+**No Duplication - [Non Satisfied]**  
+The algorithm ensures that every correct process delivers each message at most once by maintaining a delivered set for each process. However, if a process crashes and restarts before delivering a message to the application, it might deliver the same message again when it restarts. This situation can be improved by including a sequence number with each broadcasted message and checking both its content and sequence number in the received messages.  
+
+**No Creation - [Satisfied]**  
+The algorithm ensures that if a correct process delivers a message, then this message was indeed sent from some other process (by ensuring every correct process forwards the same message to all others). The reliable channels guarantee eventual delivery of messages, so even in case of crashes or failures, forwarded messages will eventually reach their destinations.  
+
+**Agreement - [Satisfied]**  
+The algorithm ensures that if a correct process delivers a message then every other correct process eventually delivers the same message by using the rb_deliver function which is called for all processes whenever a new message is delivered or forwarded. This means that each process maintains its own copy of the broadcasted messages and ensures they are delivered to the application in the correct order.  

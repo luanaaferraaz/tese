@@ -1,0 +1,14 @@
+{"run_id": "4fdfbd50-5004-4a4e-b763-8b10f4574e9d", "type": "start", "content": "Processing"}
+
+{"run_id": "4fdfbd50-5004-4a4e-b763-8b10f4574e9d", "type": "token", "content": "R"}
+
+{"run_id": "4fdfbd50-5004-4a4e-b763-8b10f4574e9d", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Delivery on 1 type1 message allows a single"}
+
+{"run_id": "4fdfbd50-5004-4a4e-b763-8b10f4574e9d", "type": "token", "content": " Byzantine sender to make one correct deliver alone.\nRB-Integrity - [satisfied"}
+
+{"run_id": "4fdfbd50-5004-4a4e-b763-8b10f4574e9d", "type": "token", "content": "]"}
+
+{"run_id": "4fdfbd50-5004-4a4e-b763-8b10f4574e9d", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Delivery on 1 type1 message allows a single Byzantine sender to make one correct deliver alone.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "4fdfbd50-5004-4a4e-b763-8b10f4574e9d", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "4fdfbd50-5004-4a4e-b763-8b10f4574e9d", "type": "done", "content": "4fdfbd50-5004-4a4e-b763-8b10f4574e9d", "messageId": "cms24gpsf1tkjke01d71ysqub"}
+

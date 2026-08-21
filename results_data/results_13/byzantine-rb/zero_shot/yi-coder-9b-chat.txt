@@ -1,0 +1,11 @@
+RB-Validity - [satisfied]
+
+The Broadcaster guarantees that all correct processes eventually receive the message because it sends an initial broadcast to all. The Echoer forwards the support message, <type1, m>, if it has received enough evidence from distinct processes. Hence when a correct process broadcasts, all other correct processes eventually deliver this message.
+
+RB-Agreement - [satisfied]
+
+If one correct process delivers an initial broadcast of m, it sends <type1, m> support messages because it receives at least f + 1 distinct support messages in total from other correct processes. Other correct processes also receive enough evidence and eventually deliver the message as well. This ensures agreement among all correct processes who eventually see this support evidence.
+
+RB-Integrity - [satisfied]
+
+A process only delivers a message once because it checks for membership in the delivered set. It doesn't send duplicate support messages <type1, m> and follows the distinct sender rule to count at most one message per sender. A single Byzantine process cannot create enough support alone due to the threshold rule (f + 1).

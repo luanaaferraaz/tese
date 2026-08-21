@@ -1,0 +1,3 @@
+1. RB-Validity - [satisfied]
+2. RB-Agreement - [non satisfied]: The correctness argument assumes that there is at least one correct process, but this is not guaranteed before the delivery of a message in the algorithm. 
+3. RB-Integrity - [satisfied]

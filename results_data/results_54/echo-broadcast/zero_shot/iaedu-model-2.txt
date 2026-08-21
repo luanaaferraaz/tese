@@ -1,0 +1,6 @@
+{"run_id": "ef4fa5c6-9bca-44d2-886c-0c19ea2009f6", "type": "start", "content": "Processing"}
+
+{"run_id": "ef4fa5c6-9bca-44d2-886c-0c19ea2009f6", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ef4fa5c6-9bca-44d2-886c-0c19ea2009f6", "type": "done", "content": "ef4fa5c6-9bca-44d2-886c-0c19ea2009f6", "messageId": "None", "token_pct_used": 106.4}
+

@@ -1,0 +1,7 @@
+1) Validity: The algorithm ensures that any correct process that broadcasts a message will eventually deliver it. It delivers the message as soon as f+1 processes have received the message, ensuring its validity.
+
+2) No duplication: The delivered set ensures no duplication of messages across all processes. Every process checks if a message is already in the delivered set before delivering it.
+
+3) No creation: The algorithm only delivers messages that were actually broadcast by some process. It does not fabricate new messages — it only relays what it receives. Hence, the no-creation property holds for this reliable broadcast protocol.
+
+4) Agreement: This property ensures that if a correct process broadcasts a message m, all other correct processes will eventually also deliver m. The algorithm guarantees agreement because every correct process that has received f+1 distinct sources for a message will relay it further and eventually deliver the message itself.

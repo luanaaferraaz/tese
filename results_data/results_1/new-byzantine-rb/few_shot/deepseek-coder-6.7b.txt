@@ -1,0 +1,5 @@
+```plaintext
+RB-Validity - [satisfied]
+RB-Agreement - [non satisfied]: The algorithm requires at least one correct process to have received a message from each other correct process. A Byzantine process could potentially be the only correct process with access to all messages, leading to an infinite loop of delivering and sending messages without receiving any.
+RB-Integrity - [satisfied]
+```

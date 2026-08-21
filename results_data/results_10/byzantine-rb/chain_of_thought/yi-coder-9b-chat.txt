@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is satisfied because, if a correct broadcaster broadcasts m, all correct processes eventually deliver m. This happens because the algorithm uses thresholds to avoid trusting a single process. It requires support from multiple distinct processes and supports are sent / echoed by each correct process once they receive enough evidence. 
+
+RB-Agreement - [satisfied]
+This property is also satisfied. If one correct process delivers m, it has seen enough <type1, m> support. The forwarding rule using f + 1 help to spread this support so other correct processes eventually deliver m as well. 
+
+RB-Integrity - [satisfied]
+Finally, RB-Integrity property is satisfied by the algorithm design itself. The distinct-sender counting and the delivered set prevents a process from delivering m more than once. A single Byzantine process cannot create enough support alone according to the threshold structure.

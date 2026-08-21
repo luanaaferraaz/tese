@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The algorithm guarantees that if a correct broadcaster broadcasts m (an initial message of type0), then all correct processes eventually deliver this message. This is because each correct process supports the message with a <type1> message and these support messages are propagated to other correct processes.
+
+RB-Agreement - [satisfied]
+If one correct process delivers m, it must have received f+1 instances of <type1, m> from other correct processes since only correct processes send these messages. The agreement rule ensures that once a process has the required number of <type1> messages, it will deliver the corresponding message, which adheres to the agreement property of reliable broadcast algorithms.
+
+RB-Integrity - [satisfied]
+The integrity property is upheld in this algorithm because each process delivers m only once and a message can be delivered only if it has been previously broadcasted and received at least f+1 times as <type1, m> messages by a correct process. This ensures that a message is not delivered by a Byzantine process alone.

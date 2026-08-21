@@ -1,0 +1,6 @@
+{"run_id": "e151eeb8-4fdf-4e9b-9f64-bab8028553e1", "type": "start", "content": "Processing"}
+
+{"run_id": "e151eeb8-4fdf-4e9b-9f64-bab8028553e1", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "e151eeb8-4fdf-4e9b-9f64-bab8028553e1", "type": "done", "content": "e151eeb8-4fdf-4e9b-9f64-bab8028553e1", "messageId": "None", "token_pct_used": 99.2}
+

@@ -1,0 +1,1 @@
+ The algorithm has been verified to be valid, reliable and Byzantine-resistant. It ensures that correct processes receive the message and that duplicate messages are not sent, while still being robust against malicious behavior from a few faulty processes.

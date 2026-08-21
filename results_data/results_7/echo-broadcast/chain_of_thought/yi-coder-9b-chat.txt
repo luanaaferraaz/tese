@@ -1,0 +1,4 @@
+1. Validity: Satisfied. The algorithm ensures that a correct process p broadcasts v, then all other correct processes accept v as they send READY messages.
+2. Agreement: Satisfied. If two correct processes q and r accept the values v and u respectively, these values are equal because the delivery rule requires 2f+1 READY messages which is only possible if every process accepts the same value.
+3. No duplication: Satisfied. Once a message m is delivered, no other instance of m can be delivered as the delivery rule is satisfied by 2f+1 different READY messages (not ≥2f+1).
+4. No creation: Satisfied. If a process delivers a message m with sender s, then this message was previously broadcasted by process s according to the algorithm design.

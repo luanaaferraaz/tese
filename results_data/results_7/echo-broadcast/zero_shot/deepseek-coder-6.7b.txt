@@ -1,0 +1,11 @@
+Validity - [Satisfied]
+The process sends the message to all other processes and ensures that each correct process eventually accepts it.
+
+Agreement - [Non Satisfied]
+In the current design, only a single process can accept a value at any given time. The agreement property requires that if two correct processes agree on the same value (which is what "accepting" means), they must have agreed to the same value in every instance of broadcast.
+
+No duplication - [Satisfied]
+The protocol ensures no message is delivered more than once by maintaining a count for each unique message sent over all processes. If any process receives a duplicate message, it ignores it without delivering it.
+
+No creation - [Non Satisfied]
+In the current design, only a single process can deliver a message at any given time. The no-creation property requires that if a process delivers a message m with sender s, then m must have been broadcast by process s in some instance of broadcast. However, it is not stated whether this applies to all instances or just the current one.

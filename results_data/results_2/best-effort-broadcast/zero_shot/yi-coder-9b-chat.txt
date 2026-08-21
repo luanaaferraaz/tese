@@ -1,0 +1,9 @@
+The algorithm provided does satisfy the following properties: Validity, No duplication.
+
+Validity - [satisfied]
+This property states that if a correct process broadcasts a message m, then every other correct process eventually delivers this message. In the algorithm described here, we have an event where whenever a process receives a message (i.e., triggers ⟨pl,Deliver∣p,m⟩) it immediately delivers that message to the upper layer of the system. Since there is no condition checking whether the sender was correct or if the process has already been delivered this message before, we can infer that validity - every correct process eventually delivers a broadcasted message by all other processes - is satisfied in this algorithm.
+
+No duplication - [satisfied]
+This property states that each process will not deliver any message more than once. In our case the pseudocode does not maintain local state for each process, therefore it's hard to determine whether a process has already been delivered certain messages before. However, if we assume that there is no duplication in the underlying perfect point-to-point links and the uniqueness of messages as per the algorithm specification, this property is likely satisfied.
+
+No creation - [non satisfied]: The algorithm does not ensure that every message delivered was previously broadcast by a process.

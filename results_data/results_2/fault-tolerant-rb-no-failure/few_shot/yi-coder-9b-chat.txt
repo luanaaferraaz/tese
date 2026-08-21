@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The algorithm ensures that all correct processes receive the message and deliver it.
+
+RB-Agreement - [satisfied]
+If a correct process delivers the message, then all other correct processes also eventually receive the message because of reliable channels.
+
+RB-Integrity - [satisfied]
+Processes only deliver each message once. The algorithm ensures that messages are not created or duplicated by assuming reliable communication channels where messages are not lost or duplicated.

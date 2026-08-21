@@ -1,0 +1,10 @@
+1) Validity – [satisfied]
+A correct process delivers a message that it has broadcast. The protocol ensures that if a correct process broadcasts m and there is no send/receive failure, then all other correct processes will eventually receive the DATA(m) from the sender. This meets the validity criterion.
+
+2) No duplication – [satisfied]
+The delivered set ensures that every correct process delivers each message at most once. When a process checks if m ∉ delivered before delivering, there is no creation of duplicates.
+
+3) No creation – [non satisfied]: The algorithm only ensures agreement on messages that were actually broadcast by some process, but it does not prevent a faulty process from relaying fabricated messages.
+
+4) Agreement – [satisfied]
+If any correct process delivers m, then eventually all other correct processes accumulate f+1 distinct sources for the message and deliver it. This is enforced by the protocol’s message-relay logic.

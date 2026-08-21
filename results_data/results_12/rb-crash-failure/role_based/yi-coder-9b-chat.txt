@@ -1,0 +1,8 @@
+1) RB-Validity: The correctness of the broadcaster guarantees that m is broadcasted to itself, which is then delivered. Furthermore, since the communication model is reliable, any forwarding neighbours will eventually receive and deliver <type1, m> if they are not crashed.
+   - [satisfied]
+
+2) RB-Agreement: If one correct process delivers m, it must have received <type1, m> from another process that delivered or forwarded the message. All other correct processes eventually receive this forwarded message as well and deliver it.
+   - [satisfied]
+
+3) RB-Integrity: The protocol ensures that a message is only delivered once because every process keeps track of delivered messages in its local state.
+   - [satisfied]

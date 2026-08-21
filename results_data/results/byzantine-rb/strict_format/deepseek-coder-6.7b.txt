@@ -1,0 +1,8 @@
+RB-Validity: [satisfied]
+The broadcaster sends the message <type0, m> to all correct processes and does not stop. Therefore, all correct processes eventually receive this message.
+
+RB-Agreement: [non satisfied]
+This property is only satisfied when one process delivers a message and all other processes deliver the same message at least once. This could be achieved by having each process track which messages have been delivered and forwarding these messages to all others as they are received. However, in this algorithm, each process keeps track of received messages but does not guarantee delivery based on the number of senders that receive a particular <type1, m> message.
+
+RB-Integrity: [satisfied]
+The broadcaster ensures that a correct process delivers a message at most once by maintaining a 'delivered' set. If a correct process receives the same message from different processes in the future, it will not deliver this message again as it is already in its 'delivered' set. The reason for this is that the received_type0[m] and received_type1[m] sets are updated based on distinct senders. Therefore, each correct process delivers a message at most once per sender.

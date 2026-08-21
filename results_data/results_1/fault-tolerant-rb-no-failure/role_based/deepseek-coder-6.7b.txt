@@ -1,0 +1,10 @@
+The given algorithm is a reliable broadcast algorithm for no failure scenario. Let's verify the correctness properties:
+
+1) RB-Validity: If the broadcaster sends <type0, m>, then all correct processes eventually receive and deliver it. 
+   - SATISFIED: The algorithm correctly sends and delivers messages to all correct processes. It does not rely on any specific process order or timing constraints. This is due to its asynchronous nature, where each process independently decides when and if it should broadcast a message.
+
+2) RB-Agreement: If one correct process delivers m, then all correct processes eventually receive and deliver m. 
+   - SATISFIED: The algorithm ensures that once any correct process delivers a message, every other correct process will eventually also receive and deliver it. This is due to the fact that each process independently decides when to broadcast a message based on its local state (delivered messages), not receiving from others.
+
+3) RB-Integrity: A correct process delivers m at most once, and only if m was sent by the broadcaster. 
+   - SATISFIED: The algorithm correctly ensures that each message is delivered exactly once. This is because the <type0, m> message is broadcasted to all processes using reliable channels which ensure no duplication of messages. Any attempt to deliver a duplicate message would violate this property.

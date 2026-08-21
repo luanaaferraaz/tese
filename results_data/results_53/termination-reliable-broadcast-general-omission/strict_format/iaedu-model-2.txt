@@ -1,0 +1,6 @@
+{"run_id": "cbba0eec-c459-4c0f-8ac8-204b7bc9757c", "type": "start", "content": "Processing"}
+
+{"run_id": "cbba0eec-c459-4c0f-8ac8-204b7bc9757c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "cbba0eec-c459-4c0f-8ac8-204b7bc9757c", "type": "done", "content": "cbba0eec-c459-4c0f-8ac8-204b7bc9757c", "messageId": "None", "token_pct_used": 106.4}
+

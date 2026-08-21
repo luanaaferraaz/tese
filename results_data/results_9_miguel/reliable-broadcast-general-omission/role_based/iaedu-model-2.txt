@@ -1,0 +1,18 @@
+{"run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "type": "start", "content": "Processing"}
+
+{"run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "type": "token", "content": "Validity - ["}
+
+{"run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "type": "token", "content": "non satisfied]: Sender delivers immediately but omission-faulty sender may send to no one;"}
+
+{"run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "type": "token", "content": " correct processes never reach f+1 threshold (confidence: 7/10)\nNo duplication -"}
+
+{"run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "type": "token", "content": " [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: If sender del"}
+
+{"run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "type": "token", "content": "ivers then fails, and fewer than f+1 correct processes receive, no correct process reaches threshold (confidence: "}
+
+{"run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "type": "token", "content": "8/10)"}
+
+{"run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately but omission-faulty sender may send to no one; correct processes never reach f+1 threshold (confidence: 7/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: If sender delivers then fails, and fewer than f+1 correct processes receive, no correct process reaches threshold (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "type": "done", "content": "3ad2abd4-d3b5-498a-a64e-fcc0bb149cf1", "messageId": "cmrkc42ko49yjke01skfjq5y5"}
+

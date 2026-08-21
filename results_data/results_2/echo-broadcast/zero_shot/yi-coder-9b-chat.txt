@@ -1,0 +1,7 @@
+1. Validity - The algorithm guarantees that any correct process that observes a broadcast will eventually accept the same value v. It does this by having all processes agree on what value to broadcast and then broadcasting it only once. Hence, validity is satisfied.
+
+2. Agreement - All correct processes must agree on the value they accept. This property holds true because of the READY messages that are sent when a process accepts a value m. If there exist two different accepted values u and v, the processes will eventually receive enough READY messages with these values which will trigger their delivery rule and make them agree upon the same value. Therefore, agreement is satisfied.
+
+3. No duplication - There can't be any duplicated values due to the ECHO and READY broadcasts. If a process already received an ECHO or READY message for m, it won't send another one; hence no duplication is satisfied.
+
+4. No creation - This property is not satisfied because of the SEND broadcast that the sender sends out in the beginning which creates new values. The algorithm only ensures that if a value is broadcasted by a correct process, all other processes will accept it eventually, but doesn't prevent any new values from being created.

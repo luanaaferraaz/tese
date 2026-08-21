@@ -1,0 +1,13 @@
+Sure, let's evaluate the properties of this algorithm:
+
+1. Validity - [satisfied]
+   The sender broadcasts a message and all correct processes accept it. This is ensured by Rule 3 in the protocol pseudo-code. When a READY(m) is received from a process that satisfies Rule 2, which means there are at least f+1 READY(m) messages among all correct processes, the sender will deliver m.
+
+2. Agreement - [satisfied]
+   If two correct processes accept different values for a message, they agree on it by sending and receiving matching ECHO(m)/READY(m). This is ensured in Rule 1 of the protocol pseudo-code where if an echo_count[m] exceeds (n+f)/2, then sent_ready is set to true.
+
+3. No duplication - [satisfied]
+   The sender ensures that no message is delivered more than once by keeping track of echo_count and ready_count for each unique message m. If an ECHO(m) or READY(m) has been received before, the count will not be increased, so it can't be delivered again.
+
+4. No creation - [satisfied]
+   The sender ensures that a process delivering a message m was previously broadcast by checking if sent_echo or sent_ready is true for a certain m. If neither of them are true, the process hasn'<｜begin▁of▁sentence｜>t broadcasted m and can't deliver it.

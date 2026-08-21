@@ -1,0 +1,18 @@
+Analyze the following algorithm.
+
+Algorithm:
+{algorithm}
+
+Determine whether each property is satisfied.
+
+Properties:
+{properties}
+
+Output format:
+- One line per property
+- Use exactly:
+  <property> - [satisfied] (confidence: X/10)
+  <property> - [non satisfied]: <reason> (confidence: X/10)
+- Only include a reason if non satisfied (max 20 words)
+- Confidence: 10 = certain, 1 = guessing
+- No extra text

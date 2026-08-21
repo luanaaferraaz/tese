@@ -1,0 +1,6 @@
+{"run_id": "c32adbc6-bc62-4363-9264-76697487e472", "type": "start", "content": "Processing"}
+
+{"run_id": "c32adbc6-bc62-4363-9264-76697487e472", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "c32adbc6-bc62-4363-9264-76697487e472", "type": "done", "content": "c32adbc6-bc62-4363-9264-76697487e472", "messageId": "None", "token_pct_used": 106.4}
+

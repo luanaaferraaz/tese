@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+The RB-Validity property is satisfied by the algorithm. If a correct broadcaster broadcasts message m, all other correct processes eventually deliver it as they collect enough support messages from distinct processes to meet the thresholds.
+
+RB-Agreement - [non satisfied]: The correctness of this algorithm relies on the assumption that there will be at least one correct process delivering the message which is not guaranteed under a single faulty node model with n=4 and f=1.
+
+RB-Integrity - [satisfied]
+The RB-Integrity property is satisfied by the algorithm. A process delivers m only once because it checks if m has been delivered in the delivered set and the distinct sender count ensures no more than one message from each sender. A single Byzantine process cannot create enough support alone.

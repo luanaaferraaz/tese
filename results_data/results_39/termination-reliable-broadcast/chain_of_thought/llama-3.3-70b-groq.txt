@@ -1,0 +1,4 @@
+- Termination - [satisfied]
+- Validity - [satisfied]
+- Agreement - [satisfied]
+- Integrity - [satisfied]

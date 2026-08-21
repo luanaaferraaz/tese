@@ -1,0 +1,15 @@
+Termination - [satisfied]
+
+The termination property is satisfied because at each round, the sender s broadcasts a message to all processes. Therefore, every correct process eventually delivers some message. 
+
+Validity - [non satisfied]: The protocol does not guarantee that messages sent by the sender are delivered by everyone else. In fact, if the sender is faulty and doesn't send any messages at all, it would violate the validity property.
+
+Agreement - [satisfied]
+
+The agreement property holds because if a correct process delivers m (or SF), then every correct process eventually receives m in its received_msgs set by the end of round f+1. This means that all processes are in sync with each other regarding the messages they have delivered so far. 
+
+Integrity - [satisfied]
+
+The integrity property is satisfied because if a correct process delivers m (or SF), then no other message can be delivered by this process until round f+1 has passed. This ensures that every correct process delivers at most one message and the deliveries are consistent with broadcasts from the sender s. 
+
+Note: The protocol does not guarantee uniqueness of messages, which means a single correct process might deliver more than one distinct value in its received_msgs set by the end of round f+1. This would require additional mechanisms to ensure integrity and agreement.

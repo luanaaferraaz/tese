@@ -1,0 +1,14 @@
+{"run_id": "d54c1b71-290e-487a-a470-b429bb9ba8f9", "type": "start", "content": "Processing"}
+
+{"run_id": "d54c1b71-290e-487a-a470-b429bb9ba8f9", "type": "token", "content": "R"}
+
+{"run_id": "d54c1b71-290e-487a-a470-b429bb9ba8f9", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Correct process delivering via 2 type"}
+
+{"run_id": "d54c1b71-290e-487a-a470-b429bb9ba8f9", "type": "token", "content": "1 messages (one Byzantine) may not trigger others; amplification threshold equals delivery threshold."}
+
+{"run_id": "d54c1b71-290e-487a-a470-b429bb9ba8f9", "type": "token", "content": "\nRB-Integrity - [satisfied]"}
+
+{"run_id": "d54c1b71-290e-487a-a470-b429bb9ba8f9", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Correct process delivering via 2 type1 messages (one Byzantine) may not trigger others; amplification threshold equals delivery threshold.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "d54c1b71-290e-487a-a470-b429bb9ba8f9", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "d54c1b71-290e-487a-a470-b429bb9ba8f9", "type": "done", "content": "d54c1b71-290e-487a-a470-b429bb9ba8f9", "messageId": "cms24kmue1tojke01c8f77qcc"}
+

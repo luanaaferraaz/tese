@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is satisfied because if a correct process broadcasts m, then all correct processes eventually deliver it due to the reliable broadcast communication ensured by the channel.
+
+RB-Agreement - [satisfied]
+If one correct process delivers m, then all correct processes eventually receive and deliver it due to the reliable broadcast communication.
+
+RB-Integrity - [non satisfied]: Duplicate delivery or message creation might occur
+  

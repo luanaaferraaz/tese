@@ -1,0 +1,22 @@
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "start", "content": "Processing"}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "token", "content": "Validity - ["}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "token", "content": "non satisfied]: Sender may be receive-omission faulty; correct processes need f+1 sources,"}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "token", "content": " sender's own delivery is fine though (confidence: 5/10)\nNo"}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "token", "content": " duplication - [satisfied] (confidence: 10/10)\nNo creation - [non satisfied]: f+1 sources may include f fa"}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "token", "content": "ulty processes plus one correct relayer that itself never ver"}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "token", "content": "ified origin (confidence: 4/10)\nAgreement - [non satisfied]: With n>2f only, f"}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "token", "content": "+1 threshold does not guarantee all correct processes reach it under asynchrony with rece"}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "token", "content": "ive omissions (confidence: 6/10)"}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender may be receive-omission faulty; correct processes need f+1 sources, sender's own delivery is fine though (confidence: 5/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [non satisfied]: f+1 sources may include f faulty processes plus one correct relayer that itself never verified origin (confidence: 4/10)\nAgreement - [non satisfied]: With n>2f only, f+1 threshold does not guarantee all correct processes reach it under asynchrony with receive omissions (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "99576de1-796f-4098-84b7-d982f76c5542", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "99576de1-796f-4098-84b7-d982f76c5542", "type": "done", "content": "99576de1-796f-4098-84b7-d982f76c5542", "messageId": "cmrnkwn910girke01gngzmws7"}
+

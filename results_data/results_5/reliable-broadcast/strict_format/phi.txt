@@ -1,0 +1,60 @@
+ Reliable Broadcast (RB) is an algorithm used for reliable data transfer. It assumes that the processes may fail due to crashes and channels have asynchronous communication. The goal of RB is to ensure timely delivery of messages by maintaining a set of delivered messages. If a correct process delivers a message, it will eventually reach all other processes. This is known as the liveness property. Additionally, RB guarantees no duplication and that each correct process will eventually deliver its own unique message. It also ensures agreement among all correct processes.
+
+RB has the following components:
+- System model: Consists of variables such as the number of processes and maximum fault, which determine the reliability of communication. 
+- Validity properties: These rules state that if a process broadcasts a message, it will eventually be delivered by another process. It also ensures no duplication or creation of messages. Lastly, agreement is guaranteed among all correct processes.
+- Interfaces: RB allows for external operations and output events through the use of APIs.
+- Roles: In RB, there are sender and relayers, who play a crucial role in ensuring message delivery. 
+- Local state: Each process maintains its own set of delivered messages to prevent duplicates.
+- Message types: Messages can be of type DATA(s, m), where s is the original sender and m is the content being transferred.
+- Initialization: At the beginning of an RB run, a set of delivered messages is empty, but any duplicate message will not be added. 
+- Protocol: The eager diffusion protocol involves broadcasting a message to all other processes in case of a crash. If a process receives a message, it immediately relays it to others.
+- Decision and delivery rule: A message can only be delivered if it is received for the first time. This ensures no duplication or creation of messages. After delivery, the message is added to the set of delivered messages. 
+- Quorum: RB does not require a quorum in case of a crash model; it only needs at least one correct process to receive and relay the message. 
+- Invariants: If any correct process has m in its set of received messages, eventually all other processes will have m as well. 
+- Complexity: RB has a message complexity of O(n^2) and round complexity of 2 (sender → process i → everyone else).
+
+Exercises:
+1. What is the goal of Reliable Broadcast?
+Answer: The goal of Reliable Broadcast is to ensure timely delivery of messages by maintaining a set of delivered messages.
+
+2. What are the properties and rules of RB?
+Answer: 
+Properties: Validity, No duplication, No creation, Agreement
+Rules: 
+- Output EXACTLY one line per property
+- Allowed formats ONLY: <property> 
+    - [satisfied]
+    - [non satisfied]: 
+        <reason>
+- Do not add any extra text.
+- Do not reorder properties.
+- If uncertain, output < property> 
+    - Non satisfied: 
+        <reason>.
+- Reason must be ≤ 20 words.
+
+3. Connect the knowledge of RB to a real world scenario where reliable and timely communication is important.
+Answer: In emergency situations such as natural disasters, it is crucial for first responders to have access to reliable and timely information. Reliable Broadcast can ensure that critical messages are delivered to all parties involved, allowing for efficient coordination and response.
+
+4. How does RB handle duplication and creation of messages?
+Answer: RB ensures no duplication by requiring each correct process to deliver its unique message only once. It also prevents the creation of new messages by relaying existing ones immediately after delivery.
+
+5. In what situation would RB require a quorum? 
+Answer: In a crash model, where processes can fail due to crashes, RB does not need a quorum as long as at least one correct process has received and relayed the message.
+
+6. Why is it important for each process to maintain its own set of delivered messages in RB?
+Answer: This ensures that there are no duplicates of messages being delivered by multiple processes, which could potentially cause confusion or incorrect information.
+
+Follow up questions:
+1. Can you think of a real world scenario where reliability and timely communication is important, but not due to crashes?
+Answer: In the stock market, traders rely on accurate and timely information in order to make quick decisions. Reliable Broadcast can help ensure that all traders have access to the same information at the same time.
+
+2. How does RB compare to other algorithms for reliable communication, such as reliable broadcast or reliable stream? 
+Answer: While RB is designed specifically for asynchronous communication in case of crashes, both reliable broadcast and reliable stream are also used in similar situations to ensure timely and accurate delivery of messages. However, they may have different approaches or rules in place for message handling.
+
+3. In what ways can the liveness property of RB be beneficial in emergency response scenarios? 
+Answer: The liveness property ensures that all parties involved receive critical information at some point during an emergency situation. This allows for efficient coordination and a more effective response to the crisis.
+
+4. Can you think of any potential drawbacks or limitations of using Reliable Broadcast? 
+Answer: One limitation may be the increased complexity and overhead in managing multiple processes and their messages, especially in large-scale systems. Additionally, if there are issues with communication between processes, it could potentially lead to delays or failures in message delivery.

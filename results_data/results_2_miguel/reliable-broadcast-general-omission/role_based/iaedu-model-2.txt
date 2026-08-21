@@ -1,0 +1,16 @@
+{"run_id": "6b908144-6474-481e-90f8-6c53cc801521", "type": "start", "content": "Processing"}
+
+{"run_id": "6b908144-6474-481e-90f8-6c53cc801521", "type": "token", "content": "Validity - ["}
+
+{"run_id": "6b908144-6474-481e-90f8-6c53cc801521", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 echoes, but if sender is correct, delivery holds trivially."}
+
+{"run_id": "6b908144-6474-481e-90f8-6c53cc801521", "type": "token", "content": "\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Correct sender with"}
+
+{"run_id": "6b908144-6474-481e-90f8-6c53cc801521", "type": "token", "content": " send-omission may deliver to itself; fewer than f+1 correct relay"}
+
+{"run_id": "6b908144-6474-481e-90f8-6c53cc801521", "type": "token", "content": "ers may exist to trigger others."}
+
+{"run_id": "6b908144-6474-481e-90f8-6c53cc801521", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 echoes, but if sender is correct, delivery holds trivially.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Correct sender with send-omission may deliver to itself; fewer than f+1 correct relayers may exist to trigger others.", "tool_calls": [], "tool_call_id": null, "run_id": "6b908144-6474-481e-90f8-6c53cc801521", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "6b908144-6474-481e-90f8-6c53cc801521", "type": "done", "content": "6b908144-6474-481e-90f8-6c53cc801521", "messageId": "cmraeob0k61ypke01b0o4o5uj"}
+

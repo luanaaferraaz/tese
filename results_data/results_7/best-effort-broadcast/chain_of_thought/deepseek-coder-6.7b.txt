@@ -1,0 +1,5 @@
+Satisfaction of Properties:
+
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]: The "no creation" property of the perfect point-to-point links ensures that no message is created, it only ensures the delivery of an existing message.

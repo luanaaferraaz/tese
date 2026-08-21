@@ -1,0 +1,6 @@
+{"run_id": "e3d4aa03-0905-45f7-ba0b-6930e9ae5423", "type": "start", "content": "Processing"}
+
+{"run_id": "e3d4aa03-0905-45f7-ba0b-6930e9ae5423", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "e3d4aa03-0905-45f7-ba0b-6930e9ae5423", "type": "done", "content": "e3d4aa03-0905-45f7-ba0b-6930e9ae5423", "messageId": "None", "token_pct_used": 102.2}
+

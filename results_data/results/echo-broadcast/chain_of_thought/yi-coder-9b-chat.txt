@@ -1,0 +1,4 @@
+1. Validity - satisfied
+2. Agreement - satisfied
+3. No duplication - satisfied
+4. No creation - non satisfied: The protocol does not control for the creation of new values. It only supports the agreement on existing ones.

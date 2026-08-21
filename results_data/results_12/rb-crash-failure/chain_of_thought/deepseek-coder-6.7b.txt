@@ -1,0 +1,7 @@
+RB-Validity: The broadcaster sends <type0, m> to itself and delivers it. This guarantees that all correct processes eventually receive the message. Since reliable channels ensure that this message reaches all correct nodes including the broadcaster which is supposed to be a correct process, RB-Validity holds in this case.
+
+RB-Agreement: If one correct process delivers m, then it received <type0, m> and forwards <type1, m> to its neighbours. All other correct processes eventually receive the forwarded copy of <type1, m> which ensures RB-Agreement holds in this case as well.
+
+RB-Integrity: The delivered set prevents duplicate delivery of messages. Since a process delivers m only once and it receives the message first time for sure (since the broadcaster sends <type0, m> to itself), RB-Integrity holds in this case. 
+
+In summary, all properties hold with no reasons to provide.

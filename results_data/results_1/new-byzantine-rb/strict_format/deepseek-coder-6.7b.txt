@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster sends the message m through <type0, m> to its neighbours. This is ensured by the first if condition in step A of the protocol pseudo code. The receivers then send back a support message <type1, m> to their neighbours upon receiving at least one distinct <type0, m> from any process.
+
+RB-Agreement - Satisfied
+If one correct process delivers m, it received f + 1 <type1, m> messages from different processes. This is ensured by the second if condition in step B of the protocol pseudo code which sends <type1, m> to its neighbours when a message m was received at least f + 1 times from distinct processes and m was not delivered yet.
+
+RB-Integrity - Satisfied
+A process delivers m at most once because it keeps track of all messages in the variable "delivered". If a process tries to deliver m again, this is avoided by checking if m is already in the "delivered" set before delivering m. The reason that no Byzantine process can force delivery is that each correct process sends <type1, m> to its neighbours only when it has received at least f + 1 such messages from different processes and m was not delivered yet.

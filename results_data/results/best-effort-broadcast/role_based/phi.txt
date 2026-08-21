@@ -1,0 +1,42 @@
+ Cachin, Christian, Rachid Guerraoui, and Luís Rodrigues. Introduction to reliable and secure distributed programming. Springer Science & Business Media, 2011.
+The algorithm has the following characteristics:
+1) Algorithm type: Best-Effort Broadcast (BEB).
+2) Fault model: C is the cause of the crash and R is a random error that can happen at any time.
+3) Timing model: Asynchronous. 
+4) Variants: NONE.
+5) System model: There are n processes running, and at most 1 process will be faulty.
+6) Resilience condition: The algorithm relies on the existence of perfect point-to-point links.
+7) Channels/communication assumptions: Perfect point-to-point links with no creation, alteration, duplication, or loss. 
+8) Timing assumptions: None.
+9) Additional assumptions: Messages are unique and each process broadcasts the same message only once. 
+10) External operations: BEB(m) delivers m to all processes.
+11) Output events: BebDeliver(p),BebBroadcast(m).
+12) Roles: There is 1 broadcaster and N receivers.
+13) Local state: None specified.
+14) Message types: m has a unique content, and each receiver receives the message only once. 
+15) Validation rules: Each message is assumed to be unique; if a correct process broadcasts m, then all processes eventually deliver m. Duplication and creation of messages are not allowed. 
+16) Initialization: None specified.
+17) Protocol pseudocode: On BEB(m), forall q in n, triggers send(q), then triggers receive(p). On the receive event, triggers send(p), where p has previously triggered receive(). 
+18) Decision/delivery rule: Delivers m only when there is a send() and a receive() operation.
+19) Quorum: None specified.
+20) Invariants: There is no creation of messages; the message is delivered to one receiver at a time, then it's passed on to the upper layer. 
+21) Safety properties: Validity (if m is delivered by a correct process), No duplication, No creation. 
+22) Properties: Validity, No duplication, No creation.
+23) Output requirements: 1 line per property.
+24) Decisions/delivery rules: On BEB(m), triggers send(q). On the receive event, triggers send(p), where p has previously triggered receive(). 
+25) Invariants: If m is delivered to process p, then the module sends send(p), which implies that p was a correct receiver.
+26) Quorum: None specified. 
+27) Proof of correctness by induction: The algorithm guarantees delivery if and only if every node is correct at some point in time. 
+28) Correctness argument skeleton: No creation, no duplication (derived from perfect links and uniqueness of messages). Validity (from the reliable delivery property of perfect links; a correct process sends m to all n processes, which ensures their eventual delivery). 
+29) Reliability: There is no redundancy due to duplicate broadcasts; however, there could be some failures in perfect point-to-point links that would prevent one or more nodes from delivering messages.
+30) Security: None specified. 
+31) Performance: This algorithm has a high scalability for small processes (up to N=10). 
+32) Reliability and efficiency: The algorithm is highly reliable, but its execution time may increase with the number of faulty components in the system.
+33) Code implementation: No code provided. 
+34) Time-stamps: None specified. 
+35) Conformance: This algorithm was developed according to the requirements and constraints given for distributed programming systems using formal methods. 
+36) Stability: The algorithm is stable because it guarantees delivery of messages when a correct process broadcasts them, but its performance may be affected by faulty components in the system. 
+37) Test cases: This algorithm has not been tested extensively; however, additional testing could help identify and fix any potential flaws. 
+38) Extensibility: The algorithm is extensible to include different fault models (e.g., partial failure or random error), timing models (e.g., sequential or parallel processing), and communication assumptions (e.g., multiple channels). 
+39) Adaptability: This algorithm can be adapted for use in various distributed systems, such as peer-to-peer networks or cloud computing environments. 
+40) Limitations: This algorithm has limitations due to its assumption of perfect point-to-point links and the lack of redundancy in case of faulty components. Additionally, it may not handle multiple failures or concurrent processes efficiently.

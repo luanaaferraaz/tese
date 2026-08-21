@@ -1,0 +1,5 @@
+Here is the strict evaluation of each property:  
+
+RB-Validity - [satisfied]  
+RB-Agreement - [satisfied]  
+RB-Integrity - [satisfied]

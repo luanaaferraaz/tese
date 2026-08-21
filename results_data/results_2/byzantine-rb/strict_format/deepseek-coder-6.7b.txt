@@ -1,0 +1,8 @@
+RB-Validity: [satisfied]
+The broadcaster will send a <type0, m> message to all processes and stop. All correct processes eventually receive this message through the message passing channels which are reliable authenticated. Therefore, RB-Validity is satisfied.
+
+RB-Agreement: [non satisfied]
+In the current protocol, when one process receives enough evidence (<type1, m> messages from at least f + 1 distinct processes), it sends <type1, m> to all processes. But if there are Byzantine processes among the received evidence, they may send inconsistent or malicious <type1, m> messages that do not satisfy RB-Agreement because other correct processes might receive these messages from any process and decide to deliver message m based on inconsistent information.
+
+RB-Integrity: [satisfied]
+In the current protocol, every correct process delivers a message at most once. It is ensured by the invariant I4 — No duplicate delivery which states that a process delivers a message at most once. The delivered set prevents duplicate deliveries. Furthermore, the distinct sender counting and support amplification arguments help prevent messages from being sent more than once to ensure RB-Integrity.

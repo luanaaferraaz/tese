@@ -1,0 +1,4 @@
+1) Validity - [satisfied]
+2) No duplication - [satisfied]
+3) No creation - [satisfied]
+4) Agreement - [non satisfied]: Because the delivery rule only checks if the message is received for the first time, and doesn't ensure that all correct processes will have m in their delivered set. It might happen that a process receives a message but it is not immediately forwarded to all other processes due to network delays or failures.

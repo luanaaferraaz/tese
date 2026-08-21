@@ -1,0 +1,16 @@
+{"run_id": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "type": "start", "content": "Processing"}
+
+{"run_id": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "type": "token", "content": "R"}
+
+{"run_id": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]:"}
+
+{"run_id": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "type": "token", "content": " Threshold (n+f)/2=2.5\u21922 or 3; with n"}
+
+{"run_id": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "type": "token", "content": "=4,f=1 insufficient to guarantee agreement under Byzantine faults. (confidence: 6/10)\nRB-Integrity - [satis"}
+
+{"run_id": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "type": "token", "content": "fied] (confidence: 9/10)"}
+
+{"run_id": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold (n+f)/2=2.5\u21922 or 3; with n=4,f=1 insufficient to guarantee agreement under Byzantine faults. (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "type": "done", "content": "ce5ba0d9-fef3-445f-b623-4ba8dc750148", "messageId": "cmrm3xmsk5cn4ke01vg77n156"}
+

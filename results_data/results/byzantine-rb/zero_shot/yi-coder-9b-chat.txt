@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is satisfied because the algorithm ensures that if a correct process broadcasts a message 'm', all other correct processes will eventually receive and send back an <type1, m> support message. This is ensured by thresholds 2 and 3 which require multiple distinct process supports before forwarding or delivering messages.
+
+RB-Agreement - [satisfied]
+The RB-Agreement property holds because if one correct process delivers a message 'm', it has forwarded enough <type1, m> support to other correct processes, thus all correct processes eventually deliver 'm'. The agreement is maintained through the thresholds and multiple distinct sender checks in the algorithm.
+
+RB-Integrity - [satisfied]
+The integrity property holds because of the delivery set "delivered" that ensures a process only delivers each message once. The message delivery rule also ensures a message 'm' is delivered when enough <type1, m> supports are collected from distinct processes and not already in 'delivered'.

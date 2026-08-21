@@ -1,0 +1,6 @@
+1) RB-Validity — All correct processes eventually deliver a message they receive from a correct broadcaster.
+   Satisfied - The algorithm uses reliable channels which ensure that all messages are delivered by the correct process before any other process can potentially deliver them.
+2) RB-Agreement — If one correct process delivers a message, then all correct processes eventually deliver it.
+   Satisfied - As long as the system has at least one correct process delivering a message, all other correct processes will also eventually receive and deliver that message due to the reliable channels in operation. 
+3) RB-Integrity — A correct process delivers a message only once and only if it was broadcast.
+   Satisfied - The algorithm keeps track of delivered messages in the 'delivered' set which prevents duplicate delivery. Also, since the message is not created or duplicated by the channel, any delivered message must have been sent through the broadcast communication.

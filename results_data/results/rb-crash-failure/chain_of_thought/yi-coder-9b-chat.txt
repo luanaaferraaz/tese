@@ -1,0 +1,8 @@
+1) RB-Validity - [satisfied]
+The correct broadcaster broadcasts m, the message is then delivered to all correct processes as it is forwarded by the process itself and its neighbours.
+
+2) RB-Agreement - [satisfied]
+If a correct process delivers m, this message will be delivered by all other correct processes because the faulty process has crashed and can't deliver messages.
+
+3) RB-Integrity - [satisfied]
+Processes only broadcast <type0, m> to themselves once and deliver m at most once. This ensures that a correct process doesn’t deliver m more than once by forwarding an already delivered message or by sending the same message type twice.

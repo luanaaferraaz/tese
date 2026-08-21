@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The correct broadcaster will broadcast the message, and all correct processes will receive it. The algorithm design includes thresholds to ensure that enough support messages are sent to guarantee delivery in all correct processes.
+
+RB-Agreement - [satisfied]
+If a correct process delivers a message, then all other correct processes will also eventually deliver this same message. This is ensured by the f + 1 rule and the support amplification rule which help distribute the evidence of a correct message from one process to multiple others.
+
+RB-Integrity - [satisfied]
+The integrity properties are maintained through the use of distinct sender counting, and the delivered set which ensures no duplicate delivery even in the presence of a single Byzantine process.

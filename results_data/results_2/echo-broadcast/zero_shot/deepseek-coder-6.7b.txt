@@ -1,0 +1,11 @@
+Validity - Satisfied.
+The validity property is true because the algorithm ensures that all correct processes accept any value broadcasted by the sender process. This is ensured by having a counter `echo_count[m]` to track how many processes have seen (received) each unique message `m`, and then checking if this count is at least half of the total number of processes (i.e., more than 2f Byzantine faulty processes).
+
+Agreement - Satisfied.
+The agreement property holds because the algorithm ensures that every correct process accepts messages with the same value in a unique way: as soon as the count `ready_count[m]` reaches at least f+1, the message is delivered (and hence accepted by all other correct processes). This means that each correct process delivers exactly the same values to all other correct processes.
+
+No duplication - Satisfied. 
+This property holds because every time a message is sent (SEND(m)), it's sent to every correct process, and if another process receives this SEND(m), it increments `echo_count[m]` but won't send an ECHO or READY for the same value again.
+
+No creation - Non-satisfied: 
+The property "no message creation" is not satisfied because the algorithm allows a new unique message to be created (when broadcasting) by sending a SEND(m). If no SEND operation was received on another process, this means that there's no guarantee of receiving at least f+1 READY messages for each unique value m. Thus, it could potentially create an agreement among less than f Byzantine faulty processes which is required to satisfy the protocol.

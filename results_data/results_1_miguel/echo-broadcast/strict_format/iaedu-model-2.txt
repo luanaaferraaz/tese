@@ -1,0 +1,12 @@
+{"run_id": "115742a3-909b-4ae0-be2e-3fc4a1f7a3c9", "type": "start", "content": "Processing"}
+
+{"run_id": "115742a3-909b-4ae0-be2e-3fc4a1f7a3c9", "type": "token", "content": "Valid"}
+
+{"run_id": "115742a3-909b-4ae0-be2e-3fc4a1f7a3c9", "type": "token", "content": "ity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: Delivery rule triggers whenever ready_count re"}
+
+{"run_id": "115742a3-909b-4ae0-be2e-3fc4a1f7a3c9", "type": "token", "content": "aches 2f+1; no check on delivered flag prevents duplicates.\nNo creation - [satisfied]"}
+
+{"run_id": "115742a3-909b-4ae0-be2e-3fc4a1f7a3c9", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: Delivery rule triggers whenever ready_count reaches 2f+1; no check on delivered flag prevents duplicates.\nNo creation - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "115742a3-909b-4ae0-be2e-3fc4a1f7a3c9", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "115742a3-909b-4ae0-be2e-3fc4a1f7a3c9", "type": "done", "content": "115742a3-909b-4ae0-be2e-3fc4a1f7a3c9", "messageId": "cmr927zzf5favke01krf86v1x"}
+

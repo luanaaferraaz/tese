@@ -1,0 +1,14 @@
+{"run_id": "c6a82bf6-116c-4ee8-8c18-89d5519fd5c7", "type": "start", "content": "Processing"}
+
+{"run_id": "c6a82bf6-116c-4ee8-8c18-89d5519fd5c7", "type": "token", "content": "R"}
+
+{"run_id": "c6a82bf6-116c-4ee8-8c18-89d5519fd5c7", "type": "token", "content": "B-Validity - [non satisfied]: Broadcaster only sends <type0, m> to others; if bro"}
+
+{"run_id": "c6a82bf6-116c-4ee8-8c18-89d5519fd5c7", "type": "token", "content": "adcaster is correct, it never delivers m to itself.\nRB-Agreement - [non satisfied]: Broadcaster never delivers m, so if"}
+
+{"run_id": "c6a82bf6-116c-4ee8-8c18-89d5519fd5c7", "type": "token", "content": " others deliver, not all correct processes deliver.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "c6a82bf6-116c-4ee8-8c18-89d5519fd5c7", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Broadcaster only sends <type0, m> to others; if broadcaster is correct, it never delivers m to itself.\nRB-Agreement - [non satisfied]: Broadcaster never delivers m, so if others deliver, not all correct processes deliver.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "c6a82bf6-116c-4ee8-8c18-89d5519fd5c7", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "c6a82bf6-116c-4ee8-8c18-89d5519fd5c7", "type": "done", "content": "c6a82bf6-116c-4ee8-8c18-89d5519fd5c7", "messageId": "cmradj242610vke018194tlui"}
+

@@ -1,0 +1,4 @@
+- Validity - [satisfied]
+- No duplication - [satisfied]
+- No creation - [satisfied]
+- Agreement - [non satisfied]: The algorithm does not guarantee that if a correct process delivers m, then every other correct process will eventually deliver m. This property can only be ensured when there is a quorum of processes (like 2f+1 in the case of Paxos or Raft) that are able to decide/agree upon an outcome.

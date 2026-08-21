@@ -1,0 +1,3 @@
+The algorithm is correct under the assumption that there can be at most one message per sender and no duplicate delivery. RB-Validity is satisfied because if the broadcaster sends <type0, m> to all processes, then it eventually delivers <type1, m> to f+1 distinct process and broadcasts m with at least (n+f)/2 distinct <type1, m> messages which satisfies RB-Agreement. 
+
+RB-Integrity is also satisfied because the algorithm ensures that a message can be delivered only once by maintaining a set of delivered messages. If there's any duplicate delivery, it would violate this property. The reason for non-satisfaction of these properties could be due to possible Byzantine faults where some processes send malicious or inconsistent messages.

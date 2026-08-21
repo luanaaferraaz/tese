@@ -1,0 +1,18 @@
+Algorithm: Bracha’s Reliable Broadcast
+
+1. Correctness Properties - Satisfied
+   Validity: The algorithm ensures that a correct process broadcasting a value will eventually receive it from all other correct processes.
+   Agreement: If two correct processes agree on the same value, they will eventually reach an agreement when each of them delivers the agreed upon value to all other processes.
+   
+2. Decision / Delivery Rule - Satisfied
+   The algorithm ensures that a process will deliver a message once it receives 2f+1 READY messages from correct processes.
+
+3. Quorum - Satisfied
+   Because n > 3f, any two quorums of 2f + 1 processes intersect in at least f + 1 processes. This allows for the delivery of a message as long as there are enough correct processes to send and receive READY messages.
+
+4. Invariants - Non Satisfied: I1 (Uniqueness)
+   There is no guarantee that no two correct processes ever send ECHO or READY for different messages in the same broadcast instance. This could lead to issues with message duplication or creation.
+   
+5. Correctness Argument Skeleton - Satisfied:
+   Safety (Agreement): If a correct process delivers a value, it means that there are at least f + 1 other processes that have sent READY messages for the same value. Any other process will eventually receive these messages and trigger their own READY broadcasts to reach the 2f + 1 threshold.
+   Liveness (Totality): The rules ensure that even if a Byzantine sender only sends the message to a few correct processes, they will "amplify" the signal until everyone receives enough READY messages to deliver. However, it is important to note that there is no guarantee of liveness for non-Byzantine scenarios or in scenarios where f > 0.

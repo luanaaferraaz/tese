@@ -1,0 +1,9 @@
+1. Validity - satisfied
+   The correct process broadcasts m, and it eventually delivers m by design of the algorithm (Eager Diffusion).
+
+2. No duplication - satisfied
+   Each process maintains a delivered set to ensure that every correct process delivers m at most once. The pseudocode shows that no duplicate upcalls will be made.
+
+3. No creation - non-satisfied: The faulty processes can create new messages and deliver them.
+4. Agreement - satisfied
+   If a correct process delivers m, then the message is immediately forwarded to all others. So if it is delivered by one process eventually, it is delivered by every other process eventually as well due to the reliable channels' nature.

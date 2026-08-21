@@ -1,0 +1,6 @@
+{"run_id": "e93bee65-3d77-474d-8a7a-025e99938553", "type": "start", "content": "Processing"}
+
+{"run_id": "e93bee65-3d77-474d-8a7a-025e99938553", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "e93bee65-3d77-474d-8a7a-025e99938553", "type": "done", "content": "e93bee65-3d77-474d-8a7a-025e99938553", "messageId": "None", "token_pct_used": 102.2}
+

@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+- This property is satisfied because, as per the algorithm, a correct broadcaster (one without any Byzantine faults) sends the initial broadcast message <type0, m> to all its neighbours. All other processes are eventually able to receive this message and trigger delivery if they received at least one <type1, m> from a different process.
+
+RB-Agreement - [satisfied]
+- This property is satisfied because a correct process delivers a message only after it has received f + 1 distinct <type1, m> messages (where 'f' denotes the maximum number of Byzantine processes). If one correct process receives more than f + 1 distinct <type1, m> messages, then this process can ensure its delivery by forwarding the <type1, m> to its neighbours.
+
+RB-Integrity - [satisfied]
+- This property is satisfied because the algorithm ensures that a message (<m>) is delivered at most once and only if it was broadcast. The 'delivered' set keeps track of all messages which have been delivered, and a process can deliver a message from this set only when it has not seen this particular message before. If a Byzantine process tries to force the delivery by sending duplicate <type1, m> messages, then these attempts will be detected as they would result in more than f + 1 valid senders for delivering <m> and hence the 'delivered' set would contain <m> at this point.

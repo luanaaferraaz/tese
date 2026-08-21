@@ -1,0 +1,17 @@
+RB-Validity - Satisfied
+The broadcaster sends a message <type0, m> to all processes. Since there are no failures and reliable channels ensure that all processes receive it and deliver it. So, RB-Validity is satisfied. 
+
+Reasoning:
+There's an external invocation of the algorithm on the broadcaster where he sends a message <type0, m> to all processes if it hasn't been sent before. This ensures that every process eventually receives and delivers any broadcasted messages.
+
+RB-Agreement - Satisfied
+If one process delivers m, then the message was sent by the broadcaster to all processes. So, RB-Agreement is satisfied. 
+
+Reasoning:
+When a process receives a message <t, m>, it checks if this message has been delivered before. If not, it adds this message to the set of delivered messages and fires an Output event DELIVER(m). This ensures that every correct process eventually delivers any broadcasted messages.
+
+RB-Integrity - Satisfied
+The delivered set prevents duplicate delivery of a message m. Since reliable channels ensure no message is created by the channel, all delivered messages are from the broadcaster's broadcast. So, RB-Integrity is satisfied. 
+
+Reasoning:
+The delivered set holds all messages that have been successfully received and delivered by some correct process. Each new message <t, m> added to this set ensures that no duplicate deliveries happen for the same message m. Thus, ensuring RB-Integrity.

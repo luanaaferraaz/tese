@@ -1,0 +1,6 @@
+{"run_id": "cbf527a4-6012-4e73-aeef-51e50495254a", "type": "start", "content": "Processing"}
+
+{"run_id": "cbf527a4-6012-4e73-aeef-51e50495254a", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "cbf527a4-6012-4e73-aeef-51e50495254a", "type": "done", "content": "cbf527a4-6012-4e73-aeef-51e50495254a", "messageId": "None", "token_pct_used": 106.4}
+

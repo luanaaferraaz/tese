@@ -1,0 +1,6 @@
+ 
+1) Validity - 
+"Validity is satisfied."
+2) Non duplication - "Non duplication is satisfied."
+3) No creation - "No creation is not satisfied. Reason: Some processes may have received and delivered m before the sender broadcasts it, violating the 'Agreement' property."
+4) Agreement - "Agreement is satisfied."

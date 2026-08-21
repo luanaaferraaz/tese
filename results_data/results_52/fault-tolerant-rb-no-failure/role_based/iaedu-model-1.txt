@@ -1,0 +1,6 @@
+{"run_id": "24880146-db6d-41f2-8120-56eb18d3bb3c", "type": "start", "content": "Processing"}
+
+{"run_id": "24880146-db6d-41f2-8120-56eb18d3bb3c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "24880146-db6d-41f2-8120-56eb18d3bb3c", "type": "done", "content": "24880146-db6d-41f2-8120-56eb18d3bb3c", "messageId": "None", "token_pct_used": 102.2}
+

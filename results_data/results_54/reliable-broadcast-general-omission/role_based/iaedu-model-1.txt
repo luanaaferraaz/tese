@@ -1,0 +1,6 @@
+{"run_id": "825777e9-886c-41aa-a532-e159031c3d83", "type": "start", "content": "Processing"}
+
+{"run_id": "825777e9-886c-41aa-a532-e159031c3d83", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "825777e9-886c-41aa-a532-e159031c3d83", "type": "done", "content": "825777e9-886c-41aa-a532-e159031c3d83", "messageId": "None", "token_pct_used": 102.2}
+

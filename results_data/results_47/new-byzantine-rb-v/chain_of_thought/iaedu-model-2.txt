@@ -1,0 +1,6 @@
+{"run_id": "24d9506e-caa2-4051-bb0c-def5a351060b", "type": "start", "content": "Processing"}
+
+{"run_id": "24d9506e-caa2-4051-bb0c-def5a351060b", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "24d9506e-caa2-4051-bb0c-def5a351060b", "type": "done", "content": "24d9506e-caa2-4051-bb0c-def5a351060b", "messageId": "None", "token_pct_used": 106.4}
+

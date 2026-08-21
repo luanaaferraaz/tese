@@ -1,0 +1,7 @@
+Validity - Satisfied
+
+No duplication - Non satisfied: The delivered set allows for duplicate upcalls. A process can deliver a message multiple times, which would violate this property.
+
+No creation - Non satisfied: If the system is honest and reliable (no Byzantine faults), no process should be able to create new messages that have not been broadcasted by any other process.
+
+Agreement - Satisfied: The protocol ensures that if a correct process delivers a message, then every correct process eventually delivers the same message. This property is achieved through the use of reliable channels and honest processes which guarantee delivery without any delays or failure.

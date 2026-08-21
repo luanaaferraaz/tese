@@ -1,0 +1,3 @@
+Validity - [Satisfied]
+No duplication - [Non Satisfied]: The algorithm does not guarantee that no message is delivered more than once.
+No creation - [Non Satisfied]: The algorithm does not guarantee that if a process delivers a message, then it was previously broadcast by the same process.

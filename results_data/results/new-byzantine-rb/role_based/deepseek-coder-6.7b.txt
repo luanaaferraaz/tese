@@ -1,0 +1,15 @@
+The provided pseudocode does not seem to have any obvious errors, as it adheres to the described algorithm template for a Byzantine tolerant reliable broadcast system. It correctly implements the conditions given in the pseudocode such as sending and receiving messages from different types, maintaining sets of received messages, tracking delivered messages etc.
+
+The broadcaster sends <type0, m> message to its neighbours upon RB-Broadcast(m) operation. Upon receipt of a <type0, m> message, the receiver adds it to the set of received_type0[m]. If at least one distinct sender has sent a <type0, m> and if not already sent a <type1, m>, then the process sends a <type1, m> to its neighbours.
+
+Similarly, upon receipt of a <type1, m> message, the receiver adds it to the set of received_type1[m]. If at least f + 1 distinct senders have sent a <type1, m> and if not already sent a <type1, m>, then the process sends a <type1, m> to its neighbours.
+
+If at least f + 1 <type1, m> messages have been received and if m has not been delivered yet, it is marked as delivered and an OUTPUT EVENT DELIVER(m) is fired. 
+
+The invariants given I1 through I5 seem to hold true for this pseudocode too. The broadcaster only sends once <type0, m> message and all correct processes should be able to send at least f + 1 <type1, m> messages without missing any deliveries. A process can't deliberately cause the same message to be delivered more than once by sending multiple times.
+
+Hence according to RB-Validity: The broadcaster sends a <type0, m> and all correct receivers eventually send at least one <type1, m> which results in delivery of m. 
+RB-Agreement: If any process delivers m then it received f + 1 distinct <type1, m> messages from correct processes only so the property holds true.
+RB-Integrity: A process delivers m at most once as specified by its local state variable delivered which ensures this property too. 
+
+Therefore, according to these checks all properties hold and hence no further commentary is required.

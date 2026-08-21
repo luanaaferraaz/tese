@@ -1,0 +1,8 @@
+1. Validity – [satisfied]
+The validity property is satisfied as any correct process broadcasts a message m, then every other correct process will eventually deliver it according to the underlying perfect point-to-point links model.
+
+2. No duplication - [satisfied]
+The no duplication property holds true because the algorithm doesn't duplicate messages and the underlying perfect point-to-point links guarantee that a message is delivered at most once in each process.
+
+3. No creation – [satisfied]
+The no creation property is maintained by the assumption given: if a process delivers a message m with sender s, then m was previously broadcast by process s. This property is satisfied as there's no creation of messages other than what the sender broadcasts initially.

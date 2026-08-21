@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This algorithm is RB-valid because a correct process broadcasts <type0, m> to its neighbours. The correct receivers then send <type1, m> back to the broadcasters and their neighbours. This support propagation rule ensures that all correct processes eventually receive at least f + 1 <type1, m> messages from distinct processes, validating the broadcast.
+
+RB-Agreement - [satisfied]
+The algorithm is RB-agreeing because if one correct process delivers m, it must have received f + 1 <type1, m> messages. At least one of those messages was sent by a correct process. The forwarding rule then propagates this support to the other correct processes allowing them all to eventually reach the same delivery threshold.
+
+RB-Integrity - [satisfied]
+The algorithm is RB-integrity because only a correct process delivers m at most once and only if it was broadcasted by itself or its neighbours. Since f + 1 support for m is required, a Byzantine process alone cannot force the process to deliver m.

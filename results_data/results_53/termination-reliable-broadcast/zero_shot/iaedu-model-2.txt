@@ -1,0 +1,6 @@
+{"run_id": "0921418b-cebc-4d45-b5d0-5f8fa6f05c1f", "type": "start", "content": "Processing"}
+
+{"run_id": "0921418b-cebc-4d45-b5d0-5f8fa6f05c1f", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "0921418b-cebc-4d45-b5d0-5f8fa6f05c1f", "type": "done", "content": "0921418b-cebc-4d45-b5d0-5f8fa6f05c1f", "messageId": "None", "token_pct_used": 106.4}
+

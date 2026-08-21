@@ -1,0 +1,14 @@
+{"run_id": "1ea14180-f18a-4e40-8b53-331ec2b62abb", "type": "start", "content": "Processing"}
+
+{"run_id": "1ea14180-f18a-4e40-8b53-331ec2b62abb", "type": "token", "content": "R"}
+
+{"run_id": "1ea14180-f18a-4e40-8b53-331ec2b62abb", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 \u2192"}
+
+{"run_id": "1ea14180-f18a-4e40-8b53-331ec2b62abb", "type": "token", "content": " 3; two correct processes with type1 insufficient if Byzantine withholds, delivery may"}
+
+{"run_id": "1ea14180-f18a-4e40-8b53-331ec2b62abb", "type": "token", "content": " not propagate.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "1ea14180-f18a-4e40-8b53-331ec2b62abb", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 \u2192 3; two correct processes with type1 insufficient if Byzantine withholds, delivery may not propagate.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "1ea14180-f18a-4e40-8b53-331ec2b62abb", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "1ea14180-f18a-4e40-8b53-331ec2b62abb", "type": "done", "content": "1ea14180-f18a-4e40-8b53-331ec2b62abb", "messageId": "cms243f381t4dke01oty0nfr0"}
+

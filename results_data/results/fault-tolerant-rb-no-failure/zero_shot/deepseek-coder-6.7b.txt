@@ -1,0 +1,7 @@
+The properties RB-Validity, RB-Agreement, and RB-Integrity are all satisfied.
+
+RB-Validity - Satisfied: The broadcaster sends a <type0, m> to all processes using reliable message passing channels. If any process delivers message m, it means that the message has been sent by the broadcaster to all other correct processes and is not lost or duplicated.
+
+RB-Agreement - Satisfied: The agreement property ensures that if a process delivers message m, then every other correct process eventually receives and delivers m as well. This is ensured by the protocol where each time a message <t, m> is received, it's added to the set of delivered messages if it hasn't been already.
+
+RB-Integrity - Satisfied: The property RB-Integrity ensures that a process delivers m at most once and only if m was broadcasted by the broadcaster. This is ensured by the invariant I1 which states "No duplicate delivery", meaning each message is delivered at most once, and invariant I2 which states "Direct origin" ensuring all delivered messages are received through the broadcast communication, thereby preventing duplicate deliveries.

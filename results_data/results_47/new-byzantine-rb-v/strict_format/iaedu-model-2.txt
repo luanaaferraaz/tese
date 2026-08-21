@@ -1,0 +1,6 @@
+{"run_id": "4baba47d-edcd-4abd-ba9c-e0e3f260fc35", "type": "start", "content": "Processing"}
+
+{"run_id": "4baba47d-edcd-4abd-ba9c-e0e3f260fc35", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "4baba47d-edcd-4abd-ba9c-e0e3f260fc35", "type": "done", "content": "4baba47d-edcd-4abd-ba9c-e0e3f260fc35", "messageId": "None", "token_pct_used": 106.4}
+

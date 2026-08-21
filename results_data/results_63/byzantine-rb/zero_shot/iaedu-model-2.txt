@@ -1,0 +1,14 @@
+{"run_id": "e18f2cd6-2c48-473e-80e7-e015be15f64c", "type": "start", "content": "Processing"}
+
+{"run_id": "e18f2cd6-2c48-473e-80e7-e015be15f64c", "type": "token", "content": "R"}
+
+{"run_id": "e18f2cd6-2c48-473e-80e7-e015be15f64c", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 rounds down"}
+
+{"run_id": "e18f2cd6-2c48-473e-80e7-e015be15f64c", "type": "token", "content": " to 2; two Byzantine-influenced echoes could cause in"}
+
+{"run_id": "e18f2cd6-2c48-473e-80e7-e015be15f64c", "type": "token", "content": "consistent delivery.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "e18f2cd6-2c48-473e-80e7-e015be15f64c", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 rounds down to 2; two Byzantine-influenced echoes could cause inconsistent delivery.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "e18f2cd6-2c48-473e-80e7-e015be15f64c", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "e18f2cd6-2c48-473e-80e7-e015be15f64c", "type": "done", "content": "e18f2cd6-2c48-473e-80e7-e015be15f64c", "messageId": "cmr90lxlc5dqske01nt8ao8aa"}
+

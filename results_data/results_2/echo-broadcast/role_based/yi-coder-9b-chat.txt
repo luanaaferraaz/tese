@@ -1,0 +1,11 @@
+1. Validity - Satisfied
+All correct processes accept the value that a designated process broadcasts. This is guaranteed by the ECHO and READY broadcast mechanism, as every process that sees the SEND message will broadcast an ECHO, and once enough ECHOs are received they will send READY.
+
+2. Agreement - Satisfied
+If two correct processes accept values v and u respectively, then v=u is guaranteed due to the agreement rule in the protocol pseudocode. Whenever a process accepts a value m (via receiving 2f+1 READY messages), it will stop sending further ECHO or READY messages for that specific instance of the broadcast.
+
+3. No duplication - Satisfied
+Each correct process can only send one ECHO and one READY message per unique input received in a broadcast instance. This is enforced by the protocol pseudocode through the sent_echo and sent_ready variables.
+
+4. No creation - Satisfied
+No incorrect/Byzantine processes are allowed to initiate broadcasts, and correct processes won't create messages out of nowhere due to the ECHO and READY agreement mechanism. Only a correct process that has received an initial SEND message will ever send an ECHO or READY message.

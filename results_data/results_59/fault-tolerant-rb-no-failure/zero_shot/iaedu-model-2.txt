@@ -1,0 +1,6 @@
+{"run_id": "d976a9ac-615c-47d1-afcd-cfe4303facf4", "type": "start", "content": "Processing"}
+
+{"run_id": "d976a9ac-615c-47d1-afcd-cfe4303facf4", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "d976a9ac-615c-47d1-afcd-cfe4303facf4", "type": "done", "content": "d976a9ac-615c-47d1-afcd-cfe4303facf4", "messageId": "None", "token_pct_used": 107.3}
+

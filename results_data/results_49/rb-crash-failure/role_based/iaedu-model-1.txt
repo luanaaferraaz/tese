@@ -1,0 +1,6 @@
+{"run_id": "28160755-4779-4356-af62-17c182bafae4", "type": "start", "content": "Processing"}
+
+{"run_id": "28160755-4779-4356-af62-17c182bafae4", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "28160755-4779-4356-af62-17c182bafae4", "type": "done", "content": "28160755-4779-4356-af62-17c182bafae4", "messageId": "None", "token_pct_used": 102.2}
+

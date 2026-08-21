@@ -1,0 +1,18 @@
+{"run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "type": "start", "content": "Processing"}
+
+{"run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "type": "token", "content": "Validity -"}
+
+{"run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "type": "token", "content": " [non satisfied]: Sender may deliver immediately without f+1 ech"}
+
+{"run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "type": "token", "content": "oes; if sender is send-omission faulty, other correct processes may never deliver.\nNo duplication"}
+
+{"run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "type": "token", "content": " - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: A faulty sender delivering to it"}
+
+{"run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "type": "token", "content": "self, plus relay omissions, can leave correct processes below f+1 distinct s"}
+
+{"run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "type": "token", "content": "ources."}
+
+{"run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender may deliver immediately without f+1 echoes; if sender is send-omission faulty, other correct processes may never deliver.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: A faulty sender delivering to itself, plus relay omissions, can leave correct processes below f+1 distinct sources.", "tool_calls": [], "tool_call_id": null, "run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "type": "done", "content": "3e7dec1c-951d-43e3-b176-2ae12e7a9a43", "messageId": "cms3atmab28fzke01i4slt6pj"}
+

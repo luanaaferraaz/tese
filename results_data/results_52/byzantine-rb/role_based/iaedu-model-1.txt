@@ -1,0 +1,6 @@
+{"run_id": "d2ae110a-c0e0-46dd-b02d-122e89e9f2bf", "type": "start", "content": "Processing"}
+
+{"run_id": "d2ae110a-c0e0-46dd-b02d-122e89e9f2bf", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "d2ae110a-c0e0-46dd-b02d-122e89e9f2bf", "type": "done", "content": "d2ae110a-c0e0-46dd-b02d-122e89e9f2bf", "messageId": "None", "token_pct_used": 102.2}
+

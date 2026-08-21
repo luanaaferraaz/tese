@@ -1,0 +1,7 @@
+1. Validity: The correctness argument guarantees that a correct process that broadcasts a message m will eventually deliver it, as all other processes will receive at least f+1 distinct sources for m and thus deliver it (I2, I3).
+
+2. No duplication: The delivered set ensures that each process delivers any given message only once. A process checks if the message is already in the delivered set before delivering it (no creation argument of links between correct processes prevents a message from being created out of thin air).
+
+3. No creation: Every process only sends DATA or RELAY for messages that were actually broadcast by some process, and a correct process self-delivers its own broadcasts immediately (the no creation argument ensures the relay chain traces back to an original sender).
+
+4. Agreement: If any correct process delivers m, it must have received this message from at least f+1 distinct processes (at least one of which is correct by the validity rule) and relayed it to all other processes. Every other correct process eventually receives this relay, ensuring that every process accumulates f+1 distinct sources for m and delivers m in due course (I3).

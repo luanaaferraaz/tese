@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The RB-Validity property is satisfied because the algorithm starts with an initial broadcast of <type0, m> by a correct process. This message guarantees that all correct processes eventually receive it thanks to the reliable authenticated channels assumption. Once received, they will immediately send their support / echo message <type1, m> which can be collected by other correct processes satisfying the thresholds.
+
+RB-Agreement - [satisfied]
+The RB-Agreement property is also satisfied because if a single process delivers <type1, m>, it has seen enough evidence from other processes to believe that this message was indeed broadcasted by the original sender. This support will then be forwarded to all other correct processes, eventually resulting in agreement among them as well on what messages should be delivered.
+
+RB-Integrity - [satisfied]
+Finally, RB-Integrity is satisfied because a process delivers m at most once and only if it was indeed broadcasted by the original sender. This is enforced through the use of a "delivered" set and distinct-sender counting which prevent any Byzantine or malicious processes from repeating messages or creating enough support for already delivered messages.

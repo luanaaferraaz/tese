@@ -1,0 +1,18 @@
+{"run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "type": "start", "content": "Processing"}
+
+{"run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "type": "token", "content": "R"}
+
+{"run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "type": "token", "content": "B-Validity - [non satisfied]: Broadcaster sends but never delivers to itself; if bro"}
+
+{"run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "type": "token", "content": "adcaster is correct, it doesn't deliver m. (confidence: 8/10)\nRB-Agreement - [non satisfied]:"}
+
+{"run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "type": "token", "content": " Receiver delivers on receipt without relaying; bro"}
+
+{"run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "type": "token", "content": "adcaster never delivers to itself, violating agreement. (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: "}
+
+{"run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "type": "token", "content": "9/10)"}
+
+{"run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Broadcaster sends but never delivers to itself; if broadcaster is correct, it doesn't deliver m. (confidence: 8/10)\nRB-Agreement - [non satisfied]: Receiver delivers on receipt without relaying; broadcaster never delivers to itself, violating agreement. (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "92b998cd-0eae-4113-8783-7707ebb87ec5", "type": "done", "content": "92b998cd-0eae-4113-8783-7707ebb87ec5", "messageId": "cmrkbywpi49trke01i55x3xx6"}
+

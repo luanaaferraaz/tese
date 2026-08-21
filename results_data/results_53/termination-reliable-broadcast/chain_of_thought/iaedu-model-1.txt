@@ -1,0 +1,6 @@
+{"run_id": "4e77920f-fc05-4e51-ad74-103bbb40791f", "type": "start", "content": "Processing"}
+
+{"run_id": "4e77920f-fc05-4e51-ad74-103bbb40791f", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "4e77920f-fc05-4e51-ad74-103bbb40791f", "type": "done", "content": "4e77920f-fc05-4e51-ad74-103bbb40791f", "messageId": "None", "token_pct_used": 102.2}
+

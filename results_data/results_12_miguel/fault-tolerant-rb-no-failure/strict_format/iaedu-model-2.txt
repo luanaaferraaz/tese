@@ -1,0 +1,16 @@
+{"run_id": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "type": "start", "content": "Processing"}
+
+{"run_id": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "type": "token", "content": "R"}
+
+{"run_id": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "type": "token", "content": "B-Validity - [non satisfied]: broadcaster sends to all but does not send to itself, so it never delivers m"}
+
+{"run_id": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "type": "token", "content": " (confidence: 7/10)\nRB-Agreement - [non satisfied]: broadcaster does not deliver m to"}
+
+{"run_id": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "type": "token", "content": " itself since it only sends to others without local delivery (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence"}
+
+{"run_id": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "type": "token", "content": ": 9/10)"}
+
+{"run_id": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: broadcaster sends to all but does not send to itself, so it never delivers m (confidence: 7/10)\nRB-Agreement - [non satisfied]: broadcaster does not deliver m to itself since it only sends to others without local delivery (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "type": "done", "content": "d82c4d28-2b49-46c3-bc68-2c44ccad0cd0", "messageId": "cmrufc0sq35omke01vjza8zxu"}
+

@@ -1,0 +1,6 @@
+{"run_id": "718065ce-3b24-4633-818c-3337bdd89a98", "type": "start", "content": "Processing"}
+
+{"run_id": "718065ce-3b24-4633-818c-3337bdd89a98", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "718065ce-3b24-4633-818c-3337bdd89a98", "type": "done", "content": "718065ce-3b24-4633-818c-3337bdd89a98", "messageId": "None", "token_pct_used": 106.4}
+

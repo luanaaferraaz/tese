@@ -1,0 +1,4 @@
+1. Validity - [satisfied]
+2. No duplication - [satisfied]
+3. No creation - [non satisfied]: Processes can only send DATA or RELAY messages for messages they have actually received or are initiating a broadcast of.
+4. Agreement - [satisfied]

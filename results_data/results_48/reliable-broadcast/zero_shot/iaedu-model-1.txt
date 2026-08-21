@@ -1,0 +1,6 @@
+{"run_id": "5761ec9c-ac08-4b7c-aa42-92a8779f33aa", "type": "start", "content": "Processing"}
+
+{"run_id": "5761ec9c-ac08-4b7c-aa42-92a8779f33aa", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "5761ec9c-ac08-4b7c-aa42-92a8779f33aa", "type": "done", "content": "5761ec9c-ac08-4b7c-aa42-92a8779f33aa", "messageId": "None", "token_pct_used": 102.2}
+

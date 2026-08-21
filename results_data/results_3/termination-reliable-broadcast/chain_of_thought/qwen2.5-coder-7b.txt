@@ -1,0 +1,7 @@
+Termination - [satisfied]
+
+Validity - [satisfied]
+
+Agreement - [satisfied]
+
+Integrity - [non satisfied]: SF delivered by correct process if no message received.

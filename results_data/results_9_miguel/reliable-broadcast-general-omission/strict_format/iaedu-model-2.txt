@@ -1,0 +1,20 @@
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "start", "content": "Processing"}
+
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "token", "content": "Validity - ["}
+
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "token", "content": "non satisfied]: Sender may be receive-omission faulty; still must"}
+
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "token", "content": " deliver, but pseudocode delivers before any receive check ("}
+
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "token", "content": "confidence: 5/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied"}
+
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "token", "content": "] (confidence: 9/10)\nAgreement - [non satisfied]: With n>2f, f+1 threshold ins"}
+
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "token", "content": "ufficient; correct process may deliver while others get messages only from faulty sen"}
+
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "token", "content": "ders (confidence: 6/10)"}
+
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender may be receive-omission faulty; still must deliver, but pseudocode delivers before any receive check (confidence: 5/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: With n>2f, f+1 threshold insufficient; correct process may deliver while others get messages only from faulty senders (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "type": "done", "content": "16217ee3-3f08-4f20-ac97-ab9b98ccba00", "messageId": "cmrkc5eqs49zhke011a030mgs"}
+

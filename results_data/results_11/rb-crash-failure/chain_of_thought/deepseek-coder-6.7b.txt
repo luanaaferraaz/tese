@@ -1,0 +1,19 @@
+Here are the results for each property:
+
+1. RB-Validity: This property requires that if a correct broadcaster broadcasts a message m, then all correct processes eventually deliver m. In this algorithm, the broadcaster sends <type0, m> to itself and delivers it immediately upon receiving it. Hence, all correct processes eventually receive the message from the broadcaster (since no crashed process is involved) and deliver it. 
+
+```plaintext
+RB-Validity - satisfied
+```
+
+2. RB-Agreement: This property requires that if a single correct process delivers a message m, then all other correct processes eventually receive and deliver the same message m. In this algorithm, each correct process receives the broadcasted message and forwards it to its neighbours. Hence, every correct process is able to agree on which messages are delivered (since no crashed process is involved) by receiving and forwarding the message from a correct process. 
+
+```plaintext
+RB-Agreement - satisfied
+```
+
+3. RB-Integrity: This property requires that a correct process delivers each message m at most once, i.e., no duplicates are delivered. In this algorithm, every time a correct process receives a message m and has not yet delivered it, it delivers the message immediately after receiving it from any source (broadcaster or neighbour). Hence, no duplicate messages are delivered. 
+
+```plaintext
+RB-Integrity - satisfied
+```

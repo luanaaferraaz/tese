@@ -1,0 +1,30 @@
+
+Validity, Satisfied
+No duplication, None
+No creation, None
+
+Algorithm
+The algorithm name is Best-Effort Broadcast. It is a broadcast primitive designed to deliver a message to the system and allow its elements to respond. To begin with, it defines the process involved in delivering the message: the broadcaster. Broadcasters are the processes that create the messages to be delivered. The receiver, on the other hand, is the process that receives the broadcasted message. Both of these processes must have a reference to the perfect point-to-point links (PPLs) so they can send or receive messages.
+
+The algorithm assumes that each PPL is faultless and will deliver its message reliably once it has received it. Additionally, this assumption relies on an asynchronous communication model, where there are no constraints on timing between processes. The algorithm does not specify any specific rules for the behavior of the receiver when a message is delivered to them, as they can respond in any way that fits their needs.
+
+The algorithm also assumes that messages are unique and cannot be duplicated or sent more than once. This ensures that each process receives only one copy of the broadcasted message. The algorithm also states that processes must not create new messages; if a correct process broadcasts a message, it can be assumed that this same message was previously broadcast by another process with the same sender.
+
+The algorithm specifies some key components, such as the set of all processes (n) and the maximum number of faulty processes (not explicitly bounded). It also assumes that there are no physical limitations on the system's infrastructure, so it can rely on perfect point-to-point links for communication between processes. The timing model is asynchronous, meaning there are no constraints on how long it takes for a process to receive a message or deliver one.
+
+The algorithm guarantees the validity of the messages by stating that if a correct process broadcasts a message (m), then every other process eventually delivers this same message. It also ensures that messages are not delivered more than once and that no two processes broadcast the same message. This validates the correctness of the communication model.
+
+The algorithm defines an interface or API, which is used to trigger events in the system. This interface includes two external operations: beb.Broadcast (used by the broadcaster) and pl.Send (used by the receiver). The output event for this interface is called deliver, where it corresponds to a previously broadcasted message (m) being delivered to a specific process (p).
+
+The roles defined in the algorithm are important as they determine which processes are involved in the communication. Broadcasters are the processes that create and send messages, while receivers are the processes that receive these messages. These roles also have an impact on the local state of each process, which is not specified by the algorithm but may include variables or constants related to this local state.
+
+The algorithm assumes that there are no specific rules for initializing the system; it leaves this up to the implementation. It also specifies that there should be a unique message content (m) that is broadcasted to all processes, ensuring message uniqueness and validation. This assumption allows for the validity of the communication model.
+
+To ensure that messages are delivered properly, the algorithm includes two types of events: deliver (when a process receives a message) and Broadcast (when a message is sent). These events trigger further action in the system. The algorithm also states that processes must wait until an event occurs before they can continue processing, which ensures the reliability of communication between processes.
+
+The algorithm provides a decision or delivery rule based on when a process should receive a message (triggering pl.Send) and when it is done receiving messages (triggering beb.Deliver). This allows for proper handling of delivered messages in the system. It also states that after delivering a message, the message is passed to the upper layer of the system.
+
+The algorithm does not specify any quorum or consensus rules, which are typically used in distributed systems to ensure reliability and consistency among processes. Finally, it includes two invariants: one stating that if a message (m) is delivered, it was previously broadcasted by a process in the set n, and another statement that m is received only once per process. These invariants validate the algorithm's assumptions and rules for proper communication between processes.
+
+In conclusion, the Best-Effort Broadcast algorithm provides a simple but efficient way to deliver messages between processes in a distributed system. It ensures message uniqueness, validity, and reliability through its assumptions and design choices. By following this algorithm, systems can effectively communicate without relying on any specific rules or procedures. 
+

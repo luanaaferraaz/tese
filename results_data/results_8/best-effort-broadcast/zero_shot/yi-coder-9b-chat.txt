@@ -1,0 +1,3 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [non satisfied]: The algorithm assumes that every process delivers a message m with sender s, this presumption is incorrect as the underlying assumption may not always hold true given the imperfect nature of the communication channels.

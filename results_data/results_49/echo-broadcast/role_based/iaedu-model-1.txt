@@ -1,0 +1,6 @@
+{"run_id": "adf11085-fa5b-4be9-8fef-9b9ec8cce6e6", "type": "start", "content": "Processing"}
+
+{"run_id": "adf11085-fa5b-4be9-8fef-9b9ec8cce6e6", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "adf11085-fa5b-4be9-8fef-9b9ec8cce6e6", "type": "done", "content": "adf11085-fa5b-4be9-8fef-9b9ec8cce6e6", "messageId": "None", "token_pct_used": 102.2}
+

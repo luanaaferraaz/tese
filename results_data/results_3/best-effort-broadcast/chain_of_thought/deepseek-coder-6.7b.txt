@@ -1,0 +1,18 @@
+Output format:
+- One line per property
+- Format:
+  <property> - [satisfied]/[non satisfied]: <reason>
+- Only include reason if non satisfied
+- Reason ≤ 20 words
+- Do NOT include reasoning in the output
+- No extra text
+
+Safety Properties:
+- Validity - satisfied
+- No duplication - satisfied. This is ensured by using a perfect point to point link (assumed) which ensures no message is delivered more than once.
+- No creation - satisfied. If a process delivers a message m with sender s, then it was previously broadcast by process s as per the assumption of unique messages. 
+
+If any property were not satisfied, we would have to find out why:
+- Validity: The algorithm assumes that all correct processes will receive and deliver every broadcasted message. If some or no correct processes did so, this condition might violate. We can check if there are any faulty nodes sending messages but not receiving them or delivering them. 
+- No duplication: If the same message was delivered more than once, it breaks the assumption of unique messages and hence the property is non satisfied.
+- No creation: If a process delivers a message m without having sent it previously, this violates the assumption that every message must have been broadcast by its sender. 

@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The algorithm ensures that if a correct broadcaster broadcasts m, then all correct processes eventually deliver it. This is guaranteed by the protocol's design where the initial message broadcast to itself, and the forwarded messages are delivered.
+
+RB-Agreement - [satisfied]
+If one correct process delivers m, then because of the forwarding mechanism in the algorithm, all other correct processes receive a forwarded copy of this message and eventually deliver it as well.
+
+RB-Integrity - [satisfied]
+The algorithm ensures that each process delivers a given message at most once. This is enforced by maintaining a "delivered" set which contains all messages already delivered. Before delivering any new message, the algorithm checks if it has already been delivered before adding to the set and delivering.

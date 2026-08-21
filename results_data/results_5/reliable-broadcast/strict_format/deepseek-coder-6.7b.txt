@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]: The algorithm ensures that every correct process delivers each message exactly once. If a correct process delivers a message m, then it adds m to the delivered set and immediately forwards m to all other processes.
+Agreement - [satisfied]

@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+This algorithm ensures that a correct process broadcasts m, all other processes receive m. The validity is guaranteed by the fact that correct processes support each other and propagate the <type1, m> message to their neighbours.
+
+RB-Agreement - [satisfied]
+If one correct process delivers m, it does so because it received f + 1 <type1, m> messages from distinct processes, which is an agreement among all correct processes as at least one of these messages originated from a correct process.
+
+RB-Termination - [non satisfied]: The algorithm does not guarantee termination in the case when there are no correct processes.

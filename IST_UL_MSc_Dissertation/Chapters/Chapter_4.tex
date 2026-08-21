@@ -1,0 +1,246 @@
+% #############################################################################
+% This is Chapter 4
+% !TEX root = ../main.tex
+% #############################################################################
+\fancychapter{Evaluation}
+\label{chap:evaluation}
+
+\section{Evaluation Procedure and Initial Results}
+
+The evaluation phase was done iteratively, using different combinations of algorithms, correctness properties, and prompt formats, where for each experiment the model received the algorithm description with its set of properties to verify, comparing the output against the expected classification for each property. A response was considered successful when the model correctly identified whether the given property was satisfied or violated and provided a justification consistent with the algorithm specification.
+
+During the first iterations, the prompts and inputs were progressively refined because several models did not easily identify the specific properties requested for verification and instead evaluated unrelated dimensions present in the algorithm specification, such as liveness, message complexity, message size, or general implementation efficiency. To reduce this ambiguity, the algorithm descriptions were diversified and reformulated, the prompts were made more explicit by restricting the expected output to one line per property indicating only whether it was satisfied or not (with a short reason permitted only for non-satisfied properties), and a separate properties folder was created containing, for each algorithm, solely the comma-separated list of properties to verify, making the verification target unambiguous.
+
+In addition to the normal iterative refinements due to the observed results, the experiments included repeated executions of the same prompt--algorithm combinations, in order to assess whether model responses were deterministic or probabilistic. The selected tests were executed in a loop of four runs using three SLMs: Qwen2.5-Coder-7B, DeepSeek-Coder-6.7B, and Yi-Coder-9B-Chat, chosen for their accessibility through local API requests and for being free of costs. Qwen2.5-Coder-7B proved to be fully deterministic, producing identical classifications across all four runs for every prompt combination, which established it as a reliable representative in single-run evaluations. DeepSeek-Coder-6.7B, in contrast, was highly probabilistic: out of 16 test cases only 43.8\% produced consistent output across runs, with the inconsistent results varying between wrong verdicts, incorrect output formats, and connection errors, demonstrating that a single execution cannot reliably represent this model's capability. Yi-Coder-9B-Chat was the most unstable, achieving consistency in only 25\% of cases, with the remaining cases producing different classifications across executions. These findings confirmed that consistency is an essential factor when interpreting model performance and that single-run evaluations are only representative for deterministic models such as Qwen2.5-Coder-7B.
+
+Models and prompt configurations that consistently underperformed were progressively removed from the evaluation. Phi-2 was eliminated after five iterations because it achieved only a 2.6\% cumulative success rate while consuming disproportionate execution time, and the few-shot prompt configuration was removed because its success rate remained below 50\% across all tested models. DeepSeek-Coder-6.7B and Yi-Coder-9B-Chat were removed after version 13, having stagnated at cumulative success rates of 49.0\% and 55.2\% respectively. GPT-4o achieved 100\% accuracy in the cases where it returned a response, but was removed because cost and rate-limit constraints prevented systematic testing. Table~\ref{tab:model-summary} summarizes these elimination decisions alongside the final cumulative success rates for each model, where errors, timeouts, and rate-limit failures are excluded from the calculation since they represent failures to obtain a usable response rather than incorrect verification results.
+
+This progressive filtering left Qwen2.5-Coder-7B as the sole model maintained throughout all versions of the initial phase, reaching a final cumulative success rate of 94.5\% across 346 valid tests. Table~\ref{tab:model-success-rate} provides the detailed per-version and cumulative success rates, showing how each model's performance evolved across iterations.
+
+To evaluate whether models were reasoning about the protocol logic itself or merely relying on superficial cues such as the algorithm name or the declared fault model, robustness tests were conducted using three modified versions of the Byzantine reliable broadcast algorithm, where the pseudocode remained identical to the correct original in all three cases but different aspects of the surrounding specification were altered. In the first variant (-n), the algorithm name was changed to ``Best Effort Broadcast'' while the Byzantine reliable broadcast protocol remained unchanged; in the second variant (-o), the fault model label was changed from Byzantine to omission faults without altering the protocol logic; and in the third variant (-p), the set of properties to verify was modified by replacing RB-Integrity with RB-Termination. Since the pseudocode is identical across all variants and implements a correct Byzantine reliable broadcast, the properties RB-Validity, RB-Agreement, and RB-Integrity are genuinely satisfied regardless of the declared name or fault model, meaning that the correct answer for variants -n and -o is to mark all properties as satisfied. Only the -p variant constitutes a genuine negative test, because RB-Termination is not guaranteed by this algorithm in an asynchronous Byzantine model: if the broadcaster is Byzantine and never sends the initial message, no correct process can ever reach the delivery threshold.
+
+Qwen2.5-Coder-7B achieved 97\% accuracy on the -n variant (29/30 valid tests) and 100\% on the -o variant (28/28), confirming that the model correctly evaluates the protocol logic without being misled by superficial textual inconsistencies. On the -p variant, accuracy dropped to 82\% (23/28), with all five failures corresponding to cases where RB-Termination was incorrectly marked as satisfied, indicating strong capability in verifying safety properties but measurable difficulty in reasoning about liveness properties when the algorithm description does not explicitly state the conditions under which termination may fail.
+
+Given the limitations of the small local models and the need to determine whether higher-capacity models would exhibit superior verification capabilities, the evaluation was expanded with the introduction of larger-scale models accessed through API services: LLaMA-3.3-70B (via Groq), Gemini-2.5-Flash-Lite, DeepSeek-Chat~(V3), and others. These models were evaluated both on the original correct algorithms and on the same modified variants. Among the newly introduced models, Gemini-2.5-Flash-Lite achieved a perfect 100\% success rate across all 24 valid tests on the modified variants. DeepSeek-Chat~(V3) achieved 91.7\% overall (22/24), with its only failures occurring on the -p variant at 75\% accuracy. LLaMA-3.3-70B-Groq obtained 87.5\% overall (28/32), with perfect scores on the -n and -o variants but only 50\% on the -p variant, demonstrating that even a 70B-parameter model can fail to distinguish safety from liveness properties. When evaluated on the original correct algorithms, both DeepSeek-Chat and LLaMA-3.3-70B-Groq demonstrated near-perfect positive verification capability at 98.8\% and 100\% respectively across 80 tests each, revealing a clear asymmetry: high accuracy when confirming correctness versus significantly reduced accuracy when detecting that a liveness property is not guaranteed.
+
+This asymmetry highlighted a fundamental limitation of the evaluation at that stage: the modified variants did not introduce genuine logical errors in the protocol pseudocode, and the evaluation had not yet measured whether models can detect actual violations of correctness properties arising from flawed protocol logic. This motivated the design of the pseudocode-level error experiments described in the following section.
+
+%% ═══════════════════════════════════════════════════════════════════════════════
+\section{Verification of Incorrect Algorithms}
+
+To definitively test whether language models can detect violations in protocol logic, three variants of the Byzantine reliable broadcast algorithm were created with genuine errors introduced directly into the pseudocode. In the first variant (-v), the threshold for triggering support messages was raised from 1 to $f+1$ received \texttt{type0} messages, which prevents any correct process from initiating the support chain when a single correct broadcaster sends the initial message, thereby violating RB-Validity. In the second variant (-i), the delivery threshold was reduced from $f+1$ to 1 \texttt{type1} message, which allows a single Byzantine process to forge a support message and force delivery of a message that was never broadcast, thereby violating RB-Integrity. In the third variant (-a), the forwarding rule was removed entirely from the \texttt{type1} message handler, meaning that a process that delivers does not propagate the support to other correct processes, thereby violating RB-Agreement.
+
+These variants were initially tested with the medium-scale models (DeepSeek-Chat, LLaMA-3.3-70B-Groq, Gemini-2.5-Flash-Lite, and Qwen2.5-Coder-7B) across multiple versions and prompt configurations, totalling over 100 valid test cases. The results were unequivocal: the medium-scale models achieved a 0\% detection rate across all three broken variants, marking all properties as satisfied in every response. This contrasted with their near-perfect performance on correct algorithms (above 95\%), confirming that these models rely on the textual structure and narrative coherence of the algorithm description rather than performing independent logical reasoning about the protocol mechanics. When the correctness argument skeleton provided in the template states that a property holds and provides a plausible-sounding justification, the models reproduce that conclusion regardless of whether the pseudocode actually supports it.
+
+The evaluation was then extended to frontier reasoning models (GPT-5.5 and Claude Opus~4) accessed through the iaedu platform. Due to platform rate limits, each complete test run required approximately 24 hours, limiting the number of repetitions. Nevertheless, the available results showed a fundamentally different behaviour: GPT-5.5 correctly detected the violated property in 11 out of 11 valid responses (100\%), and Claude Opus~4 achieved 6 out of 6 (100\%). Furthermore, Claude Opus~4 produced particularly precise answers on the -a variant, identifying only RB-Agreement as non-satisfied while correctly marking Validity and Integrity as satisfied, demonstrating genuine reasoning about the removed forwarding rule rather than generic conservatism.
+
+However, when these same frontier models were evaluated on the correct algorithms across multiple repeated runs (over 240 valid responses per model), their performance was substantially lower than the medium-scale models. GPT-5.5 achieved 61.5\% accuracy (152/247), and Claude Opus~4 achieved only 26.8\% (64/239), both producing a high rate of false negatives by marking properties as violated in algorithms where all properties are genuinely satisfied.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\caption{Asymmetry in verification capabilities across model classes}
+\label{tab:asymmetry}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Model class} & \textbf{Correct algorithms} & \textbf{Broken algorithms} \\
+\hline
+Small/medium (Qwen-7B, LLaMA-70B, DeepSeek-Chat) & $\sim$95\% & 0\% \\
+\hline
+Frontier reasoning (GPT-5.5, Claude Opus 4) & $\sim$50--62\% & 100\% \\
+\hline
+\end{tabular}
+\end{table}
+
+Analysis of the false negatives revealed a consistent pattern: GPT-5.5 behaves in a binary manner per algorithm, either achieving 100\% accuracy or 0\% accuracy, with no intermediate results across repeated runs. Algorithms where it always succeeds include Best-Effort Broadcast, Fault-Tolerant RB (no-failure), and RB for Crash Failures; algorithms where it always fails include Byzantine RB, Echo Broadcast, and Reliable Broadcast. The justifications provided for the false negatives are thematically consistent: the model identifies a legitimate attack vector (e.g., ``Byzantine process can trigger delivery of an unbroadcast message'') but fails to complete the reasoning by verifying that the algorithm's threshold or quorum mechanism is sufficient to prevent that attack. For instance, in the Byzantine RB algorithm with a delivery threshold of $(n+f)/2$, GPT-5.5 consistently reports that RB-Integrity is violated because a Byzantine process can forge messages, without accounting for the fact that the threshold prevents a single Byzantine from accumulating enough support to trigger delivery.
+
+This represents a form of incomplete verification: the model performs threat analysis (identifying how an adversary could attempt to violate a property) but does not perform defence verification (confirming that the protocol's mechanisms prevent the identified threat from succeeding).
+
+%% ═══════════════════════════════════════════════════════════════════════════════
+\section{Per-Property and Confidence Analysis}
+
+Beyond aggregate accuracy, a per-property analysis reveals which correctness properties are consistently easier or harder for the models to verify, and whether the models' self-reported confidence correlates with their accuracy. For the confidence analysis, a modified prompt was used that requested each model to report a confidence score from 1 to 10 alongside each verdict.
+
+\subsection{Property Difficulty Ranking}
+
+Across all models and prompt configurations on correct algorithms, the properties exhibit a clear difficulty gradient:
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\caption{Per-property accuracy on correct algorithms (frontier models, all runs)}
+\label{tab:property-ranking}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Property} & \textbf{Accuracy} & \textbf{Assessment} \\
+\hline
+RB-Validity & 94.7\% & Excellent \\
+Validity & 86.0\% & Good \\
+RB-Agreement & 81.3\% & Moderate \\
+RB-Integrity & 80.7\% & Moderate \\
+No creation & 78.9\% & Moderate \\
+No duplication & 60.5\% & Weak \\
+Agreement & 56.1\% & Weak \\
+\hline
+\end{tabular}
+\end{table}
+
+Properties using standard RB terminology (prefixed with ``RB-'') are consistently easier to verify than properties with non-standard names such as ``No creation'' or ``No duplication'', suggesting that model performance benefits from terminology that appears frequently in distributed systems literature and training data. Additionally, the two models exhibit complementary strengths: GPT-5.5 achieves 100\% on RB-Validity and RB-Agreement but only 67\% on RB-Integrity, while Claude Opus~4 achieves 99\% on RB-Integrity but only 56\% on RB-Agreement. A hypothetical combination of both models' strongest verdicts would yield approximately 99\% accuracy across all properties.
+
+\subsection{Confidence as a Filtering Mechanism}
+
+The confidence analysis revealed a significant difference between the two frontier models in terms of calibration, that is, the degree to which confidence correlates with correctness. For Claude Opus~4, false negatives are associated with significantly lower self-reported confidence (averaging 5.5--6.0 out of 10) compared to correct verdicts (averaging 9.0--9.6). For GPT-5.5, in contrast, false negatives carry confidence scores nearly as high as correct verdicts (9.4--9.9), indicating poor calibration.
+
+This difference enables a simple post-processing rule for Claude Opus~4: discarding verdicts of ``non satisfied'' when the reported confidence is below 8 out of 10 (treating them as inconclusive rather than as violations). Applying this filter improves Claude's overall accuracy from 76.7\% to 94.9\%, an improvement of 18.3 percentage points. For individual properties, the gains are substantial: Agreement rises from 58\% to 100\%, Validity from 72\% to 100\%, and RB-Agreement from 71\% to 94\%.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\caption{Effect of confidence filtering (confidence $\geq$ 8) on Claude Opus 4}
+\label{tab:confidence-filter}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Property} & \textbf{Before filter} & \textbf{After filter} & \textbf{Improvement} \\
+\hline
+Agreement & 58\% & 100\% & +42pp \\
+Validity & 72\% & 100\% & +28pp \\
+RB-Agreement & 71\% & 94\% & +23pp \\
+No duplication & 56\% & 72\% & +17pp \\
+No creation & 94\% & 100\% & +6pp \\
+RB-Validity & 97\% & 100\% & +3pp \\
+RB-Integrity & 100\% & 100\% & --- \\
+\hline
+\textbf{Overall} & \textbf{76.7\%} & \textbf{94.9\%} & \textbf{+18.3pp} \\
+\hline
+\end{tabular}
+\end{table}
+
+For GPT-5.5, the same filter produces negligible improvement (+0.5 percentage points), confirming that this model's errors are not accompanied by reduced confidence. This finding has practical implications: when using Claude Opus~4 for property verification, the confidence score provides a reliable signal for identifying uncertain verdicts that should be treated with caution or subjected to human review, effectively reducing the false negative rate without sacrificing detection capability on genuinely violated properties.
+
+\subsection{Discussion}
+
+The evaluation reveals that no single model currently achieves both high true-positive and low false-negative rates simultaneously for distributed algorithm verification. Small and medium-scale models function as effective confirmation tools, reliably validating that correct algorithms satisfy their properties (above 94\%), but they cannot detect errors in flawed protocols. Frontier reasoning models can detect genuine protocol errors with high reliability, but their tendency toward over-conservatism produces false negatives that limit their direct applicability as standalone verification tools.
+
+The per-property analysis demonstrates that verification difficulty is not uniform: properties with standard terminology and those that can be verified by inspecting local state (such as RB-Integrity, which depends on the delivery threshold and the delivered set) are easier than properties requiring reasoning about global message propagation patterns (such as Agreement). The confidence filtering mechanism offers a partial solution for the most well-calibrated model (Claude Opus~4), raising its effective accuracy to levels comparable with the small models while preserving its unique ability to detect actual violations.
+
+These findings suggest that the most effective approach to LLM-assisted verification would combine multiple models in a pipeline: a medium-scale model for initial confirmation, a frontier model for adversarial analysis with confidence filtering, and human review for cases where the frontier model reports a violation with high confidence. This would leverage the complementary strengths of each model class while mitigating their respective weaknesses.
+
+%% ═══════════════════════════════════════════════════════════════════════════════
+\section{Final Evaluation with the Unified Algorithm Set}
+
+Following the observations of the previous phases and a review of the algorithms and prompts by the supervisors, the evaluation was redesigned with three goals: to broaden and clean the set of algorithms, to remove superficial cues from the descriptions, and to make the prompts shorter and less verbose. The algorithms of Terminating Reliable Broadcast were set aside because they are closer to Consensus and considerably harder, and the two earlier Byzantine reliable broadcast algorithms were also removed because a small flaw had been identified in them. In their place, two Byzantine reliable broadcast algorithms were added, one due to Bracha and one due to Imbs and Raynal, together with a Majority-Ack Uniform Reliable Broadcast that tolerates crash failures. The prompts were rewritten into a single shorter template, and, most importantly, the pseudocode of every algorithm was unified into a common structure so that the descriptions became as similar as possible to one another.
+
+The unification reduced the description from the previous template of up to thirteen sections to a neutral template of seven sections, removing the algorithm name and the bibliographic reference from the top, folding the interface, message types, and delivery rule into the pseudocode, and replacing the algorithm-specific variables and the revealing message labels by a state and a message vocabulary that are common to all algorithms. Concretely, the descriptive booleans such as \texttt{sent\_echo} and \texttt{sent\_ready} were replaced by the shared sets \texttt{msg\_sent} and \texttt{msg\_received} together with \texttt{delivered\_value}, and the labels \texttt{SEND}, \texttt{ECHO}, and \texttt{READY} were replaced by the generic \texttt{type0}, \texttt{type1}, and \texttt{type2}. As a result, the algorithms no longer announce what they do through their name or through the meaning of their messages, and they must be evaluated only from the logic of the pseudocode.
+
+The final round attempted to test five models, namely GPT-5.5 and Claude Opus~4 through the iaedu platform, LLaMA-3.3-70B through Groq, DeepSeek-Chat, and Qwen2.5-Coder-7B run locally. Two of these produced no usable data. DeepSeek failed every request because of an exhausted API balance, and Claude Opus~4 produced no valid response because its agent had disappeared from the iaedu platform, returning an agent-not-found error for every request under two different sets of credentials. These two models were therefore excluded from the analysis, leaving 727 valid tests distributed across the remaining three models. When reading the results it is important to recall the meaning of the two metrics used throughout this section: a correct algorithm is counted as verified only when the model marks all of its properties as satisfied, so that a single property wrongly marked as violated turns the whole algorithm into a failure, while a broken variant is counted as detected when the model marks at least one property as violated. The two metrics are therefore not symmetric, which is why they are reported side by side. Table~\ref{tab:final-model} summarizes the per-model results.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\caption{Per-model results on the unified algorithm set}
+\label{tab:final-model}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Model} & \textbf{Valid tests} & \textbf{Correct (accuracy)} & \textbf{Broken (detection)} \\
+\hline
+GPT-5.5 & 167 & 38\% (41/107) & 100\% (60/60) \\
+LLaMA-3.3-70B & 280 & 91\% (164/180) & 80\% (80/100) \\
+Qwen-2.5-Coder-7B & 280 & 77\% (139/180) & 90\% (90/100) \\
+\hline
+\end{tabular}
+\end{table}
+
+Two observations stand out. The first is that Qwen2.5-Coder-7B, a small local model, detected 90\% of the broken variants while keeping 77\% accuracy on the correct algorithms and without a single API failure, which is markedly different from the earlier phases in which the small models detected essentially none of the pseudocode errors. This strongly suggests that the restructured prompts and the unified pseudocode helped the smaller models considerably, which is a positive result for the practicality of local verification. The second observation is that GPT-5.5 confirmed the pattern of the higher-potential models, detecting every injected error but remaining excessively suspicious of correct algorithms and finishing with only 38\% accuracy on them.
+
+To understand where the results come from at the level of each algorithm, Table~\ref{tab:final-correct} lists the accuracy on the correct algorithms together with the source of each one, and Table~\ref{tab:final-broken} lists the detection rate on the broken variants together with the specific error that was introduced into each pseudocode.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\footnotesize
+\caption{Correct algorithms: accuracy per model and source}
+\label{tab:final-correct}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Algorithm} & \textbf{Source} & \textbf{GPT-5.5} & \textbf{LLaMA-70B} & \textbf{Qwen-7B} \\
+\hline
+best-effort-broadcast & Cachin et al. (2011) & 0\% & 75\% & 65\% \\
+reliable-broadcast & Cachin et al. (2011) & 100\% & 70\% & 50\% \\
+reliable-broadcast-gen-omission & Hadzilacos \& Toueg (1994) & 92\% & 100\% & 65\% \\
+echo-broadcast & Bracha (1987) & 0\% & 100\% & 70\% \\
+bracha-byzantine-rb & Bracha (1987) & 0\% & 100\% & 85\% \\
+imbs-byzantine-rb & Imbs \& Raynal & 0\% & 100\% & 70\% \\
+rb-crash-failure & Vaz et al. (IEEE Access) & 0\% & 100\% & 90\% \\
+fault-tolerant-rb-no-failure & Vaz et al. (IEEE Access) & 92\% & 100\% & 100\% \\
+uniform-reliable-broadcast & Cachin et al. (2011), §3.4.3 & 64\% & 75\% & 100\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\footnotesize
+\caption{Broken variants: detection per model and injected error}
+\label{tab:final-broken}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Variant} & \textbf{Injected error} & \textbf{GPT} & \textbf{LLaMA} & \textbf{Qwen} \\
+\hline
+best-effort\_B & Sends to all except self & 100\% & 75\% & 95\% \\
+reliable-broadcast\_B & Relay step removed & 100\% & 100\% & 100\% \\
+echo-broadcast\_B & $f+1$ READY amplification removed & 100\% & 100\% & 90\% \\
+imbs-byzantine-rb\_B & Threshold $(n+f)/2$ instead of $(n+f+1)/2$ & 100\% & 25\% & 80\% \\
+uniform-reliable-broadcast\_B & Delivers on one ACK instead of $>n/2$ & 100\% & 100\% & 85\% \\
+\hline
+\end{tabular}
+\end{table}
+
+The per-algorithm view makes the binary behaviour of GPT-5.5 explicit. It reaches full accuracy on reliable-broadcast, on the fault-tolerant no-failure algorithm, and on the general-omission variant, but it collapses to zero on best-effort-broadcast, echo-broadcast, the two Byzantine algorithms, and the crash-failure algorithm, which are precisely the algorithms that rely on relaying and on quorum thresholds. The detection results, in contrast, are strong for all three models, with the single clear weakness being LLaMA-70B on the Imbs and Raynal variant, where it fails to notice that the quorum threshold was weakened.
+
+Because the accuracy of GPT-5.5 on the correct algorithms is so low, the justifications it produced were examined in detail, and they fall into three distinct causes. The first cause is a misreading of the message flow that appears on the simplest algorithm, best-effort-broadcast, where the model repeatedly claims that the delivery waits for a \texttt{type1} message that is never sent and therefore concludes that Validity is violated, when in fact the algorithm delivers on \texttt{type0}. This is a genuine reading error and it suggests that the unification of the message names, while beneficial for removing cues, may have removed the semantic hints such as \texttt{SEND} and \texttt{ECHO} that previously helped the model follow the flow. The second cause, which dominates the Byzantine algorithms, is that the model identifies a plausible attack vector, such as a Byzantine process injecting a value that was never broadcast, but does not complete the reasoning by verifying that the echo and ready quorums prevent the attack from succeeding. The third cause, visible on the crash-failure algorithm, is that the model reasons outside the assumed model, for instance by considering a regime in which the number of correct processes is too small to reach the threshold, a regime that the resilience condition of the algorithm explicitly excludes. The common thread of the second and third causes is an incomplete verification in which the model performs the threat analysis but omits the step of confirming that the mechanism of the protocol defends against the threat.
+
+A per-property view of the false positives on the correct algorithms, shown in Table~\ref{tab:final-property}, confirms this reading. The false positives of GPT-5.5 concentrate on the properties that require reasoning over all executions and over the adversary, namely Validity, Integrity, and Agreement, while on a local and syntactic property such as No duplication it never errs. LLaMA-70B shows the opposite behaviour, almost never marking a property as violated, which explains both its high accuracy on correct algorithms and its lower detection on the broken ones, and Qwen sits in between with false positives that are spread out but uniformly low.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\caption{False-positive rate per property on correct algorithms (lower is better)}
+\label{tab:final-property}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Property} & \textbf{GPT-5.5} & \textbf{LLaMA-70B} & \textbf{Qwen-7B} \\
+\hline
+Validity & 43\% & 0\% & 5\% \\
+Integrity & 50\% & 0\% & 5\% \\
+Agreement & 40\% & 4\% & 16\% \\
+Uniform Agreement & 36\% & 25\% & 0\% \\
+No creation & 22\% & 5\% & 5\% \\
+No duplication & 0\% & 0\% & 10\% \\
+\hline
+\end{tabular}
+\end{table}
+
+Finally, grouping the algorithms by the fault model that they assume, as shown in Table~\ref{tab:final-fault}, ties the analysis together. The accuracy of GPT-5.5 on correct algorithms falls to zero under the Byzantine fault model, which is exactly where it imagines attacks and rejects the algorithm, but rises to above ninety per cent under the simpler general-omission and no-failure models. On the detection side, GPT-5.5 remains at full detection under both fault models, whereas LLaMA-70B and Qwen are solid under crash faults but weaker under the Byzantine model, most visibly LLaMA-70B, which is pulled down by the Imbs and Raynal variant.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\caption{Results grouped by fault model (accuracy on correct, detection on broken)}
+\label{tab:final-fault}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Fault model} & \textbf{GPT-5.5} & \textbf{LLaMA-70B} & \textbf{Qwen-7B} \\
+\hline
+Crash (correct) & 40\% & 80\% & 76\% \\
+General omission (correct) & 92\% & 100\% & 65\% \\
+Byzantine (correct) & 0\% & 100\% & 75\% \\
+No failures (correct) & 92\% & 100\% & 100\% \\
+\hline
+Crash (broken, detection) & 100\% & 92\% & 93\% \\
+Byzantine (broken, detection) & 100\% & 62\% & 85\% \\
+\hline
+\end{tabular}
+\end{table}
+
+Taken together, the final round preserves the central asymmetry that this evaluation has surfaced throughout, in which the smaller and mid-sized models are strong at confirming correct algorithms while the higher-potential model is strong at detecting genuine errors, but it also adds a hopeful result, because the unified descriptions and the shorter prompts allowed a small local model to reach a detection rate of ninety per cent that had not been observed in any earlier phase.

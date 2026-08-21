@@ -1,0 +1,106 @@
+1) IDENTIFICATION
+
+    Problem type: Reliable Broadcast
+
+2) SYSTEM MODEL
+
+    Total Processes: N
+
+    Max faulty: F
+
+    Fault model: Byzantine failures - processes may behave arbitrarily, sending malicious or inconsistent messages
+
+    Resilience condition: N > 3F
+
+    Channels / communication assumptions: Perfect Point-to-Point Links (No creation, no alteration, no duplication, no loss)
+
+    Timing assumptions: Asynchronous - there are no timing assumptions on the maximum message delay, clock drift, or the time needed to execute a step
+
+3) CORRECTNESS PROPERTIES
+
+    Validity: If a correct process broadcasts m, then all correct processes eventually deliver m.
+
+    Agreement: If a correct process delivers m, then every correct process eventually delivers m.
+
+    No duplication: No message is delivered more than once.
+
+    No creation: If a process delivers a message m with sender s, then m was previously broadcast by process s.
+
+4) ROLES
+
+    Broadcaster: process that invokes Broadcast.
+
+    Receivers: process that receives a message.
+
+5) LOCAL STATE (per process)
+
+Constants:
+
+    n: total number of processes.
+    f: maximum number of Byzantine processes.
+    ID: unique identifier of the process.
+
+Variables:
+
+    delivered_value: message delivered;
+    msg_sent: set of messages sent;
+    msg_received: set of messages received;
+    echo_count[m]: number of ECHO messages received for m from distinct senders;
+    ready_count[m]: number of READY messages received for m from distinct senders.
+
+6) INITIALIZATION
+
+    delivered_value ← ∅
+    msg_sent ← ∅
+    msg_received ← ∅
+    echo_count[m] ← 0 for all m
+    ready_count[m] ← 0 for all m
+
+7) PROTOCOL PSEUDOCODE
+
+A) Assumptions:
+
+    - Assume a single broadcast execution at a time. A new broadcast can only be initiated after the previous one has been completed (i.e., delivered by all correct processes).
+    - Message counters count only messages from distinct senders.
+
+B) On external invocation:
+
+    upon Broadcast(m):
+        send <type0, m> to all processes
+        msg_sent ← msg_sent ∪ {<type0, m>}
+    stop
+
+C) On message receive:
+
+    upon receive(<type0, m>) from pj:
+        msg_received ← msg_received ∪ {<type0, m>}
+
+        if not already sent <type1, m>:
+            send <type1, m> to all processes
+            msg_sent ← msg_sent ∪ {<type1, m>}
+
+    upon receive(<type1, m>) from pj:
+        msg_received ← msg_received ∪ {<type1, m>}
+        if pj not already counted for ECHO(m):
+            echo_count[m] ← echo_count[m] + 1
+
+        if echo_count[m] >= (n+f)/2
+        and not already sent <type2, m>:
+            send <type2, m> to all processes
+            msg_sent ← msg_sent ∪ {<type2, m>}
+
+    upon receive(<type2, m>) from pj:
+        msg_received ← msg_received ∪ {<type2, m>}
+        if pj not already counted for READY(m):
+            ready_count[m] ← ready_count[m] + 1
+
+        if ready_count[m] >= f + 1
+        and not already sent <type2, m>:
+            send <type2, m> to all processes
+            msg_sent ← msg_sent ∪ {<type2, m>}
+
+        if ready_count[m] >= 2*f + 1
+        and delivered_value == ∅:
+            delivered_value ← {m}
+            deliver(m)
+    stop

@@ -1,0 +1,90 @@
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "start", "content": "Processing"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": ""}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "RB"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "-"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "Validity"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " -"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " ["}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "s"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "atisfied"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "]\n"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "RB"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "-"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "Agreement"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " -"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " ["}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "s"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "atisfied"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "]\n"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "RB"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "-"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "Integrity"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " -"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " ["}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "non"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " satisfied"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "]:"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " Byzantine"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " sender"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " can"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " forge"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " type"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "0"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " for"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " an"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " un"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "broadcast"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " message"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": ","}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " causing"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " correct"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": " delivery"}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": "."}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "token", "content": ""}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [non satisfied]: Byzantine sender can forge type0 for an unbroadcast message, causing correct delivery.", "tool_calls": [], "tool_call_id": null, "run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "response_metadata": {"model_provider": "openai", "id": "resp_0860fe1603786b70006a4cb9d2a6ec8196a28ce165266ebca7", "created_at": 1783413202.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "type": "done", "content": "948afc6e-8cc9-4d49-86b1-e726b6e848f9", "messageId": "cmrae6i9j61gnke012gd0ahdv"}
+

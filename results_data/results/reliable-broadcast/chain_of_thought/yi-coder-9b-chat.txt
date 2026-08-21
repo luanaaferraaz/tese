@@ -1,0 +1,10 @@
+1. Validity - [satisfied]
+The algorithm ensures that a correct process broadcasts m, it eventually delivers m as well.
+
+2. No duplication - [satisfied]
+As per the pseudocode and rules defined in the algorithm, every correct process ensures agreement on no duplication of messages.
+
+3. No creation - [non satisfied]: The algorithm assumes that a correct process delivers all broadcasted messages but this is not guaranteed due to unreliable communication channels.
+
+4. Agreement - [satisfied]
+All correct processes eventually deliver m once they receive it, as per the pseudocode and delivery rule defined in the algorithm.

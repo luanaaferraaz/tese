@@ -1,0 +1,126 @@
+Algorithm: https://people.cs.umass.edu/~arun/cs677/reading/HT.pdf
+ALGORITHM TEMPLATE: Terminating Reliable Broadcast
+1) IDENTIFICATION
+
+    Algorithm name: Terminating Reliable Broadcast (TRB)
+
+    Problem type: Terminating Reliable Broadcast
+
+    Variant tags:
+
+        Fault model: [C] Crash
+
+        Timing model: [S] Synchronous
+
+2) SYSTEM MODEL
+
+    Processes: n
+
+    Max faulty: f
+
+    Resilience condition: n>f
+
+    Channels: Reliable.
+
+    Timing assumptions: Synchronous.
+
+    Additional assumptions: Designated sender s∈Π.
+
+3) CORRECTNESS PROPERTIES (Cited from Section 3.4)
+
+    Termination: Every correct process eventually delivers some message. [satisfied]
+    
+    Validity: If s is correct and broadcasts m, then all correct processes eventually deliver m. [satisfied]
+
+    Agreement: If a correct process delivers m, then all correct processes eventually deliver m. [satisfied]
+
+    Integrity: Every correct process delivers at most one message. If it delivers m=SF, then m was broadcast by s. [satisfied]
+
+4) INTERFACE (API)
+
+    External operations: TRB-broadcast(s, m).
+
+    Output events: TRB-deliver(m) where m∈V∪{SF}.
+
+5) ROLES
+
+    Sender (s): Initiates the broadcast.
+
+    Receivers: All processes (including s) that must reach a decision.
+
+6) LOCAL STATE (per process pi​)
+
+Constants:
+
+    n,f
+
+    s: ID of the sender.
+
+Variables:
+
+    received_msgs: Set of messages encountered during the rounds.
+
+    delivered: Boolean flag.
+
+7) MESSAGE TYPES
+
+    (s, m, round): A tuple containing the sender ID, the value, and the round signature/metadata.
+
+8) INITIALIZATION
+
+    received_msgs ←∅
+
+    delivered ← false
+
+9) PROTOCOL PSEUDOCODE 
+
+A) Round 1 (Sender s only):
+
+    send (s, m, 1) to all processes
+
+B) For each Round r (from 1 to f+1):
+
+    If received (s, m, r) for the first time:
+
+        received_msgs ←received_msgs∪{m}
+
+        If r<f+1:
+
+            send (s, m, r+1) to all processes
+
+C) Decision Phase (End of Round f+1):
+
+    If received_msgs is not empty:
+
+        Let m be the value in received_msgs
+
+        TRB-deliver(m)
+
+    Else:
+
+        TRB-deliver(SF)
+
+10) DECISION / DELIVERY RULE
+
+    Delivery occurs strictly at the end of round f+1. The content of the received_msgs set determines if the result is a value or the SF token.
+
+11) QUORUM 
+
+    This protocol relies on Round-based Intersection: in any execution with f failures, there is at least one round in f+1 rounds where no new processes fail. This ensures that if a message was "partially" sent by a faulty sender, it will be relayed to everyone before the final round.
+
+12) INVARIANTS
+
+    I1: If a correct process delivers m=/SF, then every correct process has m in its received_msgs set by the end of round f+1. [satisfied]
+
+    I2: If the sender s is correct, SF is never delivered by any correct process. [satisfied]
+
+13) CORRECTNESS ARGUMENT SKELETON 
+    Safety: If process p delivers m, it must have received it in some round r≤f+1. If r≤f, p relayed it to all, so they have it. If r=f+1, it implies a chain of f distinct processes relayed it to p, meaning at least one correct process must have been in that chain to relay it to everyone else earlier.
+
+    Liveness: The fixed f+1 round boundary guarantees that all processes reach the decision phase and deliver a value.
+
+Properties:
+Termination - [satisfied]
+Validity - [satisfied]
+Agreement - [satisfied]
+Integrity - [satisfied]

@@ -1,0 +1,14 @@
+{"run_id": "4bbc04dd-bfdd-4470-9559-4710d4591a9e", "type": "start", "content": "Processing"}
+
+{"run_id": "4bbc04dd-bfdd-4470-9559-4710d4591a9e", "type": "token", "content": "Validity -"}
+
+{"run_id": "4bbc04dd-bfdd-4470-9559-4710d4591a9e", "type": "token", "content": " [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Del"}
+
+{"run_id": "4bbc04dd-bfdd-4470-9559-4710d4591a9e", "type": "token", "content": "ivery rule lacks a `delivered` guard; multiple READY(m) beyond 2f+1 can"}
+
+{"run_id": "4bbc04dd-bfdd-4470-9559-4710d4591a9e", "type": "token", "content": " retrigger deliver(m). (confidence: 9/10)\nNo creation - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "4bbc04dd-bfdd-4470-9559-4710d4591a9e", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Delivery rule lacks a `delivered` guard; multiple READY(m) beyond 2f+1 can retrigger deliver(m). (confidence: 9/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "4bbc04dd-bfdd-4470-9559-4710d4591a9e", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "4bbc04dd-bfdd-4470-9559-4710d4591a9e", "type": "done", "content": "4bbc04dd-bfdd-4470-9559-4710d4591a9e", "messageId": "cmrgf6qg92ci8ke014hmn129v"}
+

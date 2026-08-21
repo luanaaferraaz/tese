@@ -1,0 +1,9 @@
+The algorithm satisfies all the correctness properties.
+
+1) RB-Validity – If a correct broadcaster broadcasts m, then all correct processes eventually deliver m. The algorithm sends support messages to neighbours when it receives an initial message, which are forwarded until f + 1 distinct ones are gathered and delivered by a correct process. This guarantees that if the broadcaster is correct, all other correct processes will receive m.
+
+2) RB-Agreement – If one correct process delivers m, then all correct processes eventually deliver m. The algorithm allows at least one correct process to decide on m based on f + 1 distinct support messages. Any other correct process that hears these messages will also decide and eventually deliver the same message.
+
+3) RB-Termination – All correct processes always deliver. The algorithm ensures a decision by the end of the protocol, either when f + 1 <type1, m> are received or all messages have been delivered (in case of no initial broadcasts). Hence, all correct processes always deliver eventually.
+
+To satisfy these properties rigorously with formal methods and minimal verbosity, algorithm verification techniques such as model checking can be applied to ensure the correctness of the protocol.

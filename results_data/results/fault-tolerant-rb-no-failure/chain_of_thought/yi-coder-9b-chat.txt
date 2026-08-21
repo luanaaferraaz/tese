@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is satisfied because all correct processes eventually deliver a message that was broadcasted by a correct process. The reliable channels ensure that every correct process receives the message, and the algorithm ensures that the message is delivered once it's received.
+
+RB-Agreement - [satisfied]
+The RB-Agreement property holds true since if one correct process delivers a message m, all other correct processes eventually deliver this same message. This happens because every process receives the message from reliable channels and follows the algorithm's protocol to deliver messages once they are received.
+
+RB-Integrity - [satisfied]
+The RB-Integrity property is satisfied as it ensures that each correct process delivers a message at most once, and only if this message was broadcasted by any of the correct processes. The algorithm uses a set "delivered" to keep track of all messages that have already been delivered, preventing duplicates. Messages are delivered only after they've been received in type0 format ensuring the originality constraint.

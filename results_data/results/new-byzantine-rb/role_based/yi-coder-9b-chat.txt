@@ -1,0 +1,5 @@
+Here are the output requirements:
+
+RB-Validity - Satisfied
+RB-Agreement - Satisfied
+RB-Integrity - Satisfied

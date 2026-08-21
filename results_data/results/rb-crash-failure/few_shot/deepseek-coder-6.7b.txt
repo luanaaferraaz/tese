@@ -1,0 +1,7 @@
+Based on the algorithm described, here are my verifications for RB-Validity, RB-Agreement and RB-Integrity:
+
+RB-Validity: The broadcaster sends <type0, m> to itself. It receives this message and forwards it to its neighbours via <type1, m>. All correct processes eventually receive the broadcasted message through these messages. 
+
+RB-Agreement: If one correct process delivers m, then all other correct processes eventually deliver m. This happens because a correct process always forwards the delivered message to its neighbours. Even if a correct process crashes midway through the broadcasting process, it should be able to send the remaining messages from memory and ensure agreement among correct processes when they receive these messages.
+
+RB-Integrity: If a correct process delivers m, then no other process delivers m again. This is ensured by the delivered set which stores all the messages that have been delivered at least once. Thus, every message in this delivered set has only been broadcasted once. Any duplication of delivery occurs if a process delivers m more than once.

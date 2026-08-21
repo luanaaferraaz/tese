@@ -1,0 +1,13 @@
+Based on the provided pseudocode, here are the results of validation for each property:
+
+1. RB-Validity: This is satisfied because the broadcaster sends a message with type <type0, m> to all processes through reliable channels. 
+
+2. RB-Agreement: This is also satisfied because if any process delivers message m, then it means that the message was sent by the broadcaster and hence received by all processes.
+
+3. RB-Integrity: This property is also satisfied as the delivered set prevents duplicate delivery of a message. The only possible reason for non-satisfaction could be if any process created a new message m, which would violate the assumption that messages are not lost, duplicated or created. 
+
+4. I1 - No Duplicate Delivery: This property is satisfied as each delivered message m is added to the set 'delivered' only once. If it were added multiple times, this would imply a duplicate delivery which contradicts with our assumption that messages are not delivered twice.
+
+5. I2 - Direct Origin: The reasoning behind non-satisfaction of this property also relies on our assumptions about message creation and duplication. If any process created a new message m instead of receiving one, then it would mean the deliveries were not from the broadcaster but rather from some other source which contradicts with our assumption that messages are received through reliable broadcast communication only.
+
+6. I3 - All Receive: This property is also satisfied as there are no faulty processes in this system and hence all correct processes receive a message broadcast by the broadcaster if it was sent out successfully. Non-satisfaction of this property could be due to some process sending a different message which would make deliveries from other processes contradict our assumption that only messages sent by the broadcaster are valid for delivery.

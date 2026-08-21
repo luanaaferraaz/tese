@@ -1,0 +1,6 @@
+{"run_id": "cb89101d-ef0b-4c89-b937-edeb53a6e3b2", "type": "start", "content": "Processing"}
+
+{"run_id": "cb89101d-ef0b-4c89-b937-edeb53a6e3b2", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "cb89101d-ef0b-4c89-b937-edeb53a6e3b2", "type": "done", "content": "cb89101d-ef0b-4c89-b937-edeb53a6e3b2", "messageId": "None", "token_pct_used": 102.2}
+

@@ -1,0 +1,170 @@
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "start", "content": "Processing"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": ""}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "Validity"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " -"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " ["}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "s"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "atisfied"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "]\n"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "Agreement"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " -"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " ["}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "non"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " satisfied"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "]:"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " E"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "CHO"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " threshold"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " permits"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " dis"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "joint"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " qu"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "or"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "ums"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " when"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " n"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": ">"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "3"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "f"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "+"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "1"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": ","}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " enabling"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " two"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " READY"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " certificates"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": ".\n"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "No"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " duplication"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " -"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " ["}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "non"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " satisfied"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "]:"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " Delivery"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " rule"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " lacks"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " delivered"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " check"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " and"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " assignment"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": ","}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " so"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " repeated"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " READY"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " arrivals"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " can"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " retr"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "igger"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " deliver"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": ".\n"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "No"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " creation"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " -"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " ["}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "non"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " satisfied"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "]:"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " Byzantine"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " sender"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " can"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " emit"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " SEND"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " without"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " prior"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " broadcast"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": ";"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " protocol"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " cannot"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " prove"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " external"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": " invocation"}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": "."}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "token", "content": ""}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nAgreement - [non satisfied]: ECHO threshold permits disjoint quorums when n>3f+1, enabling two READY certificates.\nNo duplication - [non satisfied]: Delivery rule lacks delivered check and assignment, so repeated READY arrivals can retrigger deliver.\nNo creation - [non satisfied]: Byzantine sender can emit SEND without prior broadcast; protocol cannot prove external invocation.", "tool_calls": [], "tool_call_id": null, "run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "response_metadata": {"model_provider": "openai", "id": "resp_0e5fd788f784223d006a4b7eb7f1cc8195984b37bdd0d98e89", "created_at": 1783332535.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "type": "done", "content": "baa9deca-10ef-4244-8c08-70af6a5b48ee", "messageId": "cmr9261ig5f89ke012h2d0a5f"}
+

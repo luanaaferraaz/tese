@@ -1,0 +1,14 @@
+{"run_id": "1f5209d9-d7b5-499e-919b-dc02c262656a", "type": "start", "content": "Processing"}
+
+{"run_id": "1f5209d9-d7b5-499e-919b-dc02c262656a", "type": "token", "content": "R"}
+
+{"run_id": "1f5209d9-d7b5-499e-919b-dc02c262656a", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type"}
+
+{"run_id": "1f5209d9-d7b5-499e-919b-dc02c262656a", "type": "token", "content": "0 to self only, no correct process delivers; if receiver delivers then crashes before"}
+
+{"run_id": "1f5209d9-d7b5-499e-919b-dc02c262656a", "type": "token", "content": " forwarding, agreement fails. (confidence: 8/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "1f5209d9-d7b5-499e-919b-dc02c262656a", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to self only, no correct process delivers; if receiver delivers then crashes before forwarding, agreement fails. (confidence: 8/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "1f5209d9-d7b5-499e-919b-dc02c262656a", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "1f5209d9-d7b5-499e-919b-dc02c262656a", "type": "done", "content": "1f5209d9-d7b5-499e-919b-dc02c262656a", "messageId": "cmrew3s3v0d1bke01u32nzace"}
+

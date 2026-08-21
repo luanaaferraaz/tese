@@ -1,0 +1,4 @@
+1) Validity – [satisfied]
+2) No duplication – [satisfied]
+3) No creation – [satisfied]
+4) Agreement - [satisfied]

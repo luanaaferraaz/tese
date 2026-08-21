@@ -1,0 +1,16 @@
+{"run_id": "cdba9c57-430c-4826-b055-715190873fc2", "type": "start", "content": "Processing"}
+
+{"run_id": "cdba9c57-430c-4826-b055-715190873fc2", "type": "token", "content": "Validity - ["}
+
+{"run_id": "cdba9c57-430c-4826-b055-715190873fc2", "type": "token", "content": "non satisfied]: Correct sender delivers immediately without f+1 distinct sources"}
+
+{"run_id": "cdba9c57-430c-4826-b055-715190873fc2", "type": "token", "content": "; but for other correct processes, receive-omission faulty rel"}
+
+{"run_id": "cdba9c57-430c-4826-b055-715190873fc2", "type": "token", "content": "ayers may prevent f+1 threshold. (confidence: 6/10)\nNo duplication -"}
+
+{"run_id": "cdba9c57-430c-4826-b055-715190873fc2", "type": "token", "content": " [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 7/10)"}
+
+{"run_id": "cdba9c57-430c-4826-b055-715190873fc2", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Correct sender delivers immediately without f+1 distinct sources; but for other correct processes, receive-omission faulty relayers may prevent f+1 threshold. (confidence: 6/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 7/10)", "tool_calls": [], "tool_call_id": null, "run_id": "cdba9c57-430c-4826-b055-715190873fc2", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "cdba9c57-430c-4826-b055-715190873fc2", "type": "done", "content": "cdba9c57-430c-4826-b055-715190873fc2", "messageId": "cmrkc6p344a0fke01tdrjcc7a"}
+

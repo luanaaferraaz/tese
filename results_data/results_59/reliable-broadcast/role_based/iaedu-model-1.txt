@@ -1,0 +1,6 @@
+{"run_id": "915248d5-f708-4508-bb6f-dac5658e068b", "type": "start", "content": "Processing"}
+
+{"run_id": "915248d5-f708-4508-bb6f-dac5658e068b", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "915248d5-f708-4508-bb6f-dac5658e068b", "type": "done", "content": "915248d5-f708-4508-bb6f-dac5658e068b", "messageId": "None", "token_pct_used": 99.2}
+

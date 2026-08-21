@@ -1,0 +1,4 @@
+Termination - [satisfied]
+Validity - [non satisfied]: sender can omit to send messages mid-broadcast
+Agreement - [satisfied]
+Integrity - [satisfied]

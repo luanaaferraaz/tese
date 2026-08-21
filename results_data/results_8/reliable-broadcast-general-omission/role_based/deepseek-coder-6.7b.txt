@@ -1,0 +1,23 @@
+Output for Validity property:
+```
+Validity - satisfied
+```
+Explanation: As per the protocol, a message m broadcasted by any correct process pi is guaranteed to eventually be delivered. This is ensured through the delivery mechanism which relays messages from processes with reliable links and ensures that all correct processes eventually receive this relay.
+
+Output for No duplication property:
+```
+No duplication - satisfied
+```
+Explanation: The delivered set prevents duplicate deliveries. As soon as a process delivers m, it is added to the delivered set. If another process tries to broadcast m again before it has been delivered by the first process, it will check and realize that m is already in the delivered set, preventing duplication.
+
+Output for No creation property:
+```
+No creation - satisfied
+```
+Explanation: A correct process only creates messages when it receives a message from other processes using reliable links. If it receives a message but doesn't have any unprocessed deliveries, then the received message must have originated from another process that has already delivered m to some point in its lifetime.
+
+Output for Agreement property:
+```
+Agreement - satisfied
+```
+Explanation: As per the protocol, if a correct process pi delivers m, it eventually receives and relays m from at least f+1 different processes (as guaranteed by I3 of the invariants). Hence every correct process eventually accumulates f+1 distinct sources for m and delivers m. This ensures Agreement property.

@@ -1,0 +1,11 @@
+Validity - [satisfied]
+Reason: The algorithm ensures that all correct processes will eventually receive the same message they broadcast. It does this by requiring a quorum of processes to acknowledge receipt (ECHO) and readiness to deliver the message (READY).
+
+Agreement - [non satisfied]
+Reason: While the agreement property is satisfied, it only applies for messages that have been delivered successfully. If a process delivers a different message than what was sent, this deviates from the assumption of uniqueness in Byzantine fault tolerance systems.
+
+No duplication - [satisfied]
+Reason: The algorithm does not allow duplicate messages to be sent. Each message is acknowledged and readied exactly once by each correct process participating in the broadcast.
+
+No creation - [non satisfied]
+Reason: The algorithm as described does not provide for creating new messages (e.g., a process could create a new message after receiving one from another). However, this could be addressed with additional rules depending on specific requirements of the system being protected by the protocol.

@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is satisfied by the algorithm. If a correct broadcaster broadcasts m, then all correct processes eventually receive <type1, m> and deliver it because they forward it from the sender process who has already received it.
+
+RB-Agreement - [satisfied]
+If one correct process delivers m, then it must have received m and forwarded to other processes. All other correct processes eventually receive this message and deliver it as well.
+
+RB-Integrity - [satisfied]
+The algorithm ensures that a process delivers m at most once because the delivered set keeps track of all previously delivered messages. If a process tries to send <type1, m> again but already has delivered it, the validation rules prevent it from sending the same message twice for the same m.

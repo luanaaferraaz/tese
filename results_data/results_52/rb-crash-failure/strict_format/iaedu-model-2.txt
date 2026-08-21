@@ -1,0 +1,6 @@
+{"run_id": "baabc704-59cf-4831-8085-fc893026d782", "type": "start", "content": "Processing"}
+
+{"run_id": "baabc704-59cf-4831-8085-fc893026d782", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "baabc704-59cf-4831-8085-fc893026d782", "type": "done", "content": "baabc704-59cf-4831-8085-fc893026d782", "messageId": "None", "token_pct_used": 106.4}
+

@@ -1,0 +1,11 @@
+Validity - Satisfied
+Reason: The algorithm ensures that a message sent by a correct process will eventually be delivered by all correct processes. This is ensured through the mechanism of acknowledgments (ECHO and READY messages) and quorum checks.
+
+Agreement - Non satisfied
+Reason: While the algorithm does ensure that two correct processes agree on the value they accepted, it doesn't guarantee agreement among non-correct processes. In a Byzantine fault tolerance system, agreement is crucial to prevent conflicts of state during network partitions or crashes. 
+
+No duplication - Satisfied
+Reason: The algorithm ensures that a message will not be delivered more than once. This is due to the implementation of counters (echo_count and ready_count) for ECHO and READY messages. If a process receives an ECHO or READY message it increments its respective counter, and if the counter reaches a certain threshold, then that message will be delivered (and no duplication ensues).
+
+No creation - Satisfied
+Reason: The algorithm ensures that each message will only be accepted by processes which have previously sent that same message. This is due to the fact that all messages are acknowledged with a unique message identifier and not stored in any process's memory. 

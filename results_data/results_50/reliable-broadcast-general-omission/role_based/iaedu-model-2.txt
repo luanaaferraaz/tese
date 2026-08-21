@@ -1,0 +1,6 @@
+{"run_id": "114912dd-14e9-46f4-acb4-3f65319054be", "type": "start", "content": "Processing"}
+
+{"run_id": "114912dd-14e9-46f4-acb4-3f65319054be", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "114912dd-14e9-46f4-acb4-3f65319054be", "type": "done", "content": "114912dd-14e9-46f4-acb4-3f65319054be", "messageId": "None", "token_pct_used": 106.4}
+

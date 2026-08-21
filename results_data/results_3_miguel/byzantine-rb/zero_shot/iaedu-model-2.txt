@@ -1,0 +1,10 @@
+{"run_id": "e7ef2978-4f30-4922-bd28-4c19d23de669", "type": "start", "content": "Processing"}
+
+{"run_id": "e7ef2978-4f30-4922-bd28-4c19d23de669", "type": "token", "content": "R"}
+
+{"run_id": "e7ef2978-4f30-4922-bd28-4c19d23de669", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]"}
+
+{"run_id": "e7ef2978-4f30-4922-bd28-4c19d23de669", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "e7ef2978-4f30-4922-bd28-4c19d23de669", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "e7ef2978-4f30-4922-bd28-4c19d23de669", "type": "done", "content": "e7ef2978-4f30-4922-bd28-4c19d23de669", "messageId": "cmrc40ucm7migke018mlzguur"}
+

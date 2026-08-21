@@ -1,0 +1,4 @@
+Termination - [Satisfied]
+Validity - [Non Satisfied]: The algorithm assumes that the sender is always correct but this is not guaranteed. It might be possible for a faulty process to send a message without it being relayed to all processes. 
+Agreement - [Satisfied]
+Integrity - [Satisfied]

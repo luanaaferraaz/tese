@@ -1,0 +1,4 @@
+1. Validity - satisfied (Every correct process broadcasts m, it eventually delivers m).
+2. No duplication - satisfied (A correct process delivers m at most once).
+3. No creation - satisfied (If a correct process delivers m, then m was broadcast by some process).
+4. Agreement - satisfied (If a correct process delivers m, every other correct process eventually delivers m).

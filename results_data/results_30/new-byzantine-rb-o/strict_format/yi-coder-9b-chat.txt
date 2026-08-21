@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This algorithm ensures validity because if a correct process broadcasts <type0, m>, all other processes will eventually receive it and send back their support in the form of <type1, m>.
+
+RB-Agreement - [satisfied]
+If one correct process delivers message m, this is due to the fact that it received at least f+1 instances of <type1, m> sent by other correct processes. These messages are forwarded to all other correct processes which then have enough evidence for delivery.
+
+RB-Integrity - [satisfied]
+This algorithm satisfies integrity as a process only delivers message m once and no process can force a delivery unless f+1 distinct processes support it.

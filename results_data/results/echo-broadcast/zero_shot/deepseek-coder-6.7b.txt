@@ -1,0 +1,11 @@
+Validity - [Satisfied]
+Explanation: The algorithm ensures that if a correct process p broadcasts a message v, then all other correct processes eventually receive and accept the same message. This property is satisfied as per the protocol pseudo code given in section 9 (on receive READY(m):). Here, delivered Rule: If ready_count[m] ≥2f+1: deliver(m) ensures that once a process receives f+1 more READY messages for the same message m, it delivers this message.
+
+Agreement - [Satisfied]
+Explanation: The algorithm ensures that if two correct processes q and r accept different values v and u respectively, then these processes eventually agree on the same value after a certain point in time. This property is satisfied as per the protocol pseudo code given in section 9 (on receive READY(m):). Here, Agreement Rule: If two correct processes q and r accept the values v and u respectively, they will eventually agree if they deliver the same message m.
+
+No Duplication - [Satisfied]
+Explanation: The algorithm ensures that no process sends duplicate messages in a single broadcast instance. This property is satisfied as per the protocol pseudo code given in section 9 (on receive SEND(m):). Here, the process only sends ECHO or READY for each unique message once. No other process can send these again.
+
+No Creation - [Non Satisfied]
+Explanation: The algorithm does not guarantee that a new value is never broadcasted. This property is non-satisfied as per the protocol pseudo code given in section 9 (on receive SEND(m):). Here, no process can create a new unique message m. The sender will always send an existing or previously sent message to all processes.

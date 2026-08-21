@@ -1,0 +1,6 @@
+{"run_id": "3908f2ab-0a75-45d0-bcbe-b120fbe0f04d", "type": "start", "content": "Processing"}
+
+{"run_id": "3908f2ab-0a75-45d0-bcbe-b120fbe0f04d", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "3908f2ab-0a75-45d0-bcbe-b120fbe0f04d", "type": "done", "content": "3908f2ab-0a75-45d0-bcbe-b120fbe0f04d", "messageId": "None", "token_pct_used": 99.2}
+

@@ -1,0 +1,20 @@
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "start", "content": "Processing"}
+
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "token", "content": "Validity -"}
+
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "token", "content": " [non satisfied]: Sender may suffer send-omission on its"}
+
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "token", "content": " own delivery path, but self-delivery is local so actually holds ("}
+
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "token", "content": "confidence: 4/10)\nNo duplication - [satisfied] (confidence: 9/10)\nNo creation - [non satisfied]: f"}
+
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "token", "content": "+1 threshold does not guarantee a correct source under general omission when f faulty can send fabricated rel"}
+
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "token", "content": "ays (confidence: 5/10)\nAgreement - [non satisfied]: A correct process delivering via f+1 relays including rece"}
+
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "token", "content": "ive-omission faulty may not ensure others reach threshold (confidence: 6/10)"}
+
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender may suffer send-omission on its own delivery path, but self-delivery is local so actually holds (confidence: 4/10)\nNo duplication - [satisfied] (confidence: 9/10)\nNo creation - [non satisfied]: f+1 threshold does not guarantee a correct source under general omission when f faulty can send fabricated relays (confidence: 5/10)\nAgreement - [non satisfied]: A correct process delivering via f+1 relays including receive-omission faulty may not ensure others reach threshold (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "type": "done", "content": "db3e25ac-a839-43f7-8797-dcb1aaf0ee8d", "messageId": "cmrivlgto33pike014cn7mirs"}
+

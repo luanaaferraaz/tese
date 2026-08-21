@@ -1,0 +1,11 @@
+RB-Validity - [Satisfied]
+
+The property RB-Validity is met because the algorithm ensures that, if a correct broadcaster broadcasts a message m, all correct processes eventually deliver m. This is ensured by the fact that when a correct process receives <type0, m> from any sender pj and it has not sent <type1, m> before, the process sends <type1, m> to its neighbours. Afterwards, if another correct process receives at least 2 <type1, m> messages (f+1), it delivers message m and adds it to the set of delivered messages.
+
+RB-Agreement - [Satisfied]
+
+The property RB-Agreement is met because if a correct process delivers message m, then there exists at least one other correct process that has received at least f+1 <type1, m> messages from distinct senders and delivered the message. This means that any process can agree on the delivery of a message by receiving and processing enough valid support messages.
+
+RB-Integrity - [Satisfied]
+
+The property RB-Integrity is met because each process delivers a message at most once, and only if it was broadcasted. This is ensured by the fact that when a correct process receives <type1, m> from at least f+1 distinct processes (and it has not delivered m before), it delivers m and adds it to the set of delivered messages. A Byzantine fault cannot cause any other correct process to deliver m more than once or for an unrelated message.

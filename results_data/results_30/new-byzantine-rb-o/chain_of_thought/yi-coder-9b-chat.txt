@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This algorithm guarantees RB-Validity as the broadcaster sends <type0, m> to all correct neighbours. The correct processes then relay this message until at least two distinct <type1, m> messages are received. This means that if a correct process broadcasts m, all other correct processes will eventually deliver it.
+
+RB-Agreement - [satisfied]
+If one process delivers m, it received f + 1 <type1, m> messages from the neighbours. At least one of those came from another correct process supporting m. The support propagation rule ensures that this support is relayed to all other correct processes eventually allowing them to reach the same delivery threshold and agree on m.
+
+RB-Integrity - [satisfied]
+This algorithm satisfies RB-Integrity as a process delivers only once because of the "delivered" set. Since f + 1 support for m is required and only f processes can be Byzantine, a Byzantine process alone cannot force delivery. Therefore, a process will deliver m at most once and only if it was originally broadcast.

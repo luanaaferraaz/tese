@@ -1,0 +1,4 @@
+Validity - [satisfied]
+Agreement - [satisfied]
+No duplication - [satisfied]
+No creation - [non satisfied]: The algorithm does not handle the case where a new value is created. If all faulty processes are Byzantine, then no correct process will ever be able to generate a ready message for any new value, and consequently deliver it.

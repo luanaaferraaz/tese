@@ -1,0 +1,191 @@
+% #############################################################################
+% This is Chapter 2
+% !TEX root = ../main.tex
+% #############################################################################
+% Change the Name of the Chapter i the following line
+\fancychapter{Background and Related Work}
+%\cleardoublepage
+% The following line allows to ref this chapter
+\label{chap:back}
+\noindent In this section, we introduce the key concepts and related work that support the development of this project. We begin by presenting distributed algorithms, both at a conceptual level and through representative abstractions and concrete examples. We then discuss language models, outlining their evolution and highlighting the most recent and advanced systems relevant to our study. The section continues with an overview of program verification, a core component of our work, examining existing approaches and motivating the need for more accessible and efficient alternatives.
+
+Because our solution requires a systematic methodology to evaluate language models, we next explore benchmarking techniques and how they can be used to assess LM performance in distributed algorithm verification in a formal and rigorous manner. Finally, we survey prompt engineering methods, which provide effective strategies for guiding language models to produce accurate and reliable reasoning.
+% #############################################################################
+\section{Distributed Algorithms}
+Distributed algorithms are designed to run on multiple interconnected computing entities, commonly referred to as nodes or processes, within a distributed system. They provide the core mechanisms that enable these independent components to cooperate, coordinate, and reach agreement despite the challenges introduced by concurrency, asynchrony, and the possibility of failures. As defined by Lynch in her classical book\cite{lynch1996distributed}, a distributed algorithm specifies the behavior of a set of processes that interact through some sort of communication, such as message passing over potentially unreliable networks or shared memory. These algorithms govern critical coordination tasks including consensus, broadcast, leader election, and mutual exclusion. Although their implementation differs depending on whether communication is based on message passing or shared memory, both models share the fundamental challenge that no single process has a complete and instantaneous view of the global system state, due either to communication delays and faults in message passing, or to concurrent access and interleaving in shared memory.
+
+
+A central aspect of distributed computation lies in the system model under which the algorithm operates. In a synchronous system, message transmission and process execution occur within known and bounded time limits \cite{dolev1982synchronous}. This predictability simplifies reasoning and enables deterministic progress guarantees. In contrast, asynchronous systems impose no timing assumptions: messages can be delayed arbitrarily, and process speeds may vary without bound. Fischer, Lynch, and Paterson proved that deterministic consensus is impossible in purely asynchronous systems prone to even a single crash failure, known as the FLP impossibility result \cite{fischer1985flp}. This distinction between synchrony models is fundamental, as it shapes both the design and the verifiability of distributed protocols.
+
+Another key dimension is the fault model, which defines how processes and communication links may deviate from their expected behavior. The crash-failure model assumes that processes may halt unexpectedly and never recover. In the omission model, processes or links may occasionally fail to deliver messages. The most general and adversarial case, the Byzantine model, allows arbitrary and potentially malicious behavior, including sending inconsistent messages to different peers \cite{lamport1982byzantine}. Each fault model imposes different requirements on correctness and fault tolerance, typically parameterized by the number of tolerated faults F in a system of N processes.
+
+Distributed algorithms are defined according to correctness properties, broadly categorized into safety and liveness \cite{alpern1985safety}. A safety property asserts that “nothing bad ever happens” (e.g., no two processes decide different values), while a liveness property ensures that “something good eventually happens” (e.g., all correct processes eventually decide). In practice, these general properties are expressed through task-specific correctness conditions, such as agreement, validity, or termination, which refine what safety and liveness mean for a particular algorithm or abstraction. The most common properties are summarized in Table~\ref{tab:correctness-properties}.
+
+\begin{table}[H]
+\centering
+\caption{Task-specific properties in distributed algorithms.}
+\label{tab:correctness-properties}
+\begin{tabular}{|p{2.5cm}|p{2cm}|p{9cm}|}
+\hline
+\textbf{Property} & \textbf{Type} & \textbf{Definition} \\
+\hline
+
+Validity & Safety & If a correct process decides (or delivers) v, then v was proposed by some process or v =  $\bot$. ~\cite{correia2006from} \\
+\hline
+
+Agreement & Safety & No two correct processes decide (or deliver) differently. ~\cite{correia2006from} \\
+\hline
+
+Integrity & Safety & For any message M, every correct process p delivers M at most once, and if sender(M)  is correct then M was previously broadcast by sender(M). ~\cite{correia2006from} \\
+\hline
+
+Total Order & Safety & If two correct processes deliver two messages M1 and M2 then both processes deliver the two messages in the same order. ~\cite{correia2006from}\\
+\hline
+
+Consistency & Safety & all correct processes end in states that do not contradict each other; the system behaves as if operations occurred in a valid order. ~\cite{raynal2013distributed} \\
+\hline
+
+No Duplication & Safety & Derives from Integrity. A message is never delivered more than once. ~\cite{raynal2013distributed}\\
+\hline
+
+No Creation & Safety & Derives from Validity. No message is delivered unless it was actually sent. ~\cite{raynal2013distributed} \\
+\hline
+
+Termination & Liveness & Every correct process eventually decides (or delivers). ~\cite{correia2006from} \\
+\hline
+Vector \newline Validity & Safety & Every correct process that decides, decides on a vector V of size n: (i) For all p, if p{i} is correct, then either V[i] is the value proposed by p{i} or $\bot$; and (ii) at least (f +1) elements of V were proposed by correct processes.~\cite{correia2006from} \\
+\hline
+
+
+\end{tabular}
+\end{table}
+
+The benchmark proposed in this work considers a representative subset of these properties across a family of distributed algorithms chosen for their clarity and well-understood correctness guarantees~\cite{correia2006from}. Rather than focusing on the full complexity of large-scale production protocols, the benchmark prioritizes simpler yet expressive abstractions, such as Binary Consensus, Multi-Value Consensus, Reliable Broadcast, and their fault-tolerant or terminating variants, that expose core safety and liveness reasoning patterns while remaining accessible to language model analysis. These abstractions correspond to the classical building blocks of distributed computing as formalized in classical books by Lynch~\cite{lynch1996distributed} and Raynal~\cite{raynal2013distributed}. All selected algorithms are defined in the message-passing model, assuming that processes communicate exclusively through message exchange.
+
+Reliable Broadcast is a foundational communication abstraction that ensures all correct processes deliver the same set of messages even in the presence of failures. Hadzilacos and Toueg~\cite{hadzilacos1987modular} introduced a layered perspective that decomposes broadcast abstractions, reliable, uniform, and atomic, into modular components with well-defined correctness properties. This decomposition clarifies the conceptual relationships between different broadcast semantics and illustrates how complex protocols can be derived compositionally from simpler ones, a perspective developed extensively in foundational treatments such as Raynal~\cite{raynal2013distributed}. 
+
+Similarly, consensus abstractions, including binary, multi-value, and vector-based consensus, capture the fundamental task of reaching agreement under various synchrony and fault assumptions. Their definitions, behavior, and correctness criteria are formalized in classical references such as Lynch~\cite{lynch1996distributed} and Raynal~\cite{raynal2013distributed}. These abstractions map directly onto the task-specific safety and liveness conditions listed in Table~\ref{tab:correctness-properties}, making them well suited for evaluating whether language models can identify property satisfaction or violation.
+
+Recent research continues to expand the landscape of distributed algorithms, not only through manual design but also through automated synthesis techniques. An example is the work of Vaz et al.~\cite{vaz2023synthesis}, which presents the first use of reinforcement learning to automatically generate fault-tolerant Reliable Broadcast algorithms. Their approach integrates an RL-based generator with a model-checking oracle to iteratively synthesize correct and efficient protocols. This demonstrates that the space of distributed algorithms is still evolving, with new designs emerging from both human insight and automated methods. In light of this, the present work includes one such automatically synthesized Reliable Broadcast algorithm as part of the benchmark, allowing us to evaluate whether language models can reason about correctness even for recently proposed, machine-generated protocols that have not yet become canonical.
+
+Verifying the correctness of distributed algorithms remains a formidable challenge. Their behavior depends not only on local computation but also on the global interleaving of events, message timings, and failure scenarios. Formal verification techniques such as model checking and theorem proving \cite{clarke1999modelchecking} have been extensively applied to this domain but face scalability and automation limitations due to the exponential growth of system states. Additionally, traditional model checking requires engineers to manually express correctness properties in temporal logic and encode the system as a state machine—an additional effort that introduces complexity and raises the entry barrier for practical use, especially for those unfamiliar with formal specification languages~\cite{fakhfakh2018formal}. These challenges motivate the exploration of alternative, data-driven approaches, such as leveraging LMs, to reason about distributed behavior through structured natural language understanding and probabilistic inference.
+% #############################################################################
+\section{Language Models}
+Language Models (LMs) are statistical systems trained to predict and generate sequences of text. 
+Modern approaches build upon deep neural architectures such as the Transformer \cite{vaswani2017transformer}, enabling models to learn long-range dependencies and contextual relationships within massive datasets. Through large-scale pretraining on natural language  (e.g., Wikipedia articles or news), code (e.g., Python or Java), and formal text  (e.g., TLA+ or Z notation), such as logical or specification syntax, these models acquire good generalization abilities that allow them to perform diverse reasoning and generation tasks. 
+Depending on their scale, architecture, and training data, language models can be categorized as Large Language Models (LLMs) or Small Language Models (SLMs). While LLMs typically rely on hundreds of billions of parameters and require substantial computational infrastructure, SLMs operate at a much smaller scale, commonly between 1M and 10B parameters \cite{hasana2024slmcode,huggingfaceSLM}. This drastic reduction in size fundamentally shapes their strengths and limitations.
+
+Recent progress in large language models has demonstrated that such systems can perform tasks involving structured reasoning, code synthesis, and logic-based problem solving \cite{chen2021codex,li2023starcoder}. 
+This opens the possibility of using them as assistive tools for the work of verifying distributed algorithms. 
+Unlike traditional verification methods that rely on exhaustive exploration or formal proofs, LMs operate through probabilistic reasoning and pattern recognition, which might allow them to generalize across algorithmic families and failure scenarios. 
+However, there are some limitations that pose significant challenges, such as sensitivity to prompt phrasing, lack of formal guarantees, reasoning inconsistencies and hallucinations that are syntactically plausible outputs that in fact are incorrect\cite{islam2023comprehensive}. A well-designed benchmark is therefore essential to assess LMs in a systematic, controlled, and reproducible manner, ensuring that models are evaluated appropriately according not only to its correctness and reasoning quality, interpretability and robustness but also that, if any weaknesses emerge, they are clearly identified and interpreted in context.
+
+\subsection{Large Language Models (LLMs)}
+LLMs, such as GPT-4 \cite{openai2024gpt4} or Perplexity AI \cite{perplexity2025}, contain hundreds of billions of parameters and exhibit remarkable performance in natural language understanding, reasoning, and code generation. Their extensive pretraining across heterogeneous datasets allows them to internalize diverse algorithmic and logical structures, making them particularly suitable for tasks that require understanding system assumptions, analyzing code, and evaluating correctness properties.
+However, recent works have questioned whether these models genuinely “reason” or merely reproduce statistical patterns, a discussion known as the \textit{illusion of thinking}~\cite{shojaee2024illusion, lawsen2024illusion2}. 
+This debate has direct implications for verification-oriented tasks, where genuine logical reasoning is required. 
+For instance, Shojaee et al.~\cite{shojaee2024illusion} show that LLMs may appear to “think less” as task complexity increases, while Lawsen~\cite{lawsen2024illusion2} argues that such failures may come from task design or token-length limitations rather than lack of reasoning ability. 
+These insights highlight the need for carefully designed, unambiguous prompts in any verification benchmark. 
+Prompt engineering, task solvability, and reasoning transparency become central to fair evaluation.
+
+\subsection{Small Language Models (SLMs)}
+Small Language Models (SLMs) are transformer-based models with significantly fewer parameters, typically between 1M and 10B, designed for efficient, low-latency inference on consumer-grade hardware \cite{belcak2024slm,magister2024}. Representative examples include Yi-Coder (1.5B) and (9B) \cite{yi2024coder} and Phi-2 (2.7B) \cite{phi2}. In contrast to LLMs, which require large-scale computational resources and excel at broad generalization, SLMs prioritize efficiency, interpretability, and deployability, making them suitable for on-device or resource-constrained environments\cite{huggingfaceSLM}.
+
+Recent work shows that SLMs can still exhibit non-trivial reasoning abilities when augmented with targeted training strategies. Studies on reasoning distillation demonstrate that small models can inherit structured reasoning patterns from larger models, improving performance on logic-oriented tasks \cite{magister2024}. Likewise, empirical evaluations of SLMs on code generation \cite{hasana2024slmcode} show that models below 7B parameters can perform competitively on standard benchmarks, capturing syntactic regularities and control-flow patterns relevant to program understanding.
+
+However, their smaller parameter count can limit the ability to perform complex multi-step reasoning, which is central to the verification of distributed algorithms. Compared to larger models, SLMs may struggle with reasoning chains involving multiple interacting conditions, such as invariants, message ordering, and failure scenarios. Verification tasks often require nested conditional reasoning (e.g., reasoning about different failure cases or execution paths), which can be challenging for smaller models due to limited representational capacity. For this reason, SLMs are included in this work to evaluate how model scale impacts the capacity to reason about distributed algorithm correctness.
+
+\subsection{Evaluating Reasoning Beyond Correctness}
+Recent studies on LM evaluation\cite{shojaee2024illusion,lawsen2024illusion2} highlight a key insight for this work: assessing only the final correctness of a model’s output (e.g., whether it answers “true” or “false” to a verification query) is often insufficient to fully capture its reasoning capabilities. Language models may fail not due to a lack of reasoning ability, but because the evaluation setup overlooks important aspects of how and why the answer was produced.
+
+In the context of this benchmark, several evaluation strategies are being considered. One possibility is to focus strictly on binary outcomes, whether the model correctly determines if a given distributed algorithm satisfies a target property. This approach simplifies scoring and supports automation at scale. Alternatively, the benchmark may also consider the reasoning trace provided by the model, its justification or explanation for the verdict. This would allow for a more nuanced understanding of the model’s decision process and its alignment with formal reasoning principles.
+
+A third, intermediate strategy is collecting both the binary verdict and the associated reasoning, while formally evaluating only the former. In this setup, the reasoning output is stored systematically and may be used later for manual review, qualitative analysis, or to guide improvements in prompt design and model comparison. This hybrid approach balances automation with interpretability, and leaves room for future iterations of the benchmark to incorporate structured evaluation of reasoning quality.
+
+At this stage, no final decision has been made regarding which evaluation strategy will be adopted. The benchmark is being designed to remain flexible and to accommodate all three alternatives, with a particular emphasis on supporting reproducibility, future manual inspection, and iterative refinement of evaluation criteria.
+
+Finally, work on evaluation of code generation\cite{ghosh2023benchmarks} emphasize that simply running unit tests is not sufficient for assessing code understanding or reasoning. 
+In a similar spirit, the proposed benchmark focuses on domain, specific properties, such as safety, liveness, and fault tolerance, bridging the gap between generic LM evaluation and the verification of distributed systems.
+
+\section{Program Verification}
+
+Program verification is the study of proving that a program conforms to a formal specification. It relies on mathematical reasoning to demonstrate that every execution of a program satisfies the properties defined in its specification. This typically involves modeling program behavior as a transition system, expressing correctness conditions in a logical formalism, and establishing invariants or proof obligations that exclude incorrect executions and guarantee eventual progress \cite{dijkstra1972veryidea, apt1981foundations}. In distributed systems, the verification effort is especially challenging because message delays, asynchrony, concurrency, and failures lead to large and complex execution spaces. These difficulties motivate the exploration of language models as tools for analyzing and explaining correctness in distributed algorithms.
+
+Program verification has two major classes of formal methods: theorem proving and model checking. Together, they provide foundational techniques for establishing that a program conforms to its formal specification \cite{clarke1999modelchecking, clarke2018handbook}. 
+
+Theorem proving is based on deductive reasoning. Proofs can be constructed manually or with the assistance of proof systems such as Isabelle \cite{paulson1989isabelle}. As surveyed by Nawaz et al.\ \cite{nawaz2019survey}, theorem provers are particularly effective for reasoning about infinite-state systems and highly abstract properties, since they allow symbolic manipulation of invariants and logical statements. This expressive power makes them suitable for verifying distributed algorithms whose behavior cannot be represented as a finite-state model. However, theorem proving generally requires human guidance, familiarity with formal logic, and careful construction of proofs, which limits its degree of automation and its accessibility to non-experts.
+
+Model checking offers a more automated alternative. It works by constructing a formal model of the system, typically a finite-state transition system, and then exhaustively exploring all states that the system can reach from its initial configuration. During this exploration, the model checker verifies whether each reachable state satisfies the properties specified in a temporal-logic formula. If a property is violated, the tool produces a counterexample in the form of an execution trace that shows exactly how the system can reach an incorrect state. Tools such as SPIN \cite{holzmann1997spin} and UPPAAL \cite{bozga2009verifying} are widely used to verify communication protocols, control systems, and distributed algorithms. Model checking detection of violations and production of counterexamples are valuable for diagnosing design flaws. However, it is constrained by the state-space explosion problem, where the number of possible states grows rapidly with system complexity. This limitation can make model checking infeasible for systems with large or parameterized state spaces.
+
+These difficulties motivate the exploration of complementary approaches to analyzing and explaining correctness in distributed algorithms. 
+The aim of this work is to evaluate the ability of LMs to determine whether distributed algorithms satisfy their correctness properties and, when they do not, produce counterexamples that explain the violation. Program verification provides the formal basis for this evaluation, as the goal is to assess whether LLMs can approximate, at least partially, the results that formal verification traditionally produce. It defines the correctness criteria, such as safety and liveness, that specify how algorithms should behave under all admissible executions. These are reflected in concrete properties, such as validity, agreement, and termination, that apply under particular system and fault assumptions. Traditional verification methods, although rigorous and precise, often require specialized expertise, involve detailed formal modeling that can be difficult to apply in practice and are highly time consuming. In many cases, the state space grows so large that available computational resources, such as memory, are insufficient to complete the verification~\cite{Delzanno_2014}. This work investigates whether LMs, through natural language reasoning and contextual understanding, can support or partially automate aspects of program verification in distributed settings.
+
+\section{Benchmarking}
+
+Benchmarking is a systematic process for evaluating and comparing the performance of systems, algorithms, or models under controlled and repeatable conditions. 
+According to Nunes et al.~\cite{nunes2018benchmarking}, a benchmark provides a quantitative and qualitative basis for performance assessment through standardized workloads, metrics, and procedures. 
+The fundamental goal of benchmarking is not only to measure raw performance, but to establish reproducibility, comparability, and insight into the underlying behaviour of the systems being evaluated.
+
+Benchmarks have long been used across computing domains, from numerical simulation\cite{hoang2013benchmarkVOF} and databases\cite{rubenstein1987benchmarking} to distributed\cite{truica2021textbends} and AI systems\cite{eyuboglu2022dcbench}, as a means to establish reference performance indicators. 
+As Nunes et al. emphasize, benchmarking should not be understood merely as running tests, but rather as an experiment guided by scientific principles: the benchmark should be reproducible, representative of realistic workloads, and grounded in well-defined metrics and methodologies. 
+A well-designed benchmark allows different tools or models to be evaluated under equivalent conditions, exposing their strengths, weaknesses, and scalability characteristics.
+
+\subsection{Benchmark Components}
+
+The most common method to assess and compare the performance of alternative tools is to execute them with a set of representative test cases and compare results. 
+Following the definition by Vieira et al.~\cite{vieira2012resilience} and the methodology discussed by Nunes et al.~\cite{nunes2018benchmarking}, a benchmark typically includes three main components:
+
+\begin{enumerate}
+    \item \textbf{Workload:} A set of representative test cases or input tasks designed to exercise the tools or models under evaluation.
+    \item \textbf{Metrics:} Quantitative and/or qualitative indicators that reflect how well the models fit their intended purpose.
+    \item \textbf{Procedures and Rules:} The experimental methodology that defines how the benchmark is executed, ensuring fairness and reproducibility.
+\end{enumerate}
+
+These principles ensure that benchmarking results remain meaningful and transferable across studies. Together, these components define how the benchmark is structured and executed, ensuring that the evaluation process remains systematic, fair, and reproducible.
+
+\subsection{Benchmark Properties}
+Complementing these structural aspects, the benchmark must also define the correctness properties that characterize the expected behavior of the distributed algorithms under evaluation.
+According to Vieira et al.~\cite{vieira2012resilience}, a suitable workload should satisfy the following properties:
+\begin{itemize}
+    \item \textbf{Representativeness:} Test cases should reflect realistic and typical scenarios of the domain where the benchmark will be applied.
+    \item \textbf{Comprehensiveness:} The workload should cover all relevant aspects of the system’s functionality.
+    \item \textbf{Focus:} The workload should emphasize the critical features of the domain, balancing coverage and relevance.
+    \item \textbf{Configurability:} It should be possible to customize the workload according to different experimental requirements.
+    \item \textbf{Scalability:} The benchmark must scale in size and complexity while maintaining its representativeness.
+\end{itemize}
+
+As highlighted by Nunes et al.~\cite{nunes2018benchmarking}, these principles ensure that benchmarking results remain meaningful and transferable across studies. 
+Furthermore, recent works such as Ye et al.~\cite{ye2024uncertainty} and Gupta et al.~\cite{gupta2023imsuite} emphasize the increasing role of benchmarks for evaluating \textit{language models} and distributed systems, where reasoning accuracy and robustness are equally critical as performance. Ye et al.\cite{ye2024uncertainty} evaluate LLMs through uncertainty quantification, showing the need for better metrics beyond accuracy, this aligns with our aim of assessing deeper reasoning abilities. IMSuite \cite{gupta2023imsuite} is a benchmark designed to simulate distributed algorithms under different execution environments in order to measure characteristics related to its performance such as latency, message overhead, and scalability. It provides implementations of a variety of classical distributed algorithms and evaluates them through simulation, allowing researchers to compare their operational behavior across configurations and workloads. Although IMSuite also relies on distributed algorithms as its workload, it is only relevant mainly as an example of how distributed algorithms can be used to structure benchmark workloads. None of these benchmarks, or any existing one, address LM reasoning about correctness of distributed algorithms, which is the goal of our proposed benchmark.
+
+\subsection{Benchmarking LLMs}
+The drawbacks of traditional verification tools and the continuous progress of language models point toward a common direction: LLM-assisted verification. Recent work by Zheng et al.~\cite{NEURIPS2023_91f18a12} introduces the use of a large language model as a judge, known as LLM-as-a-judge, where an LLM is responsible for evaluating the responses of other models on open-ended questions. Given two answers to the same prompt, the judge LLM selects the better response or declares a tie. In their experiments, GPT-4 achieved the best judging performance. Notably, the judge model was able to detect subtle failure modes such as verbosity bias, an attack in which a model repeats the same content using different phrasing to appear more thorough. The judge identified that one model’s answer duplicated content, and correctly preferred the more concise and semantically coherent response.
+
+Li et al.~\cite{li2025generation} show that LLMs can reliably act as evaluators rather than mere generators, assessing correctness, coherence, and reasoning quality in other models’ outputs. These results indicate that LLMs can reliably evaluate the reasoning of other models, effectively substituting a human judge in complex comparative tasks.
+
+This capability strengthens the motivation for our work, but it does not imply that judging open-ended answers and verifying distributed algorithms have the same level of complexity. In LLM-as-a-judge settings, the model typically compares or evaluates textual responses according to criteria such as coherence, completeness, and reasoning quality. In contrast, distributed algorithm verification requires reasoning about all admissible executions under specific system and failure assumptions, including concurrency, asynchrony, and possible faults. Therefore, although previous results suggest that LLMs can detect subtle flaws and discriminate between correct and incorrect reasoning, it remains an open question whether they can perform the more demanding task of assessing whether distributed algorithms satisfy correctness properties.
+
+Rather than assuming that LLMs can replace formal verification, this work investigates whether they can support it as intelligent assistants capable of hypothesis generation, early validation, error localization, or counterexample suggestion. This hybrid perspective, combining formal rigor with probabilistic reasoning, motivates the benchmark developed in this work, which evaluates how effectively LMs can reason about correctness in distributed algorithms and where their limitations become evident.
+
+However, benchmarking LLMs requires a rigorous structure, as unreliable evaluation methodologies can easily lead to misleading conclusions. Recent work has highlighted the growing importance and difficulty of reliably evaluating language models, particularly as they are increasingly used not only as generators but also as evaluators. Zhou et al.~\cite{zhou2023don} warn that benchmark contamination and test leakage can lead to misleading conclusions, emphasizing the need for carefully designed evaluation methodologies. In the same direction, White et al.~\cite{white2024livebench} propose LiveBench, a continuously updated and contamination-resistant benchmark, showing that robust evaluation requires both freshness of tasks and rigorous experimental control. Focusing specifically on evaluation roles, Tan et al.~\cite{tan2024judgebench} introduce JudgeBench, a benchmark for systematically assessing the reliability of LLM-based judges, demonstrating that judging itself is a non-trivial capability that must be explicitly measured. Together, these works establish that when LLMs are used as evaluators, benchmark design, robustness, and judge reliability become central concerns.
+
+Ultimately, this project builds upon this convergence between formal verification and machine learning.
+By developing a structured benchmark for evaluating LMs in distributed algorithm verification, the work aims to test whether such models can correctly assess algorithmic properties such as termination, validity, and agreement, understand system assumptions (synchrony, failure thresholds), and generate meaningful, logically grounded explanations or counterexamples.
+Through this, we aim to explore how language models could complement or enhance existing verification methods, providing a scalable and flexible path toward AI-assisted correctness reasoning.
+
+
+\section{Prompt Engineering}
+
+Prompt engineering is the methodical practice of crafting text prompts to reliably guide LMs toward producing accurate, relevant, and interpretable outputs. As LMs have become powerful tools for reasoning, coding, and problem-solving, the formulation of prompts has emerged as a crucial interface between human intention and model capability. The phrasing, structure, and contextual framing of a prompt can drastically affect the model’s reasoning path, as well as the factual consistency and reliability of its response.
+
+Early work on prompting showed that even a simple natural-language cue, such as the instruction “Let’s think step by step”, can substantially improve a model’s reasoning performance, revealing that minimal guidance can elicit structured intermediate steps in zero-shot settings \cite{kojima2022zeroshot}. There are 3 main concepts of prompting:
+\begin{itemize}
+    \item \textbf{Zero-shot} prompting introduced the idea that LMs can generalize to new tasks without fine-tuning, relying solely on pre-trained knowledge \cite{kojima2022zeroshot}.
+    \item \textbf{Few-shot} prompting, extended zero-shot later, where a small number of input–output examples embedded directly into the prompt allow the model to infer task structure from context \cite{liu2023pretrainpromptpredict}. 
+    \item \textbf{Chain-of-thought} prompting formalized the strategy of encouraging models to articulate intermediate reasoning steps, further improving accuracy on reasoning-intensive tasks \cite{wei2022cot}.
+\end{itemize}
+Subsequent research explored techniques that further structure the interaction between human and model. Role prompting defines an explicit identity or expertise for the model (e.g., “You are an expert in distributed algorithms and formal verification”), which has been shown to anchor responses to specific domains and improve factual consistency. Output-constrained prompting defines explicit answer structures (e.g., stepwise reasoning, tables, or classifications), improving interpretability and automating evaluation. These principles have been widely discussed in both academic and practical guidelines, including OpenAI’s Best Practices for Prompt Engineering \cite{openai2024promptguide}, and were further explored by Zhou et al. \cite{zhou2023humanprompt}, who showed that advanced models can autonomously craft prompts that rival human-designed ones.
+
+In general, this body of work highlights that prompt engineering is both an empirical science and a methodological discipline, since its effectiveness depends not only on creativity but also on systematic control of variables such as context, instruction framing, and output format. For research involving reasoning tasks, prompts act as experimental instruments: they define how models interpret the problem and what kind of reasoning they are expected to exhibit.
+
+In the context of this work, these findings provide essential groundwork for developing a fair and reproducible benchmarking framework for language models in the domain of distributed algorithm verification. While various prompting strategies exist, this work focuses primarily on instruction-based prompting, which defines clear objectives and evaluation criteria and structured output prompting, ensuring consistent and easy comparisons across models. Chain-of-thought prompting is acknowledged as an important reasoning strategy but will be used only selectively, such as when generating counterexamples or reasoning traces as the reasoning is not the main focus of this project, but understanding the ability of algorithm verification. The detailed prompt templates and evaluation methodology will be introduced later in this document.
+

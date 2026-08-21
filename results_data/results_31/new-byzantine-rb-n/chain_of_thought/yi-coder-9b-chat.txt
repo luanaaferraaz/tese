@@ -1,0 +1,5 @@
+1) RB-Validity: This property is satisfied. The correctness of the algorithm ensures that a correct broadcaster broadcasts m, then all other correct processes eventually receive it because they send <type1, m> to their neighbours after f + 1 <type1, m> messages are received.
+
+2) RB-Agreement: This property is also satisfied. If one correct process delivers m, then it received f + 1 <type1, m> messages and at least one of them came from a correct process. The forwarding rule ensures that this support spreads to other correct processes who can reach the same delivery threshold.
+
+3) RB-Integrity: This property is also satisfied. A process delivers m only once because it checks whether m has already been added to the delivered set. Since f + 1 support is required and only f processes can be Byzantine, a Byzantine process alone cannot force a duplicate delivery.

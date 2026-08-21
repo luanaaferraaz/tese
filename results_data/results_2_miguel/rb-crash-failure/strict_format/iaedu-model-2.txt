@@ -1,0 +1,14 @@
+{"run_id": "0365628f-8f08-4d2c-bb98-29d99bae163d", "type": "start", "content": "Processing"}
+
+{"run_id": "0365628f-8f08-4d2c-bb98-29d99bae163d", "type": "token", "content": "R"}
+
+{"run_id": "0365628f-8f08-4d2c-bb98-29d99bae163d", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to it"}
+
+{"run_id": "0365628f-8f08-4d2c-bb98-29d99bae163d", "type": "token", "content": "self but before receipt, no process delivers; asymmetric del"}
+
+{"run_id": "0365628f-8f08-4d2c-bb98-29d99bae163d", "type": "token", "content": "ivery possible if relayer crashes mid-forward.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "0365628f-8f08-4d2c-bb98-29d99bae163d", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself but before receipt, no process delivers; asymmetric delivery possible if relayer crashes mid-forward.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "0365628f-8f08-4d2c-bb98-29d99bae163d", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "0365628f-8f08-4d2c-bb98-29d99bae163d", "type": "done", "content": "0365628f-8f08-4d2c-bb98-29d99bae163d", "messageId": "cmraekzty61v3ke01zmfxql40"}
+

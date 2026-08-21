@@ -1,0 +1,6 @@
+{"run_id": "4448ffe5-7898-49a6-a039-e38b36810a80", "type": "start", "content": "Processing"}
+
+{"run_id": "4448ffe5-7898-49a6-a039-e38b36810a80", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "4448ffe5-7898-49a6-a039-e38b36810a80", "type": "done", "content": "4448ffe5-7898-49a6-a039-e38b36810a80", "messageId": "None", "token_pct_used": 106.4}
+

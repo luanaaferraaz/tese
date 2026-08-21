@@ -1,0 +1,90 @@
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "start", "content": "Processing"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": ""}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "RB"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "-"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "Validity"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " -"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " ["}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "s"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "atisfied"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "]\n"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "RB"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "-"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "Agreement"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " -"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " ["}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "s"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "atisfied"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "]\n"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "RB"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "-"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "Integrity"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " -"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " ["}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "non"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " satisfied"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "]:"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " Any"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " Byzantine"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " process"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " can"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " send"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " type"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "0"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " for"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " un"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": "broadcast"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " m"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": ","}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " triggering"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " echoes"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " and"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": " delivery"}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "token", "content": ""}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [non satisfied]: Any Byzantine process can send type0 for unbroadcast m, triggering echoes and delivery", "tool_calls": [], "tool_call_id": null, "run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "response_metadata": {"model_provider": "openai", "id": "resp_0e4b5b93b8e09413006a6761dcf3148190b1e876b16e1a84b0", "created_at": 1785160156.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "a9f9e165-c465-49ee-a941-8906e4d200eb", "type": "done", "content": "a9f9e165-c465-49ee-a941-8906e4d200eb", "messageId": "cms3a9r5o27t2ke013k4bn5m2"}
+

@@ -1,0 +1,13 @@
+Here are the properties evaluated for Bracha’s Reliable Broadcast algorithm.
+
+1) Validity - Satisfied
+   The process sends an ECHO message and then a READY message, which ensures that all correct processes eventually receive both messages for each unique value broadcasted by the sender.
+
+2) Agreement - Satisfied
+   If two correct processes accept the same values respectively, they are always in sync since whenever the rules of agreement (Rule 1 & Rule 2) get triggered, it implies that every other correct process will eventually receive READY(m). Therefore, both processes agree on the value.
+
+3) No duplication - Satisfied
+   The algorithm ensures no duplication by making sure each unique message m only has at most one pair of ECHO and READY messages associated with it (satisfying invariant I1), and that every correct process delivers the same number of READY(m) as it sent ECHO(m). This prevents any duplication.
+
+4) No creation - Satisfied
+   The algorithm ensures no message creation because when a new unique message m is broadcasted, the process only sends SEND(m), and thereafter all messages are either READY or ECHO for that particular instance (satisfying invariant I2). This prevents any creation of extraneous messages.

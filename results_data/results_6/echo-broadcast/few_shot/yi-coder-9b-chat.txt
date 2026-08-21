@@ -1,0 +1,4 @@
+Validity - [satisfied]
+Agreement - [satisfied]
+No duplication - [non satisfied]: The protocol does not explicitly enforce no duplication. It just ensures that once a message is delivered, it remains delivered and is not delivered again later.
+No creation - [satisfied]

@@ -1,0 +1,19 @@
+Output format:
+- One line per property
+- Use exactly:
+  <property> - [satisfied]
+  <property> - [non satisfied]: <reason>
+- Only include a reason if non satisfied (max 20 words)
+- No extra text
+
+1. Validity
+   - Satisfied: The algorithm guarantees that every correct process eventually delivers the message it broadcasts to all other processes via `rb_deliver(m)`. This means that each correct process will deliver messages in a timely manner according to the system model's timing assumptions, which are assumed asynchronous.
+   
+2. No duplication
+   - Satisfied: The delivered set prevents duplicate upcalls for the same message. If a message m is received for the first time and it is not already present in the delivered set, then that message is added to the delivered set and `rb_deliver(m)` is invoked. This ensures no duplication of messages.
+   
+3. No creation
+   - Satisfied: The algorithm also prevents message creation, i.e., if a correct process delivers m, it guarantees that m was broadcast by some process. This is guaranteed by the reliable channels and honest (non-Byzantine) processes as stated in the system model's channel assumptions.
+   
+4. Agreement
+   - Satisfied: If a correct process i delivers message m to other processes, then every correct process will eventually receive m and deliver it to all others, ensuring agreement on message content. This is ensured by the protocol's relay step which ensures that each process forwards any received message to all other processes.

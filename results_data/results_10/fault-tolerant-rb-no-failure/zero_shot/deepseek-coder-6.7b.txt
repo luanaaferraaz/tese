@@ -1,0 +1,5 @@
+RB-Validity - Satisfied: Since the algorithm sends <type0, m> to all processes and delivers it when any message containing m is received, RB-Validity holds.
+
+RB-Agreement - Satisfied: If one process delivers m, then the message was sent by the broadcaster to all processes, so all processes eventually receive and deliver it. 
+
+RB-Integrity - Satisfied: The delivered set prevents duplicate delivery. Since messages are not created by the channel, a message can only be added to delivered if it has not been delivered before. Thus, delivered messages come from a broadcast.

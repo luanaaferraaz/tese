@@ -1,0 +1,165 @@
+Hadzilacos, V. and Toueg, S. (1994). "A Modular Approach to Fault-Tolerant Broadcasts and Related Problems". Technical Report TR94-1425, Cornell University.
+See also: Cachin, C., Guerraoui, R. and Rodrigues, L. (2011). Introduction to Reliable and Secure Distributed Programming, Springer.
+ALGORITHM TEMPLATE: Terminating Reliable Broadcast
+1) IDENTIFICATION
+
+    Algorithm name: Terminating Reliable Broadcast (TRB)
+
+    Problem type: Terminating Reliable Broadcast
+
+    Variant tags:
+
+        Fault model: [C] Crash
+
+        Timing model: [S] Synchronous
+
+2) SYSTEM MODEL
+
+    Processes: A static set Π of n processes, {p1, p2, ..., pn}.
+
+    Max faulty: f, where f < n.
+
+    Resilience condition: n > f (at least one correct process exists). The protocol uses f+1 synchronous rounds, which is sufficient because by the pigeonhole principle at least one of those rounds has no new crash.
+
+    Channels: Reliable point-to-point links (no loss, no duplication, no creation). Messages sent by a correct process to a correct process are eventually delivered.
+
+    Timing assumptions: Synchronous. Computation proceeds in lock-step rounds. All messages sent in round r are received before round r+1 begins.
+
+    Additional assumptions: A single designated sender s ∈ Π. The sender broadcasts a value m ∈ V. A special token SF ∉ V ("Sender Faulty") is available to indicate that the sender has crashed.
+
+3) CORRECTNESS PROPERTIES (as defined by Hadzilacos and Toueg, 1994)
+
+    Termination: Every correct process eventually delivers exactly one value (either m or SF).
+
+    Validity: If the sender s is correct and broadcasts m, then all correct processes eventually deliver m.
+
+    Agreement: If a correct process delivers a value v, then every correct process eventually delivers v.
+
+    Integrity: Every correct process delivers at most one message. If it delivers m ≠ SF, then m was previously broadcast by s.
+
+4) INTERFACE (API)
+
+    External operations: TRB-broadcast(m), invoked only by the designated sender s.
+
+    Output events: TRB-deliver(v) where v ∈ V ∪ {SF}. Each correct process outputs exactly one TRB-deliver event.
+
+5) ROLES
+
+    Sender (s): The unique designated process that initiates the broadcast by sending m in round 1.
+
+    Receivers: All processes in Π (including s) that participate in the relay-and-decide protocol.
+
+6) LOCAL STATE (per process pi)
+
+Constants:
+
+    n: Total number of processes.
+
+    f: Maximum number of crash failures tolerated.
+
+    s: The identity of the designated sender.
+
+Variables:
+
+    received_msg: The value received so far, initially ⊥ (no value received). Set to m upon first reception of the broadcast value.
+
+    delivered: Boolean flag, initially false. Set to true once TRB-deliver is invoked.
+
+7) MESSAGE TYPES
+
+    ⟨RELAY, m, r⟩: A message carrying the broadcast value m, tagged with the round number r in which it is sent. The sender identity is implicit from the authenticated channel.
+
+8) INITIALIZATION
+
+    received_msg ← ⊥
+
+    delivered ← false
+
+9) PROTOCOL PSEUDOCODE
+
+A) Round 1 — Sender s only:
+
+    if pi = s:
+
+        received_msg ← m
+
+        send ⟨RELAY, m, 1⟩ to all processes in Π
+
+B) Rounds r = 1, 2, ..., f+1 — All processes:
+
+    upon receiving ⟨RELAY, m, r⟩ from any process pj:
+
+        if received_msg = ⊥:
+
+            received_msg ← m
+
+            if r ≤ f:
+
+                send ⟨RELAY, m, r+1⟩ to all processes in Π
+
+            (If r = f+1, the value is noted but not relayed further.)
+
+C) Decision Phase — End of round f+1:
+
+    if received_msg ≠ ⊥:
+
+        TRB-deliver(received_msg)
+
+    else:
+
+        TRB-deliver(SF)
+
+    delivered ← true
+
+10) DECISION / DELIVERY RULE
+
+    Delivery occurs exactly once, at the end of round f+1. The decision is deterministic:
+
+        - If the process has received the broadcast value m at any point during rounds 1 through f+1, it delivers m.
+
+        - Otherwise, it delivers the special token SF.
+
+    No early delivery is permitted; all processes wait until round f+1 completes.
+
+11) QUORUM / KEY STRUCTURAL ARGUMENT
+
+    This protocol does not use quorum-based thresholds. Instead, it relies on the Pigeonhole Principle applied to synchronous rounds:
+
+    There are f+1 rounds and at most f crash failures. By the pigeonhole principle, there exists at least one round r* ∈ {1, ..., f+1} during which no process crashes. In that "clean" round, every process that holds the value m successfully relays it to all other processes. This guarantees that if any correct process has m before round r*, then after round r* all correct processes have m.
+
+12) INVARIANTS
+
+    I1 (Relay propagation): If a correct process pi has received_msg = m at the start of round r (where r ≤ f), then pi sends ⟨RELAY, m, r+1⟩ to all processes, and every correct process receives it before round r+1 ends.
+
+    I2 (Agreement preservation): If any correct process has received_msg ≠ ⊥ at the end of round f+1, then all correct processes have received_msg ≠ ⊥ at the end of round f+1.
+
+    I3 (Sender correctness): If the sender s is correct, then every correct process sets received_msg = m by the end of round 1 (since s sends to all and channels are reliable).
+
+    I4 (Integrity): received_msg is set at most once per process (from ⊥ to m), and only upon receiving a RELAY message. Since channels provide no-creation, the value m must originate from the sender.
+
+13) CORRECTNESS ARGUMENT SKELETON
+
+    Termination:
+        The protocol runs for exactly f+1 synchronous rounds. Every correct process reaches the decision phase at the end of round f+1 and executes exactly one TRB-deliver. The synchronous model guarantees that rounds complete in bounded time.
+
+    Validity:
+        If s is correct, it sends ⟨RELAY, m, 1⟩ to all processes in round 1. By the reliable channel assumption, every correct process receives m by the end of round 1 and sets received_msg = m. At the decision phase, every correct process delivers m. (Follows from I3.)
+
+    Agreement:
+        Suppose a correct process pi delivers m (i.e., received_msg ≠ ⊥). Then pi received m in some round r ≤ f+1.
+        Case 1: r ≤ f. Then pi relays ⟨RELAY, m, r+1⟩ to all processes. Every correct process receives it by round r+1.
+        Case 2: r = f+1. Then pi received m from some process pj that sent it in round f+1, meaning pj received m in round f or earlier and relayed it. By induction, there is a chain of at most f distinct relayers. Since at most f processes crash, and there are f+1 rounds, by the pigeonhole principle at least one round in this chain is "clean" (no crashes), ensuring all correct processes receive m.
+        In both cases, all correct processes have received_msg = m by the end of round f+1, so they all deliver m. If no correct process receives m, they all deliver SF. (Follows from I1, I2.)
+
+    Integrity:
+        Each process executes TRB-deliver exactly once (guarded by the delivered flag and the single decision phase). The value delivered is either m (which was received via RELAY messages originating from the sender, guaranteed by no-creation on channels) or SF. If a process delivers m ≠ SF, then m was broadcast by s. (Follows from I4.)
+
+15) LIMITATIONS
+
+    Requires synchrony: The protocol fundamentally depends on the synchronous round model. It cannot be directly applied to asynchronous systems, where the FLP impossibility result (Fischer, Lynch, Paterson, 1985) prevents deterministic consensus (and thus TRB) with even one crash failure.
+
+    Round cost: The f+1 round lower bound is tight for crash-tolerant TRB in the synchronous model (shown by Hadzilacos and Toueg, 1994). No protocol can solve TRB in fewer rounds.
+
+    Single sender: The protocol assumes a single designated sender. Multiple concurrent broadcasts require separate protocol instances.
+
+    No Byzantine tolerance: The protocol assumes crash-only failures. Byzantine (arbitrary) failures require fundamentally different protocols (e.g., Bracha's echo broadcast with n > 3f).

@@ -1,0 +1,11 @@
+The output requirements are already well specified. Here's how the properties should be verified according to your pseudocode and invariants:
+
+1) Validity - All correct processes eventually deliver the message m, which can be verified by checking if all correct processes trigger an event ⟨beb,Deliver∣p,m⟩. If this is true for every process p that is part of the set n and is declared as a correct process, then the property "Validity" is satisfied.
+
+2) No duplication - There are no message deliveries more than once. This can be verified by maintaining a log of all delivered messages. When each process receives a ⟨pl,Deliver∣p,m⟩ event, it checks if m has already been delivered. If not, the message is processed normally and added to the log. The property "No duplication" is satisfied if no new deliveries are made after this check (i.e., all future deliveries of a specific message m would trigger an existing log entry for that message).
+
+3) No creation - If a process delivers a message m with sender s, then m was previously broadcast by process s. This can be verified by maintaining the sequence and source of each received message. When receiving ⟨pl,Deliver∣p,m⟩ events, it checks if the source p matches the last known sender of m. The property "No creation" is satisfied if all future deliveries of a specific message m from any process would trigger an existing log entry for that message with the same source.
+
+4) Integrity - If delivered by s then was broadcasted by s. This can be verified in a similar way as the previous properties but maintaining and checking not only the sequence and source, but also the fact that m was broadcast by p. The property "Integrity" is satisfied if all future deliveries of a specific message m from any process would trigger an existing log entry for that message with the same sender (p) and origin (s).
+
+If any of these checks fail, then the corresponding property does not hold and the reason should be provided. For example, "Validity - non satisfied: Process p is not delivering the message m" or "No duplication - non satisfied: Message m was delivered more than once".

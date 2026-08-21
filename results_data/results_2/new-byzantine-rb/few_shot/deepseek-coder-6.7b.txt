@@ -1,0 +1,37 @@
+Based on the given pseudocode and description of the algorithm, here are the verification results for its properties.
+
+--- Example 1 ---
+
+Algorithm: Simple broadcast where sender sends message m to all processes using reliable point-to-point links. Upon receiving m, a process delivers it immediately without relaying.
+
+Properties:
+Validity, No duplication, No creation
+
+Output:
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+
+--- Example 2 ---
+
+Algorithm: Broadcast where the sender sends m to all processes. Upon receiving m for the first time, a process delivers m but does NOT relay it to others. Processes may crash.
+
+Properties:
+Validity, Agreement, No duplication, No creation
+
+Output:
+Validity - [satisfied]
+Agreement - [non satisfied]: if sender crashes mid-broadcast, some correct processes may never receive m
+No duplication - [satisfied]
+No creation - [satisfied]
+
+--- New Byzantine-Tolerant Algorithm Verification ---
+
+Algorithm: New Byzantine-Tolerant RBcast Algorithm
+Properties:
+RB-Validity, RB-Agreement, RB-Integrity
+
+Output: 
+RB-Validity - [satisfied]
+RB-Agreement - [non satisfied]: This property is dependent on the specifics of the system model and might not be fully satisfied in all cases. It's mentioned as such to ensure that agreement is maintained while still allowing for Byzantine fault tolerance. The reason could be that if a correct process crashes midway through broadcasting, some correct processes may never receive f + 1 messages
+RB-Integrity - [satisfied]

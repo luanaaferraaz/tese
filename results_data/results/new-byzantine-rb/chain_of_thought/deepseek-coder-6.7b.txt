@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is achieved when a correct broadcaster sends the <type0, m> message to its neighbours. As each correct receiver receives this message and if it has received at least one <type0, m> from a different process, it sends a <type1, m> to its neighbours. Since the support messages spread through the system, all correct processes eventually receive at least f + 1 <type1, m> messages.
+
+RB-Agreement - [satisfied]
+This property is achieved when a correct process delivers message m if and only if it received at least f + 1 <type1, m> messages from different correct processes. This means that the broadcaster or one of the correct receivers sends a <type1, m> to its neighbours which allows other correct processes to receive this support message from the broadcaster or another correct process and reach the same threshold for delivery.
+
+RB-Integrity - [satisfied]
+This property is achieved when a process delivers message m at most once because of the delivered set. The reason it delivers only once is that if f + 1 <type1, m> messages are received from different correct processes and not already in the delivered set, then the message is added to the delivered set and delivery event is triggered. Since f processes can be Byzantine, a Byzantine process alone cannot force delivery by sending multiple <type1, m> messages.

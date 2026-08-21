@@ -1,0 +1,29 @@
+Here are the evaluations for each property according to the given pseudocode and assumptions:
+
+RB-Validity: This is evaluated based on the presence of `<type0, m>` in the received set by all correct processes. If a process does not receive `<type0, m>` from any other process after sending it initially, then RB-Validity may be violated. 
+
+```python
+def evaluate_RB_validity():
+    for pj in range(n):
+        if pj != self and <type0, m> not in received[pj]:
+            return "non satisfied: Process {} did not receive initial message.".format(pj)
+    return "satisfied"
+```
+
+RB-Agreement: This is evaluated based on the number of times a correct process receives `<type1, m>` from other processes. If it does not receive at least f + 1 such messages after sending them initially, then RB-Agreement may be violated. 
+
+```python
+def evaluate_RB_agreement():
+    if len(received[m]) < f + 1:
+        return "non satisfied: Process did not receive enough support messages."
+    return "satisfied"
+```
+
+RB-Integrity: This is evaluated based on the fact that a correct process delivers `m` at most once. If it does so more than once, then RB-Integrity may be violated. 
+
+```python
+def evaluate_RB_integrity():
+    if m in delivered and len(delivered[m]) > 1:
+        return "non satisfied: Process delivers message {} more than once.".format(m)
+    return "satisfied"
+```

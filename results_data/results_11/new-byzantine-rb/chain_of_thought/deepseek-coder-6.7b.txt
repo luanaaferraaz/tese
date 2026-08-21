@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+Reason: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m. This is ensured by the fact that whenever a correct process receives <type0, m> from another correct or witness process, it sends <type1, m> to its neighbours. As long as enough <type1, m> messages are received (at least f+1), this ensures all correct processes eventually receive m.
+
+RB-Agreement - [satisfied]
+Reason: If one correct process delivers m, then all correct processes eventually deliver m. This is ensured by the fact that if a correct process receives at least f+1 <type1, m> messages from other correct or witness processes, it forwards <type1, m> to its neighbours and ensures delivery of m through these forwarded <type1, m> messages.
+
+RB-Integrity - [satisfied]
+Reason: A correct process delivers m at most once, and only if m was broadcast. This is ensured by the fact that each message sent (<type0, m> or <type1, m>) is from a distinct sender. Each deliver operation ensures delivery of m exactly once. If an additional <type0, m> or <type1, m> is received after delivery, it would be a duplicate delivery and should not happen.

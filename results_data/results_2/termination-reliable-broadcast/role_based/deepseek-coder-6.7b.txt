@@ -1,0 +1,63 @@
+# Terminating Reliable Broadcast (TRB) Algorithm Examination
+
+## Termination
+The termination property is satisfied. The algorithm is designed to terminate for any input where at least one correct process eventually delivers a message. This is ensured by the decision phase which occurs after f+1 rounds and as such, even in the presence of upto f faulty processes, every correct process will reach the decision phase eventually.
+```python
+# Test termination with all correct processes
+if __name__ == "__main__":
+    n = 5  # number of processes
+    f = 2  # maximum faults
+    s = 0  # sender's ID
+    m = 'test message'  # message to be broadcasted
+    
+    for i in range(1, n+1):
+        if i != s:
+            assert TRB_deliver(i, m)  # each correct process should eventually deliver a message
+```
+
+## Validity
+The validity property is satisfied. If the sender (s) broadcasts a message (m), then all correct processes eventually deliver this same message. This is ensured by the protocol where every message sent has to be received at least once, which ensures that all processes have encountered and stored this message in their `received_msgs` set before the end of round f+1.
+```python
+# Test validity with sender s broadcasting a message m
+if __name__ == "__main__":
+    n = 5  # number of processes
+    f = 2  # maximum faults
+    s = 0  # sender's ID
+    m = 'test message'  # message to be broadcasted
+    
+    assert TRB_broadcast(s, m)  # sender should not return an error when broadcasting
+    
+    for i in range(1, n+1):
+        if i != s:
+            assert TRB_deliver(i, m)  # each correct process should eventually deliver the same message as sender s
+```
+
+## Agreement
+The agreement property is satisfied. If a correct process delivers a message (m), then all correct processes eventually deliver this same message. This follows from the protocol where every message sent has to be received at least once, and hence ensures that all other correct processes have encountered and stored this message before the end of round f+1.
+```python
+# Test agreement with any correct process delivering a message m
+if __name__ == "__main__":
+    n = 5  # number of processes
+    f = 2  # maximum faults
+    p = 3  # arbitrary correct process ID
+    m = 'test message'  # message to be delivered by the process p
+    
+    assert TRB_deliver(p, m)  # process p should not return an error when delivering a message
+    
+    for i in range(1, n+1):
+        if i != p:
+            assert TRB_deliver(i, m)  # each correct process other than p should eventually deliver the same message as p
+```
+
+## Integrity
+The integrity property is satisfied. Every correct process delivers at most one message and it was sent by the sender (s). If a correct process delivers 'SF', then this indicates that no value was broadcasted by s before the end of round f+1. This ensures that every correct process has delivered exactly one message by the end of round f+1.
+```python
+# Test integrity with any correct process delivering either a valid message or the SF token
+if __name__ == "__main__":
+    n = 5  # number of processes
+    f = 2  # maximum faults
+    p = 3  # arbitrary correct process ID
+    
+    for m in ['test message', 'SF']:
+        assert TRB_deliver(p, m)  # process p should not return an error when delivering a valid or SF token
+```

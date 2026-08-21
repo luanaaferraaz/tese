@@ -1,0 +1,6 @@
+{"run_id": "3d106957-8863-40c9-b5dd-1e151c19ba23", "type": "start", "content": "Processing"}
+
+{"run_id": "3d106957-8863-40c9-b5dd-1e151c19ba23", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "3d106957-8863-40c9-b5dd-1e151c19ba23", "type": "done", "content": "3d106957-8863-40c9-b5dd-1e151c19ba23", "messageId": "None", "token_pct_used": 102.2}
+

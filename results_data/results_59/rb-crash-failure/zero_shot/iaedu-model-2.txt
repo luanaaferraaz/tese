@@ -1,0 +1,6 @@
+{"run_id": "22b239ba-ae20-4dd1-9675-0f633cf2e323", "type": "start", "content": "Processing"}
+
+{"run_id": "22b239ba-ae20-4dd1-9675-0f633cf2e323", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "22b239ba-ae20-4dd1-9675-0f633cf2e323", "type": "done", "content": "22b239ba-ae20-4dd1-9675-0f633cf2e323", "messageId": "None", "token_pct_used": 107.3}
+

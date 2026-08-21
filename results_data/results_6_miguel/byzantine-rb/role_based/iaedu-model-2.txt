@@ -1,0 +1,18 @@
+{"run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "type": "start", "content": "Processing"}
+
+{"run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "type": "token", "content": "R"}
+
+{"run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]:"}
+
+{"run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "type": "token", "content": " Threshold (n+f)/2=2.5\u21923; two correct delivering s"}
+
+{"run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "type": "token", "content": "ets may not force third to reach echo threshold f+1 am"}
+
+{"run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "type": "token", "content": "plification consistently under asynchrony with Byzantine equivocation (confidence: 6"}
+
+{"run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "type": "token", "content": "/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold (n+f)/2=2.5\u21923; two correct delivering sets may not force third to reach echo threshold f+1 amplification consistently under asynchrony with Byzantine equivocation (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "type": "done", "content": "a588dc48-7cb6-4ca4-85a6-0a59ad3baad2", "messageId": "cmrgf2otl2ceuke011j7p4jc1"}
+

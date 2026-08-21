@@ -1,0 +1,11 @@
+Validity - [satisfied]
+Reason: According to the protocol pseudo code, if a correct process p broadcasts a message v, then all correct processes will eventually accept that message. This is demonstrated by the "Agreement" property which states that if two correct processes q and r accept different messages v and u respectively, they must be equal (v = u).
+
+Agreement - [satisfied]
+Reason: According to the protocol pseudo code, if a process broadcasts a message v, then all other correct processes will eventually accept that same message. This is demonstrated by the "Validity" property which states that if a correct process p broadcasts a message v, then all correct processes will eventually accept that message.
+
+No duplication - [non satisfied]
+Reason: There exists no rule in the protocol pseudo code to prevent duplicate messages from being sent or received. The same message can be acknowledged multiple times by different processes and the sender can send the same message again without any restriction.
+
+No creation - [satisfied]
+Reason: According to the protocol pseudo code, a process cannot create new messages once it has started broadcasting. It only sends existing messages which have been sent beforehand. Therefore, no "creation" property is violated by this algorithm.

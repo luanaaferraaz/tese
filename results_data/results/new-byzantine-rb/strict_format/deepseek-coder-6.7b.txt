@@ -1,0 +1,10 @@
+```plaintext
+RB-Validity - Satisfied
+The broadcaster sends the message <type0, m> to its neighbours. Correct receivers then send the confirmation messages <type1, m> to their neighbours. Since correct support spreads, a correct process eventually receives at least f + 1 such messages and delivers m.
+
+RB-Agreement - Satisfied
+If one correct process delivers m, it means that this process received f + 1 confirmation messages from other correct processes. At least one of those must have come from another correct process. The forwarding rule allows a correct process to spread its support to the others, allowing them to reach the same delivery threshold.
+
+RB-Integrity - Satisfied
+A process delivers m only once because it keeps track of delivered messages in the 'delivered' set. Since f + 1 confirmation is required and no more than f processes can be Byzantine, a Byzantine process alone cannot force delivery. Therefore, RB-Integrity is satisfied.
+```

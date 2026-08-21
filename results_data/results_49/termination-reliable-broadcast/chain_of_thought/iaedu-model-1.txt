@@ -1,0 +1,6 @@
+{"run_id": "37000d85-effa-4503-a787-d27fabc18eeb", "type": "start", "content": "Processing"}
+
+{"run_id": "37000d85-effa-4503-a787-d27fabc18eeb", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "37000d85-effa-4503-a787-d27fabc18eeb", "type": "done", "content": "37000d85-effa-4503-a787-d27fabc18eeb", "messageId": "None", "token_pct_used": 102.2}
+

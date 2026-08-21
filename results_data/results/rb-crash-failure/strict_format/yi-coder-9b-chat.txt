@@ -1,0 +1,10 @@
+Algorithm Template: Crash-Failure RBcast Algorithm
+
+Properties:
+RB-Validity - [satisfied]
+All correct processes eventually deliver the message m because once a process receives <type0, m> it delivers and forwards to neighbours.
+
+RB-Agreement - [non satisfied]: The algorithm may lead to multiple copies of a single message being delivered if there are more than 1 crashed nodes.
+
+RB-Integrity - [satisfied]
+Each process delivers each message at most once because the delivered set ensures no duplicates, and since messages can only be forwarded after they're received, any delivered message is traceable back to a broadcast.

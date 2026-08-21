@@ -1,0 +1,12 @@
+Algorithm:
+RELIABLE BROADCAST
+
+Properties:
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [satisfied]
+
+Output:
+Termination - [satisfied]
+Determinism - [satisfied]

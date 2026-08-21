@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The algorithm ensures that if a correct broadcaster broadcasts m, all correct processes eventually deliver m. This is ensured by the fact that every process maintains information about whether it has sent <type1, m> and also tracks which processes have received this message.
+
+RB-Agreement - [satisfied]
+The algorithm ensures that if one correct process delivers m, then all correct processes eventually deliver m. This is ensured by the fact that every process maintains information about whether it has sent <type1, m> and also tracks which processes have received this message. If a correct process receives f + 1 distinct messages of type <type1, m>, it delivers m.
+
+RB-Integrity - [satisfied]
+The algorithm ensures that a correct process delivers m at most once, and only if m was broadcast. This is ensured by the fact that every process maintains information about whether it has delivered m. If a message m is received for delivery in a process, but m is already in the set of delivered messages, the message is not sent again.

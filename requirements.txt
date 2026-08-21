@@ -1,0 +1,17 @@
+# Python dependencies for the LLM broadcast-verification project.
+# Recreate the environment on the new PC with:
+#     python3 -m venv .venv
+#     source .venv/bin/activate        (Windows: .venv\Scripts\activate)
+#     pip install -r requirements.txt
+#
+# External (NOT installed via pip):
+#   - Ollama, with the model pulled:  ollama pull qwen2.5-coder:7b
+#   - Environment variable GROQ_API_KEY set (for LLaMA-70B via Groq).
+
+requests==2.33.1
+aisuite==0.1.14
+openpyxl==3.1.5
+python-docx==1.2.0
+
+# aisuite talks to Groq under the hood; install its Groq extra if needed:
+groq

@@ -1,0 +1,6 @@
+{"run_id": "3115db48-8120-40f7-b16f-a1f9422f2308", "type": "start", "content": "Processing"}
+
+{"run_id": "3115db48-8120-40f7-b16f-a1f9422f2308", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "3115db48-8120-40f7-b16f-a1f9422f2308", "type": "done", "content": "3115db48-8120-40f7-b16f-a1f9422f2308", "messageId": "None", "token_pct_used": 102.2}
+

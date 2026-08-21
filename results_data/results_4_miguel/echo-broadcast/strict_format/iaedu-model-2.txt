@@ -1,0 +1,12 @@
+{"run_id": "ed0fe9cf-da7e-44de-989d-d3dc39536297", "type": "start", "content": "Processing"}
+
+{"run_id": "ed0fe9cf-da7e-44de-989d-d3dc39536297", "type": "token", "content": "Validity - [satisfied"}
+
+{"run_id": "ed0fe9cf-da7e-44de-989d-d3dc39536297", "type": "token", "content": "]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: No delivered flag check before deliver(m); may"}
+
+{"run_id": "ed0fe9cf-da7e-44de-989d-d3dc39536297", "type": "token", "content": " deliver multiple times as READY messages accumulate.\nNo creation - [satisfied]"}
+
+{"run_id": "ed0fe9cf-da7e-44de-989d-d3dc39536297", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: No delivered flag check before deliver(m); may deliver multiple times as READY messages accumulate.\nNo creation - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "ed0fe9cf-da7e-44de-989d-d3dc39536297", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "ed0fe9cf-da7e-44de-989d-d3dc39536297", "type": "done", "content": "ed0fe9cf-da7e-44de-989d-d3dc39536297", "messageId": "cmrd772xi82ckke01tg5l6q8o"}
+

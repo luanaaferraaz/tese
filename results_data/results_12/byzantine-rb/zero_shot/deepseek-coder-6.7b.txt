@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster broadcasts the message 'm', and all correct processes eventually receive it. This property is satisfied as per the pseudo code provided, where upon invoking RB-Broadcast(m), the broadcaster sends a <type0, m> message to all processes. Each process then checks if it received at least 1 distinct <type0, m> message and if not already sent a <type1, m> message, it sends one.
+
+RB-Agreement - Satisfied
+If any correct process delivers 'm', it means that it has seen enough evidence to deliver 'm'. This property is satisfied as per the pseudo code provided, where upon receiving at least f + 1 distinct <type1, m> messages from processes (where 'f' denotes the maximum number of faulty or Byzantine processes), and if 'm' is not already delivered, it delivers 'm', using a deliver(m) operation.
+
+RB-Integrity - Satisfied
+The integrity property ensures that 'm' is not being delivered more than once. This property is satisfied as per the pseudo code provided, where each process maintains a set of all messages it has delivered. Therefore, if a process delivers 'm', it adds 'm' to this set and doesn’t deliver 'm' again unless another process broadcasts 'm'. The decision/delivery rule further ensures that only one copy of the message is ever sent (assuming no duplication error) so long as at least (n + f)/2 processes have seen <type1, m>.

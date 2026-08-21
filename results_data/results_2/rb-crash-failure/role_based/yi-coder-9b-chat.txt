@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is satisfied as the correct broadcaster will broadcast message 'm' which will then be delivered by all correct processes. This process includes receiving, forwarding and delivering the message to all correct neighbours in a reliable manner due to the nature of the algorithm structure and assumptions.
+
+RB-Agreement - [satisfied]
+This property is also satisfied as it pertains to the agreement among all correct processes about which messages they eventually deliver. A correct process that delivers 'm' will ensure this message is forwarded to its neighbours, meaning other correct processes will eventually receive and deliver m. 
+
+RB-Integrity - [satisfied]
+This property is met because once a process delivers a message 'm' it gets added to the delivered set. Any further attempts at delivery of the same message are prevented by this set, ensuring that every process delivers each message only once when it was broadcasted by a correct process.

@@ -1,0 +1,14 @@
+{"run_id": "4393d44c-14f1-44e5-ab70-c220263e01ab", "type": "start", "content": "Processing"}
+
+{"run_id": "4393d44c-14f1-44e5-ab70-c220263e01ab", "type": "token", "content": "R"}
+
+{"run_id": "4393d44c-14f1-44e5-ab70-c220263e01ab", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 \u2192 2"}
+
+{"run_id": "4393d44c-14f1-44e5-ab70-c220263e01ab", "type": "token", "content": "; Byzantine can send type1 without type0, allowing split delivery.\nRB-Integrity - [satisf"}
+
+{"run_id": "4393d44c-14f1-44e5-ab70-c220263e01ab", "type": "token", "content": "ied]"}
+
+{"run_id": "4393d44c-14f1-44e5-ab70-c220263e01ab", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 \u2192 2; Byzantine can send type1 without type0, allowing split delivery.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "4393d44c-14f1-44e5-ab70-c220263e01ab", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "4393d44c-14f1-44e5-ab70-c220263e01ab", "type": "done", "content": "4393d44c-14f1-44e5-ab70-c220263e01ab", "messageId": "cms3a7qs227qake0140ky81cf"}
+

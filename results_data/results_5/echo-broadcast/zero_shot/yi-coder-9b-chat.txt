@@ -1,0 +1,11 @@
+1. Validity
+Algorithm name: Bracha’s Reliable Broadcast. The validity property is satisfied as it ensures that if a correct process p broadcasts v, then all other correct processes accept v.
+
+2. Agreement
+The agreement property is satisfied because if two correct processes q and r accept the values v and u respectively, then v=u.
+
+3. No duplication
+This property is also satisfied as no message gets delivered more than once according to the algorithm design.
+
+4. No creation
+The No creation property is violated by the algorithm due to an inherent limitation in the system model assumption that there can be a fully connected network where any process can communicate with each other without faults or delays. Hence, a process may receive a message m from sender s but this does not guarantee m was previously broadcasted by process s. This issue cannot be resolved just by changing the algorithm as it depends on the network model.

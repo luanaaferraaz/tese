@@ -1,0 +1,6 @@
+{"run_id": "6cf5935e-dfdf-4596-8b64-00b36e8f9f02", "type": "start", "content": "Processing"}
+
+{"run_id": "6cf5935e-dfdf-4596-8b64-00b36e8f9f02", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "6cf5935e-dfdf-4596-8b64-00b36e8f9f02", "type": "done", "content": "6cf5935e-dfdf-4596-8b64-00b36e8f9f02", "messageId": "None", "token_pct_used": 102.2}
+

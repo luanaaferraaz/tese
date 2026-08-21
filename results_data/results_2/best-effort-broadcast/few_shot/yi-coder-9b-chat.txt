@@ -1,0 +1,2 @@
+Termination - [satisfied]
+Determinism - [satisfied]

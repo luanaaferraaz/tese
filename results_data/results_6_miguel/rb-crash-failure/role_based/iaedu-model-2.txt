@@ -1,0 +1,12 @@
+{"run_id": "2c8c87a9-1dd4-4fa7-bc22-93859c5f1e1a", "type": "start", "content": "Processing"}
+
+{"run_id": "2c8c87a9-1dd4-4fa7-bc22-93859c5f1e1a", "type": "token", "content": "R"}
+
+{"run_id": "2c8c87a9-1dd4-4fa7-bc22-93859c5f1e1a", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [satisfied] (confidence: 8/10)\nRB-"}
+
+{"run_id": "2c8c87a9-1dd4-4fa7-bc22-93859c5f1e1a", "type": "token", "content": "Integrity - [satisfied] (confidence: 10/10)"}
+
+{"run_id": "2c8c87a9-1dd4-4fa7-bc22-93859c5f1e1a", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [satisfied] (confidence: 8/10)\nRB-Integrity - [satisfied] (confidence: 10/10)", "tool_calls": [], "tool_call_id": null, "run_id": "2c8c87a9-1dd4-4fa7-bc22-93859c5f1e1a", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "2c8c87a9-1dd4-4fa7-bc22-93859c5f1e1a", "type": "done", "content": "2c8c87a9-1dd4-4fa7-bc22-93859c5f1e1a", "messageId": "cmrgfdim92cpoke018mqgk3qa"}
+

@@ -1,0 +1,10 @@
+Algorithm:
+for i in range(n): print(i)
+
+Properties:
+Termination - The algorithm will terminate after n iterations because the variable 'i' is incremented at each iteration until it reaches n.
+Determinism - The output of the program depends only on the input value of 'n'. There are no unpredictable variables or random factors influencing the execution of the loop, making this algorithm deterministic.
+
+Output:
+Termination – [Satisfied]
+Determinism – [Satisfied]

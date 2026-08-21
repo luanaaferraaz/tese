@@ -1,0 +1,37 @@
+Based on the given algorithm description and properties, here are the checks for each property:
+
+1. Safety Property:
+
+   - Check if there is any process that delivers a different message than others. If such a scenario is detected, it means that multiple processes deliver messages simultaneously, which violates the guarantee of "each correct process delivering at most one message". 
+   
+   - Result: NOT SATISFIED
+   
+2. Liveness Property:
+
+   - Check if there are any processes that do not eventually receive a READY message after receiving SEND and ECHO messages. If such a scenario is detected, it means that the liveness guarantee cannot be satisfied because all correct processes should reach the state where they can deliver the message in some point of time.
+   
+   - Result: NOT SATISFIED 
+
+Details: Liveness property can't be verified because there are no checks to ensure that every process eventually receives a READY message after receiving both SEND and ECHO messages. If the sender is correct, it should eventually receive a READY message propagated by all other processes. However, due to Byzantine failures, some processes might not deliver their READY message at all. 
+
+3. Complexity Property:
+
+   - Check if the complexity of sending SEND and ECHO messages is O(N^2). If it's not, then this violates the guarantee of "message complexity: O(N^2)".
+   
+   - Result: SATISFIED 
+   
+4. Limitations Property:
+
+   - Check if there are any processes that do not receive a READY message even though they should based on the algorithm description and provided values for N and f. If such a scenario is detected, it means that the algorithm is not fully utilizing all available resources and could be optimized to deliver more reliable messages. 
+   
+   - Result: NOT SATISFIED 
+   
+Details: There are no checks to ensure that every process receives at least one READY message. In the worst case scenario, a correct sender might miss receiving a READY message from some processes due to Byzantine failures. This could lead to inconsistencies and potentially fail the liveness property if all other conditions are met. 
+   
+5. Total order Property:
+
+   - Check if there is any guarantee that messages will be delivered in total order, like they were sent. If it's not satisfied then this violates the concept of total order broadcast. 
+   
+   - Result: SATISFIED 
+   
+The algorithm indeed guarantees total order as per the decision/delivery rule which is to deliver a message only when READY messages from at least 2f + 1 distinct processes are received, and no two different messages can be simultaneously accepted in this state.

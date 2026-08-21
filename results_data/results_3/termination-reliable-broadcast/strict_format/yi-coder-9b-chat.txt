@@ -1,0 +1,4 @@
+1) Termination - [satisfied]
+2) Validity - [satisfied]
+3) Agreement - [satisfied]
+4) Integrity - [non satisfied]: The algorithm does not guarantee that each correct process delivers at most one message. Multiple instances of the same message can be relayed, leading to multiple deliveries in some cases.

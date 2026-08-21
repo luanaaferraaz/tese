@@ -1,0 +1,4 @@
+1. Validity - [satisfied]
+2. No duplication - [satisfied]
+3. No creation - [non satisfied]: The protocol does not ensure that a correct process creates messages. Messages are delivered based on the number of sources from which they have been received.
+4. Agreement - [satisfied]

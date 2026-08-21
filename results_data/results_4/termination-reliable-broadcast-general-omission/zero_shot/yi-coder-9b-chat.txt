@@ -1,0 +1,4 @@
+Termination - [satisfied]
+Validity - [satisfied]
+Agreement - [satisfied]
+Integrity - [non satisfied]: Processes can only deliver m or SF, but if they deliver m it's from a relay that could have been sent by a faulty process. The protocol doesn't distinguish between correct and faulty supporters in terms of value delivery.

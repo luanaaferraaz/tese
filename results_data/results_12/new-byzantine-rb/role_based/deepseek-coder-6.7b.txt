@@ -1,0 +1,18 @@
+Based on the provided algorithm and its properties, here are my verdicts for each of them:
+
+1. RB-Validity (Correctness Property): The algorithm satisfies this property as expected. It is stated that if a correct broadcaster broadcasts m, all correct processes eventually deliver m. This can be verified by simulating the algorithm with different scenarios and checking whether the output matches the expected behavior.
+
+2. RB-Agreement (Correctness Property): The agreement property seems to be satisfied as well. If one correct process delivers m, then it is guaranteed that all correct processes eventually deliver m because of the support messages exchanged among them. This can also be validated by running simulations with different scenarios.
+
+3. RB-Integrity (Correctness Property): The property seems to be satisfied as well. A correct process delivers m at most once and only if it was broadcast. This means that a message is delivered only once and all deliveries are associated with the broadcasted messages. Simulation tests could validate this property.
+
+4. Delivery rule: The delivery of messages happens when f + 1 <type1, m> messages have been received from at least 2 distinct processes which aligns with the algorithm's pseudocode. This can be verified by running simulations that cover various scenarios including possible failures and Byzantine behaviors.
+
+5. Quorum argument: The key argument is that f + 1 distinct senders cannot all be Byzantine. Since f = 1, receiving 2 matching <type1, m> messages means at least one correct process supported the message. This can also be tested by running simulations with different scenarios to ensure its validity.
+
+6. Invariants: 
+   - I1 (Distinct support): Only messages from distinct senders count toward the threshold which is ensured by checking and discarding duplicates when receiving messages.
+   - I2 (Byzantine alone cannot decide): One Byzantine process cannot produce f + 1 distinct valid senders, this can be tested by running simulations that include scenarios with a single Byzantine process.
+   - I3 (Support propagation): Once a correct process sees f + 1 <type1, m> messages, it forwards <type1, m> to its neighbours which is ensured by the algorithm's pseudocode.
+   - I4 (No duplicate delivery): A process delivers m at most once which aligns with the property RB-Integrity.
+   - I5 (No self-send needed): Sending to neighbours is sufficient because each process already knows its own local actions and does not need to send messages to itself, this invariant can be validated by ensuring no self-send occurs in the algorithm's pseudocode.

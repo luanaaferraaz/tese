@@ -1,0 +1,18 @@
+{"run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "type": "start", "content": "Processing"}
+
+{"run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "type": "token", "content": "Validity - ["}
+
+{"run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 distinct sources, but"}
+
+{"run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "type": "token", "content": " property itself holds trivially (confidence: 7/10)\nNo duplication - [satisfied] (confidence: 10"}
+
+{"run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "type": "token", "content": "/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Sender delivers then"}
+
+{"run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "type": "token", "content": " may fail by omission before relaying enough; correct processes may never reach f+1 ("}
+
+{"run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "type": "token", "content": "confidence: 6/10)"}
+
+{"run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 distinct sources, but property itself holds trivially (confidence: 7/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Sender delivers then may fail by omission before relaying enough; correct processes may never reach f+1 (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "type": "done", "content": "37ee9255-ff69-44ab-97ac-dc20528ddb99", "messageId": "cmrkc5qfw49zpke01gtkladi3"}
+

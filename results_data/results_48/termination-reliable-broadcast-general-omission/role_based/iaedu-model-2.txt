@@ -1,0 +1,6 @@
+{"run_id": "770be6c9-dae2-40f2-92ef-adec21190996", "type": "start", "content": "Processing"}
+
+{"run_id": "770be6c9-dae2-40f2-92ef-adec21190996", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "770be6c9-dae2-40f2-92ef-adec21190996", "type": "done", "content": "770be6c9-dae2-40f2-92ef-adec21190996", "messageId": "None", "token_pct_used": 106.4}
+

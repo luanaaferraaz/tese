@@ -1,0 +1,4 @@
+Validity - Satisfied
+Agreement - Satisfied
+No duplication - Non satisfied: Not all processes keep track of messages. Some processes only receive SEND and ECHO messages, but not READY ones.
+No creation - Satisfied: Each process maintains its own local state and does not create new messages during the broadcasting process. It simply acknowledges (ECHO) or signals readiness (READY) to deliver a message.

@@ -1,0 +1,16 @@
+{"run_id": "94d08f78-43f6-4477-ade4-89273f7ebd79", "type": "start", "content": "Processing"}
+
+{"run_id": "94d08f78-43f6-4477-ade4-89273f7ebd79", "type": "token", "content": "R"}
+
+{"run_id": "94d08f78-43f6-4477-ade4-89273f7ebd79", "type": "token", "content": "B-Validity - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2.5\u2192"}
+
+{"run_id": "94d08f78-43f6-4477-ade4-89273f7ebd79", "type": "token", "content": "3, but only 2 correct echoers may send type1 if bro"}
+
+{"run_id": "94d08f78-43f6-4477-ade4-89273f7ebd79", "type": "token", "content": "adcaster is Byzantine-adjacent. (confidence: 6/10)\nRB-Agreement -"}
+
+{"run_id": "94d08f78-43f6-4477-ade4-89273f7ebd79", "type": "token", "content": " [satisfied] (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "94d08f78-43f6-4477-ade4-89273f7ebd79", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2.5\u21923, but only 2 correct echoers may send type1 if broadcaster is Byzantine-adjacent. (confidence: 6/10)\nRB-Agreement - [satisfied] (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "94d08f78-43f6-4477-ade4-89273f7ebd79", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "94d08f78-43f6-4477-ade4-89273f7ebd79", "type": "done", "content": "94d08f78-43f6-4477-ade4-89273f7ebd79", "messageId": "cmrnkiude0fw7ke019lfdfgq0"}
+

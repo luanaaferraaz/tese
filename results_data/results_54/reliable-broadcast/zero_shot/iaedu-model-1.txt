@@ -1,0 +1,6 @@
+{"run_id": "03fa05b9-a632-4078-8805-8cac5a41de1e", "type": "start", "content": "Processing"}
+
+{"run_id": "03fa05b9-a632-4078-8805-8cac5a41de1e", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "03fa05b9-a632-4078-8805-8cac5a41de1e", "type": "done", "content": "03fa05b9-a632-4078-8805-8cac5a41de1e", "messageId": "None", "token_pct_used": 102.2}
+

@@ -1,0 +1,3 @@
+RB-Validity - [satisfied]: Correct processes send <type1, m> to their neighbors, ensuring enough support is reached.
+RB-Agreement - [satisfied]: Support spreads through the network, eventually reaching all correct processes with at least f + 1 messages.
+RB-Integrity - [satisfied]: A process delivers m only once due to the delivered set, preventing multiple deliveries.

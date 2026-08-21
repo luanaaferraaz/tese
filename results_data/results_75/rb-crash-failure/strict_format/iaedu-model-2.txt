@@ -1,0 +1,14 @@
+{"run_id": "6be07535-c14f-43ac-8b76-83071778dc5a", "type": "start", "content": "Processing"}
+
+{"run_id": "6be07535-c14f-43ac-8b76-83071778dc5a", "type": "token", "content": "R"}
+
+{"run_id": "6be07535-c14f-43ac-8b76-83071778dc5a", "type": "token", "content": "B-Validity - [non satisfied]: Broadcaster sends type0 only to itself; if it"}
+
+{"run_id": "6be07535-c14f-43ac-8b76-83071778dc5a", "type": "token", "content": " crashes before receiving, no process delivers. (confidence: 8/10)\nRB-Agreement - [satisfied]"}
+
+{"run_id": "6be07535-c14f-43ac-8b76-83071778dc5a", "type": "token", "content": " (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "6be07535-c14f-43ac-8b76-83071778dc5a", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Broadcaster sends type0 only to itself; if it crashes before receiving, no process delivers. (confidence: 8/10)\nRB-Agreement - [satisfied] (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "6be07535-c14f-43ac-8b76-83071778dc5a", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "6be07535-c14f-43ac-8b76-83071778dc5a", "type": "done", "content": "6be07535-c14f-43ac-8b76-83071778dc5a", "messageId": "cmrnktxds0gedke0190hl07re"}
+

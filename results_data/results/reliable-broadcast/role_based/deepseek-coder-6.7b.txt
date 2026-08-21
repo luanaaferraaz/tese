@@ -1,0 +1,12 @@
+Based on the provided algorithm, we can determine the following properties of Reliable Broadcast (RB):
+
+1. Validity - [satisfied]
+   This property states that if a correct process broadcasts a message, it eventually delivers the message to all other processes. The implementation checks for this in the protocol pseudocode where each process delivers the received message to every other process when it receives one.
+
+2. No duplication - [non satisfied]: Reason: In the current algorithm, no mechanism is provided to ensure that a message is not delivered more than once. There's no check for duplicate messages in the protocol pseudocode. 
+
+3. No creation - [satisfied]
+   This property states that if a correct process delivers a message, it must have been broadcast by some process. The algorithm ensures this through the local state maintained by each process where all messages delivered are stored and checked for new ones in the protocol pseudocode.
+
+4. Agreement - [satisfied]
+   This property asserts that if any correct process delivers a message m, then every correct process eventually delivers message m. The algorithm ensures this through the mechanism of reliable broadcasting where each process delivers messages to all other processes after receiving them.

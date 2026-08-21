@@ -1,0 +1,7 @@
+Here are the final results for each property:
+
+RB-Validity - [Satisfied]
+RB-Agreement - [Satisfied]
+   Reason: If a correct process receives enough <type1, m> messages (at least ((n+f)/2)), it will eventually deliver message m.
+RB-Integrity - [Satisfied]
+   Reason: The system ensures that each message is delivered at most once by maintaining the 'delivered' set. A single Byzantine process cannot create enough support to deliver a message in this scenario.

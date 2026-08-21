@@ -1,0 +1,6 @@
+{"run_id": "2b42493e-a539-49ad-98d5-0e8035e6b927", "type": "start", "content": "Processing"}
+
+{"run_id": "2b42493e-a539-49ad-98d5-0e8035e6b927", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "2b42493e-a539-49ad-98d5-0e8035e6b927", "type": "done", "content": "2b42493e-a539-49ad-98d5-0e8035e6b927", "messageId": "None", "token_pct_used": 102.2}
+

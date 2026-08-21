@@ -1,0 +1,6 @@
+Here are the verification results for Bracha’s Reliable Broadcast algorithm according to the specified properties. The algorithm seems to satisfy all of its properties under a Byzantine fault model with asynchronous channels, and an additional assumption of fully connected network and unique process IDs. 
+
+Validity - [satisfied]
+Agreement - [non satisfied]: Although it states "If two correct processes q and r accept the values v and u respectively", there's no explicit rule stating that v must equal u for agreement to hold. This could be a source of non-agreement in the algorithm.
+No duplication - [satisfied]
+No creation - [satisfied]

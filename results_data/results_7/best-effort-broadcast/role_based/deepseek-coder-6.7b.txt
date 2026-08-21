@@ -1,0 +1,10 @@
+The output for the properties and their requirements would be as follows:
+
+1. Validity - [satisfied]
+   The algorithm ensures that every correct process eventually delivers a message. This is derived from the reliable delivery property of perfect links, which states that if a sender is correct then it sends a message to all processes in the system (q∈n), and these deliveries are ensured by the perfect links.
+
+2. No duplication - [satisfied]
+   The algorithm ensures that no message is delivered more than once. This is derived from the "no duplication" property of the underlying perfect links, as well as the assumption of unique messages. In other words, if a process delivers a message m with sender s, then it means this was previously broadcast by process s and no two processes can broadcast the same message.
+
+3. No creation - [satisfied]
+   The algorithm ensures that if a process delivers a message m with sender p, then m was previously broadcast by process p. This is derived directly from the "no creation" property of the underlying perfect links as no messages are created or duplicated here.

@@ -1,0 +1,3 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]: Perfect Point-to-Point Links guarantee no message is created or duplicated.

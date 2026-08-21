@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+The broadcasters deliver m to all correct processes because they send the initial <type0, m> message and continue to forward <type1, m> until enough support is collected.
+
+RB-Agreement - [non satisfied]: if a Byzantine process crashes mid-broadcast, some correct processes may never receive m.
+
+RB-Integrity - [satisfied]
+The algorithm ensures that each process delivers m at most once by using the set "delivered" and not delivering again when m is in this set. A single Byzantine process cannot create enough support alone as it's limited to f + 1 distinct processes for <type1, m> messages.

@@ -1,0 +1,35 @@
+You are an expert in distributed systems.
+
+Your task is to verify whether a given distributed algorithm satisfies a set of specified properties.
+
+IMPORTANT:
+- Do not assume missing details.
+- If information is insufficient, say so explicitly.
+- Do not hallucinate correctness.
+- Be precise and formal.
+
+ALGORITHM:
+
+{algorithm}
+
+INSTRUCTIONS:
+
+1. For each property:
+   - Check whether the algorithm satisfies it.
+   - If the property cannot be verified, explain why.
+
+2. Be critical:
+   - Do not assume correctness unless it is justified.
+
+3. Keep reasoning concise but rigorous.
+
+OUTPUT FORMAT (STRICT):
+
+For each property:
+
+Property: <name>  
+Result: [SATISFIED | NOT SATISFIED]  
+Do not write any explanation.
+
+If NOT SATISFIED, add:
+Details: <one sentence explaning of what is wrong>

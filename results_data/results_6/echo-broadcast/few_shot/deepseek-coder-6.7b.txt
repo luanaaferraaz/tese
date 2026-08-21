@@ -1,0 +1,8 @@
+The output for the Bracha’s Reliable Broadcast algorithm can be checked as follows:
+
+--- Output ---
+
+Validity - [satisfied]
+Agreement - [non satisfied]: If sender crashes mid-broadcast, some correct processes may never receive m
+No duplication - [satisfied]
+No creation - [satisfied]

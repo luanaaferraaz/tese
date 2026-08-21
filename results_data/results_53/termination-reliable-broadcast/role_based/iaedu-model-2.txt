@@ -1,0 +1,6 @@
+{"run_id": "f0304252-dcb4-4fb0-abcc-c703a3c83bbf", "type": "start", "content": "Processing"}
+
+{"run_id": "f0304252-dcb4-4fb0-abcc-c703a3c83bbf", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "f0304252-dcb4-4fb0-abcc-c703a3c83bbf", "type": "done", "content": "f0304252-dcb4-4fb0-abcc-c703a3c83bbf", "messageId": "None", "token_pct_used": 106.4}
+

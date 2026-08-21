@@ -1,0 +1,3 @@
+Validity - [Satisfied]
+No duplication - [Non Satisfied]: The algorithm doesn't guarantee that no message is delivered more than once.
+No creation - [Satisfied] The algorithm guarantees that if a process delivers a message m with sender s, then m was previously broadcast by process s. However, it does not specify how to handle the case where two different processes broadcast the same message.

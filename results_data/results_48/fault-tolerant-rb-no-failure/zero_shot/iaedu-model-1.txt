@@ -1,0 +1,6 @@
+{"run_id": "fec9fcfd-ad5d-48b6-91af-2c47e8b9e15e", "type": "start", "content": "Processing"}
+
+{"run_id": "fec9fcfd-ad5d-48b6-91af-2c47e8b9e15e", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "fec9fcfd-ad5d-48b6-91af-2c47e8b9e15e", "type": "done", "content": "fec9fcfd-ad5d-48b6-91af-2c47e8b9e15e", "messageId": "None", "token_pct_used": 102.2}
+

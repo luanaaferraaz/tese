@@ -1,0 +1,3 @@
+1) Validity - [satisfied]
+2) No duplication - [satisfied]
+3) No creation - [non satisfied]: The correctness argument is based on the assumption that if a message is delivered, it was previously broadcast by its sender. However, this assumes that there are no additional messages created or duplicated after delivery without broadcasting them. But according to the algorithm, there are no such operations in the pseudocode and there are no explicit variables storing or creating any state per process. So these additional assumptions may not hold in real-life scenarios where processes could create messages independently.

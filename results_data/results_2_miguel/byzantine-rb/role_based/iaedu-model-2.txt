@@ -1,0 +1,16 @@
+{"run_id": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "type": "start", "content": "Processing"}
+
+{"run_id": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "type": "token", "content": "R"}
+
+{"run_id": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 "}
+
+{"run_id": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "type": "token", "content": "with n=4,f=1 allows split delivery; standard"}
+
+{"run_id": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "type": "token", "content": " Bracha requires (n+f)/2 strict"}
+
+{"run_id": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "type": "token", "content": " with n>3f.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 with n=4,f=1 allows split delivery; standard Bracha requires (n+f)/2 strict with n>3f.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "type": "done", "content": "e6e9c8b9-db28-4545-ac51-4cccd48c40c4", "messageId": "cmrae7x9h61hnke01750m5qpo"}
+

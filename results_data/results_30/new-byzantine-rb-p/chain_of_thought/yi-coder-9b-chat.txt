@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+Correct processes receive f + 1 <type1, m> messages and deliver. They sent these messages to their neighbours, so correct broadcaster eventually delivers valid m.
+
+RB-Agreement - [satisfied]
+One correct process sends at most once per message because of the delivered set. If a process delivers m, it received f + 1 <type1, m> from other processes. These messages can only be sent by correct processes, so all correct processes eventually deliver m.
+
+RB-Termination - [satisfied]
+All correct processes always deliver because they receive at least f + 1 <type1, m> messages. The delivery threshold is not achievable by only f Byzantine process, so termination holds.

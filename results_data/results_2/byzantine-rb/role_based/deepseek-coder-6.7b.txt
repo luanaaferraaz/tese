@@ -1,0 +1,7 @@
+Here are the verdicts on correctness properties of the Byzantine-Failure RBcast Algorithm:
+
+1. `RB-Validity` - Satisfied: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m. This is ensured by the decision rule where delivery of message m occurs only after at least (n+f)/2 number of distinct processes have seen and received <type1, m> messages.
+
+2. `RB-Agreement` - Satisfied: If one correct process delivers m, then all correct processes eventually deliver m. This is ensured by the decision rule where delivery of message m occurs only after at least (n+f)/2 number of distinct processes have seen and received <type1, m> messages. Additionally, this also ensures that every process agrees on which message to deliver when it receives multiple <type1, m> messages from different processes.
+
+3. `RB-Integrity` - Satisfied: A correct process delivers m at most once, and only if m was broadcast. This is ensured by the decision rule where delivery of message m occurs only after at least (n+f)/2 number of distinct processes have seen and received <type1, m> messages. Additionally, the invariant I4 - "No duplicate delivery" ensures that a process delivers m at most once.

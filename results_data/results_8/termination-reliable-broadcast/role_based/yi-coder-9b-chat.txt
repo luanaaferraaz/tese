@@ -1,0 +1,9 @@
+Correctness properties of the algorithm:
+
+1) Termination - Satisfied. Every correct process eventually delivers exactly one value (either m or SF) due to the bounded rounds and each process delivering at round f+1.
+
+2) Validity - Satisfied. If s is correct and broadcasts m, then all correct processes deliver m because of I3 and I4.
+
+3) Agreement - Satisfied. If a correct process delivers a value v (m or SF), then every other correct process delivers the same value due to I1 and I2.
+
+4) Integrity - Satisfied. Every correct process delivers at most one message because of the 'delivered' flag and the single decision phase at round f+1. The integrity property is preserved by the channel reliability, no-creation guarantee, and the sender m was previously broadcast by s due to I3.

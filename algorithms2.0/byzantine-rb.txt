@@ -1,0 +1,145 @@
+ALGORITHM TEMPLATE: Byzantine-Failure RBcast Algorithm
+1) IDENTIFICATION
+
+Algorithm name: Most Efficient RBcast Algorithm for Byzantine-Failure Experiment
+
+Problem type: Reliable Broadcast
+
+Variant tags:
+
+Fault model: Byzantine
+Timing model: Asynchronous
+
+2) SYSTEM MODEL
+
+Processes: A static set Π of n processes.
+
+Max faulty: f = 1 in the experiment.
+
+Resilience condition: Evaluated with n = 4, f = 1.
+
+Channels / communication assumptions: Reliable authenticated message-passing channels. Processes can identify the sender of each message. The identity of the designated broadcaster s is known to all processes.
+
+Timing assumptions: Asynchronous.
+
+Additional assumptions: Byzantine processes may send malicious or inconsistent messages. Correct processes count messages only from distinct senders.
+
+3) CORRECTNESS PROPERTIES
+
+RB-Validity: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m.
+
+RB-Agreement: If one correct process delivers m, then all correct processes eventually deliver m.
+
+RB-Integrity: A correct process delivers m at most once, and only if m was broadcast.
+
+4) INTERFACE
+
+External operations: RB-Broadcast(m), invoked by the broadcaster.
+
+Output events: DELIVER(m), fired at most once per message.
+
+5) ROLES
+
+Broadcaster: Sends the initial <type0, m> message.
+
+Receivers / Echoers: Send <type1, m> after receiving enough evidence.
+
+6) LOCAL STATE
+
+Constants:
+
+n: total number of processes.
+f: maximum number of Byzantine processes.
+s: identity of the designated broadcaster.
+Threshold 1: a <type0, m> message from the designated broadcaster s.
+Threshold 2: f + 1 distinct <type1, m> messages.
+Threshold 3: (n + f) / 2 distinct <type1, m> messages.
+
+Variables:
+
+delivered: set of delivered messages, initially empty.
+sent_type1: whether <type1, m> was already sent, initially false.
+received_type0[m]: set of senders from whom <type0, m> was received.
+received_type1[m]: set of senders from whom <type1, m> was received.
+
+7) MESSAGE TYPES
+
+<type0, m>: initial broadcast message.
+<type1, m>: support / echo message.
+
+Validation rules:
+
+Accept <type0, m> only from the designated broadcaster s.
+Count only messages from distinct processes.
+Send <type1, m> at most once.
+Deliver m at most once.
+
+8) INITIALIZATION
+
+delivered ← ∅
+sent_type1 ← false
+received_type0[m] ← ∅
+received_type1[m] ← ∅
+
+9) PROTOCOL PSEUDOCODE
+
+A) On external invocation:
+
+upon RB-Broadcast(m):
+    send <type0, m> to all processes
+    stop
+
+B) On message receive:
+
+upon receive(<type0, m>) from pj:
+    if pj ≠ s:
+        discard the message and stop
+
+    add pj to received_type0[m]
+
+    if received <type0, m> from the broadcaster s
+       and not already sent <type1, m>:
+        send <type1, m> to all processes
+
+upon receive(<type1, m>) from pj:
+    add pj to received_type1[m]
+
+    if received <type1, m> from at least f + 1 distinct processes
+       and not already sent <type1, m>:
+        send <type1, m> to all processes
+
+    if received <type1, m> from at least (n + f) / 2 distinct processes
+       and m not in delivered:
+        delivered ← delivered ∪ {m}
+        deliver(m)
+
+    stop
+10) DECISION / DELIVERY RULE
+
+Deliver m when <type1, m> has been received from at least (n + f) / 2 distinct processes.
+
+After delivery, add m to delivered.
+
+11) QUORUM / KEY STRUCTURAL ARGUMENT
+
+The algorithm uses thresholds to avoid trusting a single process. A Byzantine process alone cannot force delivery. Delivery requires support from multiple distinct processes. The f + 1 rule is important because among f + 1 senders, at least one must be correct.
+
+12) INVARIANTS
+
+I1 — Distinct sender counting: A process counts at most one message per sender.
+
+I1b — Sender validation: A correct process sends <type1, m> in response to <type0, m> only if <type0, m> was received from the designated broadcaster s.
+
+I2 — One Byzantine is insufficient: Since at most f processes are Byzantine, f + 1 support messages imply at least one correct supporter.
+
+I3 — Support amplification: If enough processes see <type1, m>, they forward <type1, m> to all.
+
+I4 — No duplicate delivery: A process delivers m at most once.
+
+13) CORRECTNESS ARGUMENT SKELETON
+
+RB-Validity: If the broadcaster is correct, all correct processes eventually receive <type0, m>, send <type1, m>, and eventually collect enough <type1, m> messages to deliver.
+
+RB-Agreement: If one correct process delivers, it has seen enough <type1, m> support. The forwarding rule using f + 1 helps spread this support so other correct processes also receive enough evidence.
+
+RB-Integrity: Distinct-sender counting and the delivered set prevent duplicate delivery. Since <type0, m> is accepted only from the designated broadcaster s, correct processes echo <type1, m> only for messages actually broadcast by s; a single Byzantine process cannot create enough support alone.

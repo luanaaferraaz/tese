@@ -1,0 +1,4 @@
+Properties:
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]

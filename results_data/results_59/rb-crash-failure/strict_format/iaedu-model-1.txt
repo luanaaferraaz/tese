@@ -1,0 +1,6 @@
+{"run_id": "6a58d215-91a0-4a67-ba15-3a846197883d", "type": "start", "content": "Processing"}
+
+{"run_id": "6a58d215-91a0-4a67-ba15-3a846197883d", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "6a58d215-91a0-4a67-ba15-3a846197883d", "type": "done", "content": "6a58d215-91a0-4a67-ba15-3a846197883d", "messageId": "None", "token_pct_used": 99.2}
+

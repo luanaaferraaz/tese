@@ -1,0 +1,14 @@
+
+
+Termination
+Validity
+Agreement
+Integrity
+
+Exact 1
+Satisfied ✓
+Non satisfied ✓
+Reasons: 
+Synchrony is required
+The f+1 lower bound is tight for CRASH-only failures
+I don't know any property with a different model of failure (byzantine)

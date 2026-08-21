@@ -1,0 +1,16 @@
+{"run_id": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "type": "start", "content": "Processing"}
+
+{"run_id": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "type": "token", "content": "Valid"}
+
+{"run_id": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "type": "token", "content": "ity - [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]"}
+
+{"run_id": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "type": "token", "content": ": Delivery rule triggers on every READY received past thre"}
+
+{"run_id": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "type": "token", "content": "shold; no check on delivered flag. (confidence: 9/10)\nNo creation - [sat"}
+
+{"run_id": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "type": "token", "content": "isfied] (confidence: 9/10)"}
+
+{"run_id": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Delivery rule triggers on every READY received past threshold; no check on delivered flag. (confidence: 9/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "type": "done", "content": "1dce2a32-b0d6-4ab4-a4d9-0c2d1166cd6e", "messageId": "cmrgf971j2ck8ke01wxf3h5nb"}
+

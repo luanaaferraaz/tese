@@ -1,0 +1,6 @@
+{"run_id": "662fce47-0826-49c0-abec-ec76ba49b6e7", "type": "start", "content": "Processing"}
+
+{"run_id": "662fce47-0826-49c0-abec-ec76ba49b6e7", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "662fce47-0826-49c0-abec-ec76ba49b6e7", "type": "done", "content": "662fce47-0826-49c0-abec-ec76ba49b6e7", "messageId": "None", "token_pct_used": 106.4}
+

@@ -1,0 +1,90 @@
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "start", "content": "Processing"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": ""}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "RB"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "-"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "Validity"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " -"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " ["}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "s"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "atisfied"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "]\n"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "RB"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "-"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "Agreement"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " -"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " ["}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "s"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "atisfied"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "]\n"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "RB"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "-"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "Integrity"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " -"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " ["}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "non"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " satisfied"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "]:"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " Byzantine"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " non"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "-b"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "road"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "caster"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " can"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " trigger"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " type"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "0"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": ","}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " causing"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " delivery"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " of"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " un"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": "broadcast"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": " m"}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "token", "content": ""}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [non satisfied]: Byzantine non-broadcaster can trigger type0, causing delivery of unbroadcast m", "tool_calls": [], "tool_call_id": null, "run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "response_metadata": {"model_provider": "openai", "id": "resp_07b9d9a937d85bbf006a6650cba1708193ab6c285a94f1e152", "created_at": 1785090251.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "85e371be-b437-4233-b86c-3a5a3f6ead72", "type": "done", "content": "85e371be-b437-4233-b86c-3a5a3f6ead72", "messageId": "cms24nlcv1ts9ke01xjmgcuyl"}
+

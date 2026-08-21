@@ -1,0 +1,7 @@
+Here is the precise evaluation of the algorithm's properties:
+
+```
+RB-Validity - [satisfied]
+RB-Agreement - [satisfied]
+RB-Integrity - [satisfied]
+```

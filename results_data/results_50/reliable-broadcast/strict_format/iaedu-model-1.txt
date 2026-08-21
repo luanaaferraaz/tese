@@ -1,0 +1,6 @@
+{"run_id": "06668d03-fab0-4882-a1a4-4eb53bc6a1d9", "type": "start", "content": "Processing"}
+
+{"run_id": "06668d03-fab0-4882-a1a4-4eb53bc6a1d9", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "06668d03-fab0-4882-a1a4-4eb53bc6a1d9", "type": "done", "content": "06668d03-fab0-4882-a1a4-4eb53bc6a1d9", "messageId": "None", "token_pct_used": 102.2}
+

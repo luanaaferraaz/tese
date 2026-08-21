@@ -1,0 +1,20 @@
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "start", "content": "Processing"}
+
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "token", "content": "R"}
+
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "token", "content": "B-Validity - [non satisfied]: Correct broadcaster's <type0,m> re"}
+
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "token", "content": "aches only n-1 processes; with f=1 Byzantine silent, only f correct rece"}
+
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "token", "content": "ivers get it, insufficient for f+1 type0 threshold to trigger type1.\n\nRB-Agreement"}
+
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "token", "content": " - [non satisfied]: A correct process may deliver on 2 type1 messages (1 poss"}
+
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "token", "content": "ibly Byzantine), while other correct processes receive no further type1 support to reach thre"}
+
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "token", "content": "shold.\n\nRB-Integrity - [satisfied]"}
+
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Correct broadcaster's <type0,m> reaches only n-1 processes; with f=1 Byzantine silent, only f correct receivers get it, insufficient for f+1 type0 threshold to trigger type1.\n\nRB-Agreement - [non satisfied]: A correct process may deliver on 2 type1 messages (1 possibly Byzantine), while other correct processes receive no further type1 support to reach threshold.\n\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "type": "done", "content": "063baa82-8cc9-43bd-b1a9-14c354acaab0", "messageId": "cms3ah7c82802ke01kgo6bc7p"}
+

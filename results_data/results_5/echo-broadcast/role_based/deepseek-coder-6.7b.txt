@@ -1,0 +1,19 @@
+## Validity Property
+- Validity - [satisfied]
+
+The validity property is met as it states that if a correct process p broadcasts a message v, then all other correct processes will accept the same message. This can be ensured by having each process keep track of all received messages and their counts in order to verify this property. If a process does not receive duplicate messages, it will always forward the ones that have been sent by the sender.
+
+## Agreement Property
+- Agreement - [satisfied]
+
+The agreement property is met as it states that if two correct processes q and r both accept different values v and u respectively, then these two values must be identical to ensure consistency of broadcasted messages. This can be ensured by having each process keep track of all received messages and their counts in order to verify this property. If a process does not receive duplicate messages with different contents, it will always forward the one that has been sent by the sender.
+
+## No Duplication Property
+- No duplication - [satisfied]
+
+The no duplication property is met as it states that there should be no message delivered more than once. This can be ensured by having each process keep track of all received messages and their counts in order to verify this property. If a process receives duplicate messages, the one with lower count will not be forwarded.
+
+## No Creation Property
+- No creation - [satisfied]
+
+The no creation property is met as it states that if a process delivers a message m with sender s, then m was previously broadcast by process s. This can be ensured by having each process keep track of all sent messages and their counts in order to verify this property. If a process delivers a new message that has not been sent before, the delivery will not proceed.

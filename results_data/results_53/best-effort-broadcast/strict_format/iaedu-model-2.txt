@@ -1,0 +1,6 @@
+{"run_id": "0253c28c-bf21-4e88-b309-f7065e0fb602", "type": "start", "content": "Processing"}
+
+{"run_id": "0253c28c-bf21-4e88-b309-f7065e0fb602", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "0253c28c-bf21-4e88-b309-f7065e0fb602", "type": "done", "content": "0253c28c-bf21-4e88-b309-f7065e0fb602", "messageId": "None", "token_pct_used": 106.4}
+

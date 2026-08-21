@@ -1,0 +1,5 @@
+Validity - [satisfied]
+Agreement - [satisfied]
+No duplication - [non satisfied]: A process may receive the same message multiple times and forward it to others, leading to duplication.
+No creation - [satisfied]
+The algorithm guarantees that any delivered message was previously broadcast by a correct process as long as the assumptions hold (fully connected network). If a message is received for which there are no ECHO messages, the sender might have been Byzantine and the message isn't valid according to the No creation property.

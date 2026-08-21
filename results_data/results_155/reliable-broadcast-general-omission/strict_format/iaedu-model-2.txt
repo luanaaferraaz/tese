@@ -1,0 +1,16 @@
+{"run_id": "4d5e6fd6-d657-4243-8821-3290131197a5", "type": "start", "content": "Processing"}
+
+{"run_id": "4d5e6fd6-d657-4243-8821-3290131197a5", "type": "token", "content": "Validity - ["}
+
+{"run_id": "4d5e6fd6-d657-4243-8821-3290131197a5", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 echoes; correct sender with"}
+
+{"run_id": "4d5e6fd6-d657-4243-8821-3290131197a5", "type": "token", "content": " send-omissions may deliver alone, but validity itself holds.\nNo duplication - [satisfied]"}
+
+{"run_id": "4d5e6fd6-d657-4243-8821-3290131197a5", "type": "token", "content": "\nNo creation - [satisfied]\nAgreement - [non satisfied]: Correct sender with send-omission failures may deliver m"}
+
+{"run_id": "4d5e6fd6-d657-4243-8821-3290131197a5", "type": "token", "content": " while too few correct processes receive it to reach f+1 threshold."}
+
+{"run_id": "4d5e6fd6-d657-4243-8821-3290131197a5", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 echoes; correct sender with send-omissions may deliver alone, but validity itself holds.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Correct sender with send-omission failures may deliver m while too few correct processes receive it to reach f+1 threshold.", "tool_calls": [], "tool_call_id": null, "run_id": "4d5e6fd6-d657-4243-8821-3290131197a5", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "4d5e6fd6-d657-4243-8821-3290131197a5", "type": "done", "content": "4d5e6fd6-d657-4243-8821-3290131197a5", "messageId": "cms3aqynn28cdke01tuw19clu"}
+

@@ -1,0 +1,11 @@
+Here are the results of evaluating the properties under your system model and assumptions. 
+
+**Correctness Properties:**
+1) **RB-Validity:** Satisfied. The broadcaster sends a message to itself, receives it, forwards it to all other processes, and delivers to all non-crashed processes.
+2) **RB-Agreement:** Non satisfied. There exists a possibility that if one process delivers a message, the rest of the correct processes may not receive this message and hence do not deliver it. This can happen due to the fact that the broadcaster does not know which process is going to crash in case there are f=1 faulty processes in the system.
+3) **RB-Integrity:** Satisfied. The delivered set prevents duplicate delivery. Since messages are only forwarded after receiving m, and each message type is only sent once for a given message m, all deliveries of distinct messages will be unique to that process.
+
+**Invariants:**
+1) **Forward before stop:** Satisfied. A process stops its handler as soon as it receives the message or if the message has been delivered. It does not continue processing further if a message is already being processed.
+2) **No duplicate delivery:** Satisfied. Each process delivers each message at most once, and only if m was broadcast.
+3) **Propagation:** Non satisfied. The invariant I3 in the pseudo-code implies that if a correct process receives a message, then all non-crashed neighbours eventually receive a forwarded copy of this message. However, it's not mentioned in the actual protocol description. Assuming this holds true and considering only one faulty process f=1 case as asked for, we would get satisfied condition.

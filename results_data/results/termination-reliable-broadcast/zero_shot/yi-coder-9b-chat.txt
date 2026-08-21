@@ -1,0 +1,11 @@
+Termination - [satisfied]
+This property holds as the protocol will deliver some message no matter what. The maximum number of rounds that could be executed is f+1, and in each round every process broadcasts a value or SF token to all other processes. Eventually at the end of Round f+1, either an actual broadcasted value m by s gets delivered or SF get delivered due to the fact that if no message is received for a round r<f+1 then (s,m,r+1) message is sent which will eventually lead to delivery of m.
+
+Validity - [satisfied]
+According to the validity property, if s is correct and broadcasts m, then all correct processes must eventually deliver m. In this algorithm, the sender s always delivers a value in round 1 itself. All other processes receive the same value over reliable channels, and therefore all correct processes will eventually receive it. After receiving for the first time, they broadcast (s,m,r+1) to all processes till round f+1.
+
+Agreement - [satisfied]
+If a correct process pi delivers m, then every correct process must eventually deliver m. This is because each round consists of every process either broadcasting (s,m,r) or SF and the agreement rule ensures that if a value is delivered in any round by some process it will be delivered in all subsequent rounds too due to the mechanism where if r≤f+1, then sender pi broadcasts the value m to all processes.
+
+Integrity - [satisfied]
+Every correct process delivers at most one message, and if it delivers a message m, then that message was broadcasted by s. This is true because every round consists of either broadcasting (s,m,r) or SF token till round f+1 by each process. Thus no additional messages beyond this can be delivered.

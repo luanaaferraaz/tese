@@ -1,0 +1,18 @@
+{"run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "type": "start", "content": "Processing"}
+
+{"run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "type": "token", "content": "Validity - [non"}
+
+{"run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "type": "token", "content": " satisfied]: Sender delivers immediately without f+1 distinct sources, but"}
+
+{"run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "type": "token", "content": " property holds; however relay logic may not guarantee others ("}
+
+{"run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "type": "token", "content": "confidence: 4/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/"}
+
+{"run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "type": "token", "content": "10)\nAgreement - [non satisfied]: Under general omission, receive-omission faulty processes plus f+1 threshold cannot guarantee all"}
+
+{"run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "type": "token", "content": " correct processes reach threshold (confidence: 6/10)"}
+
+{"run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 distinct sources, but property holds; however relay logic may not guarantee others (confidence: 4/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Under general omission, receive-omission faulty processes plus f+1 threshold cannot guarantee all correct processes reach threshold (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "type": "done", "content": "7d5bd134-5d15-49cd-9316-f2d1f70b155c", "messageId": "cmrm4dnvu5d6gke01rh186cv6"}
+

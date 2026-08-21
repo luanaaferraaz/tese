@@ -1,0 +1,6 @@
+Algorithm:
+ECHO BROADCAST
+
+Properties:
+Validity - [satisfied]
+Agreement - [satisfied]

@@ -1,0 +1,14 @@
+Algorithm:
+ALGORITHM: Reliable Broadcast (RB)
+
+Properties:
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [satisfied]
+
+Output:
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [satisfied]

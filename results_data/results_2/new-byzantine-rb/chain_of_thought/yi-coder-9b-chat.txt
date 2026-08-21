@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This algorithm guarantees RB-validity because, by design, if a correct broadcaster broadcasts m, then all correct processes eventually receive and deliver m.
+
+RB-Agreement - [satisfied]
+If one correct process delivers m, at least one of the <type1, m> messages was sent by a correct process due to the quorum / key structural argument. The agreement is satisfied because other correct processes see this support propagation, hence they reach the delivery threshold and agree on m.
+
+RB-Integrity - [satisfied]
+The algorithm enforces RB-integrity as a process delivers m only if it has already broadcast <type0, m>. A Byzantine process cannot force delivery because there is a quorum of f + 1 <type1, m> messages required.

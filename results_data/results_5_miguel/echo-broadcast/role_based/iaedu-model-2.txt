@@ -1,0 +1,14 @@
+{"run_id": "476b81fc-2359-4d07-93e2-bdc04b6288be", "type": "start", "content": "Processing"}
+
+{"run_id": "476b81fc-2359-4d07-93e2-bdc04b6288be", "type": "token", "content": "Validity -"}
+
+{"run_id": "476b81fc-2359-4d07-93e2-bdc04b6288be", "type": "token", "content": " [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]:"}
+
+{"run_id": "476b81fc-2359-4d07-93e2-bdc04b6288be", "type": "token", "content": " Delivery rule triggers on every READY receipt after threshold; no check on delivered flag. (confidence: 9"}
+
+{"run_id": "476b81fc-2359-4d07-93e2-bdc04b6288be", "type": "token", "content": "/10)\nNo creation - [satisfied] (confidence: 8/10)"}
+
+{"run_id": "476b81fc-2359-4d07-93e2-bdc04b6288be", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: Delivery rule triggers on every READY receipt after threshold; no check on delivered flag. (confidence: 9/10)\nNo creation - [satisfied] (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "476b81fc-2359-4d07-93e2-bdc04b6288be", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "476b81fc-2359-4d07-93e2-bdc04b6288be", "type": "done", "content": "476b81fc-2359-4d07-93e2-bdc04b6288be", "messageId": "cmrevvnvy0cinke012lhccdhl"}
+

@@ -1,0 +1,14 @@
+{"run_id": "33dbc5dd-e036-4b8c-97a9-57166042c0c5", "type": "start", "content": "Processing"}
+
+{"run_id": "33dbc5dd-e036-4b8c-97a9-57166042c0c5", "type": "token", "content": "Validity -"}
+
+{"run_id": "33dbc5dd-e036-4b8c-97a9-57166042c0c5", "type": "token", "content": " [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm has no delivery tracking; rel"}
+
+{"run_id": "33dbc5dd-e036-4b8c-97a9-57166042c0c5", "type": "token", "content": "ies solely on PL no duplication guarantee (confidence: 6/10)\nNo creation - [satisfied] (confidence: 9"}
+
+{"run_id": "33dbc5dd-e036-4b8c-97a9-57166042c0c5", "type": "token", "content": "/10)"}
+
+{"run_id": "33dbc5dd-e036-4b8c-97a9-57166042c0c5", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm has no delivery tracking; relies solely on PL no duplication guarantee (confidence: 6/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "33dbc5dd-e036-4b8c-97a9-57166042c0c5", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "33dbc5dd-e036-4b8c-97a9-57166042c0c5", "type": "done", "content": "33dbc5dd-e036-4b8c-97a9-57166042c0c5", "messageId": "cmrgey6bg2c9yke017sdf1fx1"}
+

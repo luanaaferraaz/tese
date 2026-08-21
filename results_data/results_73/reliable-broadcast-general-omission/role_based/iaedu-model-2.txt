@@ -1,0 +1,18 @@
+{"run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "type": "start", "content": "Processing"}
+
+{"run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "type": "token", "content": "Validity - ["}
+
+{"run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "type": "token", "content": "non satisfied]: Sender delivers immediately but omission failures may prevent f"}
+
+{"run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "type": "token", "content": "+1 distinct receptions at other correct processes (confidence: 7/10)\nNo"}
+
+{"run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "type": "token", "content": " duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Non"}
+
+{"run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "type": "token", "content": "-delivering correct process relays once but never reaches f+1 threshold if fa"}
+
+{"run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "type": "token", "content": "ulty processes omit sends (confidence: 7/10)"}
+
+{"run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately but omission failures may prevent f+1 distinct receptions at other correct processes (confidence: 7/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Non-delivering correct process relays once but never reaches f+1 threshold if faulty processes omit sends (confidence: 7/10)", "tool_calls": [], "tool_call_id": null, "run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "type": "done", "content": "40f65d8e-20ff-473b-9e7a-a709b36fb9b5", "messageId": "cmrkc4n9i49yxke01bmxx9r8q"}
+

@@ -1,0 +1,6 @@
+{"run_id": "0373eb30-6bc0-444b-87c6-0ab5e3e13f7d", "type": "start", "content": "Processing"}
+
+{"run_id": "0373eb30-6bc0-444b-87c6-0ab5e3e13f7d", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "0373eb30-6bc0-444b-87c6-0ab5e3e13f7d", "type": "done", "content": "0373eb30-6bc0-444b-87c6-0ab5e3e13f7d", "messageId": "None", "token_pct_used": 102.2}
+

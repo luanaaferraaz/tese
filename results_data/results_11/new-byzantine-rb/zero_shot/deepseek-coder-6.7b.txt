@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster sends <type0, m> to its neighbours upon invoking the RB-Broadcast operation. The receivers of this message also send back a support message <type1, m> to their neighbours if they receive at least one distinct <type0, m> from a process. Hence, all correct processes eventually deliver m.
+
+RB-Agreement - Satisfied
+If any correct process delivers m, it means that the broadcaster or another correct process sent out a message broadcasting m to its neighbours and at least one other process (either correct or byzantine) confirmed receipt of this message from this sender. Hence, all correct processes eventually deliver m.
+
+RB-Integrity - Satisfied
+A correct process delivers m only once due to the use of a "delivered" set that keeps track of delivered messages. A message cannot be re-broadcasted by ensuring it is not in this set after being delivered for the first time. Hence, no duplicate delivery occurs.

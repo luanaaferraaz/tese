@@ -1,0 +1,14 @@
+{"run_id": "8e04e72b-a4df-4698-b58a-e5b2dd3c0acd", "type": "start", "content": "Processing"}
+
+{"run_id": "8e04e72b-a4df-4698-b58a-e5b2dd3c0acd", "type": "token", "content": "R"}
+
+{"run_id": "8e04e72b-a4df-4698-b58a-e5b2dd3c0acd", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: With n=4, f"}
+
+{"run_id": "8e04e72b-a4df-4698-b58a-e5b2dd3c0acd", "type": "token", "content": "=1, threshold (n+f)/2=2 < 2f+1=3; Byzantine can cause disagreement (confidence: 8"}
+
+{"run_id": "8e04e72b-a4df-4698-b58a-e5b2dd3c0acd", "type": "token", "content": "/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "8e04e72b-a4df-4698-b58a-e5b2dd3c0acd", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2 < 2f+1=3; Byzantine can cause disagreement (confidence: 8/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "8e04e72b-a4df-4698-b58a-e5b2dd3c0acd", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "8e04e72b-a4df-4698-b58a-e5b2dd3c0acd", "type": "done", "content": "8e04e72b-a4df-4698-b58a-e5b2dd3c0acd", "messageId": "cmriv423s33ccke01rkcuwss0"}
+

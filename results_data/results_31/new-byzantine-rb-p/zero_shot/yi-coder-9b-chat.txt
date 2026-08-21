@@ -1,0 +1,5 @@
+1. RB-Validity: This algorithm is valid when the broadcaster is correct because it sends an initial broadcast message to its neighbours and correct receivers send support / confirmation messages back. The correct support then spreads, leading to a delivery rule that eventually delivers if the broadcaster is correct.
+
+2. RB-Agreement: This property holds true if one correct process delivers m. This process must have received f + 1 distinct <type1, m> messages from other correct processes because of the delivery rule and the fact that only f processes can be Byzantine. The support propagation ensures that any process receiving this many messages will also support m and forward it to its neighbours, leading to agreement among all correct processes on what they eventually deliver.
+
+3. RB-Termination: This algorithm always delivers because once a message is delivered, no further messages are added to the delivered set. As there can't be more than n messages in total and each process delivers at most once, termination is guaranteed.

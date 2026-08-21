@@ -1,0 +1,14 @@
+{"run_id": "b42f6a88-6b92-4a1e-9613-4edf8375ffcb", "type": "start", "content": "Processing"}
+
+{"run_id": "b42f6a88-6b92-4a1e-9613-4edf8375ffcb", "type": "token", "content": "R"}
+
+{"run_id": "b42f6a88-6b92-4a1e-9613-4edf8375ffcb", "type": "token", "content": "B-Validity - [satisfied] (confidence: 10/10)\nRB-Agreement - [non satisfied]: Broadcaster sends then"}
+
+{"run_id": "b42f6a88-6b92-4a1e-9613-4edf8375ffcb", "type": "token", "content": " stops; if it crashes mid-send, some correct processes may de"}
+
+{"run_id": "b42f6a88-6b92-4a1e-9613-4edf8375ffcb", "type": "token", "content": "liver while others never receive. (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 10/10)"}
+
+{"run_id": "b42f6a88-6b92-4a1e-9613-4edf8375ffcb", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 10/10)\nRB-Agreement - [non satisfied]: Broadcaster sends then stops; if it crashes mid-send, some correct processes may deliver while others never receive. (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 10/10)", "tool_calls": [], "tool_call_id": null, "run_id": "b42f6a88-6b92-4a1e-9613-4edf8375ffcb", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "b42f6a88-6b92-4a1e-9613-4edf8375ffcb", "type": "done", "content": "b42f6a88-6b92-4a1e-9613-4edf8375ffcb", "messageId": "cmrivf2xl33k2ke01xmlqkvc9"}
+

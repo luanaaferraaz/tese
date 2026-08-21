@@ -1,0 +1,15 @@
+1. Validity - Satisfied
+   
+   The algorithm guarantees that a correct process will eventually deliver a message, meaning no messages are lost and every node processes all messages correctly.
+
+2. No duplication - Satisfied
+
+   The delivered set prevents duplicate upcalls which ensures the "No duplication" property holds true. If the same message is delivered again, it would not be added to the delivered set thereby preventing duplicates.
+
+3. No creation - Satisfied
+
+   The algorithm does guarantee that if a correct process delivers a message, this message will have been broadcast by some other process. It simply forwards any messages which are received from other processes. Hence, every broadcast must be initiated by a separate process.
+
+4. Agreement - Satisfied
+
+   If a correct process i delivers m, it immediately sends m to all other processes via the reliable channels in the system ensuring that every correct process eventually receives and delivers m. This guarantees "Agreement" property holds true.

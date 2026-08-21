@@ -1,0 +1,18 @@
+{"run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "type": "start", "content": "Processing"}
+
+{"run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "type": "token", "content": "Validity - ["}
+
+{"run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 echoes;"}
+
+{"run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "type": "token", "content": " if sender is send-omission faulty, correct processes never deliver. (confidence: 7/10)\nNo duplication - [satis"}
+
+{"run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "type": "token", "content": "fied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Delivering process may om"}
+
+{"run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "type": "token", "content": "it relays; f+1 threshold with n>2f insufficient to guarantee all correct processes reach thre"}
+
+{"run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "type": "token", "content": "shold. (confidence: 6/10)"}
+
+{"run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 echoes; if sender is send-omission faulty, correct processes never deliver. (confidence: 7/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Delivering process may omit relays; f+1 threshold with n>2f insufficient to guarantee all correct processes reach threshold. (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "type": "done", "content": "dbd7c456-15e3-4ee8-ba11-134dc6f2400e", "messageId": "cmrero33r02qbke01dk5s33gh"}
+

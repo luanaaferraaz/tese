@@ -1,0 +1,13 @@
+Based on the provided pseudo-code and assumptions, here is my analysis of each property with respect to this algorithm.
+
+1) RB-Validity: This can be analyzed by examining how the broadcaster (process where `RB-Broadcast(m)` is invoked) behaves in the initial state (after initialization). In this context, if the broadcaster sends `<type0, m>` to itself before any other process receives it, then all correct processes eventually deliver `m`. 
+
+The broadcaster's behavior at the start of execution is dictated by the line in A): "upon RB-Broadcast(m)", which ensures that a message broadcast is sent only once and also specifies its sender (broadcaster itself). So, if this operation is invoked correctly, then `RB-Validity` is satisfied.
+
+2) RB-Agreement: This property requires examination of how correct processes react to the receipt of messages from other correct processes. The broadcaster must ensure that all correct processes eventually receive the same message and perform a delivery operation on it. 
+
+This can be analyzed by looking at line B) in the pseudo-code, where the receiving process checks whether it has already sent `<type1, m>` before forwarding it to other processes. If this condition is satisfied (i.e., `m` is not yet delivered), then the message is forwarded and delivered. Therefore, if any correct process delivers `m`, all others eventually receive and deliver `m`. Hence, `RB-Agreement` is also satisfied.
+
+3) RB-Integrity: This property concerns ensuring that a message can only be delivered once. 
+
+This can be checked by observing the local state variables used to keep track of already delivered messages (the `delivered` set). Initially, it's empty and populated as the algorithm progresses based on the messages received. So, if any process tries to deliver `m` when it is in the `delivered` set, this would mean that `m` has been delivered previously. Hence, only new messages are allowed to be delivered thereby maintaining integrity of message delivery. Therefore, assuming no crashes and faults, `RB-Integrity` is satisfied.

@@ -1,0 +1,8 @@
+1. RB-Validity - [satisfied]
+   This property is satisfied in the algorithm as once the correct process broadcasts a message 'm', it receives that message and forwards to its neighbours before stopping its handler. Moreover, since the channels are reliable all forwarded messages will eventually reach the other correct processes. Therefore, all correct processes will eventually deliver m.
+
+2. RB-Agreement - [satisfied]
+   If one correct process delivers a message 'm', it means that this process has received and forwarded the message to its neighbours. Hence, as all correct processes follow the same algorithm they will eventually receive this message and deliver it. Therefore, all correct processes eventually deliver m if one does.
+
+3. RB-Integrity - [satisfied]
+   The algorithm ensures no duplicate delivery of messages by using a set 'delivered' that keeps track of delivered messages. This set is updated only when a new message 'm' is to be delivered and prevents a process from delivering m more than once as the same message can only be forwarded after it has been received. Thus, a correct process delivers m at most once, and only if m was broadcasted previously.

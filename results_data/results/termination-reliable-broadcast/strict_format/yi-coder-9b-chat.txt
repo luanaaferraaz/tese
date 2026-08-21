@@ -1,0 +1,9 @@
+Termination - [satisfied]
+This protocol guarantees that every correct process eventually delivers some message. The process begins by sending a message in the first round to all processes, which will take at most f+1 rounds. For each subsequent round, if the sender's message is not yet delivered, it will re-send it. Therefore, after f+1 rounds or less, every correct process has received and will eventually deliver some message.
+
+Validity - [non satisfied]: Crash failures can cause a broadcasted m to be delayed or lost without any correct process delivering it.
+
+Agreement - [satisfied]
+This property holds because the protocol ensures that if a correct process delivers m, then all correct processes eventually deliver m. The sender's message is the only value that can be delivered, and all processes receive it in the end. Therefore, every correct process will agree on what to deliver.
+
+Integrity - [non satisfied]: A faulty process could potentially send multiple distinct messages or send a non-SF token.

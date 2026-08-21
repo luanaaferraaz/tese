@@ -1,0 +1,16 @@
+{"run_id": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "type": "start", "content": "Processing"}
+
+{"run_id": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "type": "token", "content": "R"}
+
+{"run_id": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Delivery on 1 type1 message allows a single"}
+
+{"run_id": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "type": "token", "content": " Byzantine sender to make one correct deliver while others don't.\nRB-Integ"}
+
+{"run_id": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "type": "token", "content": "rity - [non satisfied]: Byzantine can send type1 for m never broadcast; one type"}
+
+{"run_id": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "type": "token", "content": "1 suffices for delivery."}
+
+{"run_id": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Delivery on 1 type1 message allows a single Byzantine sender to make one correct deliver while others don't.\nRB-Integrity - [non satisfied]: Byzantine can send type1 for m never broadcast; one type1 suffices for delivery.", "tool_calls": [], "tool_call_id": null, "run_id": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "type": "done", "content": "0973b5dd-dcba-4d7d-94d3-b0df38fc45fd", "messageId": "cms24gibl1tk7ke01i2bwlokl"}
+

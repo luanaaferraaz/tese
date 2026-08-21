@@ -1,0 +1,6 @@
+{"run_id": "98e723d5-b446-463b-9add-1a18f6dfcf90", "type": "start", "content": "Processing"}
+
+{"run_id": "98e723d5-b446-463b-9add-1a18f6dfcf90", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "98e723d5-b446-463b-9add-1a18f6dfcf90", "type": "done", "content": "98e723d5-b446-463b-9add-1a18f6dfcf90", "messageId": "None", "token_pct_used": 102.2}
+

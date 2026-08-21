@@ -1,0 +1,8 @@
+1. RB-Validity - [satisfied]
+This property is satisfied because the algorithm ensures that all correct processes receive the message sent by the broadcaster. As the channels are reliable and there are no failures, this means all correct processes eventually deliver the message.
+
+2. RB-Agreement - [satisfied]
+Again, this property is satisfied due to the inherent characteristics of our algorithm. If one process delivers a message, then since the message was broadcasted by the broadcaster, it is guaranteed that all other correct processes receive and eventually deliver it.
+
+3. RB-Integrity - [satisfied]
+The integrity property is also satisfied because once a process broadcasts a message (checked through 'sent_type0'), it does not send another identical one. Further, messages are delivered only when they're received, thus ensuring that each process delivers any given message exactly once.

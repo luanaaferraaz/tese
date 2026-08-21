@@ -1,0 +1,10 @@
+1. Validity - [satisfied]
+A correct process broadcasts m and delivers it immediately, satisfying validity.
+
+2. No duplication - [satisfied]
+The protocol ensures that a process only delivers each message once by maintaining a 'delivered' set which is checked before delivering a message.
+
+3. No creation - [satisfied]
+A correct process only sends DATA or RELAY for messages it has actually seen, satisfying no creation. The links between correct processes ensure the message chain traces back to the original broadcaster.
+
+4. Agreement - [non satisfied]: If sender crashes mid-broadcast, some correct processes may never receive m

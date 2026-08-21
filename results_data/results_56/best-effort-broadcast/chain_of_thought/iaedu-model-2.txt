@@ -1,0 +1,6 @@
+{"run_id": "75cbb813-3aec-4fae-859c-2511cee354c6", "type": "start", "content": "Processing"}
+
+{"run_id": "75cbb813-3aec-4fae-859c-2511cee354c6", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "75cbb813-3aec-4fae-859c-2511cee354c6", "type": "done", "content": "75cbb813-3aec-4fae-859c-2511cee354c6", "messageId": "None", "token_pct_used": 106.4}
+

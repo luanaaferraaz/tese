@@ -1,0 +1,6 @@
+{"run_id": "61ae5f3b-bc6f-41b1-819b-ec3083a41e3c", "type": "start", "content": "Processing"}
+
+{"run_id": "61ae5f3b-bc6f-41b1-819b-ec3083a41e3c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "61ae5f3b-bc6f-41b1-819b-ec3083a41e3c", "type": "done", "content": "61ae5f3b-bc6f-41b1-819b-ec3083a41e3c", "messageId": "None", "token_pct_used": 102.2}
+

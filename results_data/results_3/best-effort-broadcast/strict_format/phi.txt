@@ -1,0 +1,7 @@
+ The algorithm is designed to broadcast a message from one process to all other processes in the system. It assumes perfect point-to-point links and relies on the existence of these links for resilience. The algorithm's correctness properties ensure that each process eventually receives the message, it does not create or duplicate messages, and messages are delivered only once by their correct sender.
+
+The algorithm has no local state, so there is no need for initialization. However, the system must validate the uniqueness and delivery of messages before they can be passed on to the upper layer. The protocol involves sending the message using a broadcast primitive when it is invoked externally. When a process receives a message, it triggers a deliver event, which is then processed by the external broadcasting algorithm.
+
+The decision rule ensures that a process only delivers a message if the module triggering the delivery event was correct and delivered the message. This guarantees reliability and eliminates the possibility of incorrect messages being distributed. The algorithm has no quorum requirements, so it can broadcast to any number of processes.
+
+The algorithm's integrity is ensured by the perfect point-to-point links that guarantee that a process delivers a message only once. There are no correctness arguments for this primitive as it is simply a broadcasting mechanism. 

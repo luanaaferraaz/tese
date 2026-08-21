@@ -1,0 +1,10 @@
+Algorithm analysis:
+
+RB-Validity - [satisfied]
+In the algorithm, if a correct broadcaster broadcasts m, then all correct processes eventually deliver m. This is because once the correct broadcaster sends <type0, m> to its neighbours and receives at least 1 distinct process's <type0 message, it will send a <type1, m> message to its neighbours. The supporting messages are propagated by each process who received f + 1 <type1, m> messages until it is delivered.
+
+RB-Agreement - [satisfied]
+If one correct process delivers m, then all correct processes eventually deliver m. This is because if a process receives f + 1 <type1, m> messages from other correct processes via the support propagation mechanism, they will reach the same delivery threshold and deliver m in agreement with the first correct process who delivered it.
+
+RB-Integrity - [satisfied]
+A correct process delivers m only once because of the "delivered" set. Since f + 1 support is required to deliver a message, a Byzantine process alone cannot force delivery if the algorithm's quorum condition (f + 1 distinct senders) is not violated.

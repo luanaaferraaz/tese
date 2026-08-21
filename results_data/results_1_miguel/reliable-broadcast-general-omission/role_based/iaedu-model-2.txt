@@ -1,0 +1,16 @@
+{"run_id": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "type": "start", "content": "Processing"}
+
+{"run_id": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "type": "token", "content": "Validity - ["}
+
+{"run_id": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 threshold; if sender is"}
+
+{"run_id": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "type": "token", "content": " correct but isolated by omissions, others may not deliver.\nNo"}
+
+{"run_id": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "type": "token", "content": " duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Faulty sender may de"}
+
+{"run_id": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "type": "token", "content": "liver to fewer than f+1 correct processes, preventing threshold and relay amplification."}
+
+{"run_id": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 threshold; if sender is correct but isolated by omissions, others may not deliver.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Faulty sender may deliver to fewer than f+1 correct processes, preventing threshold and relay amplification.", "tool_calls": [], "tool_call_id": null, "run_id": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "type": "done", "content": "aeb0d5bb-a3fc-4836-b82c-ac8af7001515", "messageId": "cmr92hdiy5fldke01h6qljig3"}
+

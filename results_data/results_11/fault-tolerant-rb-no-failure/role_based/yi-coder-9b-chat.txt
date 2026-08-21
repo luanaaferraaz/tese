@@ -1,0 +1,8 @@
+1) RB-Validity - satisfied
+The correctness of this algorithm implies that all correct receivers will eventually receive the broadcast message. The reliable communication channels guarantee that no messages are lost, and since there are no faulty processes in our model, it ensures a correct process delivers m to another correct process eventually.
+
+2) RB-Agreement - satisfied
+If one process delivers m, then by the correctness of this algorithm all other processes receive <type0, m> from the broadcaster, so they also deliver m. This is guaranteed by the algorithm's design which broadcasts once and ensures message delivery to every correct process.
+
+3) RB-Integrity - satisfied
+The integrity property holds as it is inherent in this algorithm. The delivered set prevents duplicate delivery of a message. Since messages are not created or duplicated, any delivered message must have been broadcasted by the sender and thus originates from the broadcaster.

@@ -1,0 +1,16 @@
+{"run_id": "3428ead6-45b3-4f1d-b364-f8109384c09d", "type": "start", "content": "Processing"}
+
+{"run_id": "3428ead6-45b3-4f1d-b364-f8109384c09d", "type": "token", "content": "Validity - ["}
+
+{"run_id": "3428ead6-45b3-4f1d-b364-f8109384c09d", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 threshold, but correct sender with"}
+
+{"run_id": "3428ead6-45b3-4f1d-b364-f8109384c09d", "type": "token", "content": " only 1 correct process cannot satisfy threshold elsewhere; actually sender self"}
+
+{"run_id": "3428ead6-45b3-4f1d-b364-f8109384c09d", "type": "token", "content": "-delivers fine.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Faulty sender may de"}
+
+{"run_id": "3428ead6-45b3-4f1d-b364-f8109384c09d", "type": "token", "content": "liver to one correct process via f colluding omission-faulty relays; threshold f+1 insufficient."}
+
+{"run_id": "3428ead6-45b3-4f1d-b364-f8109384c09d", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 threshold, but correct sender with only 1 correct process cannot satisfy threshold elsewhere; actually sender self-delivers fine.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Faulty sender may deliver to one correct process via f colluding omission-faulty relays; threshold f+1 insufficient.", "tool_calls": [], "tool_call_id": null, "run_id": "3428ead6-45b3-4f1d-b364-f8109384c09d", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "3428ead6-45b3-4f1d-b364-f8109384c09d", "type": "done", "content": "3428ead6-45b3-4f1d-b364-f8109384c09d", "messageId": "cmrd7jnya82jwke01uql88phz"}
+

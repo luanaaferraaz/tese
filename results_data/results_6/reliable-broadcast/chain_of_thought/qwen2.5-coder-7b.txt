@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [non satisfied]: Message may not be delivered to all correct processes due to crashes.

@@ -1,0 +1,13 @@
+1) Validity: For a correct process p to deliver m, it must have received 2f+1 READY(m) from other processes. So, all the correct processes agree on the same value for delivery.
+
+2) Agreement: If two correct processes q and r accept v and u respectively, then they must both receive 2f+1 READY messages each containing either v or u. Hence, if a process accepts any message, it will eventually deliver that message.
+
+3) No duplication: Processes never send ECHO or READY for different values in the same instance. This ensures that there is no duplication of work and every process agrees on one value only.
+
+4) No creation: There are at least f+1 correct processes that have sent READY(m) if a correct process delivers m. Therefore, no new value can be created after delivery.
+
+So the final results for the properties are:
+- Validity - [satisfied]
+- Agreement - [satisfied]
+- No duplication - [satisfied]
+- No creation - [non satisfied]: A new value cannot be created after a message has been delivered.

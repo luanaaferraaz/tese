@@ -1,0 +1,10 @@
+Validity - [satisfied]
+The correct process can only broadcast a message m if it is a correct process. It guarantees that every correct process eventually delivers the message m which satisfies Validity.
+
+No duplication - [satisfied]
+Every correct process broadcasts at most once, and the delivered set ensures that they deliver at most once. Therefore No-duplication holds true.
+
+No creation - [satisfied]
+The correctness of all processes and the reliable nature of communication ensure that no incorrect processes create new messages after a crash which satisfies 'No Creation' property.
+
+Agreement - [non satisfied]: The algorithm does not have a mechanism to ensure Agreement, i.e., if a correct process delivers m then every other correct process eventually delivers m after the sender has delivered it. Thus, we need to add more steps in our pseudocode or improve the algorithm to provide such a mechanism.

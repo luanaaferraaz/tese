@@ -1,0 +1,14 @@
+{"run_id": "a577409c-50f0-4d3a-b913-43c13e63f27c", "type": "start", "content": "Processing"}
+
+{"run_id": "a577409c-50f0-4d3a-b913-43c13e63f27c", "type": "token", "content": "R"}
+
+{"run_id": "a577409c-50f0-4d3a-b913-43c13e63f27c", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes"}
+
+{"run_id": "a577409c-50f0-4d3a-b913-43c13e63f27c", "type": "token", "content": " after sending type0 to itself but before receipt processing, no other process delivers. (confidence: 8/10)"}
+
+{"run_id": "a577409c-50f0-4d3a-b913-43c13e63f27c", "type": "token", "content": "\nRB-Integrity - [satisfied] (confidence: 10/10)"}
+
+{"run_id": "a577409c-50f0-4d3a-b913-43c13e63f27c", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself but before receipt processing, no other process delivers. (confidence: 8/10)\nRB-Integrity - [satisfied] (confidence: 10/10)", "tool_calls": [], "tool_call_id": null, "run_id": "a577409c-50f0-4d3a-b913-43c13e63f27c", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "a577409c-50f0-4d3a-b913-43c13e63f27c", "type": "done", "content": "a577409c-50f0-4d3a-b913-43c13e63f27c", "messageId": "cmrm47kv35cyike01gv2uga4w"}
+

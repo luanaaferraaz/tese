@@ -1,0 +1,19 @@
+Analyze the following algorithm.
+
+Algorithm:
+{algorithm}
+
+Evaluate each property strictly.
+
+Properties:
+{properties}
+
+Rules:
+- Output EXACTLY one line per property
+- Allowed formats ONLY:
+  <property> - [satisfied]
+  <property> - [non satisfied]: <reason>
+- Do not add any extra text
+- Do not reorder properties
+- If uncertain, output [non satisfied]
+- Reason must be ≤ 20 words

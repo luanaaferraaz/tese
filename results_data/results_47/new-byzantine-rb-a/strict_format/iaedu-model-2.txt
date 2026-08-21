@@ -1,0 +1,12 @@
+{"run_id": "06ba64ce-e281-4daf-a1a1-e77e708c8bb8", "type": "start", "content": "Processing"}
+
+{"run_id": "06ba64ce-e281-4daf-a1a1-e77e708c8bb8", "type": "token", "content": "R"}
+
+{"run_id": "06ba64ce-e281-4daf-a1a1-e77e708c8bb8", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Byzantine sends type1 to only one corre"}
+
+{"run_id": "06ba64ce-e281-4daf-a1a1-e77e708c8bb8", "type": "token", "content": "ct process; others get one type1, below f+1 threshold.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "06ba64ce-e281-4daf-a1a1-e77e708c8bb8", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Byzantine sends type1 to only one correct process; others get one type1, below f+1 threshold.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "06ba64ce-e281-4daf-a1a1-e77e708c8bb8", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "06ba64ce-e281-4daf-a1a1-e77e708c8bb8", "type": "done", "content": "06ba64ce-e281-4daf-a1a1-e77e708c8bb8", "messageId": "cmqva5h4b5pecp701l25cvizs"}
+

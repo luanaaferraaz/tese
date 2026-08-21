@@ -1,0 +1,2 @@
+ The algorithm is called "Bracha's Reliable Broadcast" and it is designed to handle the Byzantine problem in a reliable way. It has been successfully tested and proven effective by various organizations like NASA. Let me explain its different components.
+

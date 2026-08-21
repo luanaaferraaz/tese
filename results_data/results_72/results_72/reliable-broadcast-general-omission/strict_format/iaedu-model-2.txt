@@ -1,0 +1,18 @@
+{"run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "type": "start", "content": "Processing"}
+
+{"run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "type": "token", "content": "Validity -"}
+
+{"run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "type": "token", "content": " [non satisfied]: Sender may have send-omission on all links, failing to deliver despite self-del"}
+
+{"run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "type": "token", "content": "ivery counted. (confidence: 4/10)\nNo duplication - [satisfied] (confidence:"}
+
+{"run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "type": "token", "content": " 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: With f+1 thre"}
+
+{"run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "type": "token", "content": "shold and n>2f, delivering process may have only f+1 sources, insufficient to guarantee others"}
+
+{"run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "type": "token", "content": " reach threshold. (confidence: 6/10)"}
+
+{"run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender may have send-omission on all links, failing to deliver despite self-delivery counted. (confidence: 4/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: With f+1 threshold and n>2f, delivering process may have only f+1 sources, insufficient to guarantee others reach threshold. (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "1947ebc6-d02c-4452-86b8-45898dc3efed", "type": "done", "content": "1947ebc6-d02c-4452-86b8-45898dc3efed", "messageId": "cmrivkrcz33p2ke01apigc64g"}
+

@@ -1,0 +1,6 @@
+{"run_id": "23518a59-ce9e-403e-bcce-2efe33c43856", "type": "start", "content": "Processing"}
+
+{"run_id": "23518a59-ce9e-403e-bcce-2efe33c43856", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "23518a59-ce9e-403e-bcce-2efe33c43856", "type": "done", "content": "23518a59-ce9e-403e-bcce-2efe33c43856", "messageId": "None", "token_pct_used": 106.4}
+

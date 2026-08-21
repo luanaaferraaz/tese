@@ -1,0 +1,6 @@
+{"run_id": "0cf36685-863e-4931-8f8a-a30e452e3648", "type": "start", "content": "Processing"}
+
+{"run_id": "0cf36685-863e-4931-8f8a-a30e452e3648", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "0cf36685-863e-4931-8f8a-a30e452e3648", "type": "done", "content": "0cf36685-863e-4931-8f8a-a30e452e3648", "messageId": "None", "token_pct_used": 106.4}
+

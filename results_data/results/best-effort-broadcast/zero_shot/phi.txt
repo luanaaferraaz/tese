@@ -1,0 +1,1 @@
+ Hi there! The algorithm is a Best-Effort Broadcast. It's used for broadcasting messages to multiple processes in a system. 

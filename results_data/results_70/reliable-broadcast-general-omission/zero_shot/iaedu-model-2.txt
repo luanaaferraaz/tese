@@ -1,0 +1,20 @@
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "start", "content": "Processing"}
+
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "token", "content": "Validity -"}
+
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "token", "content": " [satisfied] (confidence: 9/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [non"}
+
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "token", "content": " satisfied]: Faulty process can relay message never broadcast; f+1 thre"}
+
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "token", "content": "shold insufficient since faulty relayers may fabricate and"}
+
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "token", "content": " forward. (confidence: 6/10)\nAgreement - [non satisfied]: Sender may de"}
+
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "token", "content": "liver locally then omit sends; if fewer than f+1 correct processes receive, no rel"}
+
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "token", "content": "ay threshold reached. (confidence: 7/10)"}
+
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 9/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [non satisfied]: Faulty process can relay message never broadcast; f+1 threshold insufficient since faulty relayers may fabricate and forward. (confidence: 6/10)\nAgreement - [non satisfied]: Sender may deliver locally then omit sends; if fewer than f+1 correct processes receive, no relay threshold reached. (confidence: 7/10)", "tool_calls": [], "tool_call_id": null, "run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "type": "done", "content": "e9e0b902-575f-4765-8273-fa99cd3b0fba", "messageId": "cmrerqolc02znke01u11e9je8"}
+

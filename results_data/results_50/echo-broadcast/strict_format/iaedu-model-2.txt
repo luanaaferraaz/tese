@@ -1,0 +1,6 @@
+{"run_id": "c218c100-60a0-4fb6-aa21-bff1cde13391", "type": "start", "content": "Processing"}
+
+{"run_id": "c218c100-60a0-4fb6-aa21-bff1cde13391", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "c218c100-60a0-4fb6-aa21-bff1cde13391", "type": "done", "content": "c218c100-60a0-4fb6-aa21-bff1cde13391", "messageId": "None", "token_pct_used": 106.4}
+

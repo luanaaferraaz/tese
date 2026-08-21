@@ -1,0 +1,16 @@
+{"run_id": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "type": "start", "content": "Processing"}
+
+{"run_id": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "type": "token", "content": "R"}
+
+{"run_id": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold (n+f)/2="}
+
+{"run_id": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "type": "token", "content": "2.5\u21923 with n=4,f=1; two correct deliverers need over"}
+
+{"run_id": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "type": "token", "content": "lap of f+1 correct echoes, not guaranteed. (confidence: 6/10)\nRB-"}
+
+{"run_id": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "type": "token", "content": "Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: Threshold (n+f)/2=2.5\u21923 with n=4,f=1; two correct deliverers need overlap of f+1 correct echoes, not guaranteed. (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "type": "done", "content": "cd63b5bb-d521-4b63-af80-d9bbfaa76b5a", "messageId": "cmrnkgter0fstke0131ufstuo"}
+

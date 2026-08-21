@@ -1,0 +1,14 @@
+{"run_id": "7af35eaa-1be5-44f7-89fd-f2d4af7667c8", "type": "start", "content": "Processing"}
+
+{"run_id": "7af35eaa-1be5-44f7-89fd-f2d4af7667c8", "type": "token", "content": "R"}
+
+{"run_id": "7af35eaa-1be5-44f7-89fd-f2d4af7667c8", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 rounds to ins"}
+
+{"run_id": "7af35eaa-1be5-44f7-89fd-f2d4af7667c8", "type": "token", "content": "ufficient value; two correct processes may deliver while third cannot.\nRB-"}
+
+{"run_id": "7af35eaa-1be5-44f7-89fd-f2d4af7667c8", "type": "token", "content": "Integrity - [satisfied]"}
+
+{"run_id": "7af35eaa-1be5-44f7-89fd-f2d4af7667c8", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 rounds to insufficient value; two correct processes may deliver while third cannot.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "7af35eaa-1be5-44f7-89fd-f2d4af7667c8", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "7af35eaa-1be5-44f7-89fd-f2d4af7667c8", "type": "done", "content": "7af35eaa-1be5-44f7-89fd-f2d4af7667c8", "messageId": "cms244xvt1t79ke01w9c8bttl"}
+

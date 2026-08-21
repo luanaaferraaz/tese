@@ -1,0 +1,3 @@
+RB-Validity - [non satisfied]: A correct process receiving a type0 message does not guarantee a type1 message will be generated or forwarded to all processes.
+RB-Agreement - [non satisfied]: Agreement fails if a message is delivered by one correct process but no other correct process receives sufficient type1 messages to trigger delivery.
+RB-Integrity - [satisfied]

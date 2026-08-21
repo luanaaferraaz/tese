@@ -1,0 +1,6 @@
+{"run_id": "ff20ca3c-4041-4d6d-887d-b4abcb67beb1", "type": "start", "content": "Processing"}
+
+{"run_id": "ff20ca3c-4041-4d6d-887d-b4abcb67beb1", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ff20ca3c-4041-4d6d-887d-b4abcb67beb1", "type": "done", "content": "ff20ca3c-4041-4d6d-887d-b4abcb67beb1", "messageId": "None", "token_pct_used": 102.2}
+

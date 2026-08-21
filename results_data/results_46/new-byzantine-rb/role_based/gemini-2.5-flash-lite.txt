@@ -1,0 +1,3 @@
+RB-Validity - [non satisfied]: Type0 message is sent to neighbours. If neighbours are Byzantine, they might not relay Type1, preventing delivery.
+RB-Agreement - [non satisfied]: Delivery depends on receiving Type1 from f+1 processes. A Byzantine process might prevent this quorum.
+RB-Integrity - [satisfied]

@@ -1,0 +1,13 @@
+Algorithm: Bracha’s Reliable Broadcast
+
+1) Validity - [satisfied]
+   The algorithm ensures that a message is broadcasted by a correct process, it cannot be falsified or changed. This property holds true as the algorithm does not allow any modification of messages once they are sent and only checks for their delivery, ensuring that all processes receive identical messages.
+
+2) Agreement - [non satisfied]
+   The agreement property may not hold true in certain cases where a single process is faulty or behaves unpredictably causing some processes to accept different values for the same message. This could be remedied by introducing checksumming of messages and ensuring that multiple instances of the same value do not get through, but this would also make the protocol more complex.
+
+3) No duplication - [satisfied]
+   The algorithm ensures no single message is delivered more than once. Once a process receives a SEND(m), it increments an echo_count and if that count reaches (n+f)/2, it sends an ECHO(m). This ECHO(m) cannot be received by the same sender again ensuring no duplication of messages.
+
+4) No creation - [satisfied]
+   The algorithm ensures that a process is only delivering a message if it has previously sent this message using SEND(m). Once a process receives a READY(m), it increments a ready_count and delivers the message when this count reaches (n+f)/2. This means, a process cannot create new messages without having received a corresponding SEND(m) from the sender.

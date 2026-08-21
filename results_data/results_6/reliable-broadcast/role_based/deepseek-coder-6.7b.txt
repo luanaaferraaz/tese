@@ -1,0 +1,6 @@
+```
+Validity - [Satisfied]
+No duplication - [Satisfied]
+No creation - [Satisfied]: Messages are created by the process that broadcasts them.
+Agreement - [Satisfied]
+```

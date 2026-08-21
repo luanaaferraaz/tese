@@ -1,0 +1,16 @@
+{"run_id": "1292bbb8-5825-47e2-900d-12fbd1d01631", "type": "start", "content": "Processing"}
+
+{"run_id": "1292bbb8-5825-47e2-900d-12fbd1d01631", "type": "token", "content": "R"}
+
+{"run_id": "1292bbb8-5825-47e2-900d-12fbd1d01631", "type": "token", "content": "B-Validity - [satisfied] (confidence: 10/10)\nRB-Agreement - [non satisfied]: Broadcaster s"}
+
+{"run_id": "1292bbb8-5825-47e2-900d-12fbd1d01631", "type": "token", "content": "ends to all then stops; if broadcaster crashes mid-send, some corre"}
+
+{"run_id": "1292bbb8-5825-47e2-900d-12fbd1d01631", "type": "token", "content": "ct processes may never receive m. (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: "}
+
+{"run_id": "1292bbb8-5825-47e2-900d-12fbd1d01631", "type": "token", "content": "10/10)"}
+
+{"run_id": "1292bbb8-5825-47e2-900d-12fbd1d01631", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 10/10)\nRB-Agreement - [non satisfied]: Broadcaster sends to all then stops; if broadcaster crashes mid-send, some correct processes may never receive m. (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 10/10)", "tool_calls": [], "tool_call_id": null, "run_id": "1292bbb8-5825-47e2-900d-12fbd1d01631", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "1292bbb8-5825-47e2-900d-12fbd1d01631", "type": "done", "content": "1292bbb8-5825-47e2-900d-12fbd1d01631", "messageId": "cmrgfb6p22cmuke01un82w50s"}
+

@@ -1,0 +1,5 @@
+1. RB-Validity: This property is always satisfied in the No Failure case because the reliable broadcast algorithm ensures that correct processes will eventually receive any message broadcast by a correct process. In this case, the message is guaranteed to be delivered if it was sent once via <type0, m>.
+2. RB-Agreement: This property is also satisfied in the No Failure case as all correct processes have the same view of the logs and therefore agree on what messages are eventually delivered. If one process delivers a message, then all other processes will receive this message over their reliable channels.
+3. RB-Integrity: This property can be satisfied if it's assumed that no duplicate or maliciously created messages are allowed in the system. The algorithm ensures that each process only delivers a message once and that any delivered message must have been sent by the broadcaster via <type0, m> as per the message types defined in the protocol.
+
+The pseudo code provided validates these properties under the No Failure scenario.

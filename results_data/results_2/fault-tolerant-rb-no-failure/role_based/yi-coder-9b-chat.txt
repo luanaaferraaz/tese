@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+In the No Failure model, since all channels are reliable and no process fails, every correct process eventually receives the message broadcasted by the initiator. This ensures RB-Validity.
+
+RB-Agreement - Satisfied
+If one correct process delivers a message m, then all other correct processes will eventually deliver it as well because of the reliable communication channels. This adheres to the RB-Agreement property.
+
+RB-Integrity - Satisfied
+The algorithm ensures that each process delivers any given message at most once and only if that message was previously broadcasted. The integrity is maintained due to the mechanism of tracking delivered messages in a set, preventing duplicate deliveries.

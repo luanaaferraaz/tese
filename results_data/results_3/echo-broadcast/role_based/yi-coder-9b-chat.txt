@@ -1,0 +1,10 @@
+1) Validity - [satisfied]
+All correct processes accept v whenever a correct process broadcasts v. This is guaranteed by the rules where any correct process that sees the initial SEND message will respond with an ECHO and, if enough other processes have seen it (n−f quorum threshold), they will broadcast READY.
+
+2) Agreement - [satisfied]
+If two correct processes q and r accept values v and u respectively, then these values are equal, as guaranteed by the rules where any process that sees a message m will respond with ECHO(m) and potentially READY(m). If multiple messages are accepted, they must be delivered in the same order because every process follows the same protocol and only one sender is active at a time.
+
+3) No duplication - [satisfied]
+Every correct process accepts the same message at most once. This is enforced by each process following its own rules for accepting a message: a process can accept a message if it receives enough READY messages (2f+1 quorum threshold), and it can only send READY if it hasn't done so already for that specific message.
+
+4) No creation - [non satisfied]: The protocol does not ensure this property because it is impossible to guarantee the no-creation condition in a system with faults. A faulty process could always try to force consensus on a value that was never correctly agreed upon, violating the no-creation condition.

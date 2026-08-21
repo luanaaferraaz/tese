@@ -1,0 +1,4 @@
+Validity - Satisfied
+Agreement - Satisfied
+No duplication - Non satisfied: Processes can send duplicate messages.
+No creation - Satisfied: Only valid and agreed upon messages are sent and delivered, no other message is created or accepted by the system.

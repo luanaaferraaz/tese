@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [non satisfied]: In the event of a crash or failure, not all processes may receive and relay messages. This could result in some correct processes not delivering certain messages that were actually broadcast by the sender.

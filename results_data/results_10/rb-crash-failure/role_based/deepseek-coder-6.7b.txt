@@ -1,0 +1,31 @@
+Based on the provided pseudocode and correctness properties, here are my evaluations for this crash-failure reliable broadcast algorithm.
+
+1) RB-Validity: This property states that if a correct broadcaster broadcasts message m, then all correct processes eventually deliver m. 
+```python
+def check_RB_Validity(n, f):
+    # Broadcaster sends <type0, m> to itself.
+    assert(sent_type0) == True
+    
+    # For all other processes, if they receive a forwarded message containing m, 
+    # then they deliver it at least once after receiving the message.
+    for _ in range(n-f):
+        assert(len(delivered & {m}) >= 1) == True
+```
+2) RB-Agreement: This property states that if a correct process delivers message m, all other correct processes eventually deliver m. 
+```python
+def check_RB_Agreement(n, f):
+    # If any process delivers m, then it has delivered the message at least once after receiving <type1, m>.
+    for _ in range(n-f+1):
+        assert(len(delivered & {m}) >= 1) == True
+``` 
+3) RB-Integrity: This property states that a correct process delivers each message at most once and only if the message was broadcasted. 
+```python
+def check_RB_Integrity(n, f):
+    # If any process delivers m, then it has not delivered the same message before.
+    assert(len(delivered & {m}) == 1) == True
+```  
+Each of these checks can be run with different values of n and f to verify that the algorithm meets its correctness properties under various conditions. The results would indicate whether all processes eventually deliver every broadcasted message or not, which is a necessary property for reliable broadcasting. 
+
+Please note that it's important to consider additional factors such as handling process crashes during execution of these checks and their interaction with the algorithm itself. These assumptions are based on the given pseudocode and properties but may need to be adapted depending on exact system requirements or other constraints in a real-world scenario. 
+
+The verification is done based on Python language but it can be translated into any language which supports assertions for this kind of evaluations. The provided code snippets are basic skeletons of the checks, actual implementation would depend on specifics about system state tracking, messages passing and processes behavior in a real-world scenario.

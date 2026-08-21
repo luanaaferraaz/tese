@@ -1,0 +1,6 @@
+{"run_id": "128e697c-e7ee-48f2-a54f-5eb0c3101405", "type": "start", "content": "Processing"}
+
+{"run_id": "128e697c-e7ee-48f2-a54f-5eb0c3101405", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "128e697c-e7ee-48f2-a54f-5eb0c3101405", "type": "done", "content": "128e697c-e7ee-48f2-a54f-5eb0c3101405", "messageId": "None", "token_pct_used": 102.2}
+

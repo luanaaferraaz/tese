@@ -1,0 +1,6 @@
+{"run_id": "ffdf141a-02e8-41b6-b997-11956225cc51", "type": "start", "content": "Processing"}
+
+{"run_id": "ffdf141a-02e8-41b6-b997-11956225cc51", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ffdf141a-02e8-41b6-b997-11956225cc51", "type": "done", "content": "ffdf141a-02e8-41b6-b997-11956225cc51", "messageId": "None", "token_pct_used": 102.2}
+

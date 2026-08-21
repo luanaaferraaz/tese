@@ -1,0 +1,6 @@
+{"run_id": "afb267c8-5dbf-428b-8297-c0709cc0fdc6", "type": "start", "content": "Processing"}
+
+{"run_id": "afb267c8-5dbf-428b-8297-c0709cc0fdc6", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "afb267c8-5dbf-428b-8297-c0709cc0fdc6", "type": "done", "content": "afb267c8-5dbf-428b-8297-c0709cc0fdc6", "messageId": "None", "token_pct_used": 106.4}
+

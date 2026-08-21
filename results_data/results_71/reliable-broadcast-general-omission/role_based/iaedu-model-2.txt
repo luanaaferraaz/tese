@@ -1,0 +1,18 @@
+{"run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "type": "start", "content": "Processing"}
+
+{"run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "type": "token", "content": "Valid"}
+
+{"run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "type": "token", "content": "ity - [non satisfied]: Sender delivers immediately but if sender is only"}
+
+{"run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "type": "token", "content": " correct process reaching f+1, others may not (confidence: 6/10)\nNo"}
+
+{"run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "type": "token", "content": " duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non sat"}
+
+{"run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "type": "token", "content": "isfied]: Delivering process relays but non-delivering processes never relay, so f"}
+
+{"run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "type": "token", "content": "+1 threshold may never propagate (confidence: 7/10)"}
+
+{"run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately but if sender is only correct process reaching f+1, others may not (confidence: 6/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Delivering process relays but non-delivering processes never relay, so f+1 threshold may never propagate (confidence: 7/10)", "tool_calls": [], "tool_call_id": null, "run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "type": "done", "content": "775e6c17-ca05-4920-bb0b-4495505fb6b7", "messageId": "cmrgfgerv2csske01yvcgoatw"}
+

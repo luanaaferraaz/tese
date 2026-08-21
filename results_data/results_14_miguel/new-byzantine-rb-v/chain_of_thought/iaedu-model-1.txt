@@ -1,0 +1,94 @@
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "start", "content": "Processing"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": ""}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "RB"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "-"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "Validity"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " -"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " ["}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "non"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " satisfied"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "]:"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " Correct"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " broadcaster"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "\u2019s"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " single"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " type"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "0"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " never"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " reaches"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " threshold"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": ","}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " so"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " no"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " correct"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " process"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " sends"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " type"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "1"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "\n"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "RB"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "-"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "Agreement"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " -"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " ["}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "s"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "atisfied"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "]\n"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "RB"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "-"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "Integrity"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " -"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": " ["}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "s"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "atisfied"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": "]"}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "token", "content": ""}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Correct broadcaster\u2019s single type0 never reaches threshold, so no correct process sends type1\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "response_metadata": {"model_provider": "openai", "id": "resp_0d7466eadb597b37006a67630f521c819781f3e72f54684c38", "created_at": 1785160463.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "9d43f37c-6377-42e6-b881-a28538ede6d3", "type": "done", "content": "9d43f37c-6377-42e6-b881-a28538ede6d3", "messageId": "cms3ah1zo27zske016vequjsf"}
+

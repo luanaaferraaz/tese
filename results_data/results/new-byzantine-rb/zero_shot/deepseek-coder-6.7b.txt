@@ -1,0 +1,10 @@
+RB-Validity - Satisfied
+The broadcaster sends <type0, m> to neighbours which are correctly received by the receivers. The receivers then send <type1, m> to their neighbours as per the rules of the protocol. This ensures that all correct processes eventually deliver message m. 
+
+RB-Agreement - Satisfied
+If one correct process delivers m, it means it received f + 1 <type1, m> messages from other correct processes which are correctly forwarded to its neighbours by those processes. Hence, all the correct processes have agreed on delivering m in the end. 
+
+RB-Integrity - Satisfied
+A process delivers m at most once because it maintains a 'delivered' set that is updated only when it receives f + 1 <type1, m> messages from distinct senders. This ensures that message m is not delivered more than once by any process. 
+
+The provided algorithm satisfies all the correctness properties (RB-Validity, RB-Agreement and RB-Integrity) as stated in this analysis. The broadcaster sends a reliable <type0, m> to its neighbours ensuring that message delivery begins. Then it ensures that each correct process receives at least f + 1 distinct <type1, m> messages from the other processes, thereby reaching agreement over the message delivery. Finally, by maintaining a 'delivered' set and only delivering once per message, the algorithm enforces integrity as required.

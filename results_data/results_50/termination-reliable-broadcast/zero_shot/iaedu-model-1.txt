@@ -1,0 +1,6 @@
+{"run_id": "e9077f25-877c-4907-9a59-94ef2c4947b9", "type": "start", "content": "Processing"}
+
+{"run_id": "e9077f25-877c-4907-9a59-94ef2c4947b9", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "e9077f25-877c-4907-9a59-94ef2c4947b9", "type": "done", "content": "e9077f25-877c-4907-9a59-94ef2c4947b9", "messageId": "None", "token_pct_used": 102.2}
+

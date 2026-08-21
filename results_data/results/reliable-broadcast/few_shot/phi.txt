@@ -1,0 +1,4 @@
+ This algorithm has a termination time of n*n which is O(n^2), it's also deterministic since the for loop only iterates once. The output of this algorithm is that every correct process will eventually receive and deliver the message. 
+
+---
+

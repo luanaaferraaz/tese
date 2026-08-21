@@ -1,0 +1,1 @@
+ The algorithm is correct and adheres to the specified invariants. However, it may fail in a Byzantine fashion due to the possibility of f+1 faulty processes joining in after sending their first message.

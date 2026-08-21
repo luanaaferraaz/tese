@@ -1,0 +1,11 @@
+1. Validity - [satisfied]
+    If a correct process broadcasts m, it eventually delivers m at least once and sends it to all other processes. Every correct process can receive the message and relay it further ensuring validity.
+
+2. No duplication - [satisfied]
+    The algorithm ensures that each process broadcasts a broadcasted message only once. The `delivered` set prevents re-delivery.
+
+3. No creation - [satisfied]
+    A correct process does not create messages; it only broadcasts what has been previously received or is the sender of the original message.
+
+4. Agreement - [satisfied]
+    If a correct process delivers m, other correct processes eventually receive f+1 distinct sources for m and deliver it as well ensuring agreement.

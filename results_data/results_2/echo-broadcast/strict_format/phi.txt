@@ -1,0 +1,1 @@
+ ECHO BROADCAST is a Byzantine fault-tolerant broadcast protocol.

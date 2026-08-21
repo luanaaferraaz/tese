@@ -1,0 +1,6 @@
+{"run_id": "74237929-1fd7-44f8-a3a8-51eee1d71f78", "type": "start", "content": "Processing"}
+
+{"run_id": "74237929-1fd7-44f8-a3a8-51eee1d71f78", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "74237929-1fd7-44f8-a3a8-51eee1d71f78", "type": "done", "content": "74237929-1fd7-44f8-a3a8-51eee1d71f78", "messageId": "None", "token_pct_used": 99.2}
+

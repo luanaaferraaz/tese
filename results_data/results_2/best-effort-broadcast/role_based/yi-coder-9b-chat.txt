@@ -1,0 +1,6 @@
+1. Validity - [satisfied]
+    If a correct process broadcasts a message m, then every correct process eventually delivers m. This is because the algorithm relies on perfect point-to-point links which ensure reliable and eventual reliability of messages in the presence of failures.
+2. No duplication - [satisfied]
+    No message is delivered more than once. This is guaranteed by the uniqueness constraint imposed on messages, as well as the "no duplication" property of the underlying perfect links.
+3. No creation - [satisfied]
+   If a process delivers a message m with sender s, then m was previously broadcast by process s. This property follows directly from the fact that in this best-effort broadcast algorithm, all correct processes receive messages solely through their underlying perfect point-to-point links.

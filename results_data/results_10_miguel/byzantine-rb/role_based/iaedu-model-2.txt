@@ -1,0 +1,14 @@
+{"run_id": "836e2cd2-11c6-4d37-bbde-0dcc0e334e1f", "type": "start", "content": "Processing"}
+
+{"run_id": "836e2cd2-11c6-4d37-bbde-0dcc0e334e1f", "type": "token", "content": "R"}
+
+{"run_id": "836e2cd2-11c6-4d37-bbde-0dcc0e334e1f", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: With n=4, f=1, threshold (n"}
+
+{"run_id": "836e2cd2-11c6-4d37-bbde-0dcc0e334e1f", "type": "token", "content": "+f)/2=2 (integer div) allows two Byzantine-influenced corre"}
+
+{"run_id": "836e2cd2-11c6-4d37-bbde-0dcc0e334e1f", "type": "token", "content": "ct processes to diverge (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "836e2cd2-11c6-4d37-bbde-0dcc0e334e1f", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2 (integer div) allows two Byzantine-influenced correct processes to diverge (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "836e2cd2-11c6-4d37-bbde-0dcc0e334e1f", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "836e2cd2-11c6-4d37-bbde-0dcc0e334e1f", "type": "done", "content": "836e2cd2-11c6-4d37-bbde-0dcc0e334e1f", "messageId": "cmrm3wofk5cluke01jsbsmmwt"}
+

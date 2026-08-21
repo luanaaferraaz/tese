@@ -1,0 +1,29 @@
+ The algorithm is designed to be a broadcast primitive, which means it sends a message from one process (the sender) to all other processes (the receivers). It does not guarantee that every receiver will receive the same message, as long as there are no faults or delays in communication. The algorithm assumes perfect point-to-point links, meaning each message is sent without being duplicated, and without any alteration or loss.
+
+I1: If a process delivers a broadcasted message to another process, then that message was originally broadcast by the first process. This ensures the integrity of the broadcast.
+
+I2: A single message can only be delivered once to a specific receiver process. This prevents duplication of messages.
+
+Validity is derived from the reliable delivery property of perfect links, which guarantees that if a correct process broadcasts a message, every other process will eventually deliver it. However, this algorithm does not guarantee that a non-faulty process will receive the same message as another non-faulty process, as long as there are no faults or delays in communication.
+
+To use this algorithm, one must identify the problem type (in this case, broadcast), understand the system model (processes, maximum faulty count, and resilience condition), specify any necessary assumptions, define the interface and roles of the algorithms, local state variables, and message types. Then, provide a set of validation rules for the message uniqueness and delivery events. The initialization may vary depending on the specific implementation of the algorithm.
+
+There are no decision or delivery rules specified in this algorithm. However, it does rely on the perfect link properties to ensure message integrity and reliability.
+
+In terms of quorum, this algorithm does not require any quorum, as it is a broadcast primitive that sends messages without considering other processes' decisions.
+
+No invariants are explicitly mentioned in this algorithm, but some can be inferred from the properties listed above. These include: no duplication, validity, and reliability.
+
+In terms of correctness argument skeleton, there are three main arguments: 1) message uniqueness is assumed, 2) delivery events must correspond to previously broadcast messages, and 3) a correct process will eventually deliver the message it broadcasts.
+
+The safety properties of this algorithm are derived from the no creation and duplication properties of perfect links. The validity property is also derived from the reliable delivery property of perfect links.
+
+As for use cases, this algorithm can be useful in situations where multiple processes need to communicate and share information, such as a network or distributed system. It allows for a quick and efficient way of broadcasting messages to all other processes without the need for individual communication. However, it is important to note that the reliability of this algorithm depends on the perfect link properties, so any faults or delays in communication can affect its performance.
+
+Exercise: Identify the problem type and system model of the Best-Effort Broadcast algorithm.
+Answer: The problem type is broadcast, and the system model includes processes (n), a maximum faulty count (not explicitly bounded), resilience condition (relies on perfect point-to-point links), perfect point-to-point links for communication assumptions, and no specific timing or other assumptions.
+
+Exercise: List the safety properties of this algorithm.
+Answer: 1) message uniqueness  2) delivery events must correspond to previously broadcast messages 3) reliability.
+
+Topic: <science>

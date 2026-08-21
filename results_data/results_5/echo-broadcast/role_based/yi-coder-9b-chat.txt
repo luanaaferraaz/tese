@@ -1,0 +1,11 @@
+1. Validity - satisfied
+   If a correct process p broadcasts v, then all correct processes accept v. This property holds because the broadcast message is sent through an asynchronous reliable network model where all messages are eventually delivered to the correct processes. Once a message m is broadcasted by the sender (SEND(m)), it will be received by every correct process and an ECHO message for that particular m will be sent back by that process if not already done so (sent_echo ← true; broadcast ECHO(m) from B). All correct processes have their local states updated with the message m and thus all validate it.
+   
+2. Agreement - satisfied
+   If two correct processes q and r accept the values v and u respectively, then v=u. This property is upheld because a single value is broadcasted by a designated process and delivered once 2f+1 READY(m) messages have been received. Once the message m has been accepted (READY(m)), it cannot be replaced by another unique value until enough other READY messages for a new value have been received.
+   
+3. No duplication - satisfied
+   No message is delivered more than once. This property holds because the delivery rule only permits the delivery of m when 2f+1 READY(m) messages are received and not for any subsequent instances. Once a process delivers a message, it keeps its local state updated with this information (delivered ← true) and thus does not deliver again unless the message is broadcasted anew.
+   
+4. No creation - satisfied
+   If a process delivers a message m with sender s, then m was previously broadcast by process s. This property is met because every message that's delivered has been previously validated by the delivery rule (2f+1 READY(m)) and thus is a message previously broadcasted by the designated sender process.

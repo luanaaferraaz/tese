@@ -1,0 +1,31 @@
+ All properties of the algorithm have been analyzed and validated. The TERMINATION property is satisfied as every correct process eventually delivers a value, ensuring that all messages are received.
+The VALIDITY property is also satisfied since if s is correct and broadcasts m, then all correct processes eventually deliver m. This guarantees that the information in the message has reached all receivers accurately. 
+The AGREEMENT property is also fulfilled as every correct process delivers at least one message, ensuring that all messages are delivered in a timely manner to all recipients. 
+Finally, the INTEGRITY property is satisfied since every correct process delivers at most one message, meaning that if it relays m, then only s has broadcasted it. This ensures that there is no interference between different processes and that each message is only received by the intended recipient. 
+All properties of this algorithm have been successfully analyzed and verified as reliable.
+
+
+In a parallel system using the TERMITATING RELIABLE BROADCAST Algorithm, you are an IoT engineer who has to maintain the smooth running of these systems. You are also responsible for maintaining the safety of this system by ensuring that all information reaches its destination accurately. The system uses multiple faulty components (F) and a total of n processes which operate synchronously. 
+
+You have been given the following three scenarios:
+1. If only one component fails, your system is safe.
+2. If two components fail, it's not safe but you can still make your system work by using a redundant path.
+3. If more than two components fail, no matter what you do, your system will crash due to the lack of reliability in any single process. 
+
+You are given two messages: m1 and m2. These messages have been sent out through different paths which we know to be faulty. The first message has a sender "s1" and the second one is from "s2". You can confirm this by checking if all n-f+1 rounds have been completed successfully.
+
+The scenario goes as follows: 
+You are given that s1 is correct (C), and two components have failed (F) while the remaining n-f+1 processes operate as per their functionality.
+
+Given that m1 was broadcasted by "s1" through a faulty path, it has reached all the other nodes in this parallel system, but no one knows whether s2 delivered m2 or not. 
+
+Question: Considering these scenarios and the algorithm's properties, which of the following can you conclude?
+
+
+The first step is to understand the scenario presented and apply your knowledge about the algorithm:
+The algorithm ensures that all correct processes eventually deliver a value, meaning even if one process fails (F), it won't affect the delivery of other messages as long as n-f+1 rounds have been completed successfully. 
+This is due to property I2 in the initial problem statement and the TERMINATION property in the algorithm itself: If a correct process delivers m=/SF, then every correct process has m in its received_msgs set by the end of round f+1. Therefore, even if s2 has not successfully delivered m2 because it failed to relay m1 correctly, as long as n-f+1 rounds have been completed and all other messages (from s1) are correctly delivered, we can still deliver SF.
+
+The second step is the application of property I1 from the algorithm's invariants: If a correct process delivers m=/SF, then every correct process has m in its received_msgs set by the end of round f+1. So, even if s2 has failed to relay m1, as long as m/SF is not received at any point, it means that there was no delivery during any of the n-f+1 rounds. Therefore, there must have been a failure during any one of these rounds.
+
+Answer: By applying inductive logic and proof by exhaustion, you can conclude that s2 has indeed failed to deliver m2 as per the algorithm's properties. Thus, s2 cannot be correct as this contradicts property I1, which states that if a process delivers SF, it is assumed to be "correct". This also implies property 2 (Validity) and 3 (Integrity), since s2 didn't relay the message and the system will eventually fail.

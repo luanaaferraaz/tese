@@ -1,0 +1,51 @@
+This is an automated problem solving task and requires knowledge of distributed algorithms, fault tolerance, and message passing. For this problem specifically, the new Byzantine-tolerant RBcast algorithm needs to be verified whether it satisfies its specified properties - RB-Validity, RB-Agreement, RB-Integrity.
+
+Let's define the properties:
+1) RB-Validity: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m.
+2) RB-Agreement: If one correct process delivers m, then all correct processes eventually deliver m.
+3) RB-Integrity: A correct process delivers m at most once, and only if m was broadcast.
+
+To satisfy this properties we need to follow the protocol pseudo code provided in the question. Here is a Python-like pseudo code interpretation of it:
+
+```python
+delivered = set()
+sent_type0 = False
+sent_type1 = False
+received_type0 = dict()  # keys are messages, values are sets of sender process ids
+received_type1 = dict()
+
+def RBcast(m):
+    if not sent_type0:
+        send('<type0, m>' to all neighbours)
+        sent_type0 = True
+ 
+def receive(<type0, m> from pj):
+    add pj to received_type0[m]
+  
+    if len(received_type0[m]) >= 1 and not sent_type1:
+        send '<type1, m>' to all neighbours
+         
+def receive(<type1, m> from pj):
+    add pj to received_type1[m]
+   
+    if len(received_type1[m]) >= 2 and not sent_type1:
+        sent_type1 = True  # support was already sent
+         
+    if len(received_type1[m]) >= 2 and m not in delivered:
+        delivered.add(m)
+        DELIVER(m)
+```
+Now we can check the properties based on this pseudo code:
+
+RB-Validity: This property is satisfied as the correct broadcaster broadcasts <type0, m> to all processes. The receivers then send a confirmation message (<type1, m>) which if received by at least 2 processes leads to delivery of m.
+
+RB-Agreement: If a process delivers a message 'm' it has received support for 'm' from another process, and this support is propagated to other processes leading to agreement on the delivery of 'm'.
+
+RB-Integrity: A correct process ensures that only one copy of any message is delivered. The set `delivered` ensures that a message is not delivered more than once. A process checks for the presence of a message in this set before delivering it. 
+
+Therefore, the generated RBcast algorithm satisfies all its properties - RB-Validity, RB-Agreement and RB-Integrity.
+
+The output will be:
+RB-Validity - [satisfied]
+RB-Agreement - [satisfied]
+RB-Integrity - [satisfied]

@@ -1,0 +1,5 @@
+RB-Validity - Satisfied: The broadcaster sends the initial <type0, m> message to all correct processes. All correct processes eventually receive this message and hence are able to deliver it if they send enough <type1, m> messages in response.
+
+RB-Agreement - Satisfied: If one correct process delivers a message, it has seen at least (n+f)/2 distinct <type1, m> support messages from different processes, indicating that the delivery is correctly made by this process and it can spread the support among all other correct processes.
+
+RB-Integrity - Satisfied: The delivered set prevents duplicate deliveries. A single Byzantine process cannot create enough <type1, m> support to trigger message delivery as required by the algorithm. Also, distinct sender counting ensures that a process does not receive more than one copy of any sender's messages.

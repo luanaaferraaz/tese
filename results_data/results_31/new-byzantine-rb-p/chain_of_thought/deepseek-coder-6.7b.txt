@@ -1,0 +1,5 @@
+RB-Validity - Satisfied: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m. This is ensured by the fact that once a correct process receives f + 1 <type1, m> messages from different senders, it delivers m and ensures that all other correct processes eventually receive at least one message of each type.
+
+RB-Agreement - Satisfied: If one correct process delivers m, then all correct processes eventually deliver m. This is ensured by the fact that once a correct process receives f + 1 <type1, m> messages from different senders and delivers m, it ensures that all other correct processes eventually receive at least one message of each type.
+
+RB-Termination - Satisfied: All correct processes always deliver. This is ensured by the fact that once a correct process receives f + 1 <type1, m> messages from different senders and delivers m, it ensures that all other correct processes eventually receive at least one message of each type.

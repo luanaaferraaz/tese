@@ -1,0 +1,6 @@
+{"run_id": "0cb03887-0639-47ac-8655-8bef518d8a7d", "type": "start", "content": "Processing"}
+
+{"run_id": "0cb03887-0639-47ac-8655-8bef518d8a7d", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "0cb03887-0639-47ac-8655-8bef518d8a7d", "type": "done", "content": "0cb03887-0639-47ac-8655-8bef518d8a7d", "messageId": "None", "token_pct_used": 99.2}
+

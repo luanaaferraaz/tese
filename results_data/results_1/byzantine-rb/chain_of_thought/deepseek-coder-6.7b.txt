@@ -1,0 +1,10 @@
+Based on the algorithm, here are the final results for each property:
+
+1. RB-Validity - Satisfied
+   This is because if a correct broadcaster broadcasts m, it sends <type0, m> to all processes and stops afterwards. All correct processes eventually receive this message and send <type1, m> when necessary, which ensures that every correct process eventually receives the message m.
+
+2. RB-Agreement - Satisfied
+   This is because if one correct process delivers m, it means it has seen enough <type1, m> support messages from other processes. The f + 1 rule helps ensure that at least one correct supporter exists among the senders of these support messages. Therefore, all correct processes eventually receive and deliver m when they have sufficient evidence.
+
+3. RB-Integrity - Satisfied
+   This is because a correct process delivers m only once: when it has seen enough <type1, m> support messages from at least (n + f) / 2 distinct processes and the message m was not previously delivered. The distinction of senders prevents duplicate deliveries. A single Byzantine process cannot create enough evidence to force delivery or duplicate delivery.

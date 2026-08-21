@@ -1,0 +1,3 @@
+RB-Validity - [satisfied]: Correct broadcaster sends message to all correct receivers.
+RB-Agreement - [satisfied]: Correct support propagates ensuring delivery by all correct processes.
+RB-Integrity - [satisfied]: Delivered set prevents duplicate deliveries and Byzantine interference.

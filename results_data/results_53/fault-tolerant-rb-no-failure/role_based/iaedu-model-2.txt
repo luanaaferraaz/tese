@@ -1,0 +1,6 @@
+{"run_id": "37690b19-95df-4fd3-a2bb-a10b17ed503c", "type": "start", "content": "Processing"}
+
+{"run_id": "37690b19-95df-4fd3-a2bb-a10b17ed503c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "37690b19-95df-4fd3-a2bb-a10b17ed503c", "type": "done", "content": "37690b19-95df-4fd3-a2bb-a10b17ed503c", "messageId": "None", "token_pct_used": 106.4}
+

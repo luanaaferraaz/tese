@@ -1,0 +1,11 @@
+1. Validity - Satisfied
+    The sender broadcasts a value, all correct processes will receive this broadcast and the algorithm ensures that only these values are delivered.
+
+2. Agreement - Satisfied
+    Once two correct processes agree on a value, any further agreement on other values must be for the same value due to the READY message rule (same value must lead to same number of 2f+1 ready messages).
+
+3. No duplication - Satisfied
+    Each process maintains counters for ECHO and READY messages and these are used to decide when to send a READY message or deliver a value. A process will never accept the same value more than once, hence no duplication is possible.
+
+4. No creation - Satisfied
+    The algorithm ensures that any delivered message was previously broadcast by the sender due to the READY and ECHO message rules which limit the delivery of any message only if a sufficient number of READY messages have been received.

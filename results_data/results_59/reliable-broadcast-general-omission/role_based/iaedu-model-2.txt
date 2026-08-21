@@ -1,0 +1,6 @@
+{"run_id": "b2c52f4b-b30f-4c43-ada3-7dc6632030e0", "type": "start", "content": "Processing"}
+
+{"run_id": "b2c52f4b-b30f-4c43-ada3-7dc6632030e0", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "b2c52f4b-b30f-4c43-ada3-7dc6632030e0", "type": "done", "content": "b2c52f4b-b30f-4c43-ada3-7dc6632030e0", "messageId": "None", "token_pct_used": 107.3}
+

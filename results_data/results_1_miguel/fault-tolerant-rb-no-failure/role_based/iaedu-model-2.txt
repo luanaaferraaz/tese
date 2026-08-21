@@ -1,0 +1,14 @@
+{"run_id": "50abeb8e-afee-4f17-b71a-780ea339e2d4", "type": "start", "content": "Processing"}
+
+{"run_id": "50abeb8e-afee-4f17-b71a-780ea339e2d4", "type": "token", "content": "R"}
+
+{"run_id": "50abeb8e-afee-4f17-b71a-780ea339e2d4", "type": "token", "content": "B-Validity - [non satisfied]: Broadcaster sends but does not deliver to itself; if bro"}
+
+{"run_id": "50abeb8e-afee-4f17-b71a-780ea339e2d4", "type": "token", "content": "adcaster is correct, it never delivers m.\nRB-Agreement - [non satisfied]: Broadcaster never delivers m"}
+
+{"run_id": "50abeb8e-afee-4f17-b71a-780ea339e2d4", "type": "token", "content": " to itself, so agreement fails when receivers deliver.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "50abeb8e-afee-4f17-b71a-780ea339e2d4", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Broadcaster sends but does not deliver to itself; if broadcaster is correct, it never delivers m.\nRB-Agreement - [non satisfied]: Broadcaster never delivers m to itself, so agreement fails when receivers deliver.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "50abeb8e-afee-4f17-b71a-780ea339e2d4", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "50abeb8e-afee-4f17-b71a-780ea339e2d4", "type": "done", "content": "50abeb8e-afee-4f17-b71a-780ea339e2d4", "messageId": "cmr92ajp45fd9ke01z4y6u5qn"}
+

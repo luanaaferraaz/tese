@@ -1,0 +1,5 @@
+Termination - [satisfied]
+The protocol is designed in a way that it will always reach the end of round f+1 eventually. This is because at the start, we assumed there would be at least one round where no new processes fail ensuring that the message m can be delivered to everyone. Therefore, the termination property is satisfied as every correct process delivers some message ultimately.
+
+Determinism - [satisfied]
+The protocol has deterministic behavior and the order of events does not depend on arbitrary parameters such as network delays or process states. The same input always leads to the same output in a finite number of steps, ensuring the determinism property is satisfied for all correct processes.

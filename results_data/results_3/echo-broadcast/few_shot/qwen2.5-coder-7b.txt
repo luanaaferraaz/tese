@@ -1,0 +1,11 @@
+Algorithm:
+Bracha, G. (1987). "Asynchronous Byzantine Agreement Protocols".
+ALGORITHM: ECHO BROADCAST
+
+Properties:
+Termination - [satisfied]
+Determinism - [satisfied]
+
+Output:
+Termination - [satisfied]
+Determinism - [satisfied]

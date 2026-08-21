@@ -1,0 +1,16 @@
+{"run_id": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "type": "start", "content": "Processing"}
+
+{"run_id": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "type": "token", "content": "R"}
+
+{"run_id": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "type": "token", "content": "B-Validity - [non satisfied]: Correct broadcaster's type0 reaches only 2"}
+
+{"run_id": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "type": "token", "content": " correct receivers; they cannot reach f+1=2 type1 threshold to trigger delivery."}
+
+{"run_id": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "type": "token", "content": "\nRB-Agreement - [non satisfied]: A Byzantine sending type1 to only one correct process plus one correct for"}
+
+{"run_id": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "type": "token", "content": "warder can cause split delivery.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Correct broadcaster's type0 reaches only 2 correct receivers; they cannot reach f+1=2 type1 threshold to trigger delivery.\nRB-Agreement - [non satisfied]: A Byzantine sending type1 to only one correct process plus one correct forwarder can cause split delivery.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "type": "done", "content": "2fce913d-3df9-4e02-ba3f-94f35ed3a51e", "messageId": "cms3airsd282cke019al7y4p5"}
+

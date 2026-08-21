@@ -1,0 +1,16 @@
+{"run_id": "39026204-aa13-44c6-8c7c-89c0965f28a6", "type": "start", "content": "Processing"}
+
+{"run_id": "39026204-aa13-44c6-8c7c-89c0965f28a6", "type": "token", "content": "Valid"}
+
+{"run_id": "39026204-aa13-44c6-8c7c-89c0965f28a6", "type": "token", "content": "ity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - ["}
+
+{"run_id": "39026204-aa13-44c6-8c7c-89c0965f28a6", "type": "token", "content": "non satisfied]: Delivery rule lacks check on delivered flag; can"}
+
+{"run_id": "39026204-aa13-44c6-8c7c-89c0965f28a6", "type": "token", "content": " deliver multiple times as READYs arrive. (confidence: 7/10)\nNo creation - [satisfied] (confidence: 8"}
+
+{"run_id": "39026204-aa13-44c6-8c7c-89c0965f28a6", "type": "token", "content": "/10)"}
+
+{"run_id": "39026204-aa13-44c6-8c7c-89c0965f28a6", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: Delivery rule lacks check on delivered flag; can deliver multiple times as READYs arrive. (confidence: 7/10)\nNo creation - [satisfied] (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "39026204-aa13-44c6-8c7c-89c0965f28a6", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "39026204-aa13-44c6-8c7c-89c0965f28a6", "type": "done", "content": "39026204-aa13-44c6-8c7c-89c0965f28a6", "messageId": "cmrkbrnrx49njke01yoyei3ml"}
+

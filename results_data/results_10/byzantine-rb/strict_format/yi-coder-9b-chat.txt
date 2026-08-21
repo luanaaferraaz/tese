@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+The algorithm ensures valid reliable broadcast. The correct broadcaster will send <type0, m> and will eventually receive enough <type1, m> messages to broadcast it again (if not already sent) or deliver the message if <type1, m> has been received from at least (n + f)/2 distinct processes.
+
+RB-Agreement - [satisfied]
+If a single correct process delivers m, all other correct processes will receive enough evidence to eventually deliver it because they see enough <type1, m> messages forwarded by the first process.
+
+RB-Integrity - [non satisfied]: The algorithm might not prevent duplicate delivery if a malicious process sends multiple <type1, m> messages from different identities.

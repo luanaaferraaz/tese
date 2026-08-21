@@ -1,0 +1,20 @@
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "start", "content": "Processing"}
+
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "token", "content": "Valid"}
+
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "token", "content": "ity - [non satisfied]: Correct sender delivers immediately without f"}
+
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "token", "content": "+1 distinct sources, but self-broadcast delivery is explicit; however"}
+
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "token", "content": " receive-omission faulty sender scenario irrelevant since sender is correct (confidence: 6"}
+
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "token", "content": "/10)\nNo duplication - [satisfied] (confidence: 9/10)\nNo creation - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "token", "content": "\nAgreement - [non satisfied]: A correct process may deliver via f+1 sources including faulty senders; rel"}
+
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "token", "content": "ay may not reach receive-omission correct processes reliably (confidence: 5/10)"}
+
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Correct sender delivers immediately without f+1 distinct sources, but self-broadcast delivery is explicit; however receive-omission faulty sender scenario irrelevant since sender is correct (confidence: 6/10)\nNo duplication - [satisfied] (confidence: 9/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: A correct process may deliver via f+1 sources including faulty senders; relay may not reach receive-omission correct processes reliably (confidence: 5/10)", "tool_calls": [], "tool_call_id": null, "run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "type": "done", "content": "8feb9316-842a-48e2-bf30-12e66b7bda2f", "messageId": "cmrgfhx9l2cu6ke01ytjvj0v0"}
+

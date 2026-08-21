@@ -1,0 +1,50 @@
+### Property 1: Safety
+
+**Explanation:** Safety requires that if a correct process delivers a message \( m \), then \( m \) was broadcast by the sender. No two correct processes deliver different messages. Each correct process delivers at most one message.
+
+**Result:** SATISFIED  
+**Explanation:** The algorithm ensures that only the sender can broadcast a message, and once delivered, no other correct process will deliver a different message or deliver multiple messages.
+
+### Property 2: Liveness
+
+**Explanation:** Liveness requires that if the sender is correct, all correct processes eventually deliver \( m \).
+
+**Result:** SATISFIED  
+**Explanation:** If the sender broadcasts a message and the network is reliable, authenticated, and asynchronous, every correct process will receive the initial SEND message, echo it, and propagate READY messages. By maintaining enough ready quorums (at least \( 2f + 1 \) distinct processes), all correct processes will eventually deliver the message.
+
+### Property 3: Correctness
+
+**Explanation:** Correctness requires that the algorithm satisfies both safety and liveness properties simultaneously.
+
+**Result:** SATISFIED  
+**Explanation:** The Bracha algorithm is designed to meet both safety and liveness, ensuring that messages are reliably disseminated without introducing different or multiple deliveries of messages even in the presence of Byzantine faults.
+
+### Property 4: Fault Tolerance
+
+**Explanation:** Fault tolerance requires that the system can operate correctly even if some processes fail (either due to crashes or malicious behavior).
+
+**Result:** SATISFIED  
+**Explanation:** The Bracha algorithm uses a threshold mechanism with \( N \geq 3f + 1 \) processes, where \( f \) is the number of faulty processes. This ensures that at least \( 2f + 1 \) correct processes are needed to deliver a message, which can handle up to \( f \) faulty processes.
+
+### Property 5: Consistency
+
+**Explanation:** Consistency requires that there exists a total order on all delivered messages such that if two messages are delivered by the same process, they are equal. If different processes deliver messages, they must be equal within some predefined order.
+
+**Result:** NOT SATISFIED  
+**Details:** The Bracha algorithm does not guarantee total ordering of deliveries; it only ensures reliable dissemination. Different correct processes may deliver the same message at different times or may never deliver a message if there are insufficient echo and ready quorums, leading to partial orders rather than a total order.
+
+### Property 6: Message Integrity
+
+**Explanation:** Message integrity requires that messages cannot be tampered with during transmission.
+
+**Result:** SATISFIED  
+**Explanation:** The algorithm relies on authentication (digital signatures or MACs) to ensure that messages are not forged or tampered with by malicious processes.
+
+### Summary:
+
+- **Safety:** SATISFIED
+- **Liveness:** SATISFIED
+- **Correctness:** SATISFIED
+- **Fault Tolerance:** SATISFIED
+- **Consistency:** NOT SATISFIED (due to partial ordering)
+- **Message Integrity:** SATISFIED

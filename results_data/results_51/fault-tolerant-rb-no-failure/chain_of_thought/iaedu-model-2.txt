@@ -1,0 +1,6 @@
+{"run_id": "ecf58a03-aeb8-4dac-a2b3-d5fd1998537c", "type": "start", "content": "Processing"}
+
+{"run_id": "ecf58a03-aeb8-4dac-a2b3-d5fd1998537c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ecf58a03-aeb8-4dac-a2b3-d5fd1998537c", "type": "done", "content": "ecf58a03-aeb8-4dac-a2b3-d5fd1998537c", "messageId": "None", "token_pct_used": 106.4}
+

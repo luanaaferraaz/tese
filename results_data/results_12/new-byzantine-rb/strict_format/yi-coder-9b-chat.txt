@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This algorithm ensures that if a correct process broadcasts a message m, then all other correct processes will eventually receive it. In the pseudocode, a correct process sends <type1, m> to its neighbours whenever they receive f + 1 distinct <type1, m> messages. This guarantees validity as soon as this condition is met, the process delivers the message and it can be considered delivered to all other processes.
+
+RB-Agreement - [satisfied]
+This algorithm satisfies agreement since a correct process will deliver a message if one of its neighbours has agreed upon it (i.e. received f + 1 distinct <type1, m> messages). Since f = 1 in this algorithm and we have at least two processes supporting the same message, any other process also agrees to deliver that message.
+
+RB-Integrity - [satisfied]
+This algorithm ensures integrity as a correct process will only deliver a message once. The delivered set keeps track of all messages that have already been delivered by the process. Thus, it cannot deliver a previously delivered message again.

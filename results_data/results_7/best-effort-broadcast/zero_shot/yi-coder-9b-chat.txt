@@ -1,0 +1,3 @@
+1. Validity: The property is satisfied, because the correct process broadcasts message m and every other correct process eventually delivers it as guaranteed by the perfect point-to-point links.
+2. No duplication: The property is also satisfied according to the algorithm's pseudocode where each message p is passed once to the upper layer of the system after delivery.
+3. No creation: This property can be satisfied based on the assumption that every delivered message was previously broadcast by process s, and no two processes can broadcast the same message as enforced by the assumptions in the algorithm's specification.

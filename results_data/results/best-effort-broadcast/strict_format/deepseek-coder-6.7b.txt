@@ -1,0 +1,8 @@
+Validity - [satisfied]
+Reason: The algorithm ensures the message is delivered to all correct processes. This is because when a process broadcasts a message m, it sends the same message to every other process in the network (represented by 'forall q∈n do'). If any of these deliveries are received correctly by another process, this result in the delivery event ⟨beb,Deliver∣p,m⟩ for that process. Hence, if a correct process broadcasts m, then every correct process eventually delivers m.
+
+No duplication - [satisfied]
+Reason: The algorithm ensures no message is delivered more than once by only triggering the delivery event ⟨beb,Deliver∣p,m⟩ when it actually receives the message from a sender p and this happens exactly once for each unique message m. There are no duplicated deliveries of any messages.
+
+No creation - [satisfied]
+Reason: The algorithm ensures that if a process delivers a message m with sender s, then m was previously broadcast by process s. This is because the ⟨beb,Broadcast∣m⟩ event triggers the sending of the message to all other processes (represented by 'forall q∈n do'), so for each received message, it should correspond to a previous broadcast by the sender that triggered its delivery.

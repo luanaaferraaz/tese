@@ -1,0 +1,128 @@
+============================================================
+ALGORITHM NAME: [Insert Name]
+============================================================
+
+DESCRIPTION
+[High-level idea of how the algorithm works]
+
+
+OBJECTIVE
+[Distributed problem being solved]
+
+
+INTERFACE (API)
+[Operation1(parameters)]
+[Operation2(parameters)]
+
+
+GUARANTEES
+
+Safety:
+[Safety property 1]
+[Safety property 2]
+[Safety property 3]
+
+Liveness:
+[Liveness property 1]
+[Liveness property 2]
+
+
+SYSTEM MODEL
+
+Processes: [N processes]
+Fault model: [Crash / Byzantine / Omission]
+Max faulty: [f]
+Network: [Reliable / Unreliable / FIFO / Authenticated / ...]
+Timing: [Synchronous / Asynchronous / Partially synchronous]
+Cryptography: [None / Signatures / MACs / Hashes]
+
+
+ROLES
+
+[Role1]: [Description]
+[Role2]: [Description]
+
+
+LOCAL STATE (per process)
+
+Constants:
+[N]
+[f]
+[Quorum size]
+
+Variables:
+[round / view / epoch]
+[currentValue]
+[lockedValue]
+[votes]
+[delivered]
+[decided]
+[timers]
+
+
+MESSAGE TYPES
+
+[MSGTYPE1(sender, round, payload, proof)]
+[MSGTYPE2(sender, round, payload)]
+
+Validation rules:
+[Condition 1]
+[Condition 2]
+
+
+INITIALIZATION
+
+[Initial values of all variables]
+
+
+EXTERNAL INVOCATION
+
+When [OperationX] is called:
+[Actions performed]
+
+
+MESSAGE HANDLING
+
+On receive [MSGTYPE1]:
+[Condition]
+[State updates]
+[Messages sent]
+
+On receive [MSGTYPE2]:
+[Condition]
+[State updates]
+[Messages sent]
+
+
+TIMEOUT HANDLING
+
+On timeout [TimerName]:
+[Actions performed]
+
+
+DECISION / DELIVERY RULE
+
+[Condition required to decide a value or deliver a message]
+
+
+INVARIANTS
+
+[Invariant 1]
+[Invariant 2]
+
+
+SAFETY ARGUMENT
+
+[Why the invariants prevent incorrect behavior]
+
+
+LIVENESS ARGUMENT
+
+[Why progress eventually happens under the assumptions]
+
+
+LIMITATIONS
+
+[Known assumptions, trade-offs, or constraints]
+
+============================================================

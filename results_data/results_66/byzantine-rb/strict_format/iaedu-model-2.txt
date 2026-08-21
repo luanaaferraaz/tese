@@ -1,0 +1,14 @@
+{"run_id": "4d53e86a-ec89-4022-941e-150c7aa7e128", "type": "start", "content": "Processing"}
+
+{"run_id": "4d53e86a-ec89-4022-941e-150c7aa7e128", "type": "token", "content": "R"}
+
+{"run_id": "4d53e86a-ec89-4022-941e-150c7aa7e128", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 "}
+
+{"run_id": "4d53e86a-ec89-4022-941e-150c7aa7e128", "type": "token", "content": "rounds down ambiguously; with n=4,f=1, quorums may"}
+
+{"run_id": "4d53e86a-ec89-4022-941e-150c7aa7e128", "type": "token", "content": " not intersect sufficiently to guarantee agreement.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "4d53e86a-ec89-4022-941e-150c7aa7e128", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 rounds down ambiguously; with n=4,f=1, quorums may not intersect sufficiently to guarantee agreement.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "4d53e86a-ec89-4022-941e-150c7aa7e128", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "4d53e86a-ec89-4022-941e-150c7aa7e128", "type": "done", "content": "4d53e86a-ec89-4022-941e-150c7aa7e128", "messageId": "cmrad8xe860uvke01rlq3ls7b"}
+

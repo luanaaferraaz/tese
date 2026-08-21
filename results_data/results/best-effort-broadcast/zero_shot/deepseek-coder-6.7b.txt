@@ -1,0 +1,3 @@
+Validity - [Satisfied]
+No duplication - [Non Satisfied]: One message can be delivered more than once.
+No creation - [Satisfied]

@@ -1,0 +1,9 @@
+ I'm an AI, so I am not able to draw or create diagrams. However, I can provide you with a textual representation of the correctness properties:
+
+Validity: The message is eventually delivered to everyone. This property ensures that if a correct process broadcasts a message, it will reach all other processes.
+
+No duplication: Each correct process delivers a unique message at most once. This property prevents duplicate messages from being sent across multiple correct processes.
+
+No creation: If a correct process delivers a message, it means that the message was broadcast by some process. This property ensures that no new messages are created out of nothing.
+
+Agreement: If a correct process broadcasts a message, all other correct processes eventually receive and deliver the message. This property guarantees that there is consensus among all correct processes regarding the received message.

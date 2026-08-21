@@ -1,0 +1,10 @@
+{"run_id": "12c785d2-bc62-46a3-9794-bb86a96366ec", "type": "start", "content": "Processing"}
+
+{"run_id": "12c785d2-bc62-46a3-9794-bb86a96366ec", "type": "token", "content": "R"}
+
+{"run_id": "12c785d2-bc62-46a3-9794-bb86a96366ec", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]"}
+
+{"run_id": "12c785d2-bc62-46a3-9794-bb86a96366ec", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "12c785d2-bc62-46a3-9794-bb86a96366ec", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "12c785d2-bc62-46a3-9794-bb86a96366ec", "type": "done", "content": "12c785d2-bc62-46a3-9794-bb86a96366ec", "messageId": "cmr92ektn5fh7ke010d0zh6nl"}
+

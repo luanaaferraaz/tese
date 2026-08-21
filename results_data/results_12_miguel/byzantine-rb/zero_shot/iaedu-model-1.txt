@@ -1,0 +1,138 @@
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "start", "content": "Processing"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": ""}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "RB"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "-"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "Validity"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " -"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " ["}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "s"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "atisfied"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "]"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " ("}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "confidence"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": ":"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " "}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "10"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "/"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "10"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": ")\n"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "RB"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "-"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "Agreement"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " -"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " ["}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "s"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "atisfied"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "]"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " ("}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "confidence"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": ":"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " "}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "9"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "/"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "10"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": ")\n"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "RB"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "-"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "Integrity"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " -"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " ["}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "non"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " satisfied"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "]:"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " Byzantine"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " process"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " can"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " fabricate"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " type"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "0"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "/type"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "1"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " for"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " an"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " un"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "broadcast"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " message"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " and"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " trigger"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " delivery"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " ("}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "confidence"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": ":"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": " "}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "10"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "/"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": "10"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": ")"}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "token", "content": ""}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 10/10)\nRB-Agreement - [satisfied] (confidence: 9/10)\nRB-Integrity - [non satisfied]: Byzantine process can fabricate type0/type1 for an unbroadcast message and trigger delivery (confidence: 10/10)", "tool_calls": [], "tool_call_id": null, "run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "response_metadata": {"model_provider": "openai", "id": "resp_0f2a2a53e54e01d4006a5f33bb612c819787dcef733b252e97", "created_at": 1784624059.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "type": "done", "content": "f78b66e2-b6f3-45e2-a917-0ebb63c2da44", "messageId": "cmruf3e2935euke01chguxe9a"}
+

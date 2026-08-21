@@ -1,0 +1,14 @@
+{"run_id": "bbfd0a42-c7a9-49e7-b90b-57ddc77a6f92", "type": "start", "content": "Processing"}
+
+{"run_id": "bbfd0a42-c7a9-49e7-b90b-57ddc77a6f92", "type": "token", "content": "R"}
+
+{"run_id": "bbfd0a42-c7a9-49e7-b90b-57ddc77a6f92", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: With n=4, f=1, Byzantine s"}
+
+{"run_id": "bbfd0a42-c7a9-49e7-b90b-57ddc77a6f92", "type": "token", "content": "ender's type1 plus one correct's type1 lets only some correct process"}
+
+{"run_id": "bbfd0a42-c7a9-49e7-b90b-57ddc77a6f92", "type": "token", "content": "es deliver.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "bbfd0a42-c7a9-49e7-b90b-57ddc77a6f92", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: With n=4, f=1, Byzantine sender's type1 plus one correct's type1 lets only some correct processes deliver.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "bbfd0a42-c7a9-49e7-b90b-57ddc77a6f92", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "bbfd0a42-c7a9-49e7-b90b-57ddc77a6f92", "type": "done", "content": "bbfd0a42-c7a9-49e7-b90b-57ddc77a6f92", "messageId": "cms24c36k1tfbke01zbalewf2"}
+

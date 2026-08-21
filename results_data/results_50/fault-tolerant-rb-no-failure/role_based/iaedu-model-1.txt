@@ -1,0 +1,6 @@
+{"run_id": "f2003511-9341-4956-8248-0b3fc533206f", "type": "start", "content": "Processing"}
+
+{"run_id": "f2003511-9341-4956-8248-0b3fc533206f", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "f2003511-9341-4956-8248-0b3fc533206f", "type": "done", "content": "f2003511-9341-4956-8248-0b3fc533206f", "messageId": "None", "token_pct_used": 102.2}
+

@@ -1,0 +1,2 @@
+ The algorithm has been explained in detail, including its termination and determinism properties. It is also clear how the algorithm works and what it does.
+

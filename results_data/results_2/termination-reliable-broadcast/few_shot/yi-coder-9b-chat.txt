@@ -1,0 +1,5 @@
+Termination - [satisfied]
+The protocol terminates when the sender has broadcast a message. The process is complete once all correct processes have received this message in some round r, where r≤f+1.
+
+Determinism - [satisfied]
+The algorithm follows a deterministic logic. Every process follows exactly the same procedure and every action of a process is predictable from its previous state and input. There are no random factors involved.

@@ -1,0 +1,26 @@
+1. Safety - Integrity:
+   - The property requires each process to deliver at most one message.
+   - In the algorithm, all processes except for the sender deliver only after verifying the FINAL proof; no two different messages obtain valid proofs simultaneously.
+   - Assumptions needed are digital signatures and a correct FINAL proof with >= q distinct signatures.
+   - This property is satisfied by the algorithm.
+
+2. Safety - Consistency:
+   - The property requires if two correct processes deliver m and m', then m = m'.
+   - In the algorithm, any two sets of size q intersect in at least t+1 processes; since at most t are Byzantine, the intersection contains at least one correct signer. A correct signer signs at most one (echo, Ps, m), so two different messages cannot both be proven and delivered.
+   - Assumptions needed are digital signatures and a correct FINAL proof with >= q distinct signatures.
+   - This property is satisfied by the algorithm.
+
+3. Safety - Validity:
+   - The property requires if the sender is correct and broadcasts m, then any correct process that delivers must deliver m.
+   - In the algorithm, if Ps is correct, SEND reaches all correct processes who return ECHOs. Ps collects >= q ECHOs and eventually broadcasts FINAL, so all correct processes deliver.
+   - Assumptions needed are a correct sender and digital signatures for valid FINAL proofs with >= q distinct signatures.
+   - This property is satisfied by the algorithm.
+
+4. Liveness:
+   - The property requires termination when the sender is correct (all correct processes eventually deliver m).
+   - In the algorithm, if Ps is correct, SEND reaches all correct processes who return ECHOs. Ps collects >= q ECHOs and eventually broadcasts FINAL, so all correct processes deliver.
+   - Assumptions needed are a correct sender and digital signatures for valid FINAL proofs with >= q distinct signatures.
+   - This property is satisfied by the algorithm.
+
+Edge Cases / Failure Scenarios:
+The algorithm may not terminate if the sender is Byzantine, as it relies on a correct sender to broadcast FINAL messages. Digital signature requirements must be met for valid proof and delivery rules.

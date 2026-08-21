@@ -1,0 +1,7 @@
+The properties RB-Validity, RB-Agreement and RB-Integrity are satisfied by the algorithm.
+
+1. RB-Validity: If a correct process broadcasts m, then all correct processes eventually deliver m. This is ensured by the pseudo code where once <type0, m> is sent to all processes, each process will receive it and in turn invoke the delivery operation if it hasn't already delivered m.
+
+2. RB-Agreement: If one correct process delivers m, then all correct processes eventually deliver m. This holds true as well since every process maintains a set of messages that have been delivered. When any message is received by a process, it adds the message to its delivered set and fires the delivery event. Thus, if any process delivers m, all other processes will eventually receive and deliver m because they are also maintaining their own delivered sets.
+
+3. RB-Integrity: A correct process delivers m at most once, and only if m was broadcast. This property is satisfied by the fact that the delivered set prevents duplicate delivery of a message. Since no process can create a new message (as per the problem statement), all messages in the delivered set are guaranteed to be received from the broadcaster via reliable communication channels. Therefore, each message in this set must have been broadcasted by the broadcaster and hence it is at most once.

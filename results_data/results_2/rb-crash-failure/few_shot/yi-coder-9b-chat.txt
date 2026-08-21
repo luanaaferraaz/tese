@@ -1,0 +1,8 @@
+RB-Validity — [satisfied]
+The algorithm starts with a correct broadcaster, who sends the message to itself. The process delivers it immediately because it receives the message first.
+
+RB-Agreement — [non satisfied]: If one correct process broadcasts m and crashes before sending it out, some other correct processes may never receive m.
+This property is violated if there's a crash during the broadcast of any message to the neighboring nodes.
+
+RB-Integrity — [satisfied]
+Each process checks whether a received message was already delivered. If yes, it doesn’t deliver again and prevents creation of duplicates. The integrity of m is maintained because each process delivers at most once if m was broadcasted by any correct process.

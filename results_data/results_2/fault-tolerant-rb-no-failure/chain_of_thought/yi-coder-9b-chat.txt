@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This is true because the algorithm ensures that every correct process eventually delivers a message that was broadcasted.
+
+RB-Agreement - [satisfied]
+All correct processes will deliver any message that another correct process has delivered, as all processes receive the original broadcasted messages reliably.
+
+RB-Integrity - [satisfied]
+The algorithm prevents duplicate delivery of a message and ensures that only messages that were actually broadcast are delivered.

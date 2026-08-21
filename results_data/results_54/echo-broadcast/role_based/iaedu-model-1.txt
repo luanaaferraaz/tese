@@ -1,0 +1,6 @@
+{"run_id": "1dbc3153-140c-4daa-9173-4145df5f568d", "type": "start", "content": "Processing"}
+
+{"run_id": "1dbc3153-140c-4daa-9173-4145df5f568d", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "1dbc3153-140c-4daa-9173-4145df5f568d", "type": "done", "content": "1dbc3153-140c-4daa-9173-4145df5f568d", "messageId": "None", "token_pct_used": 102.2}
+

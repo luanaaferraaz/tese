@@ -1,0 +1,11 @@
+Validity - [satisfied]
+Reason: The algorithm ensures that if a correct process broadcasts a message, all other correct processes will eventually acknowledge it.
+
+Agreement - [non satisfied]
+Reason: Although the algorithm guarantees that each process acknowledges every unique message broadcast by at least one correct process, there is no guarantee that the messages are identical across different processes.
+
+No duplication - [satisfied]
+Reason: The algorithm ensures that a single unique message will not be acknowledged more than once.
+
+No creation - [non satisfied]
+Reason: There's no rule in the algorithm to ensure that a message created by one process is indeed broadcasted by this same process, which may introduce potential issues of non-creation.

@@ -1,0 +1,14 @@
+{"run_id": "978f41a1-cfac-4bb5-9308-e3715ed57a95", "type": "start", "content": "Processing"}
+
+{"run_id": "978f41a1-cfac-4bb5-9308-e3715ed57a95", "type": "token", "content": "R"}
+
+{"run_id": "978f41a1-cfac-4bb5-9308-e3715ed57a95", "type": "token", "content": "B-Validity - [non satisfied]: Broadcaster sends to all but does not send to itself, so broadcaster may not deli"}
+
+{"run_id": "978f41a1-cfac-4bb5-9308-e3715ed57a95", "type": "token", "content": "ver m (confidence: 6/10)\nRB-Agreement - [satisfied] (confidence: 8/10)\nRB-Integ"}
+
+{"run_id": "978f41a1-cfac-4bb5-9308-e3715ed57a95", "type": "token", "content": "rity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "978f41a1-cfac-4bb5-9308-e3715ed57a95", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Broadcaster sends to all but does not send to itself, so broadcaster may not deliver m (confidence: 6/10)\nRB-Agreement - [satisfied] (confidence: 8/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "978f41a1-cfac-4bb5-9308-e3715ed57a95", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "978f41a1-cfac-4bb5-9308-e3715ed57a95", "type": "done", "content": "978f41a1-cfac-4bb5-9308-e3715ed57a95", "messageId": "cmrufbdfw35nwke014y7o9aha"}
+

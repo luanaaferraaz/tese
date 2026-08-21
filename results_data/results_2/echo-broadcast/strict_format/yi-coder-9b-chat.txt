@@ -1,0 +1,8 @@
+Bracha’s Reliable Broadcast - [satisfied]
+Byzantine fault tolerance - [satisfied]
+Liveness - [satisfied]: The protocol has a termination property where a message will be delivered if at least 2f+1 processes are correct.
+Agreement - [satisfied]
+Validity - [non satisfied]: There is no guarantee of validity in this protocol because there is no mechanism to validate the content of messages and only accept those from trusted sources.
+No duplication - [satisfied]
+Sender authenticity - [non satisfied]: The sender must be authentic, but there's no mechanism in place for ensuring that the sender is who they claim to be.
+Correctness - [satisfied]

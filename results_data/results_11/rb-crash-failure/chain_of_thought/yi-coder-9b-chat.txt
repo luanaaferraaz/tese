@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This is because if a correct broadcaster broadcasts m, all other correct processes will eventually receive it and forward to themselves ensuring m is delivered.
+
+RB-Agreement - [satisfied]
+A single correct process delivering m means the message was forwarded to all other correct processes which ensures all deliver m in the end.
+
+RB-Integrity - [satisfied]
+The delivered set ensures no duplication of messages and since every message is only sent after receiving, every delivered message can be traced back to original broadcast ensuring RB-Integrity property.

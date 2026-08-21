@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [non satisfied]: There might be the case where a process receives a message multiple times which can lead to incorrect delivery of messages.
+No creation - [satisfied]
+Agreement - [satisfied]

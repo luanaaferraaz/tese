@@ -1,0 +1,6 @@
+{"run_id": "ac58722c-d6b7-4de3-a1be-132eaaf6d77a", "type": "start", "content": "Processing"}
+
+{"run_id": "ac58722c-d6b7-4de3-a1be-132eaaf6d77a", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ac58722c-d6b7-4de3-a1be-132eaaf6d77a", "type": "done", "content": "ac58722c-d6b7-4de3-a1be-132eaaf6d77a", "messageId": "None", "token_pct_used": 106.4}
+

@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]: Processes only add to the delivered set when they receive a broadcast message.
+Agreement - [satisfied]

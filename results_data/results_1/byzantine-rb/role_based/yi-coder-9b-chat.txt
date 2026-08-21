@@ -1,0 +1,7 @@
+1) RB-Validity - [satisfied]
+The correctness argument shows that if a correct broadcaster broadcasts m, then all correct processes eventually deliver m. The algorithm starts by the broadcaster sending <type0, m> to all processes and stops when m is delivered or when enough <type1, m> messages have been forwarded.
+
+2) RB-Agreement - [satisfied]
+If one correct process delivers m, it has seen enough <type1, m> support. The forwarding rule using f + 1 helps spread this support so other correct processes also receive enough evidence to eventually deliver m.
+
+3) RB-Integrity - [non satisfied]: Inconsistent messages could lead to multiple deliveries. To satisfy integrity property a process must keep track of the delivered messages in the "delivered" set and only deliver a message once it has received <type1, m> from at least (n + f) / 2 distinct processes.

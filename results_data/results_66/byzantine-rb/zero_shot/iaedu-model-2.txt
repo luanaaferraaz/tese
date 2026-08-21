@@ -1,0 +1,14 @@
+{"run_id": "e694c6c6-dff6-4abb-84a4-e285a914eda6", "type": "start", "content": "Processing"}
+
+{"run_id": "e694c6c6-dff6-4abb-84a4-e285a914eda6", "type": "token", "content": "R"}
+
+{"run_id": "e694c6c6-dff6-4abb-84a4-e285a914eda6", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 rounds down"}
+
+{"run_id": "e694c6c6-dff6-4abb-84a4-e285a914eda6", "type": "token", "content": " to 2; Byzantine process can cause split delivery among correct processes.\nRB-Integrity - [sat"}
+
+{"run_id": "e694c6c6-dff6-4abb-84a4-e285a914eda6", "type": "token", "content": "isfied]"}
+
+{"run_id": "e694c6c6-dff6-4abb-84a4-e285a914eda6", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 rounds down to 2; Byzantine process can cause split delivery among correct processes.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "e694c6c6-dff6-4abb-84a4-e285a914eda6", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "e694c6c6-dff6-4abb-84a4-e285a914eda6", "type": "done", "content": "e694c6c6-dff6-4abb-84a4-e285a914eda6", "messageId": "cmrad9q8p60v7ke01ivg4fz7f"}
+

@@ -1,0 +1,6 @@
+{"run_id": "ec8042cb-ff53-48c5-b091-a83818865c5f", "type": "start", "content": "Processing"}
+
+{"run_id": "ec8042cb-ff53-48c5-b091-a83818865c5f", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "ec8042cb-ff53-48c5-b091-a83818865c5f", "type": "done", "content": "ec8042cb-ff53-48c5-b091-a83818865c5f", "messageId": "None", "token_pct_used": 106.4}
+

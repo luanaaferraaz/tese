@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster sends the initial message <type0, m> to its neighbours. Then, upon receiving <type0, m> from any process, it forwards a support message <type1, m> to its neighbours. Thus, all correct processes eventually deliver <m>. Hence RB-Validity is satisfied.
+
+RB-Agreement - Satisfied
+If one correct process delivers <m>, then it receives at least f + 1 <type1, m> messages from distinct correct processes. These support messages are forwarded to its neighbours by the receivers/relayers. Hence, all other correct processes eventually receive these supporting messages and thus agree on delivering message <m>. Hence RB-Agreement is satisfied.
+
+RB-Termination - Satisfied
+In case of a faulty process, it cannot force delivery of message <m> by sending multiple support messages to its neighbours. The algorithm ensures that a correct process will deliver the message only once as long as it receives at least f + 1 matching <type1, m> messages from distinct processes. Hence RB-Termination is satisfied.

@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This is satisfied because the broadcaster sends the initial message to itself, which it then receives. It forwards this message to all other processes and delivers it. Because of the reliable channels' property, these processes will eventually receive the message as well.
+
+RB-Agreement - [satisfied]
+If a correct process delivers a message m, then by the protocol design, it must have received m (either through type0 or type1 messages). Any other correct process receives this forwarded message and hence delivers it too. 
+
+RB-Integrity - [satisfied]
+This is satisfied because once a process delivers a message m, it adds it to 'delivered' set which prevents further deliveries of the same message. Also, only after receiving <type1,m> does a process forward this onward, ensuring that a process only delivers those messages it has originally received and forwarded.

@@ -1,0 +1,4 @@
+RB-Validity - [satisfied]
+RB-Agreement - [non satisfied]: The algorithm requires one correct process to deliver the message, but there is no mechanism to ensure that this happens. This could lead to a situation where all processes are Byzantine and none of them delivers the message.
+RB-Integrity - [satisfied]
+The New Byzantine-Tolerant RBcast Algorithm satisfies the RB-Validity property as correct processes eventually deliver a message they broadcast. It also respects the RB-Agreement property, since at least one correct process will deliver if there is any. However, there's no guarantee that this delivered instance of the message will be the only one because of the potential faulty behavior of the Byzantine processes.

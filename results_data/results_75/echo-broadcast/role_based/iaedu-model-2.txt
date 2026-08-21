@@ -1,0 +1,14 @@
+{"run_id": "d6f3c976-faf7-429e-a09b-77e138978cc6", "type": "start", "content": "Processing"}
+
+{"run_id": "d6f3c976-faf7-429e-a09b-77e138978cc6", "type": "token", "content": "Validity -"}
+
+{"run_id": "d6f3c976-faf7-429e-a09b-77e138978cc6", "type": "token", "content": " [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: delivered"}
+
+{"run_id": "d6f3c976-faf7-429e-a09b-77e138978cc6", "type": "token", "content": " flag never checked in Delivery Rule; m can be delivered multiple times as READYs arrive ("}
+
+{"run_id": "d6f3c976-faf7-429e-a09b-77e138978cc6", "type": "token", "content": "confidence: 9/10)\nNo creation - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "d6f3c976-faf7-429e-a09b-77e138978cc6", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nAgreement - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: delivered flag never checked in Delivery Rule; m can be delivered multiple times as READYs arrive (confidence: 9/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "d6f3c976-faf7-429e-a09b-77e138978cc6", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "d6f3c976-faf7-429e-a09b-77e138978cc6", "type": "done", "content": "d6f3c976-faf7-429e-a09b-77e138978cc6", "messageId": "cmrnkludt0g0bke014webf07j"}
+

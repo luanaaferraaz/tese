@@ -1,0 +1,14 @@
+{"run_id": "71965fad-1f7c-4c2c-8fb7-6d3e0333e44d", "type": "start", "content": "Processing"}
+
+{"run_id": "71965fad-1f7c-4c2c-8fb7-6d3e0333e44d", "type": "token", "content": "R"}
+
+{"run_id": "71965fad-1f7c-4c2c-8fb7-6d3e0333e44d", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Broadcaster sends then stops; if it cr"}
+
+{"run_id": "71965fad-1f7c-4c2c-8fb7-6d3e0333e44d", "type": "token", "content": "ashes mid-send, some receivers may deliver while others never do.\nRB-Integr"}
+
+{"run_id": "71965fad-1f7c-4c2c-8fb7-6d3e0333e44d", "type": "token", "content": "ity - [satisfied]"}
+
+{"run_id": "71965fad-1f7c-4c2c-8fb7-6d3e0333e44d", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Broadcaster sends then stops; if it crashes mid-send, some receivers may deliver while others never do.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "71965fad-1f7c-4c2c-8fb7-6d3e0333e44d", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "71965fad-1f7c-4c2c-8fb7-6d3e0333e44d", "type": "done", "content": "71965fad-1f7c-4c2c-8fb7-6d3e0333e44d", "messageId": "cmrd8xseu839zke01zsoe5o58"}
+

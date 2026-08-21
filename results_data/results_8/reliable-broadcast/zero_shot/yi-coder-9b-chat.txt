@@ -1,0 +1,11 @@
+1. Validity - [satisfied]
+A correct process broadcasts m, it eventually delivers m by the reliable channel assumption.
+
+2. No duplication - [satisfied]
+The delivered set ensures that every correct process delivers m at most once.
+
+3. No creation - [satisfied]
+By the definition of a correct process and the reliable channel assumption, if any correct process delivers m then it was broadcast by some process. 
+
+4. Agreement - [satisfied]
+If a correct process delivers m immediately sends m to all other processes and channels are reliable hence every other correct process will eventually receive m and deliver it.

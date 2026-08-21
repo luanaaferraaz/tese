@@ -1,0 +1,315 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%                          PACKAGES
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%                          TITLE
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Title}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%                          AUTHORS
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%                          ABSTRACT
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{IEEEkeywords}
+
+\end{IEEEkeywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%                      SECTIONS
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Implementation}
+
+This work evaluates the ability of language models to verify correctness properties of distributed broadcast algorithms. Each test consists of presenting a model with an algorithm description and a set of properties to verify, where the model must classify each property as satisfied or non-satisfied. The models tested are organized in three groups: local SLMs (Phi-2, DeepSeek-Coder-6.7B, Qwen2.5-Coder-7B, Yi-Coder-9B-Chat), API medium-scale models (LLaMA-3.3-70B-Groq, Gemini-2.5-Flash-Lite, DeepSeek-Chat V3), and frontier reasoning models (GPT-5.5, Claude Opus 4 via iaedu platform). The algorithms consist of 10 correct broadcast protocols covering crash, omission, Byzantine, and no-failure models, plus 6 variants with intentional modifications (3 altering only metadata, 3 introducing genuine errors in the pseudocode logic). Five prompt strategies are used throughout: zero-shot, few-shot, chain-of-thought, role-based, and strict-format.
+
+The evaluation was conducted over 79 iterations, totalling approximately 3950 individual tests across 18 language models, 16 algorithm variants, and 5 prompt configurations. Out of these, 2233 produced usable responses, being the remaining 1711 corresponding to API errors, rate-limit failures, and timeouts. The work progressed in five phases, each motivated by the observations of the previous one. The request output format was as follows: 
+
+\begin{verbatim}
+Output requirements:
+- One line per property
+- Format:
+  <property> - [satisfied]
+  <property> - [non satisfied]: <reason>
+- Only include reason if non satisfied
+- Reason ≤ 20 words
+- No extra commentary
+\end{verbatim}
+
+In order to handle the wide number of results each test produces, a python script was used to go through the results and extract the core of them, noting that the results are fully stored and can be checked at any time. This script includes a parser function that reads each model response file, searches for each expected property name in the text, and then looks for verdict keywords in the surrounding context (up to 150 characters after the property mention) using pattern matching. The recognized positive patterns include 'satisfied', 'true', and 'yes', while negative patterns include 'non satisfied', 'not satisfied', 'false', 'violated', and 'not met'. If fewer than half of the expected properties have a recognizable verdict in the response, the output is classified as incorrect format rather than as a correct or wrong verification attempt. This was done in order not to limit the results, as multiple models don't strictly follow the output requested but still produce a response worth of looking at.
+
+\begin{verbatim}
+# Positive: property is satisfied
+pos_patterns = [
+    r"\[\s*satisfied\s*\]",
+    r"[-–]\s*\[?\s*satisfied",  
+    r":\s*\[?\s*satisfied",     
+    r"=\s*satisfied",          
+    r"is\s+satisfied",       
+    r":\s*yes\b",                
+    r":\s*true\b",        
+    r"result:\s*true",           
+    r"[-–]\s*true\b",          
+]
+# Negative: property is explicitly not satisfied
+neg_patterns = [
+    r"\[\s*non\s*satisfied",     
+    r"\[\s*not\s*satisfied",   
+    r"[-–:]\s*\[?\s*non\s*satisfied",
+    r"[-–:]\s*\[?\s*not\s*satisfied",
+    r"not\s+satisfied",
+    r"non\s+satisfied",
+    r":\s*no\b",
+    r":\s*false\b",
+    r"result:\s*false",
+    r"[-–]\s*false\b",
+    r"violated",
+    r"not\s+met",
+    r"[-–]\s*not\s",
+    r"[-–]\s*non\s",
+]
+\end{verbatim}
+
+\section{Phase 1: Small Language Models on Correct Algorithms}
+
+The initial phase (versions 0 through 13) evaluated five models on ten correct broadcast algorithms using all five prompt types. The models tested were Phi-2 (2.7B parameters), DeepSeek-Coder-6.7B, Qwen2.5-Coder-7B, Yi-Coder-9B-Chat, and GPT-4o, producing 1152 tests of which 903 yielded valid responses. The overall success rate was 62\%, with Qwen2.5-Coder-7B achieving the best consistent performance at 94.5\% and Phi-2 the worst at 2.6\%. GPT-4o achieved 100\% accuracy in the few cases where it responded, but rate-limit constraints prevented systematic evaluation. The easiest algorithm for the models was new-byzantine-rb at 79\% and the hardest was echo-broadcast at 40\%.
+
+A determinism experiment was also conducted, executing the same tests four times consecutively to observe whether model responses were stable. Qwen2.5-Coder-7B proved fully deterministic with identical outputs across all runs, DeepSeek-Coder-6.7B was highly probabilistic with only 43.8\% consistency, and Yi-Coder-9B-Chat was the most unstable at 25\% consistency.
+
+Based on these results, several models and configurations were eliminated from subsequent phases. Phi-2 was removed for its near-zero performance, the few-shot prompt was removed because it remained below 50\% across all models, DeepSeek-Coder and Yi-Coder were removed after stagnating at 49\% and 55\% respectively, and GPT-4o was removed due to cost constraints. This left Qwen2.5-Coder-7B as the sole model for the next phase of robustness testing.
+
+\section{Phase 2: Robustness with Modified Algorithm Descriptions}
+
+The second phase (versions 19 through 26) tested whether Qwen2.5-Coder-7B was genuinely analysing the protocol logic or merely relying on superficial cues in the text. Three variants of the Byzantine reliable broadcast algorithm were created where the pseudocode remained identical to the correct original but different metadata was altered: in the first variant the algorithm name was changed to ``Best Effort Broadcast'', in the second the fault model label was changed to ``omission'', and in the third the property RB-Integrity was replaced by RB-Termination in the verification list. Since the pseudocode is correct in all cases, the expected answer for the first two is that all properties are satisfied, while for the third the model should identify that Termination is not guaranteed.
+
+Across 96 tests with zero errors, the model achieved 94.8\% overall: 97\% on the name variant, 100\% on the fault model variant, and 82\% on the Termination variant where all five failures consisted of incorrectly marking Termination as satisfied. This confirmed that the model evaluates pseudocode logic without being misled by superficial text, but has measurable difficulty distinguishing liveness properties from safety properties.
+
+\section{Phase 3: Introduction of Larger Models}
+
+The third phase (versions 28 through 39) expanded the evaluation to larger models accessed through APIs, including LLaMA-3.3-70B via Groq, Gemini-2.5-Flash-Lite, DeepSeek-Chat V3, and several others. These were tested on both the robustness variants and the original correct algorithms. Of 769 tests only 324 produced valid responses due to heavy rate-limiting of the API models, but among the valid results the success rate was 90.4\%. Gemini-2.5-Flash-Lite achieved a perfect 100\% on its 24 valid tests, and when the larger models were tested on the original correct algorithms in versions 38--39, DeepSeek-Chat reached 98.8\% and LLaMA-70B reached 100\%. However, Termination detection remained difficult at 50--75\%, and several models (Gemini-2.5-Pro, DeepSeek-V4-Pro, DeepSeek-R1, GPT-4o) never produced a single valid response due to persistent rate-limits. The conclusion was that larger models confirm correctness at near-perfect rates but do not fundamentally improve the ability to detect that a liveness property is not guaranteed.
+
+\section{Phase 4: Pseudocode-Level Errors with Medium Models}
+
+Given that no medium-scale model could detect the absence of a liveness guarantee through a simple property substitution, the next step was to test whether any model could detect genuine logical errors introduced directly into the protocol pseudocode.
+
+The fourth phase (versions 41 through 46) created three variants of the algorithm with genuine logical errors. In the first, the threshold for triggering support messages was raised from 1 to $f$+1, breaking Validity because a single correct broadcaster cannot generate enough support. In the second, the delivery threshold was lowered from $f$+1 to 1, breaking Integrity because a single Byzantine process can force delivery of an unbroadcast message. In the third, the forwarding rule was entirely removed, breaking Agreement because a process that delivers no longer propagates support to others.
+
+These were tested with DeepSeek-Chat, LLaMA-3.3-70B-Groq, Gemini-2.5-Flash-Lite, and Qwen2.5-Coder-7B across 396 tests (236 valid). On the correct control algorithm the success rate remained at 95.8\%, but on the broken variants the detection rate was essentially zero: LLaMA-70B detected 0 out of 72, DeepSeek-Chat 0 out of 48, and Qwen-7B 1 out of 31. Gemini-Flash-Lite detected 6 out of 36, but also produced false negatives on the correct algorithm with the same justifications, meaning it was not actually discriminating between correct and incorrect protocols. The models consistently marked all properties as satisfied regardless of whether the pseudocode was correct, indicating that they follow the textual narrative of the algorithm description rather than independently reasoning about the protocol logic.
+
+\section{Phase 5: Frontier Reasoning Models}
+
+Since no medium-scale model proved capable of detecting pseudocode errors, the evaluation was extended to frontier reasoning models to determine whether significantly more powerful models could succeed where the others failed.
+
+The fifth phase (versions 47 through 79) tested GPT-5.5 and Claude Opus 4, accessed through the iaedu platform. Due to rate-limits that allowed approximately one complete test run per day, the data accumulated over several weeks, producing 1531 tests of which 674 were valid. The key findings of this phase are: both models detect 100\% of the pseudocode errors when they respond, but achieve only 50--60\% accuracy on correct algorithms due to a high false negative rate, and the two models exhibit nearly inverse strengths by property.
+
+On the broken algorithm variants, GPT-5.5 correctly detected the violated property in 19 out of 19 valid responses and Claude Opus 4 in 10 out of 10. Claude was particularly precise, identifying only the specific violated property while leaving the other two marked as satisfied, whereas GPT-5.5 tended to mark additional properties as non-satisfied alongside the correct one.
+
+However, when tested on the correct algorithms, GPT-5.5 achieved only 59.0\% accuracy (mean across 441 valid tests, std 49.2) and Claude Opus 4 only 45.5\% (347 valid tests, std 49.9). The high standard deviation reflects a binary per-algorithm pattern rather than gradual uncertainty. Table~\ref{tab:model-algo} shows this pattern.
+
+\begin{table}[h]
+\centering
+\caption{Per-algorithm accuracy on correct algorithms (mean\% $\pm$ std)}
+\label{tab:model-algo}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Algorithm} & \textbf{GPT-5.5} & \textbf{Claude Opus 4} \\
+\hline
+best-effort-broadcast & 100 $\pm$ 0 & 84.1 $\pm$ 36.8 \\
+fault-tolerant-rb-no-failure & 100 $\pm$ 0 & 46.6 $\pm$ 50.3 \\
+rb-crash-failure & 100 $\pm$ 0 & 63.6 $\pm$ 48.5 \\
+reliable-broadcast-gen-omission & 66.2 $\pm$ 47.7 & 25.4 $\pm$ 43.9 \\
+byzantine-rb & 0 $\pm$ 0 & 48.2 $\pm$ 50.4 \\
+echo-broadcast & 0 $\pm$ 0 & 1.8 $\pm$ 13.4 \\
+\hline
+\end{tabular}
+\end{table}
+
+The two models are nearly complementary by property, as shown in Table~\ref{tab:model-prop}. GPT-5.5 achieves 100\% on RB-Validity and RB-Agreement but only 64.7\% on RB-Integrity, while Claude achieves 92.6\% on RB-Integrity but only 59.0\% on RB-Agreement. Combining the strongest verdict from each model for each property would yield approximately 99\% accuracy across all RB properties.
+
+\begin{table}[h]
+\centering
+\caption{Per-property accuracy on correct algorithms (mean\% $\pm$ std)}
+\label{tab:model-prop}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Property} & \textbf{GPT-5.5} & \textbf{Claude Opus 4} \\
+\hline
+RB-Validity & 100 $\pm$ 0 & 51.6 $\pm$ 50.1 \\
+RB-Agreement & 100 $\pm$ 0 & 59.0 $\pm$ 49.3 \\
+RB-Integrity & 64.7 $\pm$ 47.9 & 92.6 $\pm$ 26.3 \\
+Validity & 91 $\pm$ -- & 68.9 $\pm$ 46.7 \\
+No creation & 53.5 $\pm$ 50.0 & 80.5 $\pm$ 39.8 \\
+No duplication & 53.5 $\pm$ 50.0 & 49.4 $\pm$ 50.1 \\
+Agreement & -- & 17.4 $\pm$ 38.1 \\
+\hline
+\end{tabular}
+\end{table}
+
+A confidence analysis using prompts that requested a self-reported confidence score (1 to 10) revealed a significant calibration difference. Table~\ref{tab:prompt-model} shows how prompt choice affects each model.
+
+\begin{table}[h]
+\centering
+\caption{Accuracy by prompt (mean\% $\pm$ std, correct algorithms)}
+\label{tab:prompt-model}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Prompt} & \textbf{GPT-5.5} & \textbf{Claude Opus 4} \\
+\hline
+chain\_of\_thought & 57.6 $\pm$ 49.6 & \textbf{90.3 $\pm$ 30.1} \\
+role\_based & 60.7 $\pm$ 49.1 & 33.6 $\pm$ 47.5 \\
+strict\_format & 57.4 $\pm$ 49.7 & 43.0 $\pm$ 49.7 \\
+zero\_shot & 60.2 $\pm$ 49.2 & 47.1 $\pm$ 50.2 \\
+\hline
+\end{tabular}
+\end{table}
+
+Claude reports low confidence (averaging 6.5/10) on its false negatives, and applying a simple filter that discards non-satisfied verdicts with confidence below 8 raises its effective accuracy from 78.8\% to 93.9\%, an improvement of 15 percentage points. GPT-5.5, in contrast, reports confidence of 9.0/10 even on its false negatives, meaning the filter produces no meaningful improvement. This indicates that Claude is well-calibrated (knows when it is uncertain) while GPT-5.5 is poorly calibrated (confident regardless of correctness).
+
+Analysis of the justifications provided for the false negatives revealed five recurring categories of reasoning error: the most common is identifying a legitimate attack vector without verifying that the algorithm's threshold prevents it (60 occurrences, primarily on byzantine-rb), followed by assuming a guard condition is missing when it exists in the pseudocode (60 occurrences, on echo-broadcast), assuming message counters do not filter by sender (56 occurrences), reasoning about crash or omission scenarios in a no-failure model (24 occurrences), and raising irrelevant concerns about self-delivery (9 occurrences). All of these represent incomplete verification: the model performs threat analysis but does not complete the defence verification step.
+
+\section{Main Finding and Recommended Configuration}
+
+The central result of this evaluation is an asymmetry between model classes that defines the current boundary of what language models can do for distributed algorithm verification, as summarized in Table~\ref{tab:overall}.
+
+\begin{table}[h]
+\centering
+\caption{Overall model performance}
+\label{tab:overall}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Model} & \textbf{Correct algos (\%)} & \textbf{Error detection (\%)} \\
+\hline
+LLaMA-3.3-70B-Groq & 100 $\pm$ 0 (n=100) & 0\% (0/72) \\
+DeepSeek-Chat V3 & 98.9 $\pm$ 10 (n=92) & 0\% (0/48) \\
+Qwen2.5-Coder-7B & 95.2 $\pm$ 21 (n=294) & 5\% (3/60) \\
+GPT-5.5 & 59.0 $\pm$ 49 (n=441) & 100\% (19/19) \\
+Claude Opus 4 & 45.5 $\pm$ 50 (n=347) & 100\% (10/10) \\
+\hline
+\end{tabular}
+\end{table}
+
+Small and medium models (up to 70B parameters) achieve approximately 95--100\% accuracy on correct algorithms but 0\% detection on broken ones, while frontier reasoning models achieve 100\% detection on broken algorithms but only 45--59\% on correct ones. No single model currently solves both the confirmation and falsification problems simultaneously.
+
+However, while the detection results on incorrect algorithms are promising, the sample remains limited (19 valid responses for GPT-5.5 and 10 for Claude Opus 4) due to rate-limit constraints, and further testing is needed before these models can be reliably classified as effective at detecting protocol errors.
+
+Based on the per-model, per-prompt, per-property, and confidence analysis, the best configuration identified for correct algorithm verification is LLaMA-3.3-70B-Groq or DeepSeek-Chat V3 (100\% with any prompt), or Qwen2.5-Coder-7B locally with zero-shot (95.2\%). For error detection, Claude Opus 4 with chain-of-thought and confidence filtering achieves both 100\% detection on broken algorithms and approximately 94\% on correct ones. GPT-5.5 detects errors equally well but cannot be filtered by confidence due to poor calibration.
+
+\begin{table}[h]
+\centering
+\caption{Best configurations identified}
+\label{tab:best-configs}
+\begin{tabular}{|l|l|l|c|}
+\hline
+\textbf{Task} & \textbf{Model} & \textbf{Prompt} & \textbf{Accuracy} \\
+\hline
+Confirmation & LLaMA-70B & any & 100\% \\
+Confirmation & DeepSeek-Chat & any & 98.9\% \\
+Confirmation (local) & Qwen-7B & zero-shot & 100\% \\
+Error detection & GPT-5.5 & any & 100\% \\
+Error detection & Claude Opus 4 & any & 100\% \\
+Both (with filter) & Claude + CoT & conf $\geq$ 8 & 94\% / 100\% \\
+\hline
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experimental Evaluation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Related Work}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Acknowledgment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{bibliografy}
+
+\end{document}

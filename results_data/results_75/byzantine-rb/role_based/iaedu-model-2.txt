@@ -1,0 +1,16 @@
+{"run_id": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "type": "start", "content": "Processing"}
+
+{"run_id": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "type": "token", "content": "R"}
+
+{"run_id": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "type": "token", "content": "B-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: threshold (n+f)/2 ="}
+
+{"run_id": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "type": "token", "content": " 2.5 rounds down; correct process may deliver on 3 type"}
+
+{"run_id": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "type": "token", "content": "1 msgs while others get insufficient support (confidence: 6/10)\nRB-"}
+
+{"run_id": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "type": "token", "content": "Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied] (confidence: 9/10)\nRB-Agreement - [non satisfied]: threshold (n+f)/2 = 2.5 rounds down; correct process may deliver on 3 type1 msgs while others get insufficient support (confidence: 6/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "type": "done", "content": "6c9245cc-5321-4611-ac7f-09b0dea55c59", "messageId": "cmrnkhb5e0ftdke01xvibx9bo"}
+

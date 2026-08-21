@@ -1,0 +1,1 @@
+ "Validity - Satisfied. This algorithm is valid, since every correct process eventually delivers a broadcasted message."

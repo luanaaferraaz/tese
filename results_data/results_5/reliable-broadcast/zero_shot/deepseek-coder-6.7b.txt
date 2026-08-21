@@ -1,0 +1,40 @@
+Algorithm Analysis: Reliable Broadcast (RB)
+
+1. IDENTIFICATION
+The algorithm name is 'Reliable Broadcast'. It's for the problem type of 'Reliable Broadcast', under a fault model of [C] Crash and timing model of [AS] Asynchronous, with Max faulty processes f<n (No majority required). The communication and timing assumptions are point-to-point reliable, no FIFO requirements. Additional assumptions: Processes fail only by crashing (stopping).
+
+2. SYSTEM MODEL
+Processes: n; Resilience condition: f<n. 
+
+3. CORRECTNESS PROPERTIES
+Validity - satisfied: If a correct process broadcasts m, it eventually delivers m. No duplication - satisfied: Every correct process delivers m at most once. No creation - non-satisfied: There can be scenarios where a message is delivered before being sent by the sender. This violates the property of 'No Creation'. Agreement - satisfied: If a correct process delivers m, then every correct process eventually delivers m.
+
+4. INTERFACE (API) 
+External operations: rb_broadcast(m); Output events / upcalls: rb<｜begin▁of▁sentence｜>deliver(m).
+
+5. ROLES 
+Sender: The initiator of the broadcast; Relayers: All processes that ensure message delivery.
+
+6. LOCAL STATE (per process i) 
+Constants: n; Variables: delivered set containing messages already delivered to application.
+
+7. MESSAGE TYPES 
+DATA(s, m): A message with original sender s and content m.
+
+8. INITIALIZATION 
+Initially, delivered = {}.
+
+9. PROTOCOL PSEUDOCODE (Eager Diffusion)
+A) On external invocation: When rb_broadcast(m) is called, it delivers the message to self and sends it out to all other processes. B) On receive: When a DATA(s, m) from process k is received, if m isn't in delivered set, add m to delivered set and deliver it.
+
+10. DECISION / DELIVERY RULE 
+Deliver m when the message is received for the first time; After delivery: Add m to delivered set and immediately forward m to all others.
+
+11. QUORUM N/A
+
+12. INVARIANTS I1 - If any correct process has m in its delivered set, eventually all correct processes will have m in their delivered sets.
+
+13. CORRECTNESS ARGUMENT SKELETON 
+Safety (No Duplication/Creation): The delivered set prevents duplicate deliveries and creation of upcalls; Liveness (Agreement): If a correct process delivers m, it immediately sends m to all other processes, ensuring agreement.
+
+14. COMPLEXITY Message complexity: O(n^2) (each process sends the message to n others exactly once); Time / round complexity: 2 "hops" (Sender → Process i → Everyone else).

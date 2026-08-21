@@ -1,0 +1,134 @@
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "start", "content": "Processing"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": ""}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "RB"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "-"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "Validity"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " -"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " ["}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "non"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " satisfied"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "]:"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " For"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " n"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "="}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "4"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " with"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " one"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " Byzantine"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": ","}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " correct"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " non"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "-b"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "road"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "casters"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " receive"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " only"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " one"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " correct"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " type"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "1"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": ".\n"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "RB"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "-"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "Agreement"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " -"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " ["}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "s"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "atisfied"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "]\n"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "RB"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "-"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "Integrity"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " -"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " ["}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "non"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " satisfied"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "]:"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " A"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " Byzantine"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " can"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " forge"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " type"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "0"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": ","}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " causing"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " correct"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " support"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " and"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " delivery"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " of"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " an"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " un"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "broadcast"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": " message"}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": "."}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "token", "content": ""}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: For n=4 with one Byzantine, correct non-broadcasters receive only one correct type1.\nRB-Agreement - [satisfied]\nRB-Integrity - [non satisfied]: A Byzantine can forge type0, causing correct support and delivery of an unbroadcast message.", "tool_calls": [], "tool_call_id": null, "run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "response_metadata": {"model_provider": "openai", "id": "resp_021373d068c412be006a6650b9daa08197aed127a828b6e226", "created_at": 1785090233.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "type": "done", "content": "d4e03b51-1563-4f15-abb6-7794e428ba1a", "messageId": "cms24nh1k1trzke01x8gvtrcb"}
+

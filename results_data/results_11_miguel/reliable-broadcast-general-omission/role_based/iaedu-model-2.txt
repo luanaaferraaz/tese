@@ -1,0 +1,16 @@
+{"run_id": "c47145a2-7be4-41ba-9982-61706178ba63", "type": "start", "content": "Processing"}
+
+{"run_id": "c47145a2-7be4-41ba-9982-61706178ba63", "type": "token", "content": "Validity - ["}
+
+{"run_id": "c47145a2-7be4-41ba-9982-61706178ba63", "type": "token", "content": "non satisfied]: Sender delivers immediately but if sender is correct and al"}
+
+{"run_id": "c47145a2-7be4-41ba-9982-61706178ba63", "type": "token", "content": "one, others need f+1 distinct senders. (confidence: 6/10)\nNo duplication - [satisfied]"}
+
+{"run_id": "c47145a2-7be4-41ba-9982-61706178ba63", "type": "token", "content": " (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Faulty sender may deliver to f"}
+
+{"run_id": "c47145a2-7be4-41ba-9982-61706178ba63", "type": "token", "content": "ewer than f+1 correct processes; threshold f+1 insufficient without amplification before delivery. (confidence: 7/10)"}
+
+{"run_id": "c47145a2-7be4-41ba-9982-61706178ba63", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately but if sender is correct and alone, others need f+1 distinct senders. (confidence: 6/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Faulty sender may deliver to fewer than f+1 correct processes; threshold f+1 insufficient without amplification before delivery. (confidence: 7/10)", "tool_calls": [], "tool_call_id": null, "run_id": "c47145a2-7be4-41ba-9982-61706178ba63", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "c47145a2-7be4-41ba-9982-61706178ba63", "type": "done", "content": "c47145a2-7be4-41ba-9982-61706178ba63", "messageId": "cmrnkvuh50ghbke01n5uxl06s"}
+

@@ -1,0 +1,4 @@
+1) Validity - [satisfied]
+2) No duplication - [satisfied]
+3) No creation - [non satisfied]: The Reliable Broadcast protocol assumes that all processes are initially correct. However, if a process is faulty and broadcasts a message it did not originate, the receiving processes will not be able to validate whether this message was indeed originated by a process.
+4) Agreement - [satisfied]

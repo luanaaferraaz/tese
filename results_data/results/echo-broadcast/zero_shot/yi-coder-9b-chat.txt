@@ -1,0 +1,15 @@
+1. Validity - [satisfied]
+If a correct process p broadcasts v, then all correct processes accept v.
+This is guaranteed by the rules of the algorithm which ensure that every correct process will eventually receive 2f+1 READY messages per broadcasted value, which satisfies the Validity property.
+
+2. Agreement - [satisfied]
+If two correct processes q and r accept the values v and u respectively, then v=u.
+This is also guaranteed by the rules of the algorithm where any process will eventually receive enough READY messages to either deliver a value it has already accepted or decide on its own if needed.
+
+3. No duplication - [satisfied]
+If a correct process pi​ delivers m, then there are no two correct processes that have delivered different values for m.
+This property is satisfied due to the Invariant I1 (Uniqueness) which states that no two correct processes ever send ECHO or READY for different messages in the same broadcast instance. This ensures every delivered message m by a correct process pi has a unique value and there won't be any duplication of values for the same message.
+
+4. No creation - [non satisfied]
+A correct process cannot create new values other than those it receives or broadcasts.
+This property is not satisfied due to the asynchronous nature of the network. While a process can ensure that it has received enough READY messages (2f+1) for any accepted value, there's no mechanism in place to prevent accepting a value that wasn't relayed by a correct process or didn't originate from the sender. This could be considered a failure of the algorithm and would need to be addressed.

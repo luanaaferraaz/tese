@@ -1,0 +1,11 @@
+1) Validity - [satisfied]
+   The algorithm guarantees that if a correct process p broadcasts a message v, all correct processes will eventually accept this message. This is because the process sends ECHO and READY messages to acknowledge its receipt of a SEND message and readyness to deliver it. A process receives these acknowledgments in the form of ECHO and READY messages from other processes, which increases their respective counters. If any counter reaches the quorum threshold (n+f)/2 for ECHO or f+1 for READY, this signifies that a majority of correct processes have seen the message, hence all correct processes accept v.
+
+2) Agreement - [satisfied]
+   The algorithm guarantees agreement between two correct processes if they both accept messages with the same content. This is because every process maintains its own counter for each unique message and increments it when receiving ECHO or READY messages from other processes. If these counters reach their respective quorum thresholds, this signifies that a majority of correct processes have seen and accepted the message, hence both correct processes must have agreed on the content of v.
+
+3) No duplication - [satisfied]
+   The algorithm ensures no duplication of messages because each process maintains its own counter for each unique message. If a process receives multiple instances of the same SEND, ECHO or READY messages, it will simply increment its respective counters instead of sending new messages. As such, no message is delivered more than once.
+
+4) No creation - [satisfied]
+   The algorithm guarantees that if a process delivers a message m with sender s, then the sender must have previously broadcasted this message. This is because the process only delivers messages when its counter for each unique message reaches the quorum threshold. If the sender has not sent the message before, it will never reach this point and hence does not deliver any new messages.

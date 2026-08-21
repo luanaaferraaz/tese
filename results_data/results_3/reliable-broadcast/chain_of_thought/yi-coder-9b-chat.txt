@@ -1,0 +1,11 @@
+1. Validity - satisfied
+    If a correct process broadcasts m, then it eventually delivers m. This is guaranteed by the protocol design where every process will send the message to all other processes, and as the sender is also a process, it will receive its own broadcasted messages.
+
+2. No duplication - satisfied
+    The algorithm ensures no duplication of messages in the delivered set using the `delivered` set.
+
+3. No creation - satisfied
+    The message was created by some correct process as every broadcast is initiated by a correct process and the reliable communication channels ensure that all other processes will receive it eventually. 
+
+4. Agreement - satisfied
+    If a correct process delivers m, then every correct process eventually delivers m. After receiving the message for the first time, any correct process immediately forwards the message to all others ensuring agreement among all correct processes.

@@ -1,0 +1,6 @@
+{"run_id": "a238bd17-9365-4377-a815-f3717928588b", "type": "start", "content": "Processing"}
+
+{"run_id": "a238bd17-9365-4377-a815-f3717928588b", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "a238bd17-9365-4377-a815-f3717928588b", "type": "done", "content": "a238bd17-9365-4377-a815-f3717928588b", "messageId": "None", "token_pct_used": 102.2}
+

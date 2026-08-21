@@ -1,0 +1,6 @@
+{"run_id": "1045e8ee-0cf4-4890-afd9-c69370a716c8", "type": "start", "content": "Processing"}
+
+{"run_id": "1045e8ee-0cf4-4890-afd9-c69370a716c8", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "1045e8ee-0cf4-4890-afd9-c69370a716c8", "type": "done", "content": "1045e8ee-0cf4-4890-afd9-c69370a716c8", "messageId": "None", "token_pct_used": 106.4}
+

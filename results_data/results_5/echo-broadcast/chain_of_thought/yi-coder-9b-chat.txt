@@ -1,0 +1,9 @@
+1) Validity: The validity property means that, if a correct process broadcasts a value v, then all other correct processes eventually accept this value. In this algorithm, this is guaranteed because each correct process sends an ECHO message upon receiving the SEND message from the sender and when at least n−f correct processes have sent their ECHO messages (the 2n−f quorum) they send a READY message.
+
+2) Agreement: The agreement property means that if two different correct processes accept values v and u respectively, then these values are equal i.e., v=u. This algorithm guarantees this property because each correct process only sends the READY message once it has received ECHO messages from at least n−f other correct processes (the 2n−f quorum).
+
+3) No duplication: The no-duplication property means that a message is not delivered more than once by any process in an instance of the algorithm. In this algorithm, there are no explicit mechanisms to avoid duplication; however, the fact that each process only sends the READY message when it has received enough ECHO messages (from at least n−f other processes) ensures that a message is not delivered more than once by any correct process.
+
+4) No creation: The no-creation property means that if a process delivers a message m with sender s, then this message was previously broadcasted by the sender s. This property holds in this algorithm because each correct process only sends the READY message when it has received ECHO messages from at least n−f other processes.
+
+The correctness properties of this algorithm are satisfied according to the reasoning given above.

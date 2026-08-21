@@ -1,0 +1,3 @@
+Validity - [Satisfied]
+No duplication - [Non Satisfied]: The algorithm does not specify how to prevent duplicate delivery of the same message. It might be possible to resolve this by adding a mechanism to track messages that have been delivered and only deliver them again if they haven't already been.
+No creation - [Satisfied]

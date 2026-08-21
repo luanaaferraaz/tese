@@ -1,0 +1,14 @@
+{"run_id": "e1f53e3d-d385-413d-877e-7b61ac2f589b", "type": "start", "content": "Processing"}
+
+{"run_id": "e1f53e3d-d385-413d-877e-7b61ac2f589b", "type": "token", "content": "R"}
+
+{"run_id": "e1f53e3d-d385-413d-877e-7b61ac2f589b", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Broadcaster sends then stops; if it"}
+
+{"run_id": "e1f53e3d-d385-413d-877e-7b61ac2f589b", "type": "token", "content": " crashes mid-send, some correct processes may never receive m."}
+
+{"run_id": "e1f53e3d-d385-413d-877e-7b61ac2f589b", "type": "token", "content": "\nRB-Integrity - [satisfied]"}
+
+{"run_id": "e1f53e3d-d385-413d-877e-7b61ac2f589b", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Broadcaster sends then stops; if it crashes mid-send, some correct processes may never receive m.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "e1f53e3d-d385-413d-877e-7b61ac2f589b", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "e1f53e3d-d385-413d-877e-7b61ac2f589b", "type": "done", "content": "e1f53e3d-d385-413d-877e-7b61ac2f589b", "messageId": "cmr90tgz55dwake01kaskgwby"}
+

@@ -1,0 +1,6 @@
+{"run_id": "dbc315df-b86f-469a-a281-5e45559e85a5", "type": "start", "content": "Processing"}
+
+{"run_id": "dbc315df-b86f-469a-a281-5e45559e85a5", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "dbc315df-b86f-469a-a281-5e45559e85a5", "type": "done", "content": "dbc315df-b86f-469a-a281-5e45559e85a5", "messageId": "None", "token_pct_used": 102.2}
+

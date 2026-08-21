@@ -1,0 +1,24 @@
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "start", "content": "Processing"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "token", "content": "Valid"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "token", "content": "ity - [non satisfied]: Correct sender delivers immediately without f+1 dist"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "token", "content": "inct sources, but property holds; however if s"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "token", "content": "ender is isolated by receive-omission faulty relayers, other corre"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "token", "content": "ct processes may not deliver \u2014 validity itself (sender delivers own"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "token", "content": " m) is satisfied (confidence: 4/10)\n\nWait, let me reconsider properly.\n\nValidity - [satisfied]"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "token", "content": " (confidence: 9/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "token", "content": "\nAgreement - [non satisfied]: With general omission, a correct process delivering via f+1 sources may include"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "token", "content": " faulty senders; remaining correct processes might not reach f+1 threshold (confidence: 6/10)"}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Correct sender delivers immediately without f+1 distinct sources, but property holds; however if sender is isolated by receive-omission faulty relayers, other correct processes may not deliver \u2014 validity itself (sender delivers own m) is satisfied (confidence: 4/10)\n\nWait, let me reconsider properly.\n\nValidity - [satisfied] (confidence: 9/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: With general omission, a correct process delivering via f+1 sources may include faulty senders; remaining correct processes might not reach f+1 threshold (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "type": "done", "content": "0a1bb630-54ee-423f-a2d2-24fcf10eed84", "messageId": "cmrgfir8p2cuuke01441leflg"}
+

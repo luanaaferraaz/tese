@@ -1,0 +1,34 @@
+1. Safety - Integrity:
+   Property: Each correct process delivers at most one message.
+   Result: [SATISFIED] 
+   Details: As per the algorithm, each process Pi signs a unique ECHO message for Ps and thus delivers only one message.
+
+2. Safety - Consistency:
+   Property: If two correct processes deliver m and m', then m = m'.
+   Result: [SATISFIED] 
+   Details: The algorithm ensures that the sender's FINAL proof guarantees consistency among correct receivers as it requires a quorum of distinct signatures from correct nodes (not Byzantine).
+
+3. Safety - Validity:
+   Property: If the sender is correct and broadcasts m, then any correct process that delivers, delivers m.
+   Result: [SATISFIED] 
+   Details: The algorithm ensures consistency among correct receivers due to the FINAL proof. Any correct receiver verifies the validity of the delivered message before acceptance using the sender's signature from the FINAL message.
+
+4. Liveness - Termination (sender correct):
+   Property: If the sender is correct, all correct processes eventually deliver m. 
+   Result: [SATISFIED] 
+   Details: The algorithm ensures liveness as any correct receiver echoes back a signed ECHO message to Ps upon receiving its SEND request. Once enough such confirmations are gathered by Ps, it broadcasts the FINAL message containing the original message and the signatures from all correctly echoing nodes. All correct receivers then deliver the message after verifying the sender's signature in the FINAL proof.
+
+5. Liveness - Termination (all processes):
+   Property: If at least N-t processes are correct, the algorithm terminates. 
+   Result: [NOT SATISFIED]
+   Details: While the algorithm ensures termination when Ps is correct, it does not guarantee termination for all nodes since Byzantine nodes can prevent ECHO messages from reaching the sender or FINAL messages from being delivered to receivers.
+
+6. Message Complexity:
+   Property: The total number of messages sent by a correct process is polynomial in N. 
+   Result: [SATISFIED] 
+   Details: The algorithm ensures that each correct node sends at most O(N) ECHO and one FINAL message to Ps, thus satisfying the property.
+
+7. Time Complexity:
+   Property: Every correct process delivers its message in polynomial time.
+   Result: [NOT SATISFIED] 
+   Details: The algorithm uses an asynchronous model of computation with unbounded delays; thus it cannot guarantee constant (or even polynomial) time to deliver a message, depending on the sender's correct delivery and other processes’ echo confirmation.

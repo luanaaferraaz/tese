@@ -1,0 +1,14 @@
+{"run_id": "e4694144-a321-4c2a-8a29-e99ccdf80949", "type": "start", "content": "Processing"}
+
+{"run_id": "e4694144-a321-4c2a-8a29-e99ccdf80949", "type": "token", "content": "Validity - [satisfied"}
+
+{"run_id": "e4694144-a321-4c2a-8a29-e99ccdf80949", "type": "token", "content": "] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm does not track delivered messages; rel"}
+
+{"run_id": "e4694144-a321-4c2a-8a29-e99ccdf80949", "type": "token", "content": "ies solely on link no-duplication assumption. (confidence: 6/10)\nNo creation - [satisfied] (confidence: 9"}
+
+{"run_id": "e4694144-a321-4c2a-8a29-e99ccdf80949", "type": "token", "content": "/10)"}
+
+{"run_id": "e4694144-a321-4c2a-8a29-e99ccdf80949", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm does not track delivered messages; relies solely on link no-duplication assumption. (confidence: 6/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "e4694144-a321-4c2a-8a29-e99ccdf80949", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "e4694144-a321-4c2a-8a29-e99ccdf80949", "type": "done", "content": "e4694144-a321-4c2a-8a29-e99ccdf80949", "messageId": "cmrer4jgv012tke01k9vr6rde"}
+

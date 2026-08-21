@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+This property is satisfied because the algorithm guarantees that if a correct broadcaster broadcasts m, then all correct processes eventually deliver m.
+
+RB-Agreement - [non satisfied]: The reason is the lack of complete agreement among the processes about which messages to deliver.
+
+RB-Integrity - [satisfied]
+This property is satisfied because a process delivers each message it receives at most once and only if that message was broadcast by the broadcaster. A correct process never broadcasts duplicate messages, ensuring no duplicate delivery.

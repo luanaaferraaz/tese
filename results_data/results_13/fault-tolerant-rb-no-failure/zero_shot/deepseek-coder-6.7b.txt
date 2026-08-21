@@ -1,0 +1,5 @@
+RB-Validity - Satisfied: If the broadcaster sends <type0, m> to all processes, then all correct processes eventually receive and deliver it.
+
+RB-Agreement - Satisfied: If one process delivers m, then all correct processes eventually receive and deliver it. This is because each message sent by the broadcaster is delivered to all other correct processes through reliable channels.
+
+RB-Integrity - Satisfied: The delivered set prevents duplicate delivery. Since no message is created or lost due to failures, a process delivers a message at most once if and only if that message was broadcast by the broadcaster. This satisfies the requirement of ensuring each message is delivered exactly once.

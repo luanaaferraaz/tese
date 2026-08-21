@@ -1,0 +1,8 @@
+Satisfied:
+1) Validity - The algorithm ensures that every correct process eventually delivers a message. This is achieved by each correct process sending out its broadcasted message to all other processes, and then triggering the deliver event whenever it receives a delivery confirmation from any of these processes. 
+2) No duplication - The algorithm prevents a message from being delivered more than once. This is ensured by ensuring that every process checks if a received message has already been processed before delivering it, as per the "delivery events must correspond to previously broadcast messages" validation rule. 
+3) No creation - The algorithm ensures that if a process delivers a message m with sender s, then m was previously broadcast by process s. This is achieved through perfect point-to-point links (assumed in this scenario), where each pair of processes can deliver and receive at most one message per round trip time. 
+
+Unsatisfied:
+1) Integrity - The property "m delivered ⟹ m was broadcast by s" is not directly covered by the algorithm as it doesn't keep track of who sent a message, only that each process delivers any received message. This can be addressed with additional information flow tracking in the system design, but this goes beyond what is described in the current pseudocode and interface definitions. 
+2) No duplication - The property "m is delivered to process p at most once" is directly covered by the algorithm as each process ensures no duplications based on previously broadcasted messages. However, it's worth noting that this might be a limitation if not handling sender-specific message tracking which goes beyond current pseudocode and interface definitions. 

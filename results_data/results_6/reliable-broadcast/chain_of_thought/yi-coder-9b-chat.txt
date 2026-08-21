@@ -1,0 +1,11 @@
+1. Validity - [satisfied]
+The correct process guarantees that it will eventually deliver the message it broadcasts.
+
+2. No duplication - [satisfied]
+Each correct process checks if a delivered message is already in its delivered set before delivering it or forwarding it to other processes. This ensures each process delivers every correct process' broadcast at most once.
+
+3. No creation - [satisfied]
+In a fault-tolerant distributed system, the message was either broadcast by some process or delivered from another process that is assumed to be correct (non-faulty). Therefore, this property is satisfied in our algorithm.
+
+4. Agreement - [satisfied]
+After a correct process delivers a message m, it immediately sends m to all other processes under the assumption of reliable communication channels and correct processes only. Every other correct process eventually receives m and delivers it due to the asynchronous nature of the model. Therefore, all correct processes will eventually agree on the messages they deliver.

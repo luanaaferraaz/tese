@@ -1,0 +1,6 @@
+{"run_id": "70805e5e-b5dc-47f8-a201-068018ce598b", "type": "start", "content": "Processing"}
+
+{"run_id": "70805e5e-b5dc-47f8-a201-068018ce598b", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "70805e5e-b5dc-47f8-a201-068018ce598b", "type": "done", "content": "70805e5e-b5dc-47f8-a201-068018ce598b", "messageId": "None", "token_pct_used": 106.4}
+

@@ -1,0 +1,16 @@
+1. Safety Property:
+    - What the property requires: The safety property requires that a process delivers at most one message and no two correct processes deliver different messages. If a process delivers more than one message or delivers different messages, it violates this property.
+    - Check whether the algorithm satisfies it: This can be verified by checking if for every pair of distinct processes, they do not deliver different messages. 
+    - Identify assumptions needed: The assumption here is that each process correctly implements the Byzantine reliable broadcast algorithm. Without such a correct implementation, this property cannot be verified.
+    - If the property cannot be verified, explain why: If any of the processes does not implement the algorithm correctly or if the system as a whole behaves maliciously, it is possible that different processes will deliver different messages which violates the safety property. 
+
+2. Liveness Property:
+    - What the property requires: The liveness property requires that all correct processes eventually deliver the message broadcast by the sender. If this cannot be ensured, then it violates this property.
+    - Check whether the algorithm satisfies it: This can be verified by counting the number of READY messages received by each process and checking if they all reach a quorum size of 2f + 1. 
+    - Identify assumptions needed: The assumption here is that each process correctly implements the Byzantine reliable broadcast algorithm. Without such a correct implementation, this property cannot be verified.
+    - If the property cannot be verified, explain why: If any of the processes does not implement the algorithm correctly or if the system as a whole behaves maliciously, it is possible that some processes will not receive enough READY messages to reach quorum size which violates the liveness property. 
+
+3. Complexity:
+    - Message complexity: The message complexity of this algorithm is O(N^2). This means for each process, there can be at most N-1 other processes it needs to send a message to. If more than (N-1) other processes need to receive the same message, the complexity cannot be reduced below O(N^2).
+    - Round / time complexity: The constant expected rounds assumption is made here which means that every process in the system should take approximately the same amount of time to handle each message. If a process takes significantly longer than others, it could cause the system as a whole to not achieve liveness or safety properties. 
+    - Message size: The message complexity for this algorithm is O(|m|), where |m| is the size of the message being broadcasted. This means that each additional byte in the message increases the computational complexity of the algorithm by an amount proportional to the size of the message. If the message size is significantly large, it could lead to performance issues and violate liveness or safety properties.

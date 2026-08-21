@@ -1,0 +1,3 @@
+1. Validity: This property is satisfied as it depends on the reliable delivery of messages by perfect links, which is guaranteed when a correct process broadcasts a message to all processes according to the algorithm.
+2. No duplication: This property will be satisfied because each process checks if a message has been received before delivering it and because perfect point-to-point links ensure that no duplications can occur in the lower layers of the network.
+3. No creation: This property is also satisfied as it depends on the underlying perfect links model, which ensures that delivered messages were previously sent by some process according to the algorithm's constraints.

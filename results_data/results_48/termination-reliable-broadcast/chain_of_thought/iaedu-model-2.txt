@@ -1,0 +1,6 @@
+{"run_id": "79fcecba-65d7-46ec-8b79-c4d0ca21c9f9", "type": "start", "content": "Processing"}
+
+{"run_id": "79fcecba-65d7-46ec-8b79-c4d0ca21c9f9", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "79fcecba-65d7-46ec-8b79-c4d0ca21c9f9", "type": "done", "content": "79fcecba-65d7-46ec-8b79-c4d0ca21c9f9", "messageId": "None", "token_pct_used": 106.4}
+

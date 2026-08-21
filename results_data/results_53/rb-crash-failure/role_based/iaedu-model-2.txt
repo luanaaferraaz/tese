@@ -1,0 +1,6 @@
+{"run_id": "bff3fa68-c3a5-424d-833a-c0c2980f645e", "type": "start", "content": "Processing"}
+
+{"run_id": "bff3fa68-c3a5-424d-833a-c0c2980f645e", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "bff3fa68-c3a5-424d-833a-c0c2980f645e", "type": "done", "content": "bff3fa68-c3a5-424d-833a-c0c2980f645e", "messageId": "None", "token_pct_used": 106.4}
+

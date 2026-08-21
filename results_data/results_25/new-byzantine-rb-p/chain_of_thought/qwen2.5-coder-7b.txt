@@ -1,0 +1,5 @@
+RB-Validity - [satisfied]: Correct broadcaster sends initial message, correct receivers spread support.
+
+RB-Agreement - [satisfied]: Correct processes reach delivery threshold through support propagation.
+
+RB-Termination - [satisfied]: All correct processes deliver due to delivery and forwarding rules.

@@ -1,0 +1,14 @@
+{"run_id": "c1a068a8-3884-4891-bd1b-283a222fede3", "type": "start", "content": "Processing"}
+
+{"run_id": "c1a068a8-3884-4891-bd1b-283a222fede3", "type": "token", "content": "R"}
+
+{"run_id": "c1a068a8-3884-4891-bd1b-283a222fede3", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself but message l"}
+
+{"run_id": "c1a068a8-3884-4891-bd1b-283a222fede3", "type": "token", "content": "ost, no correct process delivers; asymmetric if partial."}
+
+{"run_id": "c1a068a8-3884-4891-bd1b-283a222fede3", "type": "token", "content": "\nRB-Integrity - [satisfied]"}
+
+{"run_id": "c1a068a8-3884-4891-bd1b-283a222fede3", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself but message lost, no correct process delivers; asymmetric if partial.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "c1a068a8-3884-4891-bd1b-283a222fede3", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "c1a068a8-3884-4891-bd1b-283a222fede3", "type": "done", "content": "c1a068a8-3884-4891-bd1b-283a222fede3", "messageId": "cmradkyat611zke017vykx5iw"}
+

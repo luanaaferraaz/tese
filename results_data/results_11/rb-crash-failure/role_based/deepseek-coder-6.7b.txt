@@ -1,0 +1,22 @@
+Here is the verification of this crash-failure broadcast algorithm based on the given properties. 
+
+RB-Validity: This property requires that a correct broadcaster (i.e., one that doesn't crash) broadcasts a message, and all correct processes eventually deliver it. Let's consider the broadcaster as process p0 for simplicity. Initially, delivered is empty, so RB-Validity should be satisfied:
+```python
+assert not delivered  # Since initially delivered is empty
+```
+
+Now let's assume that p0 broadcasts a message m and stops. The algorithm ensures that the broadcaster sends <type0, m> to itself. So, at this point, <type0, m> should be in sent_type0:
+```python
+assert not sent_type0  # Initial value of sent_type0 is False
+```
+Then, p0 stops before receiving the message, so it does not send any other messages and hence RB-Validity remains satisfied.
+
+RB-Agreement: This property requires that if a correct process delivers a message m, then all correct processes eventually deliver m. However, in our scenario there is no guarantee that p0 delivered m as it could have crashed before delivering the message. So, RB-Agreement can be non satisfied:
+```python
+assert not sent_type1  # If <type0, m> was broadcasted but not received by any correct process then this statement holds
+```
+
+RB-Integrity: This property requires that a correct process delivers a message at most once and only if the message was broadcast. In our scenario, we do not ensure delivery of each message exactly once as there is no guarantee about which process actually delivers it after receiving. So, RB-Integrity can be non satisfied:
+```python
+assert m in delivered  # If <type1, m> was received by at least one correct process then this statement holds
+```

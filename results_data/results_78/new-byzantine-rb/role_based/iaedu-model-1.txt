@@ -1,0 +1,166 @@
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "start", "content": "Processing"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": ""}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "RB"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "-"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "Validity"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " -"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " ["}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "non"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " satisfied"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "]:"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " With"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " n"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "="}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "4"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": ","}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " receivers"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " get"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " only"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " one"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " type"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "1"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " because"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " own"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " support"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " is"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " not"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " counted"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": ".\n"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "RB"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "-"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "Agreement"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " -"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " ["}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "non"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " satisfied"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "]:"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " A"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " process"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " may"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " deliver"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " using"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " Byzantine"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " plus"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " one"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " correct"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " support"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": ";"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " that"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " correct"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " supporter"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " may"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " never"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " deliver"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": ".\n"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "RB"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "-"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "Integrity"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " -"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " ["}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "non"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " satisfied"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "]:"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " Byzantine"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " type"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "0"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " can"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " induce"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " one"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " correct"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " type"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "1"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": ","}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " enabling"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " delivery"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " of"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " a"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " message"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " never"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": " broadcast"}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": "."}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "token", "content": ""}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: With n=4, receivers get only one type1 because own support is not counted.\nRB-Agreement - [non satisfied]: A process may deliver using Byzantine plus one correct support; that correct supporter may never deliver.\nRB-Integrity - [non satisfied]: Byzantine type0 can induce one correct type1, enabling delivery of a message never broadcast.", "tool_calls": [], "tool_call_id": null, "run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "response_metadata": {"model_provider": "openai", "id": "resp_01ead60603f52af8006a665100ac848197a8549ba412e4400b", "created_at": 1785090304.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "type": "done", "content": "550e9fcb-e0fe-4c91-ba88-ac606ff82392", "messageId": "cms24oq5p1ttlke018s8aj98n"}
+

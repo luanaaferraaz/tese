@@ -1,0 +1,6 @@
+{"run_id": "993eb578-7e8d-40ca-b1fa-ad304d2d5655", "type": "start", "content": "Processing"}
+
+{"run_id": "993eb578-7e8d-40ca-b1fa-ad304d2d5655", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "993eb578-7e8d-40ca-b1fa-ad304d2d5655", "type": "done", "content": "993eb578-7e8d-40ca-b1fa-ad304d2d5655", "messageId": "None", "token_pct_used": 102.2}
+

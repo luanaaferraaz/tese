@@ -1,0 +1,11 @@
+Validity - [satisfied]
+Reason: This property states that if a correct process broadcasts a message 'v', all other correct processes will eventually accept 'v'. The algorithm indeed ensures this by using acknowledgments and signals to track which messages have been seen by which processes.
+
+Agreement - [non satisfied]
+Reason: The agreement property requires that two correct processes must agree on the value of a message in order for it to be delivered. However, there is no mechanism implemented in Bracha’s Reliable Broadcast algorithm that ensures this kind of process-to-process communication. It could ensure global agreement (i.e., all nodes broadcasting the same value) but not process-specific agreement.
+
+No duplication - [satisfied]
+Reason: The SEND, ECHO and READY messages are sent exactly once by each process in every broadcast instance. There is no possibility of any message being replicated or lost.
+
+No creation - [non satisfied]
+Reason: In the context of Byzantine agreement protocols, there should be a rule that prohibits creating new instances of values/messages for delivery. However, this property doesn't seem to be present in Bracha’s Reliable Broadcast algorithm as it does not have any mechanism for generating new messages or values.

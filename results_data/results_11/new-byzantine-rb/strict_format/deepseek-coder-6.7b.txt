@@ -1,0 +1,8 @@
+RB-Validity - satisfied
+Reason: All correct processes eventually receive <type1, m> messages from at least two different processes which satisfies the condition for RB-Validity.
+
+RB-Agreement - satisfied
+Reason: If one correct process delivers m, then it received f + 1 <type1, m> messages from at least 2 distinct processes. This means that all correct processes eventually receive a message containing m, hence satisfying the conditions of RB-Agreement.
+
+RB-Integrity - satisfied
+Reason: A process delivers only once because of the delivered set. Since f + 1 support is required and only f processes can be Byzantine (f = 1), a Byzantine process alone cannot force delivery, satisfying the condition for RB-Integrity.

@@ -1,0 +1,11 @@
+1. Validity - [satisfied]
+The Reliable Broadcast algorithm ensures that every correct process eventually delivers the message that was broadcast by some other process. This property is satisfied because the algorithm's behavior adheres to the definition of reliable broadcasting, and the deliverability of a message is determined solely on whether it has been received or not by each process.
+
+2. No duplication - [satisfied]
+The algorithm ensures that every correct process delivers any given message at most once. This property is satisfied because the delivered set keeps track of all previously broadcast messages and prevents a process from delivering a duplicate message.
+
+3. No creation - [satisfied]
+The algorithm guarantees that if a correct process delivers a message, then the message was indeed broadcast by some other process. This property is satisfied because the deliverability of each message is based on reliable channels and the behavior of all correct processes.
+
+4. Agreement - [satisfied]
+If any correct process delivers a message m, every other correct process will eventually also deliver m. This property is satisfied as explained in the liveness argument for the Reliable Broadcast algorithm. Every correct process forwards received messages to all others, ensuring agreement among the correct processes.

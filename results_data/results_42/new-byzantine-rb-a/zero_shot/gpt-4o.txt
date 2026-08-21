@@ -1,0 +1,2 @@
+ERROR:
+500 Server Error: Internal Server Error for url: https://api.iaedu.pt/agent-chat//api/v1/agent/cmamvd3n40000c801qeacoad2/stream

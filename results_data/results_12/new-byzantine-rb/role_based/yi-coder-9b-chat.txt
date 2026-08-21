@@ -1,0 +1,7 @@
+The correctness properties are as follows:
+
+RB-Validity - Satisfied. If a correct broadcaster broadcasts m, then all correct processes eventually deliver m due to the <type1, m> message propagation in the network.
+
+RB-Agreement - Satisfied. If one correct process delivers m, then it received f + 1 <type1, m> messages and at least one of those came from a correct process. The forwarding rule spreads this support to all other correct processes that eventually reach the same delivery threshold.
+
+RB-Integrity - Satisfied. A process delivers m only once because of the delivered set. Since f + 1 support is required and only f processes can be Byzantine, a Byzantine process alone cannot force duplicate deliveries.

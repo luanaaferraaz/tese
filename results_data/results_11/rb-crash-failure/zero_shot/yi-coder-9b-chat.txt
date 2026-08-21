@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The algorithm ensures that the validator property, which states that all correct processes eventually receive and deliver any message that is broadcasted by a correct process, is satisfied. Processes begin by broadcasting their messages to themselves using <type0> tags, which are then delivered asynchronously. The process also forwards the message with <type1> tag to its neighbours, ensuring propagation of the message in the network.
+
+RB-Agreement - [satisfied]
+The agreement property, which stipulates that if a correct process delivers any particular message m, all other correct processes will eventually deliver m as well, is satisfied by this algorithm. In case where one correct process broadcasts a message 'm', it will receive the message and forward to its neighbours. As a result, all other correct processes will eventually receive and deliver 'm'.
+
+RB-Integrity - [satisfied]
+The integrity property, which stipulates that each correct process delivers any particular message m at most once, is satisfied by this algorithm. The delivery of the message is marked in a 'delivered' set variable per process. Thus, if a process receives multiple copies of the same message, it will check against the delivered set and refrain from re-delivering the message.

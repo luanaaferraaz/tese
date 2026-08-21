@@ -1,0 +1,7 @@
+The properties of the algorithm are as follows:
+
+1. RB-Validity - Satisfied: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m. This is because if a correct process receives <type0, m> from at least one other correct process and has not already sent <type1, m>, it sends <type1, m> to its neighbours. Therefore, after f + 1 valid support messages are received (f = 1 in this case), each correct process eventually delivers m.
+
+2. RB-Agreement - Satisfied: If one correct process delivers m, then all correct processes eventually deliver m. This is because if a correct process receives <type1, m> from at least f + 1 other correct processes and has not already sent <type1, m>, it sends <type1, m> to its neighbours. Therefore, after f + 1 valid support messages are received (f = 1 in this case), each correct process eventually delivers m.
+
+3. RB-Integrity - Satisfied: A correct process delivers m at most once, and only if m was broadcast. This is because the delivered set keeps track of all messages that have been delivered, and a message can be added to it only if it has not already been there (by definition of a set).

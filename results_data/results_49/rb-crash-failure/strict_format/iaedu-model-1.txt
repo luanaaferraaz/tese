@@ -1,0 +1,6 @@
+{"run_id": "19ffe58d-2523-4a64-ae9e-6258f7624a95", "type": "start", "content": "Processing"}
+
+{"run_id": "19ffe58d-2523-4a64-ae9e-6258f7624a95", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "19ffe58d-2523-4a64-ae9e-6258f7624a95", "type": "done", "content": "19ffe58d-2523-4a64-ae9e-6258f7624a95", "messageId": "None", "token_pct_used": 102.2}
+

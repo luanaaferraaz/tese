@@ -1,0 +1,20 @@
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "start", "content": "Processing"}
+
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "token", "content": "R"}
+
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type"}
+
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "token", "content": "0 to itself and it's lost, no correct process delivers; but if a correct receiver del"}
+
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "token", "content": "ivers, it forwards type1 to all others before delivering, ensuring agreement"}
+
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "token", "content": " \u2014 however, if broadcaster delivers then crashes before others receive type1, agreement holds since"}
+
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "token", "content": " broadcaster sends type1 first. Actually fails if broadcaster crashes mid-send of type1.\nRB-Integrity -"}
+
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "token", "content": " [satisfied]"}
+
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself and it's lost, no correct process delivers; but if a correct receiver delivers, it forwards type1 to all others before delivering, ensuring agreement \u2014 however, if broadcaster delivers then crashes before others receive type1, agreement holds since broadcaster sends type1 first. Actually fails if broadcaster crashes mid-send of type1.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "949ca89e-2858-432b-990a-7c18874814c6", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "949ca89e-2858-432b-990a-7c18874814c6", "type": "done", "content": "949ca89e-2858-432b-990a-7c18874814c6", "messageId": "cmrd7ek5m82hake01a3d2j3j4"}
+

@@ -1,0 +1,3 @@
+ Reliable Broadcast (RB) is an algorithm that ensures message delivery without duplication or creation. Each process broadcasts a message to all other processes, and eventually everyone receives it. This property guarantees that no duplicates occur. The reliability of communication is ensured by honest processes and reliable channels.
+- Validity - satisfied
+  This property ensures that if a correct process delivers m, then every correct process eventually delivers m. This means that the message is delivered in a timely manner and all processes agree on its delivery.

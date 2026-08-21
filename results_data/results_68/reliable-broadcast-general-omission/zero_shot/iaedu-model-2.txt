@@ -1,0 +1,14 @@
+{"run_id": "d18fe331-85e7-41f7-8f4d-1e6bc44b8075", "type": "start", "content": "Processing"}
+
+{"run_id": "d18fe331-85e7-41f7-8f4d-1e6bc44b8075", "type": "token", "content": "Validity -"}
+
+{"run_id": "d18fe331-85e7-41f7-8f4d-1e6bc44b8075", "type": "token", "content": " [satisfied]\nNo duplication - [satisfied]\nNo creation - [non satisfied]: With f+1 threshold, f faulty processes can rel"}
+
+{"run_id": "d18fe331-85e7-41f7-8f4d-1e6bc44b8075", "type": "token", "content": "ay a fabricated message alongside 1 correct relayer, causing sp"}
+
+{"run_id": "d18fe331-85e7-41f7-8f4d-1e6bc44b8075", "type": "token", "content": "urious delivery.\nAgreement - [satisfied]"}
+
+{"run_id": "d18fe331-85e7-41f7-8f4d-1e6bc44b8075", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nNo duplication - [satisfied]\nNo creation - [non satisfied]: With f+1 threshold, f faulty processes can relay a fabricated message alongside 1 correct relayer, causing spurious delivery.\nAgreement - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "d18fe331-85e7-41f7-8f4d-1e6bc44b8075", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "d18fe331-85e7-41f7-8f4d-1e6bc44b8075", "type": "done", "content": "d18fe331-85e7-41f7-8f4d-1e6bc44b8075", "messageId": "cmrd983sg83ixke015l5w1ohq"}
+

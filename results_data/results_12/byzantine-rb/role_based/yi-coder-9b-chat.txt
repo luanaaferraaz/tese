@@ -1,0 +1,8 @@
+RB-Validity - satisfied
+This algorithm guarantees that any correct process will eventually deliver a message that is broadcasted by the broadcaster. This is because the algorithm uses a threshold rule where at least (n + f) / 2 distinct processes must have received <type1, m> before it can be delivered. This threshold ensures that even if all or some of the faulty nodes (Byzantine) are malicious and try to prevent the correct processes from delivering messages, the algorithm will still ensure agreement among a majority of the correct processes.
+
+RB-Agreement - satisfied
+This property indicates that once a message is delivered by one process, all other correct processes will also eventually deliver this message. This is achieved in our algorithm through the agreement protocol where enough <type1, m> messages spread from the initial correct process to all other correct processes.
+
+RB-Integrity - satisfied
+This property ensures that each correct process delivers a message at most once. The algorithm enforces this by maintaining a delivered set and using distinct sender counting which ensure that a process does not count more than one message per sender and only deliver each message once.

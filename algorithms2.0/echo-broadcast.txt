@@ -1,0 +1,138 @@
+ALGORITHM: ECHO BROADCAST
+1) IDENTIFICATION
+
+    Algorithm name: Bracha’s Reliable Broadcast
+
+    Problem type: Reliable Broadcast (Byzantine)
+
+    Variant tags:
+
+        Fault model: [B] Byzantine
+
+        Timing model: [AS] Async
+
+2) SYSTEM MODEL
+
+    Processes: n
+
+    Max faulty: f
+
+    Resilience condition: n>3f
+
+    Channels / communication assumptions: Asynchronous, reliable channels (messages sent between correct processes are eventually delivered).
+
+    Timing assumptions: None.
+
+    Additional assumptions: Fully connected network; processes have unique IDs.
+
+3) CORRECTNESS PROPERTIES
+
+    Validity: If a correct process p broadcasts v, then all correct processes accept v.
+
+    Agreement: If a correct process delivers m, then every correct process eventually delivers m. (In addition, no two correct processes deliver different messages for the same broadcast instance.)
+
+    No duplication: No message is delivered more than once.
+
+    No creation: If a process delivers a message m with sender s, then m was previously broadcast by process s.
+
+4) INTERFACE (API)
+
+    External operations: broadcast(m) (invoked by the designated sender).
+
+    Output events: deliver(m) (upcall to the application).
+
+5) ROLES
+
+    Sender: A single designated process that initiates the broadcast.
+
+    Witnesses: All processes (including the sender) that relay and validate the message.
+
+6) LOCAL STATE (per process pi​)
+
+Constants:
+
+    n,f
+
+    Quorum thresholds: - ⌈(n+f+1)/2⌉ (ECHO quorum), 2f+1 (delivery), f+1 (READY amplification).
+
+Variables:
+
+    sent_echo: Boolean (initially false).
+
+    sent_ready: Boolean (initially false).
+
+    delivered: Boolean (initially false).
+
+    echo_count[m]: Counter for ECHO messages per unique message m.
+
+    ready_count[m]: Counter for READY messages per unique message m.
+
+7) MESSAGE TYPES
+
+    SEND(m): Initial message from the sender.
+
+    ECHO(m): Acknowledgment that a process has seen the message.
+
+    READY(m): Signal that a process is ready to deliver the message.
+
+8) INITIALIZATION
+
+    sent_echo ← false; sent_ready ← false; delivered ← false.
+
+9) PROTOCOL PSEUDOCODE
+
+A) On external invocation (Sender only):
+
+    on broadcast(m):
+
+        send SEND(m) to all processes.
+
+B) On message receive (All processes):
+
+    on receive SEND(m) from Sender:
+
+        If sent_echo is false:
+
+            sent_echo ← true; broadcast ECHO(m).
+
+    on receive ECHO(m):
+
+        Increment echo_count[m].
+
+        Rule 1: If echo_count[m] ≥ ⌈(n+f+1)/2⌉ and sent_ready is false:
+
+            sent_ready ← true; broadcast READY(m).
+
+    on receive READY(m):
+
+        Increment ready_count[m].
+
+        Rule 2: If ready_count[m] ≥f+1 and sent_ready is false:
+
+            sent_ready ← true; broadcast READY(m).
+
+        Delivery Rule: If ready_count[m] ≥2f+1 and delivered is false:
+
+            delivered ← true; deliver(m).
+
+10) DECISION / DELIVERY RULE
+
+    Deliver m when: 2f+1 READY(m) messages have been received and delivered is still false.
+
+    After delivery: The process stops sending messages for that specific instance but may keep the state for future reference/logging.
+
+11) QUORUM
+
+    Because n>3f, any two quorums of 2f+1 processes (used for delivery) intersect in at least f+1 processes. Since there are at most f Byzantine processes, there is at least one correct process in the intersection who can testify to the uniqueness of the message.
+
+12) INVARIANTS
+
+    I1 (Uniqueness): No two correct processes ever send ECHO or READY for different messages in the same broadcast instance.
+
+    I2 (Persistence): If a correct process delivers m, there are at least f+1 correct processes that have sent READY(m).
+
+13) CORRECTNESS ARGUMENT SKELETON
+
+    Safety (Agreement): If one correct process delivers m, it received 2f+1 READY messages. At least f+1 of these are from correct processes. Any other process will eventually receive these f+1 READY messages, trigger their own READY broadcast (Rule 2), and eventually reach the 2f+1 threshold.
+
+    Liveness (Totality): The rules ensure that even if the Byzantine sender only sends the message to a few correct processes, they will "amplify" the signal until everyone receives enough READY messages to deliver.

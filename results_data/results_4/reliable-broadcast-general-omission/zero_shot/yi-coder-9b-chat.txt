@@ -1,0 +1,4 @@
+1. Validity - [satisfied]
+2. No duplication - [satisfied]
+3. No creation - [non satisfied]: The message m is delivered only after it was received from f+1 distinct processes, but this does not guarantee that the message was broadcast by a process (which could be incorrect).
+4. Agreement - [satisfied]

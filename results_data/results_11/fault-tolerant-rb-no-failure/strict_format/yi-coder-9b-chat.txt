@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+All correct processes will eventually receive a message from the broadcaster since channels are reliable.
+
+RB-Agreement - [satisfied]
+If one process delivers m, it means that all correct processes have received <type0, m> message which is guaranteed by the reliability of the channels. 
+
+RB-Integrity - [satisfied]
+The set delivered ensures that a process does not deliver the same message more than once and only if this message was broadcasted i.e., if it was sent in type0, then it will be delivered. If it is not in the delivered set, it won't be delivered again even if received again.

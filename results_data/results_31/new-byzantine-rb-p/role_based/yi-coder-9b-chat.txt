@@ -1,0 +1,5 @@
+1) RB-Validity - Satisfied. The algorithm guarantees that any correct process that broadcasts a message will eventually deliver it, and all other processes will eventually also deliver this message.
+
+2) RB-Agreement - Satisfied. The agreement property is met if at least one correct process delivers the message. All other correct processes will then also deliver the message due to their support propagation mechanism.
+
+3) RB-Termination - Satisfied. The algorithm does not have any infinite loops or failures, it ensures that all correct processes eventually deliver a message they receive.

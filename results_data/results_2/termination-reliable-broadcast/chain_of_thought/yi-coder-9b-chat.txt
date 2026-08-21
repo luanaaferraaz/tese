@@ -1,0 +1,9 @@
+1. Termination – [satisfied]
+Every correct process eventually delivers some message as long as there is a designated sender among them.
+
+2. Validity – [non satisfied]: The sender’s message m must be broadcast by the sender and delivered only to all processes, which is not explicitly mentioned in this algorithm.
+
+3. Agreement – [satisfied]
+If a correct process delivers m, then all correct processes eventually deliver m because of the agreement rule set at round f+1.
+
+4. Integrity – [non satisfied]: This property isn’t clearly defined in the algorithm and needs more clarification on when and how a message is delivered.

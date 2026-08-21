@@ -1,0 +1,5 @@
+RB-Validity - [satisfied] (confidence: 10)
+
+RB-Agreement - [satisfied] (confidence: 10)
+
+RB-Integrity - [satisfied] (confidence: 10)

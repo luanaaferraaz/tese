@@ -1,0 +1,7 @@
+1) Validity: This property is satisfied. The algorithm ensures that any message broadcasted by a correct sender gets delivered by all other correct processes.
+
+2) Agreement: This property is satisfied. If two different messages are broadcasted, the algorithm ensures that at least f+1 processes agree on which one to deliver. 
+
+3) No duplication: This property is also satisfied. Once a message m has been delivered by a process, no other instance of m will be delivered.
+
+4) No creation: This property may not always hold because the algorithm allows each process to potentially send a new message based on received messages from other processes. However, once a message m is accepted for delivery, it was previously broadcasted by some sender according to the algorithm's assumptions.

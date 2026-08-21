@@ -1,0 +1,12 @@
+{"run_id": "f018fb96-1156-457f-8117-a63034d826ac", "type": "start", "content": "Processing"}
+
+{"run_id": "f018fb96-1156-457f-8117-a63034d826ac", "type": "token", "content": "Validity - ["}
+
+{"run_id": "f018fb96-1156-457f-8117-a63034d826ac", "type": "token", "content": "satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: Delivery rule lacks a delivered-"}
+
+{"run_id": "f018fb96-1156-457f-8117-a63034d826ac", "type": "token", "content": "guard; every additional READY(m) beyond 2f+1 re-triggers deliver(m).\nNo creation - [satisfied]"}
+
+{"run_id": "f018fb96-1156-457f-8117-a63034d826ac", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: Delivery rule lacks a delivered-guard; every additional READY(m) beyond 2f+1 re-triggers deliver(m).\nNo creation - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "f018fb96-1156-457f-8117-a63034d826ac", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "f018fb96-1156-457f-8117-a63034d826ac", "type": "done", "content": "f018fb96-1156-457f-8117-a63034d826ac", "messageId": "cms3acuya27vwke019eitc32v"}
+

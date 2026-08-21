@@ -1,0 +1,6 @@
+{"run_id": "1fcda2c2-75e2-4b10-b237-6057b460b200", "type": "start", "content": "Processing"}
+
+{"run_id": "1fcda2c2-75e2-4b10-b237-6057b460b200", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "1fcda2c2-75e2-4b10-b237-6057b460b200", "type": "done", "content": "1fcda2c2-75e2-4b10-b237-6057b460b200", "messageId": "None", "token_pct_used": 106.4}
+

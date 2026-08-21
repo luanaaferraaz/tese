@@ -1,0 +1,2 @@
+ERROR:
+ConnectionError: HTTPSConnectionPool(host='api.iaedu.pt', port=443): Read timed out.

@@ -1,0 +1,10 @@
+1) Validity - [satisfied]
+    Because the algorithm guarantees that all correct processes accept v if a correct process p broadcasts it.
+
+2) Agreement - [satisfied]
+    The algorithm ensures agreement between correct processes, meaning that if two correct processes q and r accept values v and u respectively, then they are equal (v=u).
+
+3) No duplication - [satisfied]
+    This property is guaranteed by the algorithm because no message m is delivered more than once. Once a process receives 2f+1 READY messages for m, it delivers the message only once.
+
+4) No creation - [non satisfied]: The sender creates every message that gets delivered.

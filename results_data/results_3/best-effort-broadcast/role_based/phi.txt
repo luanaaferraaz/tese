@@ -1,0 +1,1 @@
+ The algorithm is a formal method for verifying the properties of Best-Effort Broadcast, which is a primitive used in distributed systems. It ensures that messages are delivered to all processes and avoids duplication or creation of new messages. The algorithm also takes into account factors such as fault models and timing assumptions.

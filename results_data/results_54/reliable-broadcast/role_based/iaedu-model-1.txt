@@ -1,0 +1,6 @@
+{"run_id": "cd260631-927e-41af-852a-7a5219807c5a", "type": "start", "content": "Processing"}
+
+{"run_id": "cd260631-927e-41af-852a-7a5219807c5a", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "cd260631-927e-41af-852a-7a5219807c5a", "type": "done", "content": "cd260631-927e-41af-852a-7a5219807c5a", "messageId": "None", "token_pct_used": 102.2}
+

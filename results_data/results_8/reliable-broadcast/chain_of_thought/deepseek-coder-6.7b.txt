@@ -1,0 +1,4 @@
+Validity - Satisfied
+No duplication - Satisfied
+No creation - Satisfied (since each process maintains its own delivered set, it ensures that a message was indeed broadcast by the sender)
+Agreement - Satisfied (once a correct process delivers a message and forwards it to all other processes, every correct process eventually receives and delivers the same message)

@@ -1,0 +1,6 @@
+{"run_id": "f5338752-dddf-4241-8b80-29c7baad8303", "type": "start", "content": "Processing"}
+
+{"run_id": "f5338752-dddf-4241-8b80-29c7baad8303", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "f5338752-dddf-4241-8b80-29c7baad8303", "type": "done", "content": "f5338752-dddf-4241-8b80-29c7baad8303", "messageId": "None", "token_pct_used": 106.4}
+

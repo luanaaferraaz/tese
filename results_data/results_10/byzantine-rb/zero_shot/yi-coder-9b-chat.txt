@@ -1,0 +1,10 @@
+```
+RB-Validity - [satisfied]
+The algorithm is valid because any correct process that broadcasts message m will send <type1, m> to all processes. This means all other correct processes will eventually receive the support/echo message and potentially deliver it if enough evidence has been gathered.
+
+RB-Agreement - [non satisfied] No correct process has delivered the message more than once even though a correct process could have potentially forwarded <type1, m> to all.
+Reason: The algorithm guarantees that a correct process delivers each message at most once via the 'delivered' set and the 'DELIVER(m)' operation. However, there might be a chance for multiple correct processes to deliver the same message if enough evidence is not collected in time or if some of them decide not to send <type1, m> in the first place.
+
+RB-Integrity - [satisfied]
+The integrity property is satisfied because once delivered, a process adds each message m to the 'delivered' set and does not deliver any duplicate messages again based on the condition that m not in delivered and the distinct sender counting mechanism. The algorithm enforces this by using a Boolean sent_type1 variable per message and ensuring no more than one delivery event is fired.
+```

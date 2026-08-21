@@ -1,0 +1,14 @@
+{"run_id": "2892f81b-1741-4a00-a163-646e3b19b790", "type": "start", "content": "Processing"}
+
+{"run_id": "2892f81b-1741-4a00-a163-646e3b19b790", "type": "token", "content": "Validity - [satisfied"}
+
+{"run_id": "2892f81b-1741-4a00-a163-646e3b19b790", "type": "token", "content": "] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]"}
+
+{"run_id": "2892f81b-1741-4a00-a163-646e3b19b790", "type": "token", "content": ": delivered flag not checked in delivery rule; may deliver multiple times (confidence: 8/10)\nNo creation - [satisfied] (confidence: 8"}
+
+{"run_id": "2892f81b-1741-4a00-a163-646e3b19b790", "type": "token", "content": "/10)"}
+
+{"run_id": "2892f81b-1741-4a00-a163-646e3b19b790", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: delivered flag not checked in delivery rule; may deliver multiple times (confidence: 8/10)\nNo creation - [satisfied] (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "2892f81b-1741-4a00-a163-646e3b19b790", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "2892f81b-1741-4a00-a163-646e3b19b790", "type": "done", "content": "2892f81b-1741-4a00-a163-646e3b19b790", "messageId": "cmrnkm2sn0g0rke014f9gb0e2"}
+

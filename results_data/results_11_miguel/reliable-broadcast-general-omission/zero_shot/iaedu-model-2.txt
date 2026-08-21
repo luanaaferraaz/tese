@@ -1,0 +1,22 @@
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "start", "content": "Processing"}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "token", "content": "Validity -"}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "token", "content": " [satisfied] (confidence: 9/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [non satisfied]: With"}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "token", "content": " f+1 threshold and n>2f, faulty processes alone could reach f+1 only if n"}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "token", "content": ">2f insufficient; actually correct source required but relay without"}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "token", "content": " verification allows fabrication propagation. (confidence: 4/10)\nAgreement - [non satisfied]: Sender may"}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "token", "content": " deliver locally then fail before any correct process receives; f+1 threshold may"}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "token", "content": " never be reached by others under asynchrony with omissions. (confidence:"}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "token", "content": " 6/10)"}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 9/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [non satisfied]: With f+1 threshold and n>2f, faulty processes alone could reach f+1 only if n>2f insufficient; actually correct source required but relay without verification allows fabrication propagation. (confidence: 4/10)\nAgreement - [non satisfied]: Sender may deliver locally then fail before any correct process receives; f+1 threshold may never be reached by others under asynchrony with omissions. (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "89495f84-f814-48d5-869c-c846aa2892ab", "type": "done", "content": "89495f84-f814-48d5-869c-c846aa2892ab", "messageId": "cmrnkxqeq0gjtke01t8kxycfs"}
+

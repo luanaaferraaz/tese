@@ -1,0 +1,4 @@
+1. Termination - [satisfied]
+2. Validity - [satisfied]
+3. Agreement - [non satisfied]: The protocol does not ensure agreement in the case where a correct process does not accumulate f+1 supporters (i.e., when all correct processes deliver SF). This can be considered a major weakness of this omission-tolerant broadcast algorithm.
+4. Integrity - [satisfied]

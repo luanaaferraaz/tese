@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The algorithm guarantees RB-validity as a correct process broadcasts m, all correct processes eventually deliver m. This property is satisfied because the algorithm uses type1 messages to relay support for a message from its neighbours. If one correct process delivers m, then all other correct processes also receive f + 1 <type1, m> and eventually deliver it.
+
+RB-Agreement - [satisfied]
+The agreement property holds true because if one correct process delivers m, at least one of the <type1, m> messages came from a correct process that supported m. The support rule ensures that this support is propagated to all other correct processes. Hence, all correct processes eventually deliver m.
+
+RB-Termination - [satisfied]
+The algorithm assures RB-termination as it is impossible for a correct process not to deliver any message because they always require f + 1 <type1, m> messages from distinct processes. This ensures that all correct processes always deliver.

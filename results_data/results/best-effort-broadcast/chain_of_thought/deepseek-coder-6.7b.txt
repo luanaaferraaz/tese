@@ -1,0 +1,3 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]: The algorithm assumes that no process can broadcast a message twice, which is satisfied by the underlying perfect point-to-point links.

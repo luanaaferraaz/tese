@@ -1,0 +1,18 @@
+{"run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "type": "start", "content": "Processing"}
+
+{"run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "type": "token", "content": "Validity - [non"}
+
+{"run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "type": "token", "content": " satisfied]: Sender delivers immediately without f+1 distinct sources; correct but om"}
+
+{"run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "type": "token", "content": "ission-faulty sender may violate agreement-driven validity under part"}
+
+{"run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "type": "token", "content": "itions.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Sender delivers via"}
+
+{"run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "type": "token", "content": " self-broadcast then fails; if fewer than f+1 correct processes receive DATA, no"}
+
+{"run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "type": "token", "content": " one reaches threshold."}
+
+{"run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 distinct sources; correct but omission-faulty sender may violate agreement-driven validity under partitions.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Sender delivers via self-broadcast then fails; if fewer than f+1 correct processes receive DATA, no one reaches threshold.", "tool_calls": [], "tool_call_id": null, "run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "5277a2b7-e528-4775-bfbc-a7468be79103", "type": "done", "content": "5277a2b7-e528-4775-bfbc-a7468be79103", "messageId": "cmrc4gv1z7mwyke01bsqebre0"}
+

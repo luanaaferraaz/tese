@@ -1,0 +1,16 @@
+{"run_id": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "type": "start", "content": "Processing"}
+
+{"run_id": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "type": "token", "content": "R"}
+
+{"run_id": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "type": "token", "content": "B-Validity - [non satisfied]: Correct broadcaster's type0 reaches only 2"}
+
+{"run_id": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "type": "token", "content": " correct receivers; they can't reach f+1=2 type1 threshold to forward."}
+
+{"run_id": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "type": "token", "content": "\nRB-Agreement - [non satisfied]: A correct process may deliver via 2 type1 messages (one Byzantine), while others never"}
+
+{"run_id": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "type": "token", "content": " reach threshold.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Correct broadcaster's type0 reaches only 2 correct receivers; they can't reach f+1=2 type1 threshold to forward.\nRB-Agreement - [non satisfied]: A correct process may deliver via 2 type1 messages (one Byzantine), while others never reach threshold.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "type": "done", "content": "b4b1bfda-9639-4b5c-9616-03ca53c43507", "messageId": "cms24kr3y1tovke010f0x1ee0"}
+

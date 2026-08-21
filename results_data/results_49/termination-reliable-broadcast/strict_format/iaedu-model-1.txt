@@ -1,0 +1,6 @@
+{"run_id": "2b895294-cfec-41c6-bdb2-380472c9791c", "type": "start", "content": "Processing"}
+
+{"run_id": "2b895294-cfec-41c6-bdb2-380472c9791c", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "2b895294-cfec-41c6-bdb2-380472c9791c", "type": "done", "content": "2b895294-cfec-41c6-bdb2-380472c9791c", "messageId": "None", "token_pct_used": 102.2}
+

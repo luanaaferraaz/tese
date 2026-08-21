@@ -1,0 +1,4 @@
+- Validity - [satisfied]
+- Agreement - [satisfied]
+- No duplication - [satisfied]
+- No creation - [non satisfied]: Message can be duplicated if Byzantine processes create false messages.

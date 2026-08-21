@@ -1,0 +1,14 @@
+{"run_id": "bc203772-a203-4a5d-ad79-39b04f193ac5", "type": "start", "content": "Processing"}
+
+{"run_id": "bc203772-a203-4a5d-ad79-39b04f193ac5", "type": "token", "content": "R"}
+
+{"run_id": "bc203772-a203-4a5d-ad79-39b04f193ac5", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 \u2192 3;"}
+
+{"run_id": "bc203772-a203-4a5d-ad79-39b04f193ac5", "type": "token", "content": " f+1=2 amplification insufficient to guarantee all correct processes re"}
+
+{"run_id": "bc203772-a203-4a5d-ad79-39b04f193ac5", "type": "token", "content": "ach delivery threshold.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "bc203772-a203-4a5d-ad79-39b04f193ac5", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 \u2192 3; f+1=2 amplification insufficient to guarantee all correct processes reach delivery threshold.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "bc203772-a203-4a5d-ad79-39b04f193ac5", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "bc203772-a203-4a5d-ad79-39b04f193ac5", "type": "done", "content": "bc203772-a203-4a5d-ad79-39b04f193ac5", "messageId": "cmrd8lyxo8325ke01jttcwimz"}
+

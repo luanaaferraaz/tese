@@ -1,0 +1,6 @@
+{"run_id": "053940fb-17fd-466b-a58d-74c299d402e8", "type": "start", "content": "Processing"}
+
+{"run_id": "053940fb-17fd-466b-a58d-74c299d402e8", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "053940fb-17fd-466b-a58d-74c299d402e8", "type": "done", "content": "053940fb-17fd-466b-a58d-74c299d402e8", "messageId": "None", "token_pct_used": 106.4}
+

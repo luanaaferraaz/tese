@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+This property is satisfied because the algorithm guarantees that a correct broadcaster broadcasts m, then all correct processes eventually deliver it.
+
+RB-Agreement - [satisfied]
+The RB-Agreement property states that if one correct process delivers m, then all correct processes eventually deliver m. This condition is met in this algorithm as any process receiving f+1 <type1, m> messages will deliver the message.
+
+RB-Integrity - [non satisfied]: Delivering a message more than once violates integrity. The protocol enforces that a process delivers each message at most once by maintaining the delivered set. A possible reason for non-satisfaction might be that the algorithm does not check if a message has already been delivered before delivering it again, which would violate the RB-Integrity property.

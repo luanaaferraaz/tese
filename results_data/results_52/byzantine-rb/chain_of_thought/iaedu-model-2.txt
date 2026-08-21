@@ -1,0 +1,6 @@
+{"run_id": "e0413c23-ac90-4e24-884a-82bd1b0264da", "type": "start", "content": "Processing"}
+
+{"run_id": "e0413c23-ac90-4e24-884a-82bd1b0264da", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "e0413c23-ac90-4e24-884a-82bd1b0264da", "type": "done", "content": "e0413c23-ac90-4e24-884a-82bd1b0264da", "messageId": "None", "token_pct_used": 106.4}
+

@@ -1,0 +1,18 @@
+{"run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "type": "start", "content": "Processing"}
+
+{"run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "type": "token", "content": "Validity - ["}
+
+{"run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 distinct echoes, but this is fine;"}
+
+{"run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "type": "token", "content": " however correct non-senders may never reach f+1 if sender is only source"}
+
+{"run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "type": "token", "content": " and f faulty omit.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]:"}
+
+{"run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "type": "token", "content": " With n>2f only, f+1 threshold insufficient under rece"}
+
+{"run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "type": "token", "content": "ive-omission; correct process may deliver while others never reach threshold."}
+
+{"run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 distinct echoes, but this is fine; however correct non-senders may never reach f+1 if sender is only source and f faulty omit.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: With n>2f only, f+1 threshold insufficient under receive-omission; correct process may deliver while others never reach threshold.", "tool_calls": [], "tool_call_id": null, "run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "type": "done", "content": "a793f859-18bd-4f29-bc03-d0bcd446f80e", "messageId": "cmrc4i5hd7mxuke01r8aaup2e"}
+

@@ -1,0 +1,35 @@
+Here's how the response might look like for the algorithm interface, model and roles:
+
+Interface:
+External operations: RBcast(m), invoked by the broadcaster. Output events: DELIVER(m), fired at most once per message.
+
+Model / Roles:
+Broadcaster starts broadcast by sending m to itself. Relayers / receivers when they receive the message, forward it to other processes and deliver it.
+
+Local state variables: delivered (set of delivered messages initially empty), sent_type0 (whether type0, m was already sent, initially false), sent_type1 (whether type1, m was already sent, initially false).
+
+Message types: Type 0 initial message sent by the broadcaster to itself. Type 1 forwarded message sent to other processes.
+
+Validation rules: Do not send same message twice for the same m. Do not deliver the same m twice.
+
+Initialization of local state variables: delivered <- {}, sent_type0 <- false, sent_type1 <- false.
+
+Pseudocode:
+A) On external invocation: upon RBcast(m): if not already sent type0, send <type0, m> to itself. Stop.
+B) On message receive: upon receive(<t, m>): if not already sent type1, send <type1, m> to neighbours. If m is not in delivered, add it and deliver(m). Stop. Neighbours are all processes except the invoking process itself.
+
+Delivery rule: Deliver m when received by a process containing m. Mark as delivered and do not deliver again.
+
+Quorum / structural argument: No threshold quorum used. The idea is forwarding: once correct process receives message, it sends to other processes.
+
+Invariants: I1 — Forward before stop: A process that receives m forwards type1, m before stopping its handler. I2 — No duplicate delivery: A process delivers m at most once. I3 — Propagation: If a correct process receives m, then all non-crashed neighbours eventually receive forwarded copy.
+
+Correctness argument skeleton: RB-Validity: If the broadcaster is correct, it sends type0, m to itself and forwards type1, m to neighbours. Reliable channels make forwarded message reach other correct processes. RB-Agreement: If one correct process delivers m, then it received m and forwards to neighbours. Other correct processes eventually receive and deliver it. RB-Integrity: The delivered set prevents duplicate delivery. Since messages are only forwarded after receiving m, the delivered messages trace back to the original broadcast.
+
+Here's how the response might look for properties:
+RB-Validity, RB-Agreement, RB-Integrity
+
+Properties:
+RB-Validity - [satisfied]
+RB-Agreement - [satisfied]
+RB-Integrity - [satisfied]

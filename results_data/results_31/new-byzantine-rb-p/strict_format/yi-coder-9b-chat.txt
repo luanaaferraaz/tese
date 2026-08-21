@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+The algorithm ensures that a correct process will eventually deliver a message that it has initially broadcast.
+
+RB-Agreement - [satisfied]
+Once delivered by one correct process, the message is guaranteed to be delivered by all other correct processes due to the support propagation rule and the quorum argument.
+
+RB-Termination - [non satisfied]: It's unclear if this property can always be met with this algorithm because it doesn't specify a termination condition for certain actions or events.

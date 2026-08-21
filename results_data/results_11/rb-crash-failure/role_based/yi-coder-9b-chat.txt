@@ -1,0 +1,11 @@
+Correctness Properties Evaluation:
+1. RB-Validity - Satisfied
+The algorithm starts with the correct process broadcasting a message to itself, this is ensured by the RB-Broadcast(m) operation which sends <type0, m> to the process itself if it hasn't already sent this type of message before. All processes then forward this message to other neighbours in their network and deliver it. Since we have reliable communication channels, any non-crashed process will eventually receive this message and thus all correct processes eventually deliver a broadcasted message.
+
+2. RB-Agreement - Satisfied
+If one correct process delivers a message m, it must be because it received that message itself which was then forwarded to its neighbours. Therefore, any other correct processes will eventually also receive the message and hence deliver it as well.
+
+3. RB-Integrity - Satisfied
+The algorithm ensures no duplicates by maintaining a set of delivered messages. If a process delivers m for the first time, this means that <type1, m> has been sent to all non-crashed neighbours. Since each process only sends forwarded message once per neighbour, and each neighbour receives reliable messages, every process will receive m from all correct processes at most once.
+
+Thus, the RBcast algorithm satisfies all the correctness properties for a crash fault model with f = 1.

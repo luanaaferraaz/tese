@@ -1,0 +1,13 @@
+The properties of the algorithm are as follows. For RB-Validity, we know that the broadcaster will send <type0, m> to itself, receive it, and then forward it via messages <type1, m> to its neighbors. If this process is correct, it means all other correct processes can eventually deliver message m since they are aware of each other's activities.
+
+RB-Agreement states that if any correct process delivers a message m, every correct process will eventually deliver the same message m from then onwards. This implies that all correct processes must agree to forward or deliver the same messages.
+
+For RB-Integrity, we have the invariant I2 - "No duplicate delivery". If this invariant is maintained at any point in time, it means that a process will not deliver a message m if it has already been delivered before. This implies that each message can be delivered only once and no duplicates are sent.
+
+Output requirements for these properties would look like:
+```
+RB-Validity - satisfied
+RB-Agreement - satisfied
+RB-Integrity - satisfied
+```
+This is because the broadcaster sends <type0, m> to itself, receives it and then forwards via messages <type1, m> to its neighbors. Any correct process that delivers a message m will eventually reach all other correct processes by forwarding the message, which satisfies RB-Validity, RB-Agreement and RB-Integrity properties respectively.

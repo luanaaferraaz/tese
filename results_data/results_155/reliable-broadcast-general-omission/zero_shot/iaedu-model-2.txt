@@ -1,0 +1,16 @@
+{"run_id": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "type": "start", "content": "Processing"}
+
+{"run_id": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "type": "token", "content": "Validity - ["}
+
+{"run_id": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "type": "token", "content": "non satisfied]: Sender may be omission-faulty on receive side; correct processes need"}
+
+{"run_id": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "type": "token", "content": " f+1 sources but only sender vouches initially.\nNo duplication - [satisfied]\nNo creation"}
+
+{"run_id": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "type": "token", "content": " - [satisfied]\nAgreement - [non satisfied]: With n>2f only, f+1 threshold may not be reach"}
+
+{"run_id": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "type": "token", "content": "able by all correct processes under general omission; needs n>3f."}
+
+{"run_id": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender may be omission-faulty on receive side; correct processes need f+1 sources but only sender vouches initially.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: With n>2f only, f+1 threshold may not be reachable by all correct processes under general omission; needs n>3f.", "tool_calls": [], "tool_call_id": null, "run_id": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "type": "done", "content": "e6b3753d-c9a4-454f-a7bc-85a036d8a7c0", "messageId": "cms3arxaw28dpke01mafo9g5g"}
+

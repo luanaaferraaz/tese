@@ -1,0 +1,8 @@
+1. Validity - [satisfied]
+This property is satisfied because the algorithm relies on perfect point to point links, which are known for reliable message delivery when used between two processes in a correct state. 
+
+2. No duplication - [satisfied]
+The algorithm assumes that messages are unique and no duplication exists in the underlying channel, hence this property is automatically satisfied by the assumptions of the algorithm.
+
+3. No creation - [satisfied]
+This property is also satisfied by the algorithm as it relies on perfect point to point links. If a process receives a message from another correct process through these links, then that message was previously broadcast by that process. The "No duplication" assumption of the algorithm ensures that each message is only delivered once.

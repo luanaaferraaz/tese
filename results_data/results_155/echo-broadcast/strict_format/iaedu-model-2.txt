@@ -1,0 +1,12 @@
+{"run_id": "f7ba1fbd-4105-4c8d-85db-05ba9cc466e4", "type": "start", "content": "Processing"}
+
+{"run_id": "f7ba1fbd-4105-4c8d-85db-05ba9cc466e4", "type": "token", "content": "Valid"}
+
+{"run_id": "f7ba1fbd-4105-4c8d-85db-05ba9cc466e4", "type": "token", "content": "ity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: Delivery rule triggers whenever threshold cond"}
+
+{"run_id": "f7ba1fbd-4105-4c8d-85db-05ba9cc466e4", "type": "token", "content": "ition holds; no guard prevents multiple deliveries of same message.\nNo creation - [satisfied]"}
+
+{"run_id": "f7ba1fbd-4105-4c8d-85db-05ba9cc466e4", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: Delivery rule triggers whenever threshold condition holds; no guard prevents multiple deliveries of same message.\nNo creation - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "f7ba1fbd-4105-4c8d-85db-05ba9cc466e4", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "f7ba1fbd-4105-4c8d-85db-05ba9cc466e4", "type": "done", "content": "f7ba1fbd-4105-4c8d-85db-05ba9cc466e4", "messageId": "cms3ad1cs27weke01f7bgj8jd"}
+

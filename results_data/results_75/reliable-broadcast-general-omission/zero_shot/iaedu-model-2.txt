@@ -1,0 +1,22 @@
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "start", "content": "Processing"}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "token", "content": "Validity -"}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "token", "content": " [non satisfied]: Correct sender delivers immediately without f+1 distinct sources"}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "token", "content": ", but property holds; however relay from correct sender alone insufficient if receive-om"}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "token", "content": "ission faulty peers block echoes. (confidence: "}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "token", "content": "4/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satis"}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "token", "content": "fied]: Sender delivers on rb_broadcast then may cr"}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "token", "content": "ash-omit sends; correct receivers may get m from fewer than f+1 dist"}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "token", "content": "inct processes, never reaching threshold. (confidence: 7/10)"}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Correct sender delivers immediately without f+1 distinct sources, but property holds; however relay from correct sender alone insufficient if receive-omission faulty peers block echoes. (confidence: 4/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Sender delivers on rb_broadcast then may crash-omit sends; correct receivers may get m from fewer than f+1 distinct processes, never reaching threshold. (confidence: 7/10)", "tool_calls": [], "tool_call_id": null, "run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "type": "done", "content": "e666b334-7e7a-4250-a8bd-b53192fa90fb", "messageId": "cmrnl0cjb0gntke01zheazyce"}
+

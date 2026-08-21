@@ -1,0 +1,18 @@
+{"run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "type": "start", "content": "Processing"}
+
+{"run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "type": "token", "content": "Validity -"}
+
+{"run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "type": "token", "content": " [non satisfied]: Sender delivers immediately without f+1 threshold check, but"}
+
+{"run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "type": "token", "content": " if sender is correct this holds trivially (confidence: 6/"}
+
+{"run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "type": "token", "content": "10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement"}
+
+{"run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "type": "token", "content": " - [non satisfied]: With receive-omission faults, a correct process may never accumulate f+1 dist"}
+
+{"run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "type": "token", "content": "inct echoes if its links omit (confidence: 6/10)"}
+
+{"run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 threshold check, but if sender is correct this holds trivially (confidence: 6/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: With receive-omission faults, a correct process may never accumulate f+1 distinct echoes if its links omit (confidence: 6/10)", "tool_calls": [], "tool_call_id": null, "run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "type": "done", "content": "47ea7ed5-b5f2-4e00-9290-ce255b306506", "messageId": "cmrerpfqj02vlke01m3p4qkct"}
+

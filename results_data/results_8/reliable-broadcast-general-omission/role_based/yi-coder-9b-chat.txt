@@ -1,0 +1,11 @@
+1. Validity - [satisfied]
+    Every correct process broadcasts m, it eventually delivers m. This is guaranteed by the sender delivering immediately and all other processes receiving the message from the sender or another process that received it first (relay chain).
+
+2. No duplication - [satisfied]
+    The delivered set explicitly prevents duplicate deliveries. A process checks m ∉ delivered before delivering, so each process delivers a message at most once.
+
+3. No creation - [satisfied]
+    A process delivers m only after receiving it from f+1 distinct processes, at least one of which is correct. A correct process only sends DATA or RELAY for messages that were actually broadcast (it only relays what it received), so no message creations occur in the valid chain. The no-creation property of links between correct processes ensures the message chain traces back to the original broadcaster.
+
+4. Agreement - [satisfied]
+    If a correct process pi delivers m, it received m from f+1 distinct processes and relays m to all. Every correct process eventually receives this relay. Combined with relays from other correct processes that also received m, every correct process eventually accumulates f+1 distinct sources and delivers m. (Follows from I1, I2, I3.)

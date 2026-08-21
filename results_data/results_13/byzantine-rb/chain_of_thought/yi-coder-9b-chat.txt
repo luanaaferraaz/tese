@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The Reliable Broadcast Validity property is satisfied. If a correct process broadcasts m, all other correct processes will eventually deliver it because they are always receiving and sending the support message <type1,m> until enough is collected to satisfy threshold 3.
+
+RB-Agreement - [satisfied]
+If one correct process delivers m via reaching threshold 3 on type1 messages, all other correct processes will eventually receive these type1 messages as well because they are always sending and receiving support messages based on received type0 messages until enough is collected to satisfy threshold 3.
+
+RB-Integrity - [satisfied]
+The Reliable Broadcast Integrity property is satisfied. A process only delivers a message once, either when it has forwarded enough <type1,m> messages or after forwarding its own <type1, m> for the first time and reaching threshold 3. No duplicate deliveries occur due to the check if 'm' not in delivered and delivery of m only from correct processes as per I4 invariant.

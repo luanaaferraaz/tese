@@ -1,0 +1,14 @@
+{"run_id": "83e49615-1a70-4100-8f25-40f71e9e9c44", "type": "start", "content": "Processing"}
+
+{"run_id": "83e49615-1a70-4100-8f25-40f71e9e9c44", "type": "token", "content": "R"}
+
+{"run_id": "83e49615-1a70-4100-8f25-40f71e9e9c44", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to it"}
+
+{"run_id": "83e49615-1a70-4100-8f25-40f71e9e9c44", "type": "token", "content": "self but before receiving, no correct process delivers; but if receiver crashes after delivering before forwarding type1, other"}
+
+{"run_id": "83e49615-1a70-4100-8f25-40f71e9e9c44", "type": "token", "content": " correct processes never deliver.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "83e49615-1a70-4100-8f25-40f71e9e9c44", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself but before receiving, no correct process delivers; but if receiver crashes after delivering before forwarding type1, other correct processes never deliver.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "83e49615-1a70-4100-8f25-40f71e9e9c44", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "83e49615-1a70-4100-8f25-40f71e9e9c44", "type": "done", "content": "83e49615-1a70-4100-8f25-40f71e9e9c44", "messageId": "cmrd9276x83ehke01gg1m25zw"}
+

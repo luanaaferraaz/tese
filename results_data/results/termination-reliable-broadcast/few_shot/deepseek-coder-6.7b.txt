@@ -1,0 +1,10 @@
+Algorithm: Terminating Reliable Broadcast (TRB)
+
+Properties:
+Termination - Satisfied
+Validity - Satisfied
+Agreement - Satisfied
+Integrity - Satisfied
+
+Explanation: 
+The properties of the algorithm are all satisfied. The termination property is satisfied because every correct process eventually delivers a message, validty is satisfied as if sender s is correct and broadcasts m, then all correct processes eventually deliver m. Agreement and integrity properties are also satisfied as per the protocol pseudo code, if a correct process delivers m or SF it must have received it in some round r≤f+1 (Agreement) and each message delivered by every correct process can only be one value or the SF token respectively(Integrity).

@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The algorithm guarantees that a correct process eventually delivers all messages it broadcasts, respecting the RB-validity property.
+
+RB-Agreement - Satisfied
+Given that one or more correct processes deliver m, all other correct processes will eventually deliver m as well, confirming the RB-agreement property.
+
+RB-Integrity - Satisfied
+The algorithm ensures a process delivers each message at most once and only if it was broadcasted, thus satisfying the RB-integrity property.

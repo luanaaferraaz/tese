@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+This property is satisfied because a correct broadcaster broadcasts <type0, m> to its neighbours. The correct receivers then broadcast <type1, m> to their neighbours as well, resulting in the message being relayed effectively.
+
+RB-Agreement - [non satisfied]: A correct process delivery depends on both the broadcasting and forwarding thresholds.
+
+RB-Integrity - [satisfied]
+This property is satisfied because a process delivers only once due to the "delivered" set check, and since f + 1 support is required, a Byzantine process alone cannot force delivery as it can't produce enough distinct senders.

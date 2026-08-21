@@ -1,0 +1,4 @@
+Validity - [satisfied]
+Agreement - [satisfied]
+No duplication - [satisfied]
+No creation - [non satisfied]: The algorithm does not ensure that a process only delivers messages it has previously received from the sender. This means that if a process receives a message m from another process, and this process is not the designated sender, there's possibility of creating new valid but untrusted messages.

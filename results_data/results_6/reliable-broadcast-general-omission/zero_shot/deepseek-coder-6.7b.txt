@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [non satisfied]: The algorithm does not guarantee that a message will be delivered to every correct process. It only guarantees that if a message was broadcast by at least one correct process, then it is eventually delivered to all processes. This means there could be processes that receive the message but do not deliver it due to omissions or failure of other processes to relay it to them.

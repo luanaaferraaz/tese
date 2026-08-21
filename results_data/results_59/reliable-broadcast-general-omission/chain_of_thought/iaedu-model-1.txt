@@ -1,0 +1,6 @@
+{"run_id": "e48752d6-5aae-4978-8207-6a0235e462d2", "type": "start", "content": "Processing"}
+
+{"run_id": "e48752d6-5aae-4978-8207-6a0235e462d2", "type": "error", "content": "Rate limit reached (429)", "messageId": "None"}
+
+{"run_id": "e48752d6-5aae-4978-8207-6a0235e462d2", "type": "done", "content": "e48752d6-5aae-4978-8207-6a0235e462d2", "messageId": "None", "token_pct_used": 99.2}
+

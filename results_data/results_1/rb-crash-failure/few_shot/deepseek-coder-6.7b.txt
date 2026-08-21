@@ -1,0 +1,41 @@
+Here is the verification of the given distributed algorithm according to its specified properties. The algorithm provided here is for Crash-Failure RBcast Algorithm.
+
+--- Example 1 ---
+
+Algorithm:
+A simple broadcast where the sender sends message m to all processes using reliable point-to-point links. Upon receiving m, a process delivers it immediately without relaying.
+
+Properties:
+Validity, No duplication, No creation
+
+Output:
+Validity  - [satisfied]
+No duplication  - [non satisfied]: Some duplicates may be created due to failures or crashes of processes
+No creation  - [satisfied]
+
+--- Example 2 ---
+
+Algorithm:
+A broadcast where the sender sends m to all processes. Upon receiving m for the first time, a process delivers m but does NOT relay it to others. Processes may crash.
+
+Properties:
+Validity, Agreement, No duplication, No creation
+
+Output:
+Validity  - [satisfied]
+Agreement  - [non satisfied]: if sender crashes mid-broadcast, some correct processes may never receive m
+No duplication  - [satisfied]
+No creation  - [satisfied]
+
+--- Now verify the following ---
+
+Algorithm:
+ALGORITHM TEMPLATE: Crash-Failure RBcast Algorithm
+
+Properties:
+RB-Validity, RB-Agreement, RB-Integrity
+
+Output:
+RB-Validity  - [satisfied]
+RB-Agreement  - [non satisfied]: There is a possibility that some correct processes may never receive the message if the sender crashes mid-broadcast
+RB-Integrity  - [satisfied]

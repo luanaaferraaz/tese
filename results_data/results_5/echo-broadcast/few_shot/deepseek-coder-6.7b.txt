@@ -1,0 +1,12 @@
+Verification of the distributed algorithm based on Bracha's Reliable Broadcast Algorithm is done as follows:
+
+Validity - [satisfied]
+The validity property ensures that if a process p broadcasts message m, all correct processes should eventually accept this message. This condition is satisfied because the ECHO and READY messages are sent to ensure that every other correct process has received the message at least once before it can be delivered.
+
+Agreement - [non satisfied]: The agreement property requires if two correct processes p and q deliver messages v and u respectively, then they must have broadcasted the same unique message. However, this condition is not strictly followed in the provided algorithm as each process may receive multiple instances of the same message m (in case of duplicate ECHO or READY messages).
+
+No duplication - [satisfied]
+The no duplication property requires that a single message must not be delivered more than once. This can be satisfied by ensuring that for any unique message m, the count of READY(m) received is at least 2f+1 which means that a process delivers only one instance of each unique message.
+
+No creation - [satisfied]
+The no creation property requires that if a process p delivers message m with sender s, then m must have been previously broadcast by process s. This can be satisfied in the algorithm because every process stores the information about which processes sent it and what messages were received from those processes.

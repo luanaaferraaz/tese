@@ -1,0 +1,9 @@
+1. Validity: This property guarantees that if a correct process broadcasts m, then it eventually delivers m itself. In the pseudocode provided, this property is ensured by the line "rb_deliver(m)" in the `on rb_broadcast(m)` case and "if m∉ delivered" in the `on receive DATA(s, m) from process k` case.
+
+2. No duplication: This property ensures that every correct process delivers m at most once. In the pseudocode provided, this property is satisfied because the line "delivered = delivered ∪ {m}" ensures a message is not added to the set of delivered messages more than once.
+
+3. No creation: This property specifies that if a correct process delivers m, then m was broadcast by some process. However, in an asynchronous model with crash faults where a process may crash at any time without warning, it's hard to guarantee this property. In the pseudocode provided, there are no explicit mechanisms to ensure this property because the faulty processes are assumed to stop abruptly without sending any message or informing others about their failure.
+
+4. Agreement: This property states that if a correct process delivers m, then every other correct process eventually also delivers m. In the pseudocode, "For every process q∈{1,…,n}: Send DATA(s,m) to q" ensures that once a message is received by a correct process, it's relayed to all other processes.
+
+So in conclusion, the pseudocode provided satisfies Validity and No duplication properties and does not explicitly violate No creation or Agreement properties under the provided assumptions about faulty and timing models. However, it’s important to note that the No creation property is difficult to ensure in an asynchronous model with crash faults where a process can fail at any time without warning.

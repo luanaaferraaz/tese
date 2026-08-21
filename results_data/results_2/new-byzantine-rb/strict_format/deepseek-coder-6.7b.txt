@@ -1,0 +1,8 @@
+RB-Validity - satisfied
+The broadcaster sends the message <type0, m> to all its neighbours. As a result of the received_type0[m], each correct neighbour process sends the confirmation message <type1, m> to their neighbours. Therefore, this means that every correct process eventually receives at least one support message for any broadcasted message m.
+
+RB-Agreement - satisfied
+If one correct process delivers m, then it received f + 1 <type1, m> messages from distinct correct processes. These messages are sent by their neighbours to other correct processes which count towards the delivery threshold. Therefore, all correct processes eventually agree on a message and deliver it.
+
+RB-Integrity - satisfied
+A process delivers only once because of the delivered set. The variable delivered stores all the broadcasted messages that have been successfully delivered by at least one correct process. Therefore, if m was not in this delivered set, then it will be delivered exactly once and no other process can deliver it again. If m is already in the delivered set, that means another correct process has tried to deliver m at some point before and failed because of a Byzantine faulty neighbour or by missing an agreement on the message content.

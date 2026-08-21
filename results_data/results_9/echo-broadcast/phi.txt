@@ -1,0 +1,93 @@
+
+============================================================
+
+ALGORITHM NAME: Echo Broadcast (Authenticated, Toueg-style)
+============================================================
+
+INTUITION: The sender broadcasts m. Receivers respond to the sender with signed ECHO messages. Once the sender gathers a large enough quorum of ECHOs, it forwards a FINAL message containing m plus the collected signatures. Any receiver delivers only after verifying
+the FINAL proof, guaranteeing consistency.
+
+
+OBJECTIVE: 
+Implement a consistent (authenticated) broadcast primitive for a designated sender, tolerating Byzantine faults.
+
+
+SYSTEM MODEL:
+
+Processes: N processes
+Fault model: Byzantine failures
+Max faulty: t 
+Network: Reliable, authenticated, asynchronous
+Timing: Asynchronous
+Cryptography: Digital signatures 
+(unforgeable, publicly verifiable)
+
+
+ROLES:
+
+Sender Ps: initiates broadcast and aggregates ECHOs.
+Process Pi: echoes signed confirmation and delivers upon FINAL.
+
+
+LOCAL STATE (per process):
+
+Constants:
+N
+t
+q = ceil((N+t)/2)   // echo quorum size
+
+Variables:
+delivered     = false 
+seen_send    = false 
+stored_final  = null 
+
+
+MESSAGE TYPES:
+
+SEND(sender=Ps, m)
+ECHO(sender=Pi, m, sigma_i)     // sigma_i is signature by Pi on (echo, Ps, m)
+FINAL(sender=Ps, m, Sigma)      // Sigma is a set/list of signatures
+
+
+VALIDATION: 
+SEND must be received from Ps
+ECHO  signature i verifies for (echo, Ps, m) under Pi's public key
+FINAL contains sigma_i valid signatures on (echo, Ps, m).
+(if Sigma has >= q signatures)
+
+
+INITIALIZATION: 
+Delivered = false 
+Sender sees send for first time.
+Stored final message is null
+
+EXTERNAL INVOCATION: 
+On SEND
+Send a SEND to all processes.
+
+
+MESSAGE HANDLING: 
+On receive SEND from Ps (any process Pi)
+If not seen_send, then:
+    seen_send = true 
+    collect sigma_i signature for echo, sender, m.
+On receive ECHO with SIGMA signatures from PS and pi:
+    if Sigma contains >= q signatures:
+        set stored_final = message, Sigma
+        Delivered = true
+
+
+SAFETY ARGUMENT: 
+At least one of SEND or ECHO must reach all processes.
+If Ps is correct (i.e., it has reached at least one process), then either:
+    SEND reaches all correct processes; or,
+    if SEND does not reach correct processes, then ECHO messages arrive from non-correct PS processes. 
+
+
+COMPLEXITY: 
+message size = 1 + q (the body of the message) + q (each signature)
+processing per echo  = O(1)
+processing per SEND  = O(N) since each send can reach up to N processes
+processing per ECHO  = O(1), if no message is sent
+total 	        = O(N) + O(qN) = O((1+ qN))
+

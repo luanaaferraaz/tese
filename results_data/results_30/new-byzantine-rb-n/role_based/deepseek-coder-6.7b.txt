@@ -1,0 +1,23 @@
+Based on the provided algorithm, here are my verdicts regarding correctness properties.
+
+1) RB-Validity: This property asserts that if a broadcaster broadcasts a message, all correct processes eventually deliver it. 
+
+In this context, the pseudo code suggests that the broadcaster sends a `<type0, m>` message to its neighbours upon invoking `RB-Broadcast(m)`. The receivers send a `<type1, m>` message to their neighbours when they receive at least one `<type0, m>` from a distinct process and haven't already sent a `<type1, m>` before.
+
+Therefore, if the broadcaster is correct (i.e., it sends `<type0, m>` messages), all correct processes eventually receive at least f + 1 `<type1, m>` messages which will in turn deliver the message `m`. 
+
+Verdict: Satisfied. Reason: The broadcaster correctly broadcasts the message and receivers can successfully send support messages that are ultimately delivered by the algorithm.
+
+2) RB-Agreement: This property states that if a correct process delivers a message, then all other correct processes eventually deliver the same message. 
+
+In this scenario, the agreement is achieved when a correct process receives f + 1 `<type1, m>` messages from different correct processes (i.e., it has received support messages from its neighbours). The delivered message can be propagated to other correct processes through forwarding of `<type1, m>` messages.
+
+Verdict: Satisfied. Reason: When a correct process receives f + 1 distinct `<type1, m>` messages (i.e., support), it can ensure the delivery by forwarding the message to its neighbours which are correctly implemented in the algorithm. 
+
+3) RB-Integrity: This property asserts that a correct process delivers a message at most once and only if the message was broadcasted. 
+
+In this scenario, each delivered message is added to a `delivered` set. If a new message arrives from another source (i.e., it's not in the `delivered` set), then it gets added to that set and the message delivery event is fired.
+
+Verdict: Satisfied. Reason: The delivered set ensures no duplication of messages, ensuring integrity as well. If a new message arrives from another source, it will be correctly added to the delivered set and an associated `deliver` operation will occur. 
+
+Note that all these properties are based on assumptions about the system model (faulty process is Byzantine and timing is asynchronous) and may not hold true if these conditions change.

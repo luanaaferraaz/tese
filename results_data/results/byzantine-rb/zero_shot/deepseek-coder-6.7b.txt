@@ -1,0 +1,8 @@
+RB-Validity: Satisfied
+The broadcaster sends <type0, m> to all correct processes. Since the broadcaster is byzantine fault tolerant (f=1), it can tolerate at most one Byzantine process failing and sending inconsistent or malicious messages. Therefore, every correct process eventually receives a <type0, m> message from the broadcaster and starts its broadcasting process.
+
+RB-Agreement: Satisfied
+If one correct process delivers, it has seen enough <｜begin▁of▁sentence｜><type1, m> messages supporting this delivery. The forwarding rule using f + 1 help spread this support so that other correct processes also receive at least f + 1 <｜begin▁of▁sentence｜><type1, m> message supports for the same broadcasted message. Therefore, if one correct process delivers a message, all correct processes eventually deliver the same message.
+
+RB-Integrity: Satisfied
+The distinct sender counting (I1) and delivered set (I4) prevent duplicate delivery of messages. Since every process counts at most one <｜begin▁of▁sentence｜><type0, m> or <｜begin▁of▁sentence｜><type1, m> per sender, duplicated messages from the same sender will not be counted and hence not deliverable in the first place. The broadcaster is byzantine fault tolerant (f=1), so it cannot create enough support to send a message that another process delivers. Therefore, if one correct process delivers a message, no other process can simultaneously deliver the same message, ensuring integrity of the broadcasted messages.

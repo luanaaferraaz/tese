@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+The algorithm ensures that if a correct broadcaster broadcasts m, then all correct processes eventually deliver m. This is ensured by the fact that each correct process sends at least one <type1, m> message to its neighbours upon receiving at least f + 1 distinct <type0, m> messages.
+
+RB-Agreement - [satisfied]
+The algorithm ensures if one correct process delivers m, then all correct processes eventually deliver m. This is ensured by the fact that each correct process sends at least one <type1, m> message to its neighbours upon receiving at least f + 1 distinct <type0, m> messages and delivers m when it has received at least f + 1 distinct <type1, m> messages.
+
+RB-Termination - [non satisfied]
+The algorithm does not guarantee all correct processes always deliver for some scenarios where the set of sent messages could be infinite. For instance, if a process never receives any <type0, m> messages but it sends <type1, m> to its neighbours at regular intervals, it would never receive <type0, m> from any other process and hence deliveries on every message will not terminate.

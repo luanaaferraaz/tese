@@ -1,0 +1,7 @@
+RB-Validity - [satisfied]
+This algorithm ensures RB-validity because correct processes relay the initial broadcast message and deliver only after receiving f + 1 <type1, m> messages.
+
+RB-Agreement - [satisfied]
+This algorithm meets the RB-agreement property because a message is delivered by one process, then its agreement is propagated to all other processes through the relay mechanism.
+
+RB-Integrity - [non satisfied]: The delivered set only holds the unique messages sent or received. A single process delivers a message only once unless it has been broadcast again in which case it resets the delivered status but the current delivery status remains unaffected until the next agreement is achieved.

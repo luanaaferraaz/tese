@@ -1,0 +1,13 @@
+Algorithm Name: Best-Effort Broadcast
+
+Properties:
+1. Validity - [satisfied]
+2. Agreement - [non satisfied]: The algorithm does not guarantee agreement, meaning if a process crashes during the broadcast, it may receive messages in different orders or from different processes.
+3. No duplication - [satisfied]
+4. No creation - [satisfied]
+5. Termination - [non satisfied]: There is no termination property specified in this algorithm.
+6. Liveness - [non satisfied]: The liveness guarantee for the Best-Effort Broadcast protocol requires a mechanism to prevent any process from being stuck without receiving any message, which might not always be possible with asynchronous broadcasts over unreliable channels.
+7. Response time - [satisfied]
+8. Fairness - [non satisfied]: The algorithm does not guarantee fairness, meaning that if some processes are faster to receive messages than others, they may start delivering them before slower ones. This could lead to a situation where some processes have received all the messages while other processes haven't. 
+9. Scalability - [satisfied]
+10. Resource usage - [non satisfied]: The algorithm does not specify how resources (like memory and CPU) are used during its execution, which can be critical for performance tuning based on the system's requirements.

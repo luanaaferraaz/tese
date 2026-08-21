@@ -1,0 +1,5 @@
+RB-Validity - Satisfied: If a correct broadcaster sends <type0, m> to itself and delivers it, all correct processes eventually receive this message and deliver it.
+
+RB-Agreement - Satisfied: If one correct process delivers a message m, then all other correct processes eventually receive m and deliver it. This is because when a correct process receives the message m, it forwards <type1, m> to its neighbours. Thus, each correct process has delivered the message at least once.
+
+RB-Integrity - Satisfied: The property of ensuring that a single broadcast sends out only one instance of a particular message is satisfied by this algorithm. This is because when a correct process delivers m, it does not deliver m again unless it has not received m before (ensuring the integrity property).

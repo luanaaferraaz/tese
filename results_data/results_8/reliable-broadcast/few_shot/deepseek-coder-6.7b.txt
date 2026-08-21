@@ -1,0 +1,8 @@
+Here are the property checks for Reliable Broadcast algorithm, given in your prompt:
+
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [non satisfied]: if a sender crashes mid-broadcast, some correct processes may never receive m
+
+The algorithm is designed for fault tolerance and resilience. However, the problem of "some correct processes may never receive m" from a crash in a broadcast initiated by a process is not entirely solved without more complex solutions such as handling process crashes with quorums or maintaining an accurate state on all nodes before deciding to deliver messages.

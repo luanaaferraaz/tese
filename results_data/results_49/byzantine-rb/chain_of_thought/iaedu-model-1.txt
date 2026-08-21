@@ -1,0 +1,6 @@
+{"run_id": "8ebdaa53-1091-4c40-9785-1a30297d1064", "type": "start", "content": "Processing"}
+
+{"run_id": "8ebdaa53-1091-4c40-9785-1a30297d1064", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "8ebdaa53-1091-4c40-9785-1a30297d1064", "type": "done", "content": "8ebdaa53-1091-4c40-9785-1a30297d1064", "messageId": "None", "token_pct_used": 102.2}
+

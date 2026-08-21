@@ -1,0 +1,168 @@
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "start", "content": "Processing"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": ""}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "RB"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "-"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "Validity"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " -"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " ["}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "non"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " satisfied"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "]:"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " Rel"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "ayers"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " do"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " not"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " receive"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "/count"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " their"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " own"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " type"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "1"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": ","}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " so"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " some"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " correct"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " processes"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " may"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " never"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " reach"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " threshold"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "\n"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "RB"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "-"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "Agreement"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " -"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " ["}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "non"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " satisfied"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "]:"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " Delivery"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " can"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " rely"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " on"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " one"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " correct"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " and"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " one"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " Byzantine"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " support"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": ","}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " not"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " forcing"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " all"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " correct"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " to"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " deliver"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "\n"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "RB"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "-"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "Integrity"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " -"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " ["}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "non"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " satisfied"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "]:"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " Byzantine"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " type"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": "0"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " can"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " make"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " correct"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " processes"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " support"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " and"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " deliver"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " a"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " message"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " not"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " broadcast"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " by"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " the"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": " broadcaster"}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "token", "content": ""}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Relayers do not receive/count their own type1, so some correct processes may never reach threshold\nRB-Agreement - [non satisfied]: Delivery can rely on one correct and one Byzantine support, not forcing all correct to deliver\nRB-Integrity - [non satisfied]: Byzantine type0 can make correct processes support and deliver a message not broadcast by the broadcaster", "tool_calls": [], "tool_call_id": null, "run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "response_metadata": {"model_provider": "openai", "id": "resp_0995e8a7feff1844006a664e7298a4819083d69b4914d5cc42", "created_at": 1785089650.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "type": "done", "content": "23ae0036-9444-43da-a6a4-a8c41fe0646f", "messageId": "cms24aqvk1td7ke01txnidau3"}
+

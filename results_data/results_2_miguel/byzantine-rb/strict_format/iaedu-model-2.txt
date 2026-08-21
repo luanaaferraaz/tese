@@ -1,0 +1,14 @@
+{"run_id": "473db609-5876-44a3-85c2-d136dd6dfb98", "type": "start", "content": "Processing"}
+
+{"run_id": "473db609-5876-44a3-85c2-d136dd6dfb98", "type": "token", "content": "R"}
+
+{"run_id": "473db609-5876-44a3-85c2-d136dd6dfb98", "type": "token", "content": "B-Validity - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2.5\u21923;"}
+
+{"run_id": "473db609-5876-44a3-85c2-d136dd6dfb98", "type": "token", "content": " correct broadcaster + 2 correct echoers cannot reach 3 if"}
+
+{"run_id": "473db609-5876-44a3-85c2-d136dd6dfb98", "type": "token", "content": " Byzantine stays silent.\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]"}
+
+{"run_id": "473db609-5876-44a3-85c2-d136dd6dfb98", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2.5\u21923; correct broadcaster + 2 correct echoers cannot reach 3 if Byzantine stays silent.\nRB-Agreement - [satisfied]\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "473db609-5876-44a3-85c2-d136dd6dfb98", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "473db609-5876-44a3-85c2-d136dd6dfb98", "type": "done", "content": "473db609-5876-44a3-85c2-d136dd6dfb98", "messageId": "cmrae8pbd61i7ke013mehw8kr"}
+

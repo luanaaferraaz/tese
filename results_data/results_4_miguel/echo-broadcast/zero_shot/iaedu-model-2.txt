@@ -1,0 +1,12 @@
+{"run_id": "ac9215fa-b5aa-4976-bd31-2d1aa1224b10", "type": "start", "content": "Processing"}
+
+{"run_id": "ac9215fa-b5aa-4976-bd31-2d1aa1224b10", "type": "token", "content": "Valid"}
+
+{"run_id": "ac9215fa-b5aa-4976-bd31-2d1aa1224b10", "type": "token", "content": "ity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: No mechanism prevents multiple deliveries; del"}
+
+{"run_id": "ac9215fa-b5aa-4976-bd31-2d1aa1224b10", "type": "token", "content": "ivery rule only checks threshold, not whether already delivered.\nNo creation - [satisfied]"}
+
+{"run_id": "ac9215fa-b5aa-4976-bd31-2d1aa1224b10", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nAgreement - [satisfied]\nNo duplication - [non satisfied]: No mechanism prevents multiple deliveries; delivery rule only checks threshold, not whether already delivered.\nNo creation - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "ac9215fa-b5aa-4976-bd31-2d1aa1224b10", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "ac9215fa-b5aa-4976-bd31-2d1aa1224b10", "type": "done", "content": "ac9215fa-b5aa-4976-bd31-2d1aa1224b10", "messageId": "cmrd78ldl82dgke01o4n3o0tw"}
+

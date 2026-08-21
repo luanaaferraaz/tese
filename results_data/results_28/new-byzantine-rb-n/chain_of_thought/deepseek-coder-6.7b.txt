@@ -1,0 +1,7 @@
+Sure, here are the results based on the given algorithm and properties.
+
+1) RB-Validity: This property is satisfied because if a correct broadcaster sends <type0, m> to its neighbours, then all correct receivers eventually receive at least one <type1, m> from any process and deliver message m. 
+
+2) RB-Agreement: This property is also satisfied because if a correct process delivers message m, it means that it received f + 1 distinct <type1, m> messages which are sent by some other processes. These messages support the delivery of message m, so they have reached agreement on its delivery.
+
+3) RB-Integrity: This property is satisfied because a correct process delivers a message only once due to the delivered set. The delivered set keeps track of all unique messages that have been delivered at least once by any correct process. If another <type1, m> arrives from an incorrect process, it will not be added to the delivered set and therefore this second delivery cannot occur.

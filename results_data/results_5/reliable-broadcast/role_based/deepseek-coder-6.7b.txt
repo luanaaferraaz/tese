@@ -1,0 +1,6 @@
+Here are the properties of this algorithm verified with the given system model and correctness properties.
+
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [satisfied]

@@ -1,0 +1,18 @@
+{"run_id": "548723af-0393-457d-8fe6-1c2524970a14", "type": "start", "content": "Processing"}
+
+{"run_id": "548723af-0393-457d-8fe6-1c2524970a14", "type": "token", "content": "Validity - ["}
+
+{"run_id": "548723af-0393-457d-8fe6-1c2524970a14", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 distinct echoes, but property"}
+
+{"run_id": "548723af-0393-457d-8fe6-1c2524970a14", "type": "token", "content": " itself holds; however relay threshold blocks single-s"}
+
+{"run_id": "548723af-0393-457d-8fe6-1c2524970a14", "type": "token", "content": "ender validity when others omit.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]:"}
+
+{"run_id": "548723af-0393-457d-8fe6-1c2524970a14", "type": "token", "content": " If correct deliverer has only f+1 echoes including itself, other"}
+
+{"run_id": "548723af-0393-457d-8fe6-1c2524970a14", "type": "token", "content": " correct processes may never reach threshold."}
+
+{"run_id": "548723af-0393-457d-8fe6-1c2524970a14", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 distinct echoes, but property itself holds; however relay threshold blocks single-sender validity when others omit.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: If correct deliverer has only f+1 echoes including itself, other correct processes may never reach threshold.", "tool_calls": [], "tool_call_id": null, "run_id": "548723af-0393-457d-8fe6-1c2524970a14", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "548723af-0393-457d-8fe6-1c2524970a14", "type": "done", "content": "548723af-0393-457d-8fe6-1c2524970a14", "messageId": "cmr912nl65e42ke01jhbu6ggb"}
+

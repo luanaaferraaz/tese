@@ -1,0 +1,6 @@
+{"run_id": "75c4173e-6090-4694-93d6-e0ea6de6bb20", "type": "start", "content": "Processing"}
+
+{"run_id": "75c4173e-6090-4694-93d6-e0ea6de6bb20", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "75c4173e-6090-4694-93d6-e0ea6de6bb20", "type": "done", "content": "75c4173e-6090-4694-93d6-e0ea6de6bb20", "messageId": "None", "token_pct_used": 106.4}
+

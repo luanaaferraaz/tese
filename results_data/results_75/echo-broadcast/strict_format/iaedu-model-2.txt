@@ -1,0 +1,14 @@
+{"run_id": "87c5fc50-058d-4408-ad6c-b232c5aac893", "type": "start", "content": "Processing"}
+
+{"run_id": "87c5fc50-058d-4408-ad6c-b232c5aac893", "type": "token", "content": "Validity - [satisfied"}
+
+{"run_id": "87c5fc50-058d-4408-ad6c-b232c5aac893", "type": "token", "content": "] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: delivered flag not chec"}
+
+{"run_id": "87c5fc50-058d-4408-ad6c-b232c5aac893", "type": "token", "content": "ked in delivery rule; m could be delivered multiple times (confidence: 8/10)\nNo creation - [satisfied] (confidence: 8"}
+
+{"run_id": "87c5fc50-058d-4408-ad6c-b232c5aac893", "type": "token", "content": "/10)"}
+
+{"run_id": "87c5fc50-058d-4408-ad6c-b232c5aac893", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: delivered flag not checked in delivery rule; m could be delivered multiple times (confidence: 8/10)\nNo creation - [satisfied] (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "87c5fc50-058d-4408-ad6c-b232c5aac893", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "87c5fc50-058d-4408-ad6c-b232c5aac893", "type": "done", "content": "87c5fc50-058d-4408-ad6c-b232c5aac893", "messageId": "cmrnkngd70g21ke01dqr76k1e"}
+

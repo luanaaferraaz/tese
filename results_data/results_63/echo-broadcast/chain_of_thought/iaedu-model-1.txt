@@ -1,0 +1,128 @@
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "start", "content": "Processing"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": ""}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "Validity"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " -"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " ["}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "s"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "atisfied"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "]\n"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "Agreement"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " -"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " ["}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "non"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " satisfied"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "]:"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " E"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "CHO"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " threshold"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " allows"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " split"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " qu"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "or"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "ums"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " when"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " n"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": ">"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "3"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "f"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "+"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "1"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": ".\n"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "No"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " duplication"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " -"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " ["}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "non"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " satisfied"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "]:"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " Delivery"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " rule"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " lacks"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " a"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " delivered"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " guard"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": ".\n"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "No"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " creation"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " -"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " ["}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "non"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " satisfied"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "]:"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " Byzantine"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " duplicates"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " can"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " inflate"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " counters"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " for"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " un"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "broadcast"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": " messages"}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": "."}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "token", "content": ""}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied]\nAgreement - [non satisfied]: ECHO threshold allows split quorums when n>3f+1.\nNo duplication - [non satisfied]: Delivery rule lacks a delivered guard.\nNo creation - [non satisfied]: Byzantine duplicates can inflate counters for unbroadcast messages.", "tool_calls": [], "tool_call_id": null, "run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "response_metadata": {"model_provider": "openai", "id": "resp_06abfa869edfe190006a4b74ab89cc81949affea6a9ee1e57b", "created_at": 1783329963.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "type": "done", "content": "c7b46e1a-4224-4d8c-8023-7876aeb45cf2", "messageId": "cmr90n71m5dreke01pxsnrp9p"}
+

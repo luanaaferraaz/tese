@@ -1,0 +1,15 @@
+Algorithm Name: Bracha’s Reliable Broadcast
+
+1. Validity - [Satisfied]
+   The algorithm ensures that a correct process broadcasting a message will eventually receive it from all other correct processes. 
+
+2. Agreement - [Non-satisfied]: 
+   There is no agreement property defined in this protocol. It only guarantees the delivery of messages to correct processes, not their contents or ordering.
+
+3. No duplication - [Satisfied]
+   The algorithm ensures that a process will not send duplicate ECHO or READY for the same message during the same broadcast instance. This is ensured by keeping track of each unique message using echo_count and ready_count variables.
+
+4. No creation - [Non-satisfied]: 
+   There is no property defined in this protocol that prevents a process from creating new messages. The sender SEND operation creates the initial message, ECHO acknowledges reception of this message, READY signals readiness to deliver it. Other than these operations, there are no further mechanisms for creating new messages.
+
+These properties provide a reliable broadcast service in a Byzantine fault-tolerant environment where processes can be either correct or faulty. The protocol ensures the delivery of all messages and guarantees that the content of every delivered message is unique and correctly ordered among correct processes.

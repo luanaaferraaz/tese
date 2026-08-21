@@ -1,0 +1,7 @@
+1. Validity: This property is satisfied because if a correct process p broadcasts v, then all other correct processes accept v. In the given algorithm, a correct process will only broadcast the message m after receiving 2f+1 READY messages for that instance, which ensures validity. Therefore, the algorithm satisfies this property.
+   
+2. Agreement: This property is also satisfied by the algorithm. If two correct processes q and r accept the values v and u respectively, then v=u because there are more than 3f processes in the network. Therefore, at least one of these processes must have accepted the same value, satisfying agreement.
+   
+3. No duplication: This property is also satisfied by the algorithm. The algorithm ensures that every message m is delivered once and only once to each correct process.
+    
+4. No creation: This property may not be strictly satisfied by the algorithm because it's based on the assumption that if a process delivers a message, then this message was previously broadcasted by the sender. But there can be other messages that are not sent from the sender but delivered to any of the correct processes due to network topology or failures. Hence, the property "No creation" might not always hold true in all scenarios despite the efforts made by the algorithm to limit it as much as possible.

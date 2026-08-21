@@ -1,0 +1,17 @@
+RB-Validity - Satisfied
+This property is fulfilled because, as per the pseudocode, when a message m is broadcasted via RB-Broadcast(m), all correct processes receive it. The process of receiving and delivering this message ensures that m eventually reaches every correct process which satisfies RB-Validity.
+
+RB-Agreement - Satisfied
+This property is also fulfilled because, as per the pseudocode, if any one process delivers m, then all correct processes eventually receive and deliver it. This means that every correct process agrees on whether or not a message was delivered.
+
+RB-Integrity - Satisfied
+The RB-Integrity property is also satisfied because, as per the pseudocode, each message m can be delivered at most once and only if it has been broadcasted beforehand. This ensures that no duplicate messages are delivered. 
+
+I1 - No Duplicate Delivery - Satisfied
+This invariant ensures that a process delivers m at most once by checking in the receive section of pseudocode whether m is already in the 'delivered' set or not. If it's not, then this message m will be added to the 'delivered' set and delivered. This prevents duplicate deliveries.
+
+I2 - Direct Origin - Satisfied
+This invariant ensures that a delivered message must have been received through the broadcast communication by checking in the receive section of pseudocode whether m is not already in the 'delivered' set or not. If it's not, then this message m will be added to the 'delivered' set and delivered. This guarantees direct origin.
+
+I3 - All Receive - Satisfied
+This invariant ensures that since no process fails, all correct processes receive the broadcaster’s message by checking in the broadcast section of pseudocode whether this process has already sent <type0, m> or not. If it hasn't, then a message m will be sent to all processes. This guarantees that every correct process receives the broadcaster’s message.

@@ -1,0 +1,6 @@
+{"run_id": "7bccc173-8ce2-4904-9696-7fcdab803967", "type": "start", "content": "Processing"}
+
+{"run_id": "7bccc173-8ce2-4904-9696-7fcdab803967", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "7bccc173-8ce2-4904-9696-7fcdab803967", "type": "done", "content": "7bccc173-8ce2-4904-9696-7fcdab803967", "messageId": "None", "token_pct_used": 102.2}
+

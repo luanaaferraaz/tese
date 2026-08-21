@@ -1,0 +1,45 @@
+ This is a protocol for achieving consensus with one or more Byzantine failures in distributed systems. It utilizes a reliable chat system with channels that cannot create new messages and can detect and reject invalid ones, as well as a synchronized asynchronous channel (SAS).
+
+The SAS acts as an intermediate between the sender and receiver. The Sender sends a message to the SAS, which then relays it to the Receiver. This ensures that all systems have access to the same information. In case of failures, the SAS can detect and reject invalid messages, keeping the network secure. The message is also timestamped by the SAS for future reference.
+
+When the system is not compromised, a sender will send a message containing its ID, followed by two random strings (S1 & S2). These strings are then sent to all other nodes in the network. If an attacker attempts to tamper with the message before transmission, this will be immediately detected and rejected by the SAS.
+
+The Receiver can use a different set of strings to identify itself, such as its ID or a randomly generated string (R1 & R2). This allows for additional authentication and ensures that only trusted sources are allowed to access the system. If an attacker attempts to tamper with the message before transmission, this will also be detected by the SAS.
+
+The main application of this protocol is in secure communication, such as military networks or online banking systems, where it is important to ensure the authenticity and integrity of transmitted information. By using a decentralized approach, Byzantine Failures can be dealt with effectively without compromising the overall system.
+
+Real-world Use Cases:
+
+1) Military Communications
+- Scenario: A group of soldiers are on a covert mission, communicating through a secure network. The commander needs to relay important instructions to all team members. However, there is a risk that their communication may be intercepted and tampered with by enemy forces. 
+- Actions: The commander uses the TRBL protocol to transmit the messages via the SAS to ensure authenticity and integrity of the information. Each soldier's ID is included in the message to verify their identity. In case of any tampering, the SAS will reject the message, preventing unauthorized access to the network.
+- Outcome: The team members receive the message as intended by the commander, ensuring smooth communication during the mission. If there were any attempts at malicious interference, the TRBL protocol would detect and prevent it, keeping the mission secure.
+
+2) Secure Online Transactions
+- Scenario: A person is making an online purchase from a reputable e-commerce site. They want to ensure that their credit card information is safe and cannot be intercepted by hackers. 
+- Actions: The website uses the TRBL protocol in its communication with the user's computer, utilizing the SAS as an intermediary. This allows for secure transmission of sensitive data, such as credit card information. Additionally, the use of unique identifiers for each node ensures that only authorized parties have access to the system.
+- Outcome: The transaction is completed successfully without any security breaches or tampering with the user's personal information. This highlights the importance and effectiveness of the TRBL protocol in securing online transactions.
+
+3) Secure Virtual Meetings
+- Scenario: A group of colleagues are conducting a virtual meeting to discuss important matters. However, there is a risk that their conversation may be overheard by others or tampered with remotely. 
+- Actions: The team decides to use the TRBL protocol to facilitate secure communication during the meeting. Each participant's ID is included in the message, ensuring that only authorized members can access the meeting. In case of any attempts at tampering or unauthorized access, the SAS will reject the message.
+- Outcome: The meeting proceeds smoothly without any security breaches or disruptions due to external interference. This demonstrates the reliability and trustworthiness of the TRBL protocol for secure communication in virtual environments.
+
+4) Secure Government Communication
+- Scenario: Top government officials are discussing sensitive information over a confidential network. There is a possibility that their conversation may be intercepted by foreign agents, compromising national security. 
+- Actions: The officials utilize the TRBL protocol to communicate securely and protect the confidentiality of their discussions. The unique IDs included in each message allow for easy identification and verification. Any attempts at tampering or unauthorized access will be detected and prevented by the SAS.
+- Outcome: The communication remains confidential, ensuring the safety of classified information. This highlights the crucial role of the TRBL protocol in secure government communication.
+
+5) Secure Online Collaboration
+- Scenario: A team of researchers from different universities is working on a joint project. They need to share and collaborate on data and ideas securely. 
+- Actions: The team implements the TRBL protocol, with each member having their own unique identifier. This allows for secure communication and sharing of information without any risk of tampering or unauthorized access. Additionally, the SAS can detect any attempts at malicious interference, ensuring the integrity of their work.
+- Outcome: The project is completed successfully with no security breaches or disruptions caused by external factors. This demonstrates how the TRBL protocol can be applied in various scenarios to ensure secure and reliable communication among multiple parties.
+
+Exercise 1: What are the two types of strings used in the TRBL protocol?
+Answer: S1 and S2.
+
+Exercise 2: When can the SAS detect an attempt at tampering with a message?
+Answer: The SAS will reject any attempts at tampering with a message if it is sent through the network.
+
+Exercise 3: What is one of the main applications of the TRBL protocol in real-world scenarios?
+Answer: The main application of this protocol is in secure communication, such as military networks or online transactions.

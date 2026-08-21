@@ -1,0 +1,14 @@
+{"run_id": "a8d4be53-870c-4e7d-82c4-3ccc53528142", "type": "start", "content": "Processing"}
+
+{"run_id": "a8d4be53-870c-4e7d-82c4-3ccc53528142", "type": "token", "content": "Valid"}
+
+{"run_id": "a8d4be53-870c-4e7d-82c4-3ccc53528142", "type": "token", "content": "ity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - ["}
+
+{"run_id": "a8d4be53-870c-4e7d-82c4-3ccc53528142", "type": "token", "content": "non satisfied]: Delivery rule triggers every time ready_count reaches \u22652f+1; no guard on"}
+
+{"run_id": "a8d4be53-870c-4e7d-82c4-3ccc53528142", "type": "token", "content": " delivered flag. (confidence: 8/10)\nNo creation - [satisfied] (confidence: 8/10)"}
+
+{"run_id": "a8d4be53-870c-4e7d-82c4-3ccc53528142", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: Delivery rule triggers every time ready_count reaches \u22652f+1; no guard on delivered flag. (confidence: 8/10)\nNo creation - [satisfied] (confidence: 8/10)", "tool_calls": [], "tool_call_id": null, "run_id": "a8d4be53-870c-4e7d-82c4-3ccc53528142", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "a8d4be53-870c-4e7d-82c4-3ccc53528142", "type": "done", "content": "a8d4be53-870c-4e7d-82c4-3ccc53528142", "messageId": "cmrm401im5cpcke01lvszd9mk"}
+

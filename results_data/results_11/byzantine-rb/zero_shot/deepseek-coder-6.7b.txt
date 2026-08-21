@@ -1,0 +1,11 @@
+RB-Validity - Satisfied
+
+The property RB-Validity is satisfied because the broadcaster sends the initial <type0, m> message to all processes. Then each correct process eventually receives and forwards at least one <type1, m> message from a correct sender. Hence, all correct processes eventually deliver m.
+
+RB-Agreement - Satisfied
+
+The property RB-Agreement is satisfied because the broadcaster sends the initial <type0, m> message to all processes. Then each process independently forwards at most one <type1, m> message from a correct sender if it received enough evidence of distinct senders. Hence, if any correct process delivers m, then all correct processes eventually deliver m.
+
+RB-Integrity - Satisfied
+
+The property RB-Integrity is satisfied because the broadcaster sends the initial <type0, m> message to all processes. Then each correct process independently forwards at most one <type1, m> message from a correct sender if it received enough evidence of distinct senders and m was not already delivered. Hence, a correct process delivers m at most once, and only if m was broadcast.

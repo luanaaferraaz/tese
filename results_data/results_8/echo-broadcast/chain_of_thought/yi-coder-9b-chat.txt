@@ -1,0 +1,15 @@
+1. Validity - satisfied
+If a correct process p broadcasts v, then all correct processes accept v.
+This property is guaranteed by the algorithm since the broadcasted message m will be delivered to all other correct processes that have sent READY(m).
+
+2. Agreement - satisfied
+If two correct processes q and r accept the values v and u respectively, then v=u.
+This property follows from the fact that a message is only delivered when 2f+1 READY messages are received. Since all processes agree on which READY messages to send (based on I1 - Uniqueness), they also agree on which messages to deliver.
+
+3. No duplication - satisfied
+A message m is not delivered more than once.
+This property holds true because a process will only accept the delivery of a unique message (once 2f+1 READY messages are received).
+
+4. No creation - satisfied
+If a process delivers a message m with sender s, then m was previously broadcast by process s.
+This property is guaranteed since all processes that receive SEND(m) from the sender will send ECHO(m) and possibly READY(m) based on the received messages. The sender itself will also send SEND(m) to all other processes.

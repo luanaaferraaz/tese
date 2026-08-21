@@ -1,0 +1,7 @@
+Here are the properties of this algorithm evaluated as per your description:
+
+1) RB-Validity - Satisfied: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m.
+2) RB-Agreement - Satisfied: If one correct process delivers m, then all correct processes eventually deliver m. 
+3) RB-Integrity - Satisfied: A correct process delivers m at most once, and only if m was broadcast.
+
+The reason for non satisfaction of any property can be that a Byzantine faulty node could potentially cause the agreement to fail even though all other nodes are functioning correctly. The algorithm requires f+1 valid messages (i.e., 2 in this case) from correct processes, meaning at least one process among these must have been Byzantine and thus unavailable for delivering m.

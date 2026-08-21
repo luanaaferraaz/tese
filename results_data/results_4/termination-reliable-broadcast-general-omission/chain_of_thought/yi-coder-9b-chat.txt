@@ -1,0 +1,13 @@
+Correctness Properties:
+
+1) Termination
+The protocol ends at round f+1, and each process delivers exactly one message.
+
+2) Validity
+If s is correct (no omission failures), all processes eventually receive m from it.
+
+3) Agreement
+Each process delivers a value v if and only if every process delivers v. This follows from the fact that once f+1 correct supporters have been accumulated, the protocol decides to deliver the message received_msg.
+
+4) Integrity
+Each process delivers at most one message (either m or SF), and that is either received directly from s in round 1, or relayed by a correct process.

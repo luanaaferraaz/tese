@@ -1,0 +1,8 @@
+RB-Validity - [satisfied]
+This property is true because the broadcaster sends the message to all processes via reliable channels. Therefore, correct processes eventually receive and deliver it according to the protocol.
+
+RB-Agreement - [satisfied]
+If one process delivers a message, then by the design of the algorithm, all other correct processes will eventually receive and deliver it as well because they all receive the same messages from the broadcaster.
+
+RB-Integrity - [satisfied]
+This property is true since the delivered set keeps track of already delivered messages. If a process delivers a message for the first time, it can only have been sent via a reliable channel (since no message is lost or duplicated) and only if it was originally broadcasted by the broadcaster according to the algorithm’s design.

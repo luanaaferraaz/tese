@@ -1,0 +1,8 @@
+1) Validity - [satisfied].
+If a correct process broadcasts a message m, then every correct process eventually delivers m. This is guaranteed by the underlying perfect point to point links that allow reliable delivery of messages from any sender to all receivers. 
+
+2) No duplication - [satisfied].
+Every message is delivered at most once across all processes. This is enforced by the "no duplication" property of perfect point-to-point links and the uniqueness assumption for messages.
+
+3) No creation - [satisfied].
+If a process delivers a message m with sender s, then m was previously broadcast by process s. This is ensured by the underlying perfect link primitives that do not create or alter messages beyond what is initially sent by the correct process.

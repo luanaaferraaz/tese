@@ -1,0 +1,7 @@
+Termination - Satisfied
+
+Validity - Satisfied
+
+Agreement - Satisfied
+
+Integrity - Satisfied

@@ -1,0 +1,6 @@
+{"run_id": "79872ee8-700b-403b-a15a-3da396fb3500", "type": "start", "content": "Processing"}
+
+{"run_id": "79872ee8-700b-403b-a15a-3da396fb3500", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "79872ee8-700b-403b-a15a-3da396fb3500", "type": "done", "content": "79872ee8-700b-403b-a15a-3da396fb3500", "messageId": "None", "token_pct_used": 106.4}
+

@@ -1,0 +1,102 @@
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "start", "content": "Processing"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": ""}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "RB"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "-"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "Validity"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " -"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " ["}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "s"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "atisfied"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "]\n"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "RB"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "-"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "Agreement"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " -"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " ["}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "s"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "atisfied"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "]\n"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "RB"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "-"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "Integrity"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " -"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " ["}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "non"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " satisfied"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "]:"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " Accept"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "s"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " type"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "0"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " from"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " any"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " process"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": ","}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " so"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " Byzantine"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " non"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "-b"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "road"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "caster"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " can"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " trigger"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " delivery"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " of"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " un"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "broadcast"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": " m"}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": "."}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "token", "content": ""}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [satisfied]\nRB-Integrity - [non satisfied]: Accepts type0 from any process, so Byzantine non-broadcaster can trigger delivery of unbroadcast m.", "tool_calls": [], "tool_call_id": null, "run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "response_metadata": {"model_provider": "openai", "id": "resp_0f5ec14c05515307006a6763b6f1288194b283180323039401", "created_at": 1785160630.0, "metadata": {}, "model": "gpt-5.5", "object": "response", "service_tier": "default", "status": "completed", "model_name": "gpt-5.5"}, "custom_data": {}}}
+
+{"run_id": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "type": "done", "content": "c2009ddd-44ef-4946-ae35-ce460b53ee06", "messageId": "cms3ak8dr284dke017538c02s"}
+

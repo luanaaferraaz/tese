@@ -1,0 +1,18 @@
+{"run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "type": "start", "content": "Processing"}
+
+{"run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "type": "token", "content": "Valid"}
+
+{"run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "type": "token", "content": "ity - [non satisfied]: Sender delivers immediately but if s"}
+
+{"run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "type": "token", "content": "ender is only correct broadcaster, others need f+1 s"}
+
+{"run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "type": "token", "content": "ources. (confidence: 6/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [sat"}
+
+{"run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "type": "token", "content": "isfied] (confidence: 9/10)\nAgreement - [non satisfied]: Faulty sender may deliver to itself then"}
+
+{"run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "type": "token", "content": " omit; correct processes never reach f+1 threshold. (confidence: 7/10)"}
+
+{"run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately but if sender is only correct broadcaster, others need f+1 sources. (confidence: 6/10)\nNo duplication - [satisfied] (confidence: 10/10)\nNo creation - [satisfied] (confidence: 9/10)\nAgreement - [non satisfied]: Faulty sender may deliver to itself then omit; correct processes never reach f+1 threshold. (confidence: 7/10)", "tool_calls": [], "tool_call_id": null, "run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "type": "done", "content": "a0335e0d-3a1c-4a6a-9159-28e9d2f19513", "messageId": "cmrgfh5ge2ctake01n7j6wogd"}
+

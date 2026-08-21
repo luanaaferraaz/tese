@@ -1,0 +1,11 @@
+ The given algorithm is the Terminating Reliable Broadcast (TRB). It's an algorithm that allows multiple processes to receive messages from one sender, ensuring reliability and termination. The algorithm assumes that there may be faulty nodes in the system, which could crash during transmission. To guarantee proper functioning, it uses a fault-tolerant model where the number of faults is limited by the number of processes. 
+
+The TRB algorithm has some important properties to ensure its correctness, including: termination (every correct process eventually delivers a message), validity (if a correct process broadcasts a message, then all other correct processes eventually receive it), agreement (if a correct process delivers a message, then all other correct processes eventually deliver the same message), and integrity (each correct process can only deliver one message). 
+
+The algorithm also has an API for external operations and output events. It uses different roles, including sender, receivers, to manage the flow of messages and ensure reliability. The state of each process is updated at every round through a set of variables and constants that are specific to its role. 
+
+The TRB protocol starts with initializing the state, followed by sending messages from the sender to all other processes in each round. In subsequent rounds, if a message has already been received by a process, it won't be sent again. The decision phase is determined based on whether there are any new messages received in the last round. If so, they are added to the set of received messages and delivered to the correct processes. 
+
+The TRB algorithm follows a specific decision/delivery rule where delivery occurs at the end of each round with the addition of any newly received messages. It also ensures that there is at least one reliable process in the system, which relays messages to other nodes before the final round. The algorithm uses a quorum-based approach where a certain number of rounds are needed for every faulty node to prevent the delivery of any invalid or unreliable message. 
+
+To ensure that the TRB algorithm meets its requirements, it is important to check if it satisfies all properties and has a valid invariant at each step. The algorithm's correctness can also be validated through various techniques such as simulation, testing, and analysis.

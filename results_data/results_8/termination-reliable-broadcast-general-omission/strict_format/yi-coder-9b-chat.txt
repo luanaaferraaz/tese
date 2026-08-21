@@ -1,0 +1,4 @@
+Termination - [satisfied]
+Validity - [uncertain]: Needs proof or formal verification
+Agreement - [uncertain]: Needs proof or formal verification
+Integrity - [satisfied]

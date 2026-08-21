@@ -1,0 +1,10 @@
+Validity - [satisfied]
+All correct processes broadcast the same message; all other processes accept that message.
+
+Agreement - [satisfied]
+If two correct processes q and r accept values v and u respectively, then v=u because both processes follow the delivery rule which requires agreement on the value of the message to be delivered.
+
+No duplication - [non satisfied]: No message is delivered more than once is not enforced in the algorithm.
+
+No creation - [satisfied] 
+If a process delivers a message m with sender s, then m was previously broadcast by process s because the message is only delivered after it has been validated and confirmed by other processes.

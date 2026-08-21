@@ -1,0 +1,4 @@
+Validity - [satisfied]
+No duplication - [satisfied]
+No creation - [satisfied]
+Agreement - [non satisfied]: If a correct process crashes while broadcasting m, some other processes may never receive m. The delivery of m by such processes will not be agreed upon among all correct processes as it was not delivered to the crashed process in the first place.

@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster sends a <type0, m> message to all processes. All correct processes receive this message and send their corresponding <type1, m> messages back. They eventually deliver the message if they see enough <type1, m> messages from distinct processes.
+
+RB-Agreement - Satisfied
+If one correct process delivers a message, it means that at least f + 1 other correct processes have seen this message and are sending their corresponding support messages (<type1, m>) back to the broadcaster. The reason for this is the f+1 rule mentioned in section 6, which states that if <type1, m> has been received from at least f + 1 distinct processes, then it should be delivered.
+
+RB-Integrity - Satisfied
+The algorithm prevents duplicate deliveries by ensuring each message (<type0, m> or <type1, m>) is sent only once. This ensures that a correct process delivers a message at most once. The reason for this is the validation rules mentioned in section 8, which state that distinct sender counting and delivery prevent duplicate messages being delivered.

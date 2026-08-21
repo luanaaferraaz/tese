@@ -1,0 +1,16 @@
+{"run_id": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "type": "start", "content": "Processing"}
+
+{"run_id": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "type": "token", "content": "R"}
+
+{"run_id": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "type": "token", "content": "B-Validity - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2.5\u2192"}
+
+{"run_id": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "type": "token", "content": "3, but correct broadcaster yields only 3 type1 messages; delivery hol"}
+
+{"run_id": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "type": "token", "content": "ds, yet edge-fragile. (confidence: 4/10)\nRB-Agreement - [satisfied]"}
+
+{"run_id": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "type": "token", "content": " (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: With n=4, f=1, threshold (n+f)/2=2.5\u21923, but correct broadcaster yields only 3 type1 messages; delivery holds, yet edge-fragile. (confidence: 4/10)\nRB-Agreement - [satisfied] (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "type": "done", "content": "d9cfa032-ff76-44ee-b39c-eaa597d1b664", "messageId": "cmriv5mis33dwke01ccneiilf"}
+

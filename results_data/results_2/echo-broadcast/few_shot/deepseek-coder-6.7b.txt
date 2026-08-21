@@ -1,0 +1,15 @@
+Algorithm:
+for i in range(n): print(i)
+
+Properties:
+Termination - [satisfied] The algorithm terminates as it simply iterates over a range of numbers and prints each number, which is a finite operation. 
+Determinism - [satisfied] The algorithm is deterministic because for the same input (n), it will always produce the same output. Each iteration in the loop has a defined start-end point with known outputs.
+
+---
+
+Algorithm:
+Bracha, G. 1987. Asynchronous Byzantine Agreement Protocols. ALGORITHM: ECHO BROADCAST.
+
+Properties:
+Termination - [satisfied] The algorithm ensures termination by the broadcast of messages in a network where all processes have unique IDs and are fully connected. The termination is ensured when a process delivers a message, as per the Delivery Rule specified in the protocol.
+Determinism - [not satisfied] In an Asynchronous Byzantine Agreement Protocol like Bracha's Reliable Broadcast, deterministic behavior cannot be guaranteed without additional assumptions about timing and communication channels. The algorithm does not provide a definitive guarantee on message delivery or processing order in case of asynchronicity and unreliable communication.

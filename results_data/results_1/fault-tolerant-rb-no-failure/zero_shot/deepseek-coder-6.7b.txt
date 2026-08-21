@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster sends <type0, m> to all correct processes. This is ensured by the fact that when RB-Broadcast(m) is invoked, it only sends a message if one has not been sent before (checked by "if not already sent <type0, m>"). Reliable channels ensure all processes receive and process this message correctly (via upon receive), which results in deliver(m).
+
+RB-Agreement - Satisfied
+If any correct process delivers m, then it means that the message was indeed sent to all correct processes by the broadcaster. This is ensured because when a process receives <type0, m> and does not find it in delivered (checked via "if m not in delivered"), it adds m to delivered and triggers deliver(m).
+
+RB-Integrity - Satisfied
+The delivered set ensures that the same message is not sent more than once. In other words, if a process delivers m, then m will be added to delivered at least once (checked via "if m not in delivered"). Therefore, any message in delivered was indeed received through some broadcast communication and hence can only have been delivered by the broadcaster.

@@ -1,0 +1,6 @@
+{"run_id": "b59829ca-4ca1-4c6d-beaa-560fa836a9e6", "type": "start", "content": "Processing"}
+
+{"run_id": "b59829ca-4ca1-4c6d-beaa-560fa836a9e6", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "b59829ca-4ca1-4c6d-beaa-560fa836a9e6", "type": "done", "content": "b59829ca-4ca1-4c6d-beaa-560fa836a9e6", "messageId": "None", "token_pct_used": 102.2}
+

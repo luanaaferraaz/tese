@@ -1,0 +1,55 @@
+### Property: Safety - Integrity
+
+**Requirement**: A correct process delivers at most one message.
+
+**Check**: The algorithm ensures that each correct process can only deliver a single message. This is achieved through the `delivered` flag and the requirement that any two sets of signatures (which prove different messages) have an intersection of at least \(t+1\) processes, none of which are Byzantine. Therefore, no correct process can deliver more than one message.
+
+**Assumptions**: 
+- Correctness of the sender.
+- Unforgeable digital signatures.
+
+**Result**: SATISFIED  
+Explanation: Each process checks if it has already delivered a message before attempting to deliver another, ensuring that no correct process delivers more than one message.
+
+### Property: Safety - Consistency
+
+**Requirement**: If two correct processes deliver messages \(m\) and \(m'\), then \(m = m'\).
+
+**Check**: The algorithm ensures consistency by requiring that the sender collects signatures for the same message \(m\) before delivering it. Any two different messages would require distinct sets of signatures, which cannot both be valid since they would intersect in fewer than \(t+1\) processes.
+
+**Assumptions**: 
+- Correctness of the sender.
+- Unforgeable digital signatures.
+
+**Result**: SATISFIED  
+Explanation: Only one message can obtain a quorum of valid signatures and thus be delivered, ensuring consistency.
+
+### Property: Safety - Validity
+
+**Requirement**: If the sender is correct and broadcasts \(m\), then any correct process that delivers, delivers \(m\).
+
+**Check**: The algorithm ensures validity by having the receiver check if the received message along with a quorum of signatures matches what the sender has broadcast. Only if all checks pass will the receiver deliver the message.
+
+**Assumptions**: 
+- Correctness of the sender.
+- Unforgeable digital signatures.
+
+**Result**: SATISFIED  
+Explanation: The receiver verifies the authenticity and validity of the message before delivering it, ensuring that only correctly broadcast messages are delivered.
+
+### Property: Liveness - Termination (Sender correct)
+
+**Requirement**: If the sender is correct, all correct processes eventually deliver \(m\).
+
+**Check**: The algorithm ensures eventual delivery by having the sender collect a quorum of signatures. Once the sender has collected enough signatures, it broadcasts the `FINAL` message to all processes. Since the network is asynchronous and reliable, all correct processes will receive the `FINAL` message and eventually deliver it.
+
+**Assumptions**: 
+- Correctness of the sender.
+- Reliable, authenticated, asynchronous network.
+
+**Result**: SATISFIED  
+Explanation: As long as the sender is correct and collects a sufficient quorum of signatures, all correct processes will eventually receive and deliver \(m\).
+
+### Summary
+
+All properties (Safety - Integrity, Safety - Consistency, Safety - Validity, Liveness - Termination) are satisfied by the Echo Broadcast algorithm under the specified conditions.

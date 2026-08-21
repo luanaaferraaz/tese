@@ -1,0 +1,6 @@
+{"run_id": "2cdf96a2-f0b2-4354-b204-05bb6724381b", "type": "start", "content": "Processing"}
+
+{"run_id": "2cdf96a2-f0b2-4354-b204-05bb6724381b", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "2cdf96a2-f0b2-4354-b204-05bb6724381b", "type": "done", "content": "2cdf96a2-f0b2-4354-b204-05bb6724381b", "messageId": "None", "token_pct_used": 106.4}
+

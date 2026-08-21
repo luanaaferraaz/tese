@@ -1,0 +1,6 @@
+{"run_id": "4f245922-03ad-4145-b924-93a200176429", "type": "start", "content": "Processing"}
+
+{"run_id": "4f245922-03ad-4145-b924-93a200176429", "type": "context_limit", "strategy": "summarize"}
+
+{"run_id": "4f245922-03ad-4145-b924-93a200176429", "type": "done", "content": "4f245922-03ad-4145-b924-93a200176429", "messageId": "None", "token_pct_used": 102.2}
+

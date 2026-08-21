@@ -1,0 +1,14 @@
+{"run_id": "75171f6d-f804-43af-b4bf-c50ef523cb3d", "type": "start", "content": "Processing"}
+
+{"run_id": "75171f6d-f804-43af-b4bf-c50ef523cb3d", "type": "token", "content": "R"}
+
+{"run_id": "75171f6d-f804-43af-b4bf-c50ef523cb3d", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Byzantine sends type1 to one correct process; it delivers but"}
+
+{"run_id": "75171f6d-f804-43af-b4bf-c50ef523cb3d", "type": "token", "content": " doesn't forward, others never deliver.\nRB-Integrity - [non satisfied]: Single Byzantine type1 triggers delivery of message"}
+
+{"run_id": "75171f6d-f804-43af-b4bf-c50ef523cb3d", "type": "token", "content": " never broadcast by correct sender."}
+
+{"run_id": "75171f6d-f804-43af-b4bf-c50ef523cb3d", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Byzantine sends type1 to one correct process; it delivers but doesn't forward, others never deliver.\nRB-Integrity - [non satisfied]: Single Byzantine type1 triggers delivery of message never broadcast by correct sender.", "tool_calls": [], "tool_call_id": null, "run_id": "75171f6d-f804-43af-b4bf-c50ef523cb3d", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "75171f6d-f804-43af-b4bf-c50ef523cb3d", "type": "done", "content": "75171f6d-f804-43af-b4bf-c50ef523cb3d", "messageId": "cmqva7xi75pfwp701u51ykxzp"}
+

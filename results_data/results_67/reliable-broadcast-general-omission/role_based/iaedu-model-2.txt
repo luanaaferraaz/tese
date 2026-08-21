@@ -1,0 +1,16 @@
+{"run_id": "947f6769-65c1-46ce-af82-80412202d560", "type": "start", "content": "Processing"}
+
+{"run_id": "947f6769-65c1-46ce-af82-80412202d560", "type": "token", "content": "Validity - ["}
+
+{"run_id": "947f6769-65c1-46ce-af82-80412202d560", "type": "token", "content": "non satisfied]: Sender delivers immediately without f+1 echoes; but if sender om"}
+
+{"run_id": "947f6769-65c1-46ce-af82-80412202d560", "type": "token", "content": "its all sends, no other correct process delivers.\nNo duplication - [satisfied]\nNo creation - [satisfied]"}
+
+{"run_id": "947f6769-65c1-46ce-af82-80412202d560", "type": "token", "content": "\nAgreement - [non satisfied]: Faulty sender may deliver to itself then omit; correct processes get"}
+
+{"run_id": "947f6769-65c1-46ce-af82-80412202d560", "type": "token", "content": " no messages, never reach f+1 threshold."}
+
+{"run_id": "947f6769-65c1-46ce-af82-80412202d560", "type": "message", "content": {"type": "ai", "content": "Validity - [non satisfied]: Sender delivers immediately without f+1 echoes; but if sender omits all sends, no other correct process delivers.\nNo duplication - [satisfied]\nNo creation - [satisfied]\nAgreement - [non satisfied]: Faulty sender may deliver to itself then omit; correct processes get no messages, never reach f+1 threshold.", "tool_calls": [], "tool_call_id": null, "run_id": "947f6769-65c1-46ce-af82-80412202d560", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "947f6769-65c1-46ce-af82-80412202d560", "type": "done", "content": "947f6769-65c1-46ce-af82-80412202d560", "messageId": "cmrc237u97l5eke01ybbqx1yv"}
+

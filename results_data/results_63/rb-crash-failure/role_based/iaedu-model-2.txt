@@ -1,0 +1,12 @@
+{"run_id": "bd38c899-3246-42ae-8ad7-1b8664527c52", "type": "start", "content": "Processing"}
+
+{"run_id": "bd38c899-3246-42ae-8ad7-1b8664527c52", "type": "token", "content": "R"}
+
+{"run_id": "bd38c899-3246-42ae-8ad7-1b8664527c52", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself,"}
+
+{"run_id": "bd38c899-3246-42ae-8ad7-1b8664527c52", "type": "token", "content": " no correct process delivers m.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "bd38c899-3246-42ae-8ad7-1b8664527c52", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: If broadcaster crashes after sending type0 to itself, no correct process delivers m.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "bd38c899-3246-42ae-8ad7-1b8664527c52", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "bd38c899-3246-42ae-8ad7-1b8664527c52", "type": "done", "content": "bd38c899-3246-42ae-8ad7-1b8664527c52", "messageId": "cmr90x0xk5dzmke01gl2nnobt"}
+

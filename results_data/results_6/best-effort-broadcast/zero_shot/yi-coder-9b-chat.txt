@@ -1,0 +1,8 @@
+Validity - [satisfied]
+The validity property states that if a correct process broadcasts a message m, then every correct process eventually delivers m. In the best-effort broadcast algorithm, if a process broadcasts a message using Perfect Point to Point Links (PL), and assuming no faults, any other process will receive this message as PL provides reliable unicast delivery.
+
+No duplication - [satisfied]
+The algorithm is based on Perfect Point to Point links (PL) which have the property of not duplicating messages. Therefore, if a process delivers a message m more than once, it must have received that message more than once from different sources according to the PL properties. 
+
+No creation - [satisfied]
+The algorithm assumes no faults and all messages are assumed to be unique. This means each process is only allowed to broadcast every message once and any other delivery of the same message must have been previously received by the sender. Thus, there's no possibility of creating a new message that didn’t originate from any process in the system.

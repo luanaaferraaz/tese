@@ -1,0 +1,18 @@
+{"run_id": "88cbe88c-3616-407c-b829-a6c404677541", "type": "start", "content": "Processing"}
+
+{"run_id": "88cbe88c-3616-407c-b829-a6c404677541", "type": "token", "content": "R"}
+
+{"run_id": "88cbe88c-3616-407c-b829-a6c404677541", "type": "token", "content": "B-Validity - [non satisfied]: Broadcaster only sends to others, not itself; if"}
+
+{"run_id": "88cbe88c-3616-407c-b829-a6c404677541", "type": "token", "content": " broadcaster is correct it never delivers m. (confidence: 8/10)\nRB-Agreement -"}
+
+{"run_id": "88cbe88c-3616-407c-b829-a6c404677541", "type": "token", "content": " [non satisfied]: If broadcaster delivers via self-send omission absent, and one rece"}
+
+{"run_id": "88cbe88c-3616-407c-b829-a6c404677541", "type": "token", "content": "iver delivers, broadcaster (correct) never delivers. (confidence: 7/10)\nRB-Integrity - [satisf"}
+
+{"run_id": "88cbe88c-3616-407c-b829-a6c404677541", "type": "token", "content": "ied] (confidence: 9/10)"}
+
+{"run_id": "88cbe88c-3616-407c-b829-a6c404677541", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: Broadcaster only sends to others, not itself; if broadcaster is correct it never delivers m. (confidence: 8/10)\nRB-Agreement - [non satisfied]: If broadcaster delivers via self-send omission absent, and one receiver delivers, broadcaster (correct) never delivers. (confidence: 7/10)\nRB-Integrity - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "88cbe88c-3616-407c-b829-a6c404677541", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "88cbe88c-3616-407c-b829-a6c404677541", "type": "done", "content": "88cbe88c-3616-407c-b829-a6c404677541", "messageId": "cmrm46iw35cx2ke01meuu336c"}
+

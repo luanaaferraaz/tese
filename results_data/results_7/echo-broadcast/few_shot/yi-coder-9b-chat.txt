@@ -1,0 +1,4 @@
+Validity - [satisfied]
+Agreement - [satisfied]
+No duplication - [satisfied]: The algorithm ensures that each process receives the same message and only once. It leverages quorum to ensure persistence of the delivered messages.
+No creation - [non satisfied]: The algorithm doesn't account for any possibility a new message could be created after delivering a different one, leading to inconsistency.

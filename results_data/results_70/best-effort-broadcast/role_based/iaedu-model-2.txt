@@ -1,0 +1,14 @@
+{"run_id": "8bf0602b-1153-4bce-9eff-66bb93dc0741", "type": "start", "content": "Processing"}
+
+{"run_id": "8bf0602b-1153-4bce-9eff-66bb93dc0741", "type": "token", "content": "Validity -"}
+
+{"run_id": "8bf0602b-1153-4bce-9eff-66bb93dc0741", "type": "token", "content": " [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm does not filter duplicates; relies solely on PL"}
+
+{"run_id": "8bf0602b-1153-4bce-9eff-66bb93dc0741", "type": "token", "content": " no-duplication, but upper-layer duplicates from repeated broadcasts unh"}
+
+{"run_id": "8bf0602b-1153-4bce-9eff-66bb93dc0741", "type": "token", "content": "andled (confidence: 6/10)\nNo creation - [satisfied] (confidence: 10/10)"}
+
+{"run_id": "8bf0602b-1153-4bce-9eff-66bb93dc0741", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 10/10)\nNo duplication - [non satisfied]: Algorithm does not filter duplicates; relies solely on PL no-duplication, but upper-layer duplicates from repeated broadcasts unhandled (confidence: 6/10)\nNo creation - [satisfied] (confidence: 10/10)", "tool_calls": [], "tool_call_id": null, "run_id": "8bf0602b-1153-4bce-9eff-66bb93dc0741", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "8bf0602b-1153-4bce-9eff-66bb93dc0741", "type": "done", "content": "8bf0602b-1153-4bce-9eff-66bb93dc0741", "messageId": "cmrer3vql010xke018now0ovy"}
+

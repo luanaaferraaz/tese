@@ -1,0 +1,14 @@
+{"run_id": "c57fdbd6-4185-4ee1-b4b5-3c3dd9fe53e5", "type": "start", "content": "Processing"}
+
+{"run_id": "c57fdbd6-4185-4ee1-b4b5-3c3dd9fe53e5", "type": "token", "content": "R"}
+
+{"run_id": "c57fdbd6-4185-4ee1-b4b5-3c3dd9fe53e5", "type": "token", "content": "B-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 "}
+
+{"run_id": "c57fdbd6-4185-4ee1-b4b5-3c3dd9fe53e5", "type": "token", "content": "rounds to 2 or 3; with n=4,f=1 amplification step f+1=2 insufficient for agreement.\nRB-"}
+
+{"run_id": "c57fdbd6-4185-4ee1-b4b5-3c3dd9fe53e5", "type": "token", "content": "Integrity - [satisfied]"}
+
+{"run_id": "c57fdbd6-4185-4ee1-b4b5-3c3dd9fe53e5", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [satisfied]\nRB-Agreement - [non satisfied]: Threshold (n+f)/2 = 2.5 rounds to 2 or 3; with n=4,f=1 amplification step f+1=2 insufficient for agreement.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "c57fdbd6-4185-4ee1-b4b5-3c3dd9fe53e5", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "c57fdbd6-4185-4ee1-b4b5-3c3dd9fe53e5", "type": "done", "content": "c57fdbd6-4185-4ee1-b4b5-3c3dd9fe53e5", "messageId": "cms2449c91t5xke01b56xw4zm"}
+

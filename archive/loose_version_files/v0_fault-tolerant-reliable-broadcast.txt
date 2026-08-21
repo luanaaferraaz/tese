@@ -1,0 +1,164 @@
+============================================================
+ALGORITHM NAME: RBcast (Byzantine-Failure) — RB-Learner Algorithm 3
+SOURCE: Vaz, Matos, Pardal, Correia — "Synthesis of Fault-Tolerant Reliable Broadcast Algorithms With Reinforcement Learning" (IEEE Access)
+============================================================
+
+INTUITION
+The broadcaster sends <type0,m> to everyone. Upon seeing <type0,m> from any party,
+a process relays <type1,m>. Delivery requires collecting <type1,m> from a threshold
+of distinct parties ((N+F)/2). Additionally, if a process sees <type1,m> from F+1
+distinct parties, it relays <type1,m> (amplification to ensure propagation).
+
+
+OBJECTIVE
+Solve Reliable Broadcast (RBcast): ensure that messages broadcast by a correct process
+are eventually delivered by all correct processes, while ensuring agreement and integrity.
+
+
+INTERFACE (API)
+RB-Broadcast(m)
+RB-Deliver(m)
+
+
+GUARANTEES
+
+Safety:
+RB-Agreement: if a correct process delivers message m, then all correct processes
+eventually deliver the same message m.
+RB-Integrity: for any message m, every correct process delivers m at most once
+and only if m was previously broadcast by some (correct or incorrect) process.
+
+Liveness:
+RB-Validity: if a correct process broadcasts message m, then it will eventually
+deliver that message m.
+(Definitions above follow the paper’s RBcast specification.) 
+
+
+SYSTEM MODEL
+
+Processes: N (static set; no joins/leaves)
+Fault model: Byzantine failures (arbitrary behavior)
+Max faulty: F = floor((N - 1)/3)
+Network: fully connected point-to-point; reliable + authenticated + integrity (no loss,
+no corruption, no duplication; reordering allowed)
+Timing: asynchronous
+Cryptography: none required beyond authenticated links (distinct-party counting)
+(Assumptions above follow the paper’s system model.)
+
+
+ROLES
+
+Broadcaster: the process that triggers RB-Broadcast(m) once.
+Process: executes the same event-driven algorithm and reacts to received messages.
+
+
+LOCAL STATE (per process)
+
+Constants:
+N
+F
+deliver_threshold = (N + F)/2
+relay_threshold   = F + 1
+
+Variables:
+sent_type0
+sent_type1
+delivered_m
+seen_type0_senders[m]   // set of distinct parties that sent <type0,m>
+seen_type1_senders[m]   // set of distinct parties that sent <type1,m>
+
+
+MESSAGE TYPES
+
+<type0, m>
+<type1, m>
+
+Validation rules:
+Count only messages from distinct parties (authenticated sender IDs).
+Treat message payload m as the delivered value.
+
+
+INITIALIZATION
+
+sent_type0 := false
+sent_type1 := false
+delivered_m := false
+seen_type0_senders := empty
+seen_type1_senders := empty
+
+
+EXTERNAL INVOCATION
+
+When RB-Broadcast(m) do:
+SEND to all(<type0, m>) if not already sent
+STOP
+
+
+MESSAGE HANDLING
+
+When receive(<t, m>) do:
+
+(1) Relay on first type0:
+SEND to all(<type1, m>)
+  if received(<type0, m>) from 1 distinct party
+  and not already sent_type1
+
+(2) Deliver on quorum of type1:
+DELIVER(m)
+  if received(<type1, m>) from (N + F)/2 distinct parties
+  and not already delivered_m
+
+(3) Amplify relay once F+1 type1 seen:
+SEND to all(<type1, m>)
+  if received(<type1, m>) from F + 1 distinct parties
+  and not already sent_type1
+
+STOP
+
+
+TIMEOUT HANDLING
+
+None (asynchronous model; no timers used)
+
+
+DECISION / DELIVERY RULE
+
+Deliver m once <type1, m> has been received from (N + F)/2 distinct parties.
+
+
+INVARIANTS
+
+A correct process delivers at most once (guarded by delivered_m).
+A correct process sends <type1,m> at most once (guarded by sent_type1).
+Any delivered m must have appeared in a previously received message (integrity of links).
+
+
+SAFETY ARGUMENT
+
+The algorithm enforces Integrity by construction (single delivery; deliver only after receiving
+messages carrying m). Agreement depends on the impossibility (given the bound F and the
+threshold (N+F)/2) of two different messages m != m' both gathering enough distinct-party
+support at correct processes. (Full proof is as per the paper’s verified RBcast property checks.)
+
+
+LIVENESS ARGUMENT
+
+If the broadcaster is correct, all correct processes receive <type0,m>, relay <type1,m>,
+and the amplification rule (F+1) helps ensure <type1,m> spreads despite Byzantine senders.
+With reliable authenticated links and bounded F, correct processes eventually reach the
+deliver threshold and deliver m.
+
+
+COMPLEXITY
+
+Message complexity: O(N^2 + N) (one all-to-all type0 + all-to-all type1 relays)
+Round / time complexity: 2 communication steps (type0 then type1), async delays unbounded
+Message size: O(|m|)
+
+
+LIMITATIONS
+
+Requires authenticated sender identity (distinct-party counting).
+Uses Byzantine bound F = floor((N-1)/3) from the paper.
+Delivery threshold (N+F)/2 is specific to this learned algorithm.
+============================================================

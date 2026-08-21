@@ -1,0 +1,5 @@
+RB-Validity - [satisfied]: The algorithm ensures that if a correct broadcaster broadcasts m, it sends the initial message <type0, m> to its neighbors. This allows correct receivers to forward <type1, m> messages to their neighbors, ensuring that eventually all correct processes receive at least f + 1 distinct <type1, m> messages and deliver them.
+
+RB-Agreement - [satisfied]: If one correct process delivers m, it must have received f + 1 distinct <type1, m> messages. Since the forwarding rule ensures that support spreads correctly, this threshold is guaranteed to be met by at least one correct process, which in turn spreads this support to other correct processes.
+
+RB-Termination - [satisfied]: All correct processes always deliver because they are guaranteed to receive f + 1 distinct <type1, m> messages according to the forwarding rule and delivery condition.

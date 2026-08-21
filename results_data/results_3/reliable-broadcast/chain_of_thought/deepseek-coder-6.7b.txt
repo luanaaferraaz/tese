@@ -1,0 +1,4 @@
+Validity - Satisfied
+No duplication - Non satisfied: The delivered set doesn't prevent duplicate upcalls. If a message is delivered, it might be broadcast again even if it is already present in the delivered set.
+No creation - Satisfied: If a correct process delivers a message m, we can be sure that this message was broadcast by some other correct process since the algorithm ensures each correct process forwards any messages it has not yet seen and delivers to its application.
+Agreement - Satisfied: If a correct process delivers a message m, then every correct process eventually delivers m. This is ensured by the protocol where each correct process sends the same message to all other processes. However, this property can be violated in case of Byzantine failures where some processes may not follow the agreement rule due to arbitrary crashes or unreliable channels.

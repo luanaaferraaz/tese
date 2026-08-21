@@ -1,0 +1,9 @@
+RB-Validity - satisfied
+
+RB-Agreement - satisfied
+
+Reason: The algorithm ensures that all correct processes eventually receive and deliver a message if at least one correct process sends it. It does this by ensuring that the broadcaster (correct) broadcasts the message, then each receiver (correct or faulty) sends back a support message once they have received enough evidence from different processes. This is ensured by using thresholds for the number of support messages required to deliver a message and by ensuring that every process only counts one message per sender.
+
+RB-Integrity - satisfied
+
+Reason: The algorithm ensures that a correct process delivers each message at most once, i.e., it does not deliver duplicate messages. This is ensured by using the delivered set to keep track of which messages have been delivered and by ensuring that every process only delivers each message once. A Byzantine process cannot create enough evidence or support for delivery.

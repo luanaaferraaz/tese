@@ -1,0 +1,8 @@
+RB-Validity - Satisfied
+The broadcaster sends <type0, m> to its neighbours. Since the broadcaster is correct, it will eventually receive a message from each neighbour, and since the protocol ensures that a correct process will send a message if it receives at least one of every other's messages, all correct processes eventually deliver m.
+
+RB-Agreement - Satisfied
+If any correct process delivers m, then it received f + 1 <type1, m> messages from some set of its neighbours. Since the protocol ensures that a correct process will forward a message if it receives at least f + 1 other messages (assuming the sender is not Byzantine), all correct processes eventually deliver m.
+
+RB-Integrity - Satisfied
+A correct process delivers m exactly once, and only if m was broadcast. The delivered set ensures that each message m is processed exactly once by a correct process. It's not possible for a correct process to deliver the same message twice or for a Byzantine process to force delivery of an arbitrary message.

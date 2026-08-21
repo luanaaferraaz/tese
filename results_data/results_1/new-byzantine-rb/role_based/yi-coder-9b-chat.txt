@@ -1,0 +1,8 @@
+RB-Validity - satisfied
+This algorithm is valid because if a correct process broadcasts m, then all other processes eventually receive it. This is ensured by the type1 message mechanism which propagates the support for the message m to all neighbours.
+
+RB-Agreement - satisfied
+This property is satisfied as well since once one correct process delivers m, then all other processes eventually deliver m because of the type1 message propagation and support from at least f+1 distinct processes.
+
+RB-Integrity - non satisfied
+However, the integrity property is not satisfied here due to a potential fault in this algorithm. A Byzantine process can broadcast the same message multiple times and potentially cause duplicate delivery by forcing all other processes to forward the type1 messages without checking if they have been delivered already.

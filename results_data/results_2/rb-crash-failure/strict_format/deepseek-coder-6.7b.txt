@@ -1,0 +1,5 @@
+RB-Validity - Satisfied: The broadcaster sends the message m through <type0, m> to itself and delivers it. Once a correct process receives this message, it forwards <type1, m> to its neighbours which are all other processes except itself. This ensures that all non-crashed processes eventually receive the broadcasted message m.
+
+RB-Agreement - Satisfied: If one correct process delivers m, then it received m and forwards it to its neighbours. Hence, all correct processes will eventually receive m from some other process or itself. This ensures agreement among all correct processes about the delivery of messages.
+
+RB-Integrity - Satisfied: The delivered set prevents duplicate delivery of any message m. Since messages are only forwarded after receiving m and delivering it to the client, each message can be traced back to its original broadcast by a single path in the system. Therefore, this ensures the integrity of the reliable broadcast algorithm.

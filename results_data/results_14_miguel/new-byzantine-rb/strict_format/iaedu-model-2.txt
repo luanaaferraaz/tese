@@ -1,0 +1,16 @@
+{"run_id": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "type": "start", "content": "Processing"}
+
+{"run_id": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "type": "token", "content": "R"}
+
+{"run_id": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "type": "token", "content": "B-Validity - [non satisfied]: With n=4, f=1, a correct broadcaster needs 2 type1 messages;"}
+
+{"run_id": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "type": "token", "content": " only 2 correct receivers may send, insufficient if one delays.\nRB-Agre"}
+
+{"run_id": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "type": "token", "content": "ement - [non satisfied]: A correct process delivers on 2 type1 but may not forward type1 it"}
+
+{"run_id": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "type": "token", "content": "self, preventing others from reaching threshold.\nRB-Integrity - [satisfied]"}
+
+{"run_id": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "type": "message", "content": {"type": "ai", "content": "RB-Validity - [non satisfied]: With n=4, f=1, a correct broadcaster needs 2 type1 messages; only 2 correct receivers may send, insufficient if one delays.\nRB-Agreement - [non satisfied]: A correct process delivers on 2 type1 but may not forward type1 itself, preventing others from reaching threshold.\nRB-Integrity - [satisfied]", "tool_calls": [], "tool_call_id": null, "run_id": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "type": "done", "content": "aece7cac-ffc0-42f8-8e8c-d4348fe32427", "messageId": "cms3aojag2895ke01r1kpc3o6"}
+

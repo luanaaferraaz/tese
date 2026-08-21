@@ -1,0 +1,7 @@
+Here are the final results for each property based on the pseudocode and thresholds provided.
+
+RB-Validity - Satisfied: If a correct broadcaster broadcasts m, then all correct processes eventually deliver m.
+
+RB-Agreement - Satisfied: If one correct process delivers m, then all correct processes eventually deliver m. This is achieved through the usage of thresholds and f+1 rule in combination with the support amplification invariant (I3). The f+1 rule ensures that at least one correct process sends <type1, m> to ensure enough support for delivery.
+
+RB-Integrity - Satisfied: A correct process delivers m at most once, and only if m was broadcast. This is ensured by the distinct sender counting invariant (I1) which prevents a single process from delivering multiple instances of same message. The delivered set also ensures that a message can't be delivered twice.

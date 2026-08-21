@@ -1,0 +1,14 @@
+{"run_id": "32e7ed6c-c30c-40ed-9dc2-0cced02474e9", "type": "start", "content": "Processing"}
+
+{"run_id": "32e7ed6c-c30c-40ed-9dc2-0cced02474e9", "type": "token", "content": "Valid"}
+
+{"run_id": "32e7ed6c-c30c-40ed-9dc2-0cced02474e9", "type": "token", "content": "ity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - ["}
+
+{"run_id": "32e7ed6c-c30c-40ed-9dc2-0cced02474e9", "type": "token", "content": "non satisfied]: Delivery rule triggers every READY receipt after threshold; no check"}
+
+{"run_id": "32e7ed6c-c30c-40ed-9dc2-0cced02474e9", "type": "token", "content": " on `delivered` flag. (confidence: 8/10)\nNo creation - [satisfied] (confidence: 9/10)"}
+
+{"run_id": "32e7ed6c-c30c-40ed-9dc2-0cced02474e9", "type": "message", "content": {"type": "ai", "content": "Validity - [satisfied] (confidence: 9/10)\nAgreement - [satisfied] (confidence: 9/10)\nNo duplication - [non satisfied]: Delivery rule triggers every READY receipt after threshold; no check on `delivered` flag. (confidence: 8/10)\nNo creation - [satisfied] (confidence: 9/10)", "tool_calls": [], "tool_call_id": null, "run_id": "32e7ed6c-c30c-40ed-9dc2-0cced02474e9", "response_metadata": {"model_name": "claude-opus-4-7", "model_provider": "anthropic", "stop_reason": "end_turn", "stop_sequence": null}, "custom_data": {}}}
+
+{"run_id": "32e7ed6c-c30c-40ed-9dc2-0cced02474e9", "type": "done", "content": "32e7ed6c-c30c-40ed-9dc2-0cced02474e9", "messageId": "cmriv7qwo33eske01ow5rcio6"}
+

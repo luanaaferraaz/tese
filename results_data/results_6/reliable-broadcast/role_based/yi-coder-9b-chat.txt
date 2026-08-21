@@ -1,0 +1,11 @@
+1. Validity - [satisfied]
+A correct process broadcasts m, the process eventually delivers m as it is implemented with eager diffusion; i.e., it immediately starts broadcasting whatever it receives. 
+
+2. No duplication - [satisfied]
+Every correct process delivers m at most once because messages are stored in a delivered set and any message that's already been delivered won’t be broadcast again.
+
+3. No creation - [satisfied]
+The “No Creation” property is guaranteed by the reliable channels and honest (non-Byzantine) processes; correct processes can only deliver what they receive or broadcast themselves.
+
+4. Agreement - [satisfied]
+If a correct process delivers m, it immediately sends m to all other processes. Since i is correct and channels are reliable, every other correct process will eventually receive m and deliver it. This ensures that if a correct process i delivers m, then every correct process eventually delivers m (Agreement).

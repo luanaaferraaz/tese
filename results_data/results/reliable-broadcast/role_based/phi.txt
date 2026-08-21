@@ -1,0 +1,1 @@
+ Your requirements are quite clear and concise. The algorithm seems to be sound, but it's always good to have a few more examples to verify its correctness.
